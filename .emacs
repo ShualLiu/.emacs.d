@@ -36,3 +36,4 @@
 (require 'go-autocomplete)                          ;;go-autocomplete
 (ac-config-default)                                 ;;auto-complete
 (global-set-key (kbd "M-p") 'ace-window)            ;;ace-window
+(helm-mode 1)                                       ;;helm
