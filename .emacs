@@ -37,3 +37,5 @@
 (ac-config-default)                                 ;;auto-complete
 (global-set-key (kbd "M-p") 'ace-window)            ;;ace-window
 (helm-mode 1)                                       ;;helm
+(projectile-mode 1)
+(helm-projectile-on)

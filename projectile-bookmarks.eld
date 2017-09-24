@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Desktop/github/kubernetes-master/" "~/Desktop/go/src/github.com/spf13/cobra/")
