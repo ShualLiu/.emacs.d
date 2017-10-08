@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Desktop/github/kubernetes-master/" "~/Desktop/go/src/github.com/spf13/cobra/")
+("~/Desktop/gitlab/ekos-hello-master/" "~/.emacs.d/" "~/Downloads/ekos-hello-master/" "~/Desktop/github/kubernetes-master/" "~/Desktop/gitlab/ekos-plugin-tenant-master/" "~/Desktop/github/glog/" "~/Desktop/go/src/github.com/astaxie/beego/" "~/go/src/github.com/astaxie/beego/" "~/Desktop/gitlab/ekos-plugin-tenant-master-9d0a399cc331bc8cfc3689c260d7cf9af1353d1c/" "~/Desktop/go/src/golang.org/x/tools/" "~/Desktop/github/test/" "~/Desktop/go/src/github.com/spf13/cobra/")
