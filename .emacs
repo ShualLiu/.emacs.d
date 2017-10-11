@@ -113,3 +113,6 @@
 (go-guru-hl-identifier-mode)
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (require 'gotests)
+(add-hook 'go-mode-hook
+	  (lambda ()
+	    (add-hook 'before-save-hook 'gofmt-before-save)))
