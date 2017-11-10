@@ -1,17 +1,2 @@
-bash test.sh 
-go run ElsTest.go 
-go run ElsTest.go 
-ls
-go build ElsTest.go 
-./ElsTest -h
-./ElsTest --help
-./ElsTest --h
-./ElsTest -h
-./ElsTest h
-./ElsTest -rp 400
-./ElsTest -rp 1000
-curl localhost:9200/_cat/indices
-go run testFunc.go 
-go run testFunc.go 
-go run testFunc.go 
-go run testFunc.go 
+javac Test
+java Test

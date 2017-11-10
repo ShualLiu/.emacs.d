@@ -6,10 +6,15 @@
 			      '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 (fullscreen)
 (global-set-key [f11] 'fullscreen)
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
+(require 'package) ;; You might already have this line
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
+  (add-to-list 'package-archives (cons "melpa" url) t))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -59,3 +64,4 @@
 (require 'highlight-symbol)
 (global-hl-line-mode)
 (global-undo-tree-mode)
+(exec-path-from-shell-initialize)
