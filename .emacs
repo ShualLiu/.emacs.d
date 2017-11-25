@@ -45,7 +45,7 @@
       '(;;"~/.emacs.d/snippets"
         ;;"/path/to/some/collection/"
         ;;"/path/to/yasnippet/yasmate/snippets"
-        "/home/shual/.emacs.d/elpa/yasnippet-0.12.2/snippets" 
+        "/home/shual/.emacs.d/elpa/yasnippet-20170923.1646/snippets" 
         ))
 (yas-global-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
