@@ -76,3 +76,5 @@ go test
 go test
 go test
 go test
+golint utils.go
+go tool vet utils.go
