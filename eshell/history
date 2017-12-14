@@ -78,3 +78,13 @@ go test
 go test
 golint utils.go
 go tool vet utils.go
+go run main.go 
+go run main.go 
+go run main.go 
+go run main.go 
+go run main.go 
+go run main.go 
+ls
+go run main.go 
+go run main.go 
+go run main.go 
