@@ -121,3 +121,7 @@
  '(anzu-replace-to-string-separator " => "))
 (define-key isearch-mode-map [remap isearch-query-replace]  #'anzu-isearch-query-replace)
 (define-key isearch-mode-map [remap isearch-query-replace-regexp] #'anzu-isearch-query-replace-regexp)
+(which-key-mode)
+(require 'popwin)
+(popwin-mode 1)
+(minimap-mode)
