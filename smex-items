@@ -1,0 +1,20 @@
+
+;; ----- smex-history -----
+(
+ server-mode
+ server-start
+ server-force-delete
+ package-install
+ cd
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (cd . 1)
+ (package-install . 1)
+ (server-start . 2)
+ (server-mode . 3)
+ (server-force-delete . 1)
+)

@@ -88,3 +88,25 @@ ls
 go run main.go 
 go run main.go 
 go run main.go 
+ks
+ls
+cd ../..
+ls
+git clone git@git.ghostcloud.cn:ekos/ekos-plugin-portal.git
+ls
+cd ekos-plugin-portal/l
+cd ekos-plugin-portal/
+ls
+go run oli.go 
+go run oli.go 
+go run test.go 
+go run test.go 
+go run test.go 
+ls
+cd /home/shual/Desktop/prometheus-2.0.0.linux-amd64/
+ls
+scp monitor.yaml root@192.168.13.11:/home
+ls
+go run test.go 
+go run test.go 
+go run test.go 
