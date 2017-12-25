@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ hide/show-comments
  package-install
  minimap-mode
  ido-everywhere
  ido-mode
  which-key-mode
  server-mode
- server-start
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 4)
+ (package-install . 5)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -21,4 +21,5 @@
  (ido-mode . 1)
  (ido-everywhere . 1)
  (minimap-mode . 1)
+ (hide/show-comments . 1)
 )
