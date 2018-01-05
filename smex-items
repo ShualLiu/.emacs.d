@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ shell
+ helm-ag
+ magit-blame
+ eshell
  hide/show-comments
  package-install
  minimap-mode
- ido-everywhere
- ido-mode
- which-key-mode
- server-mode
 )
 
 ;; ----- smex-data -----
@@ -22,4 +22,8 @@
  (ido-everywhere . 1)
  (minimap-mode . 1)
  (hide/show-comments . 1)
+ (eshell . 1)
+ (helm-ag . 4)
+ (shell . 2)
+ (magit-blame . 1)
 )

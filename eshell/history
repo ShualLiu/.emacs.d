@@ -110,3 +110,10 @@ ls
 go run test.go 
 go run test.go 
 go run test.go 
+ls
+cd ../..
+ls
+ag unintall
+ag uninstall
+cd controllers/
+ls
