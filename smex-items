@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- shell
- helm-ag
- magit-blame
- eshell
- hide/show-comments
  package-install
- minimap-mode
+ ecb-activate
+ run-skewer
+ skewer-bower-load
+ skewer-mode
+ package-list-packages
+ helm-ag
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 5)
+ (package-install . 10)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -26,4 +26,10 @@
  (helm-ag . 4)
  (shell . 2)
  (magit-blame . 1)
+ (package-list-packages . 1)
+ (skewer-mode . 1)
+ (skewer-bower-load . 1)
+ (run-skewer . 1)
+ (ecb-activate . 2)
+ (ecb-display-news-for-upgrade . 1)
 )
