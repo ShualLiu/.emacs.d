@@ -100,6 +100,8 @@ static char *gnus-pointer[] = {
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
  '(inhibit-startup-screen t)
  '(magit-diff-use-overlays nil)
+ ;;'(minimap-mode t)
+ ;;'(minimap-window-location (quote right))
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
@@ -151,10 +153,6 @@ static char *gnus-pointer[] = {
 (require 'go-autocomplete)
 (ac-config-default)
 (ac-set-trigger-key "TAB")
-(setq yas-snippet-dirs
-      '(
-        "/home/shual/.emacs.d/elpa/yasnippet-20180102.1824/snippets" 
-        ))
 (yas-global-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (autopair-global-mode)
@@ -166,6 +164,7 @@ static char *gnus-pointer[] = {
 	  (lambda ()
 	    (add-hook 'before-save-hook 'gofmt-before-save)))
 (global-set-key (kbd "M-p") 'ace-window)
+(global-set-key [f12] 'ecb-minor-mode)
 (global-set-key [f5] #'(lambda () (interactive) (revert-buffer t t nil)))
 (add-to-list 'load-path "/home/shual/.emacs.d/gotests")
 (require 'gotests)
@@ -195,8 +194,10 @@ static char *gnus-pointer[] = {
 (define-key isearch-mode-map [remap isearch-query-replace]  #'anzu-isearch-query-replace)
 (define-key isearch-mode-map [remap isearch-query-replace-regexp] #'anzu-isearch-query-replace-regexp)
 (which-key-mode)
-(require 'popwin)
-(popwin-mode 1)
+;;(require 'popwin)
+;;(popwin-mode 1)
 (require 'sublimity)
 (require 'sublimity-scroll)
 (sublimity-mode 1)
+
+(defalias 'yes-or-no-p 'y-or-n-p)

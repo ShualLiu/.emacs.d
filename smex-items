@@ -1,35 +1,43 @@
 
 ;; ----- smex-history -----
 (
- package-install
- package-list-packages
- ecb-activate
- run-skewer
- skewer-bower-load
- skewer-mode
+ ecb-minor-mode
+ minimap-mode
+ ssh-config-mode
+ shell
+ magit-diff
  helm-ag
+ gofmt
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 14)
+ (package-install . 11)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
  (which-key-mode . 1)
  (ido-mode . 1)
  (ido-everywhere . 1)
- (minimap-mode . 1)
+ (minimap-mode . 8)
  (hide/show-comments . 1)
  (eshell . 1)
- (helm-ag . 4)
- (shell . 2)
+ (helm-ag . 12)
+ (shell . 8)
  (magit-blame . 1)
  (package-list-packages . 2)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
- (ecb-activate . 2)
+ (ecb-activate . 3)
  (ecb-display-news-for-upgrade . 1)
+ (load-file . 1)
+ (dired . 1)
+ (ecb-minor-mode . 6)
+ (customize-group . 1)
+ (helm-swoop . 3)
+ (gofmt . 1)
+ (magit-diff . 1)
+ (ssh-config-mode . 2)
 )
