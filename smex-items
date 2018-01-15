@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ magit-diff
+ package-menu-mark-delete
+ package-list-packages
+ yas-minor-mode
+ shell
  ecb-minor-mode
  minimap-mode
- ssh-config-mode
- shell
- magit-diff
- helm-ag
- gofmt
 )
 
 ;; ----- smex-data -----
@@ -24,9 +24,9 @@
  (hide/show-comments . 1)
  (eshell . 1)
  (helm-ag . 12)
- (shell . 8)
+ (shell . 9)
  (magit-blame . 1)
- (package-list-packages . 2)
+ (package-list-packages . 4)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
@@ -38,6 +38,8 @@
  (customize-group . 1)
  (helm-swoop . 3)
  (gofmt . 1)
- (magit-diff . 1)
+ (magit-diff . 2)
  (ssh-config-mode . 2)
+ (yas-minor-mode . 1)
+ (package-menu-mark-delete . 2)
 )
