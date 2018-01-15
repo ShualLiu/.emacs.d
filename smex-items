@@ -2,18 +2,18 @@
 ;; ----- smex-history -----
 (
  package-install
+ package-list-packages
  ecb-activate
  run-skewer
  skewer-bower-load
  skewer-mode
- package-list-packages
  helm-ag
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 10)
+ (package-install . 14)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -26,7 +26,7 @@
  (helm-ag . 4)
  (shell . 2)
  (magit-blame . 1)
- (package-list-packages . 1)
+ (package-list-packages . 2)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
