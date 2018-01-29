@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- magit-diff
- package-menu-mark-delete
- package-list-packages
- yas-minor-mode
  shell
- ecb-minor-mode
+ pwd
  minimap-mode
+ helm-ag
+ magit-log-branches
+ magit-log
+ magit-diff
 )
 
 ;; ----- smex-data -----
@@ -20,11 +20,11 @@
  (which-key-mode . 1)
  (ido-mode . 1)
  (ido-everywhere . 1)
- (minimap-mode . 8)
+ (minimap-mode . 10)
  (hide/show-comments . 1)
  (eshell . 1)
- (helm-ag . 12)
- (shell . 9)
+ (helm-ag . 18)
+ (shell . 11)
  (magit-blame . 1)
  (package-list-packages . 4)
  (skewer-mode . 1)
@@ -42,4 +42,7 @@
  (ssh-config-mode . 2)
  (yas-minor-mode . 1)
  (package-menu-mark-delete . 2)
+ (magit-log . 1)
+ (magit-log-branches . 1)
+ (pwd . 7)
 )
