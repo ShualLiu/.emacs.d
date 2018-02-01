@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ package-list-packages
  shell
  pwd
  minimap-mode
  helm-ag
  magit-log-branches
  magit-log
- magit-diff
 )
 
 ;; ----- smex-data -----
@@ -26,7 +26,7 @@
  (helm-ag . 18)
  (shell . 11)
  (magit-blame . 1)
- (package-list-packages . 4)
+ (package-list-packages . 5)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
