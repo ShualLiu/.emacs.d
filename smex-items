@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
+ magit-diff
+ magit-diff-buffer-file-popup
+ package-install
  shell
- pwd
- minimap-mode
- helm-ag
- magit-log-branches
- magit-log
+ gotests
+ package-list-packages
+ revert-buffer
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 11)
+ (package-install . 14)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -23,10 +23,10 @@
  (minimap-mode . 10)
  (hide/show-comments . 1)
  (eshell . 1)
- (helm-ag . 18)
- (shell . 11)
+ (helm-ag . 20)
+ (shell . 20)
  (magit-blame . 1)
- (package-list-packages . 5)
+ (package-list-packages . 6)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
@@ -38,11 +38,15 @@
  (customize-group . 1)
  (helm-swoop . 3)
  (gofmt . 1)
- (magit-diff . 2)
+ (magit-diff . 3)
  (ssh-config-mode . 2)
  (yas-minor-mode . 1)
  (package-menu-mark-delete . 2)
  (magit-log . 1)
  (magit-log-branches . 1)
- (pwd . 7)
+ (pwd . 8)
+ (gotests-region . 2)
+ (revert-buffer . 2)
+ (gotests . 2)
+ (magit-diff-buffer-file-popup . 1)
 )
