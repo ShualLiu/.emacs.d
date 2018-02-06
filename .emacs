@@ -199,5 +199,6 @@ static char *gnus-pointer[] = {
 (require 'sublimity)
 (require 'sublimity-scroll)
 (sublimity-mode 1)
-
 (defalias 'yes-or-no-p 'y-or-n-p)
+(global-hl-todo-mode)
+(global-diff-hl-mode)
