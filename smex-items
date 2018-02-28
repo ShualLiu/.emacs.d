@@ -3,11 +3,11 @@
 (
  helm-ag
  helm-swoop
- package-delete
  helm-google
  package-list-packages
  magit-log-branches
  magit-blame
+ shell
 )
 
 ;; ----- smex-data -----
