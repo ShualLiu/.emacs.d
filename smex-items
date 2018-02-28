@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ helm-ag
+ helm-swoop
+ package-delete
+ helm-google
+ package-list-packages
  magit-log-branches
  magit-blame
- ediff
- magit-branch
- set-fill-column
- clang-format
- package-install
 )
 
 ;; ----- smex-data -----
@@ -23,10 +23,10 @@
  (minimap-mode . 10)
  (hide/show-comments . 1)
  (eshell . 1)
- (helm-ag . 35)
+ (helm-ag . 37)
  (shell . 32)
  (magit-blame . 2)
- (package-list-packages . 8)
+ (package-list-packages . 10)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
@@ -36,7 +36,7 @@
  (dired . 1)
  (ecb-minor-mode . 6)
  (customize-group . 1)
- (helm-swoop . 3)
+ (helm-swoop . 4)
  (gofmt . 1)
  (magit-diff . 3)
  (ssh-config-mode . 2)
@@ -57,4 +57,6 @@
  (clang-format . 1)
  (set-fill-column . 1)
  (ediff . 1)
+ (package-delete . 21)
+ (helm-google . 1)
 )

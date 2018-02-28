@@ -1,0 +1,10 @@
+/home/shual/go/src/k8s.io/client-go/listers/apps/v1beta2/statefulset.go
+/home/shual/go/src/k8s.io/client-go/listers/apps/v1beta2/#statefulset.go#
+/home/shual/go/src/k8s.io/api/core/v1/types.go
+/home/shual/go/src/k8s.io/api/core/v1/#types.go#
+/home/shual/go/src/k8s.io/api/core/v1/resource.go
+/home/shual/go/src/k8s.io/api/core/v1/#resource.go#
+/home/shual/go/src/k8s.io/apimachinery/pkg/labels/labels.go
+/home/shual/go/src/k8s.io/apimachinery/pkg/labels/#labels.go#
+/home/shual/go/src/k8s.io/apimachinery/README.md
+/home/shual/go/src/k8s.io/apimachinery/#README.md#

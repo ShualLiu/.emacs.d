@@ -1,4 +1,4 @@
-(global-set-key [f11] 'toggle-frame-maximized)
+(setq gc-cons-threshold 200000000)
 
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
@@ -6,6 +6,7 @@
        (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
   (add-to-list 'package-archives (cons "melpa" url) t))
 (package-initialize)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -106,7 +107,7 @@ static char *gnus-pointer[] = {
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (google-translate helm-google google-this clang-format pdf-tools org-pdfview yaml-mode which-key sublimity ssh-config-mode spacemacs-theme solarized-theme skewer-mode rainbow-delimiters protobuf-mode popwin nginx-mode move-text minimap markdown-preview-mode magit linum-relative json-reformat hl-todo highlight-symbol highlight-numbers highlight-indentation highlight-function-calls highlight-defined hide-comnt helm-swoop helm-smex helm-projectile helm-git-grep helm-fuzzy-find helm-ag govet goto-last-change gotest golint go-snippets go-guru go-complete go-autocomplete fuzzy-match fuzzy-format fuzzy flycheck exec-path-from-shell evil-nerd-commenter evil ecb dockerfile-mode dired-sort dired-details+ dired+ diff-hl bind-key autopair auto-complete-c-headers anzu alect-themes ace-window)))
+    (google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-smex helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil ecb dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -151,56 +152,3 @@ static char *gnus-pointer[] = {
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 158 :width normal)))))
-
-(require 'go-autocomplete)
-(ac-config-default)
-(ac-set-trigger-key "TAB")
-(yas-global-mode 1)
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(autopair-global-mode)
-(projectile-global-mode)
-(require 'helm-config)
-(helm-mode 1)
-(go-guru-hl-identifier-mode)
-(add-hook 'go-mode-hook
-	  (lambda ()
-	    (add-hook 'before-save-hook 'gofmt-before-save)))
-(global-set-key (kbd "M-p") 'ace-window)
-(global-set-key [f12] 'ecb-minor-mode)
-(global-set-key [f5] #'(lambda () (interactive) (revert-buffer t t nil)))
-(add-to-list 'load-path "/home/shual/.emacs.d/gotests")
-(require 'gotests)
-(require 'highlight-symbol)
-(global-hl-line-mode)
-(global-undo-tree-mode)
-(exec-path-from-shell-initialize)
-(move-text-default-bindings)
-(defun my:ac-c-headers-init ()
-  (require 'auto-complete-c-headers)
-  (add-to-list 'ac-sources 'ac-source-c-headers))
-(add-hook 'c++-mode-hook 'my:ac-c-headers-init)
-(add-hook 'c-mode-hook 'my:ac-c-headers-init)
-
-(global-set-key [(control ?.)] 'goto-last-change)
-(global-set-key [(control ?,)] 'goto-last-change-reverse)
-(sublimity-mode 1)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) 
-
-(global-anzu-mode +1)
-(set-face-attribute 'anzu-mode-line nil
-                    :foreground "yellow" :weight 'bold)
-
-(define-key isearch-mode-map [remap isearch-query-replace]  #'anzu-isearch-query-replace)
-(define-key isearch-mode-map [remap isearch-query-replace-regexp] #'anzu-isearch-query-replace-regexp)
-(which-key-mode)
-;;(require 'popwin)
-;;(popwin-mode 1)
-(require 'sublimity)
-(require 'sublimity-scroll)
-(sublimity-mode 1)
-(defalias 'yes-or-no-p 'y-or-n-p)
-(global-hl-todo-mode)
-(global-diff-hl-mode)
