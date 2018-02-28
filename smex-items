@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- package-install
+ magit-log-branches
+ magit-blame
+ ediff
  magit-branch
- global-hl-todo-mode
- helm-ag
- pwd
- shell
- magit-log
+ set-fill-column
+ clang-format
+ package-install
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 15)
+ (package-install . 21)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -24,9 +24,9 @@
  (hide/show-comments . 1)
  (eshell . 1)
  (helm-ag . 35)
- (shell . 26)
- (magit-blame . 1)
- (package-list-packages . 6)
+ (shell . 32)
+ (magit-blame . 2)
+ (package-list-packages . 8)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
@@ -43,7 +43,7 @@
  (yas-minor-mode . 1)
  (package-menu-mark-delete . 2)
  (magit-log . 3)
- (magit-log-branches . 1)
+ (magit-log-branches . 4)
  (pwd . 9)
  (gotests-region . 4)
  (revert-buffer . 2)
@@ -51,5 +51,10 @@
  (magit-diff-buffer-file-popup . 1)
  (dired-tree-up . 3)
  (global-hl-todo-mode . 1)
- (magit-branch . 1)
+ (magit-branch . 2)
+ (pdf-virtual-view-mode . 1)
+ (pdf-tools-install . 2)
+ (clang-format . 1)
+ (set-fill-column . 1)
+ (ediff . 1)
 )

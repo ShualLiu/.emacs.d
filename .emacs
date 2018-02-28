@@ -26,6 +26,7 @@
  '(custom-safe-themes
    (quote
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(delete-selection-mode nil)
  '(diary-entry-marker (quote font-lock-variable-name-face))
  '(ecb-options-version "2.50")
  '(emms-mode-line-icon-image-cache
@@ -100,11 +101,12 @@ static char *gnus-pointer[] = {
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
  '(inhibit-startup-screen t)
  '(magit-diff-use-overlays nil)
- ;;'(minimap-mode t)
- ;;'(minimap-window-location (quote right))
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
+ '(package-selected-packages
+   (quote
+    (google-translate helm-google google-this clang-format pdf-tools org-pdfview yaml-mode which-key sublimity ssh-config-mode spacemacs-theme solarized-theme skewer-mode rainbow-delimiters protobuf-mode popwin nginx-mode move-text minimap markdown-preview-mode magit linum-relative json-reformat hl-todo highlight-symbol highlight-numbers highlight-indentation highlight-function-calls highlight-defined hide-comnt helm-swoop helm-smex helm-projectile helm-git-grep helm-fuzzy-find helm-ag govet goto-last-change gotest golint go-snippets go-guru go-complete go-autocomplete fuzzy-match fuzzy-format fuzzy flycheck exec-path-from-shell evil-nerd-commenter evil ecb dockerfile-mode dired-sort dired-details+ dired+ diff-hl bind-key autopair auto-complete-c-headers anzu alect-themes ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -148,7 +150,7 @@ static char *gnus-pointer[] = {
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 151 :width normal)))))
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 158 :width normal)))))
 
 (require 'go-autocomplete)
 (ac-config-default)
