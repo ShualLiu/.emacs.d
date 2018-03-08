@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ pwd
+ password-reset
  helm-ag
- helm-swoop
- helm-google
- package-list-packages
- magit-log-branches
- magit-blame
  shell
+ magit-blame
+ list-coding-systems
+ man
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 21)
+ (package-install . 22)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -23,9 +23,9 @@
  (minimap-mode . 10)
  (hide/show-comments . 1)
  (eshell . 1)
- (helm-ag . 37)
- (shell . 32)
- (magit-blame . 2)
+ (helm-ag . 59)
+ (shell . 37)
+ (magit-blame . 6)
  (package-list-packages . 10)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
@@ -38,13 +38,13 @@
  (customize-group . 1)
  (helm-swoop . 4)
  (gofmt . 1)
- (magit-diff . 3)
+ (magit-diff . 4)
  (ssh-config-mode . 2)
  (yas-minor-mode . 1)
  (package-menu-mark-delete . 2)
  (magit-log . 3)
  (magit-log-branches . 4)
- (pwd . 9)
+ (pwd . 17)
  (gotests-region . 4)
  (revert-buffer . 2)
  (gotests . 2)
@@ -57,6 +57,11 @@
  (clang-format . 1)
  (set-fill-column . 1)
  (ediff . 1)
- (package-delete . 21)
+ (package-delete . 26)
  (helm-google . 1)
+ (helm-find . 2)
+ (magit-diff-while-committing . 1)
+ (man . 1)
+ (list-coding-systems . 1)
+ (password-reset . 1)
 )
