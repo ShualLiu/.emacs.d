@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ package-list-packages
+ package-install
  helm-swoop
  pwd
  rename-file
  revert-buffer
  make-directory
- shell
- helm-ag
 )
 
 ;; ----- smex-data -----
 (
  (cd . 1)
- (package-install . 24)
+ (package-install . 30)
  (server-start . 2)
  (server-mode . 3)
  (server-force-delete . 1)
@@ -26,7 +26,7 @@
  (helm-ag . 63)
  (shell . 43)
  (magit-blame . 6)
- (package-list-packages . 10)
+ (package-list-packages . 11)
  (skewer-mode . 1)
  (skewer-bower-load . 1)
  (run-skewer . 1)
