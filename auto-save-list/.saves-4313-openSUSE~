@@ -1,0 +1,14 @@
+/home/shual/go/src/k8s.io/kubernetes/pkg/apis/componentconfig/types.go
+/home/shual/go/src/k8s.io/kubernetes/pkg/apis/componentconfig/#types.go#
+/home/shual/go/src/k8s.io/kubernetes/plugin/cmd/kube-scheduler/app/options/options.go
+/home/shual/go/src/k8s.io/kubernetes/plugin/cmd/kube-scheduler/app/options/#options.go#
+/home/shual/go/src/k8s.io/kubernetes/staging/src/k8s.io/apimachinery/pkg/conversion/converter.go
+/home/shual/go/src/k8s.io/kubernetes/staging/src/k8s.io/apimachinery/pkg/conversion/#converter.go#
+/home/shual/go/src/k8s.io/kubernetes/staging/src/k8s.io/apimachinery/pkg/runtime/scheme.go
+/home/shual/go/src/k8s.io/kubernetes/staging/src/k8s.io/apimachinery/pkg/runtime/#scheme.go#
+/home/shual/go/src/k8s.io/kubernetes/pkg/apis/componentconfig/v1alpha1/types.go
+/home/shual/go/src/k8s.io/kubernetes/pkg/apis/componentconfig/v1alpha1/#types.go#
+/home/shual/go/src/k8s.io/kubernetes/plugin/cmd/kube-scheduler/scheduler.go
+/home/shual/go/src/k8s.io/kubernetes/plugin/cmd/kube-scheduler/#scheduler.go#
+/home/shual/go/src/k8s.io/kubernetes/.generated_files
+/home/shual/go/src/k8s.io/kubernetes/#.generated_files#
