@@ -102,7 +102,7 @@ static char *gnus-pointer[] = {
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-smex helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil ecb dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
+    (google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -149,7 +149,7 @@ static char *gnus-pointer[] = {
  '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 158 :width normal)))))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
-(add-to-list 'load-path "/home/shual/.emacs.d/gotests")
+(add-to-list 'load-path "/home/aiken/.emacs.d/gotests")
 
 ;;(helm-mode)
 (sublimity-mode)
@@ -177,11 +177,6 @@ static char *gnus-pointer[] = {
 ;;sublimity
 (require 'sublimity)
 (require 'sublimity-scroll)
-;;smex
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) 
 ;;(defun my:ac-c-headers-init ()
 ;;  (require 'auto-complete-c-headers)
 ;;  (add-to-list 'ac-sources 'ac-source-c-headers))
