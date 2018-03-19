@@ -1,5 +1,4 @@
 (setq gc-cons-threshold 200000000)
-
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -106,7 +105,7 @@ static char *gnus-pointer[] = {
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (protobuf-mode fill-column-indicator diminish anzu gh-md google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
+    (eclim protobuf-mode fill-column-indicator diminish anzu gh-md google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -151,6 +150,11 @@ static char *gnus-pointer[] = {
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 158 :width normal)))))
+
+(setq eclimd-autostart t)
+(defun my-java-mode-hook ()
+  (eclim-mode t))
+(add-hook 'java-mode-hook 'my-java-mode-hook)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (add-to-list 'load-path "/home/aiken/.emacs.d/gotests")
