@@ -8,6 +8,10 @@
 (package-initialize)
 
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(anzu-deactivate-region t)
  '(anzu-mode-lighter "")
  '(anzu-replace-threshold 50)
@@ -102,7 +106,7 @@ static char *gnus-pointer[] = {
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
+    (protobuf-mode fill-column-indicator diminish anzu gh-md google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -154,6 +158,7 @@ static char *gnus-pointer[] = {
 ;;(helm-mode)
 (sublimity-mode)
 (yas-global-mode)
+(global-anzu-mode)
 (global-hl-todo-mode)
 (global-hl-line-mode)
 (autopair-global-mode)

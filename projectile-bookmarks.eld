@@ -1,0 +1,1 @@
+("~/go/src/github.com/nats-io/gnatsd/" "~/.emacs.d/" "~/go/src/github.com/nats-io/go-nats/" "~/go/src/k8s.io/kubernetes/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-logging/")
