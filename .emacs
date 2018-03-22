@@ -157,7 +157,7 @@ static char *gnus-pointer[] = {
 (add-hook 'java-mode-hook 'my-java-mode-hook)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
-(add-to-list 'load-path "/home/aiken/.emacs.d/gotests")
+(add-to-list 'load-path "/home/shual/.emacs.d/gotests")
 
 ;;(helm-mode)
 (sublimity-mode)
