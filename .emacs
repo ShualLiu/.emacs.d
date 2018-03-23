@@ -22,7 +22,7 @@
  '(cua-normal-cursor-color "#657b83")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (spacemacs-light)))
+ '(custom-enabled-themes (quote (solarized-dark)))
  '(custom-safe-themes
    (quote
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
@@ -48,7 +48,7 @@ static char *note[] = {
 \"#..######.\",
 \"#######...\",
 \"######....\",
-\"#######..#\" };")))
+\"#######..#\" };")) t)
  '(fci-rule-color "#f6f0e1")
  '(global-linum-mode t)
  '(gnus-logo-colors (quote ("#259ea2" "#adadad")))
@@ -105,7 +105,7 @@ static char *gnus-pointer[] = {
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (eclim protobuf-mode fill-column-indicator diminish anzu gh-md google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
+    (gitignore-mode gitconfig-mode gitconfig magit-gh-pulls nyan-mode emms smart-mode-line lua-mode eclim protobuf-mode fill-column-indicator diminish anzu gh-md google-translate helm-google google-this clang-format org-pdfview yaml-mode sublimity spacemacs-theme solarized-theme skewer-mode rainbow-delimiters nginx-mode move-text minimap markdown-preview-mode magit json-reformat hl-todo hide-comnt helm-swoop helm-projectile helm-git-grep helm-ag gotest go-snippets go-guru go-complete go-autocomplete flycheck evil-nerd-commenter evil dockerfile-mode diff-hl bind-key autopair auto-complete-c-headers ace-window)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -159,10 +159,10 @@ static char *gnus-pointer[] = {
 (defalias 'yes-or-no-p 'y-or-n-p)
 (add-to-list 'load-path "/home/aiken/.emacs.d/gotests")
 
-;;(helm-mode)
+(helm-mode)
 (sublimity-mode)
 (yas-global-mode)
-(global-anzu-mode)
+;;(global-anzu-mode)
 (global-hl-todo-mode)
 (global-hl-line-mode)
 (autopair-global-mode)
@@ -177,7 +177,6 @@ static char *gnus-pointer[] = {
 	  (lambda ()
 	    (add-hook 'before-save-hook 'gofmt-before-save)))
 (global-set-key (kbd "M-p") 'ace-window)
-(global-set-key [f11] 'toggle-frame-maximized)
 
 (ac-config-default)
 (ac-set-trigger-key "TAB")
@@ -191,3 +190,7 @@ static char *gnus-pointer[] = {
 ;;  (add-to-list 'ac-sources 'ac-source-c-headers))
 ;;(add-hook 'c++-mode-hook 'my:ac-c-headers-init)
 ;;(add-hook 'c-mode-hook 'my:ac-c-headers-init)
+(sml/setup)
+(nyan-mode)
+(require 'magit-gh-pulls)
+(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
