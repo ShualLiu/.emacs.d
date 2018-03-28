@@ -1,0 +1,1 @@
+("~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/" "~/.emacs.d/")
