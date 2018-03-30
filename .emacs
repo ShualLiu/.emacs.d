@@ -16,7 +16,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+    (gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -53,3 +53,6 @@
 (global-linum-mode)
 (eval-after-load 'go-mode
   '(substitute-key-definition 'go-import-add 'helm-go-package go-mode-map))
+;;(setq sunshine-location "Chengdu, CN")
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'gotests)
