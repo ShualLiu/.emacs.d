@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/" "~/go/src/github.com/astaxie/beego/" "~/go/src/k8s.io/kubernetes/" "~/github/golang/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-logging/")
+("~/.emacs.d/" "~/go/src/k8s.io/kubernetes/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/" "~/github/struts-examples/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-logging/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-web/" "~/go/src/github.com/astaxie/beego/" "~/github/golang/")
