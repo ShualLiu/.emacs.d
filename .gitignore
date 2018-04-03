@@ -43,3 +43,6 @@ flycheck_*.el
 
 # directory configuration
 .dir-locals.el
+
+ac-comphist.dat
+projectile-bookmarks.eld

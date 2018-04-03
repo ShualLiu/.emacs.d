@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/" "~/github/golang/")
+("~/.emacs.d/")
