@@ -6,6 +6,8 @@
 *.elc
 auto-save-list
 tramp
+ac-comphist.dat
+projectile-bookmarks.eld
 .\#*
 
 # Org-mode
@@ -43,6 +45,3 @@ flycheck_*.el
 
 # directory configuration
 .dir-locals.el
-
-ac-comphist.dat
-projectile-bookmarks.eld

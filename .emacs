@@ -11,13 +11,15 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(column-number-mode t)
  '(custom-enabled-themes (quote (light-blue)))
  '(delete-selection-mode nil)
- '(display-time-mode t)
+ '(imenu-list-size 0.3)
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (symon gotest ac-emacs-eclim eclim multiple-cursors imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+    (golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+ '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil))
@@ -40,45 +42,26 @@
 (go-guru-hl-identifier-mode)
 (require 'go-autocomplete)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
+(add-hook 'go-mode-hook
+	  (lambda ()
+	    (add-hook 'before-save-hook 'gofmt-before-save)))
 (global-set-key (kbd "M-p") 'ace-window)
 (ac-config-default)
 (move-text-default-bindings)
 (nyan-mode)
 (add-to-list 'load-path
-                "/home/aiken/.emacs.d/elpa/yasnippet-snippets-20180324.1124/snippets")
+                "~/.emacs.d/elpa/yasnippet-snippets-20180324.1124/snippets")
 (yas-global-mode)
 ;;NOTE how to type H key
 (global-set-key (kbd "M-[") #'aya-create)
 (global-set-key (kbd "M-]") #'aya-expand)
+(global-linum-mode)
 (eval-after-load 'go-mode
   '(substitute-key-definition 'go-import-add 'helm-go-package go-mode-map))
-
 ;;(setq sunshine-location "Chengdu, CN")
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/gotests")
 (require 'gotests)
-
-(global-linum-mode)
-(global-set-key (kbd "C-H-c C-H-c") 'mc/edit-lines)
-
-;; (require 'eclim)
-;; (setq eclimd-autostart t)
-;; (defun my-java-mode-hook ()
-;;     (eclim-mode t))
-;; (add-hook 'java-mode-hook 'my-java-mode-hook)
-
-;; (custom-set-variables
-;;   '(eclim-eclipse-dirs '("/home/aiken/Environment/eclipse"))
-;;   '(eclim-executable "/home/aiken/Environment/eclipse/eclimd"))
-;; ;; regular auto-complete initialization
-;; (require 'auto-complete-config)
-;; (ac-config-default)
-;; ;; add the emacs-eclim source
-;; ;;(require 'ac-emacs-eclim-source)
-;; (ac-emacs-eclim-config)
-(add-hook 'go-mode-hook
-	  (lambda ()
-	    (add-hook 'before-save-hook 'gofmt-before-save)))
 (which-function-mode)
-(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
 (symon-mode)
+(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
+(setq speedbar-use-images nil)
