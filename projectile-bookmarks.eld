@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/go/src/k8s.io/kubernetes/" "~/github/micro/" "~/github/golang/" "~/github/struts-examples/")
+("~/.emacs.d/" "~/go/src/github.com/muesli/cache2go/" "~/go/src/k8s.io/kubernetes/" "~/github/golang/" "~/github/micro/" "~/github/struts-examples/")
