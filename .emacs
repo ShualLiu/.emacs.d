@@ -12,13 +12,13 @@
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (light-blue)))
+ '(custom-enabled-themes (quote (adwaita)))
  '(delete-selection-mode nil)
  '(imenu-list-size 0.3)
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+    (ecb diminish smeargle golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -65,3 +65,13 @@
 (symon-mode)
 (global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
 (setq speedbar-use-images nil)
+(global-set-key (kbd "C-,") 'avy-goto-char)
+(global-set-key (kbd "C-.") 'avy-goto-char-2)
+
+(global-set-key (kbd "C-x v s") 'smeargle)
+(global-set-key (kbd "C-x v c") 'smeargle-commits)
+(global-hl-line-mode)
+;; (diminish 'undo-tree-mode)
+;; (diminish 'helm-mode)
+;; (diminish 'autopair-mode)
+;; (diminish 'which-function-mode)
