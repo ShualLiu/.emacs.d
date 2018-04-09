@@ -1,9 +1,9 @@
 ;;; f-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("f.el") (23155 17886 476991 662000))
+;;;### (autoloads nil nil ("f.el") (23230 24723 177082 717000))
 
 ;;;***
 

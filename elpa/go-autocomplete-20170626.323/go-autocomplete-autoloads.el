@@ -1,10 +1,10 @@
 ;;; go-autocomplete-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("go-autocomplete.el") (23045 54487 776800
-;;;;;;  342000))
+;;;### (autoloads nil nil ("go-autocomplete.el") (23225 45483 641389
+;;;;;;  110000))
 
 ;;;***
 

@@ -1,9 +1,10 @@
 ;;; go-guru-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "go-guru" "go-guru.el" (23045 54312 99817 778000))
+;;;### (autoloads nil "go-guru" "go-guru.el" (23225 45482 701371
+;;;;;;  192000))
 ;;; Generated autoloads from go-guru.el
 
 (autoload 'go-guru-set-scope "go-guru" "\

@@ -1,0 +1,16 @@
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/pluginscontroller.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/#pluginscontroller.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/apiscontroller.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/#apiscontroller.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/consumerscontroller.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/controllers/#consumerscontroller.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/consumers.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/#consumers.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/plugins.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/#plugins.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/apis.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/#apis.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/helpers.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/#helpers.go#
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/apis_test.go
+/home/aiken/go/src/git.ghostcloud.cn/ekos/ekos-plugin-apigateway/models/kong/#apis_test.go#

@@ -1,10 +1,10 @@
 ;;; move-text-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "move-text" "move-text.el" (23069 27752 647543
-;;;;;;  827000))
+;;;### (autoloads nil "move-text" "move-text.el" (23225 45474 725218
+;;;;;;  665000))
 ;;; Generated autoloads from move-text.el
 
 (autoload 'move-text--total-lines "move-text" "\
