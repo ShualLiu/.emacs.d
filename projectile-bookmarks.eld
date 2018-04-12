@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/go/src/github.com/muesli/cache2go/" "~/go/src/k8s.io/kubernetes/" "~/github/golang/" "~/github/micro/" "~/github/struts-examples/")
+("~/.emacs.d/" "~/go/src/k8s.io/kubernetes/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-paas/" "~/go/src/git.ghostcloud.cn/ekos/ekos-plugin-stack/" "~/go/src/github.com/muesli/cache2go/" "~/github/golang/" "~/github/micro/" "~/github/struts-examples/" "~/go/src/k8s.io/client-go/")
