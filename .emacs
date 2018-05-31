@@ -2,6 +2,29 @@
                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize) ;; You might already have this line
 
+;;(when (not package-archive-contents)
+;;    (package-refresh-contents))
+;;
+;;(unless (package-installed-p 'use-package)
+;;  (package-install 'use-package))
+
+;;(require 'use-package)
+;;(setq use-package-always-ensure t)
+;;(add-to-list 'load-path "~/.emacs.d/custom")
+;;(require 'setup-general)
+;;(if (version< emacs-version "24.4")
+;;    (require 'setup-ivy-counsel)
+;;  (require 'setup-helm)
+;;  (require 'setup-helm-gtags))
+;; (require 'setup-ggtags)
+;;(require 'setup-cedet)
+;;(require 'setup-editing)
+;; function-args
+;; (require 'function-args)
+;; (fa-config-default)
+;; (define-key c-mode-map  [(tab)] 'company-complete)
+;; (define-key c++-mode-map  [(tab)] 'company-complete)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -62,7 +85,7 @@
  '(org-src-block-faces (quote (("emacs-lisp" (:background "#F0FFF0")))))
  '(package-selected-packages
    (quote
-    (emacs-setup dtrt-indent clean-aindent-mode counsel-projectile volatile-highlights ws-butler zygospore helm-gtags company-go company-c-headers ggtags irony organic-green-theme oceanic-theme helm-emms emms emojify-logos emojify minimap diff-hl py-yapf importmagic ob-ipython ipython-shell-send flymake-python-pyflakes flycheck-pyflakes py-autopep8 jedi jsonnet-mode sage-shell-mode python-mode py-isort yapfify live-py-mode elpy pyenv-mode anaconda-mode pyvenv cmake-project cmake-ide cmake-mode helm-make pkgbuild-mode go-imports go-impl go-direx flycheck-gometalinter exec-path-from-shell google-translate monokai-theme solarized-theme evil git-link go-tag ecb diminish smeargle golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+    (iedit comment-dwim-2 emacs-setup dtrt-indent clean-aindent-mode counsel-projectile volatile-highlights ws-butler zygospore helm-gtags company-go company-c-headers ggtags irony organic-green-theme oceanic-theme helm-emms emms emojify-logos emojify minimap diff-hl py-yapf importmagic ob-ipython ipython-shell-send flymake-python-pyflakes flycheck-pyflakes py-autopep8 jedi jsonnet-mode sage-shell-mode python-mode py-isort yapfify live-py-mode elpy pyenv-mode anaconda-mode pyvenv cmake-project cmake-ide cmake-mode helm-make pkgbuild-mode go-imports go-impl go-direx flycheck-gometalinter exec-path-from-shell google-translate monokai-theme solarized-theme evil git-link go-tag ecb diminish smeargle golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(scroll-bar-mode nil)
@@ -141,7 +164,7 @@
 (add-to-list 'load-path "~/.emacs.d/gotests")
 (require 'gotests)
 (which-function-mode)
-(symon-mode)
+;;(symon-mode)
 (global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
 (setq speedbar-use-images nil)
 (global-set-key (kbd "C-,") 'avy-goto-char)
@@ -168,9 +191,18 @@
 ;; 	       (add-hook 'org-mode-hook 'emoji-cheat-sheet-plus-display-mode)
 ;; 	       ;; insert emoji with helm
 ;; 	       (global-set-key (kbd "C-c C-e") 'emoji-cheat-sheet-plus-insert)))
+;;(load-file "/home/maurice/.emacs.d/cedet/cedet-devel-load.el")
+(load-file (concat user-emacs-directory "/cedet/cedet-devel-load.el"))
+(load-file (concat user-emacs-directory "cedet/contrib/cedet-contrib-load.el"))
 
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
 
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
+;; Enable Semantic
+(semantic-mode 1)
 
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;; Enable EDE (Project Management) features
+(global-ede-mode 1)
