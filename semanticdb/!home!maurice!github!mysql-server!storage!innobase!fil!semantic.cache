@@ -1,0 +1,2935 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("my_config.h" include nil nil [1333 1355])
+            ("errno.h" include (:system-flag t) nil [1357 1375])
+            ("fcntl.h" include (:system-flag t) nil [1376 1394])
+            ("sys/types.h" include (:system-flag t) nil [1395 1417])
+            ("btr0btr.h" include nil nil [1419 1439])
+            ("buf0buf.h" include nil nil [1440 1460])
+            ("buf0flu.h" include nil nil [1461 1481])
+            ("clone0api.h" include nil nil [1482 1504])
+            ("dict0boot.h" include nil nil [1505 1527])
+            ("dict0dd.h" include nil nil [1528 1548])
+            ("dict0dict.h" include nil nil [1549 1571])
+            ("fsp0file.h" include nil nil [1572 1593])
+            ("fsp0fsp.h" include nil nil [1594 1614])
+            ("fsp0space.h" include nil nil [1615 1637])
+            ("fsp0sysspace.h" include nil nil [1638 1663])
+            ("ha_prototypes.h" include nil nil [1664 1690])
+            ("hash0hash.h" include nil nil [1691 1713])
+            ("log0recv.h" include nil nil [1714 1735])
+            ("mach0data.h" include nil nil [1736 1758])
+            ("mem0mem.h" include nil nil [1759 1779])
+            ("mtr0log.h" include nil nil [1780 1800])
+            ("my_dbug.h" include nil nil [1801 1821])
+            ("my_inttypes.h" include nil nil [1822 1846])
+            ("os0file.h" include nil nil [1847 1867])
+            ("page0zip.h" include nil nil [1868 1889])
+            ("srv0start.h" include nil nil [1890 1912])
+            ("buf0lru.h" include nil nil [1937 1957])
+            ("ibuf0ibuf.h" include nil nil [1958 1980])
+            ("os0event.h" include nil nil [1981 2002])
+            ("row0mysql.h" include nil nil [2003 2025])
+            ("sync0sync.h" include nil nil [2026 2048])
+            ("trx0purge.h" include nil nil [2049 2071])
+            ("os0thread-create.h" include nil nil [2170 2199])
+            ("current_thd.h" include nil nil [2201 2225])
+            ("ha_prototypes.h" include nil nil [2226 2252])
+            ("array" include (:system-flag t) nil [2254 2270])
+            ("fstream" include (:system-flag t) nil [2271 2289])
+            ("functional" include (:system-flag t) nil [2290 2311])
+            ("list" include (:system-flag t) nil [2312 2327])
+            ("mutex" include (:system-flag t) nil [2328 2344])
+            ("thread" include (:system-flag t) nil [2345 2362])
+            ("tuple" include (:system-flag t) nil [2363 2379])
+            ("unordered_map" include (:system-flag t) nil [2380 2404])
+            ("dd_fil" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("OBJECT_ID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2766 2776])
+                            ("SPACE_ID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2809 2818])
+                            ("SPACE_NAME" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2857 2868])
+                            ("OLD_PATH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2903 2912])
+                            ("NEW_PATH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2966 2976]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2735 2977]))                  
+                :type "namespace")
+                nil [2715 3138])
+            ("fil_space_t::s_sys_space" variable
+               (:pointer 1
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [3408 3446])
+            ("fil_space_t::s_redo_space" variable
+               (:pointer 1
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [3475 3514])
+            ("general_space_name" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"innodb_general\""
+                :type "char")
+                nil [8239 8290])
+            ("MySQL_datadir_path" variable (:type ("Fil_path" type (:type "class") nil nil)) nil [8339 8367])
+            ("Fil_path::s_null_path" variable (:type ("Fil_path" type (:type "class") nil nil)) nil [8421 8452])
+            ("dot_ext" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{\"\", \".ibd\", \".cfg\", \".cfp\"}"
+                :type "char")
+                nil [8491 8544])
+            ("fil_n_log_flushes" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [8590 8618])
+            ("fil_n_pending_log_flushes" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [8662 8698])
+            ("fil_n_pending_tablespace_flushes" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [8744 8787])
+            ("fil_n_file_opened" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [8827 8855])
+            ("fil_load_status" type
+               (:members 
+                  ( ("FIL_LOAD_OK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8936 8948])
+                    ("FIL_LOAD_ID_CHANGED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8997 9017])
+                    ("FIL_LOAD_NOT_FOUND" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9057 9076])
+                    ("FIL_LOAD_INVALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9116 9133])
+                    ("FIL_LOAD_MISMATCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9219 9238]))                  
+                :type "enum")
+                nil [8857 9239])
+            ("fil_operation_t" type
+               (:members 
+                  ( ("FIL_OPERATION_DELETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9347 9368])
+                    ("FIL_OPERATION_CLOSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9413 9434]))                  
+                :type "enum")
+                nil [9279 9435])
+            ("fil_addr_null" variable
+               (:default-value "{FIL_NULL, 0}"
+                :type ("fil_addr_t" type (:type "class") nil nil))
+                nil [9466 9507])
+            ("MAX_SCAN_THREADS" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "8"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9574 9615])
+            ("MAX_SHARDS" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "64"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9683 9719])
+            ("REDO_SHARD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "MAX_SHARDS - "
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9762 9810])
+            ("UNDO_SHARDS" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9853 9889])
+            ("UNDO_SHARDS_START" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "REDO_SHARD - (UNDO_SHARDS + 1"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9939 10010])
+            ("MAX_PAGES_TO_CHECK" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10386 10429])
+            ("EMPTY_OPEN_SLOT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "std::numeric_limits<size_t>::max()"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10468 10541])
+            ("mutex_acquire" variable (:constant-flag t) nil [10617 10630])
+            ("Char_Ptr_Hash" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10826 10842]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10808 10882]))                  
+                :type "struct")
+                nil [10690 10885])
+            ("Char_Ptr_Compare" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("lhs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11108 11124])
+                            ("rhs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11125 11141]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11092 11189]))                  
+                :type "struct")
+                nil [10916 11192])
+            ("Tablespace_files" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11270 11277])
+                    ("Tablespace_files" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :typemodifiers ("explicit")
+                        :arguments 
+                          ( ("dir" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11513 11536]))                          
+                        :type ("Tablespace_files" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11487 11537])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [11766 11801])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [11970 12425])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [12594 12969])
+                    ("clear" function (:type "void") (reparse-symbol classsubparts) [13013 13082])
+                    ("root" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("Fil_path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13109 13157])
+                    ("path" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13220 13278])
+                    ("real_path" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13340 13407])
+                    ("private" label nil (reparse-symbol classsubparts) [13410 13418])
+                    ("m_ibd_paths" variable (:type ("Paths" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13569 13587])
+                    ("m_undo_paths" variable (:type ("Paths" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13641 13660])
+                    ("m_dir" variable
+                       (:constant-flag t
+                        :type ("Fil_path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13727 13748]))                  
+                :type "class")
+                nil [11244 13751])
+            ("Tablespace_dirs" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13846 13853])
+                    ("Tablespace_dirs" function
+                       (:constructor-flag t
+                        :type ("Tablespace_dirs" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13946 14156])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [14369 14404])
+                    ("clear" function (:type "void") (reparse-symbol classsubparts) [14506 14600])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [14757 14919])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [15140 15380])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [15484 15864])
+                    ("get_dirs" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15986 16257])
+                    ("private" label nil (reparse-symbol classsubparts) [16260 16268])
+                    ("print_duplicates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("duplicates" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Space_id_set" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16410 16441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16388 16442])
+                    ("tokenize_paths" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16881 16904])
+                            ("delimiters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16905 16935]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16861 16936])
+                    ("Const_iter" variable
+                       (:default-value "Scanned_files::const_iterator"
+                        :type "int")
+                        (reparse-symbol classsubparts) [16946 16989])
+                    ("duplicate_check" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Const_iter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17319 17343])
+                            ("end" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Const_iter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17344 17366])
+                            ("thread_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17390 17407])
+                            ("mutex" variable
+                               (:pointer 1
+                                :type ("std::mutex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17408 17426])
+                            ("unique" variable
+                               (:pointer 1
+                                :type ("Space_id_set" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17450 17471])
+                            ("duplicates" variable
+                               (:pointer 1
+                                :type ("Space_id_set" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17472 17497]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17298 17498])
+                    ("private" label nil (reparse-symbol classsubparts) [17501 17509])
+                    ("m_dirs" variable (:type ("Scanned" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17578 17593])
+                    ("m_checked" variable (:type ("std::atomic_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17631 17660]))                  
+                :type "class")
+                nil [13821 17663])
+            ("fil_buffering_disabled" variable (:constant-flag t) nil [17746 17768])
+            ("Fil_shard" type
+               (:members 
+                  ( ("File_list" variable
+                       (:default-value "UT_LIST_BASE_NODE_T(fil_node_t)"
+                        :type "int")
+                        (reparse-symbol classsubparts) [17991 18035])
+                    ("Space_list" variable
+                       (:default-value "UT_LIST_BASE_NODE_T(fil_space_t)"
+                        :type "int")
+                        (reparse-symbol classsubparts) [18044 18090])
+                    ("public" label nil (reparse-symbol classsubparts) [18291 18298])
+                    ("Fil_shard" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :typemodifiers ("explicit")
+                        :arguments 
+                          ( ("shard_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18373 18389]))                          
+                        :type ("Fil_shard" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18354 18390])
+                    ("Fil_shard" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18414 18637])
+                    ("id" function
+                       (:methodconst-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18671 18707])
+                    ("acquire" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [18807 18816]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18794 18993])
+                    ("mutex_release" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19025 19077])
+                    ("m_mutex" variable
+                       (:typemodifiers ("mutable")
+                        :type ("ib_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19294 19321])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [19604 19887])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [20103 20358])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [20673 20708])
+                    ("remove_from_LRU" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20829 20846]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20808 20847])
+                    ("file_opened" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20971 20988]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20954 20989])
+                    ("open_system_tablespaces" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("max_n_open" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21162 21180])
+                            ("n_open" variable
+                               (:pointer 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21181 21196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21133 21197])
+                    ("close_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21352 21369])
+                            ("LRU_close" variable (:type "bool") (reparse-symbol arg-sub-list) [21370 21385]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21336 21386])
+                    ("close_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21542 21562]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21526 21563])
+                    ("file_close_to_free" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21732 21749])
+                            ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21750 21769]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21708 21770])
+                    ("close_log_files" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("free_all" variable (:type "bool") (reparse-symbol arg-sub-list) [21864 21878]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21843 21879])
+                    ("close_all_files" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21914 21937])
+                    ("space_detach" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22178 22197]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22160 22198])
+                    ("space_delete" function
+                       (:arguments 
+                          ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22317 22337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22299 22513])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [22840 22875])
+                    ("space_add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22997 23016]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22982 23017])
+                    ("prepare_to_free_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23191 23208]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23165 23209])
+                    ("remove_from_unflushed_list" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23413 23432]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23381 23433])
+                    ("complete_io" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23718 23735])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IORequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23736 23758]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23701 23759])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [24183 24218])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [24631 24666])
+                    ("update_space_name_map" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24840 24859])
+                            ("new_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [24860 24881]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [24813 24882])
+                    ("flush_file_redo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [24957 24980])
+                    ("flush_file_spaces" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("purpose" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25188 25204]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25165 25205])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [25488 25523])
+                    ("space_flush" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25847 25867]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25830 25868])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [26161 26196])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [26437 26472])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [26690 26725])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [27055 27090])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [27452 27499])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [28021 28056])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [28579 28614])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [28872 28907])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [29497 29532])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [30309 30344])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [31210 31245])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [32476 32511])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [32842 32877])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [33879 33914])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [34719 34754])
+                    ("space_free_low" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35439 35453])
+                            ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35453 35459]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [35412 35460])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [35607 35642])
+                    ("release_open_slot" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("shard_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35783 35799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [35753 35800])
+                    ("wait_for_io_to_stop" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36024 36049]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [35992 36050])
+                    ("private" label nil (reparse-symbol classsubparts) [36053 36061])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [36509 36544])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [36840 36875])
+                    ("write_completed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("fil_node_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37038 37055]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [37017 37056])
+                    ("add_to_unflushed_list" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37194 37213]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [37167 37214])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [37455 37502])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [37814 37855])
+                    ("redo_space_flush" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [37918 37942])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [38413 38448])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [38654 38689])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [39125 39160])
+                    ("private" label nil (reparse-symbol classsubparts) [39163 39171])
+                    ("m_id" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [39197 39215])
+                    ("m_spaces" variable (:type ("Spaces" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39273 39289])
+                    ("m_names" variable (:type ("Names" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39349 39363])
+                    ("m_LRU" variable (:type ("File_list" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39725 39741])
+                    ("m_unflushed_spaces" variable (:type ("Space_list" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39920 39950])
+                    ("m_modification_counter" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [40013 40044])
+                    ("s_n_open" variable
+                       (:typemodifiers ("static")
+                        :type ("std::atomic_size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [40089 40124])
+                    ("s_open_slot" variable
+                       (:typemodifiers ("static")
+                        :type ("std::atomic_size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [40183 40221])
+                    ("Fil_system" friend nil (reparse-symbol classsubparts) [40376 40400]))                  
+                :type "class")
+                nil [17965 40403])
+            ("Fil_system" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [40620 40627])
+                    ("Fil_system" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n_shards" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40811 40827])
+                            ("max_open" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40828 40844]))                          
+                        :type ("Fil_system" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [40800 40845])
+                    ("Fil_system" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [40869 40883])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [41192 41268])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [41539 41741])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [41922 41999])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [42228 42275])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [42582 42617])
+                    ("flush_file_redo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [42692 42715])
+                    ("flush_file_spaces" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("purpose" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42944 42960]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [42921 42961])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [43183 43462])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [43687 43813])
+                    ("set_maximum_space_id" function
+                       (:arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43932 43957]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [43906 44322])
+                    ("update_maximum_space_id" function
+                       (:arguments 
+                          ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44479 44499]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [44450 44643])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [44983 45018])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [45328 45363])
+                    ("open_all_system_tablespaces" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [45446 45481])
+                    ("close_files_in_a_shard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shard" variable
+                               (:pointer 1
+                                :type ("Fil_shard" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45604 45621]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [45576 45622])
+                    ("close_all_files" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [45657 45680])
+                    ("close_all_log_files" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("free_all" variable (:type "bool") (reparse-symbol arg-sub-list) [45810 45824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [45785 45825])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [46156 46191])
+                    ("encryption_rotate_in_a_shard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shard" variable
+                               (:pointer 1
+                                :type ("Fil_shard" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46380 46397]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [46346 46398])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [46528 46563])
+                    ("space_detach" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable
+                               (:pointer 1
+                                :type ("fil_space_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46804 46823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [46786 46824])
+                    ("get_max_space_id" function
+                       (:methodconst-flag t
+                        :type ("space_id_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [46876 46943])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [47121 47156])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [47353 47388])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [47761 47796])
+                    ("moved" function
+                       (:arguments 
+                          ( ("object_id" variable (:type ("dd::Object_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48079 48103])
+                            ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48104 48124])
+                            ("space_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [48138 48161])
+                            ("old_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48162 48190])
+                            ("new_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48204 48232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [48068 48364])
+                    ("check_path" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48504 48528]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [48488 48624])
+                    ("get_dirs" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [48746 48806])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [49049 49084])
+                    ("scan" function
+                       (:arguments 
+                          ( ("directories" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [49188 49219]))                          
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [49175 49264])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [49707 49742])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [49891 50436])
+                    ("mutex_acquire_all" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [50474 50664])
+                    ("mutex_release_all" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [50702 50892])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [51649 51684])
+                    ("free_scanned_files" function (:type "void") (reparse-symbol classsubparts) [51745 51790])
+                    ("private" label nil (reparse-symbol classsubparts) [52715 52723])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [53719 53754])
+                    ("private" label nil (reparse-symbol classsubparts) [53757 53765])
+                    ("m_shards" variable (:type ("Fil_shards" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53796 53816])
+                    ("m_max_n_open" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [53866 53892])
+                    ("m_max_assigned_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54112 54141])
+                    ("m_space_id_reuse_warned" variable (:type "bool") (reparse-symbol classsubparts) [54235 54264])
+                    ("m_moved" variable (:type ("dd_fil::Tablespaces" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54376 54404])
+                    ("m_dirs" variable (:type ("Tablespace_dirs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54459 54482])
+                    ("Fil_shard" friend nil (reparse-symbol classsubparts) [54643 54666]))                  
+                :type "class")
+                nil [40600 54669])
+            ("fil_system" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "nullptr"
+                :type ("Fil_system" type (:type "class") nil nil))
+                nil [54766 54806])
+            ("Fil_shard::s_n_open" variable (:type ("std::atomic_size_t" type (:type "class") nil nil)) nil [54843 54882])
+            ("Fil_shard::s_open_slot" variable (:type ("std::atomic_size_t" type (:type "class") nil nil)) nil [54925 54967])
+            ("MY_ATTRIBUTE" function
+               (:prototype-flag t
+                :type "int")
+                nil [55602 55637])
+            ("Fil_system" function
+               (:constructor-flag t
+                :parent "Fil_system"
+                :arguments 
+                  ( ("n_shards" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57581 57597])
+                    ("max_open" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57598 57614]))                  
+                :type ("Fil_system" type (:type "class") nil nil))
+                nil [57558 57931])
+            ("Fil_system" function
+               (:destructor-flag t
+                :parent "Fil_system"
+                :type "void")
+                nil [57951 58143])
+            ("space_belongs_in_LRU" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58333 58358]))                  
+                :type "bool")
+                nil [58295 58627])
+            ("Fil_shard" function
+               (:constructor-flag t
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("shard_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58699 58715]))                  
+                :type ("Fil_shard" type (:type "class") nil nil))
+                nil [58678 58946])
+            ("reserve_open_slot" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("shard_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59068 59084]))                  
+                :type "bool")
+                nil [59034 59192])
+            ("release_open_slot" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("shard_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59331 59347]))                  
+                :type "void")
+                nil [59297 59479])
+            ("space_add" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59606 59625]))                  
+                :type "void")
+                nil [59580 59876])
+            ("file_opened" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60005 60022]))                  
+                :type "void")
+                nil [59977 60280])
+            ("remove_from_LRU" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60406 60423]))                  
+                :type "void")
+                nil [60374 60659])
+            ("close_file" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60818 60838]))                  
+                :type "bool")
+                nil [60791 61233])
+            ("update_space_name_map" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61412 61431])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [61470 61491]))                  
+                :type "void")
+                nil [61374 61689])
+            ("is_undo_tablespace_name" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61878 61902]))                  
+                :type "bool")
+                nil [61839 62610])
+            ("add" function
+               (:parent "Tablespace_files"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62795 62815])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62816 62840]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [62766 63473])
+            ("fil_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64187 64212])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64213 64242])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64267 64285])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64286 64296])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [64297 64307]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [64163 64420])
+            ("fil_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65136 65161])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65162 65191])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65217 65235])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65236 65246])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [65247 65257]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [65111 65402])
+            ("fil_space_get" function
+               (:pointer 1
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65868 65888]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [65841 66073])
+            ("fil_space_get_latch" function
+               (:pointer 1
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66250 66270]))                  
+                :type ("rw_lock_t" type (:type "class") nil nil))
+                nil [66219 66463])
+            ("fil_space_set_imported" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67207 67227]))                  
+                :type "void")
+                nil [67179 67478])
+            ("space_is_flushed" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67715 67740]))                  
+                :type "bool")
+                nil [67682 67964])
+            ("create_node" function
+               (:pointer 1
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69108 69125])
+                    ("size" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69126 69141])
+                    ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69177 69196])
+                    ("is_raw" variable (:type "bool") (reparse-symbol arg-sub-list) [69197 69209])
+                    ("punch_hole" variable (:type "bool") (reparse-symbol arg-sub-list) [69245 69261])
+                    ("atomic_write" variable (:type "bool") (reparse-symbol arg-sub-list) [69262 69280])
+                    ("max_pages" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69316 69336]))                  
+                :type ("fil_node_t" type (:type "class") nil nil))
+                nil [69073 71208])
+            ("fil_node_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71736 71753])
+                    ("size" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71754 71769])
+                    ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71770 71789])
+                    ("is_raw" variable (:type "bool") (reparse-symbol arg-sub-list) [71812 71824])
+                    ("atomic_write" variable (:type "bool") (reparse-symbol arg-sub-list) [71825 71843])
+                    ("max_pages" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71844 71864]))                  
+                :type "char")
+                nil [71714 72168])
+            ("get_file_size" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72589 72606])
+                    ("read_only_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [72607 72627]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [72556 77494])
+            ("open_file" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77744 77761])
+                    ("extend" variable (:type "bool") (reparse-symbol arg-sub-list) [77762 77774]))                  
+                :type "bool")
+                nil [77718 79651])
+            ("close_file" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79809 79826])
+                    ("LRU_close" variable (:type "bool") (reparse-symbol arg-sub-list) [79827 79842]))                  
+                :type "void")
+                nil [79782 80400])
+            ("close_files_in_LRU" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("print_info" variable (:type "bool") (reparse-symbol arg-sub-list) [80645 80661]))                  
+                :type "bool")
+                nil [80610 81669])
+            ("close_file_in_all_LRU" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("print_info" variable (:type "bool") (reparse-symbol arg-sub-list) [81888 81904]))                  
+                :type "bool")
+                nil [81849 82238])
+            ("wait_for_io_to_stop" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82456 82481]))                  
+                :type "void")
+                nil [82420 83236])
+            ("get_reserved_space" function
+               (:pointer 1
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83653 83673]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [83610 83949])
+            ("mutex_acquire_and_get_space" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84309 84329])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84374 84388])
+                    ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84388 84394]))                  
+                :type "bool")
+                nil [84265 87069])
+            ("prepare_to_free_file" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87246 87263]))                  
+                :type "void")
+                nil [87209 87490])
+            ("file_close_to_free" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87660 87677])
+                    ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87678 87697]))                  
+                :type "void")
+                nil [87625 88519])
+            ("space_detach" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88761 88780]))                  
+                :type "void")
+                nil [88732 89182])
+            ("space_free_low" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89382 89396])
+                    ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89396 89402]))                  
+                :type "void")
+                nil [89351 89753])
+            ("space_free" function
+               (:pointer 1
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90052 90072]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [90017 90270])
+            ("fil_space_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90600 90620])
+                    ("x_latched" variable (:type "bool") (reparse-symbol arg-sub-list) [90621 90636]))                  
+                :type "bool")
+                nil [90573 90964])
+            ("space_create" function
+               (:pointer 1
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91487 91504])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91505 91525])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91563 91575])
+                    ("purpose" variable (:type ("fil_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91576 91595]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [91450 93287])
+            ("fil_space_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93795 93812])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93813 93833])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93864 93876])
+                    ("purpose" variable (:type ("fil_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93877 93896]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [93765 94977])
+            ("assign_new_space_id" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("space_id" variable
+                       (:pointer 1
+                        :type ("space_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95292 95313]))                  
+                :type "bool")
+                nil [95255 96506])
+            ("fil_assign_new_space_id" function
+               (:arguments 
+                  ( ("space_id" variable
+                       (:pointer 1
+                        :type ("space_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96813 96834]))                  
+                :type "bool")
+                nil [96784 96892])
+            ("space_load" function
+               (:pointer 1
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97194 97214]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [97159 98419])
+            ("fil_space_get_first_path" function
+               (:pointer 1
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98733 98753]))                  
+                :type "char")
+                nil [98702 99095])
+            ("fil_space_get_size" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99299 99319]))                  
+                :type ("page_no_t" type (:type "class") nil nil))
+                nil [99270 99543])
+            ("fil_space_get_flags" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99772 99792]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [99746 100052])
+            ("space_open" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100250 100270]))                  
+                :type "bool")
+                nil [100223 100489])
+            ("fil_space_open" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100680 100700]))                  
+                :type "bool")
+                nil [100660 100876])
+            ("fil_space_close" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100989 101009]))                  
+                :type "void")
+                nil [100968 101143])
+            ("fil_space_get_page_size" function
+               (:constant-flag t
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101417 101437])
+                    ("found" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [101438 101450]))                  
+                :type ("page_size_t" type (:type "class") nil nil))
+                nil [101375 101645])
+            ("fil_init" function
+               (:arguments 
+                  ( ("max_n_open" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101760 101777]))                  
+                :type "void")
+                nil [101746 102195])
+            ("open_system_tablespaces" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("max_n_open" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102382 102400])
+                    ("n_open" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102401 102416]))                  
+                :type "void")
+                nil [102342 103089])
+            ("open_all_system_tablespaces" function
+               (:parent "Fil_system"
+                :type "void")
+                nil [103166 103333])
+            ("fil_open_log_and_system_tablespace_files" function (:type "void") nil [103719 103815])
+            ("close_all_files" function
+               (:parent "Fil_shard"
+                :type "void")
+                nil [103846 104521])
+            ("close_all_files" function
+               (:parent "Fil_system"
+                :type "void")
+                nil [104552 104714])
+            ("fil_close_all_files" function (:type "void") nil [104825 104886])
+            ("close_log_files" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("free_all" variable (:type "bool") (reparse-symbol arg-sub-list) [104995 105009]))                  
+                :type "void")
+                nil [104963 105694])
+            ("close_all_log_files" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("free_all" variable (:type "bool") (reparse-symbol arg-sub-list) [105826 105840]))                  
+                :type "void")
+                nil [105789 105918])
+            ("fil_close_log_files" function
+               (:arguments 
+                  ( ("free_all" variable (:type "bool") (reparse-symbol arg-sub-list) [106109 106123]))                  
+                :type "void")
+                nil [106084 106172])
+            ("iterate" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("include_log" variable (:type "bool") (reparse-symbol arg-sub-list) [106451 106468])
+                    ("f" variable
+                       (:reference 1
+                        :type ("Fil_iterator::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106469 106495]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [106424 106989])
+            ("iterate" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("include_log" variable (:type "bool") (reparse-symbol arg-sub-list) [107278 107295])
+                    ("f" variable
+                       (:reference 1
+                        :type ("Fil_iterator::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107296 107322]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [107250 107492])
+            ("iterate" function
+               (:parent "Fil_iterator"
+                :arguments 
+                  ( ("include_log" variable (:type "bool") (reparse-symbol arg-sub-list) [107774 107791])
+                    ("" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107792 107803])
+                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107803 107805]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [107744 107857])
+            ("fil_set_max_space_id_if_bigger" function
+               (:arguments 
+                  ( ("max_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108039 108057]))                  
+                :type "void")
+                nil [108003 108199])
+            ("fil_write_flushed_lsn" function
+               (:arguments 
+                  ( ("lsn" variable (:type ("lsn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108385 108395]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [108355 108966])
+            ("fil_space_acquire_low" function
+               (:pointer 1
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109334 109354])
+                    ("silent" variable (:type "bool") (reparse-symbol arg-sub-list) [109355 109367]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [109292 109752])
+            ("fil_space_acquire" function
+               (:pointer 1
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110043 110063]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [110012 110118])
+            ("fil_space_acquire_silent" function
+               (:pointer 1
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110397 110417]))                  
+                :type ("fil_space_t" type (:type "class") nil nil))
+                nil [110359 110471])
+            ("fil_space_release" function
+               (:arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110603 110622]))                  
+                :type "void")
+                nil [110580 110840])
+            ("space_check_pending_operations" function
+               (:methodconst-flag t
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111049 111068])
+                    ("count" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111117 111129]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [111001 111365])
+            ("check_pending_io" function
+               (:methodconst-flag t
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111588 111613])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111648 111671])
+                    ("count" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111672 111684]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [111554 112157])
+            ("space_check_pending_operations" function
+               (:methodconst-flag t
+                :parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112422 112442])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112493 112507])
+                    ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112507 112513])
+                    ("path" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112564 112576]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [112372 113628])
+            ("get_real_path" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113894 113918]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [113858 114579])
+            ("Tablespace_files" function
+               (:constructor-flag t
+                :parent "Tablespace_files"
+                :arguments 
+                  ( ("dir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114686 114709]))                  
+                :type ("Tablespace_files" type (:type "class") nil nil))
+                nil [114651 114806])
+            ("fil_close_tablespace" function
+               (:arguments 
+                  ( ("trx" variable
+                       (:pointer 1
+                        :type ("trx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115081 115092])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115093 115113]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [115052 116830])
+            ("fil_op_write_log" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("mlog_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117306 117321])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117322 117342])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117372 117389])
+                    ("new_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117390 117411])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117441 117453])
+                    ("mtr" variable
+                       (:pointer 1
+                        :type ("mtr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117454 117465]))                  
+                :type "void")
+                nil [117277 118647])
+            ("fil_system_open_fetch" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118877 118897]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [118843 119007])
+            ("space_delete" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119503 119523])
+                    ("buf_remove" variable (:type ("buf_remove_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119524 119548]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [119471 123076])
+            ("fil_delete_tablespace" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123540 123560])
+                    ("buf_remove" variable (:type ("buf_remove_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123561 123585]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [123510 123694])
+            ("space_prepare_for_truncate" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123962 123982]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [123916 124248])
+            ("space_truncate" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124455 124475])
+                    ("size_in_pages" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124476 124500]))                  
+                :type "bool")
+                nil [124424 125741])
+            ("fil_truncate_tablespace" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125946 125966])
+                    ("size_in_pages" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125967 125991]))                  
+                :type "bool")
+                nil [125917 126105])
+            ("fil_discard_tablespace" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127896 127916]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [127865 128426])
+            ("fil_name_write_rename" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128673 128693])
+                    ("old_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128694 128715])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128750 128771])
+                    ("mtr" variable
+                       (:pointer 1
+                        :type ("mtr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128772 128783]))                  
+                :type "void")
+                nil [128639 129267])
+            ("make" function
+               (:pointer 1
+                :parent "Fil_path"
+                :arguments 
+                  ( ("path_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129783 129810])
+                    ("name_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129811 129838])
+                    ("ext" variable (:type ("ib_file_suffix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129860 129879])
+                    ("trim" variable (:type "bool") (reparse-symbol arg-sub-list) [129880 129890]))                  
+                :type "char")
+                nil [129762 131860])
+            ("make_new_ibd" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("path_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132215 132242])
+                    ("name_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132278 132305]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [132180 132697])
+            ("make_data_dir_path" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("data_dir_path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133338 133358]))                  
+                :type "void")
+                nil [133304 134094])
+            ("fil_rename_tablespace_check" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134465 134485])
+                    ("old_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134486 134507])
+                    ("new_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134544 134565])
+                    ("is_discarded" variable (:type "bool") (reparse-symbol arg-sub-list) [134566 134584]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [134429 135036])
+            ("space_rename" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135435 135455])
+                    ("old_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135456 135477])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135507 135528])
+                    ("new_path_in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135529 135553]))                  
+                :type "bool")
+                nil [135406 141324])
+            ("fil_rename_tablespace" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141726 141746])
+                    ("old_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [141747 141768])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [141796 141817])
+                    ("new_path_in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [141818 141842]))                  
+                :type "bool")
+                nil [141699 141999])
+            ("rename_tablespace_name" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("old_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142198 142219])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142263 142284]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [142155 143453])
+            ("fil_rename_tablespace_by_name" function
+               (:arguments 
+                  ( ("old_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [143647 143668])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [143707 143728]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [143609 143799])
+            ("fil_ibd_create" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144338 144358])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [144359 144376])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [144377 144394])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144418 144430])
+                    ("size" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144431 144446]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [144315 150641])
+            ("fil_ibd_open" function
+               (:arguments 
+                  ( ("validate" variable (:type "bool") (reparse-symbol arg-sub-list) [152044 152058])
+                    ("purpose" variable (:type ("fil_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152059 152078])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152079 152099])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152121 152133])
+                    ("space_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152134 152157])
+                    ("table_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152179 152202])
+                    ("path_in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152203 152223])
+                    ("strict" variable (:type "bool") (reparse-symbol arg-sub-list) [152224 152236])
+                    ("old_space" variable (:type "bool") (reparse-symbol arg-sub-list) [152258 152273]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [152023 155677])
+            ("fil_space_read_name_and_filepath" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156772 156792])
+                    ("name" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156793 156805])
+                    ("filepath" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156844 156860]))                  
+                :type "bool")
+                nil [156734 157260])
+            ("fil_path_to_space_name" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157535 157556]))                  
+                :type "char")
+                nil [157506 158518])
+            ("ibd_open_for_recovery" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159353 159373])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [159423 159447])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [159497 159511])
+                    ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159511 159517]))                  
+                :type ("fil_load_status" type (:type "class") nil nil))
+                nil [159304 165418])
+            ("ibd_open_for_recovery" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166246 166266])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166317 166341])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166392 166406])
+                    ("" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166406 166412]))                  
+                :type ("fil_load_status" type (:type "class") nil nil))
+                nil [166196 166667])
+            ("fil_report_missing_tablespace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166859 166876])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166919 166939]))                  
+                :type "void")
+                nil [166817 167197])
+            ("space_check_exists" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167854 167874])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [167875 167892])
+                    ("print_err" variable (:type "bool") (reparse-symbol arg-sub-list) [167928 167943])
+                    ("adjust_space" variable (:type "bool") (reparse-symbol arg-sub-list) [167944 167962])
+                    ("heap" variable
+                       (:pointer 1
+                        :type ("mem_heap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [167998 168015])
+                    ("table_id" variable (:type ("table_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168016 168036]))                  
+                :type "bool")
+                nil [167819 171402])
+            ("fil_space_exists_in_mem" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171987 172007])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [172008 172025])
+                    ("print_err" variable (:type "bool") (reparse-symbol arg-sub-list) [172055 172070])
+                    ("adjust_space" variable (:type "bool") (reparse-symbol arg-sub-list) [172071 172089])
+                    ("heap" variable
+                       (:pointer 1
+                        :type ("mem_heap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [172119 172136])
+                    ("table_id" variable (:type ("table_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172137 172157]))                  
+                :type "bool")
+                nil [171958 172343])
+            ("fil_space_get_id_by_name" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [172627 172644]))                  
+                :type ("space_id_t" type (:type "class") nil nil))
+                nil [172591 172760])
+            ("fil_write_zeros" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [173123 173146])
+                    ("page_size" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173147 173163])
+                    ("start" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173195 173213])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173214 173224])
+                    ("read_only_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [173256 173276]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [173092 174283])
+            ("space_extend" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [174525 174544])
+                    ("size" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174545 174560]))                  
+                :type "bool")
+                nil [174496 181112])
+            ("fil_space_extend" function
+               (:arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [181345 181364])
+                    ("size" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181365 181380]))                  
+                :type "bool")
+                nil [181323 181481])
+            ("fil_space_reserve_free_extents" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199175 199195])
+                    ("n_free_now" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199196 199213])
+                    ("n_to_reserve" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199250 199269]))                  
+                :type "bool")
+                nil [199139 199713])
+            ("fil_space_release_free_extents" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199876 199896])
+                    ("n_reserved" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199897 199914]))                  
+                :type "void")
+                nil [199840 200243])
+            ("fil_space_get_n_reserved_extents" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [200456 200476]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [200417 200697])
+            ("prepare_file_for_io" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [201148 201165])
+                    ("extend" variable (:type "bool") (reparse-symbol arg-sub-list) [201166 201178]))                  
+                :type "bool")
+                nil [201112 201999])
+            ("add_to_unflushed_list" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202142 202161]))                  
+                :type "void")
+                nil [202104 202349])
+            ("write_completed" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202483 202500]))                  
+                :type "void")
+                nil [202451 202951])
+            ("complete_io" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203201 203218])
+                    ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203219 203241]))                  
+                :type "void")
+                nil [203173 203676])
+            ("fil_report_invalid_page_access_low" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("block_offset" variable (:type ("page_no_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204015 204038])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204086 204106])
+                    ("space_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [204154 204177])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204225 204243])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204244 204254])
+                    ("is_read" variable (:type "bool") (reparse-symbol arg-sub-list) [204302 204315])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [204316 204325]))                  
+                :type "void")
+                nil [203968 205118])
+            ("fil_report_invalid_page_access" variable (:constant-flag t) nil [205128 205158])
+            ("fil_io_set_encryption" function
+               (:arguments 
+                  ( ("req_type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [205426 205446])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [205447 205472])
+                    ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [205500 205519]))                  
+                :type "void")
+                nil [205399 206593])
+            ("get_AIO_mode" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("req_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [206749 206775])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [206776 206786]))                  
+                :type ("AIO_mode" type (:type "class") nil nil))
+                nil [206716 207065])
+            ("get_file_for_io" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("req_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207366 207392])
+                    ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207428 207447])
+                    ("page_no" variable
+                       (:pointer 1
+                        :type ("page_no_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207448 207467])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207503 207516])
+                    ("" variable (:type ("file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [207516 207521]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [207331 208651])
+            ("do_redo_io" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209359 209381])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209382 209407])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209438 209467])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209468 209486])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209517 209527])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [209528 209538]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [209329 211247])
+            ("do_io" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [212202 212224])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [212225 212235])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [212261 212286])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [212287 212316])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [212342 212360])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [212361 212371])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [212372 212382])
+                    ("message" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [212408 212422]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [212177 219442])
+            ("fil_redo_io" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219892 219914])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219915 219940])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219961 219990])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [219991 220009])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220010 220020])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [220041 220051]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [219872 220542])
+            ("fil_aio_wait" function
+               (:arguments 
+                  ( ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220931 220945]))                  
+                :type "void")
+                nil [220913 222246])
+            ("fil_io" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223155 223177])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [223178 223188])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223189 223214])
+                    ("page_size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223230 223259])
+                    ("byte_offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223260 223278])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223279 223289])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [223305 223315])
+                    ("message" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [223316 223330]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [223140 223504])
+            ("remove_from_unflushed_list" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223712 223731]))                  
+                :type "void")
+                nil [223669 223921])
+            ("redo_space_flush" function
+               (:parent "Fil_shard"
+                :type "void")
+                nil [223980 225701])
+            ("space_flush" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [225992 226012]))                  
+                :type "void")
+                nil [225964 228655])
+            ("fil_flush" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [228933 228953]))                  
+                :type "void")
+                nil [228918 229157])
+            ("flush_file_redo" function
+               (:parent "Fil_shard"
+                :type "void")
+                nil [229217 229427])
+            ("flush_file_spaces" function
+               (:parent "Fil_shard"
+                :arguments 
+                  ( ("purpose" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229638 229654]))                  
+                :type "void")
+                nil [229604 230254])
+            ("flush_file_redo" function
+               (:parent "Fil_system"
+                :type "void")
+                nil [230325 230404])
+            ("flush_file_spaces" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("purpose" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [230635 230651]))                  
+                :type "void")
+                nil [230600 230730])
+            ("fil_flush_file_spaces" function
+               (:arguments 
+                  ( ("purpose" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [230924 230940]))                  
+                :type "void")
+                nil [230897 230986])
+            ("fil_flush_file_redo" function (:type "void") nil [231080 231141])
+            ("fil_addr_is_null" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("fil_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [231266 231289]))                  
+                :type "bool")
+                nil [231244 231327])
+            ("fil_page_get_prev" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [231449 231466]))                  
+                :type ("page_no_t" type (:type "class") nil nil))
+                nil [231421 231521])
+            ("fil_page_get_next" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [231641 231658]))                  
+                :type ("page_no_t" type (:type "class") nil nil))
+                nil [231613 231713])
+            ("fil_page_set_type" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [231828 231839])
+                    ("type" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231840 231851]))                  
+                :type "void")
+                nil [231805 231902])
+            ("fil_page_reset_type" function
+               (:arguments 
+                  ( ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232324 232349])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232350 232361])
+                    ("type" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [232362 232373])
+                    ("mtr" variable
+                       (:pointer 1
+                        :type ("mtr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232399 232410]))                  
+                :type "void")
+                nil [232299 232637])
+            ("fil_close" function (:type "void") nil [232682 232800])
+            ("fil_buf_block_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("block" variable
+                       (:pointer 1
+                        :type ("buf_block_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [233017 233036])
+                    ("frame" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [233037 233049]))                  
+                :type "void")
+                nil [232986 233325])
+            ("Fil_page_iterator" type
+               (:members 
+                  ( ("m_file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233377 233398])
+                    ("m_filepath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [233426 233449])
+                    ("m_start" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233482 233502])
+                    ("m_end" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233529 233547])
+                    ("m_file_size" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233578 233602])
+                    ("m_page_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233625 233644])
+                    ("m_n_io_buffers" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233688 233710])
+                    ("m_io_buffer" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [233744 233762])
+                    ("m_encryption_key" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [233790 233813])
+                    ("m_encryption_iv" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [233840 233862]))                  
+                :type "struct")
+                nil [233327 233865])
+            ("fil_iterate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Fil_page_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234456 234486])
+                    ("block" variable
+                       (:pointer 1
+                        :type ("buf_block_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234487 234506])
+                    ("callback" variable
+                       (:reference 1
+                        :type ("PageCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234534 234557]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [234429 238308])
+            ("fil_tablespace_iterate" function
+               (:arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("dict_table_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238609 238629])
+                    ("n_io_buffers" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [238630 238649])
+                    ("callback" variable
+                       (:reference 1
+                        :type ("PageCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238681 238704]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [238578 243028])
+            ("fil_delete_file" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [243490 243507]))                  
+                :type "bool")
+                nil [243469 244083])
+            ("fil_rename_precheck" function
+               (:arguments 
+                  ( ("old_table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dict_table_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244334 244364])
+                    ("new_table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dict_table_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244393 244423])
+                    ("tmp_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [244452 244473]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [244306 246351])
+            ("fil_no_punch_hole" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246583 246600]))                  
+                :type "void")
+                nil [246560 246630])
+            ("fil_set_compression" function
+               (:arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("dict_table_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246867 246887])
+                    ("algorithm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [246888 246910]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [246839 248534])
+            ("fil_get_compression" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248701 248721]))                  
+                :type ("Compression::Type" type (:type "class") nil nil))
+                nil [248663 248849])
+            ("fil_set_encryption" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [249127 249147])
+                    ("algorithm" variable (:type ("Encryption::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [249148 249175])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [249203 249213])
+                    ("iv" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [249214 249223]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [249100 250064])
+            ("encryption_rotate_in_a_shard" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("shard" variable
+                       (:pointer 1
+                        :type ("Fil_shard" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [250280 250297]))                  
+                :type "bool")
+                nil [250234 251463])
+            ("encryption_rotate_all" function
+               (:parent "Fil_system"
+                :type "bool")
+                nil [251558 251823])
+            ("fil_encryption_rotate" function (:type "bool") nil [251918 251996])
+            ("Fil_path" function
+               (:constructor-flag t
+                :parent "Fil_path"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [252264 252288]))                  
+                :type ("Fil_path" type (:type "class") nil nil))
+                nil [252245 252345])
+            ("Fil_path" function
+               (:constructor-flag t
+                :parent "Fil_path"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [252627 252644])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [252645 252656]))                  
+                :type ("Fil_path" type (:type "class") nil nil))
+                nil [252608 252718])
+            ("Fil_path" function
+               (:constructor-flag t
+                :parent "Fil_path"
+                :type ("Fil_path" type (:type "class") nil nil))
+                nil [252748 252809])
+            ("Fil_path" function
+               (:destructor-flag t
+                :parent "Fil_path"
+                :type "void")
+                nil [252829 252866])
+            ("get_file_type" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [252962 252986]))                  
+                :type ("os_file_type_t" type (:type "class") nil nil))
+                nil [252923 253524])
+            ("is_file_and_exists" function
+               (:methodconst-flag t
+                :parent "Fil_path"
+                :type "bool")
+                nil [253581 253685])
+            ("is_directory_and_exists" function
+               (:methodconst-flag t
+                :parent "Fil_path"
+                :type "bool")
+                nil [253746 253854])
+            ("is_valid" function
+               (:methodconst-flag t
+                :parent "Fil_path"
+                :type "bool")
+                nil [253931 254568])
+            ("fil_space_set_flags" function
+               (:arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [254768 254787])
+                    ("flags" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [254788 254800]))                  
+                :type "void")
+                nil [254743 254999])
+            ("release_free_extents" function
+               (:parent "fil_space_t"
+                :arguments 
+                  ( ("n_reserved" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [257836 257853]))                  
+                :type "void")
+                nil [257797 258099])
+            ("fil_tablespace_encryption_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [259558 259583]))                  
+                :type "void")
+                nil [259515 260112])
+            ("prepare_open_for_business" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("read_only_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [260360 260380]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [260314 262603])
+            ("fil_open_for_business" function
+               (:arguments 
+                  ( ("read_only_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [262778 262798]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [262748 262868])
+            ("fil_op_replay_rename_for_ddl" function
+               (:arguments 
+                  ( ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [263243 263268])
+                    ("old_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [263303 263324])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [263325 263346]))                  
+                :type "bool")
+                nil [263209 263797])
+            ("lookup_for_recovery" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [263984 264004]))                  
+                :type "bool")
+                nil [263947 264656])
+            ("fil_tablespace_lookup_for_recovery" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [264815 264835]))                  
+                :type "bool")
+                nil [264775 264893])
+            ("open_for_recovery" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265071 265091]))                  
+                :type "bool")
+                nil [265036 265918])
+            ("fil_tablespace_open_for_recovery" function
+               (:arguments 
+                  ( ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266095 266115]))                  
+                :type "bool")
+                nil [266057 266171])
+            ("fil_tablespace_path_equals" function
+               (:arguments 
+                  ( ("dd_object_id" variable (:type ("dd::Object_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266694 266721])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266759 266779])
+                    ("space_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [266817 266840])
+                    ("old_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266878 266899])
+                    ("new_path" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [266937 266959]))                  
+                :type ("Fil_state" type (:type "class") nil nil))
+                nil [266657 269650])
+            ("check_missing_tablespaces" function
+               (:parent "Fil_system"
+                :type "bool")
+                nil [270006 271891])
+            ("fil_check_missing_tablespaces" function (:type "bool") nil [272216 272308])
+            ("fil_tablespace_redo_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [272697 272707])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [272708 272724])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [272758 272783])
+                    ("parsed_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [272784 272803])
+                    ("parse_only" variable (:type "bool") (reparse-symbol arg-sub-list) [272837 272853]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [272664 274975])
+            ("fil_tablespace_redo_rename" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [275434 275444])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [275445 275461])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [275495 275520])
+                    ("parsed_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [275521 275540])
+                    ("parse_only" variable (:type "bool") (reparse-symbol arg-sub-list) [275574 275590]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [275401 278431])
+            ("fil_tablespace_redo_delete" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [278820 278830])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [278831 278847])
+                    ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [278881 278906])
+                    ("parsed_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [278907 278926])
+                    ("parse_only" variable (:type "bool") (reparse-symbol arg-sub-list) [278960 278976]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [278787 280798])
+            ("fil_tablespace_redo_encryption" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [281059 281069])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [281070 281086])
+                    ("space_id" variable (:type ("space_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [281124 281144]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [281022 282896])
+            ("tokenize_paths" function
+               (:parent "Tablespace_dirs"
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [283216 283239])
+                    ("delimiters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [283277 283307]))                  
+                :type "void")
+                nil [283179 285873])
+            ("fil_rename_validate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [286113 286132])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [286133 286157])
+                    ("df" variable
+                       (:reference 1
+                        :type ("Datafile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [286193 286206]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [286078 288034])
+            ("fil_op_replay_rename" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("page_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288405 288430])
+                    ("old_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288464 288492])
+                    ("new_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288526 288554]))                  
+                :type "bool")
+                nil [288372 290551])
+            ("get_tablespace_id" function
+               (:parent "Fil_system"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [290950 290978]))                  
+                :type ("space_id_t" type (:type "class") nil nil))
+                nil [290909 293887])
+            ("duplicate_check" function
+               (:parent "Tablespace_dirs"
+                :arguments 
+                  ( ("start" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Const_iter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294213 294237])
+                    ("end" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Const_iter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294276 294298])
+                    ("thread_id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294299 294316])
+                    ("mutex" variable
+                       (:pointer 1
+                        :type ("std::mutex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294355 294373])
+                    ("unique" variable
+                       (:pointer 1
+                        :type ("Space_id_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294374 294395])
+                    ("duplicates" variable
+                       (:pointer 1
+                        :type ("Space_id_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294434 294459]))                  
+                :type "void")
+                nil [294175 296001])
+            ("print_duplicates" function
+               (:parent "Tablespace_dirs"
+                :arguments 
+                  ( ("duplicates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Space_id_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [296155 296186]))                  
+                :type "void")
+                nil [296116 296932])
+            ("scan" function
+               (:parent "Tablespace_dirs"
+                :arguments 
+                  ( ("in_directories" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [297113 297147]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [297083 300620])
+            ("fil_scan_for_tablespaces" function
+               (:arguments 
+                  ( ("directories" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [300801 300832]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [300768 300878])
+            ("fil_check_extend_space" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [301100 301117]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [301069 302182])
+            ("fil_check_path" function
+               (:arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [302318 302342]))                  
+                :type "bool")
+                nil [302298 302387])
+            ("fil_get_dirs" function (:type ("std::string" type (:type "class") nil nil)) nil [302508 302571])
+            ("fil_free_scanned_files" function (:type "void") nil [302628 302695])
+            ("fil_space_update_name" function
+               (:arguments 
+                  ( ("space" variable
+                       (:pointer 1
+                        :type ("fil_space_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [302962 302981])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [302982 302999]))                  
+                :type "void")
+                nil [302935 303367])
+            ("is_valid_location" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("space_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [303778 303801])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [303835 303859]))                  
+                :type "bool")
+                nil [303745 305561])
+            ("convert_to_filename_charset" function
+               (:parent "Fil_path"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [305706 305724]))                  
+                :type "void")
+                nil [305663 306116]))          
+      :file "fil0fil.cc"
+      :pointmax 306147
+      :fsize 306146
+      :lastmodtime '(23314 2562 678330 512000)
+      :unmatched-syntax '((semantic-list 243219 . 243279) (symbol 243206 . 243218) (semantic-list 243180 . 243205) (symbol 243167 . 243180) (punctuation 243166 . 243167) (punctuation 243165 . 243166) (symbol 243153 . 243165) (VOID 243148 . 243152) (punctuation 207515 . 207516) (punctuation 166405 . 166406) (punctuation 159510 . 159511) (punctuation 112506 . 112507) (punctuation 107802 . 107803) (punctuation 89395 . 89396) (punctuation 84387 . 84388) (semantic-list 55615 . 55635) (semantic-list 55447 . 55597) (symbol 55427 . 55447) (BOOL 55422 . 55426) (STATIC 55415 . 55421) (punctuation 54638 . 54639) (DELETE 54632 . 54638) (punctuation 54630 . 54631) (semantic-list 54609 . 54629) (punctuation 54608 . 54609) (OPERATOR 54600 . 54608) (punctuation 54599 . 54600) (symbol 54588 . 54598) (punctuation 54584 . 54585) (DELETE 54578 . 54584) (punctuation 54576 . 54577) (semantic-list 54555 . 54575) (symbol 54545 . 54555) (punctuation 54541 . 54542) (DELETE 54535 . 54541) (punctuation 54533 . 54534) (semantic-list 54517 . 54532) (symbol 54507 . 54517) (punctuation 54530 . 54531) (semantic-list 53732 . 53752) (semantic-list 53565 . 53712) (symbol 53544 . 53565) (punctuation 53705 . 53706) (symbol 53528 . 53543) (punctuation 53705 . 53706) (semantic-list 51662 . 51682) (semantic-list 51598 . 51642) (symbol 51576 . 51598) (symbol 51568 . 51575) (semantic-list 49916 . 49936) (semantic-list 49869 . 49890) (symbol 49858 . 49869) (punctuation 49857 . 49858) (symbol 49847 . 49856) (semantic-list 49720 . 49740) (semantic-list 49671 . 49700) (symbol 49654 . 49671) (symbol 49643 . 49653) (STATIC 49636 . 49642) (semantic-list 49062 . 49082) (semantic-list 49016 . 49042) (symbol 48996 . 49016) (BOOL 48991 . 48995) (STATIC 48984 . 48990) (semantic-list 47774 . 47794) (semantic-list 47758 . 47760) (symbol 47733 . 47758) (BOOL 47728 . 47732) (semantic-list 47366 . 47386) (semantic-list 47325 . 47346) (symbol 47308 . 47325) (BOOL 47303 . 47307) (semantic-list 47134 . 47154) (semantic-list 47093 . 47114) (symbol 47074 . 47093) (BOOL 47069 . 47073) (semantic-list 46541 . 46561) (semantic-list 46525 . 46527) (symbol 46504 . 46525) (BOOL 46499 . 46503) (semantic-list 46169 . 46189) (semantic-list 46104 . 46149) (symbol 46097 . 46104) (symbol 46089 . 46096) (semantic-list 45341 . 45361) (semantic-list 45304 . 45321) (symbol 45283 . 45304) (BOOL 45278 . 45282) (semantic-list 44996 . 45016) (semantic-list 44954 . 44976) (symbol 44935 . 44954) (BOOL 44930 . 44934) (semantic-list 43712 . 43732) (semantic-list 43665 . 43686) (symbol 43643 . 43665) (BOOL 43638 . 43642) (semantic-list 43196 . 43216) (semantic-list 43158 . 43176) (symbol 43141 . 43158) (punctuation 43140 . 43141) (symbol 43128 . 43139) (semantic-list 42595 . 42615) (semantic-list 42554 . 42575) (symbol 42529 . 42554) (symbol 42521 . 42528) (semantic-list 42253 . 42273) (semantic-list 42202 . 42227) (symbol 42194 . 42202) (punctuation 42193 . 42194) (symbol 42186 . 42192) (punctuation 42185 . 42186) (punctuation 42184 . 42185) (symbol 42181 . 42184) (CONST 42175 . 42180) (semantic-list 41935 . 41955) (semantic-list 41900 . 41921) (symbol 41895 . 41900) (BOOL 41890 . 41894) (semantic-list 41552 . 41572) (semantic-list 41517 . 41538) (symbol 41513 . 41517) (symbol 41506 . 41512) (punctuation 41505 . 41506) (punctuation 41504 . 41505) (symbol 41501 . 41504) (semantic-list 41205 . 41225) (semantic-list 41164 . 41185) (symbol 41147 . 41164) (symbol 41140 . 41146) (punctuation 41139 . 41140) (punctuation 41138 . 41139) (symbol 41123 . 41138) (punctuation 40673 . 40674) (punctuation 40672 . 40673) (punctuation 40671 . 40672) (symbol 40661 . 40670) (punctuation 40660 . 40661) (symbol 40654 . 40660) (punctuation 40653 . 40654) (punctuation 40652 . 40653) (symbol 40649 . 40652) (punctuation 40647 . 40648) (symbol 40636 . 40646) (USING 40630 . 40635) (punctuation 40371 . 40372) (DELETE 40365 . 40371) (punctuation 40363 . 40364) (semantic-list 40343 . 40362) (punctuation 40342 . 40343) (OPERATOR 40334 . 40342) (punctuation 40333 . 40334) (symbol 40323 . 40332) (punctuation 40319 . 40320) (DELETE 40313 . 40319) (punctuation 40311 . 40312) (semantic-list 40291 . 40310) (symbol 40282 . 40291) (punctuation 40278 . 40279) (DELETE 40272 . 40278) (punctuation 40270 . 40271) (semantic-list 40255 . 40269) (symbol 40246 . 40255) (punctuation 40267 . 40268) (semantic-list 39138 . 39158) (semantic-list 38999 . 39118) (symbol 38984 . 38999) (punctuation 39112 . 39113) (symbol 38976 . 38983) (punctuation 39112 . 39113) (STATIC 38969 . 38975) (punctuation 39112 . 39113) (semantic-list 38667 . 38687) (semantic-list 38609 . 38647) (symbol 38597 . 38609) (symbol 38588 . 38596) (STATIC 38581 . 38587) (semantic-list 38426 . 38446) (semantic-list 38367 . 38406) (symbol 38354 . 38367) (symbol 38346 . 38353) (semantic-list 37833 . 37853) (semantic-list 37725 . 37813) (symbol 37709 . 37725) (symbol 37703 . 37708) (semantic-list 37480 . 37500) (semantic-list 37421 . 37454) (symbol 37391 . 37421) (symbol 37385 . 37390) (semantic-list 36853 . 36873) (semantic-list 36812 . 36833) (symbol 36786 . 36812) (symbol 36778 . 36785) (semantic-list 36522 . 36542) (semantic-list 36481 . 36502) (symbol 36463 . 36481) (punctuation 36462 . 36463) (symbol 36450 . 36461) (semantic-list 35620 . 35640) (semantic-list 35583 . 35600) (symbol 35566 . 35583) (BOOL 35561 . 35565) (STATIC 35554 . 35560) (punctuation 35452 . 35453) (semantic-list 34732 . 34752) (semantic-list 34522 . 34712) (symbol 34511 . 34522) (punctuation 34510 . 34511) (symbol 34499 . 34509) (semantic-list 33892 . 33912) (semantic-list 33725 . 33872) (symbol 33704 . 33725) (punctuation 33865 . 33866) (symbol 33688 . 33703) (punctuation 33865 . 33866) (semantic-list 32855 . 32875) (semantic-list 32790 . 32835) (symbol 32783 . 32790) (symbol 32775 . 32782) (semantic-list 32489 . 32509) (semantic-list 32297 . 32475) (symbol 32292 . 32297) (symbol 32284 . 32291) (semantic-list 31223 . 31243) (semantic-list 31047 . 31209) (symbol 31037 . 31047) (symbol 31029 . 31036) (semantic-list 30322 . 30342) (semantic-list 30137 . 30302) (symbol 30119 . 30137) (BOOL 30114 . 30118) (semantic-list 29510 . 29530) (semantic-list 29390 . 29490) (symbol 29378 . 29390) (punctuation 29377 . 29378) (symbol 29365 . 29376) (semantic-list 28885 . 28905) (semantic-list 28819 . 28865) (symbol 28805 . 28819) (BOOL 28800 . 28804) (semantic-list 28592 . 28612) (semantic-list 28526 . 28572) (symbol 28514 . 28526) (symbol 28506 . 28513) (semantic-list 28034 . 28054) (semantic-list 27904 . 28014) (symbol 27892 . 27904) (BOOL 27887 . 27891) (semantic-list 27477 . 27497) (semantic-list 27355 . 27451) (symbol 27325 . 27355) (punctuation 27431 . 27432) (symbol 27317 . 27324) (punctuation 27431 . 27432) (semantic-list 27068 . 27088) (semantic-list 27027 . 27048) (symbol 27017 . 27027) (punctuation 27016 . 27017) (symbol 27004 . 27015) (semantic-list 26703 . 26723) (semantic-list 26668 . 26689) (symbol 26658 . 26668) (BOOL 26653 . 26657) (semantic-list 26450 . 26470) (semantic-list 26404 . 26430) (symbol 26388 . 26404) (BOOL 26383 . 26387) (semantic-list 26174 . 26194) (semantic-list 26123 . 26154) (symbol 26114 . 26123) (BOOL 26109 . 26113) (semantic-list 25501 . 25521) (semantic-list 25445 . 25481) (symbol 25433 . 25445) (BOOL 25428 . 25432) (semantic-list 24644 . 24664) (semantic-list 24582 . 24624) (symbol 24555 . 24582) (punctuation 24617 . 24618) (BOOL 24550 . 24554) (punctuation 24617 . 24618) (semantic-list 24196 . 24216) (semantic-list 24145 . 24176) (symbol 24126 . 24145) (BOOL 24121 . 24125) (semantic-list 22853 . 22873) (semantic-list 22812 . 22833) (symbol 22802 . 22812) (punctuation 22801 . 22802) (symbol 22789 . 22800) (semantic-list 20686 . 20706) (semantic-list 20655 . 20672) (symbol 20637 . 20655) (BOOL 20632 . 20636) (semantic-list 20128 . 20148) (semantic-list 20084 . 20102) (symbol 20067 . 20084) (punctuation 20066 . 20067) (symbol 20054 . 20065) (semantic-list 19629 . 19649) (semantic-list 19582 . 19603) (symbol 19567 . 19582) (punctuation 19566 . 19567) (symbol 19554 . 19565) (punctuation 18287 . 18288) (punctuation 18286 . 18287) (symbol 18270 . 18286) (punctuation 18233 . 18234) (symbol 18220 . 18233) (punctuation 18218 . 18219) (punctuation 18217 . 18218) (symbol 18205 . 18216) (punctuation 18203 . 18204) (punctuation 18202 . 18203) (CHAR 18197 . 18201) (CONST 18191 . 18196) (punctuation 18190 . 18191) (symbol 18177 . 18190) (punctuation 18176 . 18177) (punctuation 18175 . 18176) (symbol 18172 . 18175) (punctuation 18170 . 18171) (symbol 18164 . 18169) (USING 18158 . 18163) (punctuation 18153 . 18154) (punctuation 18152 . 18153) (punctuation 18151 . 18152) (symbol 18139 . 18150) (punctuation 18137 . 18138) (symbol 18127 . 18137) (punctuation 18126 . 18127) (symbol 18113 . 18126) (punctuation 18112 . 18113) (punctuation 18111 . 18112) (symbol 18108 . 18111) (punctuation 18106 . 18107) (symbol 18099 . 18105) (USING 18093 . 18098) (USING 18038 . 18043) (USING 17985 . 17990) (USING 16940 . 16945) (punctuation 16562 . 16563) (punctuation 16561 . 16562) (symbol 16545 . 16561) (punctuation 16544 . 16545) (symbol 16538 . 16544) (punctuation 16537 . 16538) (punctuation 16536 . 16537) (symbol 16533 . 16536) (punctuation 16531 . 16532) (symbol 16523 . 16530) (USING 16517 . 16522) (semantic-list 15509 . 15529) (semantic-list 15458 . 15483) (symbol 15450 . 15458) (punctuation 15449 . 15450) (symbol 15440 . 15448) (CONST 15434 . 15439) (semantic-list 15153 . 15173) (semantic-list 15118 . 15139) (symbol 15114 . 15118) (symbol 15107 . 15113) (semantic-list 14770 . 14790) (semantic-list 14735 . 14756) (symbol 14730 . 14735) (BOOL 14725 . 14729) (semantic-list 14382 . 14402) (semantic-list 14327 . 14362) (symbol 14323 . 14327) (symbol 14315 . 14322) (punctuation 13920 . 13921) (punctuation 13919 . 13920) (punctuation 13918 . 13919) (symbol 13912 . 13917) (punctuation 13911 . 13912) (punctuation 13910 . 13911) (symbol 13894 . 13910) (punctuation 13892 . 13893) (symbol 13886 . 13892) (punctuation 13885 . 13886) (punctuation 13884 . 13885) (symbol 13881 . 13884) (punctuation 13880 . 13881) (symbol 13876 . 13880) (punctuation 13875 . 13876) (punctuation 13874 . 13875) (symbol 13871 . 13874) (punctuation 13869 . 13870) (symbol 13862 . 13868) (USING 13856 . 13861) (semantic-list 12607 . 12627) (semantic-list 12572 . 12593) (symbol 12567 . 12572) (BOOL 12562 . 12566) (semantic-list 11983 . 12003) (semantic-list 11948 . 11969) (symbol 11944 . 11948) (punctuation 11943 . 11944) (symbol 11937 . 11942) (semantic-list 11779 . 11799) (semantic-list 11713 . 11759) (symbol 11710 . 11713) (symbol 11703 . 11709) (punctuation 11400 . 11401) (punctuation 11399 . 11400) (symbol 11394 . 11399) (punctuation 11392 . 11393) (symbol 11382 . 11392) (punctuation 11381 . 11382) (symbol 11368 . 11381) (punctuation 11367 . 11368) (punctuation 11366 . 11367) (symbol 11363 . 11366) (punctuation 11361 . 11362) (symbol 11355 . 11360) (USING 11349 . 11354) (punctuation 11345 . 11346) (punctuation 11344 . 11345) (punctuation 11343 . 11344) (symbol 11337 . 11343) (punctuation 11336 . 11337) (punctuation 11335 . 11336) (symbol 11332 . 11335) (punctuation 11331 . 11332) (symbol 11319 . 11331) (punctuation 11317 . 11318) (symbol 11311 . 11317) (punctuation 11310 . 11311) (punctuation 11309 . 11310) (symbol 11306 . 11309) (punctuation 11305 . 11306) (symbol 11299 . 11305) (punctuation 11298 . 11299) (punctuation 11297 . 11298) (symbol 11294 . 11297) (punctuation 11292 . 11293) (symbol 11286 . 11291) (USING 11280 . 11285) (punctuation 3285 . 3286) (punctuation 3284 . 3285) (punctuation 3283 . 3284) (symbol 3277 . 3283) (punctuation 3276 . 3277) (punctuation 3275 . 3276) (symbol 3272 . 3275) (punctuation 3270 . 3271) (symbol 3262 . 3270) (punctuation 3261 . 3262) (symbol 3257 . 3261) (punctuation 3256 . 3257) (punctuation 3255 . 3256) (symbol 3252 . 3255) (punctuation 3251 . 3252) (symbol 3245 . 3251) (punctuation 3244 . 3245) (punctuation 3243 . 3244) (symbol 3240 . 3243) (USING 3218 . 3223) (punctuation 3135 . 3136) (punctuation 3134 . 3135) (symbol 3129 . 3134) (punctuation 3128 . 3129) (symbol 3122 . 3128) (punctuation 3121 . 3122) (punctuation 3120 . 3121) (symbol 3117 . 3120) (punctuation 3115 . 3116) (symbol 3103 . 3114) (USING 3097 . 3102) (punctuation 3094 . 3095) (punctuation 3093 . 3094) (symbol 3087 . 3093) (punctuation 3086 . 3087) (punctuation 3085 . 3086) (symbol 3082 . 3085) (punctuation 3055 . 3056) (symbol 3049 . 3055) (punctuation 3048 . 3049) (punctuation 3047 . 3048) (symbol 3044 . 3047) (punctuation 3042 . 3043) (symbol 3036 . 3042) (punctuation 3035 . 3036) (punctuation 3034 . 3035) (symbol 3031 . 3034) (punctuation 3029 . 3030) (symbol 3019 . 3029) (punctuation 3017 . 3018) (symbol 3008 . 3017) (punctuation 3007 . 3008) (punctuation 3006 . 3007) (symbol 3004 . 3006) (punctuation 3003 . 3004) (symbol 2998 . 3003) (punctuation 2997 . 2998) (punctuation 2996 . 2997) (symbol 2993 . 2996) (punctuation 2991 . 2992) (symbol 2985 . 2990) (USING 2979 . 2984) (punctuation 2486 . 2487) (punctuation 2485 . 2486) (symbol 2475 . 2485) (punctuation 2474 . 2475) (symbol 2471 . 2474) (punctuation 2470 . 2471) (punctuation 2469 . 2470) (symbol 2466 . 2469) (USING 2445 . 2450) (punctuation 2443 . 2444) (punctuation 2442 . 2443) (symbol 2436 . 2442) (punctuation 2435 . 2436) (punctuation 2434 . 2435) (symbol 2431 . 2434) (punctuation 2430 . 2431) (symbol 2424 . 2430) (punctuation 2423 . 2424) (punctuation 2422 . 2423) (symbol 2419 . 2422) (USING 2406 . 2411))
+      :lexical-table 
+        '(("fil_buffering_disabled" (spp-arg-list ("s") 17768 . 17771) . ((semantic-list "((s)->purpose == FIL_TYPE_TABLESPACE && \\
+   srv_unix_file_flush_method == SRV_UNIX_O_DIRECT_NO_FSYNC)" 17784 . 17886)))
+          ("fil_report_invalid_page_access" (spp-arg-list ("b" "s" "n" "o" "l" "t") 205158 . 205176) . ((symbol "fil_report_invalid_page_access_low" 205181 . 205215) (semantic-list "((b), (s), (n), (o), (l), (t), __LINE__)" 205215 . 205255)))
+          ("mutex_acquire" (spp-arg-list nil 10630 . 10632) . ((symbol "acquire" 10633 . 10640) (semantic-list "(__LINE__)" 10640 . 10650)))
+          )
+))
+  :file "!home!maurice!github!mysql-server!storage!innobase!fil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

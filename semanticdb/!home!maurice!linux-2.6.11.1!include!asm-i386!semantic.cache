@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_THREAD_INFO_H" variable (:constant-flag t) nil [225 243]))          
+      :file "thread_info.h"
+      :pointmax 4920
+      :fsize 4919
+      :lastmodtime '(16936 39493 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_THREAD_INFO_H")
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!include!asm-i386!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

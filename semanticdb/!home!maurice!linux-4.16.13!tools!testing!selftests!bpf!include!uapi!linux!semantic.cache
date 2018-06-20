@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_UAPI_LINUX_TYPES_H" variable (:constant-flag t) nil [76 95])
+            ("asm-generic/int-ll64.h" include (:system-flag t) nil [97 130])
+            ("__bitwise" variable (:constant-flag t) nil [191 200])
+            ("__le16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [201 232])
+            ("__be16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [233 264])
+            ("__le32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [265 296])
+            ("__be32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [297 328])
+            ("__le64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [329 360])
+            ("__be64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [361 392])
+            ("__sum16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [394 426])
+            ("__wsum" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [427 458])
+            ("__aligned_u64" variable (:constant-flag t) nil [468 481])
+            ("__aligned_be64" variable (:constant-flag t) nil [524 538])
+            ("__aligned_le64" variable (:constant-flag t) nil [582 596]))          
+      :file "types.h"
+      :pointmax 666
+      :fsize 665
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__aligned_u64" . 
+              ((symbol "__u64" 482 . 487) (symbol "__attribute__" 488 . 501) (semantic-list "((aligned(8)))" 501 . 515)))
+          ("__aligned_le64" . 
+              ((symbol "__le64" 597 . 603) (symbol "__attribute__" 604 . 617) (semantic-list "((aligned(8)))" 617 . 631)))
+          ("_UAPI_LINUX_TYPES_H")
+          ("__bitwise")
+          ("__aligned_be64" . 
+              ((symbol "__be64" 539 . 545) (symbol "__attribute__" 546 . 559) (semantic-list "((aligned(8)))" 559 . 573)))
+          )
+))
+  :file "!home!maurice!linux-4.16.13!tools!testing!selftests!bpf!include!uapi!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

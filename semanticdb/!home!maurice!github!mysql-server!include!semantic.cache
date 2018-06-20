@@ -1,0 +1,1864 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_myisam_h" variable (:constant-flag t) nil [839 848])
+            ("my_base.h" include nil nil [850 870])
+            ("m_ctype.h" include nil nil [871 891])
+            ("keycache.h" include nil nil [892 913])
+            ("my_compare.h" include nil nil [914 937])
+            ("my_check_opt.h" include nil nil [938 963])
+            ("m_string.h" include nil nil [964 985])
+            ("keycache_thread_var" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("st_keycache_thread_var" type (:type "class") nil nil)
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18092 18138])
+            ("main_thread_keycache_var" variable
+               (:type ("st_keycache_thread_var" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [18036 18091])
+            ("mi_preload" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17977 17991])
+                    ("key_map" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17992 18010])
+                    ("ignore_leaves" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18011 18033]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17962 18034])
+            ("mi_change_key_cache" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("old_key_cache" variable
+                       (:pointer 1
+                        :type ("KEY_CACHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17905 17930])
+                    ("new_key_cache" variable
+                       (:pointer 1
+                        :type ("KEY_CACHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17935 17960]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17880 17961])
+            ("mi_assign_to_key_cache" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17816 17830])
+                    ("key_map" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17831 17849])
+                    ("key_cache" variable
+                       (:pointer 1
+                        :type ("KEY_CACHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17857 17878]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17789 17879])
+            ("mi_end_bulk_insert" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17773 17787]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17749 17788])
+            ("mi_flush_bulk_insert" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17723 17737])
+                    ("inx" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17738 17747]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17697 17748])
+            ("mi_init_bulk_insert" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17649 17663])
+                    ("cache_size" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17664 17681])
+                    ("rows" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17682 17695]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17625 17696])
+            ("mi_test_if_sort_rep" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("my_bool" type (:type "class") nil nil)
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17553 17567])
+                    ("rows" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17568 17581])
+                    ("key_map" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17582 17600])
+                    ("force" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17608 17622]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17525 17623])
+            ("mi_disable_non_unique_index" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17495 17509])
+                    ("rows" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17510 17523]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17462 17524])
+            ("recreate_table" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17408 17424])
+                    ("org_info" variable
+                       (:pointer 2
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17425 17444])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17445 17460]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17389 17461])
+            ("test_if_almost_full" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17373 17387]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17349 17388])
+            ("write_data_suffix" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("sort_info" variable
+                       (:pointer 1
+                        :type ("SORT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17304 17325])
+                    ("fix_datafile" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17326 17347]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17282 17348])
+            ("movepoint" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17197 17211])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17211 17225])
+                    ("oldpos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17225 17241])
+                    ("newpos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17249 17265])
+                    ("prot_key" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17266 17280]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17183 17281])
+            ("filecopy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17090 17106])
+                    ("to" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17107 17115])
+                    ("from" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17115 17125])
+                    ("start" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17125 17140])
+                    ("length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17147 17163])
+                    ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17164 17181]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17077 17182])
+            ("update_key_parts" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("keyinfo" variable
+                       (:pointer 1
+                        :type ("MI_KEYDEF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16928 16947])
+                    ("rec_per_key_part" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16948 16972])
+                    ("unique" variable
+                       (:pointer 1
+                        :type ("ulonglong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16995 17013])
+                    ("notnull" variable
+                       (:pointer 1
+                        :type ("ulonglong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17014 17033])
+                    ("records" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17057 17075]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16906 17076])
+            ("update_state_info" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16861 16877])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16878 16892])
+                    ("update" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16892 16904]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16839 16905])
+            ("update_auto_increment_key" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16780 16796])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16797 16811])
+                    ("repair" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16822 16837]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16749 16838])
+            ("lock_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16731 16747]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16714 16748])
+            ("lock_file" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16603 16619])
+                    ("file" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16620 16630])
+                    ("start" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16631 16646])
+                    ("lock_type" variable (:type "int") (reparse-symbol arg-sub-list) [16647 16661])
+                    ("filetype" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16669 16690])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16691 16712]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16589 16713])
+            ("change_to_newfile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16500 16522])
+                    ("old_ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16523 16544])
+                    ("new_ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16553 16574])
+                    ("myflags" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16575 16587]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16478 16588])
+            ("mi_repair_parallel" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16366 16382])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16383 16397])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16421 16439])
+                    ("rep_quick" variable (:type "int") (reparse-symbol arg-sub-list) [16440 16454])
+                    ("no_copy_stat" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16455 16476]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16343 16477])
+            ("mi_repair_by_sort" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16246 16262])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16263 16277])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16286 16304])
+                    ("rep_quick" variable (:type "int") (reparse-symbol arg-sub-list) [16305 16319])
+                    ("no_copy_stat" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16320 16341]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16224 16342])
+            ("mi_sort_index" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16138 16154])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16155 16169])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16170 16182])
+                    ("no_copy_stat" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16201 16222]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16120 16223])
+            ("mi_repair" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16030 16046])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16047 16061])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16069 16081])
+                    ("rep_quick" variable (:type "int") (reparse-symbol arg-sub-list) [16082 16096])
+                    ("no_copy_stat" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16097 16118]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16016 16119])
+            ("chk_data_link" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15972 15988])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15989 16003])
+                    ("extend" variable (:type "int") (reparse-symbol arg-sub-list) [16003 16014]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15954 16015])
+            ("chk_key" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15921 15937])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15938 15952]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15909 15953])
+            ("chk_size" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15876 15892])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15893 15907]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15863 15908])
+            ("chk_del" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15814 15830])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15831 15845])
+                    ("test_flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15846 15861]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15802 15862])
+            ("chk_status" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15769 15785])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15786 15800]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15754 15801])
+            ("myisamchk_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15736 15752]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15716 15753])
+            ("SORT_INFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_sort_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [15274 15686])
+            ("st_sort_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("filelength" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15306 15343])
+                    ("dupp" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15306 15343])
+                    ("buff_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15306 15343])
+                    ("max_records" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15346 15366])
+                    ("current_key" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15369 15398])
+                    ("total_keys" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15369 15398])
+                    ("myf_rw" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15401 15412])
+                    ("new_data_file_type" variable (:type ("data_file_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [15415 15454])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15457 15471])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MI_CHECK" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15474 15490])
+                    ("buff" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15493 15505])
+                    ("key_block" variable
+                       (:pointer 1
+                        :type ("SORT_KEY_BLOCKS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15508 15550])
+                    ("key_block_end" variable
+                       (:pointer 1
+                        :type ("SORT_KEY_BLOCKS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15508 15550])
+                    ("ft_buf" variable
+                       (:pointer 1
+                        :type ("SORT_FT_BUF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15553 15573])
+                    ("got_error" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15596 15628])
+                    ("threads_running" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15596 15628])
+                    ("mutex" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15631 15651])
+                    ("cond" variable (:type ("mysql_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15654 15673]))                  )
+                (reparse-symbol extern-c-contents) [15274 15686])
+            ("SORT_FT_BUF" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_sort_ft_buf" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [15157 15272])
+            ("st_sort_ft_buf" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15191 15208])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15191 15208])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [15211 15223])
+                    ("lastkey" variable
+                       (:dereference 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15226 15257]))                  )
+                (reparse-symbol extern-c-contents) [15157 15272])
+            ("MI_CHECK" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_mi_check_param" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [13785 15155])
+            ("st_mi_check_param" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("auto_increment_value" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13822 13853])
+                    ("max_data_file_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13856 13887])
+                    ("keys_in_use" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13890 13912])
+                    ("max_record_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13915 13943])
+                    ("sort_buffer_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13946 13975])
+                    ("search_after_block" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13978 14006])
+                    ("new_file_pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14009 14047])
+                    ("key_file_blocks" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14009 14047])
+                    ("keydata" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14050 14104])
+                    ("totaldata" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14050 14104])
+                    ("key_blocks" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14050 14104])
+                    ("start_check_pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14050 14104])
+                    ("total_records" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14107 14143])
+                    ("total_deleted" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14107 14143])
+                    ("record_checksum" variable (:type ("ha_checksum" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14146 14183])
+                    ("glob_crc" variable (:type ("ha_checksum" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14146 14183])
+                    ("use_buffers" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14186 14208])
+                    ("read_buffer_length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14211 14274])
+                    ("write_buffer_length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14211 14274])
+                    ("sort_key_blocks" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14211 14274])
+                    ("out_flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14277 14329])
+                    ("warning_printed" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14277 14329])
+                    ("error_printed" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14277 14329])
+                    ("verbose" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14277 14329])
+                    ("opt_sort_key" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14332 14372])
+                    ("total_files" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14332 14372])
+                    ("max_level" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14332 14372])
+                    ("testflag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14375 14411])
+                    ("key_cache_block_size" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14375 14411])
+                    ("language" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14414 14430])
+                    ("using_global_keycache" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14433 14498])
+                    ("opt_lock_memory" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14433 14498])
+                    ("opt_follow_links" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14433 14498])
+                    ("retry_repair" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14501 14534])
+                    ("force_sort" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14501 14534])
+                    ("temp_filename" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [14537 14583])
+                    ("isam_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [14537 14583])
+                    ("tmpdir" variable
+                       (:pointer 1
+                        :type ("MY_TMPDIR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14586 14604])
+                    ("tmpfile_createflag" variable (:type "int") (reparse-symbol classsubparts) [14607 14630])
+                    ("myf_rw" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14633 14644])
+                    ("read_cache" variable (:type ("IO_CACHE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14647 14667])
+                    ("unique_count" variable
+                       (:dereference 1
+                        :type ("ulonglong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14775 14816])
+                    ("notnull_count" variable
+                       (:dereference 1
+                        :type ("ulonglong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14819 14861])
+                    ("key_crc" variable
+                       (:dereference 1
+                        :type ("ha_checksum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14867 14908])
+                    ("rec_per_key_part" variable
+                       (:dereference 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14911 14970])
+                    ("thd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [14973 14983])
+                    ("db_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [14986 15019])
+                    ("table_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [14986 15019])
+                    ("op_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [15022 15042])
+                    ("stats_method" variable (:type ("enum_mi_stats_method" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15045 15079])
+                    ("print_msg_mutex" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15082 15112])
+                    ("need_print_msg_lock" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15115 15143]))                  )
+                (reparse-symbol extern-c-contents) [13785 15155])
+            ("enum_mi_stats_method" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("MI_STATS_METHOD_NULLS_NOT_EQUAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13515 13547])
+                          ("MI_STATS_METHOD_NULLS_EQUAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13621 13649])
+                          ("MI_STATS_METHOD_IGNORE_NULLS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13731 13761]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [13417 13783])
+            ("SORT_KEY_BLOCKS" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_sort_key_blocks" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [13003 13183])
+            ("st_sort_key_blocks" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13066 13087])
+                    ("end_pos" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13066 13087])
+                    ("lastkey" variable
+                       (:dereference 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13090 13130])
+                    ("last_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13133 13150])
+                    ("inited" variable (:type "int") (reparse-symbol classsubparts) [13153 13164]))                  )
+                (reparse-symbol extern-c-contents) [13003 13183])
+            ("O_DATA_LOST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12926 12937])
+            ("O_NEW_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12905 12915])
+            ("O_NEW_INDEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12855 12866])
+            ("TT_FOR_UPGRADE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12820 12834])
+            ("TT_USEFRM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12786 12795])
+            ("MYISAMCHK_VERIFY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12621 12637])
+            ("MYISAMCHK_REPAIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12558 12574])
+            ("MEMMAP_EXTRA_MARGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12420 12439])
+            ("mi_get_pointer_length" function
+               (:type ("uint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("file_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12377 12399])
+                    ("def" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12400 12409]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12343 12410])
+            ("_mi_calc_blob_length" function
+               (:type ("ulong" type (:type "class") nil nil)
+                :arguments 
+                  ( ("length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12310 12323])
+                    ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12324 12341]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12276 12342])
+            ("mi_delete_all_rows" function
+               (:type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12246 12274]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12216 12275])
+            ("mi_is_changed" function
+               (:type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12186 12214]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12161 12215])
+            ("mi_log" function
+               (:type "int"
+                :arguments 
+                  ( ("activate_log" variable (:type "int") (reparse-symbol arg-sub-list) [12142 12159]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12124 12160])
+            ("mi_records_in_range" function
+               (:type ("ha_rows" type (:type "class") nil nil)
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12024 12038])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [12039 12047])
+                    ("min_key" variable
+                       (:pointer 1
+                        :type ("key_range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12083 12102])
+                    ("max_key" variable
+                       (:pointer 1
+                        :type ("key_range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12103 12122]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11989 12123])
+            ("mi_reset" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11959 11987]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11939 11988])
+            ("mi_extra" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11847 11875])
+                    ("function" variable (:type ("ha_extra_function" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [11882 11914])
+                    ("extra_arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11921 11937]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11827 11938])
+            ("mi_rename" function
+               (:type "int"
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11792 11809])
+                    ("to" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11810 11825]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11771 11826])
+            ("mi_delete_table" function
+               (:type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11752 11769]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11725 11770])
+            ("mi_create" function
+               (:type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11538 11555])
+                    ("keys" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11555 11565])
+                    ("keydef" variable
+                       (:pointer 1
+                        :type ("MI_KEYDEF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11565 11583])
+                    ("columns" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11591 11604])
+                    ("columndef" variable
+                       (:pointer 1
+                        :type ("MI_COLUMNDEF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11605 11629])
+                    ("uniques" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11637 11650])
+                    ("uniquedef" variable
+                       (:pointer 1
+                        :type ("MI_UNIQUEDEF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11651 11675])
+                    ("create_info" variable
+                       (:pointer 1
+                        :type ("MI_CREATE_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11683 11711])
+                    ("flags" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11712 11723]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11517 11724])
+            ("mi_lock_database" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11473 11501])
+                    ("lock_type" variable (:type "int") (reparse-symbol arg-sub-list) [11501 11515]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11445 11516])
+            ("mi_status" function
+               (:type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11388 11416])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("MI_ISAMINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11417 11432])
+                    ("flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11433 11443]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11367 11444])
+            ("mi_position" function
+               (:type ("my_off_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11337 11365]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11309 11366])
+            ("mi_write" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11267 11295])
+                    ("buff" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11295 11307]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11247 11308])
+            ("mi_update" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11174 11202])
+                    ("old" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11202 11219])
+                    ("new_record" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11227 11245]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11153 11246])
+            ("mi_rsame_with_pos" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11078 11106])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11106 11120])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [11129 11137])
+                    ("pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11138 11151]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11049 11152])
+            ("mi_rsame" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10997 11025])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11025 11039])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [11039 11047]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10977 11048])
+            ("mi_scan" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10936 10964])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10964 10975]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10917 10976])
+            ("mi_scan_init" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10887 10915]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10863 10916])
+            ("mi_rrnd" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10808 10836])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10836 10847])
+                    ("pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10848 10861]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10789 10862])
+            ("mi_rprev" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10740 10768])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10768 10779])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [10779 10787]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10720 10788])
+            ("mi_rnext_same" function
+               (:type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10678 10706])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10707 10718]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10653 10719])
+            ("mi_rnext" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10604 10632])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10632 10643])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [10643 10651]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10584 10652])
+            ("mi_rlast" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10535 10563])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10563 10574])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [10574 10582]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10515 10583])
+            ("mi_rkey" function
+               (:type "int"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("MI_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10380 10394])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10395 10406])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [10407 10415])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10416 10433])
+                    ("keypart_map" variable (:type ("key_part_map" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10453 10478])
+                    ("search_flag" variable (:type ("ha_rkey_function" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10479 10513]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10361 10514])
+            ("mi_rfirst" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10312 10340])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10340 10351])
+                    ("inx" variable (:type "int") (reparse-symbol arg-sub-list) [10351 10359]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10291 10360])
+            ("mi_panic" function
+               (:type "int"
+                :arguments 
+                  ( ("function" variable (:type ("ha_panic_function" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10257 10289]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10237 10290])
+            ("mi_open" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10149 10156])
+            ("mi_open_share" function
+               (:type ("st_myisam_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9923 9940])
+                    ("old_share" variable
+                       (:pointer 1
+                        :type ("st_mi_isam_share" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9985 10020])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [10065 10074])
+                    ("wait_if_locked" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10119 10139]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9879 10140])
+            ("mi_delete" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9831 9859])
+                    ("buff" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9859 9877]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9810 9878])
+            ("mi_close" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9768 9776])
+            ("mi_close_share" function
+               (:type "int"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("st_myisam_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9707 9735])
+                    ("closed_share" variable
+                       (:pointer 1
+                        :type ("my_bool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9736 9758]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9681 9759])
+            ("THR_LOCK_myisam_mmap" variable
+               (:type ("mysql_mutex_t" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9597 9639])
+            ("myisam_mmap_used" variable
+               (:type ("ulonglong" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9544 9596])
+            ("myisam_mmap_size" variable
+               (:type ("ulonglong" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9544 9596])
+            ("myisam_test_invalid_symlink" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9521 9542]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9479 9543])
+            ("myisam_data_pointer_size" variable
+               (:type ("ulong" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9293 9331])
+            ("myisam_max_temp_length" variable
+               (:type ("my_off_t" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9253 9292])
+            ("myisam_single_user" variable
+               (:type ("my_bool" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9182 9252])
+            ("myisam_delay_key_write" variable
+               (:type ("my_bool" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9182 9252])
+            ("myisam_flush" variable
+               (:type ("my_bool" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9182 9252])
+            ("myisam_concurrent_insert" variable
+               (:type ("ulong" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9143 9181])
+            ("myisam_block_size" variable
+               (:type ("ulong" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [9111 9142])
+            ("myisam_log_filename" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [9053 9087])
+            ("MI_COLUMNDEF" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_columndef" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8555 9050])
+            ("st_columndef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable (:type ("int16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8613 8625])
+                    ("length" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8650 8664])
+                    ("offset" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8691 8705])
+                    ("null_bit" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8742 8758])
+                    ("null_pos" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8788 8804])
+                    ("unpack" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("rec" variable
+                               (:pointer 1
+                                :type ("st_columndef" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8856 8881])
+                            ("buff" variable
+                               (:pointer 1
+                                :type ("st_mi_bit_buff" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8881 8909])
+                            ("start" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8913 8926])
+                            ("end" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8926 8937]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8841 8938])
+                    ("base_type" variable (:type ("en_fieldtype" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [8941 8969])
+                    ("space_length_bits" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8972 9005])
+                    ("pack_type" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8972 9005])
+                    ("huff_tree" variable
+                       (:pointer 1
+                        :type ("MI_DECODE_TREE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9008 9034]))                  )
+                (reparse-symbol extern-c-contents) [8555 9050])
+            ("st_mi_bit_buff" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [8376 8398])
+            ("MI_DECODE_TREE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_mi_decode_tree" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8232 8373])
+            ("st_mi_decode_tree" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("uint16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8293 8307])
+                    ("quick_table_bits" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8310 8333])
+                    ("intervalls" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8336 8355]))                  )
+                (reparse-symbol extern-c-contents) [8232 8373])
+            ("MI_UNIQUEDEF" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_unique_def" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8011 8230])
+            ("st_unique_def" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("keysegs" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8080 8095])
+                    ("key" variable (:type ("uchar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8128 8138])
+                    ("null_are_equal" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8170 8191])
+                    ("seg" variable
+                       (:pointer 1
+                        :type ("HA_KEYSEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8194 8214])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("HA_KEYSEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8194 8214]))                  )
+                (reparse-symbol extern-c-contents) [8011 8230])
+            ("MI_UNIQUE_HASH_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7986 8007])
+            ("MI_KEYDEF" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_mi_keydef" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6396 7975])
+            ("st_mi_keydef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("share" variable
+                       (:pointer 1
+                        :type ("st_mi_isam_share" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6467 6498])
+                    ("keysegs" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6546 6561])
+                    ("flag" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6594 6606])
+                    ("key_alg" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6637 6652])
+                    ("block_length" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6676 6696])
+                    ("underflow_block_length" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6733 6763])
+                    ("keylength" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6798 6815])
+                    ("minlength" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6856 6873])
+                    ("maxlength" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6918 6935])
+                    ("block_size_index" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6980 7004])
+                    ("version" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7032 7047])
+                    ("ftkey_nr" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7084 7100])
+                    ("seg" variable
+                       (:pointer 1
+                        :type ("HA_KEYSEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7154 7174])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("HA_KEYSEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7154 7174])
+                    ("parser" variable
+                       (:pointer 1
+                        :type ("st_mysql_ftparser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7177 7210])
+                    ("bin_search" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type ("st_myisam_info" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7262 7290])
+                            ("keyinfo" variable
+                               (:pointer 1
+                                :type ("st_mi_keydef" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7290 7319])
+                            ("page" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7326 7338])
+                            ("key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7338 7349])
+                            ("key_len" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7356 7369])
+                            ("comp_flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7369 7384])
+                            ("ret_pos" variable
+                               (:pointer 2
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7384 7401])
+                            ("buff" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7408 7420])
+                            ("was_last_key" variable
+                               (:pointer 1
+                                :type ("my_bool" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7421 7443]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7244 7444])
+                    ("get_key" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("keyinfo" variable
+                               (:pointer 1
+                                :type ("st_mi_keydef" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7463 7492])
+                            ("nod_flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7492 7506])
+                            ("page" variable
+                               (:pointer 2
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7506 7520])
+                            ("key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7525 7536]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7447 7537])
+                    ("pack_key" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("keyinfo" variable
+                               (:pointer 1
+                                :type ("st_mi_keydef" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7556 7585])
+                            ("nod_flag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7585 7599])
+                            ("next_key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7599 7615])
+                            ("org_key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7620 7635])
+                            ("prev_key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7636 7652])
+                            ("key" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7653 7664])
+                            ("s_temp" variable
+                               (:pointer 1
+                                :type ("st_mi_s_param" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7669 7698]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7540 7699])
+                    ("store_key" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("keyinfo" variable
+                               (:pointer 1
+                                :type ("st_mi_keydef" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7720 7749])
+                            ("key_pos" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7750 7765])
+                            ("s_temp" variable
+                               (:pointer 1
+                                :type ("st_mi_s_param" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7772 7801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7702 7802])
+                    ("ck_insert" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("inf" variable
+                               (:pointer 1
+                                :type ("st_myisam_info" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7822 7849])
+                            ("k_nr" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7850 7860])
+                            ("k" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7861 7870])
+                            ("klen" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7871 7881]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7805 7882])
+                    ("ck_delete" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("inf" variable
+                               (:pointer 1
+                                :type ("st_myisam_info" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7902 7929])
+                            ("k_nr" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7930 7940])
+                            ("k" variable
+                               (:pointer 1
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7941 7950])
+                            ("klen" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7951 7961]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7885 7962]))                  )
+                (reparse-symbol extern-c-contents) [6396 7975])
+            ("st_mi_s_param" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [6373 6394])
+            ("MI_INFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_myisam_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6334 6372])
+            ("st_mi_isam_share" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [6309 6333])
+            ("st_myisam_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [6264 6286])
+            ("MI_CREATE_INFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_mi_create_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [5939 6262])
+            ("st_mi_create_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("index_file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5976 6021])
+                    ("data_file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5976 6021])
+                    ("max_rows" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6048 6065])
+                    ("reloc_rows" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6068 6087])
+                    ("auto_increment" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6090 6115])
+                    ("data_file_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6118 6145])
+                    ("key_file_length" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6148 6174])
+                    ("old_options" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6177 6194])
+                    ("language" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6197 6213])
+                    ("with_auto_increment" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6216 6244]))                  )
+                (reparse-symbol extern-c-contents) [5939 6262])
+            ("MI_ISAMINFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("st_mi_isaminfo" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [4766 5936])
+            ("st_mi_isaminfo" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("records" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4826 4842])
+                    ("deleted" variable (:type ("ha_rows" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4873 4889])
+                    ("recpos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4928 4944])
+                    ("newrecpos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4980 4999])
+                    ("dupp_key_pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5037 5059])
+                    ("data_file_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5102 5278])
+                    ("max_data_file_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5102 5278])
+                    ("index_file_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5102 5278])
+                    ("max_index_file_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5102 5278])
+                    ("delete_length" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5102 5278])
+                    ("reclength" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5281 5297])
+                    ("mean_reclength" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5321 5342])
+                    ("auto_increment" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5383 5408])
+                    ("key_map" variable (:type ("ulonglong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5411 5429])
+                    ("data_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5460 5500])
+                    ("index_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5460 5500])
+                    ("keys" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5503 5514])
+                    ("options" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5548 5561])
+                    ("errkey" variable (:type "int") (reparse-symbol classsubparts) [5591 5653])
+                    ("sortkey" variable (:type "int") (reparse-symbol classsubparts) [5591 5653])
+                    ("filenr" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5686 5698])
+                    ("create_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5737 5756])
+                    ("check_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5790 5808])
+                    ("update_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5811 5830])
+                    ("reflength" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5833 5849])
+                    ("record_offset" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5852 5872])
+                    ("rec_per_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5875 5894]))                  )
+                (reparse-symbol extern-c-contents) [4766 5936])
+            ("mi_copy_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4561 4580])
+            ("mi_is_any_intersect_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4366 4397])
+            ("mi_intersect_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4272 4296])
+            ("mi_clear_all_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4185 4209])
+            ("mi_set_all_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4059 4081])
+            ("mi_is_all_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3930 3951])
+            ("mi_is_any_key_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3841 3861])
+            ("mi_clear_key_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3719 3738])
+            ("mi_set_key_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3612 3629])
+            ("mi_is_key_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3497 3513])
+            ("mi_get_mask_all_keys_active" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2485 2512])
+            ("MI_KEYMAP_HIGH_MASK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2426 2445])
+            ("MI_KEYMAP_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2375 2389])
+            ("MI_MAX_KEY_BLOCK_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2050 2073])
+            ("MI_MIN_KEY_BLOCK_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1986 2009])
+            ("MI_KEY_BLOCK_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1922 1941])
+            ("MI_NAME_DEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1828 1840])
+            ("MI_NAME_IEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1800 1812])
+            ("MI_MAX_MSG_BUF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1727 1741])
+            ("MI_MAX_KEY_BUFF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1661 1676])
+            ("MI_MAX_KEY_SEG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1581 1595])
+            ("MI_MAX_KEY_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1503 1520])
+            ("MI_MAX_POSSIBLE_KEY_BUFF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1302 1326])
+            ("MI_MAX_KEY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1215 1225]))          
+      :file "myisam.h"
+      :pointmax 18174
+      :fsize 18173
+      :lastmodtime '(23319 28632 469017 950000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MI_MAX_KEY_SEG" . ((number "16" 1609 . 1611)))
+          ("mi_intersect_keys_active" (spp-arg-list ("_to_" "_from_") 4296 . 4309) . 
+              ((semantic-list "(_to_)" 4340 . 4346) (punctuation "&" 4346 . 4347) (punctuation "=" 4347 . 4348) (semantic-list "(_from_)" 4349 . 4357)))
+          ("mi_is_any_intersect_keys_active" (spp-arg-list ("_keymap1_" "_keys_" "_keymap2_") 4397 . 4425) . ((semantic-list "((_keymap1_) & (_keymap2_) & \\
+                             mi_get_mask_all_keys_active(_keys_))" 4456 . 4552)))
+          ("mi_clear_key_active" (spp-arg-list ("_keymap_" "_keyno_") 3738 . 3756) . 
+              ((semantic-list "(_keymap_)" 3787 . 3797) (punctuation "&" 3797 . 3798) (punctuation "=" 3798 . 3799) (semantic-list "(~ (1ULL << (_keyno_)))" 3800 . 3823)))
+          ("mi_set_all_keys_active" (spp-arg-list ("_keymap_" "_keys_") 4081 . 4098) . 
+              ((semantic-list "(_keymap_)" 4129 . 4139) (punctuation "=" 4139 . 4140) (symbol "mi_get_mask_all_keys_active" 4141 . 4168) (semantic-list "(_keys_)" 4168 . 4176)))
+          ("MI_KEY_BLOCK_LENGTH" . ((number "1024" 1942 . 1946)))
+          ("mi_is_any_key_active" (spp-arg-list ("_keymap_") 3861 . 3871) . ((symbol "MY_TEST" 3902 . 3909) (semantic-list "((_keymap_))" 3909 . 3921)))
+          ("mi_copy_keys_active" (spp-arg-list ("_to_" "_maxkeys_" "_from_") 4580 . 4603) . 
+              ((semantic-list "(_to_)" 4634 . 4640) (punctuation "=" 4640 . 4641) (semantic-list "(mi_get_mask_all_keys_active(_maxkeys_) & \\
+                                     (_from_))" 4642 . 4732)))
+          ("MI_UNIQUE_HASH_LENGTH" . ((number "4" 8008 . 8009)))
+          ("TT_FOR_UPGRADE" . ((number "2" 12844 . 12845)))
+          ("O_DATA_LOST" . ((number "4" 12938 . 12939)))
+          ("MI_NAME_IEXT" . ((string "\".MYI\"" 1813 . 1819)))
+          ("_myisam_h")
+          ("MI_MAX_KEY_LENGTH" . ((number "1000" 1531 . 1535)))
+          ("mi_get_mask_all_keys_active" (spp-arg-list ("_keys_") 2512 . 2520) . ((semantic-list "(((_keys_) < MI_KEYMAP_BITS) ? \\
+                             ((1ULL << (_keys_)) - 1ULL) : \\
+                             (~ 0ULL))" 2551 . 2683)))
+          ("mi_is_all_keys_active" (spp-arg-list ("_keymap_" "_keys_") 3951 . 3968) . ((semantic-list "((_keymap_) == mi_get_mask_all_keys_active(_keys_))" 3999 . 4050)))
+          ("mi_close" (spp-arg-list ("file") 9776 . 9782) . ((symbol "mi_close_share" 9783 . 9797) (semantic-list "(file, NULL)" 9797 . 9809)))
+          ("MEMMAP_EXTRA_MARGIN" . ((number "7" 12444 . 12445)))
+          ("MI_MAX_POSSIBLE_KEY_BUFF" . ((symbol "HA_MAX_POSSIBLE_KEY_BUFF" 1330 . 1354)))
+          ("MI_KEYMAP_HIGH_MASK" . ((semantic-list "(1ULL << (MI_KEYMAP_BITS - 1))" 2446 . 2476)))
+          ("MYISAMCHK_REPAIR" . ((number "1" 12575 . 12576)))
+          ("mi_clear_all_keys_active" (spp-arg-list ("_keymap_") 4209 . 4219) . 
+              ((semantic-list "(_keymap_)" 4250 . 4260) (punctuation "=" 4260 . 4261) (number "0" 4262 . 4263)))
+          ("TT_USEFRM" . ((number "1" 12810 . 12811)))
+          ("MI_MAX_MSG_BUF" . ((number "1024" 1747 . 1751)))
+          ("mi_is_key_active" (spp-arg-list ("_keymap_" "_keyno_") 3513 . 3531) . ((symbol "MY_TEST" 3562 . 3569) (semantic-list "((_keymap_) & (1ULL << (_keyno_)))" 3569 . 3603)))
+          ("O_NEW_INDEX" . ((number "1" 12867 . 12868)))
+          ("MI_MAX_KEY" . ((symbol "MAX_INDEXES" 1243 . 1254)))
+          ("MI_MAX_KEY_BLOCK_LENGTH" . ((number "16384" 2074 . 2079)))
+          ("MYISAMCHK_VERIFY" . ((number "2" 12638 . 12639)))
+          ("MI_NAME_DEXT" . ((string "\".MYD\"" 1841 . 1847)))
+          ("MI_MIN_KEY_BLOCK_LENGTH" . ((number "1024" 2010 . 2014)))
+          ("MI_KEYMAP_BITS" . ((semantic-list "(8 * SIZEOF_LONG_LONG)" 2395 . 2417)))
+          ("mi_set_key_active" (spp-arg-list ("_keymap_" "_keyno_") 3629 . 3647) . 
+              ((semantic-list "(_keymap_)" 3678 . 3688) (punctuation "|" 3688 . 3689) (punctuation "=" 3689 . 3690) (semantic-list "(1ULL << (_keyno_))" 3691 . 3710)))
+          ("mi_open" (spp-arg-list ("name" "mode" "wait_if_locked") 10156 . 10184) . ((symbol "mi_open_share" 10189 . 10202) (semantic-list "(name, NULL, mode, wait_if_locked)" 10202 . 10236)))
+          ("MI_MAX_KEY_BUFF" . ((semantic-list "(MI_MAX_KEY_LENGTH+MI_MAX_KEY_SEG*6+8+8)" 1678 . 1718)))
+          ("O_NEW_DATA" . ((number "2" 12916 . 12917)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "my_base.h"
+      :fsize 26632
+      :lastmodtime '(23319 28632 457017 820000))
+    (semanticdb-table "semanticdb-table"
+      :file "m_ctype.h"
+      :fsize 34282
+      :lastmodtime '(23319 28632 453017 775000))
+    (semanticdb-table "semanticdb-table"
+      :file "keycache.h"
+      :fsize 7489
+      :lastmodtime '(23319 28632 453017 775000))
+    (semanticdb-table "semanticdb-table"
+      :file "my_compare.h"
+      :fsize 4405
+      :lastmodtime '(23319 28632 457017 820000))
+    (semanticdb-table "semanticdb-table"
+      :file "my_check_opt.h"
+      :fsize 2224
+      :lastmodtime '(23319 28632 457017 820000))
+    (semanticdb-table "semanticdb-table"
+      :file "m_string.h"
+      :fsize 10722
+      :lastmodtime '(23319 28632 453017 775000)))
+  :file "!home!maurice!github!mysql-server!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

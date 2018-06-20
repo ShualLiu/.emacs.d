@@ -1,0 +1,117 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_TYPES_H_" variable (:constant-flag t) nil [66 75])
+            ("stdbool.h" include (:system-flag t) nil [77 97])
+            ("ARRAY_SIZE" variable (:constant-flag t) nil [107 117])
+            ("u8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [151 177])
+            ("u16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [178 206])
+            ("u32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [207 233])
+            ("u64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [234 265])
+            ("s8" type
+               (:typedef ("signed char")
+                :type "typedef")
+                nil [266 290])
+            ("s16" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [291 311])
+            ("s32" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [312 330])
+            ("s64" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [331 354])
+            ("uint8_t" type
+               (:typedef ("u8" type (:type "class") nil nil)
+                :type "typedef")
+                nil [386 406])
+            ("uint16_t" type
+               (:typedef ("u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [407 428])
+            ("uint32_t" type
+               (:typedef ("u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [429 450])
+            ("uint64_t" type
+               (:typedef ("u64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [451 472])
+            ("int8_t" type
+               (:typedef ("s8" type (:type "class") nil nil)
+                :type "typedef")
+                nil [473 492])
+            ("int16_t" type
+               (:typedef ("s16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [493 513])
+            ("int32_t" type
+               (:typedef ("s32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [514 534])
+            ("int64_t" type
+               (:typedef ("s64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [535 555])
+            ("min" variable (:constant-flag t) nil [565 568])
+            ("max" variable (:constant-flag t) nil [681 684])
+            ("min_t" variable (:constant-flag t) nil [797 802])
+            ("max_t" variable (:constant-flag t) nil [851 856])
+            ("true" variable (:constant-flag t) nil [938 942])
+            ("false" variable (:constant-flag t) nil [975 980]))          
+      :file "types.h"
+      :pointmax 1013
+      :fsize 1012
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax '((punctuation 914 . 915) (BOOL 910 . 914) (INT 906 . 909) (TYPEDEF 898 . 905))
+      :lexical-table 
+        '(("max" (spp-arg-list ("x" "y") 684 . 689) . ((semantic-list "({ \\
+	typeof(x) _x = (x);	\\
+	typeof(y) _y = (y);	\\
+	(void) (&_x == &_y);	\\
+	_x > _y ? _x : _y; })" 690 . 787)))
+          ("false" . ((number "0" 981 . 982)))
+          ("min" (spp-arg-list ("x" "y") 568 . 573) . ((semantic-list "({ \\
+	typeof(x) _x = (x);	\\
+	typeof(y) _y = (y);	\\
+	(void) (&_x == &_y);	\\
+	_x < _y ? _x : _y; })" 574 . 671)))
+          ("ARRAY_SIZE" (spp-arg-list ("x") 117 . 120) . ((semantic-list "(sizeof(x) / sizeof((x)[0]))" 121 . 149)))
+          ("min_t" (spp-arg-list ("type" "a" "b") 802 . 814) . ((symbol "min" 815 . 818) (semantic-list "(((type) a), ((type) b))" 818 . 842)))
+          ("_TYPES_H_")
+          ("max_t" (spp-arg-list ("type" "a" "b") 856 . 868) . ((symbol "max" 869 . 872) (semantic-list "(((type) a), ((type) b))" 872 . 896)))
+          ("true" . ((number "1" 943 . 944)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("types.h" include nil nil [420 438]))          
+      :file "stdbool.h"
+      :pointmax 439
+      :fsize 438
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil))
+  :file "!home!maurice!linux-4.16.13!arch!powerpc!boot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

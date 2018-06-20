@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "flycheck-autoloads.el"
+      :pointmax 311
+      :fsize 8594
+      :lastmodtime '(23324 63192 126854 980000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!flycheck-20180609.159!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1437 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ACDISASM_H__" variable (:constant-flag t) nil [2121 2135])
+            ("amlresrc.h" include nil nil [2137 2158])
+            ("BLOCK_NONE" variable (:constant-flag t) nil [2169 2179])
+            ("BLOCK_PAREN" variable (:constant-flag t) nil [2203 2214])
+            ("BLOCK_BRACE" variable (:constant-flag t) nil [2237 2248])
+            ("BLOCK_COMMA_LIST" variable (:constant-flag t) nil [2271 2287])
+            ("acpi_external_list" type
+               (:members 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2327 2369])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("acpi_external_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2371 2413]))                  
+                :type "struct")
+                nil [2298 2416])
+            ("acpi_gbl_external_list" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("acpi_external_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2418 2482])
+            ("acpi_gbl_io_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2483 2546])
+            ("acpi_gbl_word_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2547 2612])
+            ("acpi_gbl_consume_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2613 2681])
+            ("acpi_gbl_min_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2682 2746])
+            ("acpi_gbl_max_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2747 2811])
+            ("acpi_gbl_DECdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2812 2875])
+            ("acpi_gbl_RNGdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2876 2939])
+            ("acpi_gbl_MEMdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2940 3003])
+            ("acpi_gbl_RWdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3004 3066])
+            ("acpi_gbl_irq_decode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3067 3131])
+            ("acpi_gbl_HEdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3132 3194])
+            ("acpi_gbl_LLdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3195 3257])
+            ("acpi_gbl_SHRdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3258 3321])
+            ("acpi_gbl_TYPdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3322 3385])
+            ("acpi_gbl_BMdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3386 3448])
+            ("acpi_gbl_SIZdecode" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3449 3512])
+            ("acpi_gbl_lock_rule" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3513 3594])
+            ("acpi_gbl_access_types" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3595 3681])
+            ("acpi_gbl_update_rules" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3682 3768])
+            ("acpi_gbl_match_ops" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3769 3849])
+            ("acpi_op_walk_info" type
+               (:members 
+                  ( ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3880 3918])
+                    ("bit_offset" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3920 3963]))                  
+                :type "struct")
+                nil [3852 3966])
+            ("asl_walk_callback" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4012 4052])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4054 4096])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4098 4143]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3976 4144])
+            ("acpi_dm_walk_parse_tree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4197 4233])
+                    ("descending_callback" variable (:type ("asl_walk_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4235 4287])
+                    ("ascending_callback" variable (:type ("asl_walk_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4289 4340])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4342 4383]))                  
+                :type "void")
+                nil [4165 4384])
+            ("acpi_dm_descending_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4423 4459])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4461 4499])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4501 4542]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4386 4543])
+            ("acpi_dm_ascending_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4581 4617])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4619 4657])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4659 4700]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4545 4701])
+            ("acpi_dm_validate_name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4754 4792])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4794 4830]))                  
+                :type "void")
+                nil [4724 4831])
+            ("acpi_dm_dump_name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4858 4896]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [4833 4897])
+            ("acpi_dm_unicode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [4923 4959]))                  
+                :type "void")
+                nil [4899 4960])
+            ("acpi_dm_disassemble" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4990 5034])
+                    ("origin" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5036 5076])
+                    ("num_opcodes" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5078 5122]))                  
+                :type "void")
+                nil [4962 5123])
+            ("acpi_dm_namestring" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5152 5190]))                  
+                :type "void")
+                nil [5125 5191])
+            ("acpi_dm_display_path" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5222 5258]))                  
+                :type "void")
+                nil [5193 5259])
+            ("acpi_dm_disassemble_one_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5296 5340])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("acpi_op_walk_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5342 5380])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5382 5418]))                  
+                :type "void")
+                nil [5261 5419])
+            ("acpi_dm_decode_internal_object" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj_desc" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5460 5502]))                  
+                :type "void")
+                nil [5421 5503])
+            ("acpi_dm_block_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5531 5567]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [5505 5568])
+            ("acpi_dm_list_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5595 5631]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [5570 5632])
+            ("acpi_ps_display_object_pathname" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5681 5725])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5727 5763]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [5634 5764])
+            ("acpi_dm_method_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5795 5831]))                  
+                :type "void")
+                nil [5766 5832])
+            ("acpi_dm_field_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5862 5898]))                  
+                :type "void")
+                nil [5834 5899])
+            ("acpi_dm_address_space" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("space_id" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5931 5972]))                  
+                :type "void")
+                nil [5901 5973])
+            ("acpi_dm_region_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6004 6040]))                  
+                :type "void")
+                nil [5975 6041])
+            ("acpi_dm_match_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6068 6104]))                  
+                :type "void")
+                nil [6043 6105])
+            ("acpi_dm_match_keyword" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6137 6173]))                  
+                :type "void")
+                nil [6107 6174])
+            ("acpi_dm_comma_if_list_member" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6211 6247]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [6176 6248])
+            ("acpi_dm_comma_if_field_member" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6288 6324]))                  
+                :type "void")
+                nil [6250 6325])
+            ("acpi_dm_decode_node" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6376 6414]))                  
+                :type "void")
+                nil [6348 6415])
+            ("acpi_dm_display_internal_object" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj_desc" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6457 6499])
+                    ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6501 6545]))                  
+                :type "void")
+                nil [6417 6546])
+            ("acpi_dm_display_arguments" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6582 6626]))                  
+                :type "void")
+                nil [6548 6627])
+            ("acpi_dm_display_locals" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6660 6704]))                  
+                :type "void")
+                nil [6629 6705])
+            ("acpi_dm_dump_method_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("acpi_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6740 6779])
+                    ("walk_state" variable
+                       (:pointer 1
+                        :type ("acpi_walk_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6781 6825])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6827 6863]))                  
+                :type "void")
+                nil [6707 6864])
+            ("acpi_is_eisa_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6911 6947]))                  
+                :type "void")
+                nil [6887 6948])
+            ("acpi_dm_eisa_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("encoded_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6974 7017]))                  
+                :type "void")
+                nil [6950 7018])
+            ("acpi_dm_is_unicode_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [7052 7088]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [7020 7089])
+            ("acpi_dm_is_string_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [7122 7158]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [7091 7159])
+            ("acpi_dm_disasm_byte_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7214 7252])
+                    ("byte_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7254 7297])
+                    ("byte_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7299 7342]))                  
+                :type "void")
+                nil [7181 7343])
+            ("acpi_dm_byte_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("acpi_op_walk_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7371 7409])
+                    ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [7411 7447]))                  
+                :type "void")
+                nil [7345 7448])
+            ("acpi_dm_resource_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("acpi_op_walk_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7486 7524])
+                    ("byte_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7526 7569])
+                    ("byte_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7571 7614]))                  
+                :type "void")
+                nil [7450 7615])
+            ("acpi_dm_is_resource_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("acpi_parse_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [7654 7690]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [7617 7691])
+            ("acpi_dm_indent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7716 7754]))                  
+                :type "void")
+                nil [7693 7755])
+            ("acpi_dm_bit_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mask" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7782 7819]))                  
+                :type "void")
+                nil [7757 7820])
+            ("acpi_dm_decode_attribute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attribute" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7855 7897]))                  
+                :type "void")
+                nil [7822 7898])
+            ("acpi_dm_io_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flags" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7946 7980]))                  
+                :type "void")
+                nil [7920 7981])
+            ("acpi_dm_memory_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flags" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8012 8050])
+                    ("specific_flags" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8052 8099]))                  
+                :type "void")
+                nil [7983 8100])
+            ("acpi_dm_word_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_word_address_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8134 8176])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8178 8217])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8219 8257]))                  
+                :type "void")
+                nil [8102 8258])
+            ("acpi_dm_dword_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_dword_address_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8293 8335])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8337 8376])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8378 8416]))                  
+                :type "void")
+                nil [8260 8417])
+            ("acpi_dm_extended_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_extended_address_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8455 8500])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8502 8541])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8543 8581]))                  
+                :type "void")
+                nil [8419 8582])
+            ("acpi_dm_qword_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_qword_address_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8617 8659])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8661 8700])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8702 8740]))                  
+                :type "void")
+                nil [8584 8741])
+            ("acpi_dm_memory24_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_memory_24_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8779 8821])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8823 8862])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8864 8902]))                  
+                :type "void")
+                nil [8743 8903])
+            ("acpi_dm_memory32_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_memory_32_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8941 8983])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8985 9024])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9026 9064]))                  
+                :type "void")
+                nil [8905 9065])
+            ("acpi_dm_fixed_mem32_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_fixed_memory_32_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9106 9148])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9150 9189])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9191 9229]))                  
+                :type "void")
+                nil [9067 9230])
+            ("acpi_dm_generic_register_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_general_register_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9276 9319])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9321 9360])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9362 9400]))                  
+                :type "void")
+                nil [9232 9401])
+            ("acpi_dm_interrupt_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_extended_xrupt_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9440 9481])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9483 9522])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9524 9562]))                  
+                :type "void")
+                nil [9403 9563])
+            ("acpi_dm_vendor_large_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_large_vendor_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9605 9647])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9649 9688])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9690 9728]))                  
+                :type "void")
+                nil [9565 9729])
+            ("acpi_dm_irq_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_irq_format_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9783 9825])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9827 9866])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9868 9906]))                  
+                :type "void")
+                nil [9752 9907])
+            ("acpi_dm_dma_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_dma_format_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9940 9982])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9984 10023])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10025 10063]))                  
+                :type "void")
+                nil [9909 10064])
+            ("acpi_dm_io_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_io_port_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10096 10138])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10140 10179])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10181 10219]))                  
+                :type "void")
+                nil [10066 10220])
+            ("acpi_dm_fixed_io_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_fixed_io_port_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10258 10300])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10302 10341])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10343 10381]))                  
+                :type "void")
+                nil [10222 10382])
+            ("acpi_dm_start_dependent_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_start_dependent_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10427 10469])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10471 10510])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10512 10550]))                  
+                :type "void")
+                nil [10384 10551])
+            ("acpi_dm_end_dependent_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_start_dependent_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10594 10636])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10638 10677])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10679 10717]))                  
+                :type "void")
+                nil [10553 10718])
+            ("acpi_dm_vendor_small_descriptor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resource" variable
+                       (:pointer 1
+                        :type ("asl_small_vendor_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10760 10802])
+                    ("length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10804 10843])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10845 10883]))                  
+                :type "void")
+                nil [10720 10884])
+            ("acpi_dm_add_to_external_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10943 10981]))                  
+                :type "void")
+                nil [10906 10982]))          
+      :file "acdisasm.h"
+      :pointmax 11013
+      :fsize 11012
+      :lastmodtime '(16936 39499 0 0)
+      :unmatched-syntax '((TYPEDEF 3968 . 3975))
+      :lexical-table 
+        '(("BLOCK_BRACE" . ((number "2" 2261 . 2262)))
+          ("__ACDISASM_H__")
+          ("BLOCK_COMMA_LIST" . ((number "4" 2295 . 2296)))
+          ("BLOCK_NONE" . ((number "0" 2193 . 2194)))
+          ("BLOCK_PAREN" . ((number "1" 2227 . 2228)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "amlresrc.h"
+      :fsize 12394
+      :lastmodtime '(16936 39510 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ACEVENTS_H__" variable (:constant-flag t) nil [2146 2160])
+            ("acpi_ev_initialize_events" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2204 2209]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2163 2210])
+            ("acpi_ev_install_xrupt_handlers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2258 2263]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2212 2264])
+            ("acpi_ev_fixed_event_initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2355 2360]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2309 2361])
+            ("acpi_ev_fixed_event_detect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2397 2402]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [2363 2403])
+            ("acpi_ev_fixed_event_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("event" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2441 2479]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [2405 2480])
+            ("acpi_ev_is_notify_object" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2532 2570]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [2501 2571])
+            ("acpi_ev_acquire_global_lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timeout" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2615 2655]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2573 2656])
+            ("acpi_ev_release_global_lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2700 2705]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2658 2706])
+            ("acpi_ev_init_global_lock_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2756 2761]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2708 2762])
+            ("acpi_ev_get_gpe_number_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_number" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2800 2843]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [2764 2844])
+            ("acpi_ev_queue_notify_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2890 2928])
+                    ("notify_value" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2930 2975]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [2846 2976])
+            ("acpi_ev_notify_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3028 3069]))                  
+                :type ("ACPI_SYSTEM_XFACE" type (:type "class") nil nil))
+                nil [2983 3070])
+            ("acpi_ev_walk_gpe_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_walk_callback" variable (:type ("ACPI_GPE_CALLBACK" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3155 3197])
+                    ("flags" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3199 3237]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3118 3238])
+            ("acpi_ev_valid_gpe_event" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3270 3318]))                  
+                :type ("u8" type (:type "class") nil nil))
+                nil [3240 3319])
+            ("acpi_ev_update_gpe_enable_masks" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3368 3416])
+                    ("type" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3418 3455]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3321 3456])
+            ("acpi_ev_enable_gpe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3492 3540])
+                    ("write_to_hardware" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3542 3592]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3458 3593])
+            ("acpi_ev_disable_gpe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3630 3678]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3595 3679])
+            ("acpi_ev_get_gpe_event_info" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("gpe_device" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3740 3783])
+                    ("gpe_number" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3785 3828]))                  
+                :type ("acpi_gpe_event_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3681 3829])
+            ("acpi_ev_gpe_initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3869 3874]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3831 3875])
+            ("acpi_ev_create_gpe_block" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_device" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3917 3961])
+                    ("gpe_block_address" variable
+                       (:pointer 1
+                        :type ("acpi_generic_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3963 4014])
+                    ("register_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4016 4063])
+                    ("gpe_block_base_number" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4065 4119])
+                    ("interrupt_level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4121 4169])
+                    ("return_gpe_block" variable
+                       (:pointer 2
+                        :type ("acpi_gpe_block_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4171 4222]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [3877 4223])
+            ("acpi_ev_delete_gpe_block" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_block" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_block_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4265 4308]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4225 4309])
+            ("acpi_ev_delete_gpe_handlers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_xrupt_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_xrupt_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4354 4402])
+                    ("gpe_block" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_block_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4404 4447]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4311 4448])
+            ("acpi_ev_gpe_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4478 4526])
+                    ("gpe_number" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4528 4571]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [4450 4572])
+            ("acpi_ev_gpe_detect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_xrupt_list" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_xrupt_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4600 4648]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [4574 4649])
+            ("acpi_ev_set_gpe_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4687 4735])
+                    ("type" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4737 4774]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4651 4775])
+            ("acpi_ev_check_for_wake_only_gpe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gpe_event_info" variable
+                       (:pointer 1
+                        :type ("acpi_gpe_event_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4824 4872]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4777 4873])
+            ("acpi_ev_install_region_handlers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4967 4972]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4920 4973])
+            ("acpi_ev_initialize_op_regions" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5020 5025]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [4975 5026])
+            ("acpi_ev_address_space_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("region_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5074 5117])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5119 5160])
+                    ("address" variable (:type ("acpi_physical_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5162 5202])
+                    ("bit_width" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5204 5246])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5248 5287]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [5028 5288])
+            ("acpi_ev_install_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj_handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5329 5372])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5374 5412])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5414 5455])
+                    ("return_value" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5457 5504]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [5290 5505])
+            ("acpi_ev_attach_region" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5544 5589])
+                    ("region_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5591 5635])
+                    ("acpi_ns_is_locked" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5637 5687]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [5507 5688])
+            ("acpi_ev_detach_region" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("region_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [5720 5763])
+                    ("acpi_ns_is_locked" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5765 5815]))                  
+                :type "void")
+                nil [5690 5816])
+            ("acpi_ev_install_space_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5863 5901])
+                    ("space_id" variable (:type ("acpi_adr_space_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5903 5944])
+                    ("handler" variable (:type ("acpi_adr_space_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5946 5986])
+                    ("setup" variable (:type ("acpi_adr_space_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5988 6026])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6028 6069]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [5818 6070])
+            ("acpi_ev_execute_reg_methods" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("acpi_namespace_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6115 6153])
+                    ("space_id" variable (:type ("acpi_adr_space_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6155 6196]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [6072 6197])
+            ("acpi_ev_execute_reg_method" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("region_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [6241 6284])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6286 6327]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [6199 6328])
+            ("acpi_ev_reg_run" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj_handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6361 6404])
+                    ("level" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6406 6444])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6446 6487])
+                    ("return_value" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6489 6536]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [6330 6537])
+            ("acpi_ev_system_memory_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6643 6682])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6684 6725])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6727 6776])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6778 6827]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [6593 6828])
+            ("acpi_ev_io_space_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6875 6914])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6916 6957])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6959 7008])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7010 7059]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [6830 7060])
+            ("acpi_ev_pci_config_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7109 7148])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7150 7191])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7193 7242])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7244 7293]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [7062 7294])
+            ("acpi_ev_cmos_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7337 7376])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7378 7419])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7421 7470])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7472 7521]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [7296 7522])
+            ("acpi_ev_pci_bar_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7568 7607])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7609 7650])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7652 7701])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7703 7752]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [7524 7753])
+            ("acpi_ev_default_region_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable (:type ("acpi_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7799 7838])
+                    ("function" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7840 7881])
+                    ("handler_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7883 7932])
+                    ("region_context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7934 7983]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [7755 7984])
+            ("acpi_ev_initialize_region" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("region_obj" variable
+                       (:pointer 1
+                        :type ("acpi_operand_object" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [8027 8071])
+                    ("acpi_ns_locked" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8073 8120]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [7986 8121])
+            ("acpi_ev_gpe_xrupt_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8243 8284]))                  
+                :type ("ACPI_SYSTEM_XFACE" type (:type "class") nil nil))
+                nil [8196 8285])
+            ("acpi_ev_install_sci_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8322 8327]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [8287 8328])
+            ("acpi_ev_remove_sci_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8372 8377]))                  
+                :type ("acpi_status" type (:type "class") nil nil))
+                nil [8330 8378])
+            ("acpi_ev_initialize_sCI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("program_sCI" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8410 8454]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [8380 8455])
+            ("acpi_ev_terminate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8483 8488]))                  
+                :type "void")
+                nil [8457 8489]))          
+      :file "acevents.h"
+      :pointmax 8522
+      :fsize 8521
+      :lastmodtime '(16936 39500 0 0)
+      :unmatched-syntax '((symbol 8192 . 8195) (VOID 2978 . 2982))
+      :lexical-table 
+        '(("__ACEVENTS_H__")
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!include!acpi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

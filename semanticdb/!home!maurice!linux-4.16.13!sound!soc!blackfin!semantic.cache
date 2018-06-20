@@ -1,0 +1,1188 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [1076 1101])
+            ("linux/slab.h" include (:system-flag t) nil [1102 1125])
+            ("linux/delay.h" include (:system-flag t) nil [1126 1150])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [1151 1181])
+            ("linux/gpio.h" include (:system-flag t) nil [1182 1205])
+            ("linux/bug.h" include (:system-flag t) nil [1206 1228])
+            ("linux/module.h" include (:system-flag t) nil [1229 1254])
+            ("asm/portmux.h" include (:system-flag t) nil [1255 1279])
+            ("asm/dma.h" include (:system-flag t) nil [1280 1300])
+            ("asm/blackfin.h" include (:system-flag t) nil [1301 1326])
+            ("asm/cacheflush.h" include (:system-flag t) nil [1327 1354])
+            ("bf5xx-sport.h" include nil nil [1356 1380])
+            ("FRAME_DELAY" variable (:constant-flag t) nil [1466 1477])
+            ("sport_set_multichannel" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1603 1630])
+                    ("tdm_count" variable (:type "int") (reparse-symbol arg-sub-list) [1633 1647])
+                    ("tx_mask" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1648 1660])
+                    ("rx_mask" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1661 1673])
+                    ("packed" variable (:type "int") (reparse-symbol arg-sub-list) [1674 1685]))                  
+                :type "int")
+                nil [1576 2682])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_set_multichannel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2697 2720]))                  
+                :type "int")
+                nil [2683 2721])
+            ("sport_config_rx" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2743 2770])
+                    ("rcr1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2771 2789])
+                    ("rcr2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2792 2810])
+                    ("clkdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2811 2831])
+                    ("fsdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2832 2851]))                  
+                :type "int")
+                nil [2723 3077])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_config_rx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3092 3108]))                  
+                :type "int")
+                nil [3078 3109])
+            ("sport_config_tx" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3131 3158])
+                    ("tcr1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3159 3177])
+                    ("tcr2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3180 3198])
+                    ("clkdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3199 3219])
+                    ("fsdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3220 3239]))                  
+                :type "int")
+                nil [3111 3465])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_config_tx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3480 3496]))                  
+                :type "int")
+                nil [3466 3497])
+            ("setup_desc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3522 3541])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3542 3552])
+                    ("fragcount" variable (:type "int") (reparse-symbol arg-sub-list) [3553 3567])
+                    ("fragsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3570 3586])
+                    ("cfg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3587 3604])
+                    ("x_count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3607 3628])
+                    ("ycount" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3629 3649])
+                    ("wdsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3650 3664]))                  
+                :type "void")
+                nil [3499 4268])
+            ("sport_start" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4293 4320]))                  
+                :type "int")
+                nil [4270 4470])
+            ("sport_stop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4494 4521]))                  
+                :type "int")
+                nil [4472 4675])
+            ("sport_hook_rx_dummy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4715 4742]))                  
+                :type "int")
+                nil [4677 5620])
+            ("sport_rx_dma_start" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5659 5686])
+                    ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [5687 5697]))                  
+                :type "int")
+                nil [5622 6210])
+            ("sport_tx_dma_start" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6249 6276])
+                    ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [6277 6287]))                  
+                :type "int")
+                nil [6212 6791])
+            ("sport_rx_start" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6812 6839]))                  
+                :type "int")
+                nil [6793 7524])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_rx_start" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7539 7554]))                  
+                :type "int")
+                nil [7525 7555])
+            ("sport_rx_stop" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7575 7602]))                  
+                :type "int")
+                nil [7557 7952])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_rx_stop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7967 7981]))                  
+                :type "int")
+                nil [7953 7982])
+            ("sport_hook_tx_dummy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8022 8049]))                  
+                :type "int")
+                nil [7984 8913])
+            ("sport_tx_start" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8934 8961]))                  
+                :type "int")
+                nil [8915 9735])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_tx_start" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9750 9765]))                  
+                :type "int")
+                nil [9736 9766])
+            ("sport_tx_stop" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9786 9813]))                  
+                :type "int")
+                nil [9768 10115])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_tx_stop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10130 10144]))                  
+                :type "int")
+                nil [10116 10145])
+            ("compute_wdsize" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("wdsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10180 10194]))                  
+                :type "int")
+                nil [10147 10316])
+            ("sport_config_rx_dma" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10342 10369])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10370 10380])
+                    ("fragcount" variable (:type "int") (reparse-symbol arg-sub-list) [10383 10397])
+                    ("fragsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10398 10414]))                  
+                :type "int")
+                nil [10318 11905])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_config_rx_dma" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11920 11940]))                  
+                :type "int")
+                nil [11906 11941])
+            ("sport_config_tx_dma" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11967 11994])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11995 12005])
+                    ("fragcount" variable (:type "int") (reparse-symbol arg-sub-list) [12010 12024])
+                    ("fragsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12025 12041]))                  
+                :type "int")
+                nil [11943 13478])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_config_tx_dma" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13493 13513]))                  
+                :type "int")
+                nil [13479 13514])
+            ("sport_config_rx_dummy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13649 13676]))                  
+                :type "int")
+                nil [13616 14491])
+            ("sport_config_tx_dummy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14526 14553]))                  
+                :type "int")
+                nil [14493 15385])
+            ("sport_curr_offset_rx" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15422 15449]))                  
+                :type "unsigned long")
+                nil [15387 15562])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_curr_offset_rx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15577 15598]))                  
+                :type "int")
+                nil [15563 15599])
+            ("sport_curr_offset_tx" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15636 15663]))                  
+                :type "unsigned long")
+                nil [15601 15776])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_curr_offset_tx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15791 15812]))                  
+                :type "int")
+                nil [15777 15813])
+            ("sport_incfrag" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15834 15861])
+                    ("frag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15862 15872])
+                    ("tx" variable (:type "int") (reparse-symbol arg-sub-list) [15873 15880]))                  
+                :type "void")
+                nil [15815 16007])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_incfrag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16022 16036]))                  
+                :type "int")
+                nil [16008 16037])
+            ("sport_decfrag" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16058 16085])
+                    ("frag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16086 16096])
+                    ("tx" variable (:type "int") (reparse-symbol arg-sub-list) [16097 16104]))                  
+                :type "void")
+                nil [16039 16231])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_decfrag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16246 16260]))                  
+                :type "int")
+                nil [16232 16261])
+            ("sport_check_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16293 16320])
+                    ("sport_stat" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16323 16348])
+                    ("rx_stat" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16351 16373])
+                    ("tx_stat" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16376 16398]))                  
+                :type "int")
+                nil [16263 17011])
+            ("sport_dump_stat" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17034 17061])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17062 17072])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17073 17084]))                  
+                :type "int")
+                nil [17013 17692])
+            ("rx_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [17724 17732])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17733 17746]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [17694 18076])
+            ("tx_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [18108 18116])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18117 18130]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [18078 18485])
+            ("err_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [18518 18526])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18527 18540]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [18487 19590])
+            ("sport_set_rx_callback" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19618 19645])
+                    ("rx_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [19675 19682]))                          
+                        :type "void")
+                        nil nil)
+                    ("rx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19684 19698]))                  
+                :type "int")
+                nil [19592 19822])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_set_rx_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19837 19859]))                  
+                :type "int")
+                nil [19823 19860])
+            ("sport_set_tx_callback" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19888 19915])
+                    ("tx_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [19938 19945]))                          
+                        :type "void")
+                        nil nil)
+                    ("tx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19947 19961]))                  
+                :type "int")
+                nil [19862 20085])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_set_tx_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20100 20122]))                  
+                :type "int")
+                nil [20086 20123])
+            ("sport_set_err_callback" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20152 20179])
+                    ("err_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [20203 20210]))                          
+                        :type "void")
+                        nil nil)
+                    ("err_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20212 20227]))                  
+                :type "int")
+                nil [20125 20356])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_set_err_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20371 20394]))                  
+                :type "int")
+                nil [20357 20395])
+            ("sport_config_pdev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20426 20455])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("sport_param" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20456 20482]))                  
+                :type "int")
+                nil [20397 21481])
+            ("sport_init" function
+               (:pointer 1
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21515 21544])
+                    ("wdsize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21546 21566])
+                    ("dummy_count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21567 21592])
+                    ("priv_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21593 21610]))                  
+                :type ("sport_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21483 24727])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24742 24753]))                  
+                :type "int")
+                nil [24728 24754])
+            ("sport_done" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24772 24799]))                  
+                :type "void")
+                nil [24756 25576])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_done" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25591 25602]))                  
+                :type "int")
+                nil [25577 25603])
+            ("sport_send_and_recv" function
+               (:arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25845 25872])
+                    ("out_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25873 25886])
+                    ("in_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25891 25903])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [25904 25912]))                  
+                :type "int")
+                nil [25821 28104])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sport_send_and_recv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28119 28139]))                  
+                :type "int")
+                nil [28105 28140])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [28142 28169])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [28170 28222])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [28223 28245]))          
+      :file "bf5xx-sport.c"
+      :pointmax 28246
+      :fsize 28245
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax '((string 28238 . 28243) (string 28189 . 28220) (string 28156 . 28167))
+      :lexical-table 
+        '(("FRAME_DELAY" . ((semantic-list "(1<<12)" 1478 . 1485)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__BF5XX_SPORT_H__" variable (:constant-flag t) nil [1037 1054])
+            ("linux/types.h" include (:system-flag t) nil [1056 1080])
+            ("linux/wait.h" include (:system-flag t) nil [1081 1104])
+            ("linux/workqueue.h" include (:system-flag t) nil [1105 1133])
+            ("linux/platform_device.h" include (:system-flag t) nil [1134 1168])
+            ("asm/dma.h" include (:system-flag t) nil [1169 1189])
+            ("asm/bfin_sport.h" include (:system-flag t) nil [1190 1217])
+            ("DESC_ELEMENT_COUNT" variable (:constant-flag t) nil [1227 1245])
+            ("sport_device" type
+               (:members 
+                  ( ("num" variable (:type "int") (reparse-symbol classsubparts) [1272 1280])
+                    ("dma_rx_chan" variable (:type "int") (reparse-symbol classsubparts) [1282 1298])
+                    ("dma_tx_chan" variable (:type "int") (reparse-symbol classsubparts) [1300 1316])
+                    ("err_irq" variable (:type "int") (reparse-symbol classsubparts) [1318 1330])
+                    ("pin_req" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1332 1362])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("sport_register" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1364 1392])
+                    ("rx_buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1395 1417])
+                    ("tx_buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1419 1441])
+                    ("rx_fragsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [1443 1468])
+                    ("tx_fragsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [1470 1495])
+                    ("rx_frags" variable (:type "unsigned int") (reparse-symbol classsubparts) [1497 1519])
+                    ("tx_frags" variable (:type "unsigned int") (reparse-symbol classsubparts) [1521 1543])
+                    ("wdsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [1545 1565])
+                    ("dummy_buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1598 1614])
+                    ("dummy_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [1616 1641])
+                    ("dma_rx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1699 1725])
+                    ("dma_tx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1727 1753])
+                    ("rx_desc_bytes" variable (:type "unsigned int") (reparse-symbol classsubparts) [1755 1782])
+                    ("tx_desc_bytes" variable (:type "unsigned int") (reparse-symbol classsubparts) [1784 1811])
+                    ("rx_run" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1814 1836])
+                    ("tx_run" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1858 1880])
+                    ("dummy_rx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1903 1931])
+                    ("dummy_tx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1933 1961])
+                    ("curr_rx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1964 1991])
+                    ("curr_tx_desc" variable
+                       (:pointer 1
+                        :type ("dmasg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1993 2020])
+                    ("rx_curr_frag" variable (:type "int") (reparse-symbol classsubparts) [2023 2040])
+                    ("tx_curr_frag" variable (:type "int") (reparse-symbol classsubparts) [2042 2059])
+                    ("rcr1" variable (:type "unsigned int") (reparse-symbol classsubparts) [2062 2080])
+                    ("rcr2" variable (:type "unsigned int") (reparse-symbol classsubparts) [2082 2100])
+                    ("rx_tdm_count" variable (:type "int") (reparse-symbol classsubparts) [2102 2119])
+                    ("tcr1" variable (:type "unsigned int") (reparse-symbol classsubparts) [2122 2140])
+                    ("tcr2" variable (:type "unsigned int") (reparse-symbol classsubparts) [2142 2160])
+                    ("tx_tdm_count" variable (:type "int") (reparse-symbol classsubparts) [2162 2179])
+                    ("rx_callback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2202 2213]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2182 2214])
+                    ("rx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2216 2230])
+                    ("tx_callback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2252 2263]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2232 2264])
+                    ("tx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2266 2280])
+                    ("err_callback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2303 2314]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2282 2315])
+                    ("err_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2317 2332])
+                    ("tx_dma_buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [2334 2360])
+                    ("rx_dma_buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [2362 2388])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2618 2637]))                  
+                :type "struct")
+                nil [1249 2640])
+            ("sport_param" type
+               (:members 
+                  ( ("num" variable (:type "int") (reparse-symbol classsubparts) [2664 2672])
+                    ("dma_rx_chan" variable (:type "int") (reparse-symbol classsubparts) [2674 2690])
+                    ("dma_tx_chan" variable (:type "int") (reparse-symbol classsubparts) [2692 2708])
+                    ("err_irq" variable (:type "int") (reparse-symbol classsubparts) [2710 2722])
+                    ("pin_req" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [2724 2754])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("sport_register" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2756 2784])
+                    ("wdsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [2786 2806])
+                    ("dummy_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [2808 2833])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2835 2854]))                  
+                :type "struct")
+                nil [2642 2857])
+            ("sport_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2891 2920])
+                    ("wdsize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2922 2942])
+                    ("dummy_count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2943 2968])
+                    ("priv_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2969 2986]))                  
+                :type ("sport_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2859 2987])
+            ("sport_done" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3005 3032]))                  
+                :type "void")
+                nil [2989 3033])
+            ("sport_set_multichannel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3222 3249])
+                    ("tdm_count" variable (:type "int") (reparse-symbol arg-sub-list) [3250 3264])
+                    ("tx_mask" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3267 3279])
+                    ("rx_mask" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3280 3292])
+                    ("packed" variable (:type "int") (reparse-symbol arg-sub-list) [3293 3304]))                  
+                :type "int")
+                nil [3195 3305])
+            ("sport_config_rx" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3327 3354])
+                    ("rcr1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3357 3375])
+                    ("rcr2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3376 3394])
+                    ("clkdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3397 3417])
+                    ("fsdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3418 3437]))                  
+                :type "int")
+                nil [3307 3438])
+            ("sport_config_tx" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3460 3487])
+                    ("tcr1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3490 3508])
+                    ("tcr2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3509 3527])
+                    ("clkdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3530 3550])
+                    ("fsdiv" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3551 3570]))                  
+                :type "int")
+                nil [3440 3571])
+            ("sport_config_rx_dma" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3757 3784])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3785 3795])
+                    ("fragcount" variable (:type "int") (reparse-symbol arg-sub-list) [3798 3812])
+                    ("fragsize_bytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3813 3835]))                  
+                :type "int")
+                nil [3733 3836])
+            ("sport_config_tx_dma" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3862 3889])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3890 3900])
+                    ("fragcount" variable (:type "int") (reparse-symbol arg-sub-list) [3903 3917])
+                    ("fragsize_bytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3918 3940]))                  
+                :type "int")
+                nil [3838 3941])
+            ("sport_tx_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3962 3989]))                  
+                :type "int")
+                nil [3943 3990])
+            ("sport_tx_stop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4009 4036]))                  
+                :type "int")
+                nil [3991 4037])
+            ("sport_rx_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4057 4084]))                  
+                :type "int")
+                nil [4038 4085])
+            ("sport_rx_stop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4104 4131]))                  
+                :type "int")
+                nil [4086 4132])
+            ("sport_curr_offset_rx" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4204 4231]))                  
+                :type "unsigned long")
+                nil [4169 4232])
+            ("sport_curr_offset_tx" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4268 4295]))                  
+                :type "unsigned long")
+                nil [4233 4296])
+            ("sport_incfrag" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4317 4344])
+                    ("frag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4345 4355])
+                    ("tx" variable (:type "int") (reparse-symbol arg-sub-list) [4356 4363]))                  
+                :type "void")
+                nil [4298 4364])
+            ("sport_decfrag" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4384 4411])
+                    ("frag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4412 4422])
+                    ("tx" variable (:type "int") (reparse-symbol arg-sub-list) [4423 4430]))                  
+                :type "void")
+                nil [4365 4431])
+            ("sport_set_rx_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4459 4486])
+                    ("rx_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4516 4523]))                          
+                        :type "void")
+                        nil nil)
+                    ("rx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4525 4539]))                  
+                :type "int")
+                nil [4433 4540])
+            ("sport_set_tx_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4567 4594])
+                    ("tx_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4624 4631]))                          
+                        :type "void")
+                        nil nil)
+                    ("tx_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4633 4647]))                  
+                :type "int")
+                nil [4541 4648])
+            ("sport_set_err_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4676 4703])
+                    ("err_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4734 4741]))                          
+                        :type "void")
+                        nil nil)
+                    ("err_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4743 4758]))                  
+                :type "int")
+                nil [4649 4759])
+            ("sport_send_and_recv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sport" variable
+                       (:pointer 1
+                        :type ("sport_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4785 4812])
+                    ("out_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4813 4826])
+                    ("in_data" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4831 4843])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4844 4852]))                  
+                :type "int")
+                nil [4761 4853]))          
+      :file "bf5xx-sport.h"
+      :pointmax 4881
+      :fsize 4880
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DESC_ELEMENT_COUNT" . ((number "9" 1246 . 1247)))
+          ("__BF5XX_SPORT_H__")
+          )
+))
+  :file "!home!maurice!linux-4.16.13!sound!soc!blackfin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

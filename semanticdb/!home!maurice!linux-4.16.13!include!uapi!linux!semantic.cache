@@ -1,0 +1,777 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_UAPI_LINUX_DEVLINK_H_" variable (:constant-flag t) nil [562 584])
+            ("DEVLINK_GENL_NAME" variable (:constant-flag t) nil [594 611])
+            ("DEVLINK_GENL_VERSION" variable (:constant-flag t) nil [630 650])
+            ("DEVLINK_GENL_MCGRP_CONFIG_NAME" variable (:constant-flag t) nil [663 693])
+            ("devlink_command" type
+               (:members 
+                  ( ("DEVLINK_CMD_UNSPEC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [796 815])
+                    ("DEVLINK_CMD_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [818 834])
+                    ("DEVLINK_CMD_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [852 868])
+                    ("DEVLINK_CMD_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [870 886])
+                    ("DEVLINK_CMD_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [888 904])
+                    ("DEVLINK_CMD_PORT_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [907 928])
+                    ("DEVLINK_CMD_PORT_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [946 967])
+                    ("DEVLINK_CMD_PORT_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [969 990])
+                    ("DEVLINK_CMD_PORT_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [992 1013])
+                    ("DEVLINK_CMD_PORT_SPLIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1016 1039])
+                    ("DEVLINK_CMD_PORT_UNSPLIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1041 1066])
+                    ("DEVLINK_CMD_SB_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1069 1088])
+                    ("DEVLINK_CMD_SB_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1106 1125])
+                    ("DEVLINK_CMD_SB_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1127 1146])
+                    ("DEVLINK_CMD_SB_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1148 1167])
+                    ("DEVLINK_CMD_SB_POOL_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1170 1194])
+                    ("DEVLINK_CMD_SB_POOL_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1211 1235])
+                    ("DEVLINK_CMD_SB_POOL_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1237 1261])
+                    ("DEVLINK_CMD_SB_POOL_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1263 1287])
+                    ("DEVLINK_CMD_SB_PORT_POOL_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1290 1319])
+                    ("DEVLINK_CMD_SB_PORT_POOL_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1336 1365])
+                    ("DEVLINK_CMD_SB_PORT_POOL_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1367 1396])
+                    ("DEVLINK_CMD_SB_PORT_POOL_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1398 1427])
+                    ("DEVLINK_CMD_SB_TC_POOL_BIND_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1430 1462])
+                    ("DEVLINK_CMD_SB_TC_POOL_BIND_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1479 1511])
+                    ("DEVLINK_CMD_SB_TC_POOL_BIND_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1513 1545])
+                    ("DEVLINK_CMD_SB_TC_POOL_BIND_DEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1547 1579])
+                    ("DEVLINK_CMD_SB_OCC_SNAPSHOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1633 1661])
+                    ("DEVLINK_CMD_SB_OCC_MAX_CLEAR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1663 1692])
+                    ("DEVLINK_CMD_ESWITCH_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1695 1719])
+                    ("DEVLINK_CMD_ESWITCH_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1818 1842])
+                    ("DEVLINK_CMD_DPIPE_TABLE_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1941 1969])
+                    ("DEVLINK_CMD_DPIPE_ENTRIES_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1971 2001])
+                    ("DEVLINK_CMD_DPIPE_HEADERS_GET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2003 2033])
+                    ("DEVLINK_CMD_DPIPE_TABLE_COUNTERS_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2035 2072])
+                    ("DEVLINK_CMD_RESOURCE_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2074 2099])
+                    ("DEVLINK_CMD_RESOURCE_DUMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2101 2127])
+                    ("DEVLINK_CMD_RELOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2259 2278])
+                    ("__DEVLINK_CMD_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2316 2334])
+                    ("DEVLINK_CMD_MAX" variable
+                       (:constant-flag t
+                        :default-value (2354 2374)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2336 2375]))                  
+                :type "enum")
+                nil [704 2378])
+            ("devlink_port_type" type
+               (:members 
+                  ( ("DEVLINK_PORT_TYPE_NOTSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2406 2431])
+                    ("DEVLINK_PORT_TYPE_AUTO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2433 2456])
+                    ("DEVLINK_PORT_TYPE_ETH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2458 2480])
+                    ("DEVLINK_PORT_TYPE_IB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2482 2503]))                  
+                :type "enum")
+                nil [2380 2506])
+            ("devlink_sb_pool_type" type
+               (:members 
+                  ( ("DEVLINK_SB_POOL_TYPE_INGRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2537 2566])
+                    ("DEVLINK_SB_POOL_TYPE_EGRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2568 2596]))                  
+                :type "enum")
+                nil [2508 2599])
+            ("devlink_sb_threshold_type" type
+               (:members 
+                  ( ("DEVLINK_SB_THRESHOLD_TYPE_STATIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3227 3260])
+                    ("DEVLINK_SB_THRESHOLD_TYPE_DYNAMIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3262 3296]))                  
+                :type "enum")
+                nil [3193 3299])
+            ("DEVLINK_SB_THRESHOLD_TO_ALPHA_MAX" variable (:constant-flag t) nil [3309 3342])
+            ("devlink_eswitch_mode" type
+               (:members 
+                  ( ("DEVLINK_ESWITCH_MODE_LEGACY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3376 3404])
+                    ("DEVLINK_ESWITCH_MODE_SWITCHDEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3406 3437]))                  
+                :type "enum")
+                nil [3347 3440])
+            ("devlink_eswitch_inline_mode" type
+               (:members 
+                  ( ("DEVLINK_ESWITCH_INLINE_MODE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3478 3511])
+                    ("DEVLINK_ESWITCH_INLINE_MODE_LINK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3513 3546])
+                    ("DEVLINK_ESWITCH_INLINE_MODE_NETWORK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3548 3584])
+                    ("DEVLINK_ESWITCH_INLINE_MODE_TRANSPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3586 3624]))                  
+                :type "enum")
+                nil [3442 3627])
+            ("devlink_eswitch_encap_mode" type
+               (:members 
+                  ( ("DEVLINK_ESWITCH_ENCAP_MODE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3664 3696])
+                    ("DEVLINK_ESWITCH_ENCAP_MODE_BASIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3698 3731]))                  
+                :type "enum")
+                nil [3629 3734])
+            ("devlink_attr" type
+               (:members 
+                  ( ("DEVLINK_ATTR_UNSPEC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3825 3845])
+                    ("DEVLINK_ATTR_BUS_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3916 3938])
+                    ("DEVLINK_ATTR_DEV_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3955 3977])
+                    ("DEVLINK_ATTR_PORT_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3995 4019])
+                    ("DEVLINK_ATTR_PORT_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4032 4055])
+                    ("DEVLINK_ATTR_PORT_DESIRED_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4069 4100])
+                    ("DEVLINK_ATTR_PORT_NETDEV_IFINDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4113 4146])
+                    ("DEVLINK_ATTR_PORT_NETDEV_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4158 4188])
+                    ("DEVLINK_ATTR_PORT_IBDEV_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4204 4233])
+                    ("DEVLINK_ATTR_PORT_SPLIT_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4249 4279])
+                    ("DEVLINK_ATTR_PORT_SPLIT_GROUP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4292 4322])
+                    ("DEVLINK_ATTR_SB_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4335 4357])
+                    ("DEVLINK_ATTR_SB_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4371 4392])
+                    ("DEVLINK_ATTR_SB_INGRESS_POOL_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4406 4441])
+                    ("DEVLINK_ATTR_SB_EGRESS_POOL_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4453 4487])
+                    ("DEVLINK_ATTR_SB_INGRESS_TC_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4499 4532])
+                    ("DEVLINK_ATTR_SB_EGRESS_TC_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4544 4576])
+                    ("DEVLINK_ATTR_SB_POOL_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4588 4615])
+                    ("DEVLINK_ATTR_SB_POOL_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4628 4654])
+                    ("DEVLINK_ATTR_SB_POOL_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4666 4692])
+                    ("DEVLINK_ATTR_SB_POOL_THRESHOLD_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4705 4741])
+                    ("DEVLINK_ATTR_SB_THRESHOLD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4752 4778])
+                    ("DEVLINK_ATTR_SB_TC_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4791 4816])
+                    ("DEVLINK_ATTR_SB_OCC_CUR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4829 4853])
+                    ("DEVLINK_ATTR_SB_OCC_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4866 4890])
+                    ("DEVLINK_ATTR_ESWITCH_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4903 4929])
+                    ("DEVLINK_ATTR_ESWITCH_INLINE_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4942 4975])
+                    ("DEVLINK_ATTR_DPIPE_TABLES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4987 5013])
+                    ("DEVLINK_ATTR_DPIPE_TABLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5029 5054])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5070 5100])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5116 5146])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_MATCHES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5159 5192])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_ACTIONS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5207 5240])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_COUNTERS_ENABLED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5255 5297])
+                    ("DEVLINK_ATTR_DPIPE_ENTRIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5309 5336])
+                    ("DEVLINK_ATTR_DPIPE_ENTRY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5352 5377])
+                    ("DEVLINK_ATTR_DPIPE_ENTRY_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5393 5424])
+                    ("DEVLINK_ATTR_DPIPE_ENTRY_MATCH_VALUES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5437 5475])
+                    ("DEVLINK_ATTR_DPIPE_ENTRY_ACTION_VALUES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5490 5529])
+                    ("DEVLINK_ATTR_DPIPE_ENTRY_COUNTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5544 5577])
+                    ("DEVLINK_ATTR_DPIPE_MATCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5590 5615])
+                    ("DEVLINK_ATTR_DPIPE_MATCH_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5631 5662])
+                    ("DEVLINK_ATTR_DPIPE_MATCH_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5678 5708])
+                    ("DEVLINK_ATTR_DPIPE_ACTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5722 5748])
+                    ("DEVLINK_ATTR_DPIPE_ACTION_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5764 5796])
+                    ("DEVLINK_ATTR_DPIPE_ACTION_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5811 5842])
+                    ("DEVLINK_ATTR_DPIPE_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5856 5881])
+                    ("DEVLINK_ATTR_DPIPE_VALUE_MASK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5883 5913])
+                    ("DEVLINK_ATTR_DPIPE_VALUE_MAPPING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5915 5948])
+                    ("DEVLINK_ATTR_DPIPE_HEADERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5961 5988])
+                    ("DEVLINK_ATTR_DPIPE_HEADER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6004 6030])
+                    ("DEVLINK_ATTR_DPIPE_HEADER_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6046 6077])
+                    ("DEVLINK_ATTR_DPIPE_HEADER_ID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6093 6122])
+                    ("DEVLINK_ATTR_DPIPE_HEADER_FIELDS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6135 6168])
+                    ("DEVLINK_ATTR_DPIPE_HEADER_GLOBAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6183 6216])
+                    ("DEVLINK_ATTR_DPIPE_HEADER_INDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6227 6259])
+                    ("DEVLINK_ATTR_DPIPE_FIELD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6272 6297])
+                    ("DEVLINK_ATTR_DPIPE_FIELD_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6313 6343])
+                    ("DEVLINK_ATTR_DPIPE_FIELD_ID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6359 6387])
+                    ("DEVLINK_ATTR_DPIPE_FIELD_BITWIDTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6400 6434])
+                    ("DEVLINK_ATTR_DPIPE_FIELD_MAPPING_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6446 6484])
+                    ("DEVLINK_ATTR_PAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6497 6514])
+                    ("DEVLINK_ATTR_ESWITCH_ENCAP_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6517 6549])
+                    ("DEVLINK_ATTR_RESOURCE_LIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6560 6587])
+                    ("DEVLINK_ATTR_RESOURCE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6603 6625])
+                    ("DEVLINK_ATTR_RESOURCE_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6642 6669])
+                    ("DEVLINK_ATTR_RESOURCE_ID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6685 6710])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6723 6750])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE_NEW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6763 6794])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE_VALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6807 6840])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6851 6882])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6895 6926])
+                    ("DEVLINK_ATTR_RESOURCE_SIZE_GRAN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6939 6971])
+                    ("DEVLINK_ATTR_RESOURCE_UNIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6990 7017])
+                    ("DEVLINK_ATTR_RESOURCE_OCC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7029 7055])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_RESOURCE_ID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7068 7105])
+                    ("DEVLINK_ATTR_DPIPE_TABLE_RESOURCE_UNITS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7117 7157])
+                    ("__DEVLINK_ATTR_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7239 7258])
+                    ("DEVLINK_ATTR_MAX" variable
+                       (:constant-flag t
+                        :default-value (7279 7300)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7260 7301]))                  
+                :type "enum")
+                nil [3736 7304])
+            ("devlink_dpipe_field_mapping_type" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_FIELD_MAPPING_TYPE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7435 7473])
+                    ("DEVLINK_DPIPE_FIELD_MAPPING_TYPE_IFINDEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7475 7516]))                  
+                :type "enum")
+                nil [7394 7519])
+            ("devlink_dpipe_match_type" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_MATCH_TYPE_FIELD_EXACT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7603 7640]))                  
+                :type "enum")
+                nil [7570 7643])
+            ("devlink_dpipe_action_type" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_ACTION_TYPE_FIELD_MODIFY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7723 7762]))                  
+                :type "enum")
+                nil [7689 7765])
+            ("devlink_dpipe_field_ethernet_id" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_FIELD_ETHERNET_DST_MAC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7807 7844]))                  
+                :type "enum")
+                nil [7767 7847])
+            ("devlink_dpipe_field_ipv4_id" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_FIELD_IPV4_DST_IP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7885 7917]))                  
+                :type "enum")
+                nil [7849 7920])
+            ("devlink_dpipe_field_ipv6_id" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_FIELD_IPV6_DST_IP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7958 7990]))                  
+                :type "enum")
+                nil [7922 7993])
+            ("devlink_dpipe_header_id" type
+               (:members 
+                  ( ("DEVLINK_DPIPE_HEADER_ETHERNET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8027 8057])
+                    ("DEVLINK_DPIPE_HEADER_IPV4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8059 8085])
+                    ("DEVLINK_DPIPE_HEADER_IPV6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8087 8113]))                  
+                :type "enum")
+                nil [7995 8116])
+            ("devlink_resource_unit" type
+               (:members 
+                  ( ("DEVLINK_RESOURCE_UNIT_ENTRY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8148 8176]))                  
+                :type "enum")
+                nil [8118 8179]))          
+      :file "devlink.h"
+      :pointmax 8217
+      :fsize 8216
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax '((spp-macro-def 1851 . 1879) (spp-macro-def 1728 . 1756))
+      :lexical-table 
+        '(("DEVLINK_CMD_ESWITCH_MODE_SET" . ((symbol "DEVLINK_CMD_ESWITCH_SET" 1915 . 1938)))
+          ("DEVLINK_SB_THRESHOLD_TO_ALPHA_MAX" . ((number "20" 3343 . 3345)))
+          ("DEVLINK_GENL_VERSION" . ((number "0x1" 651 . 654)))
+          ("_UAPI_LINUX_DEVLINK_H_")
+          ("DEVLINK_GENL_MCGRP_CONFIG_NAME" . ((string "\"config\"" 694 . 702)))
+          ("DEVLINK_CMD_ESWITCH_MODE_GET" . ((symbol "DEVLINK_CMD_ESWITCH_GET" 1792 . 1815)))
+          ("DEVLINK_GENL_NAME" . ((string "\"devlink\"" 612 . 621)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_UAPI_LINUX_TIME_H" variable (:constant-flag t) nil [99 117])
+            ("linux/types.h" include (:system-flag t) nil [119 143])
+            ("_STRUCT_TIMESPEC" variable (:constant-flag t) nil [179 195])
+            ("timespec" type
+               (:members 
+                  ( ("tv_sec" variable (:type ("__kernel_time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215 238])
+                    ("tv_nsec" variable (:type "long") (reparse-symbol classsubparts) [256 270]))                  
+                :type "struct")
+                nil [196 292])
+            ("timeval" type
+               (:members 
+                  ( ("tv_sec" variable (:type ("__kernel_time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [319 343])
+                    ("tv_usec" variable (:type ("__kernel_suseconds_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [360 389]))                  
+                :type "struct")
+                nil [301 411])
+            ("timezone" type
+               (:members 
+                  ( ("tz_minuteswest" variable (:type "int") (reparse-symbol classsubparts) [432 451])
+                    ("tz_dsttime" variable (:type "int") (reparse-symbol classsubparts) [485 500]))                  
+                :type "struct")
+                nil [413 532])
+            ("ITIMER_REAL" variable (:constant-flag t) nil [626 637])
+            ("ITIMER_VIRTUAL" variable (:constant-flag t) nil [649 663])
+            ("ITIMER_PROF" variable (:constant-flag t) nil [675 686])
+            ("itimerspec" type
+               (:members 
+                  ( ("it_interval" variable (:type ("timespec" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [712 740])
+                    ("it_value" variable (:type ("timespec" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [761 786]))                  
+                :type "struct")
+                nil [691 812])
+            ("itimerval" type
+               (:members 
+                  ( ("it_interval" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [834 861])
+                    ("it_value" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [884 908]))                  
+                :type "struct")
+                nil [814 931])
+            ("CLOCK_REALTIME" variable (:constant-flag t) nil [1020 1034])
+            ("CLOCK_MONOTONIC" variable (:constant-flag t) nil [1047 1062])
+            ("CLOCK_PROCESS_CPUTIME_ID" variable (:constant-flag t) nil [1075 1099])
+            ("CLOCK_THREAD_CPUTIME_ID" variable (:constant-flag t) nil [1110 1133])
+            ("CLOCK_MONOTONIC_RAW" variable (:constant-flag t) nil [1145 1164])
+            ("CLOCK_REALTIME_COARSE" variable (:constant-flag t) nil [1176 1197])
+            ("CLOCK_MONOTONIC_COARSE" variable (:constant-flag t) nil [1209 1231])
+            ("CLOCK_BOOTTIME" variable (:constant-flag t) nil [1243 1257])
+            ("CLOCK_REALTIME_ALARM" variable (:constant-flag t) nil [1270 1290])
+            ("CLOCK_BOOTTIME_ALARM" variable (:constant-flag t) nil [1302 1322])
+            ("CLOCK_SGI_CYCLE" variable (:constant-flag t) nil [1443 1458])
+            ("CLOCK_TAI" variable (:constant-flag t) nil [1472 1481])
+            ("MAX_CLOCKS" variable (:constant-flag t) nil [1496 1506])
+            ("CLOCKS_MASK" variable (:constant-flag t) nil [1520 1531])
+            ("CLOCKS_MONO" variable (:constant-flag t) nil [1577 1588])
+            ("TIMER_ABSTIME" variable (:constant-flag t) nil [1682 1695]))          
+      :file "time.h"
+      :pointmax 1736
+      :fsize 1735
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_STRUCT_TIMESPEC")
+          ("ITIMER_PROF" . ((number "2" 688 . 689)))
+          ("CLOCK_THREAD_CPUTIME_ID" . ((number "3" 1135 . 1136)))
+          ("CLOCK_PROCESS_CPUTIME_ID" . ((number "2" 1100 . 1101)))
+          ("CLOCK_MONOTONIC_RAW" . ((number "4" 1166 . 1167)))
+          ("CLOCK_REALTIME_ALARM" . ((number "8" 1292 . 1293)))
+          ("CLOCK_REALTIME_COARSE" . ((number "5" 1199 . 1200)))
+          ("CLOCKS_MONO" . ((symbol "CLOCK_MONOTONIC" 1591 . 1606)))
+          ("_UAPI_LINUX_TIME_H")
+          ("CLOCK_MONOTONIC_COARSE" . ((number "6" 1233 . 1234)))
+          ("CLOCK_BOOTTIME" . ((number "7" 1260 . 1261)))
+          ("CLOCKS_MASK" . ((semantic-list "(CLOCK_REALTIME | CLOCK_MONOTONIC)" 1534 . 1568)))
+          ("ITIMER_REAL" . ((number "0" 639 . 640)))
+          ("MAX_CLOCKS" . ((number "16" 1509 . 1511)))
+          ("CLOCK_MONOTONIC" . ((number "1" 1065 . 1066)))
+          ("TIMER_ABSTIME" . ((number "0x01" 1698 . 1702)))
+          ("CLOCK_SGI_CYCLE" . ((number "10" 1461 . 1463)))
+          ("CLOCK_TAI" . ((number "11" 1484 . 1486)))
+          ("ITIMER_VIRTUAL" . ((number "1" 665 . 666)))
+          ("CLOCK_REALTIME" . ((number "0" 1037 . 1038)))
+          ("CLOCK_BOOTTIME_ALARM" . ((number "9" 1324 . 1325)))
+          )
+))
+  :file "!home!maurice!linux-4.16.13!include!uapi!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

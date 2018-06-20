@@ -1,0 +1,570 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("my_config.h" include nil nil [1548 1570])
+            ("errno.h" include (:system-flag t) nil [1572 1590])
+            ("string.h" include (:system-flag t) nil [1591 1610])
+            ("sys/types.h" include (:system-flag t) nil [1611 1633])
+            ("m_string.h" include nil nil [1683 1704])
+            ("my_dbug.h" include nil nil [1705 1725])
+            ("my_inttypes.h" include nil nil [1726 1750])
+            ("my_io.h" include nil nil [1751 1769])
+            ("my_macros.h" include nil nil [1770 1792])
+            ("my_sys.h" include nil nil [1793 1812])
+            ("my_thread_local.h" include nil nil [1813 1841])
+            ("mysys/my_static.h" include nil nil [1842 1870])
+            ("mysys_err.h" include nil nil [1871 1893])
+            ("my_getwd" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2251 2261])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2262 2274])
+                    ("MyFlags" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2275 2287]))                  
+                :type "int")
+                nil [2238 3065])
+            ("my_setwd" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3128 3144])
+                    ("MyFlags" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3145 3157]))                  
+                :type "int")
+                nil [3115 4049])
+            ("test_if_hard_path" function
+               (:arguments 
+                  ( ("dir_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4159 4180]))                  
+                :type "int")
+                nil [4137 4450])
+            ("has_path" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4718 4735]))                  
+                :type "bool")
+                nil [4704 4941]))          
+      :file "my_getwd.cc"
+      :pointmax 4942
+      :fsize 4941
+      :lastmodtime '(23314 2562 6322 191000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYSYS_MY_STATIC_INCLUDED" variable (:constant-flag t) nil [42 66])
+            ("sys/types.h" include (:system-flag t) nil [1365 1387])
+            ("my_alloc.h" include nil nil [1389 1410])
+            ("my_inttypes.h" include nil nil [1411 1435])
+            ("my_io.h" include nil nil [1436 1454])
+            ("my_macros.h" include nil nil [1455 1477])
+            ("my_sys.h" include nil nil [1478 1497])
+            ("curr_dir" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1499 1557])
+            ("home_dir_buff" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1499 1557])
+            ("my_once_root_block" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("USED_MEM" type (:type "class") nil nil))
+                nil [1559 1595])
+            ("my_once_extra" variable
+               (:typemodifiers ("extern")
+                :type ("uint" type (:type "class") nil nil))
+                nil [1596 1622])
+            ("my_file_info_default" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("st_my_file_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1624 1685])
+            ("query_performance_frequency" variable
+               (:typemodifiers ("extern")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [1687 1795])
+            ("query_performance_offset" variable
+               (:typemodifiers ("extern")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [1687 1795])
+            ("query_performance_offset_micros" variable
+               (:typemodifiers ("extern")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [1687 1795]))          
+      :file "my_static.h"
+      :pointmax 1835
+      :fsize 1834
+      :lastmodtime '(23314 2562 6322 191000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MYSYS_MY_STATIC_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("my_config.h" include nil nil [1483 1505])
+            ("limits.h" include (:system-flag t) nil [1556 1575])
+            ("stdio.h" include (:system-flag t) nil [1576 1594])
+            ("stdlib.h" include (:system-flag t) nil [1595 1614])
+            ("sys/types.h" include (:system-flag t) nil [1667 1689])
+            ("unordered_map" include (:system-flag t) nil [1690 1714])
+            ("m_ctype.h" include nil nil [1716 1736])
+            ("m_string.h" include nil nil [1737 1758])
+            ("my_compiler.h" include nil nil [1759 1783])
+            ("my_dbug.h" include nil nil [1784 1804])
+            ("my_inttypes.h" include nil nil [1805 1829])
+            ("my_macros.h" include nil nil [1830 1852])
+            ("my_psi_config.h" include nil nil [1853 1879])
+            ("my_sys.h" include nil nil [1880 1899])
+            ("my_thread.h" include nil nil [1900 1922])
+            ("mysql/psi/mysql_cond.h" include nil nil [1923 1956])
+            ("mysql/psi/mysql_file.h" include nil nil [1957 1990])
+            ("mysql/psi/mysql_memory.h" include nil nil [1991 2026])
+            ("mysql/psi/mysql_mutex.h" include nil nil [2027 2061])
+            ("mysql/psi/mysql_rwlock.h" include nil nil [2062 2097])
+            ("mysql/psi/mysql_stage.h" include nil nil [2098 2132])
+            ("mysql/psi/mysql_thread.h" include nil nil [2133 2168])
+            ("mysql/psi/psi_base.h" include nil nil [2169 2200])
+            ("mysql/psi/psi_cond.h" include nil nil [2201 2232])
+            ("mysql/psi/psi_file.h" include nil nil [2233 2264])
+            ("mysql/psi/psi_memory.h" include nil nil [2265 2298])
+            ("mysql/psi/psi_mutex.h" include nil nil [2299 2331])
+            ("mysql/psi/psi_rwlock.h" include nil nil [2332 2365])
+            ("mysql/psi/psi_stage.h" include nil nil [2366 2398])
+            ("mysql/psi/psi_thread.h" include nil nil [2399 2432])
+            ("mysys/my_static.h" include nil nil [2433 2461])
+            ("mysys/mysys_priv.h" include nil nil [2462 2491])
+            ("mysys_err.h" include nil nil [2492 2514])
+            ("SCALE_SEC" variable (:constant-flag t) nil [2765 2774])
+            ("SCALE_USEC" variable (:constant-flag t) nil [2787 2797])
+            ("my_init_done" variable
+               (:default-value "false"
+                :type "bool")
+                nil [2805 2831])
+            ("my_thread_stack_size" variable
+               (:default-value "65536"
+                :type ("ulong" type (:type "class") nil nil))
+                nil [2832 2867])
+            ("mysql_stdin" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("MYSQL_FILE" type (:type "class") nil nil))
+                nil [2868 2899])
+            ("instrumented_stdin" variable
+               (:typemodifiers ("static")
+                :type ("MYSQL_FILE" type (:type "class") nil nil))
+                nil [2900 2937])
+            ("atoi_octal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2963 2979]))                  
+                :type ("ulong" type (:type "class") nil nil))
+                nil [2939 3175])
+            ("my_init" function (:type "bool") nil [4189 5338])
+            ("my_end" function
+               (:arguments 
+                  ( ("infoflag" variable (:type "int") (reparse-symbol arg-sub-list) [5383 5396]))                  
+                :type "void")
+                nil [5371 7749])
+            ("stage_waiting_for_table_level_lock" variable
+               (:default-value "{
+    0, \"Waiting for table level lock\", 0, PSI_DOCUMENT_ME}"
+                :type ("PSI_stage_info" type (:type "class") nil nil))
+                nil [14281 14394])
+            ("stage_waiting_for_disk_space" variable
+               (:default-value "{0, \"Waiting for disk space\", 0,
+                                               PSI_DOCUMENT_ME}"
+                :type ("PSI_stage_info" type (:type "class") nil nil))
+                nil [14396 14539])
+            ("key_BITMAP_mutex" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_IO_CACHE_append_buffer_lock" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_IO_CACHE_SHARE_mutex" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_KEY_CACHE_cache_lock" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_charset" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_heap" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_lock" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_malloc" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_mutex" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_myisam" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_net" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_open" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_threads" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_TMPDIR_mutex" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_THR_LOCK_myisam_mmap" variable (:type ("PSI_mutex_key" type (:type "class") nil nil)) nil [14541 14902])
+            ("key_SAFE_HASH_lock" variable (:type ("PSI_rwlock_key" type (:type "class") nil nil)) nil [16319 16353])
+            ("key_IO_CACHE_SHARE_cond" variable (:type ("PSI_cond_key" type (:type "class") nil nil)) nil [16545 16640])
+            ("key_IO_CACHE_SHARE_cond_writer" variable (:type ("PSI_cond_key" type (:type "class") nil nil)) nil [16545 16640])
+            ("key_THR_COND_threads" variable (:type ("PSI_cond_key" type (:type "class") nil nil)) nil [16545 16640]))          
+      :file "my_init.cc"
+      :pointmax 21316
+      :fsize 21315
+      :lastmodtime '(23319 19481 716724 130000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SCALE_SEC" . ((number "100" 2775 . 2778)))
+          ("SCALE_USEC" . ((number "10000" 2798 . 2803)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYSYS_PRIV_INCLUDED" variable (:constant-flag t) nil [1241 1260])
+            ("my_macros.h" include nil nil [1262 1284])
+            ("my_psi_config.h" include nil nil [1285 1311])
+            ("mysql/psi/mysql_file.h" include nil nil [1312 1345])
+            ("mysql/psi/mysql_stage.h" include nil nil [1346 1380])
+            ("mysql/psi/mysql_thread.h" include nil nil [1381 1416])
+            ("mysql/psi/psi_rwlock.h" include nil nil [1417 1450])
+            ("key_BITMAP_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_IO_CACHE_append_buffer_lock" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_IO_CACHE_SHARE_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_KEY_CACHE_cache_lock" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_charset" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_heap" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_lock" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_malloc" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_myisam" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_net" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_open" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_threads" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_TMPDIR_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_THR_LOCK_myisam_mmap" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_mutex_key" type (:type "class") nil nil))
+                nil [1452 1820])
+            ("key_SAFE_HASH_lock" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_rwlock_key" type (:type "class") nil nil))
+                nil [1822 1863])
+            ("key_IO_CACHE_SHARE_cond" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_cond_key" type (:type "class") nil nil))
+                nil [1865 1967])
+            ("key_IO_CACHE_SHARE_cond_writer" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_cond_key" type (:type "class") nil nil))
+                nil [1865 1967])
+            ("key_THR_COND_threads" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_cond_key" type (:type "class") nil nil))
+                nil [1865 1967])
+            ("stage_waiting_for_table_level_lock" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_stage_info" type (:type "class") nil nil))
+                nil [1969 2026])
+            ("THR_LOCK_malloc" variable
+               (:typemodifiers ("extern")
+                :type ("mysql_mutex_t" type (:type "class") nil nil))
+                nil [2028 2099])
+            ("THR_LOCK_open" variable
+               (:typemodifiers ("extern")
+                :type ("mysql_mutex_t" type (:type "class") nil nil))
+                nil [2028 2099])
+            ("THR_LOCK_keycache" variable
+               (:typemodifiers ("extern")
+                :type ("mysql_mutex_t" type (:type "class") nil nil))
+                nil [2028 2099])
+            ("THR_LOCK_net" variable
+               (:typemodifiers ("extern")
+                :type ("mysql_mutex_t" type (:type "class") nil nil))
+                nil [2100 2134])
+            ("THR_LOCK_charset" variable
+               (:typemodifiers ("extern")
+                :type ("mysql_mutex_t" type (:type "class") nil nil))
+                nil [2135 2173])
+            ("key_file_charset" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_file_key" type (:type "class") nil nil))
+                nil [2284 2321])
+            ("key_memory_charset_file" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2361 2407])
+            ("key_memory_charset_loader" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2408 2456])
+            ("key_memory_lf_node" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2457 2498])
+            ("key_memory_lf_dynarray" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2499 2544])
+            ("key_memory_lf_slist" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2545 2587])
+            ("key_memory_LIST" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2588 2626])
+            ("key_memory_IO_CACHE" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2627 2669])
+            ("key_memory_KEY_CACHE" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2670 2713])
+            ("key_memory_SAFE_HASH_ENTRY" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2714 2763])
+            ("key_memory_MY_TMPDIR_full_list" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2764 2817])
+            ("key_memory_MY_BITMAP_bitmap" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2818 2868])
+            ("key_memory_my_compress_alloc" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2869 2920])
+            ("key_memory_pack_frm" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2921 2963])
+            ("key_memory_my_err_head" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [2964 3009])
+            ("key_memory_my_file_info" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [3010 3056])
+            ("key_memory_MY_DIR" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [3057 3097])
+            ("key_memory_DYNAMIC_STRING" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [3098 3146])
+            ("key_memory_TREE" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [3147 3185])
+            ("key_memory_defaults" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_memory_key" type (:type "class") nil nil))
+                nil [3186 3228])
+            ("key_thread_timer_notifier" variable
+               (:typemodifiers ("extern")
+                :type ("PSI_thread_key" type (:type "class") nil nil))
+                nil [3412 3460])
+            ("EDQUOT" variable (:constant-flag t) nil [3624 3630])
+            ("my_error_unregister_all" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3673 3678]))                  
+                :type "void")
+                nil [3644 3679]))          
+      :file "mysys_priv.h"
+      :pointmax 4918
+      :fsize 4917
+      :lastmodtime '(23314 2562 10322 240000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EDQUOT" . ((semantic-list "(-1)" 3631 . 3635)))
+          ("MYSYS_PRIV_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1580 1599])
+            ("sys/types.h" include (:system-flag t) nil [1600 1622])
+            ("time.h" include (:system-flag t) nil [1664 1681])
+            ("my_dbug.h" include nil nil [1683 1703])
+            ("my_inttypes.h" include nil nil [1704 1728])
+            ("my_loglevel.h" include nil nil [1729 1753])
+            ("my_macros.h" include nil nil [1754 1776])
+            ("my_psi_config.h" include nil nil [1777 1803])
+            ("my_sys.h" include nil nil [1804 1823])
+            ("my_systime.h" include nil nil [1824 1847])
+            ("my_thread.h" include nil nil [1848 1870])
+            ("my_thread_local.h" include nil nil [1871 1899])
+            ("mysql/psi/mysql_cond.h" include nil nil [1900 1933])
+            ("mysql/psi/mysql_mutex.h" include nil nil [1934 1968])
+            ("mysql/psi/mysql_thread.h" include nil nil [1969 2004])
+            ("mysql/psi/psi_thread.h" include nil nil [2005 2038])
+            ("mysys/mysys_priv.h" include nil nil [2039 2068])
+            ("thr_mutex.h" include nil nil [2069 2091])
+            ("my_thread_global_init_done" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [2093 2140])
+            ("THR_thread_count" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint" type (:type "class") nil nil))
+                nil [2158 2191])
+            ("my_thread_end_wait_time" variable
+               (:typemodifiers ("static")
+                :default-value "5"
+                :type ("uint" type (:type "class") nil nil))
+                nil [2192 2232])
+            ("thread_id" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("my_thread_id" type (:type "class") nil nil))
+                nil [2233 2267])
+            ("st_my_thread_var" type
+               (:prototype t
+                :type "struct")
+                nil [2268 2292])
+            ("THR_mysys" variable
+               (:pointer 1
+                :default-value "nullptr"
+                :type ("st_my_thread_var" type (:type "class") nil nil))
+                nil [2313 2351])
+            ("THR_myerrno" variable
+               (:default-value "0"
+                :type "int")
+                nil [2379 2399])
+            ("THR_LOCK_myisam_mmap" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2464 2499])
+            ("THR_LOCK_myisam" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2500 2530])
+            ("THR_LOCK_heap" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2531 2559])
+            ("THR_LOCK_malloc" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2560 2590])
+            ("THR_LOCK_open" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2591 2619])
+            ("THR_LOCK_lock" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2620 2648])
+            ("THR_LOCK_net" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2649 2676])
+            ("THR_LOCK_charset" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2677 2708])
+            ("THR_LOCK_threads" variable (:type ("mysql_mutex_t" type (:type "class") nil nil)) nil [2726 2757])
+            ("THR_COND_threads" variable (:type ("mysql_cond_t" type (:type "class") nil nil)) nil [2758 2788])
+            ("st_my_thread_var" type
+               (:members 
+                  ( ("id" variable (:type ("my_thread_id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3091 3107])
+                    ("dbug" variable
+                       (:pointer 1
+                        :type ("CODE_STATE" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3110 3134]))                  
+                :type "struct")
+                nil [3063 3137])
+            ("mysys_thread_var" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("st_my_thread_var" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3139 3211])
+            ("set_mysys_thread_var" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mysys_var" variable
+                       (:pointer 1
+                        :type ("st_my_thread_var" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3245 3280]))                  
+                :type "int")
+                nil [3213 3321])
+            ("my_thread_global_reinit" function (:type "void") nil [3659 4756])
+            ("my_thread_global_init" function (:type "bool") nil [4844 6628])
+            ("my_thread_global_end" function (:type "void") nil [6630 8309])
+            ("\"C\"" extern nil nil [8610 8625])
+            ("my_thread_init" function (:type "bool") nil [8621 9173])
+            ("\"C\"" extern nil nil [9415 9430])
+            ("my_thread_end" function (:type "void") nil [9426 10462])
+            ("my_errno" function (:type "int") nil [10464 10502])
+            ("set_my_errno" function
+               (:arguments 
+                  ( ("my_errno" variable (:type "int") (reparse-symbol arg-sub-list) [10522 10535]))                  
+                :type "void")
+                nil [10504 10563])
+            ("my_thread_var_id" function (:type ("my_thread_id" type (:type "class") nil nil)) nil [10706 10772])
+            ("set_my_thread_var_id" function
+               (:arguments 
+                  ( ("id" variable (:type ("my_thread_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10800 10816]))                  
+                :type "void")
+                nil [10774 10849])
+            ("my_thread_var_dbug" function
+               (:pointer 2
+                :type ("CODE_STATE" type (:type "class") nil nil))
+                nil [10851 10966]))          
+      :file "my_thr_init.cc"
+      :pointmax 11617
+      :fsize 11616
+      :lastmodtime '(23314 2562 6322 191000)
+      :unmatched-syntax '((symbol 2366 . 2378) (STATIC 2359 . 2365) (symbol 2300 . 2312) (STATIC 2293 . 2299))))
+  :file "!home!maurice!github!mysql-server!mysys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

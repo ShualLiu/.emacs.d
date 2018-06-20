@@ -1,0 +1,1169 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD__STRING_TYPE" variable (:constant-flag t) nil [1202 1217])
+            ("stddef.h" include (:system-flag t) nil [1219 1238])
+            ("sstream" include (:system-flag t) nil [1239 1257])
+            ("string" include (:system-flag t) nil [1258 1275])
+            ("system_error" include (:system-flag t) nil [1276 1299])
+            ("sql/stateless_allocator.h" include nil nil [1301 1337])
+            ("dd" type
+               (:members 
+                  ( ("String_type_alloc" type
+                       (:members 
+                          ( ("()" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1551 1560]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1534 1567]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1505 1570])
+                    ("String_type_allocator" type
+                       (:typedef ("Stateless_allocator" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil)
+                                  ("String_type_alloc" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1572 1647])
+                    ("String_type" type
+                       (:typedef ("Char_string_template" type
+                             (:template-specifier 
+                                ( ("String_type_allocator" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1808 1872])
+                    ("Stringstream_type" type
+                       (:typedef ("Char_stringstream_template" type
+                             (:template-specifier 
+                                ( ("String_type_allocator" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2611 2687])
+                    ("make_string_type" function
+                       (:template 
+                          ( ("LEX_STRING_TYPE" type (:type "class") nil nil))                          
+                        :type ("String_type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("lst" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LEX_STRING_TYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2754 2781]))                          )
+                        (reparse-symbol namespacesubparts) [2689 2817]))                  
+                :type "namespace")
+                nil [1363 2819])
+            ("std" type
+               (:members 
+                  ( ("hash" type
+                       (:type "struct"
+                        :members 
+                          ( ("argument_type" type
+                               (:typedef ("dd::String_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3113 3151])
+                            ("result_type" type
+                               (:typedef ("size_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3154 3181])
+                            ("()" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("dd::String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3203 3228]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3185 3235]))                          
+                        :template-specifier 
+                          ( ("dd::String_type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3068 3238]))                  
+                :type "namespace")
+                nil [2838 3240]))          
+      :file "string_type.h"
+      :pointmax 3288
+      :fsize 3287
+      :lastmodtime '(23314 2562 246325 162000)
+      :unmatched-syntax '((punctuation 2053 . 2054) (punctuation 2052 . 2053) (symbol 2051 . 2052) (punctuation 2049 . 2050) (punctuation 2048 . 2049) (CHAR 2044 . 2048) (punctuation 2043 . 2044) (symbol 2032 . 2043) (punctuation 2031 . 2032) (punctuation 2030 . 2031) (symbol 2027 . 2030) (punctuation 2025 . 2026) (CHAR 2021 . 2025) (punctuation 2020 . 2021) (symbol 2002 . 2020) (punctuation 2001 . 2002) (punctuation 2000 . 2001) (symbol 1997 . 2000) (punctuation 1991 . 1992) (symbol 1964 . 1990) (USING 1958 . 1963) (punctuation 1956 . 1957) (symbol 1955 . 1956) (CLASS 1949 . 1954) (punctuation 1948 . 1949) (TEMPLATE 1939 . 1947) (punctuation 1805 . 1806) (punctuation 1804 . 1805) (symbol 1803 . 1804) (punctuation 1801 . 1802) (punctuation 1800 . 1801) (CHAR 1796 . 1800) (punctuation 1795 . 1796) (symbol 1784 . 1795) (punctuation 1783 . 1784) (punctuation 1782 . 1783) (symbol 1779 . 1782) (punctuation 1777 . 1778) (CHAR 1773 . 1777) (punctuation 1772 . 1773) (symbol 1760 . 1772) (punctuation 1759 . 1760) (punctuation 1758 . 1759) (symbol 1755 . 1758) (punctuation 1753 . 1754) (symbol 1732 . 1752) (USING 1726 . 1731) (punctuation 1724 . 1725) (symbol 1723 . 1724) (CLASS 1717 . 1722) (punctuation 1716 . 1717) (TEMPLATE 1707 . 1715))
+      :lexical-table 
+        '(("DD__STRING_TYPE")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD__DD_INCLUDED" variable (:constant-flag t) nil [1202 1217])
+            ("dd" type
+               (:members 
+                  ( ("enum_dd_init_type" type (:type "class") (reparse-symbol namespacesubparts) [1358 1523])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dd_init" variable (:type ("enum_dd_init_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1843 1869]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1833 1870])
+                    ("shutdown" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2123 2139])
+                    ("get_dictionary" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("Dictionary" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2326 2361])
+                    ("create_object" function
+                       (:template 
+                          ( ("X" type (:type "class") nil nil))                          
+                        :type ("X" type (:type "class") nil nil)
+                        :pointer 1
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2541 2582]))                  
+                :type "namespace")
+                nil [1219 2662]))          
+      :file "dd.h"
+      :pointmax 2708
+      :fsize 2707
+      :lastmodtime '(23314 2562 222324 865000)
+      :unmatched-syntax '((symbol 1498 . 1520) (punctuation 1494 . 1495) (symbol 1485 . 1494) (punctuation 1481 . 1482) (symbol 1462 . 1481) (punctuation 1458 . 1459) (symbol 1437 . 1458) (punctuation 1433 . 1434) (symbol 1407 . 1433) (punctuation 1403 . 1404) (number 1402 . 1403) (punctuation 1400 . 1401) (symbol 1386 . 1399) (ENUM 1353 . 1357))
+      :lexical-table 
+        '(("DD__DD_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD_KILL_IMMUNIZER_INCLUDED" variable (:constant-flag t) nil [1213 1239])
+            ("mutex_lock.h" include nil nil [1241 1264])
+            ("sql/sql_class.h" include nil nil [1283 1309])
+            ("dd" type
+               (:members 
+                  ( ("DD_kill_immunizer" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1886 1893])
+                            ("DD_kill_immunizer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("thd" variable
+                                       (:pointer 1
+                                        :type ("THD" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1914 1923]))                                  
+                                :type ("DD_kill_immunizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1896 2723])
+                            ("DD_kill_immunizer" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2727 3647])
+                            ("is_active" function (:type "bool") (reparse-symbol classsubparts) [3709 3749])
+                            ("save_killed_state" function
+                               (:arguments 
+                                  ( ("state" variable (:type ("THD::killed_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3835 3859]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3812 3986])
+                            ("private" label nil (reparse-symbol classsubparts) [3989 3997])
+                            ("m_thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4000 4011])
+                            ("m_killed_state" variable (:type ("THD::killed_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4316 4349])
+                            ("m_saved_kill_immunizer" variable
+                               (:pointer 1
+                                :type ("DD_kill_immunizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4561 4603])
+                            ("m_saved_killed_state" variable (:type ("THD::killed_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4861 4900])
+                            ("m_is_active" variable (:type "bool") (reparse-symbol classsubparts) [5188 5205]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1859 5208]))                  
+                :type "namespace")
+                nil [1319 5211]))          
+      :file "dd_kill_immunizer.h"
+      :pointmax 5267
+      :fsize 5266
+      :lastmodtime '(23314 2562 222324 865000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DD_KILL_IMMUNIZER_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD__DICTIONARY_INCLUDED" variable (:constant-flag t) nil [1210 1233])
+            ("my_compiler.h" include nil nil [1235 1259])
+            ("sql/dd/string_type.h" include nil nil [1260 1291])
+            ("THD" type
+               (:prototype t
+                :type "class")
+                nil [1313 1323])
+            ("MDL_ticket" type
+               (:prototype t
+                :type "class")
+                nil [1324 1341])
+            ("Plugin_table" type
+               (:prototype t
+                :type "class")
+                nil [1342 1361])
+            ("dd" type
+               (:members 
+                  ( ("Collation" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1456 1472])
+                    ("Object_table" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1473 1492])
+                    ("Schema" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1493 1506])
+                    ("cache" type
+                       (:members 
+                          ( ("Dictionary_client" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1526 1550]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1508 1552])
+                    ("Dictionary" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1722 1729])
+                            ("get_dd_table" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2068 2099])
+                                    ("table_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2100 2130]))                                  
+                                :type ("Object_table" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2020 2141])
+                            ("public" label nil (reparse-symbol classsubparts) [2144 2151])
+                            ("is_dd_schema_name" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2612 2643]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2581 2654])
+                            ("is_dd_table_name" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2980 3011])
+                                    ("table_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3044 3074]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2950 3085])
+                            ("is_system_table_name" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3403 3434])
+                                    ("table_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3471 3501]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3369 3512])
+                            ("table_type_error_code" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3931 3962])
+                                    ("table_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3999 4029]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3897 4040])
+                            ("is_dd_table_access_allowed" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("is_dd_internal_thread" variable (:type "bool") (reparse-symbol arg-sub-list) [4664 4691])
+                                    ("is_ddl_statement" variable (:type "bool") (reparse-symbol arg-sub-list) [4734 4756])
+                                    ("schema_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4799 4823])
+                                    ("schema_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4866 4887])
+                                    ("table_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4930 4953]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4624 4964])
+                            ("is_system_view_name" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5430 5454])
+                                    ("table_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5490 5513])
+                                    ("hidden" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5549 5562]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5397 5573])
+                            ("is_system_view_name" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("schema_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5907 5931])
+                                    ("table_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5967 5990]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5874 6001])
+                            ("public" label nil (reparse-symbol classsubparts) [6004 6011])
+                            ("Dictionary" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6088 6112]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1702 6115])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6974 7009])
+                    ("has_shared_table_mdl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7399 7408])
+                            ("schema_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7409 7433])
+                            ("table_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7460 7483]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7373 7484])
+                    ("has_exclusive_table_mdl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7881 7890])
+                            ("schema_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7891 7915])
+                            ("table_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7945 7968]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7852 7969])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8790 8825])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9492 9527])
+                    ("has_shared_tablespace_mdl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9883 9892])
+                            ("tablespace_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9893 9921]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9852 9922])
+                    ("has_exclusive_tablespace_mdl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10285 10294])
+                            ("tablespace_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10295 10323]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10251 10324])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11104 11139])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11813 11848])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12527 12562])
+                    ("release_mdl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12726 12735])
+                            ("mdl_ticket" variable
+                               (:pointer 1
+                                :type ("MDL_ticket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12736 12759]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12709 12760])
+                    ("get_dd_client" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12880 12889]))                          
+                        :type ("cache::Dictionary_client" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12840 12890])
+                    ("create_native_table" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13258 13267])
+                            ("pt" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Plugin_table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13268 13291]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13233 13292])
+                    ("drop_native_table" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13676 13685])
+                            ("schema_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13686 13710])
+                            ("table_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13734 13757]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13653 13758])
+                    ("reset_tables_and_tablespaces" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14018 14054])
+                    ("get_dd_table" function
+                       (:template 
+                          ( ("Entity_object_type" type (:type "class") nil nil))                          
+                        :type ("Object_table" type (:type "class") nil nil)
+                        :constant-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [14396 14470])
+                    ("rename_tablespace_mdl_hook" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thd" variable
+                               (:pointer 1
+                                :type ("THD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14854 14863])
+                            ("src" variable
+                               (:pointer 1
+                                :type ("MDL_ticket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14864 14880])
+                            ("dst" variable
+                               (:pointer 1
+                                :type ("MDL_ticket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14881 14897]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14822 14898]))                  
+                :type "namespace")
+                nil [1363 14900]))          
+      :file "dictionary.h"
+      :pointmax 14954
+      :fsize 14953
+      :lastmodtime '(23314 2562 226324 915000)
+      :unmatched-syntax '((semantic-list 12540 . 12560) (semantic-list 12410 . 12522) (symbol 12382 . 12410) (BOOL 12377 . 12381) (semantic-list 11826 . 11846) (semantic-list 11584 . 11808) (symbol 11557 . 11584) (BOOL 11552 . 11556) (semantic-list 11117 . 11137) (semantic-list 10931 . 11099) (symbol 10904 . 10931) (BOOL 10899 . 10903) (semantic-list 9505 . 9525) (semantic-list 9399 . 9487) (symbol 9370 . 9399) (BOOL 9365 . 9369) (semantic-list 8803 . 8823) (semantic-list 8625 . 8785) (symbol 8593 . 8625) (BOOL 8588 . 8592) (semantic-list 6987 . 7007) (semantic-list 6807 . 6969) (symbol 6783 . 6807) (BOOL 6778 . 6782))
+      :lexical-table 
+        '(("DD__DICTIONARY_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD__OBJECT_ID_INCLUDED" variable (:constant-flag t) nil [1209 1231])
+            ("dd" type
+               (:members 
+                  ( ("Object_id" type
+                       (:typedef ("unsigned long long")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1326 1363])
+                    ("INVALID_OBJECT_ID" variable
+                       (:constant-flag t
+                        :default-value "(Object_id)-1"
+                        :type ("Object_id" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1486 1536]))                  
+                :type "namespace")
+                nil [1233 1616]))          
+      :file "object_id.h"
+      :pointmax 1669
+      :fsize 1668
+      :lastmodtime '(23314 2562 246325 162000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DD__OBJECT_ID_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DD__PROPERTIES_INCLUDED" variable (:constant-flag t) nil [1210 1233])
+            ("limits" include (:system-flag t) nil [1235 1252])
+            ("map" include (:system-flag t) nil [1253 1267])
+            ("m_string.h" include nil nil [1269 1290])
+            ("my_dbug.h" include nil nil [1308 1328])
+            ("sql/dd/string_type.h" include nil nil [1329 1360])
+            ("MEM_ROOT" type
+               (:prototype t
+                :type "struct")
+                nil [1397 1413])
+            ("dd" type
+               (:members 
+                  ( ("Properties" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1431 1448])
+                    ("Properties" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3100 3107])
+                            ("parse_properties" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("raw_properties" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3201 3235]))                                  
+                                :type ("Properties" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3165 3236])
+                            ("public" label nil (reparse-symbol classsubparts) [3239 3246])
+                            ("Map" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("String_type" type nil nil nil)
+                                          ("String_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3249 3296])
+                            ("size_type" type
+                               (:typedef ("std::map::size_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3299 3363])
+                            ("Iterator" type
+                               (:typedef ("Map::iterator" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3366 3397])
+                            ("Const_iterator" type
+                               (:typedef ("Map::const_iterator" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3400 3443])
+                            ("public" label nil (reparse-symbol classsubparts) [3446 3453])
+                            ("begin" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3456 3485])
+                            ("begin" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3488 3529])
+                            ("end" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3533 3560])
+                            ("end" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3563 3602])
+                            ("private" label nil (reparse-symbol classsubparts) [3605 3613])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("properties" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Properties" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3706 3735]))                                  
+                                :type ("Properties" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3684 3736])
+                            ("public" label nil (reparse-symbol classsubparts) [3739 3746])
+                            ("impl" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("Properties_impl" type
+                                     (:prototype t
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3855 3909])
+                            ("assign" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("properties" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Properties" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4186 4215]))                                  
+                                :type ("Properties" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4159 4220])
+                            ("size" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4313 4348])
+                            ("empty" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4458 4489])
+                            ("clear" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4536 4561])
+                            ("exists" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4718 4741]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4698 4752])
+                            ("remove" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4968 4991]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4948 4996])
+                            ("raw_string" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5319 5368])
+                            ("value" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5566 5589]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5533 5600])
+                            ("value_cstr" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5819 5842]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [5788 5853])
+                            ("get" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6160 6183])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6184 6203]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6143 6214])
+                            ("get" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6587 6610])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type ("LEX_STRING" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6611 6629])
+                                    ("mem_root" variable
+                                       (:pointer 1
+                                        :type ("MEM_ROOT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6649 6668]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6570 6679])
+                            ("get_int64" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6937 6960])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("int64" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6961 6974]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6914 6985])
+                            ("get_uint64" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7247 7270])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("uint64" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7271 7285]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7223 7296])
+                            ("get_int32" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7554 7577])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("int32" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7578 7591]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7531 7602])
+                            ("get_uint32" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7864 7887])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("uint32" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7888 7902]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7840 7913])
+                            ("get_bool" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8311 8334])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [8335 8347]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8289 8358])
+                            ("set" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8601 8624])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8625 8650]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8584 8655])
+                            ("set_int64" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8882 8905])
+                                    ("value" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8906 8918]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8859 8923])
+                            ("set_uint64" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9152 9175])
+                                    ("value" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9176 9189]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9128 9194])
+                            ("set_int32" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9421 9444])
+                                    ("value" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9445 9457]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9398 9462])
+                            ("set_uint32" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9691 9714])
+                                    ("value" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9715 9728]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9667 9733])
+                            ("set_bool" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10023 10046])
+                                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [10047 10058]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10001 10063])
+                            ("to_int64" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("number" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10321 10347])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("int64" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10348 10361]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10300 10408])
+                            ("to_uint64" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("number" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10670 10696])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("uint64" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10697 10711]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10648 10759])
+                            ("to_int32" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("number" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11017 11043])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("int32" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11044 11057]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10996 11104])
+                            ("to_uint32" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("number" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11366 11392])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("uint32" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11393 11407]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11344 11455])
+                            ("to_bool" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("bool_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11852 11880])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [11881 11893]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11832 12431])
+                            ("from_int64" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("value" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12616 12628]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12586 12663])
+                            ("from_uint64" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("value" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12850 12863]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12819 12905])
+                            ("from_int32" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("value" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13090 13102]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13060 13137])
+                            ("from_uint32" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("value" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13324 13337]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13293 13379])
+                            ("from_bool" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [13703 13714]))                                  
+                                :type ("String_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13674 13789])
+                            ("protected" label nil (reparse-symbol classsubparts) [13792 13802])
+                            ("to_int" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("number" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14185 14211])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14212 14221]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [14145 15290])
+                            ("from_int" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("String_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15548 15556]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [15499 15641])
+                            ("public" label nil (reparse-symbol classsubparts) [15644 15651])
+                            ("Properties" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [15654 15678]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3080 15681]))                  
+                :type "namespace")
+                nil [1415 15761]))          
+      :file "properties.h"
+      :pointmax 15815
+      :fsize 15814
+      :lastmodtime '(23314 2562 246325 162000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DD__PROPERTIES_INCLUDED")
+          )
+))
+  :file "!home!maurice!github!mysql-server!sql!dd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -9,7 +9,7 @@
       :file "ede-projects.el"
       :pointmax 86
       :fsize 85
-      :lastmodtime '(23311 48858 705199 504000)
+      :lastmodtime '(23311 50768 79944 831000)
       :unmatched-syntax nil))
   :file "!home!maurice!.emacs.d!semantic.cache"
   :semantic-tag-version "2.0"

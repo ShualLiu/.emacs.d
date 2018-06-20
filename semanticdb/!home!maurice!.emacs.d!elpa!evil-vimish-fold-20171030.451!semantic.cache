@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "evil-vimish-fold-autoloads.el"
+      :pointmax 327
+      :fsize 980
+      :lastmodtime '(23338 6714 322015 343000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!evil-vimish-fold-20171030.451!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

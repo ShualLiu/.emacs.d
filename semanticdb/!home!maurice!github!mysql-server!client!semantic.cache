@@ -1,0 +1,91 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1174 1192])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1203 1212])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1213 1225]))                  
+                :type "int")
+                nil [1194 1397]))          
+      :file "echo.c"
+      :pointmax 1398
+      :fsize 1397
+      :lastmodtime '(23319 28632 365016 814000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("my_global.h" include (:system-flag t) nil [837 859])
+            ("my_sys.h" include (:system-flag t) nil [860 879])
+            ("mysql.h" include nil nil [880 898])
+            ("m_string.h" include (:system-flag t) nil [899 920])
+            ("m_ctype.h" include (:system-flag t) nil [921 941])
+            ("mysql/get_password.h" include (:system-flag t) nil [942 973])
+            ("sgtty.h" include (:system-flag t) nil [1357 1375])
+            ("TERMIO" variable (:constant-flag t) nil [1384 1390])
+            ("get_password" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2656 2665])
+                    ("length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2665 2677])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2677 2684])
+                    ("echo" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2685 2698]))                  
+                :type "void")
+                nil [2631 3310])
+            ("get_tty_password_ext" function
+               (:pointer 1
+                :arguments 
+                  ( ("opt_message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3369 3393])
+                    ("strdup_function" variable (:type ("strdup_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3421 3454]))                  
+                :type "char")
+                nil [3342 5052])
+            ("my_strdup_fct" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5103 5119])
+                    ("flags" variable (:type ("myf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5120 5130]))                  
+                :type "char")
+                nil [5075 5188])
+            ("get_tty_password" function
+               (:pointer 1
+                :arguments 
+                  ( ("opt_message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5213 5237]))                  
+                :type "char")
+                nil [5190 5300]))          
+      :file "get_password.c"
+      :pointmax 5301
+      :fsize 5300
+      :lastmodtime '(23319 28632 365016 814000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TERMIO" . ((STRUCT "struct" 1391 . 1397) (symbol "sgttyb" 1398 . 1404)))
+          )
+))
+  :file "!home!maurice!github!mysql-server!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

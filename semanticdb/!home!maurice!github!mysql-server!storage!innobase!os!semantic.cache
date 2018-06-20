@@ -1,0 +1,2393 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("db0err.h" include nil nil [1970 1989])
+            ("fil0fil.h" include nil nil [1990 2010])
+            ("mach0data.h" include nil nil [2011 2033])
+            ("os0file.h" include nil nil [2034 2054])
+            ("univ.i" include nil nil [2055 2072])
+            ("lz4.h" include (:system-flag t) nil [2074 2090])
+            ("zlib.h" include (:system-flag t) nil [2091 2108])
+            ("to_string" function
+               (:pointer 1
+                :parent "Compression"
+                :constant-flag t
+                :arguments 
+                  ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2239 2249]))                  
+                :type "char")
+                nil [2204 2425])
+            ("to_string" function
+               (:parent "Compression"
+                :arguments 
+                  ( ("meta" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Compression::meta_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2540 2572]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2505 2974])
+            ("is_compressed_page" function
+               (:parent "Compression"
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3060 3077]))                  
+                :type "bool")
+                nil [3023 3155])
+            ("deserialize_header" function
+               (:parent "Compression"
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3334 3351])
+                    ("control" variable
+                       (:pointer 1
+                        :type ("Compression::meta_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3389 3418]))                  
+                :type "void")
+                nil [3297 3986])
+            ("deserialize" function
+               (:parent "Compression"
+                :arguments 
+                  ( ("dblwr_recover" variable (:type "bool") (reparse-symbol arg-sub-list) [4512 4531])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4532 4542])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4543 4553])
+                    ("dst_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4587 4601]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [4479 7860])
+            ("os_file_decompress_page" function
+               (:arguments 
+                  ( ("dblwr_recover" variable (:type "bool") (reparse-symbol arg-sub-list) [8385 8404])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8405 8415])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8416 8426])
+                    ("dst_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8459 8473]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [8353 8548]))          
+      :file "file.cc"
+      :pointmax 8549
+      :fsize 8548
+      :lastmodtime '(23314 2562 802332 47000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("my_compiler.h" include nil nil [1797 1821])
+            ("os_file_h" variable (:constant-flag t) nil [2008 2017])
+            ("univ.i" include nil nil [2019 2036])
+            ("Compression" type
+               (:members 
+                  ( ("Type" type
+                       (:members 
+                          ( ("NONE" variable
+                               (:constant-flag t
+                                :default-value (2360 2361)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2353 2362])
+                            ("ZLIB" variable
+                               (:constant-flag t
+                                :default-value (2395 2396)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2388 2397])
+                            ("LZ4" variable
+                               (:constant-flag t
+                                :default-value (2471 2475)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2465 2476]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2126 2477])
+                    ("meta_t" type
+                       (:members 
+                          ( ("m_version" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2562 2580])
+                            ("m_algorithm" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2629])
+                            ("m_original_type" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2665 2690])
+                            ("m_original_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2746 2771])
+                            ("m_compressed_size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2811 2838]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2516 2843])
+                    ("Compression" function
+                       (:constructor-flag t
+                        :type ("Compression" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2876 2906])
+                    ("Compression" function
+                       (:constructor-flag t
+                        :typemodifiers ("explicit")
+                        :arguments 
+                          ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2996 3006]))                          
+                        :type ("Compression" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2975 3181])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3358 3393])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3708 3743])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3940 3975])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4142 4177])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4360 4395])
+                    ("deserialize_header" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("page" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("byte" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4576 4593])
+                            ("control" variable
+                               (:pointer 1
+                                :type ("meta_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4594 4610]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4545 4611])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4815 4850])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [5510 5545])
+                    ("m_type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5575 5587]))                  
+                :type "struct")
+                nil [2068 5590]))          
+      :file "file.h"
+      :pointmax 5598
+      :fsize 5597
+      :lastmodtime '(23314 2562 802332 47000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("os_file_h")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("os0file.h" include nil nil [1809 1829])
+            ("fil0fil.h" include nil nil [1830 1850])
+            ("ha_prototypes.h" include nil nil [1851 1877])
+            ("log0log.h" include nil nil [1878 1898])
+            ("my_compiler.h" include nil nil [1899 1923])
+            ("my_dbug.h" include nil nil [1924 1944])
+            ("my_inttypes.h" include nil nil [1945 1969])
+            ("my_io.h" include nil nil [1970 1988])
+            ("sql_const.h" include nil nil [1989 2011])
+            ("srv0srv.h" include nil nil [2012 2032])
+            ("srv0start.h" include nil nil [2033 2055])
+            ("os0event.h" include nil nil [2079 2100])
+            ("os0thread.h" include nil nil [2101 2123])
+            ("sys/sendfile.h" include (:system-flag t) nil [2307 2332])
+            ("errno.h" include (:system-flag t) nil [2676 2694])
+            ("lz4.h" include (:system-flag t) nil [2695 2711])
+            ("my_aes.h" include nil nil [2712 2731])
+            ("my_rnd.h" include nil nil [2732 2751])
+            ("mysql/service_mysql_keyring.h" include nil nil [2752 2792])
+            ("mysqld.h" include nil nil [2793 2812])
+            ("sys/types.h" include (:system-flag t) nil [2814 2836])
+            ("zlib.h" include (:system-flag t) nil [2837 2854])
+            ("ctime" include (:system-flag t) nil [2855 2871])
+            ("functional" include (:system-flag t) nil [2872 2893])
+            ("new" include (:system-flag t) nil [2894 2908])
+            ("vector" include (:system-flag t) nil [2909 2926])
+            ("IO_IBUF_SEGMENT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [3034 3073])
+            ("IO_LOG_SEGMENT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [3097 3135])
+            ("NUM_RETRIES_ON_PARTIAL_IO" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [3180 3230])
+            ("Block" type
+               (:members 
+                  ( ("Block" function
+                       (:constructor-flag t
+                        :type ("Block" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3363 3395])
+                    ("m_ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3399 3411])
+                    ("pad" variable
+                       (:dereference 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3415 3466])
+                    ("m_in_use" variable (:type ("lock_word_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3469 3490]))                  
+                :type "struct")
+                nil [3317 3493])
+            ("Blocks" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("Block" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [3535 3569])
+            ("block_cache" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Blocks" type (:type "class") nil nil))
+                nil [3595 3622])
+            ("MAX_BLOCKS" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "128"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3681 3718])
+            ("BUFFER_BLOCK_SIZE" variable (:constant-flag t) nil [3753 3770])
+            ("os_io_ptr_align" variable
+               (:typemodifiers ("static")
+                :default-value "UNIV_SECTOR_SIZE"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [3867 3915])
+            ("os_is_o_direct_supported" function (:type "bool") nil [4042 5624])
+            ("S_IWGRP" variable (:type "int") nil [5898 5906])
+            ("OS_AIO_MERGE_N_CONSECUTIVE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "64"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [6296 6347])
+            ("buf_page_cleaner_is_active" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [6412 6451])
+            ("Slot" type
+               (:members 
+                  ( ("pos" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9197 9213])
+                    ("is_reserved" variable (:type "bool") (reparse-symbol classsubparts) [9256 9280])
+                    ("reservation_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9312 9339])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9371 9390])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9496 9515])
+                    ("type" variable (:type ("IORequest" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9558 9591])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9625 9647])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9688 9782])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [9813 9839])
+                    ("io_already_done" variable (:type "bool") (reparse-symbol classsubparts) [10008 10036])
+                    ("m1" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10094 10118])
+                    ("m2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [10243 10261])
+                    ("err" variable (:type ("dberr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10296 10324])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10935 10948])
+                    ("n_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10981 10998])
+                    ("original_len" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11082 11105])
+                    ("buf_block" variable
+                       (:pointer 1
+                        :type ("Block" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11171 11197])
+                    ("skip_punch_hole" variable (:type "bool") (reparse-symbol classsubparts) [11268 11296])
+                    ("encrypt_log_buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [11332 11363])
+                    ("Slot" function
+                       (:constructor-flag t
+                        :type ("Slot" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [11367 11481]))                  
+                :type "struct")
+                nil [9137 11484])
+            ("AIO" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11543 11550])
+                    ("AIO" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("latch_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11703 11717])
+                            ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11718 11726])
+                            ("segments" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11727 11742]))                          
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11699 11743])
+                    ("AIO" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11767 11774])
+                    ("init" function
+                       (:prototype-flag t
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11846 11861])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [12741 12776])
+                    ("pending_io_count" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12822 12853])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [13014 13117])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [13166 13263])
+                    ("release" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13389 13400]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13376 13401])
+                    ("release_with_mutex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13545 13556]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13521 13557])
+                    ("print" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13651 13662]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13640 13663])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [13742 13832])
+                    ("MY_ATTRIBUTE" function
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [13900 13973])
+                    ("acquire" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14203 14250])
+                    ("release" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14281 14327])
+                    ("to_file" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14432 14443]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14419 14450])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [17715 17750])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [18604 18639])
+                    ("shutdown" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [18672 18695])
+                    ("print_all" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18795 18806]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18773 18807])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [19103 19138])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [19487 19522])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [19825 19860])
+                    ("wake_simulated_handler_thread" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20094 20115]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20052 20116])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [20290 20359])
+                    ("wait_until_no_pending_writes" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [20413 20507])
+                    ("print_to_file" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20596 20607]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20570 20608])
+                    ("total_pending_io_count" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20739 20777])
+                    ("private" label nil (reparse-symbol classsubparts) [20780 20788])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [20877 20912])
+                    ("wake_simulated_handler_thread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21233 21254])
+                            ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21255 21269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21198 21270])
+                    ("print_segment_info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21604 21615])
+                            ("segments" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ulint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21616 21638]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21580 21639])
+                    ("private" label nil (reparse-symbol classsubparts) [21859 21867])
+                    ("Slots" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Slot" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [21870 21902])
+                    ("m_mutex" variable
+                       (:typemodifiers ("mutable")
+                        :type ("SysMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21950 21975])
+                    ("m_slots" variable (:type ("Slots" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22076 22090])
+                    ("m_n_segments" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22224 22243])
+                    ("m_not_full" variable (:type ("os_event_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22359 22381])
+                    ("m_is_empty" variable (:type ("os_event_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22486 22508])
+                    ("m_n_reserved" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22590 22609])
+                    ("s_ibuf" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23505 23524])
+                    ("s_log" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23546 23564])
+                    ("s_reads" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23583 23603])
+                    ("s_writes" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23623 23644])
+                    ("s_sync" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23673 23692]))                  
+                :type "class")
+                nil [11530 23695])
+            ("AIO::s_reads" variable
+               (:pointer 1
+                :type ("AIO" type (:type "class") nil nil))
+                nil [23724 23742])
+            ("AIO::s_writes" variable
+               (:pointer 1
+                :type ("AIO" type (:type "class") nil nil))
+                nil [23743 23762])
+            ("AIO::s_ibuf" variable
+               (:pointer 1
+                :type ("AIO" type (:type "class") nil nil))
+                nil [23763 23780])
+            ("AIO::s_log" variable
+               (:pointer 1
+                :type ("AIO" type (:type "class") nil nil))
+                nil [23781 23797])
+            ("AIO::s_sync" variable
+               (:pointer 1
+                :type ("AIO" type (:type "class") nil nil))
+                nil [23798 23815])
+            ("os_aio_segment_wait_events" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("os_event_t" type (:type "class") nil nil))
+                nil [24270 24323])
+            ("os_aio_n_segments" variable
+               (:typemodifiers ("static")
+                :default-value "ULINT_UNDEFINED"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24392 24441])
+            ("os_aio_recommend_sleep_for_read_threads" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [24565 24625])
+            ("os_n_file_reads" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24627 24653])
+            ("os_bytes_read_since_printout" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24654 24700])
+            ("os_n_file_writes" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24701 24728])
+            ("os_n_fsyncs" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24729 24751])
+            ("os_n_file_reads_old" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24752 24789])
+            ("os_n_file_writes_old" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24790 24828])
+            ("os_n_fsyncs_old" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24829 24862])
+            ("os_n_pending_writes" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24905 24935])
+            ("os_n_pending_reads" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [24977 25006])
+            ("os_last_printout" variable
+               (:typemodifiers ("static")
+                :type ("time_t" type (:type "class") nil nil))
+                nil [25008 25039])
+            ("os_has_said_disk_full" variable
+               (:default-value "false"
+                :type "bool")
+                nil [25040 25075])
+            ("page_zip_level" variable
+               (:typemodifiers ("extern")
+                :type ("uint" type (:type "class") nil nil))
+                nil [25114 25141])
+            ("os_aio_validate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "bool")
+                nil [25312 25342])
+            ("os_file_handle_error" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25575 25592])
+                    ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25593 25615]))                  
+                :type "bool")
+                nil [25542 25616])
+            ("os_file_punch_hole" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25900 25913])
+                    ("off" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25914 25930])
+                    ("len" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25931 25947]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [25873 25948])
+            ("os_file_handle_error_no_exit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26265 26282])
+                    ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26324 26346])
+                    ("on_error_silent" variable (:type "bool") (reparse-symbol arg-sub-list) [26388 26409]))                  
+                :type "bool")
+                nil [26224 26410])
+            ("os_file_io_complete" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26950 26972])
+                    ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26973 26986])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27022 27032])
+                    ("scratch" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27033 27047])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27048 27062])
+                    ("offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27098 27111])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27112 27122]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [26915 27123])
+            ("os_aio_simulated_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28040 28061])
+                    ("m1" variable
+                       (:pointer 2
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28062 28078])
+                    ("m2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28119 28129])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28130 28146]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [28000 28147])
+            ("os_file_can_delete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29679 29696]))                  
+                :type "bool")
+                nil [29648 30893])
+            ("os_alloc_block" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Block" type (:type "class") nil nil))
+                nil [30954 31838])
+            ("os_free_block" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("block" variable
+                       (:pointer 1
+                        :type ("Block" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31947 31960]))                  
+                :type "void")
+                nil [31921 32281])
+            ("AIOHandler" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [32377 32384])
+                    ("post_io_processing" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32508 32519]))                          
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32474 32520])
+                    ("io_complete" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32633 32650]))                          
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32606 32953])
+                    ("private" label nil (reparse-symbol classsubparts) [32956 32964])
+                    ("is_encrypted_page" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33144 33161]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [33114 33222])
+                    ("is_compressed_page" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33405 33422]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [33374 33571])
+                    ("compressed_page_size" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33767 33784]))                          
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33733 34009])
+                    ("can_decompress" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34214 34231]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [34187 34602])
+                    ("check_read" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34820 34831])
+                            ("n_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34832 34846]))                          
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34794 34847]))                  
+                :type "class")
+                nil [32357 34850])
+            ("SyncFileIO" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [35089 35096])
+                    ("SyncFileIO" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35296 35309])
+                            ("buf" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [35310 35320])
+                            ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35321 35329])
+                            ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35330 35349]))                          
+                        :type ("SyncFileIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [35285 35452])
+                    ("SyncFileIO" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [35476 35507])
+                    ("execute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IORequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35669 35694]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [35653 35695])
+                    ("execute" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35876 35887]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [35853 35888])
+                    ("advance" function
+                       (:arguments 
+                          ( ("n_bytes" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36031 36047]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [36018 36184])
+                    ("private" label nil (reparse-symbol classsubparts) [36187 36195])
+                    ("m_fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36224 36239])
+                    ("m_buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [36273 36285])
+                    ("m_n" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36328 36340])
+                    ("m_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36385 36406]))                  
+                :type "class")
+                nil [35069 36409])
+            ("os_file_compressed_page_size" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36738 36754]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [36703 37033])
+            ("os_file_original_page_size" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37346 37362]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [37313 37642])
+            ("check_read" function
+               (:parent "AIOHandler"
+                :arguments 
+                  ( ("slot" variable
+                       (:pointer 1
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37855 37866])
+                    ("n_bytes" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37867 37881]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [37824 39087])
+            ("post_io_processing" function
+               (:parent "AIOHandler"
+                :arguments 
+                  ( ("slot" variable
+                       (:pointer 1
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39211 39222]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [39172 40804])
+            ("pending_io_count" function
+               (:methodconst-flag t
+                :parent "AIO"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [40877 41309])
+            ("os_file_compress_page" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("compression" variable (:type ("Compression" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41715 41739])
+                    ("block_size" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41740 41757])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41793 41803])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41804 41818])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41819 41829])
+                    ("dst_len" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41865 41880]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [41680 45186])
+            ("USE_FILE_LOCK" variable (:constant-flag t) nil [46090 46103])
+            ("os_file_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [46474 46481])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46482 46499]))                  
+                :type "int")
+                nil [46450 47028])
+            ("get_array_and_local_segment" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 2
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47303 47315])
+                    ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47316 47330]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [47264 48027])
+            ("release" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("slot" variable
+                       (:pointer 1
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48153 48164]))                  
+                :type "void")
+                nil [48135 48802])
+            ("release_with_mutex" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("slot" variable
+                       (:pointer 1
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48946 48957]))                  
+                :type "void")
+                nil [48917 49006])
+            ("os_file_create_tmpfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49397 49414]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [49368 49713])
+            ("os_file_read_string" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50077 50088])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50089 50099])
+                    ("size" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50100 50111]))                  
+                :type "void")
+                nil [50052 50229])
+            ("os_file_io_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50702 50724])
+                    ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50725 50738])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50774 50784])
+                    ("scratch" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50785 50799])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50800 50814])
+                    ("offset" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50850 50863])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50864 50874]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [50667 52325])
+            ("os_file_is_root" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52632 52649])
+                    ("last_slash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52650 52673]))                  
+                :type "bool")
+                nil [52611 52801])
+            ("os_file_get_parent_dir" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53420 53437]))                  
+                :type "char")
+                nil [53384 54715])
+            ("os_file_create_subdirs_if_needed" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57048 57065]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [57007 57897])
+            ("os_file_compress_page" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58299 58315])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [58316 58323])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58323 58327])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58328 58337]))                  
+                :type ("Block" type (:type "class") nil nil))
+                nil [58263 59745])
+            ("os_file_encrypt_page" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60042 60064])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [60065 60072])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60072 60076])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60112 60121]))                  
+                :type ("Block" type (:type "class") nil nil))
+                nil [60007 60682])
+            ("os_file_encrypt_log" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61041 61063])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [61064 61071])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61071 61075])
+                    ("" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61110 61117])
+                    ("" variable (:type ("scratch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61117 61125])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61126 61135]))                  
+                :type ("Block" type (:type "class") nil nil))
+                nil [61007 62002])
+            ("execute" function
+               (:parent "SyncFileIO"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62184 62209]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [62156 62426])
+            ("os_file_punch_hole_posix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62674 62687])
+                    ("off" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62688 62704])
+                    ("len" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62745 62761]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [62634 63439])
+            ("os_file_get_last_error_low" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("report_all_errors" variable (:type "bool") (reparse-symbol arg-sub-list) [82865 82888])
+                    ("on_error_silent" variable (:type "bool") (reparse-symbol arg-sub-list) [82929 82950]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [82825 84800])
+            ("os_file_fsync_posix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85097 85112]))                  
+                :type "int")
+                nil [85066 86150])
+            ("os_file_status_posix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86399 86416])
+                    ("exists" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [86417 86430])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("os_file_type_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86464 86485]))                  
+                :type "bool")
+                nil [86366 87506])
+            ("os_file_flush_func" function
+               (:arguments 
+                  ( ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87731 87746]))                  
+                :type "bool")
+                nil [87707 88311])
+            ("os_file_create_simple_func" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88917 88934])
+                    ("create_mode" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88935 88953])
+                    ("access_type" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88991 89009])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [89010 89025])
+                    ("success" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [89063 89077]))                  
+                :type ("os_file_t" type (:type "class") nil nil))
+                nil [88880 90769])
+            ("os_file_create_directory" function
+               (:arguments 
+                  ( ("pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91411 91432])
+                    ("fail_if_exists" variable (:type "bool") (reparse-symbol arg-sub-list) [91433 91453]))                  
+                :type "bool")
+                nil [91381 91679])
+            ("os_file_scan_directory" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92031 92048])
+                    ("scan_cbk" variable (:type ("os_dir_cbk_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92049 92071])
+                    ("is_drop" variable (:type "bool") (reparse-symbol arg-sub-list) [92100 92113]))                  
+                :type "bool")
+                nil [92003 92634])
+            ("os_file_create_func" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93646 93663])
+                    ("create_mode" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93664 93682])
+                    ("purpose" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93717 93731])
+                    ("type" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93732 93743])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [93744 93759])
+                    ("success" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [93794 93808]))                  
+                :type ("pfs_os_file_t" type (:type "class") nil nil))
+                nil [93612 97559])
+            ("os_file_create_simple_no_error_handling_func" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [98354 98371])
+                    ("create_mode" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98431 98449])
+                    ("access_type" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98509 98527])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [98587 98602])
+                    ("success" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [98662 98676]))                  
+                :type ("pfs_os_file_t" type (:type "class") nil nil))
+                nil [98295 99864])
+            ("os_file_delete_if_exists_func" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100109 100126])
+                    ("exist" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [100127 100139]))                  
+                :type "bool")
+                nil [100074 100518])
+            ("os_file_delete_func" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100694 100711]))                  
+                :type "bool")
+                nil [100669 100860])
+            ("os_file_rename_func" function
+               (:arguments 
+                  ( ("oldpath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101217 101237])
+                    ("newpath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101238 101258]))                  
+                :type "bool")
+                nil [101192 101702])
+            ("os_file_close_func" function
+               (:arguments 
+                  ( ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101970 101985]))                  
+                :type "bool")
+                nil [101946 102118])
+            ("os_file_get_size" function
+               (:arguments 
+                  ( ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102264 102283]))                  
+                :type ("os_offset_t" type (:type "class") nil nil))
+                nil [102235 102559])
+            ("os_file_get_size" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102760 102781]))                  
+                :type ("os_file_size_t" type (:type "class") nil nil))
+                nil [102728 103138])
+            ("os_file_get_status_posix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103608 103625])
+                    ("stat_info" variable
+                       (:pointer 1
+                        :type ("os_file_stat_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103666 103692])
+                    ("statinfo" variable
+                       (:pointer 1
+                        :type ("stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [103733 103755])
+                    ("check_rw_perm" variable (:type "bool") (reparse-symbol arg-sub-list) [103796 103815])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [103816 103831]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [103568 105118])
+            ("os_file_truncate_posix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105432 105453])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105454 105473])
+                    ("size" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105509 105526]))                  
+                :type "bool")
+                nil [105397 105806])
+            ("os_file_set_eof" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105902 105913]))                  
+                :type "bool")
+                nil [105881 106000])
+            ("os_aio_simulated_put_read_threads_to_sleep" function (:type "void") nil [106471 106551])
+            ("walk_posix" function
+               (:parent "Dir_Walker"
+                :arguments 
+                  ( ("basedir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Path" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106750 106770])
+                    ("" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106771 106782])
+                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106782 106784]))                  
+                :type "void")
+                nil [106722 107919])
+            ("os_file_io" function
+               (:arguments 
+                  ( ("in_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144337 144362])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144363 144378])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [144379 144389])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144390 144398])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144414 144433])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144434 144447]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [144314 147181])
+            ("os_file_pwrite" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147623 147639])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147640 147655])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147656 147672])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147673 147681])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147701 147720])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147721 147734]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [147596 148102])
+            ("os_file_write_page" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148616 148632])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [148633 148650])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148651 148666])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148690 148706])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148707 148726])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148727 148735]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [148585 149929])
+            ("os_file_pread" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [150358 150374])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150375 150390])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [150391 150401])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150402 150410])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150429 150448])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("dberr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [150449 150462]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [150332 150790])
+            ("os_file_read_page" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151333 151349])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151350 151365])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [151366 151376])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151399 151418])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151419 151427])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151428 151437])
+                    ("exit_on_err" variable (:type "bool") (reparse-symbol arg-sub-list) [151438 151455]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [151303 152783])
+            ("os_file_get_last_error" function
+               (:arguments 
+                  ( ("report_all_errors" variable (:type "bool") (reparse-symbol arg-sub-list) [153246 153269]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [153217 153338])
+            ("os_file_handle_error_cond_exit" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154016 154033])
+                    ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154034 154056])
+                    ("should_exit" variable (:type "bool") (reparse-symbol arg-sub-list) [154057 154074])
+                    ("on_error_silent" variable (:type "bool") (reparse-symbol arg-sub-list) [154079 154100]))                  
+                :type "bool")
+                nil [153975 156022])
+            ("os_file_handle_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156247 156264])
+                    ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156265 156287]))                  
+                :type "bool")
+                nil [156214 156402])
+            ("os_file_handle_error_no_exit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156711 156728])
+                    ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156770 156792])
+                    ("on_error_silent" variable (:type "bool") (reparse-symbol arg-sub-list) [156834 156855]))                  
+                :type "bool")
+                nil [156670 156994])
+            ("os_file_set_nocache" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [157298 157317])
+                    ("" variable (:type ("MY_ATTRIBUTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157305 157327])
+                    ("file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157354 157388])
+                    ("" variable (:type ("MY_ATTRIBUTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157376 157398])
+                    ("operation_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157425 157464])
+                    ("" variable (:type ("MY_ATTRIBUTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157452 157474]))                  
+                :type "void")
+                nil [157273 158938])
+            ("os_file_set_size" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [159354 159371])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159372 159391])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159392 159411])
+                    ("size" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159434 159451])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [159452 159467])
+                    ("flush" variable (:type "bool") (reparse-symbol arg-sub-list) [159468 159479]))                  
+                :type "bool")
+                nil [159332 161402])
+            ("os_file_truncate" function
+               (:arguments 
+                  ( ("pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [161703 161724])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161725 161744])
+                    ("size" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161767 161784]))                  
+                :type "bool")
+                nil [161681 162155])
+            ("os_file_seek" function
+               (:arguments 
+                  ( ("pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162363 162384])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162385 162400])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162401 162420]))                  
+                :type "bool")
+                nil [162345 162827])
+            ("os_file_read_func" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163316 163332])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163333 163348])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [163349 163359])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163386 163405])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163406 163414]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [163290 163514])
+            ("os_file_read_first_page_func" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163986 164002])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164003 164018])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [164019 164029])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164067 164075]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [163949 164480])
+            ("os_file_copy_read_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("src_file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164833 164852])
+                    ("src_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164892 164915])
+                    ("dest_file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164955 164975])
+                    ("dest_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165015 165039])
+                    ("size" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165040 165050]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [164794 166107])
+            ("os_file_copy_func" function
+               (:arguments 
+                  ( ("src_file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166446 166465])
+                    ("src_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166466 166489])
+                    ("dest_file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166516 166536])
+                    ("dest_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166537 166561])
+                    ("size" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [166588 166598]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [166420 167598])
+            ("os_file_read_no_error_handling_func" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168513 168529])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168530 168545])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [168590 168600])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168601 168620])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168665 168673])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168674 168683]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [168469 168781])
+            ("os_file_write_func" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [169313 169329])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [169330 169347])
+                    ("file" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169348 169363])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [169391 169407])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169408 169427])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169428 169436]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [169286 169757])
+            ("os_file_status" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [169993 170010])
+                    ("exists" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [170011 170024])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("os_file_type_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170025 170046]))                  
+                :type "bool")
+                nil [169973 170196])
+            ("os_file_punch_hole" function
+               (:arguments 
+                  ( ("fh" variable (:type ("os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170431 170444])
+                    ("off" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170445 170461])
+                    ("len" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170462 170478]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [170404 170881])
+            ("os_is_sparse_file_supported" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [171323 171340])
+                    ("fh" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171341 171358]))                  
+                :type "bool")
+                nil [171290 171895])
+            ("os_file_get_status" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [172289 172306])
+                    ("stat_info" variable
+                       (:pointer 1
+                        :type ("os_file_stat_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [172307 172333])
+                    ("check_rw_perm" variable (:type "bool") (reparse-symbol arg-sub-list) [172361 172380])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [172381 172396]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [172262 172936])
+            ("os_aio_handler" function
+               (:arguments 
+                  ( ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174269 174283])
+                    ("m1" variable
+                       (:pointer 2
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [174284 174300])
+                    ("m2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [174301 174311])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [174335 174354]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [174246 174902])
+            ("AIO" function
+               (:constructor-flag t
+                :parent "AIO"
+                :arguments 
+                  ( ("id" variable (:type ("latch_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175033 175047])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175048 175056])
+                    ("segments" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175057 175072]))                  
+                :type ("AIO" type (:type "class") nil nil))
+                nil [175024 175626])
+            ("init_slots" function
+               (:parent "AIO"
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [175656 176206])
+            ("init" function
+               (:parent "AIO"
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [177194 177572])
+            ("create" function
+               (:pointer 1
+                :parent "AIO"
+                :arguments 
+                  ( ("id" variable (:type ("latch_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178041 178055])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178056 178064])
+                    ("n_segments" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178065 178082]))                  
+                :type ("AIO" type (:type "class") nil nil))
+                nil [178024 178452])
+            ("AIO" function
+               (:destructor-flag t
+                :parent "AIO"
+                :type "void")
+                nil [178476 178935])
+            ("start" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("n_per_seg" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179674 179690])
+                    ("n_readers" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179691 179707])
+                    ("n_writers" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179708 179724])
+                    ("n_slots_sync" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179741 179760]))                  
+                :type "bool")
+                nil [179658 182104])
+            ("shutdown" function
+               (:parent "AIO"
+                :type "void")
+                nil [182133 182355])
+            ("os_create_block_cache" function (:type "void") nil [185255 185747])
+            ("os_aio_init" function
+               (:arguments 
+                  ( ("n_readers" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186693 186709])
+                    ("n_writers" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186710 186726])
+                    ("n_slots_sync" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186727 186746]))                  
+                :type "bool")
+                nil [186676 187295])
+            ("os_aio_free" function (:type "void") nil [187338 187786])
+            ("os_aio_wake_all_threads_at_shutdown" function (:type "void") nil [187876 188540])
+            ("os_aio_wait_until_no_pending_writes" function (:type "void") nil [188656 188741])
+            ("get_segment_no_from_slot" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [188988 189005])
+                    ("slot" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [189006 189023]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [188952 189607])
+            ("reserve_slot" function
+               (:pointer 1
+                :parent "AIO"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190322 190338])
+                    ("m1" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190339 190354])
+                    ("m2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [190355 190364])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [190389 190408])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [190409 190426])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [190427 190437])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [190462 190481])
+                    ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [190482 190492]))                  
+                :type ("Slot" type (:type "class") nil nil))
+                nil [190298 195444])
+            ("wake_simulated_handler_thread" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [195634 195655]))                  
+                :type "void")
+                nil [195594 195841])
+            ("wake_simulated_handler_thread" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196123 196144])
+                    ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196145 196159]))                  
+                :type "void")
+                nil [196083 196639])
+            ("os_aio_simulated_wake_handler_threads" function (:type "void") nil [196721 197014])
+            ("select_slot_array" function
+               (:pointer 1
+                :parent "AIO"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [197259 197275])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [197276 197291])
+                    ("aio_mode" variable (:type ("AIO_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [197320 197338]))                  
+                :type ("AIO" type (:type "class") nil nil))
+                nil [197231 198200])
+            ("os_aio_func" function
+               (:arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [204083 204099])
+                    ("aio_mode" variable (:type ("AIO_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204100 204118])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [204119 204136])
+                    ("file" variable (:type ("pfs_os_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204157 204176])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [204177 204187])
+                    ("offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204188 204207])
+                    ("n" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204208 204216])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [204237 204252])
+                    ("m1" variable
+                       (:pointer 1
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [204253 204268])
+                    ("m2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [204269 204278]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [204063 207926])
+            ("SimulatedAIOHandler" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [208010 208017])
+                    ("SimulatedAIOHandler" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("array" variable
+                               (:pointer 1
+                                :type ("AIO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [208146 208157])
+                            ("segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208158 208172]))                          
+                        :type ("SimulatedAIOHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [208126 208442])
+                    ("SimulatedAIOHandler" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [208466 208547])
+                    ("init" function
+                       (:arguments 
+                          ( ("n_slots" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208665 208679]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [208655 208890])
+                    ("check_completed" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("n_reserved" variable
+                               (:pointer 1
+                                :type ("ulint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [209090 209108]))                          
+                        :type ("Slot" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [209068 209478])
+                    ("select" function (:type "bool") (reparse-symbol classsubparts) [209708 209820])
+                    ("merge" function (:type "void") (reparse-symbol classsubparts) [209920 210184])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [210393 210905])
+                    ("copy_to_buffer" function
+                       (:arguments 
+                          ( ("len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211145 211155]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [211125 211514])
+                    ("io" function (:type "void") (reparse-symbol classsubparts) [211580 211817])
+                    ("io_complete" function (:type "void") (reparse-symbol classsubparts) [211872 211973])
+                    ("done" function (:type "void") (reparse-symbol classsubparts) [212014 212123])
+                    ("MY_ATTRIBUTE" function (:type "int") (reparse-symbol classsubparts) [212203 212294])
+                    ("MY_ATTRIBUTE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [212532 212567])
+                    ("private" label nil (reparse-symbol classsubparts) [212570 212578])
+                    ("read" function
+                       (:arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [212669 212680]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [212659 212855])
+                    ("write" function
+                       (:arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [212948 212959]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [212937 213178])
+                    ("adjacent" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [213262 213277])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [213278 213293]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [213248 213440])
+                    ("merge_adjacent" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [213537 213544])
+                            ("" variable (:type ("current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [213544 213552]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [213517 213974])
+                    ("select_lowest_offset" function (:type "bool") (reparse-symbol classsubparts) [214140 214619])
+                    ("select_if_older" function
+                       (:arguments 
+                          ( ("slot" variable
+                               (:pointer 1
+                                :type ("Slot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [214751 214762]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [214730 215110])
+                    ("select_oldest" function (:type "bool") (reparse-symbol classsubparts) [215194 215497])
+                    ("slots_t" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Slot" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [215501 215537])
+                    ("private" label nil (reparse-symbol classsubparts) [215540 215548])
+                    ("m_oldest" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215551 215566])
+                    ("m_n_elems" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215569 215585])
+                    ("m_lowest_offset" variable (:type ("os_offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215588 215616])
+                    ("m_array" variable
+                       (:pointer 1
+                        :type ("AIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215620 215633])
+                    ("m_n_slots" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215636 215652])
+                    ("m_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215655 215671])
+                    ("m_slots" variable (:type ("slots_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [215675 215691])
+                    ("m_ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215695 215707])
+                    ("m_buf" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215710 215722]))                  
+                :type "class")
+                nil [207981 215725])
+            ("check_pending" function
+               (:parent "SimulatedAIOHandler"
+                :arguments 
+                  ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [215825 215846])
+                    ("event" variable (:type ("os_event_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [215888 215905]))                  
+                :type ("ulint" type (:type "class") nil nil))
+                nil [215784 216547])
+            ("os_aio_simulated_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("global_segment" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217463 217484])
+                    ("m1" variable
+                       (:pointer 2
+                        :type ("fil_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217485 217501])
+                    ("m2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [217542 217552])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217553 217569]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [217423 220384])
+            ("total_pending_io_count" function
+               (:parent "AIO"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [220469 220854])
+            ("os_aio_validate" function
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [220924 221072])
+            ("print_segment_info" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221397 221408])
+                    ("segments" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221409 221431]))                  
+                :type "void")
+                nil [221368 221709])
+            ("print" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221803 221814]))                  
+                :type "void")
+                nil [221787 222344])
+            ("print_all" function
+               (:parent "AIO"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222436 222447]))                  
+                :type "void")
+                nil [222416 222834])
+            ("os_aio_print" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222933 222944]))                  
+                :type "void")
+                nil [222915 224873])
+            ("os_aio_refresh_stats" function (:type "void") nil [224942 225233])
+            ("os_aio_all_slots_free" function (:type "bool") nil [225365 225442])
+            ("os_file_set_umask" function
+               (:arguments 
+                  ( ("umask" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226797 226809]))                  
+                :type "void")
+                nil [226774 226838])
+            ("to_string" function
+               (:pointer 1
+                :parent "Encryption"
+                :constant-flag t
+                :arguments 
+                  ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226967 226977]))                  
+                :type "char")
+                nil [226933 227110])
+            ("random_value" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227236 227248]))                  
+                :type "void")
+                nil [227206 227322])
+            ("create_master_key" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("master_key" variable
+                       (:pointer 2
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227443 227461]))                  
+                :type "void")
+                nil [227408 228656])
+            ("get_master_key" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("master_key_id" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [228843 228863])
+                    ("srv_uuid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [228864 228879])
+                    ("master_key" variable
+                       (:pointer 2
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [228912 228930]))                  
+                :type "void")
+                nil [228811 230521])
+            ("Encryption::s_master_key_id" variable
+               (:default-value "0"
+                :type ("ulint" type (:type "class") nil nil))
+                nil [230552 230590])
+            ("Encryption::s_uuid" variable
+               (:dereference 1
+                :default-value "{0}"
+                :type "char")
+                nil [230631 230693])
+            ("get_master_key" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("master_key_id" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [230855 230876])
+                    ("master_key" variable
+                       (:pointer 2
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [230877 230895]))                  
+                :type "void")
+                nil [230823 233763])
+            ("fill_encryption_info" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234020 234030])
+                    ("iv" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234031 234040])
+                    ("encrypt_info" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234041 234060])
+                    ("is_boot" variable (:type "bool") (reparse-symbol arg-sub-list) [234099 234112]))                  
+                :type "bool")
+                nil [233982 235847])
+            ("get_master_key_from_info" function
+               (:pointer 1
+                :parent "Encryption"
+                :arguments 
+                  ( ("encrypt_info" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [236249 236268])
+                    ("version" variable (:type ("Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [236269 236285])
+                    ("m_key_id" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [236329 236348])
+                    ("srv_uuid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236349 236364])
+                    ("master_key" variable
+                       (:pointer 2
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [236408 236426]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [236206 238525])
+            ("decode_encryption_info" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238753 238763])
+                    ("iv" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238764 238773])
+                    ("encryption_info" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238814 238836]))                  
+                :type "bool")
+                nil [238713 241885])
+            ("is_encrypted_page" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242048 242065]))                  
+                :type "bool")
+                nil [242013 242285])
+            ("is_encrypted_log" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("block" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242455 242473]))                  
+                :type "bool")
+                nil [242421 242522])
+            ("encrypt_log_block" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242739 242761])
+                    ("src_ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242762 242776])
+                    ("dst_ptr" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242812 242826]))                  
+                :type "bool")
+                nil [242704 246319])
+            ("encrypt_log" function
+               (:pointer 1
+                :parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246673 246695])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246696 246706])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [246707 246721])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246752 246762])
+                    ("dst_len" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246763 246778]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [246643 247844])
+            ("encrypt" function
+               (:pointer 1
+                :parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [248290 248312])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [248313 248323])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248324 248338])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [248365 248375])
+                    ("dst_len" variable
+                       (:pointer 1
+                        :type ("ulint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [248376 248391]))                  
+                :type ("byte" type (:type "class") nil nil))
+                nil [248264 253265])
+            ("decrypt_log_block" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [253566 253588])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [253589 253599])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [253638 253648]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [253528 256188])
+            ("decrypt_log" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [256584 256606])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [256607 256617])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [256618 256632])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [256665 256675])
+                    ("dst_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [256676 256690]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [256552 257855])
+            ("decrypt" function
+               (:parent "Encryption"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IORequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [258365 258387])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [258388 258398])
+                    ("src_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258399 258413])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [258442 258452])
+                    ("dst_len" variable (:type ("ulint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258453 258467]))                  
+                :type ("dberr_t" type (:type "class") nil nil))
+                nil [258337 263089])
+            ("check_keyring" function
+               (:parent "Encryption"
+                :type "bool")
+                nil [263153 264148])
+            ("is_directory" function
+               (:parent "Dir_Walker"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Path" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [264350 264367]))                  
+                :type "bool")
+                nil [264320 264675]))          
+      :file "os0file.cc"
+      :pointmax 264676
+      :fsize 264675
+      :lastmodtime '(23314 2562 806332 96000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFFER_BLOCK_SIZE" . ((semantic-list "((ulint)(UNIV_PAGE_SIZE * 1.3))" 3771 . 3802)))
+          ("USE_FILE_LOCK")
+          )
+))
+  :file "!home!maurice!github!mysql-server!storage!innobase!os!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

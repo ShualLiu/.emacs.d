@@ -1,0 +1,785 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/export.h" include (:system-flag t) nil [974 999])
+            ("linux/cpumask.h" include (:system-flag t) nil [1000 1026])
+            ("linux/err.h" include (:system-flag t) nil [1027 1049])
+            ("linux/cpu.h" include (:system-flag t) nil [1050 1072])
+            ("linux/padata.h" include (:system-flag t) nil [1073 1098])
+            ("linux/mutex.h" include (:system-flag t) nil [1099 1123])
+            ("linux/sched.h" include (:system-flag t) nil [1124 1148])
+            ("linux/slab.h" include (:system-flag t) nil [1149 1172])
+            ("linux/sysfs.h" include (:system-flag t) nil [1173 1197])
+            ("linux/rcupdate.h" include (:system-flag t) nil [1198 1225])
+            ("linux/module.h" include (:system-flag t) nil [1226 1251])
+            ("MAX_OBJ_NUM" variable (:constant-flag t) nil [1261 1272])
+            ("padata_index_to_cpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1310 1335])
+                    ("cpu_index" variable (:type "int") (reparse-symbol arg-sub-list) [1336 1350]))                  
+                :type "int")
+                nil [1279 1543])
+            ("padata_cpu_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1572 1597]))                  
+                :type "int")
+                nil [1545 1884])
+            ("padata_parallel_worker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parallel_work" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1921 1955]))                  
+                :type "void")
+                nil [1886 2488])
+            ("padata_do_parallel" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2953 2983])
+                    ("padata" variable
+                       (:pointer 1
+                        :type ("padata_priv" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2993 3020])
+                    ("cb_cpu" variable (:type "int") (reparse-symbol arg-sub-list) [3021 3032]))                  
+                :type "int")
+                nil [2930 3883])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_do_parallel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3898 3917]))                  
+                :type "int")
+                nil [3884 3918])
+            ("padata_get_next" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4448 4473]))                  
+                :type ("padata_priv" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4405 5441])
+            ("padata_reorder" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5470 5495]))                  
+                :type "void")
+                nil [5443 7405])
+            ("invoke_padata_reorder" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("work" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7441 7466]))                  
+                :type "void")
+                nil [7407 7691])
+            ("padata_reorder_timer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("timer_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7726 7747]))                  
+                :type "void")
+                nil [7693 8710])
+            ("padata_serial_worker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("serial_work" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8745 8777]))                  
+                :type "void")
+                nil [8712 9358])
+            ("padata_do_serial" function
+               (:arguments 
+                  ( ("padata" variable
+                       (:pointer 1
+                        :type ("padata_priv" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9613 9640]))                  
+                :type "void")
+                nil [9591 10446])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_do_serial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10461 10478]))                  
+                :type "int")
+                nil [10447 10479])
+            ("padata_setup_cpumasks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10514 10539])
+                    ("pcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10545 10576])
+                    ("cbcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10582 10614]))                  
+                :type "int")
+                nil [10481 10943])
+            ("__padata_list_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd_list" variable
+                       (:pointer 1
+                        :type ("padata_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10976 11004]))                  
+                :type "void")
+                nil [10945 11074])
+            ("padata_init_squeues" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11166 11191]))                  
+                :type "void")
+                nil [11134 11435])
+            ("padata_init_pqueues" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11529 11554]))                  
+                :type "void")
+                nil [11497 12100])
+            ("padata_alloc_pd" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12219 12249])
+                    ("pcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12260 12291])
+                    ("cbcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12302 12334]))                  
+                :type ("parallel_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12174 13115])
+            ("padata_free_pd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13144 13169]))                  
+                :type "void")
+                nil [13117 13312])
+            ("padata_flush_queues" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pd" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13396 13421]))                  
+                :type "void")
+                nil [13364 13872])
+            ("__padata_start" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13901 13931]))                  
+                :type "void")
+                nil [13874 13965])
+            ("__padata_stop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13993 14023]))                  
+                :type "void")
+                nil [13967 14200])
+            ("padata_replace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14290 14320])
+                    ("pd_new" variable
+                       (:pointer 1
+                        :type ("parallel_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14327 14356]))                  
+                :type "void")
+                nil [14263 14980])
+            ("padata_register_cpumask_notifier" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15271 15301])
+                    ("nblock" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15311 15341]))                  
+                :type "int")
+                nil [15234 15434])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_register_cpumask_notifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15449 15482]))                  
+                :type "int")
+                nil [15435 15483])
+            ("padata_unregister_cpumask_notifier" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15752 15782])
+                    ("nblock" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15794 15824]))                  
+                :type "int")
+                nil [15713 15918])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_unregister_cpumask_notifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15933 15968]))                  
+                :type "int")
+                nil [15919 15969])
+            ("padata_validate_cpumask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16082 16112])
+                    ("cpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16121 16151]))                  
+                :type "bool")
+                nil [16046 16311])
+            ("__padata_set_cpumasks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16346 16376])
+                    ("pcpumask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16382 16405])
+                    ("cbcpumask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16411 16435]))                  
+                :type "int")
+                nil [16313 16949])
+            ("padata_set_cpumask" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17304 17334])
+                    ("cpumask_type" variable (:type "int") (reparse-symbol arg-sub-list) [17335 17352])
+                    ("cpumask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17362 17384]))                  
+                :type "int")
+                nil [17281 17889])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_set_cpumask" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17904 17923]))                  
+                :type "int")
+                nil [17890 17924])
+            ("padata_start" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18038 18068]))                  
+                :type "int")
+                nil [18021 18238])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_start" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18253 18266]))                  
+                :type "int")
+                nil [18239 18267])
+            ("padata_stop" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18378 18408]))                  
+                :type "void")
+                nil [18361 18491])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_stop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18506 18518]))                  
+                :type "int")
+                nil [18492 18519])
+            ("__padata_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21410 21440]))                  
+                :type "void")
+                nil [21384 21686])
+            ("kobj2pinst" variable (:constant-flag t) nil [21696 21706])
+            ("attr2pentry" variable (:constant-flag t) nil [21779 21790])
+            ("padata_sysfs_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("kobj" variable
+                       (:pointer 1
+                        :type ("kobject" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21892 21913]))                  
+                :type "void")
+                nil [21859 21991])
+            ("padata_sysfs_entry" type
+               (:members 
+                  ( ("attr" variable (:type ("attribute" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22022 22044])
+                    ("show" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("padata_instance" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22062 22087])
+                            ("" variable
+                               (:pointer 1
+                                :type ("attribute" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22088 22107])
+                            ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [22108 22115]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22046 22116])
+                    ("store" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("padata_instance" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22135 22160])
+                            ("" variable
+                               (:pointer 1
+                                :type ("attribute" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22161 22180])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [22185 22198])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22199 22206]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22118 22207]))                  
+                :type "struct")
+                nil [21993 22210])
+            ("show_cpumask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22240 22270])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22278 22301])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22303 22313]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22212 22660])
+            ("store_cpumask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22691 22721])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22730 22753])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22762 22778])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22779 22792]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22662 23266])
+            ("PADATA_ATTR_RW" variable (:constant-flag t) nil [23276 23290])
+            ("PADATA_ATTR_RO" variable (:constant-flag t) nil [23433 23447])
+            ("serial_cpumask_attr" variable
+               (:typemodifiers ("static")
+                :default-value "PADATA_ATTR_RW(serial_cpumask, show_cpumask, store_cpumask)"
+                :type ("padata_sysfs_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [23562 23622])
+            ("parallel_cpumask_attr" variable
+               (:typemodifiers ("static")
+                :default-value "PADATA_ATTR_RW(parallel_cpumask, show_cpumask, store_cpumask)"
+                :type ("padata_sysfs_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [23623 23685])
+            ("padata_default_attrs" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	&serial_cpumask_attr.attr,
+	&parallel_cpumask_attr.attr,
+	NULL,
+}"
+                :type ("attribute" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [23852 23971])
+            ("padata_sysfs_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("kobj" variable
+                       (:pointer 1
+                        :type ("kobject" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24006 24027])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24033 24056])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24057 24067]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [23973 24290])
+            ("padata_sysfs_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("kobj" variable
+                       (:pointer 1
+                        :type ("kobject" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24326 24347])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24348 24371])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24378 24394])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24395 24408]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [24292 24639])
+            ("padata_sysfs_ops" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.show = padata_sysfs_show,
+	.store = padata_sysfs_store,
+}"
+                :type ("sysfs_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24641 24752])
+            ("padata_attr_type" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.sysfs_ops = &padata_sysfs_ops,
+	.default_attrs = padata_default_attrs,
+	.release = padata_sysfs_release,
+}"
+                :type ("kobj_type" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24754 24908])
+            ("padata_alloc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("wq" variable
+                       (:pointer 1
+                        :type ("workqueue_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25351 25379])
+                    ("pcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25389 25420])
+                    ("cbcpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25430 25462]))                  
+                :type ("padata_instance" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [25307 26613])
+            ("padata_alloc_possible" function
+               (:pointer 1
+                :arguments 
+                  ( ("wq" variable
+                       (:pointer 1
+                        :type ("workqueue_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26974 27002]))                  
+                :type ("padata_instance" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [26928 27099])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_alloc_possible" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27114 27136]))                  
+                :type "int")
+                nil [27100 27137])
+            ("padata_free" function
+               (:arguments 
+                  ( ("pinst" variable
+                       (:pointer 1
+                        :type ("padata_instance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27248 27278]))                  
+                :type "void")
+                nil [27231 27310])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("padata_free" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27325 27337]))                  
+                :type "int")
+                nil [27311 27338]))          
+      :file "padata.c"
+      :pointmax 27773
+      :fsize 27772
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("kobj2pinst" (spp-arg-list ("_kobj") 21706 . 21713) . ((symbol "container_of" 21721 . 21733) (semantic-list "(_kobj, struct padata_instance, kobj)" 21733 . 21770)))
+          ("attr2pentry" (spp-arg-list ("_attr") 21790 . 21797) . ((symbol "container_of" 21805 . 21817) (semantic-list "(_attr, struct padata_sysfs_entry, attr)" 21817 . 21857)))
+          ("PADATA_ATTR_RW" (spp-arg-list ("_name" "_show_name" "_store_name") 23290 . 23322) . 
+              ((STATIC "static" 23327 . 23333) (STRUCT "struct" 23334 . 23340) (symbol "padata_sysfs_entry" 23341 . 23359) (spp-symbol-merge ((symbol "_name" 23360 . 23365) (symbol "_attr" 23367 . 23372)) 23360 . 23372) (punctuation "=" 23373 . 23374) (symbol "__ATTR" 23380 . 23386) (semantic-list "(_name, 0644, _show_name, _store_name)" 23386 . 23424)))
+          ("MAX_OBJ_NUM" . ((number "1000" 1273 . 1277)))
+          ("PADATA_ATTR_RO" (spp-arg-list ("_name" "_show_name") 23447 . 23466) . 
+              ((STATIC "static" 23471 . 23477) (STRUCT "struct" 23478 . 23484) (symbol "padata_sysfs_entry" 23485 . 23503) (spp-symbol-merge ((symbol "_name" 23504 . 23509) (symbol "_attr" 23511 . 23516)) 23504 . 23516) (punctuation "=" 23517 . 23518) (symbol "__ATTR" 23523 . 23529) (semantic-list "(_name, 0400, _show_name, NULL)" 23529 . 23560)))
+          )
+))
+  :file "!home!maurice!linux-4.16.13!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

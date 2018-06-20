@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("COMPONENTS_SERVICES_MY_IO_BITS_H" variable (:constant-flag t) nil [1203 1235])
+            ("errno.h" include (:system-flag t) nil [1618 1636])
+            ("limits.h" include (:system-flag t) nil [1637 1656])
+            ("sys/types.h" include (:system-flag t) nil [1657 1679])
+            ("File" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1733 1750])
+            ("MY_MODE" type
+               (:typedef ("mode_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1886 1909])
+            ("socket_len_t" type
+               (:typedef ("socklen_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1910 1941])
+            ("my_socket" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1942 1964]))          
+      :file "my_io_bits.h"
+      :pointmax 2066
+      :fsize 2065
+      :lastmodtime '(23314 2560 42297 874000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COMPONENTS_SERVICES_MY_IO_BITS_H")
+          )
+))
+  :file "!home!maurice!github!mysql-server!include!mysql!components!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

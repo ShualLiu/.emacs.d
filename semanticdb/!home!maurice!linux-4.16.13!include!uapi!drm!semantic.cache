@@ -1,0 +1,2155 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_DRM_H_" variable (:constant-flag t) nil [1529 1536])
+            ("sys/ioccom.h" include (:system-flag t) nil [1786 1809])
+            ("sys/types.h" include (:system-flag t) nil [1810 1832])
+            ("__s8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1833 1855])
+            ("__u8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1856 1878])
+            ("__s16" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1879 1902])
+            ("__u16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1903 1926])
+            ("__s32" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1927 1950])
+            ("__u32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1951 1974])
+            ("__s64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1975 1998])
+            ("__u64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1999 2022])
+            ("__kernel_size_t" type
+               (:typedef ("size_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2023 2056])
+            ("drm_handle_t" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [2057 2092])
+            ("DRM_NAME" variable (:constant-flag t) nil [2156 2164])
+            ("DRM_MIN_ORDER" variable (:constant-flag t) nil [2221 2234])
+            ("DRM_MAX_ORDER" variable (:constant-flag t) nil [2285 2298])
+            ("DRM_RAM_PERCENT" variable (:constant-flag t) nil [2343 2358])
+            ("_DRM_LOCK_HELD" variable (:constant-flag t) nil [2414 2428])
+            ("_DRM_LOCK_CONT" variable (:constant-flag t) nil [2479 2493])
+            ("_DRM_LOCK_IS_HELD" variable (:constant-flag t) nil [2549 2566])
+            ("_DRM_LOCK_IS_CONT" variable (:constant-flag t) nil [2610 2627])
+            ("_DRM_LOCKING_CONTEXT" variable (:constant-flag t) nil [2671 2691])
+            ("drm_context_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2743 2778])
+            ("drm_drawable_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2779 2815])
+            ("drm_magic_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2816 2849])
+            ("drm_clip_rect" type
+               (:members 
+                  ( ("x1" variable (:type "unsigned short") (reparse-symbol classsubparts) [3102 3120])
+                    ("y1" variable (:type "unsigned short") (reparse-symbol classsubparts) [3122 3140])
+                    ("x2" variable (:type "unsigned short") (reparse-symbol classsubparts) [3142 3160])
+                    ("y2" variable (:type "unsigned short") (reparse-symbol classsubparts) [3162 3180]))                  
+                :type "struct")
+                nil [3078 3183])
+            ("drm_drawable_info" type
+               (:members 
+                  ( ("num_rects" variable (:type "unsigned int") (reparse-symbol classsubparts) [3246 3269])
+                    ("rects" variable
+                       (:pointer 1
+                        :type ("drm_clip_rect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3271 3299]))                  
+                :type "struct")
+                nil [3218 3302])
+            ("drm_tex_region" type
+               (:members 
+                  ( ("next" variable (:type "unsigned char") (reparse-symbol classsubparts) [3356 3375])
+                    ("prev" variable (:type "unsigned char") (reparse-symbol classsubparts) [3377 3396])
+                    ("in_use" variable (:type "unsigned char") (reparse-symbol classsubparts) [3398 3419])
+                    ("padding" variable (:type "unsigned char") (reparse-symbol classsubparts) [3421 3443])
+                    ("age" variable (:type "unsigned int") (reparse-symbol classsubparts) [3445 3462]))                  
+                :type "struct")
+                nil [3331 3465])
+            ("drm_hw_lock" type
+               (:members 
+                  ( ("lock" variable (:type "unsigned int") (reparse-symbol classsubparts) [3728 3746])
+                    ("padding" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3771 3788]))                  
+                :type "struct")
+                nil [3693 3819])
+            ("drm_version" type
+               (:members 
+                  ( ("version_major" variable (:type "int") (reparse-symbol classsubparts) [3920 3938])
+                    ("version_minor" variable (:type "int") (reparse-symbol classsubparts) [3964 3982])
+                    ("version_patchlevel" variable (:type "int") (reparse-symbol classsubparts) [4008 4031])
+                    ("name_len" variable (:type ("__kernel_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4055 4080])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4119 4132])
+                    ("date_len" variable (:type ("__kernel_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4159 4184])
+                    ("date" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4223 4236])
+                    ("desc_len" variable (:type ("__kernel_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4279 4304])
+                    ("desc" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4343 4356]))                  
+                :type "struct")
+                nil [3898 4400])
+            ("drm_unique" type
+               (:members 
+                  ( ("unique_len" variable (:type ("__kernel_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4519 4546])
+                    ("unique" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4580 4595]))                  
+                :type "struct")
+                nil [4498 4645])
+            ("drm_list" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [4666 4676])
+                    ("version" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4740 4756]))                  
+                :type "struct")
+                nil [4647 4759])
+            ("drm_block" type
+               (:members 
+                  ( ("unused" variable (:type "int") (reparse-symbol classsubparts) [4781 4792]))                  
+                :type "struct")
+                nil [4761 4795])
+            ("drm_control" type
+               (:members 
+                  ( ("func" variable (:type ("" type
+                         (:members 
+                            ( ("DRM_ADD_COMMAND" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [4935 4951])
+                              ("DRM_RM_COMMAND" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [4954 4969])
+                              ("DRM_INST_HANDLER" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [4972 4989])
+                              ("DRM_UNINST_HANDLER" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [4992 5013]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [4926 5019])
+                    ("irq" variable (:type "int") (reparse-symbol classsubparts) [5021 5029]))                  
+                :type "struct")
+                nil [4904 5032])
+            ("drm_map_type" type
+               (:members 
+                  ( ("_DRM_FRAME_BUFFER" variable
+                       (:constant-flag t
+                        :default-value (5109 5110)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5089 5111])
+                    ("_DRM_REGISTERS" variable
+                       (:constant-flag t
+                        :default-value (5170 5171)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5153 5172])
+                    ("_DRM_SHM" variable
+                       (:constant-flag t
+                        :default-value (5220 5221)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5209 5222])
+                    ("_DRM_AGP" variable
+                       (:constant-flag t
+                        :default-value (5261 5262)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5250 5263])
+                    ("_DRM_SCATTER_GATHER" variable
+                       (:constant-flag t
+                        :default-value (5307 5308)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5285 5309])
+                    ("_DRM_CONSISTENT" variable
+                       (:constant-flag t
+                        :default-value (5372 5414)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5354 5415]))                  
+                :type "enum")
+                nil [5068 5416])
+            ("drm_map_flags" type
+               (:members 
+                  ( ("_DRM_RESTRICTED" variable
+                       (:constant-flag t
+                        :default-value (5491 5495)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5473 5496])
+                    ("_DRM_READ_ONLY" variable
+                       (:constant-flag t
+                        :default-value (5561 5565)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5544 5566])
+                    ("_DRM_LOCKED" variable
+                       (:constant-flag t
+                        :default-value (5582 5586)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5568 5587])
+                    ("_DRM_KERNEL" variable
+                       (:constant-flag t
+                        :default-value (5639 5643)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5625 5644])
+                    ("_DRM_WRITE_COMBINING" variable
+                       (:constant-flag t
+                        :default-value (5705 5709)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5682 5710])
+                    ("_DRM_CONTAINS_LOCK" variable
+                       (:constant-flag t
+                        :default-value (5774 5778)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5753 5779])
+                    ("_DRM_REMOVABLE" variable
+                       (:constant-flag t
+                        :default-value (5836 5840)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5819 5841])
+                    ("_DRM_DRIVER" variable
+                       (:constant-flag t
+                        :default-value (5888 5924)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5874 5925]))                  
+                :type "enum")
+                nil [5451 5926])
+            ("drm_ctx_priv_map" type
+               (:members 
+                  ( ("ctx_id" variable (:type "unsigned int") (reparse-symbol classsubparts) [5955 5975])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [6021 6034]))                  
+                :type "struct")
+                nil [5928 6061])
+            ("drm_map" type
+               (:members 
+                  ( ("offset" variable (:type "unsigned long") (reparse-symbol classsubparts) [6198 6219])
+                    ("size" variable (:type "unsigned long") (reparse-symbol classsubparts) [6270 6289])
+                    ("type" variable (:type ("drm_map_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [6332 6355])
+                    ("flags" variable (:type ("drm_map_flags" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [6388 6413])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [6430 6443])
+                    ("mtrr" variable (:type "int") (reparse-symbol classsubparts) [6544 6553]))                  
+                :type "struct")
+                nil [6180 6603])
+            ("drm_client" type
+               (:members 
+                  ( ("idx" variable (:type "int") (reparse-symbol classsubparts) [6679 6687])
+                    ("auth" variable (:type "int") (reparse-symbol classsubparts) [6720 6729])
+                    ("pid" variable (:type "unsigned long") (reparse-symbol classsubparts) [6765 6783])
+                    ("uid" variable (:type "unsigned long") (reparse-symbol classsubparts) [6804 6822])
+                    ("magic" variable (:type "unsigned long") (reparse-symbol classsubparts) [6840 6860])
+                    ("iocs" variable (:type "unsigned long") (reparse-symbol classsubparts) [6876 6895]))                  
+                :type "struct")
+                nil [6658 6918])
+            ("drm_stat_type" type
+               (:members 
+                  ( ("_DRM_STAT_LOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6942 6957])
+                    ("_DRM_STAT_OPENS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6959 6975])
+                    ("_DRM_STAT_CLOSES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6977 6994])
+                    ("_DRM_STAT_IOCTLS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6996 7013])
+                    ("_DRM_STAT_LOCKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7015 7031])
+                    ("_DRM_STAT_UNLOCKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7033 7051])
+                    ("_DRM_STAT_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7053 7069])
+                    ("_DRM_STAT_BYTE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7093 7108])
+                    ("_DRM_STAT_COUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7154 7170])
+                    ("_DRM_STAT_IRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7215 7229])
+                    ("_DRM_STAT_PRIMARY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7244 7262])
+                    ("_DRM_STAT_SECONDARY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7290 7310])
+                    ("_DRM_STAT_DMA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7340 7354])
+                    ("_DRM_STAT_SPECIAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7369 7387])
+                    ("_DRM_STAT_MISSED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7436 7525]))                  
+                :type "enum")
+                nil [6920 7526])
+            ("drm_stats" type
+               (:members 
+                  ( ("count" variable (:type "unsigned long") (reparse-symbol classsubparts) [7600 7620])
+                    ("data" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("value" variable (:type "unsigned long") (reparse-symbol classsubparts) [7633 7653])
+                                  ("type" variable (:type ("drm_stat_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [7656 7680]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7622 7693]))                  
+                :type "struct")
+                nil [7580 7696])
+            ("drm_lock_flags" type
+               (:members 
+                  ( ("_DRM_LOCK_READY" variable
+                       (:constant-flag t
+                        :default-value (7774 7778)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7756 7779])
+                    ("_DRM_LOCK_QUIESCENT" variable
+                       (:constant-flag t
+                        :default-value (7853 7857)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7831 7858])
+                    ("_DRM_LOCK_FLUSH" variable
+                       (:constant-flag t
+                        :default-value (7917 7921)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7899 7922])
+                    ("_DRM_LOCK_FLUSH_ALL" variable
+                       (:constant-flag t
+                        :default-value (7996 8000)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7974 8001])
+                    ("_DRM_HALT_ALL_QUEUES" variable
+                       (:constant-flag t
+                        :default-value (8180 8184)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8157 8185])
+                    ("_DRM_HALT_CUR_QUEUES" variable
+                       (:constant-flag t
+                        :default-value (8253 8291)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8230 8292]))                  
+                :type "enum")
+                nil [7733 8293])
+            ("drm_lock" type
+               (:members 
+                  ( ("context" variable (:type "int") (reparse-symbol classsubparts) [8440 8452])
+                    ("flags" variable (:type ("drm_lock_flags" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [8454 8480]))                  
+                :type "struct")
+                nil [8421 8483])
+            ("drm_dma_flags" type
+               (:members 
+                  ( ("_DRM_DMA_BLOCK" variable
+                       (:constant-flag t
+                        :default-value (8657 8661)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8640 8662])
+                    ("_DRM_DMA_WHILE_LOCKED" variable
+                       (:constant-flag t
+                        :default-value (9016 9020)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8992 9021])
+                    ("_DRM_DMA_PRIORITY" variable
+                       (:constant-flag t
+                        :default-value (9076 9080)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9056 9081])
+                    ("_DRM_DMA_WAIT" variable
+                       (:constant-flag t
+                        :default-value (9171 9175)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9155 9176])
+                    ("_DRM_DMA_SMALLER_OK" variable
+                       (:constant-flag t
+                        :default-value (9236 9240)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9214 9241])
+                    ("_DRM_DMA_LARGER_OK" variable
+                       (:constant-flag t
+                        :default-value (9308 9358)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9287 9359]))                  
+                :type "enum")
+                nil [8581 9360])
+            ("drm_buf_desc" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [9484 9494])
+                    ("size" variable (:type "int") (reparse-symbol classsubparts) [9537 9546])
+                    ("low_mark" variable (:type "int") (reparse-symbol classsubparts) [9572 9585])
+                    ("high_mark" variable (:type "int") (reparse-symbol classsubparts) [9612 9626])
+                    ("flags" variable (:type ("" type
+                         (:members 
+                            ( ("_DRM_PAGE_ALIGN" variable
+                                 (:constant-flag t
+                                  :default-value (9681 9685)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [9663 9686])
+                              ("_DRM_AGP_BUFFER" variable
+                                 (:constant-flag t
+                                  :default-value (9748 9752)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [9730 9753])
+                              ("_DRM_SG_BUFFER" variable
+                                 (:constant-flag t
+                                  :default-value (9804 9808)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [9787 9809])
+                              ("_DRM_FB_BUFFER" variable
+                                 (:constant-flag t
+                                  :default-value (9866 9870)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [9849 9871])
+                              ("_DRM_PCI_BUFFER_RO" variable
+                                 (:constant-flag t
+                                  :default-value (9929 9972)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [9908 9973]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [9654 9980])
+                    ("agp_start" variable (:type "unsigned long") (reparse-symbol classsubparts) [9982 10006]))                  
+                :type "struct")
+                nil [9461 10102])
+            ("drm_buf_info" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [10179 10189])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10236 10249]))                  
+                :type "struct")
+                nil [10156 10252])
+            ("drm_buf_free" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [10329 10339])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10345 10358]))                  
+                :type "struct")
+                nil [10306 10361])
+            ("drm_buf_pub" type
+               (:members 
+                  ( ("idx" variable (:type "int") (reparse-symbol classsubparts) [10438 10446])
+                    ("total" variable (:type "int") (reparse-symbol classsubparts) [10498 10508])
+                    ("used" variable (:type "int") (reparse-symbol classsubparts) [10538 10547])
+                    ("address" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10604 10620]))                  
+                :type "struct")
+                nil [10416 10656])
+            ("drm_buf_map" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [10731 10741])
+                    ("virt" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10802 10815])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10909 10922]))                  
+                :type "struct")
+                nil [10709 10952])
+            ("drm_dma" type
+               (:members 
+                  ( ("context" variable (:type "int") (reparse-symbol classsubparts) [11114 11126])
+                    ("send_count" variable (:type "int") (reparse-symbol classsubparts) [11155 11170])
+                    ("send_indices" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11214 11235])
+                    ("send_sizes" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11278 11297])
+                    ("flags" variable (:type ("drm_dma_flags" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [11334 11359])
+                    ("request_count" variable (:type "int") (reparse-symbol classsubparts) [11377 11395])
+                    ("request_size" variable (:type "int") (reparse-symbol classsubparts) [11436 11453])
+                    ("request_indices" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11495 11519])
+                    ("request_sizes" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11554 11576])
+                    ("granted_count" variable (:type "int") (reparse-symbol classsubparts) [11578 11596]))                  
+                :type "struct")
+                nil [11096 11636])
+            ("drm_ctx_flags" type
+               (:members 
+                  ( ("_DRM_CONTEXT_PRESERVED" variable
+                       (:constant-flag t
+                        :default-value (11685 11689)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11660 11690])
+                    ("_DRM_CONTEXT_2DONLY" variable
+                       (:constant-flag t
+                        :default-value (11714 11719)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11692 11720]))                  
+                :type "enum")
+                nil [11638 11721])
+            ("drm_ctx" type
+               (:members 
+                  ( ("handle" variable (:type ("drm_context_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11845 11866])
+                    ("flags" variable (:type ("drm_ctx_flags" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [11868 11893]))                  
+                :type "struct")
+                nil [11827 11896])
+            ("drm_ctx_res" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [11970 11980])
+                    ("contexts" variable
+                       (:pointer 1
+                        :type ("__user" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11997 12014]))                  
+                :type "struct")
+                nil [11948 12017])
+            ("drm_draw" type
+               (:members 
+                  ( ("handle" variable (:type ("drm_drawable_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12111 12133]))                  
+                :type "struct")
+                nil [12092 12136])
+            ("drm_drawable_info_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DRM_DRAWABLE_CLIPRECTS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12208 12232]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [12192 12258])
+            ("drm_update_draw" type
+               (:members 
+                  ( ("handle" variable (:type ("drm_drawable_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12286 12308])
+                    ("type" variable (:type "unsigned int") (reparse-symbol classsubparts) [12310 12328])
+                    ("num" variable (:type "unsigned int") (reparse-symbol classsubparts) [12330 12347])
+                    ("data" variable (:type "unsigned long long") (reparse-symbol classsubparts) [12349 12373]))                  
+                :type "struct")
+                nil [12260 12376])
+            ("drm_auth" type
+               (:members 
+                  ( ("magic" variable (:type ("drm_magic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12474 12492]))                  
+                :type "struct")
+                nil [12455 12495])
+            ("drm_irq_busid" type
+               (:members 
+                  ( ("irq" variable (:type "int") (reparse-symbol classsubparts) [12611 12619])
+                    ("busnum" variable (:type "int") (reparse-symbol classsubparts) [12640 12651])
+                    ("devnum" variable (:type "int") (reparse-symbol classsubparts) [12672 12683])
+                    ("funcnum" variable (:type "int") (reparse-symbol classsubparts) [12707 12719]))                  
+                :type "struct")
+                nil [12587 12746])
+            ("drm_vblank_seq_type" type
+               (:members 
+                  ( ("_DRM_VBLANK_ABSOLUTE" variable
+                       (:constant-flag t
+                        :default-value (12799 12802)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12776 12803])
+                    ("_DRM_VBLANK_RELATIVE" variable
+                       (:constant-flag t
+                        :default-value (12877 12880)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12854 12881])
+                    ("_DRM_VBLANK_HIGH_CRTC_MASK" variable
+                       (:constant-flag t
+                        :default-value (12997 13007)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12968 13008])
+                    ("_DRM_VBLANK_EVENT" variable
+                       (:constant-flag t
+                        :default-value (13030 13039)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13010 13040])
+                    ("_DRM_VBLANK_FLIP" variable
+                       (:constant-flag t
+                        :default-value (13102 13111)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13083 13112])
+                    ("_DRM_VBLANK_NEXTONMISS" variable
+                       (:constant-flag t
+                        :default-value (13183 13193)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13158 13194])
+                    ("_DRM_VBLANK_SECONDARY" variable
+                       (:constant-flag t
+                        :default-value (13260 13270)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13236 13271])
+                    ("_DRM_VBLANK_SIGNAL" variable
+                       (:constant-flag t
+                        :default-value (13331 13395)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13310 13396]))                  
+                :type "enum")
+                nil [12748 13397])
+            ("_DRM_VBLANK_HIGH_CRTC_SHIFT" variable (:constant-flag t) nil [13406 13433])
+            ("_DRM_VBLANK_TYPES_MASK" variable (:constant-flag t) nil [13445 13467])
+            ("_DRM_VBLANK_FLAGS_MASK" variable (:constant-flag t) nil [13522 13544])
+            ("drm_wait_vblank_request" type
+               (:members 
+                  ( ("type" variable (:type ("drm_vblank_seq_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [13676 13706])
+                    ("sequence" variable (:type "unsigned int") (reparse-symbol classsubparts) [13708 13730])
+                    ("signal" variable (:type "unsigned long") (reparse-symbol classsubparts) [13732 13753]))                  
+                :type "struct")
+                nil [13642 13756])
+            ("drm_wait_vblank_reply" type
+               (:members 
+                  ( ("type" variable (:type ("drm_vblank_seq_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [13790 13820])
+                    ("sequence" variable (:type "unsigned int") (reparse-symbol classsubparts) [13822 13844])
+                    ("tval_sec" variable (:type "long") (reparse-symbol classsubparts) [13846 13860])
+                    ("tval_usec" variable (:type "long") (reparse-symbol classsubparts) [13862 13877]))                  
+                :type "struct")
+                nil [13758 13880])
+            ("drm_wait_vblank" type
+               (:members 
+                  ( ("request" variable (:type ("drm_wait_vblank_request" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13988 14027])
+                    ("reply" variable (:type ("drm_wait_vblank_reply" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [14029 14064]))                  
+                :type "union")
+                nil [13963 14067])
+            ("_DRM_PRE_MODESET" variable (:constant-flag t) nil [14077 14093])
+            ("_DRM_POST_MODESET" variable (:constant-flag t) nil [14104 14121])
+            ("drm_modeset_ctl" type
+               (:members 
+                  ( ("crtc" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14231 14242])
+                    ("cmd" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14244 14254]))                  
+                :type "struct")
+                nil [14205 14257])
+            ("drm_agp_mode" type
+               (:members 
+                  ( ("mode" variable (:type "unsigned long") (reparse-symbol classsubparts) [14361 14380]))                  
+                :type "struct")
+                nil [14338 14400])
+            ("drm_agp_buffer" type
+               (:members 
+                  ( ("size" variable (:type "unsigned long") (reparse-symbol classsubparts) [14545 14564])
+                    ("handle" variable (:type "unsigned long") (reparse-symbol classsubparts) [14614 14635])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [14674 14693])
+                    ("physical" variable (:type "unsigned long") (reparse-symbol classsubparts) [14730 14753]))                  
+                :type "struct")
+                nil [14520 14786])
+            ("drm_agp_binding" type
+               (:members 
+                  ( ("handle" variable (:type "unsigned long") (reparse-symbol classsubparts) [14934 14955])
+                    ("offset" variable (:type "unsigned long") (reparse-symbol classsubparts) [14985 15006]))                  
+                :type "struct")
+                nil [14908 15057])
+            ("drm_agp_info" type
+               (:members 
+                  ( ("agp_version_major" variable (:type "int") (reparse-symbol classsubparts) [15318 15340])
+                    ("agp_version_minor" variable (:type "int") (reparse-symbol classsubparts) [15342 15364])
+                    ("mode" variable (:type "unsigned long") (reparse-symbol classsubparts) [15366 15385])
+                    ("aperture_base" variable (:type "unsigned long") (reparse-symbol classsubparts) [15387 15415])
+                    ("aperture_size" variable (:type "unsigned long") (reparse-symbol classsubparts) [15440 15468])
+                    ("memory_allowed" variable (:type "unsigned long") (reparse-symbol classsubparts) [15482 15511])
+                    ("memory_used" variable (:type "unsigned long") (reparse-symbol classsubparts) [15525 15551])
+                    ("id_vendor" variable (:type "unsigned short") (reparse-symbol classsubparts) [15577 15602])
+                    ("id_device" variable (:type "unsigned short") (reparse-symbol classsubparts) [15604 15629]))                  
+                :type "struct")
+                nil [15295 15632])
+            ("drm_scatter_gather" type
+               (:members 
+                  ( ("size" variable (:type "unsigned long") (reparse-symbol classsubparts) [15714 15733])
+                    ("handle" variable (:type "unsigned long") (reparse-symbol classsubparts) [15783 15804]))                  
+                :type "struct")
+                nil [15685 15844])
+            ("drm_set_version" type
+               (:members 
+                  ( ("drm_di_major" variable (:type "int") (reparse-symbol classsubparts) [15926 15943])
+                    ("drm_di_minor" variable (:type "int") (reparse-symbol classsubparts) [15945 15962])
+                    ("drm_dd_major" variable (:type "int") (reparse-symbol classsubparts) [15964 15981])
+                    ("drm_dd_minor" variable (:type "int") (reparse-symbol classsubparts) [15983 16000]))                  
+                :type "struct")
+                nil [15900 16003])
+            ("drm_gem_close" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16119 16132])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16134 16144]))                  
+                :type "struct")
+                nil [16052 16147])
+            ("drm_gem_flink" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16262 16275])
+                    ("name" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16307 16318]))                  
+                :type "struct")
+                nil [16196 16321])
+            ("drm_gem_open" type
+               (:members 
+                  ( ("name" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16428 16439])
+                    ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16481 16494])
+                    ("size" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16533 16544]))                  
+                :type "struct")
+                nil [16369 16547])
+            ("DRM_CAP_DUMB_BUFFER" variable (:constant-flag t) nil [16557 16576])
+            ("DRM_CAP_VBLANK_HIGH_CRTC" variable (:constant-flag t) nil [16590 16614])
+            ("DRM_CAP_DUMB_PREFERRED_DEPTH" variable (:constant-flag t) nil [16627 16655])
+            ("DRM_CAP_DUMB_PREFER_SHADOW" variable (:constant-flag t) nil [16668 16694])
+            ("DRM_CAP_PRIME" variable (:constant-flag t) nil [16707 16720])
+            ("DRM_PRIME_CAP_IMPORT" variable (:constant-flag t) nil [16736 16756])
+            ("DRM_PRIME_CAP_EXPORT" variable (:constant-flag t) nil [16771 16791])
+            ("DRM_CAP_TIMESTAMP_MONOTONIC" variable (:constant-flag t) nil [16805 16832])
+            ("DRM_CAP_ASYNC_PAGE_FLIP" variable (:constant-flag t) nil [16845 16868])
+            ("DRM_CAP_CURSOR_WIDTH" variable (:constant-flag t) nil [17275 17295])
+            ("DRM_CAP_CURSOR_HEIGHT" variable (:constant-flag t) nil [17309 17330])
+            ("DRM_CAP_ADDFB2_MODIFIERS" variable (:constant-flag t) nil [17344 17368])
+            ("DRM_CAP_PAGE_FLIP_TARGET" variable (:constant-flag t) nil [17382 17406])
+            ("DRM_CAP_CRTC_IN_VBLANK_EVENT" variable (:constant-flag t) nil [17420 17448])
+            ("DRM_CAP_SYNCOBJ" variable (:constant-flag t) nil [17462 17477])
+            ("drm_get_cap" type
+               (:members 
+                  ( ("capability" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17552 17569])
+                    ("value" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17571 17583]))                  
+                :type "struct")
+                nil [17530 17586])
+            ("DRM_CLIENT_CAP_STEREO_3D" variable (:constant-flag t) nil [17806 17830])
+            ("DRM_CLIENT_CAP_UNIVERSAL_PLANES" variable (:constant-flag t) nil [17988 18019])
+            ("DRM_CLIENT_CAP_ATOMIC" variable (:constant-flag t) nil [18140 18161])
+            ("drm_set_client_cap" type
+               (:members 
+                  ( ("capability" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18246 18263])
+                    ("value" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18265 18277]))                  
+                :type "struct")
+                nil [18217 18280])
+            ("DRM_RDWR" variable (:constant-flag t) nil [18290 18298])
+            ("DRM_CLOEXEC" variable (:constant-flag t) nil [18314 18325])
+            ("drm_prime_handle" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18363 18376])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18426 18438])
+                    ("fd" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18481 18490]))                  
+                :type "struct")
+                nil [18336 18493])
+            ("drm_syncobj_create" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18524 18537])
+                    ("DRM_SYNCOBJ_CREATE_SIGNALED" variable (:constant-flag t) (reparse-symbol classsubparts) [18546 18573])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18584 18596]))                  
+                :type "struct")
+                nil [18495 18599])
+            ("drm_syncobj_destroy" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18631 18644])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18646 18656]))                  
+                :type "struct")
+                nil [18601 18659])
+            ("DRM_SYNCOBJ_FD_TO_HANDLE_FLAGS_IMPORT_SYNC_FILE" variable (:constant-flag t) nil [18669 18716])
+            ("DRM_SYNCOBJ_HANDLE_TO_FD_FLAGS_EXPORT_SYNC_FILE" variable (:constant-flag t) nil [18734 18781])
+            ("drm_syncobj_handle" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18820 18833])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18835 18847])
+                    ("fd" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18850 18859])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18861 18871]))                  
+                :type "struct")
+                nil [18791 18874])
+            ("DRM_SYNCOBJ_WAIT_FLAGS_WAIT_ALL" variable (:constant-flag t) nil [18884 18915])
+            ("DRM_SYNCOBJ_WAIT_FLAGS_WAIT_FOR_SUBMIT" variable (:constant-flag t) nil [18933 18971])
+            ("drm_syncobj_wait" type
+               (:members 
+                  ( ("handles" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19008 19022])
+                    ("timeout_nsec" variable (:type ("__s64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19048 19067])
+                    ("count_handles" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19069 19089])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19091 19103])
+                    ("first_signaled" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19105 19126])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19166 19176]))                  
+                :type "struct")
+                nil [18981 19179])
+            ("drm_syncobj_array" type
+               (:members 
+                  ( ("handles" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19209 19223])
+                    ("count_handles" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19225 19245])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19247 19257]))                  
+                :type "struct")
+                nil [19181 19260])
+            ("drm_crtc_get_sequence" type
+               (:members 
+                  ( ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19338 19352])
+                    ("active" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19379 19392])
+                    ("sequence" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19431 19446])
+                    ("sequence_ns" variable (:type ("__s64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19491 19509]))                  
+                :type "struct")
+                nil [19306 19562])
+            ("DRM_CRTC_SEQUENCE_RELATIVE" variable (:constant-flag t) nil [19737 19763])
+            ("DRM_CRTC_SEQUENCE_NEXT_ON_MISS" variable (:constant-flag t) nil [19822 19852])
+            ("drm_crtc_queue_sequence" type
+               (:members 
+                  ( ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19940 19954])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19956 19968])
+                    ("sequence" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19970 19985])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20048 20064]))                  
+                :type "struct")
+                nil [19906 20099])
+            ("drm_mode.h" include nil nil [20136 20157])
+            ("DRM_IOCTL_BASE" variable (:constant-flag t) nil [20213 20227])
+            ("DRM_IO" variable (:constant-flag t) nil [20242 20248])
+            ("DRM_IOR" variable (:constant-flag t) nil [20286 20293])
+            ("DRM_IOW" variable (:constant-flag t) nil [20341 20348])
+            ("DRM_IOWR" variable (:constant-flag t) nil [20396 20404])
+            ("DRM_IOCTL_VERSION" variable (:constant-flag t) nil [20454 20471])
+            ("DRM_IOCTL_GET_UNIQUE" variable (:constant-flag t) nil [20516 20536])
+            ("DRM_IOCTL_GET_MAGIC" variable (:constant-flag t) nil [20580 20599])
+            ("DRM_IOCTL_IRQ_BUSID" variable (:constant-flag t) nil [20641 20660])
+            ("DRM_IOCTL_GET_MAP" variable (:constant-flag t) nil [20707 20724])
+            ("DRM_IOCTL_GET_CLIENT" variable (:constant-flag t) nil [20778 20798])
+            ("DRM_IOCTL_GET_STATS" variable (:constant-flag t) nil [20852 20871])
+            ("DRM_IOCTL_SET_VERSION" variable (:constant-flag t) nil [20925 20946])
+            ("DRM_IOCTL_MODESET_CTL" variable (:constant-flag t) nil [20995 21016])
+            ("DRM_IOCTL_GEM_CLOSE" variable (:constant-flag t) nil [21073 21092])
+            ("DRM_IOCTL_GEM_FLINK" variable (:constant-flag t) nil [21139 21158])
+            ("DRM_IOCTL_GEM_OPEN" variable (:constant-flag t) nil [21205 21223])
+            ("DRM_IOCTL_GET_CAP" variable (:constant-flag t) nil [21269 21286])
+            ("DRM_IOCTL_SET_CLIENT_CAP" variable (:constant-flag t) nil [21331 21355])
+            ("DRM_IOCTL_SET_UNIQUE" variable (:constant-flag t) nil [21407 21427])
+            ("DRM_IOCTL_AUTH_MAGIC" variable (:constant-flag t) nil [21471 21491])
+            ("DRM_IOCTL_BLOCK" variable (:constant-flag t) nil [21533 21548])
+            ("DRM_IOCTL_UNBLOCK" variable (:constant-flag t) nil [21592 21609])
+            ("DRM_IOCTL_CONTROL" variable (:constant-flag t) nil [21652 21669])
+            ("DRM_IOCTL_ADD_MAP" variable (:constant-flag t) nil [21714 21731])
+            ("DRM_IOCTL_ADD_BUFS" variable (:constant-flag t) nil [21772 21790])
+            ("DRM_IOCTL_MARK_BUFS" variable (:constant-flag t) nil [21836 21855])
+            ("DRM_IOCTL_INFO_BUFS" variable (:constant-flag t) nil [21901 21920])
+            ("DRM_IOCTL_MAP_BUFS" variable (:constant-flag t) nil [21966 21984])
+            ("DRM_IOCTL_FREE_BUFS" variable (:constant-flag t) nil [22029 22048])
+            ("DRM_IOCTL_RM_MAP" variable (:constant-flag t) nil [22095 22111])
+            ("DRM_IOCTL_SET_SAREA_CTX" variable (:constant-flag t) nil [22153 22176])
+            ("DRM_IOCTL_GET_SAREA_CTX" variable (:constant-flag t) nil [22226 22249])
+            ("DRM_IOCTL_SET_MASTER" variable (:constant-flag t) nil [22300 22320])
+            ("DRM_IOCTL_DROP_MASTER" variable (:constant-flag t) nil [22353 22374])
+            ("DRM_IOCTL_ADD_CTX" variable (:constant-flag t) nil [22407 22424])
+            ("DRM_IOCTL_RM_CTX" variable (:constant-flag t) nil [22465 22481])
+            ("DRM_IOCTL_MOD_CTX" variable (:constant-flag t) nil [22522 22539])
+            ("DRM_IOCTL_GET_CTX" variable (:constant-flag t) nil [22580 22597])
+            ("DRM_IOCTL_SWITCH_CTX" variable (:constant-flag t) nil [22638 22658])
+            ("DRM_IOCTL_NEW_CTX" variable (:constant-flag t) nil [22699 22716])
+            ("DRM_IOCTL_RES_CTX" variable (:constant-flag t) nil [22757 22774])
+            ("DRM_IOCTL_ADD_DRAW" variable (:constant-flag t) nil [22819 22837])
+            ("DRM_IOCTL_RM_DRAW" variable (:constant-flag t) nil [22879 22896])
+            ("DRM_IOCTL_DMA" variable (:constant-flag t) nil [22938 22951])
+            ("DRM_IOCTL_LOCK" variable (:constant-flag t) nil [22993 23007])
+            ("DRM_IOCTL_UNLOCK" variable (:constant-flag t) nil [23050 23066])
+            ("DRM_IOCTL_FINISH" variable (:constant-flag t) nil [23108 23124])
+            ("DRM_IOCTL_PRIME_HANDLE_TO_FD" variable (:constant-flag t) nil [23167 23195])
+            ("DRM_IOCTL_PRIME_FD_TO_HANDLE" variable (:constant-flag t) nil [23247 23275])
+            ("DRM_IOCTL_AGP_ACQUIRE" variable (:constant-flag t) nil [23328 23349])
+            ("DRM_IOCTL_AGP_RELEASE" variable (:constant-flag t) nil [23374 23395])
+            ("DRM_IOCTL_AGP_ENABLE" variable (:constant-flag t) nil [23420 23440])
+            ("DRM_IOCTL_AGP_INFO" variable (:constant-flag t) nil [23486 23504])
+            ("DRM_IOCTL_AGP_ALLOC" variable (:constant-flag t) nil [23550 23569])
+            ("DRM_IOCTL_AGP_FREE" variable (:constant-flag t) nil [23617 23635])
+            ("DRM_IOCTL_AGP_BIND" variable (:constant-flag t) nil [23683 23701])
+            ("DRM_IOCTL_AGP_UNBIND" variable (:constant-flag t) nil [23750 23770])
+            ("DRM_IOCTL_SG_ALLOC" variable (:constant-flag t) nil [23820 23838])
+            ("DRM_IOCTL_SG_FREE" variable (:constant-flag t) nil [23890 23907])
+            ("DRM_IOCTL_WAIT_VBLANK" variable (:constant-flag t) nil [23960 23981])
+            ("DRM_IOCTL_CRTC_GET_SEQUENCE" variable (:constant-flag t) nil [24030 24057])
+            ("DRM_IOCTL_CRTC_QUEUE_SEQUENCE" variable (:constant-flag t) nil [24111 24140])
+            ("DRM_IOCTL_UPDATE_DRAW" variable (:constant-flag t) nil [24197 24218])
+            ("DRM_IOCTL_MODE_GETRESOURCES" variable (:constant-flag t) nil [24267 24294])
+            ("DRM_IOCTL_MODE_GETCRTC" variable (:constant-flag t) nil [24344 24366])
+            ("DRM_IOCTL_MODE_SETCRTC" variable (:constant-flag t) nil [24413 24435])
+            ("DRM_IOCTL_MODE_CURSOR" variable (:constant-flag t) nil [24482 24503])
+            ("DRM_IOCTL_MODE_GETGAMMA" variable (:constant-flag t) nil [24552 24575])
+            ("DRM_IOCTL_MODE_SETGAMMA" variable (:constant-flag t) nil [24626 24649])
+            ("DRM_IOCTL_MODE_GETENCODER" variable (:constant-flag t) nil [24700 24725])
+            ("DRM_IOCTL_MODE_GETCONNECTOR" variable (:constant-flag t) nil [24778 24805])
+            ("DRM_IOCTL_MODE_ATTACHMODE" variable (:constant-flag t) nil [24860 24885])
+            ("DRM_IOCTL_MODE_DETACHMODE" variable (:constant-flag t) nil [24967 24992])
+            ("DRM_IOCTL_MODE_GETPROPERTY" variable (:constant-flag t) nil [25075 25101])
+            ("DRM_IOCTL_MODE_SETPROPERTY" variable (:constant-flag t) nil [25155 25181])
+            ("DRM_IOCTL_MODE_GETPROPBLOB" variable (:constant-flag t) nil [25245 25271])
+            ("DRM_IOCTL_MODE_GETFB" variable (:constant-flag t) nil [25321 25341])
+            ("DRM_IOCTL_MODE_ADDFB" variable (:constant-flag t) nil [25390 25410])
+            ("DRM_IOCTL_MODE_RMFB" variable (:constant-flag t) nil [25459 25478])
+            ("DRM_IOCTL_MODE_PAGE_FLIP" variable (:constant-flag t) nil [25517 25541])
+            ("DRM_IOCTL_MODE_DIRTYFB" variable (:constant-flag t) nil [25597 25619])
+            ("DRM_IOCTL_MODE_CREATE_DUMB" variable (:constant-flag t) nil [25675 25701])
+            ("DRM_IOCTL_MODE_MAP_DUMB" variable (:constant-flag t) nil [25754 25777])
+            ("DRM_IOCTL_MODE_DESTROY_DUMB" variable (:constant-flag t) nil [25830 25857])
+            ("DRM_IOCTL_MODE_GETPLANERESOURCES" variable (:constant-flag t) nil [25914 25946])
+            ("DRM_IOCTL_MODE_GETPLANE" variable (:constant-flag t) nil [26001 26024])
+            ("DRM_IOCTL_MODE_SETPLANE" variable (:constant-flag t) nil [26075 26098])
+            ("DRM_IOCTL_MODE_ADDFB2" variable (:constant-flag t) nil [26149 26170])
+            ("DRM_IOCTL_MODE_OBJ_GETPROPERTIES" variable (:constant-flag t) nil [26220 26252])
+            ("DRM_IOCTL_MODE_OBJ_SETPROPERTY" variable (:constant-flag t) nil [26312 26342])
+            ("DRM_IOCTL_MODE_CURSOR2" variable (:constant-flag t) nil [26400 26422])
+            ("DRM_IOCTL_MODE_ATOMIC" variable (:constant-flag t) nil [26472 26493])
+            ("DRM_IOCTL_MODE_CREATEPROPBLOB" variable (:constant-flag t) nil [26542 26571])
+            ("DRM_IOCTL_MODE_DESTROYPROPBLOB" variable (:constant-flag t) nil [26624 26654])
+            ("DRM_IOCTL_SYNCOBJ_CREATE" variable (:constant-flag t) nil [26709 26733])
+            ("DRM_IOCTL_SYNCOBJ_DESTROY" variable (:constant-flag t) nil [26784 26809])
+            ("DRM_IOCTL_SYNCOBJ_HANDLE_TO_FD" variable (:constant-flag t) nil [26861 26891])
+            ("DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE" variable (:constant-flag t) nil [26942 26972])
+            ("DRM_IOCTL_SYNCOBJ_WAIT" variable (:constant-flag t) nil [27023 27045])
+            ("DRM_IOCTL_SYNCOBJ_RESET" variable (:constant-flag t) nil [27095 27118])
+            ("DRM_IOCTL_SYNCOBJ_SIGNAL" variable (:constant-flag t) nil [27169 27193])
+            ("DRM_IOCTL_MODE_CREATE_LEASE" variable (:constant-flag t) nil [27244 27271])
+            ("DRM_IOCTL_MODE_LIST_LESSEES" variable (:constant-flag t) nil [27325 27352])
+            ("DRM_IOCTL_MODE_GET_LEASE" variable (:constant-flag t) nil [27406 27430])
+            ("DRM_IOCTL_MODE_REVOKE_LEASE" variable (:constant-flag t) nil [27481 27508])
+            ("DRM_COMMAND_BASE" variable (:constant-flag t) nil [27827 27843])
+            ("DRM_COMMAND_END" variable (:constant-flag t) nil [27872 27887])
+            ("drm_event" type
+               (:members 
+                  ( ("type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28492 28503])
+                    ("length" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28505 28518]))                  
+                :type "struct")
+                nil [28472 28521])
+            ("DRM_EVENT_VBLANK" variable (:constant-flag t) nil [28531 28547])
+            ("DRM_EVENT_FLIP_COMPLETE" variable (:constant-flag t) nil [28561 28584])
+            ("DRM_EVENT_CRTC_SEQUENCE" variable (:constant-flag t) nil [28598 28621])
+            ("drm_event_vblank" type
+               (:members 
+                  ( ("base" variable (:type ("drm_event" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [28655 28677])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28679 28695])
+                    ("tv_sec" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28697 28710])
+                    ("tv_usec" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28712 28726])
+                    ("sequence" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28728 28743])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28745 28759]))                  
+                :type "struct")
+                nil [28628 28812])
+            ("drm_event_crtc_sequence" type
+               (:members 
+                  ( ("base" variable (:type ("drm_event" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [28988 29010])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29012 29030])
+                    ("time_ns" variable (:type ("__s64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29032 29048])
+                    ("sequence" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29050 29067]))                  
+                :type "struct")
+                nil [28954 29070])
+            ("drm_clip_rect_t" type
+               (:typedef ("drm_clip_rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29110 29155])
+            ("drm_drawable_info_t" type
+               (:typedef ("drm_drawable_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29156 29209])
+            ("drm_tex_region_t" type
+               (:typedef ("drm_tex_region" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29210 29257])
+            ("drm_hw_lock_t" type
+               (:typedef ("drm_hw_lock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29258 29299])
+            ("drm_version_t" type
+               (:typedef ("drm_version" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29300 29341])
+            ("drm_unique_t" type
+               (:typedef ("drm_unique" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29342 29381])
+            ("drm_list_t" type
+               (:typedef ("drm_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29382 29417])
+            ("drm_block_t" type
+               (:typedef ("drm_block" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29418 29455])
+            ("drm_control_t" type
+               (:typedef ("drm_control" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29456 29497])
+            ("drm_map_type_t" type
+               (:typedef ("drm_map_type" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [29498 29539])
+            ("drm_map_flags_t" type
+               (:typedef ("drm_map_flags" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [29540 29583])
+            ("drm_ctx_priv_map_t" type
+               (:typedef ("drm_ctx_priv_map" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29584 29635])
+            ("drm_map_t" type
+               (:typedef ("drm_map" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29636 29669])
+            ("drm_client_t" type
+               (:typedef ("drm_client" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29670 29709])
+            ("drm_stat_type_t" type
+               (:typedef ("drm_stat_type" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [29710 29753])
+            ("drm_stats_t" type
+               (:typedef ("drm_stats" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29754 29791])
+            ("drm_lock_flags_t" type
+               (:typedef ("drm_lock_flags" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [29792 29837])
+            ("drm_lock_t" type
+               (:typedef ("drm_lock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29838 29873])
+            ("drm_dma_flags_t" type
+               (:typedef ("drm_dma_flags" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [29874 29917])
+            ("drm_buf_desc_t" type
+               (:typedef ("drm_buf_desc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29918 29961])
+            ("drm_buf_info_t" type
+               (:typedef ("drm_buf_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [29962 30005])
+            ("drm_buf_free_t" type
+               (:typedef ("drm_buf_free" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30006 30049])
+            ("drm_buf_pub_t" type
+               (:typedef ("drm_buf_pub" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30050 30091])
+            ("drm_buf_map_t" type
+               (:typedef ("drm_buf_map" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30092 30133])
+            ("drm_dma_t" type
+               (:typedef ("drm_dma" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30134 30167])
+            ("drm_wait_vblank_t" type
+               (:typedef ("drm_wait_vblank" type (:type "union") nil nil)
+                :type "typedef")
+                nil [30168 30216])
+            ("drm_agp_mode_t" type
+               (:typedef ("drm_agp_mode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30217 30260])
+            ("drm_ctx_flags_t" type
+               (:typedef ("drm_ctx_flags" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [30261 30304])
+            ("drm_ctx_t" type
+               (:typedef ("drm_ctx" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30305 30338])
+            ("drm_ctx_res_t" type
+               (:typedef ("drm_ctx_res" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30339 30380])
+            ("drm_draw_t" type
+               (:typedef ("drm_draw" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30381 30416])
+            ("drm_update_draw_t" type
+               (:typedef ("drm_update_draw" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30417 30466])
+            ("drm_auth_t" type
+               (:typedef ("drm_auth" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30467 30502])
+            ("drm_irq_busid_t" type
+               (:typedef ("drm_irq_busid" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30503 30548])
+            ("drm_vblank_seq_type_t" type
+               (:typedef ("drm_vblank_seq_type" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [30549 30604])
+            ("drm_agp_buffer_t" type
+               (:typedef ("drm_agp_buffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30606 30653])
+            ("drm_agp_binding_t" type
+               (:typedef ("drm_agp_binding" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30654 30703])
+            ("drm_agp_info_t" type
+               (:typedef ("drm_agp_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30704 30747])
+            ("drm_scatter_gather_t" type
+               (:typedef ("drm_scatter_gather" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30748 30803])
+            ("drm_set_version_t" type
+               (:typedef ("drm_set_version" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [30804 30853]))          
+      :file "drm.h"
+      :pointmax 30904
+      :fsize 30903
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax '((symbol 11989 . 11996) (STRUCT 11982 . 11988) (INT 11550 . 11553) (INT 11491 . 11494) (INT 11274 . 11277) (INT 11210 . 11213) (symbol 10897 . 10908) (STRUCT 10890 . 10896) (VOID 10797 . 10801) (VOID 10599 . 10603) (INT 10341 . 10344) (symbol 10223 . 10235) (STRUCT 10216 . 10222) (symbol 4728 . 4739) (STRUCT 4721 . 4727) (CHAR 4575 . 4579) (CHAR 4338 . 4342) (CHAR 4218 . 4222) (CHAR 4114 . 4118) (symbol 3715 . 3727))
+      :lexical-table 
+        '(("_DRM_PRE_MODESET" . ((number "1" 14094 . 14095)))
+          ("DRM_RDWR" . ((symbol "O_RDWR" 18299 . 18305)))
+          ("DRM_IOCTL_IRQ_BUSID" . ((symbol "DRM_IOWR" 20662 . 20670) (semantic-list "(0x03, struct drm_irq_busid)" 20670 . 20698)))
+          ("DRM_IOCTL_SET_CLIENT_CAP" . ((symbol "DRM_IOW" 21356 . 21363) (semantic-list "( 0x0d, struct drm_set_client_cap)" 21363 . 21397)))
+          ("DRM_IOCTL_BLOCK" . ((symbol "DRM_IOWR" 21551 . 21559) (semantic-list "(0x12, struct drm_block)" 21559 . 21583)))
+          ("DRM_IOCTL_SWITCH_CTX" . ((symbol "DRM_IOW" 22660 . 22667) (semantic-list "( 0x24, struct drm_ctx)" 22667 . 22690)))
+          ("DRM_IOCTL_RM_DRAW" . ((symbol "DRM_IOWR" 22898 . 22906) (semantic-list "(0x28, struct drm_draw)" 22906 . 22929)))
+          ("DRM_IOCTL_UNLOCK" . ((symbol "DRM_IOW" 23068 . 23075) (semantic-list "( 0x2b, struct drm_lock)" 23075 . 23099)))
+          ("DRM_IOCTL_CRTC_QUEUE_SEQUENCE" . ((symbol "DRM_IOWR" 24141 . 24149) (semantic-list "(0x3c, struct drm_crtc_queue_sequence)" 24149 . 24187)))
+          ("DRM_IOCTL_MODE_CURSOR" . ((symbol "DRM_IOWR" 24505 . 24513) (semantic-list "(0xA3, struct drm_mode_cursor)" 24513 . 24543)))
+          ("DRM_IOCTL_MODE_PAGE_FLIP" . ((symbol "DRM_IOWR" 25542 . 25550) (semantic-list "(0xB0, struct drm_mode_crtc_page_flip)" 25550 . 25588)))
+          ("DRM_IOCTL_MODE_GETPLANERESOURCES" . ((symbol "DRM_IOWR" 25947 . 25955) (semantic-list "(0xB5, struct drm_mode_get_plane_res)" 25955 . 25992)))
+          ("DRM_IOCTL_SYNCOBJ_WAIT" . ((symbol "DRM_IOWR" 27047 . 27055) (semantic-list "(0xC3, struct drm_syncobj_wait)" 27055 . 27086)))
+          ("DRM_RAM_PERCENT" . ((number "10" 2359 . 2361)))
+          ("DRM_CAP_DUMB_BUFFER" . ((number "0x1" 16578 . 16581)))
+          ("DRM_CAP_DUMB_PREFERRED_DEPTH" . ((number "0x3" 16656 . 16659)))
+          ("DRM_CAP_CRTC_IN_VBLANK_EVENT" . ((number "0x12" 17449 . 17453)))
+          ("DRM_CLIENT_CAP_STEREO_3D" . ((number "1" 17831 . 17832)))
+          ("DRM_IOCTL_FREE_BUFS" . ((symbol "DRM_IOW" 22050 . 22057) (semantic-list "( 0x1a, struct drm_buf_free)" 22057 . 22085)))
+          ("DRM_IOCTL_DROP_MASTER" . ((symbol "DRM_IO" 22385 . 22391) (semantic-list "(0x1f)" 22391 . 22397)))
+          ("DRM_IOCTL_MODE_DETACHMODE" . ((symbol "DRM_IOWR" 24993 . 25001) (semantic-list "(0xA9, struct drm_mode_mode_cmd)" 25001 . 25033)))
+          ("DRM_IOCTL_MODE_GETPLANE" . ((symbol "DRM_IOWR" 26025 . 26033) (semantic-list "(0xB6, struct drm_mode_get_plane)" 26033 . 26066)))
+          ("DRM_IOCTL_MODE_DESTROYPROPBLOB" . ((symbol "DRM_IOWR" 26655 . 26663) (semantic-list "(0xBE, struct drm_mode_destroy_blob)" 26663 . 26699)))
+          ("DRM_IOCTL_MODE_GET_LEASE" . ((symbol "DRM_IOWR" 27431 . 27439) (semantic-list "(0xC8, struct drm_mode_get_lease)" 27439 . 27472)))
+          ("_DRM_LOCK_CONT" . ((symbol "0x40000000U" 2494 . 2505)))
+          ("DRM_PRIME_CAP_IMPORT" . ((number "0x1" 16758 . 16761)))
+          ("DRM_CAP_CURSOR_WIDTH" . ((number "0x8" 17297 . 17300)))
+          ("DRM_IOR" (spp-arg-list ("nr" "type") 20293 . 20302) . ((symbol "_IOR" 20304 . 20308) (semantic-list "(DRM_IOCTL_BASE,nr,type)" 20308 . 20332)))
+          ("DRM_IOCTL_GET_MAP" . ((symbol "DRM_IOWR" 20739 . 20747) (semantic-list "(0x04, struct drm_map)" 20747 . 20769)))
+          ("DRM_IOCTL_MARK_BUFS" . ((symbol "DRM_IOW" 21857 . 21864) (semantic-list "( 0x17, struct drm_buf_desc)" 21864 . 21892)))
+          ("DRM_IOCTL_SET_MASTER" . ((symbol "DRM_IO" 22332 . 22338) (semantic-list "(0x1e)" 22338 . 22344)))
+          ("DRM_IOCTL_ADD_DRAW" . ((symbol "DRM_IOWR" 22839 . 22847) (semantic-list "(0x27, struct drm_draw)" 22847 . 22870)))
+          ("DRM_IOCTL_CRTC_GET_SEQUENCE" . ((symbol "DRM_IOWR" 24058 . 24066) (semantic-list "(0x3b, struct drm_crtc_get_sequence)" 24066 . 24102)))
+          ("DRM_IOCTL_MODE_ADDFB" . ((symbol "DRM_IOWR" 25412 . 25420) (semantic-list "(0xAE, struct drm_mode_fb_cmd)" 25420 . 25450)))
+          ("DRM_IOCTL_MODE_ADDFB2" . ((symbol "DRM_IOWR" 26172 . 26180) (semantic-list "(0xB8, struct drm_mode_fb_cmd2)" 26180 . 26211)))
+          ("DRM_SYNCOBJ_CREATE_SIGNALED" . ((semantic-list "(1 << 0)" 18574 . 18582)))
+          ("_DRM_VBLANK_FLAGS_MASK" . ((semantic-list "(_DRM_VBLANK_EVENT | _DRM_VBLANK_SIGNAL | \\
+				_DRM_VBLANK_SECONDARY | _DRM_VBLANK_NEXTONMISS)" 13545 . 13640)))
+          ("DRM_CAP_VBLANK_HIGH_CRTC" . ((number "0x2" 16615 . 16618)))
+          ("DRM_CAP_SYNCOBJ" . ((number "0x13" 17479 . 17483)))
+          ("DRM_IOCTL_VERSION" . ((symbol "DRM_IOWR" 20473 . 20481) (semantic-list "(0x00, struct drm_version)" 20481 . 20507)))
+          ("DRM_IOCTL_GET_CAP" . ((symbol "DRM_IOWR" 21288 . 21296) (semantic-list "(0x0c, struct drm_get_cap)" 21296 . 21322)))
+          ("DRM_IOCTL_INFO_BUFS" . ((symbol "DRM_IOWR" 21922 . 21930) (semantic-list "(0x18, struct drm_buf_info)" 21930 . 21957)))
+          ("DRM_IOCTL_GET_CTX" . ((symbol "DRM_IOWR" 22599 . 22607) (semantic-list "(0x23, struct drm_ctx)" 22607 . 22629)))
+          ("DRM_IOCTL_PRIME_FD_TO_HANDLE" . ((symbol "DRM_IOWR" 23279 . 23287) (semantic-list "(0x2e, struct drm_prime_handle)" 23287 . 23318)))
+          ("DRM_IOCTL_WAIT_VBLANK" . ((symbol "DRM_IOWR" 23983 . 23991) (semantic-list "(0x3a, union drm_wait_vblank)" 23991 . 24020)))
+          ("DRM_IOCTL_UPDATE_DRAW" . ((symbol "DRM_IOW" 24220 . 24227) (semantic-list "(0x3f, struct drm_update_draw)" 24227 . 24257)))
+          ("DRM_IOCTL_MODE_ATTACHMODE" . ((symbol "DRM_IOWR" 24886 . 24894) (semantic-list "(0xA8, struct drm_mode_mode_cmd)" 24894 . 24926)))
+          ("DRM_IOCTL_MODE_CREATE_DUMB" . ((symbol "DRM_IOWR" 25702 . 25710) (semantic-list "(0xB2, struct drm_mode_create_dumb)" 25710 . 25745)))
+          ("DRM_IOCTL_MODE_OBJ_SETPROPERTY" . ((symbol "DRM_IOWR" 26343 . 26351) (semantic-list "(0xBA, struct drm_mode_obj_set_property)" 26351 . 26391)))
+          ("DRM_IOCTL_SYNCOBJ_CREATE" . ((symbol "DRM_IOWR" 26734 . 26742) (semantic-list "(0xBF, struct drm_syncobj_create)" 26742 . 26775)))
+          ("DRM_IOCTL_MODE_REVOKE_LEASE" . ((symbol "DRM_IOWR" 27509 . 27517) (semantic-list "(0xC9, struct drm_mode_revoke_lease)" 27517 . 27553)))
+          ("DRM_NAME" . ((string "\"drm\"" 2165 . 2170)))
+          ("_DRM_LOCKING_CONTEXT" (spp-arg-list ("lock") 2691 . 2697) . ((semantic-list "((lock) & ~(_DRM_LOCK_HELD|_DRM_LOCK_CONT))" 2698 . 2741)))
+          ("_DRM_POST_MODESET" . ((number "2" 14122 . 14123)))
+          ("DRM_CAP_ASYNC_PAGE_FLIP" . ((number "0x7" 16870 . 16873)))
+          ("DRM_CAP_PAGE_FLIP_TARGET" . ((number "0x11" 17407 . 17411)))
+          ("DRM_IOCTL_GEM_FLINK" . ((symbol "DRM_IOWR" 21160 . 21168) (semantic-list "(0x0a, struct drm_gem_flink)" 21168 . 21196)))
+          ("DRM_IOCTL_UNBLOCK" . ((symbol "DRM_IOWR" 21611 . 21619) (semantic-list "(0x13, struct drm_block)" 21619 . 21643)))
+          ("DRM_IOCTL_ADD_MAP" . ((symbol "DRM_IOWR" 21733 . 21741) (semantic-list "(0x15, struct drm_map)" 21741 . 21763)))
+          ("DRM_IOCTL_MODE_OBJ_GETPROPERTIES" . ((symbol "DRM_IOWR" 26253 . 26261) (semantic-list "(0xB9, struct drm_mode_obj_get_properties)" 26261 . 26303)))
+          ("DRM_COMMAND_END" . ((number "0xA0" 27890 . 27894)))
+          ("DRM_CAP_TIMESTAMP_MONOTONIC" . ((number "0x6" 16833 . 16836)))
+          ("DRM_CAP_ADDFB2_MODIFIERS" . ((number "0x10" 17369 . 17373)))
+          ("DRM_IOCTL_ADD_CTX" . ((symbol "DRM_IOWR" 22426 . 22434) (semantic-list "(0x20, struct drm_ctx)" 22434 . 22456)))
+          ("DRM_IOCTL_AGP_ALLOC" . ((symbol "DRM_IOWR" 23571 . 23579) (semantic-list "(0x34, struct drm_agp_buffer)" 23579 . 23608)))
+          ("DRM_IOCTL_AGP_FREE" . ((symbol "DRM_IOW" 23637 . 23644) (semantic-list "( 0x35, struct drm_agp_buffer)" 23644 . 23674)))
+          ("DRM_IOCTL_MODE_GETPROPBLOB" . ((symbol "DRM_IOWR" 25272 . 25280) (semantic-list "(0xAC, struct drm_mode_get_blob)" 25280 . 25312)))
+          ("DRM_IOCTL_MODE_CURSOR2" . ((symbol "DRM_IOWR" 26424 . 26432) (semantic-list "(0xBB, struct drm_mode_cursor2)" 26432 . 26463)))
+          ("DRM_IOCTL_GET_MAGIC" . ((symbol "DRM_IOR" 20601 . 20608) (semantic-list "( 0x02, struct drm_auth)" 20608 . 20632)))
+          ("DRM_IOCTL_GEM_CLOSE" . ((symbol "DRM_IOW" 21094 . 21101) (semantic-list "(0x09, struct drm_gem_close)" 21102 . 21130)))
+          ("DRM_IOCTL_SET_SAREA_CTX" . ((symbol "DRM_IOW" 22178 . 22185) (semantic-list "( 0x1c, struct drm_ctx_priv_map)" 22185 . 22217)))
+          ("DRM_IOCTL_NEW_CTX" . ((symbol "DRM_IOW" 22718 . 22725) (semantic-list "( 0x25, struct drm_ctx)" 22725 . 22748)))
+          ("DRM_IOCTL_PRIME_HANDLE_TO_FD" . ((symbol "DRM_IOWR" 23199 . 23207) (semantic-list "(0x2d, struct drm_prime_handle)" 23207 . 23238)))
+          ("DRM_IOCTL_AGP_ENABLE" . ((symbol "DRM_IOW" 23442 . 23449) (semantic-list "( 0x32, struct drm_agp_mode)" 23449 . 23477)))
+          ("DRM_IOCTL_SG_ALLOC" . ((symbol "DRM_IOWR" 23840 . 23848) (semantic-list "(0x38, struct drm_scatter_gather)" 23848 . 23881)))
+          ("DRM_IOCTL_MODE_GETRESOURCES" . ((symbol "DRM_IOWR" 24295 . 24303) (semantic-list "(0xA0, struct drm_mode_card_res)" 24303 . 24335)))
+          ("DRM_IOCTL_MODE_GETCONNECTOR" . ((symbol "DRM_IOWR" 24806 . 24814) (semantic-list "(0xA7, struct drm_mode_get_connector)" 24814 . 24851)))
+          ("DRM_IOCTL_MODE_SETPROPERTY" . ((symbol "DRM_IOWR" 25182 . 25190) (semantic-list "(0xAB, struct drm_mode_connector_set_property)" 25190 . 25236)))
+          ("DRM_IOCTL_MODE_ATOMIC" . ((symbol "DRM_IOWR" 26495 . 26503) (semantic-list "(0xBC, struct drm_mode_atomic)" 26503 . 26533)))
+          ("DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE" . ((symbol "DRM_IOWR" 26973 . 26981) (semantic-list "(0xC2, struct drm_syncobj_handle)" 26981 . 27014)))
+          ("DRM_EVENT_VBLANK" . ((number "0x01" 28548 . 28552)))
+          ("DRM_CLOEXEC" . ((symbol "O_CLOEXEC" 18326 . 18335)))
+          ("DRM_SYNCOBJ_FD_TO_HANDLE_FLAGS_IMPORT_SYNC_FILE" . ((semantic-list "(1 << 0)" 18717 . 18725)))
+          ("DRM_CRTC_SEQUENCE_NEXT_ON_MISS" . ((number "0x00000002" 19854 . 19864)))
+          ("DRM_IOCTL_BASE" . ((string "'d'" 20230 . 20233)))
+          ("DRM_IOW" (spp-arg-list ("nr" "type") 20348 . 20357) . ((symbol "_IOW" 20359 . 20363) (semantic-list "(DRM_IOCTL_BASE,nr,type)" 20363 . 20387)))
+          ("DRM_IOCTL_SET_VERSION" . ((symbol "DRM_IOWR" 20948 . 20956) (semantic-list "(0x07, struct drm_set_version)" 20956 . 20986)))
+          ("DRM_IOCTL_GEM_OPEN" . ((symbol "DRM_IOWR" 21225 . 21233) (semantic-list "(0x0b, struct drm_gem_open)" 21233 . 21260)))
+          ("DRM_IOCTL_SET_UNIQUE" . ((symbol "DRM_IOW" 21429 . 21436) (semantic-list "( 0x10, struct drm_unique)" 21436 . 21462)))
+          ("DRM_IOCTL_GET_SAREA_CTX" . ((symbol "DRM_IOWR" 22251 . 22259) (semantic-list "(0x1d, struct drm_ctx_priv_map)" 22259 . 22290)))
+          ("DRM_IOCTL_MODE_RMFB" . ((symbol "DRM_IOWR" 25480 . 25488) (semantic-list "(0xAF, unsigned int)" 25488 . 25508)))
+          ("DRM_IOCTL_MODE_DESTROY_DUMB" . ((symbol "DRM_IOWR" 25861 . 25869) (semantic-list "(0xB4, struct drm_mode_destroy_dumb)" 25869 . 25905)))
+          ("DRM_IOCTL_SYNCOBJ_SIGNAL" . ((symbol "DRM_IOWR" 27194 . 27202) (semantic-list "(0xC5, struct drm_syncobj_array)" 27202 . 27234)))
+          ("_DRM_VBLANK_TYPES_MASK" . ((semantic-list "(_DRM_VBLANK_ABSOLUTE | _DRM_VBLANK_RELATIVE)" 13468 . 13513)))
+          ("DRM_IO" (spp-arg-list ("nr") 20248 . 20252) . ((symbol "_IO" 20255 . 20258) (semantic-list "(DRM_IOCTL_BASE,nr)" 20258 . 20277)))
+          ("DRM_IOCTL_GET_UNIQUE" . ((symbol "DRM_IOWR" 20538 . 20546) (semantic-list "(0x01, struct drm_unique)" 20546 . 20571)))
+          ("DRM_IOCTL_SG_FREE" . ((symbol "DRM_IOW" 23909 . 23916) (semantic-list "( 0x39, struct drm_scatter_gather)" 23916 . 23950)))
+          ("DRM_IOCTL_MODE_SETCRTC" . ((symbol "DRM_IOWR" 24437 . 24445) (semantic-list "(0xA2, struct drm_mode_crtc)" 24445 . 24473)))
+          ("DRM_IOCTL_MODE_DIRTYFB" . ((symbol "DRM_IOWR" 25621 . 25629) (semantic-list "(0xB1, struct drm_mode_fb_dirty_cmd)" 25629 . 25665)))
+          ("DRM_IOCTL_MODE_MAP_DUMB" . ((symbol "DRM_IOWR" 25781 . 25789) (semantic-list "(0xB3, struct drm_mode_map_dumb)" 25789 . 25821)))
+          ("_DRM_LOCK_IS_HELD" (spp-arg-list ("lock") 2566 . 2572) . ((semantic-list "((lock) & _DRM_LOCK_HELD)" 2576 . 2601)))
+          ("DRM_CAP_DUMB_PREFER_SHADOW" . ((number "0x4" 16695 . 16698)))
+          ("DRM_CLIENT_CAP_ATOMIC" . ((number "3" 18162 . 18163)))
+          ("DRM_SYNCOBJ_WAIT_FLAGS_WAIT_FOR_SUBMIT" . ((semantic-list "(1 << 1)" 18972 . 18980)))
+          ("DRM_IOCTL_AUTH_MAGIC" . ((symbol "DRM_IOW" 21493 . 21500) (semantic-list "( 0x11, struct drm_auth)" 21500 . 21524)))
+          ("DRM_IOCTL_RM_MAP" . ((symbol "DRM_IOW" 22113 . 22120) (semantic-list "( 0x1b, struct drm_map)" 22120 . 22143)))
+          ("DRM_IOCTL_AGP_ACQUIRE" . ((symbol "DRM_IO" 23351 . 23357) (semantic-list "(  0x30)" 23357 . 23365)))
+          ("DRM_IOCTL_AGP_RELEASE" . ((symbol "DRM_IO" 23397 . 23403) (semantic-list "(  0x31)" 23403 . 23411)))
+          ("DRM_IOCTL_MODE_GETCRTC" . ((symbol "DRM_IOWR" 24368 . 24376) (semantic-list "(0xA1, struct drm_mode_crtc)" 24376 . 24404)))
+          ("DRM_IOCTL_MODE_SETGAMMA" . ((symbol "DRM_IOWR" 24651 . 24659) (semantic-list "(0xA5, struct drm_mode_crtc_lut)" 24659 . 24691)))
+          ("DRM_IOCTL_MODE_GETPROPERTY" . ((symbol "DRM_IOWR" 25102 . 25110) (semantic-list "(0xAA, struct drm_mode_get_property)" 25110 . 25146)))
+          ("DRM_IOCTL_MODE_GETFB" . ((symbol "DRM_IOWR" 25343 . 25351) (semantic-list "(0xAD, struct drm_mode_fb_cmd)" 25351 . 25381)))
+          ("DRM_IOCTL_SYNCOBJ_HANDLE_TO_FD" . ((symbol "DRM_IOWR" 26892 . 26900) (semantic-list "(0xC1, struct drm_syncobj_handle)" 26900 . 26933)))
+          ("DRM_IOCTL_MODE_LIST_LESSEES" . ((symbol "DRM_IOWR" 27353 . 27361) (semantic-list "(0xC7, struct drm_mode_list_lessees)" 27361 . 27397)))
+          ("DRM_EVENT_FLIP_COMPLETE" . ((number "0x02" 28585 . 28589)))
+          ("DRM_MAX_ORDER" . ((number "22" 2299 . 2301)))
+          ("_DRM_VBLANK_HIGH_CRTC_SHIFT" . ((number "1" 13434 . 13435)))
+          ("DRM_CAP_PRIME" . ((number "0x5" 16723 . 16726)))
+          ("DRM_CRTC_SEQUENCE_RELATIVE" . ((number "0x00000001" 19765 . 19775)))
+          ("DRM_IOCTL_MAP_BUFS" . ((symbol "DRM_IOWR" 21986 . 21994) (semantic-list "(0x19, struct drm_buf_map)" 21994 . 22020)))
+          ("DRM_IOCTL_RM_CTX" . ((symbol "DRM_IOWR" 22483 . 22491) (semantic-list "(0x21, struct drm_ctx)" 22491 . 22513)))
+          ("DRM_IOCTL_LOCK" . ((symbol "DRM_IOW" 23010 . 23017) (semantic-list "( 0x2a, struct drm_lock)" 23017 . 23041)))
+          ("DRM_EVENT_CRTC_SEQUENCE" . ((number "0x03" 28622 . 28626)))
+          ("DRM_MIN_ORDER" . ((number "5" 2235 . 2236)))
+          ("DRM_CLIENT_CAP_UNIVERSAL_PLANES" . ((number "2" 18021 . 18022)))
+          ("DRM_SYNCOBJ_WAIT_FLAGS_WAIT_ALL" . ((semantic-list "(1 << 0)" 18916 . 18924)))
+          ("DRM_IOCTL_MODESET_CTL" . ((symbol "DRM_IOW" 21027 . 21034) (semantic-list "(0x08, struct drm_modeset_ctl)" 21034 . 21064)))
+          ("DRM_IOCTL_RES_CTX" . ((symbol "DRM_IOWR" 22776 . 22784) (semantic-list "(0x26, struct drm_ctx_res)" 22784 . 22810)))
+          ("DRM_IOCTL_DMA" . ((symbol "DRM_IOWR" 22954 . 22962) (semantic-list "(0x29, struct drm_dma)" 22962 . 22984)))
+          ("DRM_IOCTL_AGP_INFO" . ((symbol "DRM_IOR" 23506 . 23513) (semantic-list "( 0x33, struct drm_agp_info)" 23513 . 23541)))
+          ("DRM_IOCTL_AGP_BIND" . ((symbol "DRM_IOW" 23703 . 23710) (semantic-list "( 0x36, struct drm_agp_binding)" 23710 . 23741)))
+          ("DRM_IOCTL_AGP_UNBIND" . ((symbol "DRM_IOW" 23772 . 23779) (semantic-list "( 0x37, struct drm_agp_binding)" 23779 . 23810)))
+          ("DRM_IOCTL_MODE_GETENCODER" . ((symbol "DRM_IOWR" 24726 . 24734) (semantic-list "(0xA6, struct drm_mode_get_encoder)" 24734 . 24769)))
+          ("DRM_IOCTL_MODE_SETPLANE" . ((symbol "DRM_IOWR" 26099 . 26107) (semantic-list "(0xB7, struct drm_mode_set_plane)" 26107 . 26140)))
+          ("DRM_IOCTL_SYNCOBJ_RESET" . ((symbol "DRM_IOWR" 27120 . 27128) (semantic-list "(0xC4, struct drm_syncobj_array)" 27128 . 27160)))
+          ("DRM_COMMAND_BASE" . ((number "0x40" 27859 . 27863)))
+          ("_DRM_H_")
+          ("_DRM_LOCK_HELD" . ((symbol "0x80000000U" 2429 . 2440)))
+          ("_DRM_LOCK_IS_CONT" (spp-arg-list ("lock") 2627 . 2633) . ((semantic-list "((lock) & _DRM_LOCK_CONT)" 2637 . 2662)))
+          ("DRM_PRIME_CAP_EXPORT" . ((number "0x2" 16793 . 16796)))
+          ("DRM_CAP_CURSOR_HEIGHT" . ((number "0x9" 17332 . 17335)))
+          ("DRM_SYNCOBJ_HANDLE_TO_FD_FLAGS_EXPORT_SYNC_FILE" . ((semantic-list "(1 << 0)" 18782 . 18790)))
+          ("DRM_IOWR" (spp-arg-list ("nr" "type") 20404 . 20413) . ((symbol "_IOWR" 20415 . 20420) (semantic-list "(DRM_IOCTL_BASE,nr,type)" 20420 . 20444)))
+          ("DRM_IOCTL_GET_CLIENT" . ((symbol "DRM_IOWR" 20810 . 20818) (semantic-list "(0x05, struct drm_client)" 20818 . 20843)))
+          ("DRM_IOCTL_GET_STATS" . ((symbol "DRM_IOR" 20884 . 20891) (semantic-list "( 0x06, struct drm_stats)" 20891 . 20916)))
+          ("DRM_IOCTL_CONTROL" . ((symbol "DRM_IOW" 21671 . 21678) (semantic-list "( 0x14, struct drm_control)" 21678 . 21705)))
+          ("DRM_IOCTL_ADD_BUFS" . ((symbol "DRM_IOWR" 21792 . 21800) (semantic-list "(0x16, struct drm_buf_desc)" 21800 . 21827)))
+          ("DRM_IOCTL_MOD_CTX" . ((symbol "DRM_IOW" 22541 . 22548) (semantic-list "( 0x22, struct drm_ctx)" 22548 . 22571)))
+          ("DRM_IOCTL_FINISH" . ((symbol "DRM_IOW" 23126 . 23133) (semantic-list "( 0x2c, struct drm_lock)" 23133 . 23157)))
+          ("DRM_IOCTL_MODE_GETGAMMA" . ((symbol "DRM_IOWR" 24577 . 24585) (semantic-list "(0xA4, struct drm_mode_crtc_lut)" 24585 . 24617)))
+          ("DRM_IOCTL_MODE_CREATEPROPBLOB" . ((symbol "DRM_IOWR" 26572 . 26580) (semantic-list "(0xBD, struct drm_mode_create_blob)" 26580 . 26615)))
+          ("DRM_IOCTL_SYNCOBJ_DESTROY" . ((symbol "DRM_IOWR" 26810 . 26818) (semantic-list "(0xC0, struct drm_syncobj_destroy)" 26818 . 26852)))
+          ("DRM_IOCTL_MODE_CREATE_LEASE" . ((symbol "DRM_IOWR" 27272 . 27280) (semantic-list "(0xC6, struct drm_mode_create_lease)" 27280 . 27316)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_DRM_MODE_H" variable (:constant-flag t) nil [1381 1392])
+            ("drm.h" include nil nil [1394 1410])
+            ("DRM_DISPLAY_INFO_LEN" variable (:constant-flag t) nil [1466 1486])
+            ("DRM_CONNECTOR_NAME_LEN" variable (:constant-flag t) nil [1498 1520])
+            ("DRM_DISPLAY_MODE_LEN" variable (:constant-flag t) nil [1532 1552])
+            ("DRM_PROP_NAME_LEN" variable (:constant-flag t) nil [1564 1581])
+            ("DRM_MODE_TYPE_BUILTIN" variable (:constant-flag t) nil [1594 1615])
+            ("DRM_MODE_TYPE_CLOCK_C" variable (:constant-flag t) nil [1631 1652])
+            ("DRM_MODE_TYPE_CRTC_C" variable (:constant-flag t) nil [1694 1714])
+            ("DRM_MODE_TYPE_PREFERRED" variable (:constant-flag t) nil [1756 1779])
+            ("DRM_MODE_TYPE_DEFAULT" variable (:constant-flag t) nil [1795 1816])
+            ("DRM_MODE_TYPE_USERDEF" variable (:constant-flag t) nil [1832 1853])
+            ("DRM_MODE_TYPE_DRIVER" variable (:constant-flag t) nil [1869 1889])
+            ("DRM_MODE_FLAG_PHSYNC" variable (:constant-flag t) nil [2325 2345])
+            ("DRM_MODE_FLAG_NHSYNC" variable (:constant-flag t) nil [2363 2383])
+            ("DRM_MODE_FLAG_PVSYNC" variable (:constant-flag t) nil [2401 2421])
+            ("DRM_MODE_FLAG_NVSYNC" variable (:constant-flag t) nil [2439 2459])
+            ("DRM_MODE_FLAG_INTERLACE" variable (:constant-flag t) nil [2477 2500])
+            ("DRM_MODE_FLAG_DBLSCAN" variable (:constant-flag t) nil [2518 2539])
+            ("DRM_MODE_FLAG_CSYNC" variable (:constant-flag t) nil [2557 2576])
+            ("DRM_MODE_FLAG_PCSYNC" variable (:constant-flag t) nil [2594 2614])
+            ("DRM_MODE_FLAG_NCSYNC" variable (:constant-flag t) nil [2632 2652])
+            ("DRM_MODE_FLAG_HSKEW" variable (:constant-flag t) nil [2670 2689])
+            ("DRM_MODE_FLAG_BCAST" variable (:constant-flag t) nil [2728 2747])
+            ("DRM_MODE_FLAG_PIXMUX" variable (:constant-flag t) nil [2766 2786])
+            ("DRM_MODE_FLAG_DBLCLK" variable (:constant-flag t) nil [2805 2825])
+            ("DRM_MODE_FLAG_CLKDIV2" variable (:constant-flag t) nil [2844 2865])
+            ("DRM_MODE_FLAG_3D_MASK" variable (:constant-flag t) nil [3012 3033])
+            ("DRM_MODE_FLAG_3D_NONE" variable (:constant-flag t) nil [3056 3077])
+            ("DRM_MODE_FLAG_3D_FRAME_PACKING" variable (:constant-flag t) nil [3096 3126])
+            ("DRM_MODE_FLAG_3D_FIELD_ALTERNATIVE" variable (:constant-flag t) nil [3145 3179])
+            ("DRM_MODE_FLAG_3D_LINE_ALTERNATIVE" variable (:constant-flag t) nil [3197 3230])
+            ("DRM_MODE_FLAG_3D_SIDE_BY_SIDE_FULL" variable (:constant-flag t) nil [3248 3282])
+            ("DRM_MODE_FLAG_3D_L_DEPTH" variable (:constant-flag t) nil [3300 3324])
+            ("DRM_MODE_FLAG_3D_L_DEPTH_GFX_GFX_DEPTH" variable (:constant-flag t) nil [3343 3381])
+            ("DRM_MODE_FLAG_3D_TOP_AND_BOTTOM" variable (:constant-flag t) nil [3399 3430])
+            ("DRM_MODE_FLAG_3D_SIDE_BY_SIDE_HALF" variable (:constant-flag t) nil [3448 3482])
+            ("DRM_MODE_PICTURE_ASPECT_NONE" variable (:constant-flag t) nil [3535 3563])
+            ("DRM_MODE_PICTURE_ASPECT_4_3" variable (:constant-flag t) nil [3575 3602])
+            ("DRM_MODE_PICTURE_ASPECT_16_9" variable (:constant-flag t) nil [3614 3642])
+            ("DRM_MODE_FLAG_PIC_AR_MASK" variable (:constant-flag t) nil [3702 3727])
+            ("DRM_MODE_FLAG_PIC_AR_NONE" variable (:constant-flag t) nil [3749 3774])
+            ("DRM_MODE_FLAG_PIC_AR_4_3" variable (:constant-flag t) nil [3824 3848])
+            ("DRM_MODE_FLAG_PIC_AR_16_9" variable (:constant-flag t) nil [3897 3922])
+            ("DRM_MODE_DPMS_ON" variable (:constant-flag t) nil [4037 4053])
+            ("DRM_MODE_DPMS_STANDBY" variable (:constant-flag t) nil [4064 4085])
+            ("DRM_MODE_DPMS_SUSPEND" variable (:constant-flag t) nil [4096 4117])
+            ("DRM_MODE_DPMS_OFF" variable (:constant-flag t) nil [4128 4145])
+            ("DRM_MODE_SCALE_NONE" variable (:constant-flag t) nil [4184 4203])
+            ("DRM_MODE_SCALE_FULLSCREEN" variable (:constant-flag t) nil [4287 4312])
+            ("DRM_MODE_SCALE_CENTER" variable (:constant-flag t) nil [4356 4377])
+            ("DRM_MODE_SCALE_ASPECT" variable (:constant-flag t) nil [4416 4437])
+            ("DRM_MODE_DITHERING_OFF" variable (:constant-flag t) nil [4514 4536])
+            ("DRM_MODE_DITHERING_ON" variable (:constant-flag t) nil [4547 4568])
+            ("DRM_MODE_DITHERING_AUTO" variable (:constant-flag t) nil [4579 4602])
+            ("DRM_MODE_DIRTY_OFF" variable (:constant-flag t) nil [4639 4657])
+            ("DRM_MODE_DIRTY_ON" variable (:constant-flag t) nil [4673 4690])
+            ("DRM_MODE_DIRTY_ANNOTATE" variable (:constant-flag t) nil [4707 4730])
+            ("DRM_MODE_LINK_STATUS_GOOD" variable (:constant-flag t) nil [4768 4793])
+            ("DRM_MODE_LINK_STATUS_BAD" variable (:constant-flag t) nil [4804 4828])
+            ("DRM_MODE_ROTATE_0" variable (:constant-flag t) nil [5110 5127])
+            ("DRM_MODE_ROTATE_90" variable (:constant-flag t) nil [5149 5167])
+            ("DRM_MODE_ROTATE_180" variable (:constant-flag t) nil [5188 5207])
+            ("DRM_MODE_ROTATE_270" variable (:constant-flag t) nil [5227 5246])
+            ("DRM_MODE_ROTATE_MASK" variable (:constant-flag t) nil [5350 5370])
+            ("DRM_MODE_REFLECT_X" variable (:constant-flag t) nil [5764 5782])
+            ("DRM_MODE_REFLECT_Y" variable (:constant-flag t) nil [5803 5821])
+            ("DRM_MODE_REFLECT_MASK" variable (:constant-flag t) nil [5929 5950])
+            ("drm_mode_modeinfo" type
+               (:members 
+                  ( ("clock" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6031 6043])
+                    ("hdisplay" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6045 6060])
+                    ("hsync_start" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6062 6080])
+                    ("hsync_end" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6082 6098])
+                    ("htotal" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6100 6113])
+                    ("hskew" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6115 6127])
+                    ("vdisplay" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6129 6144])
+                    ("vsync_start" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6146 6164])
+                    ("vsync_end" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6166 6182])
+                    ("vtotal" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6184 6197])
+                    ("vscan" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6199 6211])
+                    ("vrefresh" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6214 6229])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6232 6244])
+                    ("type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6246 6257])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6259 6291]))                  
+                :type "struct")
+                nil [6003 6294])
+            ("drm_mode_card_res" type
+               (:members 
+                  ( ("fb_id_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6324 6340])
+                    ("crtc_id_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6342 6360])
+                    ("connector_id_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6362 6385])
+                    ("encoder_id_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6387 6408])
+                    ("count_fbs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6410 6426])
+                    ("count_crtcs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6428 6446])
+                    ("count_connectors" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6448 6471])
+                    ("count_encoders" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6473 6494])
+                    ("min_width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6496 6512])
+                    ("max_width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6514 6530])
+                    ("min_height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6532 6549])
+                    ("max_height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6551 6568]))                  
+                :type "struct")
+                nil [6296 6571])
+            ("drm_mode_crtc" type
+               (:members 
+                  ( ("set_connectors_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6597 6622])
+                    ("count_connectors" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6624 6647])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6650 6664])
+                    ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6677 6689])
+                    ("x" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6718 6726])
+                    ("y" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6766 6774])
+                    ("gamma_size" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6815 6832])
+                    ("mode_valid" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6834 6851])
+                    ("mode" variable (:type ("drm_mode_modeinfo" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6853 6883]))                  
+                :type "struct")
+                nil [6573 6886])
+            ("DRM_MODE_PRESENT_TOP_FIELD" variable (:constant-flag t) nil [6896 6922])
+            ("DRM_MODE_PRESENT_BOTTOM_FIELD" variable (:constant-flag t) nil [6938 6967])
+            ("drm_mode_set_plane" type
+               (:members 
+                  ( ("plane_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7064 7079])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7081 7095])
+                    ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7097 7109])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7156 7168])
+                    ("crtc_x" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7258 7271])
+                    ("crtc_y" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7273 7286])
+                    ("crtc_w" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7288 7301])
+                    ("crtc_h" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7303 7316])
+                    ("src_x" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7362 7374])
+                    ("src_y" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7376 7388])
+                    ("src_h" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7390 7402])
+                    ("src_w" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7404 7416]))                  
+                :type "struct")
+                nil [7035 7419])
+            ("drm_mode_get_plane" type
+               (:members 
+                  ( ("plane_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7450 7465])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7468 7482])
+                    ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7484 7496])
+                    ("possible_crtcs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7499 7520])
+                    ("gamma_size" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7522 7539])
+                    ("count_format_types" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7542 7567])
+                    ("format_type_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7569 7591]))                  
+                :type "struct")
+                nil [7421 7594])
+            ("drm_mode_get_plane_res" type
+               (:members 
+                  ( ("plane_id_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7629 7648])
+                    ("count_planes" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7650 7669]))                  
+                :type "struct")
+                nil [7596 7672])
+            ("DRM_MODE_ENCODER_NONE" variable (:constant-flag t) nil [7682 7703])
+            ("DRM_MODE_ENCODER_DAC" variable (:constant-flag t) nil [7714 7734])
+            ("DRM_MODE_ENCODER_TMDS" variable (:constant-flag t) nil [7745 7766])
+            ("DRM_MODE_ENCODER_LVDS" variable (:constant-flag t) nil [7777 7798])
+            ("DRM_MODE_ENCODER_TVDAC" variable (:constant-flag t) nil [7809 7831])
+            ("DRM_MODE_ENCODER_VIRTUAL" variable (:constant-flag t) nil [7842 7866])
+            ("DRM_MODE_ENCODER_DSI" variable (:constant-flag t) nil [7877 7897])
+            ("DRM_MODE_ENCODER_DPMST" variable (:constant-flag t) nil [7908 7930])
+            ("DRM_MODE_ENCODER_DPI" variable (:constant-flag t) nil [7941 7961])
+            ("drm_mode_get_encoder" type
+               (:members 
+                  ( ("encoder_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7996 8013])
+                    ("encoder_type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8015 8034])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8037 8051])
+                    ("possible_crtcs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8073 8094])
+                    ("possible_clones" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8096 8118]))                  
+                :type "struct")
+                nil [7965 8121])
+            ("drm_mode_subconnector" type
+               (:members 
+                  ( ("DRM_MODE_SUBCONNECTOR_Automatic" variable
+                       (:constant-flag t
+                        :default-value (8308 8309)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8274 8310])
+                    ("DRM_MODE_SUBCONNECTOR_Unknown" variable
+                       (:constant-flag t
+                        :default-value (8344 8345)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8312 8346])
+                    ("DRM_MODE_SUBCONNECTOR_DVID" variable
+                       (:constant-flag t
+                        :default-value (8377 8378)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8348 8379])
+                    ("DRM_MODE_SUBCONNECTOR_DVIA" variable
+                       (:constant-flag t
+                        :default-value (8410 8411)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8381 8412])
+                    ("DRM_MODE_SUBCONNECTOR_Composite" variable
+                       (:constant-flag t
+                        :default-value (8448 8449)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8414 8450])
+                    ("DRM_MODE_SUBCONNECTOR_SVIDEO" variable
+                       (:constant-flag t
+                        :default-value (8483 8484)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8452 8485])
+                    ("DRM_MODE_SUBCONNECTOR_Component" variable
+                       (:constant-flag t
+                        :default-value (8521 8522)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8487 8523])
+                    ("DRM_MODE_SUBCONNECTOR_SCART" variable
+                       (:constant-flag t
+                        :default-value (8555 8556)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8525 8557]))                  
+                :type "enum")
+                nil [8244 8560])
+            ("DRM_MODE_CONNECTOR_Unknown" variable (:constant-flag t) nil [8570 8596])
+            ("DRM_MODE_CONNECTOR_VGA" variable (:constant-flag t) nil [8607 8629])
+            ("DRM_MODE_CONNECTOR_DVII" variable (:constant-flag t) nil [8641 8664])
+            ("DRM_MODE_CONNECTOR_DVID" variable (:constant-flag t) nil [8676 8699])
+            ("DRM_MODE_CONNECTOR_DVIA" variable (:constant-flag t) nil [8711 8734])
+            ("DRM_MODE_CONNECTOR_Composite" variable (:constant-flag t) nil [8746 8774])
+            ("DRM_MODE_CONNECTOR_SVIDEO" variable (:constant-flag t) nil [8785 8810])
+            ("DRM_MODE_CONNECTOR_LVDS" variable (:constant-flag t) nil [8821 8844])
+            ("DRM_MODE_CONNECTOR_Component" variable (:constant-flag t) nil [8856 8884])
+            ("DRM_MODE_CONNECTOR_9PinDIN" variable (:constant-flag t) nil [8895 8921])
+            ("DRM_MODE_CONNECTOR_DisplayPort" variable (:constant-flag t) nil [8932 8962])
+            ("DRM_MODE_CONNECTOR_HDMIA" variable (:constant-flag t) nil [8974 8998])
+            ("DRM_MODE_CONNECTOR_HDMIB" variable (:constant-flag t) nil [9010 9034])
+            ("DRM_MODE_CONNECTOR_TV" variable (:constant-flag t) nil [9046 9067])
+            ("DRM_MODE_CONNECTOR_eDP" variable (:constant-flag t) nil [9080 9102])
+            ("DRM_MODE_CONNECTOR_VIRTUAL" variable (:constant-flag t) nil [9115 9141])
+            ("DRM_MODE_CONNECTOR_DSI" variable (:constant-flag t) nil [9158 9180])
+            ("DRM_MODE_CONNECTOR_DPI" variable (:constant-flag t) nil [9193 9215])
+            ("drm_mode_get_connector" type
+               (:members 
+                  ( ("encoders_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9255 9274])
+                    ("modes_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9276 9292])
+                    ("props_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9294 9310])
+                    ("prop_values_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9312 9334])
+                    ("count_modes" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9337 9355])
+                    ("count_props" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9357 9375])
+                    ("count_encoders" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9377 9398])
+                    ("encoder_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9401 9418])
+                    ("connector_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9444 9463])
+                    ("connector_type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9476 9497])
+                    ("connector_type_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9499 9523])
+                    ("connection" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9526 9543])
+                    ("mm_width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9545 9560])
+                    ("mm_height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9592 9608])
+                    ("subpixel" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9640 9655])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9658 9668]))                  
+                :type "struct")
+                nil [9221 9671])
+            ("DRM_MODE_PROP_PENDING" variable (:constant-flag t) nil [9681 9702])
+            ("DRM_MODE_PROP_RANGE" variable (:constant-flag t) nil [9718 9737])
+            ("DRM_MODE_PROP_IMMUTABLE" variable (:constant-flag t) nil [9753 9776])
+            ("DRM_MODE_PROP_ENUM" variable (:constant-flag t) nil [9792 9810])
+            ("DRM_MODE_PROP_BLOB" variable (:constant-flag t) nil [9866 9884])
+            ("DRM_MODE_PROP_BITMASK" variable (:constant-flag t) nil [9900 9921])
+            ("DRM_MODE_PROP_LEGACY_TYPE" variable (:constant-flag t) nil [10032 10057])
+            ("DRM_MODE_PROP_EXTENDED_TYPE" variable (:constant-flag t) nil [10299 10326])
+            ("DRM_MODE_PROP_TYPE" variable (:constant-flag t) nil [10346 10364])
+            ("DRM_MODE_PROP_OBJECT" variable (:constant-flag t) nil [10388 10408])
+            ("DRM_MODE_PROP_SIGNED_RANGE" variable (:constant-flag t) nil [10440 10466])
+            ("DRM_MODE_PROP_ATOMIC" variable (:constant-flag t) nil [10783 10803])
+            ("drm_mode_property_enum" type
+               (:members 
+                  ( ("value" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10856 10868])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10870 10899]))                  
+                :type "struct")
+                nil [10823 10902])
+            ("drm_mode_get_property" type
+               (:members 
+                  ( ("values_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10936 10953])
+                    ("enum_blob_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10985 11005])
+                    ("prop_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11036 11050])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11052 11064])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11066 11095])
+                    ("count_values" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11098 11117])
+                    ("count_enum_blobs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11257 11280]))                  
+                :type "struct")
+                nil [10904 11283])
+            ("drm_mode_connector_set_property" type
+               (:members 
+                  ( ("value" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11327 11339])
+                    ("prop_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11341 11355])
+                    ("connector_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11357 11376]))                  
+                :type "struct")
+                nil [11285 11379])
+            ("DRM_MODE_OBJECT_CRTC" variable (:constant-flag t) nil [11389 11409])
+            ("DRM_MODE_OBJECT_CONNECTOR" variable (:constant-flag t) nil [11429 11454])
+            ("DRM_MODE_OBJECT_ENCODER" variable (:constant-flag t) nil [11474 11497])
+            ("DRM_MODE_OBJECT_MODE" variable (:constant-flag t) nil [11517 11537])
+            ("DRM_MODE_OBJECT_PROPERTY" variable (:constant-flag t) nil [11557 11581])
+            ("DRM_MODE_OBJECT_FB" variable (:constant-flag t) nil [11601 11619])
+            ("DRM_MODE_OBJECT_BLOB" variable (:constant-flag t) nil [11639 11659])
+            ("DRM_MODE_OBJECT_PLANE" variable (:constant-flag t) nil [11679 11700])
+            ("DRM_MODE_OBJECT_ANY" variable (:constant-flag t) nil [11720 11739])
+            ("drm_mode_obj_get_properties" type
+               (:members 
+                  ( ("props_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11781 11797])
+                    ("prop_values_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11799 11821])
+                    ("count_props" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11823 11841])
+                    ("obj_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11843 11856])
+                    ("obj_type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11858 11873]))                  
+                :type "struct")
+                nil [11743 11876])
+            ("drm_mode_obj_set_property" type
+               (:members 
+                  ( ("value" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11914 11926])
+                    ("prop_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11928 11942])
+                    ("obj_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11944 11957])
+                    ("obj_type" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11959 11974]))                  
+                :type "struct")
+                nil [11878 11977])
+            ("drm_mode_get_blob" type
+               (:members 
+                  ( ("blob_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12007 12021])
+                    ("length" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12023 12036])
+                    ("data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12038 12049]))                  
+                :type "struct")
+                nil [11979 12052])
+            ("drm_mode_fb_cmd" type
+               (:members 
+                  ( ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12080 12092])
+                    ("width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12094 12106])
+                    ("height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12108 12121])
+                    ("pitch" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12123 12135])
+                    ("bpp" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12137 12147])
+                    ("depth" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12149 12161])
+                    ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12193 12206]))                  
+                :type "struct")
+                nil [12054 12209])
+            ("DRM_MODE_FB_INTERLACED" variable (:constant-flag t) nil [12219 12241])
+            ("DRM_MODE_FB_MODIFIERS" variable (:constant-flag t) nil [12291 12312])
+            ("drm_mode_fb_cmd2" type
+               (:members 
+                  ( ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12374 12386])
+                    ("width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12388 12400])
+                    ("height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12402 12415])
+                    ("pixel_format" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12417 12436])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12474 12486])
+                    ("handles" variable
+                       (:dereference 1
+                        :type ("__u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13543 13560])
+                    ("pitches" variable
+                       (:dereference 1
+                        :type ("__u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13562 13579])
+                    ("offsets" variable
+                       (:dereference 1
+                        :type ("__u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13608 13625])
+                    ("modifier" variable
+                       (:dereference 1
+                        :type ("__u64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13654 13672]))                  
+                :type "struct")
+                nil [12347 13702])
+            ("DRM_MODE_FB_DIRTY_ANNOTATE_COPY" variable (:constant-flag t) nil [13712 13743])
+            ("DRM_MODE_FB_DIRTY_ANNOTATE_FILL" variable (:constant-flag t) nil [13757 13788])
+            ("DRM_MODE_FB_DIRTY_FLAGS" variable (:constant-flag t) nil [13802 13825])
+            ("DRM_MODE_FB_DIRTY_MAX_CLIPS" variable (:constant-flag t) nil [13848 13875])
+            ("drm_mode_fb_dirty_cmd" type
+               (:members 
+                  ( ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15045 15057])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15059 15071])
+                    ("color" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15073 15085])
+                    ("num_clips" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15087 15103])
+                    ("clips_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15105 15121]))                  
+                :type "struct")
+                nil [15013 15124])
+            ("drm_mode_mode_cmd" type
+               (:members 
+                  ( ("connector_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15154 15173])
+                    ("mode" variable (:type ("drm_mode_modeinfo" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [15175 15205]))                  
+                :type "struct")
+                nil [15126 15208])
+            ("DRM_MODE_CURSOR_BO" variable (:constant-flag t) nil [15218 15236])
+            ("DRM_MODE_CURSOR_MOVE" variable (:constant-flag t) nil [15250 15270])
+            ("DRM_MODE_CURSOR_FLAGS" variable (:constant-flag t) nil [15284 15305])
+            ("drm_mode_cursor" type
+               (:members 
+                  ( ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15562 15574])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15576 15590])
+                    ("x" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15592 15600])
+                    ("y" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15602 15610])
+                    ("width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15612 15624])
+                    ("height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15626 15639])
+                    ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15671 15684]))                  
+                :type "struct")
+                nil [15536 15687])
+            ("drm_mode_cursor2" type
+               (:members 
+                  ( ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15716 15728])
+                    ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15730 15744])
+                    ("x" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15746 15754])
+                    ("y" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15756 15764])
+                    ("width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15766 15778])
+                    ("height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15780 15793])
+                    ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15825 15838])
+                    ("hot_x" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15840 15852])
+                    ("hot_y" variable (:type ("__s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15854 15866]))                  
+                :type "struct")
+                nil [15689 15869])
+            ("drm_mode_crtc_lut" type
+               (:members 
+                  ( ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15899 15913])
+                    ("gamma_size" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15915 15932])
+                    ("red" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15961 15971])
+                    ("green" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15973 15985])
+                    ("blue" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15987 15998]))                  
+                :type "struct")
+                nil [15871 16001])
+            ("drm_color_ctm" type
+               (:members 
+                  ( ("matrix" variable
+                       (:dereference 1
+                        :type ("__s64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16070 16086]))                  
+                :type "struct")
+                nil [16003 16089])
+            ("drm_color_lut" type
+               (:members 
+                  ( ("red" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16162 16172])
+                    ("green" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16174 16186])
+                    ("blue" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16188 16199])
+                    ("reserved" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16201 16216]))                  
+                :type "struct")
+                nil [16091 16219])
+            ("DRM_MODE_PAGE_FLIP_EVENT" variable (:constant-flag t) nil [16229 16253])
+            ("DRM_MODE_PAGE_FLIP_ASYNC" variable (:constant-flag t) nil [16267 16291])
+            ("DRM_MODE_PAGE_FLIP_TARGET_ABSOLUTE" variable (:constant-flag t) nil [16305 16339])
+            ("DRM_MODE_PAGE_FLIP_TARGET_RELATIVE" variable (:constant-flag t) nil [16352 16386])
+            ("DRM_MODE_PAGE_FLIP_TARGET" variable (:constant-flag t) nil [16399 16424])
+            ("DRM_MODE_PAGE_FLIP_FLAGS" variable (:constant-flag t) nil [16516 16540])
+            ("drm_mode_crtc_page_flip" type
+               (:members 
+                  ( ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17707 17721])
+                    ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17723 17735])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17737 17749])
+                    ("reserved" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17751 17766])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17768 17784]))                  
+                :type "struct")
+                nil [17673 17787])
+            ("drm_mode_crtc_page_flip_target" type
+               (:members 
+                  ( ("crtc_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18765 18779])
+                    ("fb_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18781 18793])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18795 18807])
+                    ("sequence" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18809 18824])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18826 18842]))                  
+                :type "struct")
+                nil [18724 18845])
+            ("drm_mode_create_dumb" type
+               (:members 
+                  ( ("height" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18913 18926])
+                    ("width" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18928 18940])
+                    ("bpp" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18942 18952])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18954 18966])
+                    ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19012 19025])
+                    ("pitch" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19027 19039])
+                    ("size" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19041 19052]))                  
+                :type "struct")
+                nil [18882 19055])
+            ("drm_mode_map_dumb" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19176 19189])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19191 19201])
+                    ("offset" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19320 19333]))                  
+                :type "struct")
+                nil [19104 19336])
+            ("drm_mode_destroy_dumb" type
+               (:members 
+                  ( ("handle" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19370 19383]))                  
+                :type "struct")
+                nil [19338 19386])
+            ("DRM_MODE_ATOMIC_TEST_ONLY" variable (:constant-flag t) nil [19435 19460])
+            ("DRM_MODE_ATOMIC_NONBLOCK" variable (:constant-flag t) nil [19476 19500])
+            ("DRM_MODE_ATOMIC_ALLOW_MODESET" variable (:constant-flag t) nil [19517 19546])
+            ("DRM_MODE_ATOMIC_FLAGS" variable (:constant-flag t) nil [19563 19584])
+            ("drm_mode_atomic" type
+               (:members 
+                  ( ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19769 19781])
+                    ("count_objs" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19783 19800])
+                    ("objs_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19802 19817])
+                    ("count_props_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19819 19841])
+                    ("props_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19843 19859])
+                    ("prop_values_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19861 19883])
+                    ("reserved" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19885 19900])
+                    ("user_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19902 19918]))                  
+                :type "struct")
+                nil [19743 19921])
+            ("drm_format_modifier_blob" type
+               (:members 
+                  ( ("FORMAT_BLOB_CURRENT" variable (:constant-flag t) (reparse-symbol classsubparts) [19965 19984])
+                    ("version" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20023 20037])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20053 20065])
+                    ("count_formats" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20110 20130])
+                    ("formats_offset" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20188 20209])
+                    ("count_modifiers" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20250 20272])
+                    ("modifiers_offset" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20332 20355]))                  
+                :type "struct")
+                nil [19923 20428])
+            ("drm_format_modifier" type
+               (:members 
+                  ( ("formats" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20962 20976])
+                    ("offset" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20978 20991])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20993 21003])
+                    ("modifier" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21078 21093]))                  
+                :type "struct")
+                nil [20430 21096])
+            ("drm_mode_create_blob" type
+               (:members 
+                  ( ("data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21278 21289])
+                    ("length" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21323 21336])
+                    ("blob_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21371 21385]))                  
+                :type "struct")
+                nil [21214 21388])
+            ("drm_mode_destroy_blob" type
+               (:members 
+                  ( ("blob_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21471 21485]))                  
+                :type "struct")
+                nil [21439 21488])
+            ("drm_mode_create_lease" type
+               (:members 
+                  ( ("object_ids" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21631 21648])
+                    ("object_count" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21679 21698])
+                    ("flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21742 21754])
+                    ("lessee_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21803 21819])
+                    ("fd" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21876 21885]))                  
+                :type "struct")
+                nil [21552 21888])
+            ("drm_mode_list_lessees" type
+               (:members 
+                  ( ("count_lessees" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22198 22218])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22220 22230])
+                    ("lessees_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22304 22322]))                  
+                :type "struct")
+                nil [21931 22325])
+            ("drm_mode_get_lease" type
+               (:members 
+                  ( ("count_objects" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22628 22648])
+                    ("pad" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22650 22660])
+                    ("objects_ptr" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22734 22752]))                  
+                :type "struct")
+                nil [22357 22755])
+            ("drm_mode_revoke_lease" type
+               (:members 
+                  ( ("lessee_id" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22843 22859]))                  
+                :type "struct")
+                nil [22781 22862]))          
+      :file "drm_mode.h"
+      :pointmax 22906
+      :fsize 22905
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_DRM_MODE_H")
+          ("DRM_MODE_FLAG_NCSYNC" . ((semantic-list "(1<<8)" 2655 . 2661)))
+          ("DRM_MODE_FLAG_BCAST" . ((semantic-list "(1<<10)" 2750 . 2757)))
+          ("DRM_MODE_FLAG_3D_FIELD_ALTERNATIVE" . ((semantic-list "(2<<14)" 3180 . 3187)))
+          ("DRM_MODE_FLAG_3D_SIDE_BY_SIDE_FULL" . ((semantic-list "(4<<14)" 3283 . 3290)))
+          ("DRM_MODE_FLAG_PIC_AR_16_9" . ((semantic-list "(DRM_MODE_PICTURE_ASPECT_16_9<<19)" 3928 . 3962)))
+          ("DRM_MODE_ENCODER_TVDAC" . ((number "4" 7832 . 7833)))
+          ("DRM_MODE_PROP_SIGNED_RANGE" . ((symbol "DRM_MODE_PROP_TYPE" 10467 . 10485) (semantic-list "(2)" 10485 . 10488)))
+          ("DRM_MODE_OBJECT_MODE" . ((number "0xdededede" 11538 . 11548)))
+          ("DRM_MODE_FB_INTERLACED" . ((semantic-list "(1<<0)" 12242 . 12248)))
+          ("DRM_MODE_FB_DIRTY_ANNOTATE_FILL" . ((number "0x02" 13789 . 13793)))
+          ("DRM_MODE_FB_DIRTY_MAX_CLIPS" . ((number "256" 13880 . 13883)))
+          ("DRM_MODE_PAGE_FLIP_TARGET" . ((semantic-list "(DRM_MODE_PAGE_FLIP_TARGET_ABSOLUTE | \\
+				   DRM_MODE_PAGE_FLIP_TARGET_RELATIVE)" 16425 . 16507)))
+          ("DRM_MODE_ATOMIC_ALLOW_MODESET" . ((number "0x0400" 19547 . 19553)))
+          ("DRM_CONNECTOR_NAME_LEN" . ((number "32" 1521 . 1523)))
+          ("DRM_MODE_FLAG_DBLSCAN" . ((semantic-list "(1<<5)" 2542 . 2548)))
+          ("DRM_MODE_FLAG_PIXMUX" . ((semantic-list "(1<<11)" 2789 . 2796)))
+          ("DRM_MODE_SCALE_NONE" . ((number "0" 4205 . 4206)))
+          ("DRM_MODE_ROTATE_180" . ((semantic-list "(1<<2)" 5212 . 5218)))
+          ("DRM_MODE_ENCODER_NONE" . ((number "0" 7704 . 7705)))
+          ("DRM_MODE_CONNECTOR_eDP" . ((number "14" 9104 . 9106)))
+          ("DRM_MODE_CONNECTOR_VIRTUAL" . ((number "15" 9147 . 9149)))
+          ("DRM_MODE_ATOMIC_FLAGS" . ((semantic-list "(\\
+		DRM_MODE_PAGE_FLIP_EVENT |\\
+		DRM_MODE_PAGE_FLIP_ASYNC |\\
+		DRM_MODE_ATOMIC_TEST_ONLY |\\
+		DRM_MODE_ATOMIC_NONBLOCK |\\
+		DRM_MODE_ATOMIC_ALLOW_MODESET)" 19585 . 19741)))
+          ("DRM_DISPLAY_INFO_LEN" . ((number "32" 1487 . 1489)))
+          ("DRM_PROP_NAME_LEN" . ((number "32" 1582 . 1584)))
+          ("DRM_MODE_FLAG_NHSYNC" . ((semantic-list "(1<<1)" 2386 . 2392)))
+          ("DRM_MODE_FLAG_3D_L_DEPTH" . ((semantic-list "(5<<14)" 3326 . 3333)))
+          ("DRM_MODE_PICTURE_ASPECT_4_3" . ((number "1" 3604 . 3605)))
+          ("DRM_MODE_PICTURE_ASPECT_16_9" . ((number "2" 3644 . 3645)))
+          ("DRM_MODE_DPMS_SUSPEND" . ((number "2" 4118 . 4119)))
+          ("DRM_MODE_CONNECTOR_LVDS" . ((number "7" 8846 . 8847)))
+          ("DRM_MODE_CONNECTOR_DSI" . ((number "16" 9182 . 9184)))
+          ("DRM_MODE_OBJECT_ENCODER" . ((number "0xe0e0e0e0" 11498 . 11508)))
+          ("DRM_MODE_FB_DIRTY_FLAGS" . ((number "0x03" 13834 . 13838)))
+          ("DRM_MODE_CURSOR_MOVE" . ((number "0x02" 15271 . 15275)))
+          ("DRM_MODE_FLAG_DBLCLK" . ((semantic-list "(1<<12)" 2828 . 2835)))
+          ("DRM_MODE_DPMS_OFF" . ((number "3" 4146 . 4147)))
+          ("DRM_MODE_SCALE_CENTER" . ((number "2" 4379 . 4380)))
+          ("DRM_MODE_DITHERING_ON" . ((number "1" 4569 . 4570)))
+          ("DRM_MODE_CONNECTOR_VGA" . ((number "1" 8631 . 8632)))
+          ("DRM_MODE_CONNECTOR_9PinDIN" . ((number "9" 8922 . 8923)))
+          ("DRM_MODE_PROP_OBJECT" . ((symbol "DRM_MODE_PROP_TYPE" 10410 . 10428) (semantic-list "(1)" 10428 . 10431)))
+          ("FORMAT_BLOB_CURRENT" . ((number "1" 19985 . 19986)))
+          ("DRM_MODE_TYPE_DEFAULT" . ((semantic-list "(1<<4)" 1817 . 1823)))
+          ("DRM_MODE_FLAG_INTERLACE" . ((semantic-list "(1<<4)" 2503 . 2509)))
+          ("DRM_MODE_DPMS_STANDBY" . ((number "1" 4086 . 4087)))
+          ("DRM_MODE_ENCODER_DSI" . ((number "6" 7898 . 7899)))
+          ("DRM_MODE_CONNECTOR_DVIA" . ((number "4" 8736 . 8737)))
+          ("DRM_MODE_CONNECTOR_DisplayPort" . ((number "10" 8963 . 8965)))
+          ("DRM_MODE_PROP_BITMASK" . ((semantic-list "(1<<5)" 9922 . 9928)))
+          ("DRM_MODE_PAGE_FLIP_EVENT" . ((number "0x01" 16254 . 16258)))
+          ("DRM_MODE_PAGE_FLIP_FLAGS" . ((semantic-list "(DRM_MODE_PAGE_FLIP_EVENT | \\
+				  DRM_MODE_PAGE_FLIP_ASYNC | \\
+				  DRM_MODE_PAGE_FLIP_TARGET)" 16541 . 16638)))
+          ("DRM_MODE_TYPE_PREFERRED" . ((semantic-list "(1<<3)" 1780 . 1786)))
+          ("DRM_MODE_FLAG_NVSYNC" . ((semantic-list "(1<<3)" 2462 . 2468)))
+          ("DRM_MODE_FLAG_PCSYNC" . ((semantic-list "(1<<7)" 2617 . 2623)))
+          ("DRM_MODE_FLAG_CLKDIV2" . ((semantic-list "(1<<13)" 2868 . 2875)))
+          ("DRM_MODE_FLAG_PIC_AR_MASK" . ((semantic-list "(0x0F<<19)" 3729 . 3739)))
+          ("DRM_MODE_ROTATE_0" . ((semantic-list "(1<<0)" 5134 . 5140)))
+          ("DRM_MODE_CONNECTOR_HDMIA" . ((number "11" 8999 . 9001)))
+          ("DRM_MODE_OBJECT_FB" . ((number "0xfbfbfbfb" 11620 . 11630)))
+          ("DRM_MODE_OBJECT_BLOB" . ((number "0xbbbbbbbb" 11660 . 11670)))
+          ("DRM_DISPLAY_MODE_LEN" . ((number "32" 1553 . 1555)))
+          ("DRM_MODE_TYPE_CLOCK_C" . ((semantic-list "((1<<1) | DRM_MODE_TYPE_BUILTIN)" 1653 . 1685)))
+          ("DRM_MODE_FLAG_3D_LINE_ALTERNATIVE" . ((semantic-list "(3<<14)" 3231 . 3238)))
+          ("DRM_MODE_REFLECT_MASK" . ((semantic-list "(\\
+		DRM_MODE_REFLECT_X | \\
+		DRM_MODE_REFLECT_Y)" 5951 . 6000)))
+          ("DRM_MODE_CONNECTOR_Unknown" . ((number "0" 8597 . 8598)))
+          ("DRM_MODE_CONNECTOR_HDMIB" . ((number "12" 9035 . 9037)))
+          ("DRM_MODE_CONNECTOR_DPI" . ((number "17" 9217 . 9219)))
+          ("DRM_MODE_PROP_RANGE" . ((semantic-list "(1<<1)" 9738 . 9744)))
+          ("DRM_MODE_OBJECT_PLANE" . ((number "0xeeeeeeee" 11701 . 11711)))
+          ("DRM_MODE_CURSOR_BO" . ((number "0x01" 15237 . 15241)))
+          ("DRM_MODE_FLAG_PHSYNC" . ((semantic-list "(1<<0)" 2348 . 2354)))
+          ("DRM_MODE_FLAG_HSKEW" . ((semantic-list "(1<<9)" 2692 . 2698)))
+          ("DRM_MODE_FLAG_PIC_AR_NONE" . ((semantic-list "(DRM_MODE_PICTURE_ASPECT_NONE<<19)" 3780 . 3814)))
+          ("DRM_MODE_SCALE_ASPECT" . ((number "3" 4439 . 4440)))
+          ("DRM_MODE_DIRTY_OFF" . ((number "0" 4663 . 4664)))
+          ("DRM_MODE_LINK_STATUS_GOOD" . ((number "0" 4794 . 4795)))
+          ("DRM_MODE_ROTATE_270" . ((semantic-list "(1<<3)" 5251 . 5257)))
+          ("DRM_MODE_ENCODER_LVDS" . ((number "3" 7799 . 7800)))
+          ("DRM_MODE_ENCODER_DPMST" . ((number "7" 7931 . 7932)))
+          ("DRM_MODE_CONNECTOR_DVID" . ((number "3" 8701 . 8702)))
+          ("DRM_MODE_CONNECTOR_Component" . ((number "8" 8885 . 8886)))
+          ("DRM_MODE_PROP_IMMUTABLE" . ((semantic-list "(1<<2)" 9777 . 9783)))
+          ("DRM_MODE_OBJECT_PROPERTY" . ((number "0xb0b0b0b0" 11582 . 11592)))
+          ("DRM_MODE_FLAG_CSYNC" . ((semantic-list "(1<<6)" 2579 . 2585)))
+          ("DRM_MODE_FLAG_3D_MASK" . ((semantic-list "(0x1f<<14)" 3036 . 3046)))
+          ("DRM_MODE_ENCODER_DPI" . ((number "8" 7962 . 7963)))
+          ("DRM_MODE_PROP_PENDING" . ((semantic-list "(1<<0)" 9703 . 9709)))
+          ("DRM_MODE_PROP_ENUM" . ((semantic-list "(1<<3)" 9811 . 9817)))
+          ("DRM_MODE_PROP_TYPE" (spp-arg-list ("n") 10364 . 10367) . ((semantic-list "((n) << 6)" 10369 . 10379)))
+          ("DRM_MODE_CURSOR_FLAGS" . ((number "0x03" 15306 . 15310)))
+          ("DRM_MODE_FLAG_3D_TOP_AND_BOTTOM" . ((semantic-list "(7<<14)" 3431 . 3438)))
+          ("DRM_MODE_PICTURE_ASPECT_NONE" . ((number "0" 3565 . 3566)))
+          ("DRM_MODE_DPMS_ON" . ((number "0" 4054 . 4055)))
+          ("DRM_MODE_DITHERING_AUTO" . ((number "2" 4603 . 4604)))
+          ("DRM_MODE_DIRTY_ON" . ((number "1" 4697 . 4698)))
+          ("DRM_MODE_REFLECT_X" . ((semantic-list "(1<<4)" 5788 . 5794)))
+          ("DRM_MODE_ENCODER_DAC" . ((number "1" 7735 . 7736)))
+          ("DRM_MODE_CONNECTOR_SVIDEO" . ((number "6" 8811 . 8812)))
+          ("DRM_MODE_PROP_LEGACY_TYPE" . ((semantic-list "( \\
+		DRM_MODE_PROP_RANGE | \\
+		DRM_MODE_PROP_ENUM | \\
+		DRM_MODE_PROP_BLOB | \\
+		DRM_MODE_PROP_BITMASK)" 10059 . 10163)))
+          ("DRM_MODE_PROP_ATOMIC" . ((number "0x80000000" 10811 . 10821)))
+          ("DRM_MODE_OBJECT_CONNECTOR" . ((number "0xc0c0c0c0" 11455 . 11465)))
+          ("DRM_MODE_PAGE_FLIP_ASYNC" . ((number "0x02" 16292 . 16296)))
+          ("DRM_MODE_TYPE_CRTC_C" . ((semantic-list "((1<<2) | DRM_MODE_TYPE_BUILTIN)" 1715 . 1747)))
+          ("DRM_MODE_FLAG_PVSYNC" . ((semantic-list "(1<<2)" 2424 . 2430)))
+          ("DRM_MODE_FLAG_3D_NONE" . ((semantic-list "(0<<14)" 3079 . 3086)))
+          ("DRM_MODE_DITHERING_OFF" . ((number "0" 4537 . 4538)))
+          ("DRM_MODE_DIRTY_ANNOTATE" . ((number "2" 4731 . 4732)))
+          ("DRM_MODE_LINK_STATUS_BAD" . ((number "1" 4829 . 4830)))
+          ("DRM_MODE_REFLECT_Y" . ((semantic-list "(1<<5)" 5827 . 5833)))
+          ("DRM_MODE_PRESENT_TOP_FIELD" . ((semantic-list "(1<<0)" 6923 . 6929)))
+          ("DRM_MODE_ENCODER_VIRTUAL" . ((number "5" 7867 . 7868)))
+          ("DRM_MODE_PROP_BLOB" . ((semantic-list "(1<<4)" 9885 . 9891)))
+          ("DRM_MODE_PROP_EXTENDED_TYPE" . ((number "0x0000ffc0" 10327 . 10337)))
+          ("DRM_MODE_PAGE_FLIP_TARGET_RELATIVE" . ((number "0x8" 16387 . 16390)))
+          ("DRM_MODE_FLAG_3D_L_DEPTH_GFX_GFX_DEPTH" . ((semantic-list "(6<<14)" 3382 . 3389)))
+          ("DRM_MODE_FLAG_3D_SIDE_BY_SIDE_HALF" . ((semantic-list "(8<<14)" 3483 . 3490)))
+          ("DRM_MODE_FLAG_PIC_AR_4_3" . ((semantic-list "(DRM_MODE_PICTURE_ASPECT_4_3<<19)" 3854 . 3887)))
+          ("DRM_MODE_ROTATE_90" . ((semantic-list "(1<<1)" 5173 . 5179)))
+          ("DRM_MODE_ROTATE_MASK" . ((semantic-list "(\\
+		DRM_MODE_ROTATE_0  | \\
+		DRM_MODE_ROTATE_90  | \\
+		DRM_MODE_ROTATE_180 | \\
+		DRM_MODE_ROTATE_270)" 5371 . 5473)))
+          ("DRM_MODE_OBJECT_CRTC" . ((number "0xcccccccc" 11410 . 11420)))
+          ("DRM_MODE_OBJECT_ANY" . ((number "0" 11740 . 11741)))
+          ("DRM_MODE_FB_DIRTY_ANNOTATE_COPY" . ((number "0x01" 13744 . 13748)))
+          ("DRM_MODE_ATOMIC_TEST_ONLY" . ((number "0x0100" 19461 . 19467)))
+          ("DRM_MODE_ATOMIC_NONBLOCK" . ((number "0x0200" 19502 . 19508)))
+          ("DRM_MODE_TYPE_BUILTIN" . ((semantic-list "(1<<0)" 1616 . 1622)))
+          ("DRM_MODE_TYPE_USERDEF" . ((semantic-list "(1<<5)" 1854 . 1860)))
+          ("DRM_MODE_TYPE_DRIVER" . ((semantic-list "(1<<6)" 1890 . 1896)))
+          ("DRM_MODE_FLAG_3D_FRAME_PACKING" . ((semantic-list "(1<<14)" 3128 . 3135)))
+          ("DRM_MODE_SCALE_FULLSCREEN" . ((number "1" 4313 . 4314)))
+          ("DRM_MODE_PRESENT_BOTTOM_FIELD" . ((semantic-list "(1<<1)" 6968 . 6974)))
+          ("DRM_MODE_ENCODER_TMDS" . ((number "2" 7767 . 7768)))
+          ("DRM_MODE_CONNECTOR_DVII" . ((number "2" 8666 . 8667)))
+          ("DRM_MODE_CONNECTOR_Composite" . ((number "5" 8775 . 8776)))
+          ("DRM_MODE_CONNECTOR_TV" . ((number "13" 9069 . 9071)))
+          ("DRM_MODE_FB_MODIFIERS" . ((semantic-list "(1<<1)" 12313 . 12319)))
+          ("DRM_MODE_PAGE_FLIP_TARGET_ABSOLUTE" . ((number "0x4" 16340 . 16343)))
+          )
+))
+  :file "!home!maurice!linux-4.16.13!include!uapi!drm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

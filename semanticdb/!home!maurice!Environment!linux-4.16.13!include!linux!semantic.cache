@@ -1,0 +1,983 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_CPUMASK_H" variable (:constant-flag t) nil [74 91])
+            ("linux/kernel.h" include (:system-flag t) nil [282 307])
+            ("linux/threads.h" include (:system-flag t) nil [308 334])
+            ("linux/bitmap.h" include (:system-flag t) nil [335 360])
+            ("linux/bug.h" include (:system-flag t) nil [361 383])
+            ("cpumask" type
+               (:members 
+                  ( ("DECLARE_BITMAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("bits" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [482 487])
+                            ("" variable (:type ("NR_CPUS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 496]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [467 497]))                  
+                :type "struct")
+                nil [442 510])
+            ("cpumask_t" type
+               (:typedef ("cpumask" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [442 510])
+            ("cpumask_bits" variable (:constant-flag t) nil [716 728])
+            ("cpumask_pr_args" variable (:constant-flag t) nil [933 948])
+            ("nr_cpu_ids" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [1036 1067])
+            ("nr_cpumask_bits" variable (:constant-flag t) nil [1264 1279])
+            ("__cpu_possible_mask" variable
+               (:typemodifiers ("extern")
+                :type ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3195 3237])
+            ("__cpu_online_mask" variable
+               (:typemodifiers ("extern")
+                :type ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3238 3278])
+            ("__cpu_present_mask" variable
+               (:typemodifiers ("extern")
+                :type ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3279 3320])
+            ("__cpu_active_mask" variable
+               (:typemodifiers ("extern")
+                :type ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3321 3361])
+            ("cpu_possible_mask" variable (:constant-flag t) nil [3370 3387])
+            ("cpu_online_mask" variable (:constant-flag t) nil [3443 3458])
+            ("cpu_present_mask" variable (:constant-flag t) nil [3514 3530])
+            ("cpu_active_mask" variable (:constant-flag t) nil [3586 3601])
+            ("num_online_cpus" variable (:constant-flag t) nil [4186 4201])
+            ("num_possible_cpus" variable (:constant-flag t) nil [4215 4232])
+            ("num_present_cpus" variable (:constant-flag t) nil [4246 4262])
+            ("num_active_cpus" variable (:constant-flag t) nil [4276 4291])
+            ("cpu_online" variable (:constant-flag t) nil [4305 4315])
+            ("cpu_possible" variable (:constant-flag t) nil [4343 4355])
+            ("cpu_present" variable (:constant-flag t) nil [4382 4393])
+            ("cpu_active" variable (:constant-flag t) nil [4420 4430])
+            ("cpumask_check" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4548 4565]))                  
+                :type "unsigned int")
+                nil [4507 4693])
+            ("cpumask_first" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6134 6161]))                  
+                :type "unsigned int")
+                nil [6093 6226])
+            ("cpumask_last" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6405 6432]))                  
+                :type "unsigned int")
+                nil [6365 6496])
+            ("cpumask_next" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6524 6530])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6531 6558]))                  
+                :type "unsigned int")
+                nil [6498 6559])
+            ("cpumask_next_zero" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6827 6833])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6834 6861]))                  
+                :type "unsigned int")
+                nil [6782 7000])
+            ("cpumask_next_and" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [7023 7029])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7030 7053])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7054 7077]))                  
+                :type "int")
+                nil [7002 7078])
+            ("cpumask_any_but" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7099 7126])
+                    ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7127 7144]))                  
+                :type "int")
+                nil [7079 7145])
+            ("cpumask_local_spread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7180 7195])
+                    ("node" variable (:type "int") (reparse-symbol arg-sub-list) [7196 7205]))                  
+                :type "unsigned int")
+                nil [7146 7206])
+            ("for_each_cpu" variable (:constant-flag t) nil [7401 7413])
+            ("for_each_cpu_not" variable (:constant-flag t) nil [7728 7744])
+            ("cpumask_next_wrap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [7884 7890])
+                    ("mask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7891 7918])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [7919 7929])
+                    ("wrap" variable (:type "bool") (reparse-symbol arg-sub-list) [7930 7940]))                  
+                :type "int")
+                nil [7855 7941])
+            ("for_each_cpu_wrap" variable (:constant-flag t) nil [8289 8306])
+            ("for_each_cpu_and" variable (:constant-flag t) nil [8915 8931])
+            ("CPU_BITS_NONE" variable (:constant-flag t) nil [9080 9093])
+            ("CPU_BITS_CPU0" variable (:constant-flag t) nil [9167 9180])
+            ("cpumask_set_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9373 9390])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9391 9412]))                  
+                :type "void")
+                nil [9338 9466])
+            ("__cpumask_set_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9505 9522])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9523 9544]))                  
+                :type "void")
+                nil [9468 9600])
+            ("cpumask_clear_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [9761 9769])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9770 9791]))                  
+                :type "void")
+                nil [9724 9847])
+            ("__cpumask_clear_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [9888 9896])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9897 9918]))                  
+                :type "void")
+                nil [9849 9976])
+            ("cpumask_test_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [10198 10206])
+                    ("cpumask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10207 10237]))                  
+                :type "int")
+                nil [10163 10304])
+            ("cpumask_test_and_set_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [10616 10624])
+                    ("cpumask" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10625 10649]))                  
+                :type "int")
+                nil [10573 10722])
+            ("cpumask_test_and_clear_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [11042 11050])
+                    ("cpumask" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11051 11075]))                  
+                :type "int")
+                nil [10997 11150])
+            ("cpumask_setall" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11285 11306]))                  
+                :type "void")
+                nil [11251 11361])
+            ("cpumask_clear" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11496 11517]))                  
+                :type "void")
+                nil [11463 11572])
+            ("cpumask_and" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11789 11810])
+                    ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11821 11849])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11860 11888]))                  
+                :type "int")
+                nil [11759 12002])
+            ("cpumask_or" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12166 12187])
+                    ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12188 12216])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12226 12254]))                  
+                :type "void")
+                nil [12136 12359])
+            ("cpumask_xor" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12525 12546])
+                    ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12557 12585])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12596 12624]))                  
+                :type "void")
+                nil [12494 12731])
+            ("cpumask_andnot" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12955 12976])
+                    ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12983 13011])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13018 13046]))                  
+                :type "int")
+                nil [12922 13159])
+            ("cpumask_complement" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13305 13326])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13337 13364]))                  
+                :type "void")
+                nil [13267 13456])
+            ("cpumask_equal" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13590 13618])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13623 13651]))                  
+                :type "bool")
+                nil [13557 13743])
+            ("cpumask_intersects" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13893 13921])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13931 13959]))                  
+                :type "bool")
+                nil [13855 14061])
+            ("cpumask_subset" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("src1p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14269 14297])
+                    ("src2p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14303 14331]))                  
+                :type "int")
+                nil [14236 14425])
+            ("cpumask_empty" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14561 14588]))                  
+                :type "bool")
+                nil [14528 14651])
+            ("cpumask_full" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14795 14822]))                  
+                :type "bool")
+                nil [14763 14884])
+            ("cpumask_weight" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15034 15061]))                  
+                :type "unsigned int")
+                nil [14992 15125])
+            ("cpumask_shift_right" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15314 15335])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15347 15374])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [15375 15381]))                  
+                :type "void")
+                nil [15275 15478])
+            ("cpumask_shift_left" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15665 15686])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15697 15724])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [15725 15731]))                  
+                :type "void")
+                nil [15627 15826])
+            ("cpumask_copy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15949 15970])
+                    ("srcp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15975 16002]))                  
+                :type "void")
+                nil [15917 16077])
+            ("cpumask_any" variable (:constant-flag t) nil [16215 16226])
+            ("cpumask_first_and" variable (:constant-flag t) nil [16472 16489])
+            ("cpumask_any_and" variable (:constant-flag t) nil [16737 16752])
+            ("cpumask_of" variable (:constant-flag t) nil [16909 16919])
+            ("cpumask_parse_user" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17192 17211])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17211 17215])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [17216 17224])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17234 17255]))                  
+                :type "int")
+                nil [17155 17333])
+            ("cpumask_parselist_user" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17589 17608])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17608 17612])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [17613 17621])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17631 17652]))                  
+                :type "int")
+                nil [17548 17743])
+            ("cpumask_parse" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17942 17958])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17959 17980]))                  
+                :type "int")
+                nil [17910 18150])
+            ("cpulist_parse" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18364 18380])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18381 18402]))                  
+                :type "int")
+                nil [18332 18474])
+            ("cpumask_size" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18591 18596]))                  
+                :type "unsigned int")
+                nil [18551 18655])
+            ("cpumask_var_t" type
+               (:typedef ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [20845 20885])
+            ("this_cpu_cpumask_var_ptr" variable (:constant-flag t) nil [20895 20919])
+            ("__cpumask_var_read_mostly" variable (:constant-flag t) nil [20947 20972])
+            ("alloc_cpumask_var" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :type ("cpumask_var_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21011 21031])
+                    ("flags" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21032 21044]))                  
+                :type "bool")
+                nil [20974 21062])
+            ("alloc_cpumask_var_node" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :type ("cpumask_var_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21106 21126])
+                    ("flags" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21127 21139])
+                    ("node" variable (:type "int") (reparse-symbol arg-sub-list) [21147 21156]))                  
+                :type "bool")
+                nil [21064 21174])
+            ("zalloc_cpumask_var" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :type ("cpumask_var_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21214 21234])
+                    ("flags" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21235 21247]))                  
+                :type "bool")
+                nil [21176 21288])
+            ("zalloc_cpumask_var_node" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :type ("cpumask_var_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21333 21353])
+                    ("flags" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21354 21366])
+                    ("node" variable (:type "int") (reparse-symbol arg-sub-list) [21374 21383]))                  
+                :type "bool")
+                nil [21290 21424])
+            ("alloc_bootmem_cpumask_var" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable
+                       (:pointer 1
+                        :type ("cpumask_var_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21471 21491]))                  
+                :type "void")
+                nil [21426 21495])
+            ("free_cpumask_var" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21533 21552]))                  
+                :type "void")
+                nil [21497 21556])
+            ("free_bootmem_cpumask_var" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21602 21621]))                  
+                :type "void")
+                nil [21558 21625])
+            ("cpumask_available" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mask" variable (:type ("cpumask_var_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21664 21683]))                  
+                :type "bool")
+                nil [21627 21701])
+            ("DECLARE_BITMAP" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpu_all_bits" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21904 21917])
+                    ("" variable (:type ("NR_CPUS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21918 21926]))                  
+                :type "int")
+                nil [21876 21927])
+            ("cpu_all_mask" variable (:constant-flag t) nil [21936 21948])
+            ("cpu_none_mask" variable (:constant-flag t) nil [22037 22050])
+            ("for_each_possible_cpu" variable (:constant-flag t) nil [22090 22111])
+            ("for_each_online_cpu" variable (:constant-flag t) nil [22164 22183])
+            ("for_each_present_cpu" variable (:constant-flag t) nil [22236 22256])
+            ("init_cpu_present" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22396 22422]))                  
+                :type "void")
+                nil [22374 22423])
+            ("init_cpu_possible" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22447 22473]))                  
+                :type "void")
+                nil [22424 22474])
+            ("init_cpu_online" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22496 22522]))                  
+                :type "void")
+                nil [22475 22523])
+            ("reset_cpu_possible_mask" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22568 22573]))                  
+                :type "void")
+                nil [22525 22636])
+            ("set_cpu_possible" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22674 22691])
+                    ("possible" variable (:type "bool") (reparse-symbol arg-sub-list) [22692 22706]))                  
+                :type "void")
+                nil [22638 22825])
+            ("set_cpu_present" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22862 22879])
+                    ("present" variable (:type "bool") (reparse-symbol arg-sub-list) [22880 22893]))                  
+                :type "void")
+                nil [22827 23009])
+            ("set_cpu_online" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23045 23062])
+                    ("online" variable (:type "bool") (reparse-symbol arg-sub-list) [23063 23075]))                  
+                :type "void")
+                nil [23011 23188])
+            ("set_cpu_active" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23224 23241])
+                    ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [23242 23254]))                  
+                :type "void")
+                nil [23190 23367])
+            ("to_cpumask" variable (:constant-flag t) nil [23733 23743])
+            ("__check_is_bitmap" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("bitmap" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [23888 23916]))                  
+                :type "int")
+                nil [23852 23931])
+            ("cpu_bit_bitmap" variable
+               (:dereference 2
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "unsigned long")
+                nil [24189 24273])
+            ("get_cpu_mask" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :constant-flag t
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24324 24341]))                  
+                :type ("cpumask" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24275 24462])
+            ("cpu_is_offline" variable (:constant-flag t) nil [24472 24486])
+            ("CPU_BITS_ALL" variable (:constant-flag t) nil [24699 24711])
+            ("cpumap_print_to_pagebuf" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("list" variable (:type "bool") (reparse-symbol arg-sub-list) [25272 25282])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25283 25293])
+                    ("mask" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("cpumask" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25294 25321]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [25226 25411])
+            ("CPU_MASK_ALL" variable (:constant-flag t) nil [25577 25589])
+            ("CPU_MASK_NONE" variable (:constant-flag t) nil [25782 25795])
+            ("CPU_MASK_CPU0" variable (:constant-flag t) nil [25888 25901]))          
+      :file "cpumask.h"
+      :pointmax 25991
+      :fsize 25990
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax '((punctuation 17607 . 17608) (punctuation 17210 . 17211))
+      :lexical-table 
+        '(("CPU_BITS_ALL" . ((semantic-list "{								\\
+	[0 ... BITS_TO_LONGS(NR_CPUS)-2] = ~0UL,		\\
+	[BITS_TO_LONGS(NR_CPUS)-1] = BITMAP_LAST_WORD_MASK(NR_CPUS)	\\
+}" 24719 . 24839)))
+          ("CPU_MASK_NONE" . ((semantic-list "(cpumask_t)" 25804 . 25815) (semantic-list "{ {								\\
+	[0 ... BITS_TO_LONGS(NR_CPUS)-1] =  0UL				\\
+} }" 25816 . 25878)))
+          ("__LINUX_CPUMASK_H")
+          ("cpu_present_mask" . ((semantic-list "((const struct cpumask *)&__cpu_present_mask)" 3532 . 3577)))
+          ("num_possible_cpus" (spp-arg-list nil 4232 . 4234) . ((symbol "1U" 4235 . 4237)))
+          ("num_present_cpus" (spp-arg-list nil 4262 . 4264) . ((symbol "1U" 4265 . 4267)))
+          ("cpu_active" (spp-arg-list ("cpu") 4430 . 4435) . ((semantic-list "((cpu) == 0)" 4437 . 4449)))
+          ("this_cpu_cpumask_var_ptr" (spp-arg-list ("x") 20919 . 20922) . ((symbol "this_cpu_ptr" 20923 . 20935) (semantic-list "(x)" 20935 . 20938)))
+          ("for_each_online_cpu" (spp-arg-list ("cpu") 22183 . 22188) . ((symbol "for_each_cpu" 22191 . 22203) (semantic-list "((cpu), cpu_online_mask)" 22203 . 22227)))
+          ("for_each_cpu_wrap" (spp-arg-list ("cpu" "mask" "start") 8306 . 8324) . ((FOR "for" 8332 . 8335) (semantic-list "((cpu) = cpumask_next_wrap((start)-1, (mask), (start), false);	\\
+	     (cpu) < nr_cpumask_bits;						\\
+	     (cpu) = cpumask_next_wrap((cpu), (mask), (start), true))" 8336 . 8501)))
+          ("cpumask_any_and" (spp-arg-list ("mask1" "mask2") 16752 . 16766) . ((symbol "cpumask_first_and" 16767 . 16784) (semantic-list "((mask1), (mask2))" 16784 . 16802)))
+          ("to_cpumask" (spp-arg-list ("bitmap") 23743 . 23751) . ((semantic-list "((struct cpumask *)(1 ? (bitmap)				\\
+			    : (void *)sizeof(__check_is_bitmap(bitmap))))" 23760 . 23850)))
+          ("__cpumask_var_read_mostly")
+          ("for_each_possible_cpu" (spp-arg-list ("cpu") 22111 . 22116) . ((symbol "for_each_cpu" 22117 . 22129) (semantic-list "((cpu), cpu_possible_mask)" 22129 . 22155)))
+          ("cpu_possible" (spp-arg-list ("cpu") 4355 . 4360) . ((semantic-list "((cpu) == 0)" 4361 . 4373)))
+          ("cpu_present" (spp-arg-list ("cpu") 4393 . 4398) . ((semantic-list "((cpu) == 0)" 4399 . 4411)))
+          ("for_each_cpu_not" (spp-arg-list ("cpu" "mask") 7744 . 7755) . ((FOR "for" 7762 . 7765) (semantic-list "((cpu) = -1;					\\
+		(cpu) = cpumask_next_zero((cpu), (mask)),	\\
+		(cpu) < nr_cpu_ids;)" 7766 . 7853)))
+          ("for_each_present_cpu" (spp-arg-list ("cpu") 22256 . 22261) . ((symbol "for_each_cpu" 22263 . 22275) (semantic-list "((cpu), cpu_present_mask)" 22275 . 22300)))
+          ("CPU_MASK_ALL" . ((semantic-list "(cpumask_t)" 25598 . 25609) (semantic-list "{ {								\\
+	[0 ... BITS_TO_LONGS(NR_CPUS)-2] = ~0UL,			\\
+	[BITS_TO_LONGS(NR_CPUS)-1] = BITMAP_LAST_WORD_MASK(NR_CPUS)	\\
+} }" 25610 . 25735)))
+          ("cpumask_pr_args" (spp-arg-list ("maskp") 948 . 955) . 
+              ((symbol "nr_cpu_ids" 957 . 967) (punctuation "," 967 . 968) (symbol "cpumask_bits" 969 . 981) (semantic-list "(maskp)" 981 . 988)))
+          ("cpumask_any" (spp-arg-list ("srcp") 16226 . 16232) . ((symbol "cpumask_first" 16233 . 16246) (semantic-list "(srcp)" 16246 . 16252)))
+          ("nr_cpumask_bits" . ((semantic-list "((unsigned int)NR_CPUS)" 1280 . 1303)))
+          ("cpu_possible_mask" . ((semantic-list "((const struct cpumask *)&__cpu_possible_mask)" 3388 . 3434)))
+          ("num_online_cpus" (spp-arg-list nil 4201 . 4203) . ((symbol "1U" 4204 . 4206)))
+          ("CPU_BITS_CPU0" . ((semantic-list "{								\\
+	[0] =  1UL						\\
+}" 9188 . 9219)))
+          ("cpumask_of" (spp-arg-list ("cpu") 16919 . 16924) . ((semantic-list "(get_cpu_mask(cpu))" 16925 . 16944)))
+          ("num_active_cpus" (spp-arg-list nil 4291 . 4293) . ((symbol "1U" 4294 . 4296)))
+          ("for_each_cpu" (spp-arg-list ("cpu" "mask") 7413 . 7424) . ((FOR "for" 7431 . 7434) (semantic-list "((cpu) = -1;				\\
+		(cpu) = cpumask_next((cpu), (mask)),	\\
+		(cpu) < nr_cpu_ids;)" 7435 . 7516)))
+          ("cpu_online_mask" . ((semantic-list "((const struct cpumask *)&__cpu_online_mask)" 3461 . 3505)))
+          ("cpu_online" (spp-arg-list ("cpu") 4315 . 4320) . ((semantic-list "((cpu) == 0)" 4322 . 4334)))
+          ("CPU_BITS_NONE" . ((semantic-list "{								\\
+	[0 ... BITS_TO_LONGS(NR_CPUS)-1] = 0UL			\\
+}" 9101 . 9157)))
+          ("cpu_all_mask" . ((symbol "to_cpumask" 21949 . 21959) (semantic-list "(cpu_all_bits)" 21959 . 21973)))
+          ("cpu_none_mask" . ((symbol "to_cpumask" 22051 . 22061) (semantic-list "(cpu_bit_bitmap[0])" 22061 . 22080)))
+          ("cpu_is_offline" (spp-arg-list ("cpu") 24486 . 24491) . ((symbol "unlikely" 24492 . 24500) (semantic-list "(!cpu_online(cpu))" 24500 . 24518)))
+          ("CPU_MASK_CPU0" . ((semantic-list "(cpumask_t)" 25910 . 25921) (semantic-list "{ {								\\
+	[0] =  1UL							\\
+} }" 25922 . 25958)))
+          ("cpumask_bits" (spp-arg-list ("maskp") 728 . 735) . ((semantic-list "((maskp)->bits)" 736 . 751)))
+          ("cpu_active_mask" . ((semantic-list "((const struct cpumask *)&__cpu_active_mask)" 3604 . 3648)))
+          ("for_each_cpu_and" (spp-arg-list ("cpu" "mask" "and") 8931 . 8947) . ((FOR "for" 8954 . 8957) (semantic-list "((cpu) = -1;						\\
+		(cpu) = cpumask_next_and((cpu), (mask), (and)),		\\
+		(cpu) < nr_cpu_ids;)" 8958 . 9053)))
+          ("cpumask_first_and" (spp-arg-list ("src1p" "src2p") 16489 . 16503) . ((symbol "cpumask_next_and" 16504 . 16520) (semantic-list "(-1, (src1p), (src2p))" 16520 . 16542)))
+          )
+))
+  :file "!home!maurice!Environment!linux-4.16.13!include!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

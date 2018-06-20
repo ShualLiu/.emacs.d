@@ -1,0 +1,142 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ASM_GENERIC_POSIX_TYPES_H" variable (:constant-flag t) nil [108 135])
+            ("asm/bitsperlong.h" include (:system-flag t) nil [137 165])
+            ("__kernel_long_t" type
+               (:typedef ("long")
+                :type "typedef")
+                nil [441 471])
+            ("__kernel_ulong_t" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [472 511])
+            ("__kernel_ino_t" type
+               (:typedef ("__kernel_ulong_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [543 583])
+            ("__kernel_mode_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [616 653])
+            ("__kernel_pid_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [685 713])
+            ("__kernel_ipc_pid_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [749 781])
+            ("__kernel_uid_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [813 849])
+            ("__kernel_gid_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [850 886])
+            ("__kernel_suseconds_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [924 970])
+            ("__kernel_daddr_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1004 1034])
+            ("__kernel_uid32_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [1068 1106])
+            ("__kernel_gid32_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [1107 1145])
+            ("__kernel_old_uid_t" type
+               (:typedef ("__kernel_uid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1181 1223])
+            ("__kernel_old_gid_t" type
+               (:typedef ("__kernel_gid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1224 1266])
+            ("__kernel_old_dev_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [1302 1342])
+            ("__kernel_size_t" type
+               (:typedef ("__kernel_ulong_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1632 1673])
+            ("__kernel_ssize_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1674 1715])
+            ("__kernel_ptrdiff_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1716 1759])
+            ("__kernel_fsid_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("val" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1817 1828]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1799 1847])
+            ("__kernel_off_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1915 1954])
+            ("__kernel_loff_t" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [1955 1989])
+            ("__kernel_time_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1990 2030])
+            ("__kernel_clock_t" type
+               (:typedef ("__kernel_long_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2031 2072])
+            ("__kernel_timer_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [2073 2103])
+            ("__kernel_clockid_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [2104 2136])
+            ("__kernel_caddr_t" type
+               (:typedef ("char")
+                :pointer 1
+                :type "typedef")
+                nil [2137 2170])
+            ("__kernel_uid16_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [2171 2211])
+            ("__kernel_gid16_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [2212 2252]))          
+      :file "posix_types.h"
+      :pointmax 2295
+      :fsize 2294
+      :lastmodtime '(23310 16905 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ASM_GENERIC_POSIX_TYPES_H")
+          )
+))
+  :file "!home!maurice!linux-4.16.13!include!uapi!asm-generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

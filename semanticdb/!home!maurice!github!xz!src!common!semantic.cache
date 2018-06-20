@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TUKLIB_PROGNAME_H" variable (:constant-flag t) nil [428 445])
+            ("tuklib_common.h" include nil nil [447 473])
+            ("errno.h" include (:system-flag t) nil [474 492])
+            ("progname" variable (:constant-flag t) nil [609 617])
+            ("TUKLIB_SYMBOL" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("tuklib_progname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "char")
+                nil [650 672])
+            ("tuklib_progname_init" variable (:constant-flag t) nil [689 709])
+            ("TUKLIB_SYMBOL" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("TUKLIB_SYMBOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [746 791]))          
+      :file "tuklib_progname.h"
+      :pointmax 818
+      :fsize 817
+      :lastmodtime '(23312 44140 781695 694000)
+      :unmatched-syntax '((symbol 794 . 810) (punctuation 791 . 792) (symbol 494 . 512))
+      :lexical-table 
+        '(("tuklib_progname_init" . ((symbol "TUKLIB_SYMBOL" 710 . 723) (semantic-list "(tuklib_progname_init)" 723 . 745)))
+          ("TUKLIB_PROGNAME_H")
+          ("progname" . ((symbol "TUKLIB_SYMBOL" 618 . 631) (semantic-list "(tuklib_progname)" 631 . 648)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TUKLIB_COMMON_H" variable (:constant-flag t) nil [421 436])
+            ("tuklib_config.h" include nil nil [567 593])
+            ("TUKLIB_SYMBOL_PREFIX" variable (:constant-flag t) nil [944 964])
+            ("TUKLIB_CAT_X" variable (:constant-flag t) nil [981 993])
+            ("TUKLIB_CAT" variable (:constant-flag t) nil [1015 1025])
+            ("TUKLIB_SYMBOL" variable (:constant-flag t) nil [1083 1096])
+            ("TUKLIB_DECLS_BEGIN" variable (:constant-flag t) nil [1205 1223])
+            ("TUKLIB_DECLS_END" variable (:constant-flag t) nil [1344 1360])
+            ("TUKLIB_GNUC_REQ" variable (:constant-flag t) nil [1600 1615])
+            ("tuklib_attr_noreturn" variable (:constant-flag t) nil [1741 1761]))          
+      :file "tuklib_common.h"
+      :pointmax 1903
+      :fsize 1902
+      :lastmodtime '(23312 44140 781695 694000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TUKLIB_COMMON_H")
+          ("TUKLIB_DECLS_END" . ((close-paren "}" 1361 . 1362)))
+          ("TUKLIB_SYMBOL_PREFIX")
+          ("TUKLIB_CAT_X" (spp-arg-list ("a" "b") 993 . 999) . ((spp-symbol-merge ((symbol "a" 1000 . 1001) (symbol "b" 1005 . 1006)) 1000 . 1006)))
+          ("TUKLIB_SYMBOL" (spp-arg-list ("sym") 1096 . 1101) . ((symbol "TUKLIB_CAT" 1102 . 1112) (semantic-list "(TUKLIB_SYMBOL_PREFIX, sym)" 1112 . 1139)))
+          ("TUKLIB_CAT" (spp-arg-list ("a" "b") 1025 . 1031) . ((symbol "TUKLIB_CAT_X" 1032 . 1044) (semantic-list "(a, b)" 1044 . 1050)))
+          ("TUKLIB_GNUC_REQ" (spp-arg-list ("major" "minor") 1615 . 1629) . ((number "0" 1630 . 1631)))
+          ("tuklib_attr_noreturn")
+          ("TUKLIB_DECLS_BEGIN" . 
+              ((EXTERN "extern" 1224 . 1230) (string "\"C\"" 1231 . 1234) (open-paren "{" 1235 . 1236)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [50 70])
+            ("inttypes.h" include (:system-flag t) nil [71 93])
+            ("limits.h" include (:system-flag t) nil [94 114]))          
+      :file "tuklib_config.h"
+      :pointmax 122
+      :fsize 121
+      :lastmodtime '(23312 44140 781695 694000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!github!xz!src!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

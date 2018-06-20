@@ -1,0 +1,263 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LOG_FILTER_INTERNAL_H" variable (:constant-flag t) nil [1202 1223])
+            ("mysql/components/services/log_builtins_filter.h" include (:system-flag t) nil [1224 1282])
+            ("log_builtins_filter_imp" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1317 1324])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1374 1393])
+                    ("deinit" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1447 1468])
+                    ("public" label nil (reparse-symbol classsubparts) [1471 1478])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("log_filter_ruleset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1776 1797])
+                            ("" variable (:type ("filter_ruleset_new" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1798 1817]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1755 1879])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2252 2256])
+                            ("" variable (:type ("filter_ruleset_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2257 2277]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2231 2392])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2542 2547])
+                            ("" variable (:type ("filter_ruleset_unlock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2570]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2521 2626])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2796 2801])
+                            ("" variable (:type ("filter_ruleset_drop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2822]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2775 2878])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3145 3150])
+                            ("" variable (:type ("filter_ruleset_free" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3151 3171]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3124 3228])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3420 3424])
+                            ("" variable (:type ("filter_ruleset_move" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3425 3445]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3399 3522])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4178 4185])
+                            ("" variable (:type ("filter_rule_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4186 4203]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4157 4259])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4554 4558])
+                            ("" variable (:type ("filter_run" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4559 4570]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4533 4640]))                  
+                :type "class")
+                nil [1284 4643])
+            ("log_builtins_filter_debug_imp" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4684 4691])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4761 4780])
+                    ("deinit" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4854 4875])
+                    ("public" label nil (reparse-symbol classsubparts) [4878 4885])
+                    ("DEFINE_METHOD" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("log_filter_ruleset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5167 5188])
+                            ("" variable (:type ("filter_debug_ruleset_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5189 5214]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5146 5223]))                  
+                :type "class")
+                nil [4645 5226])
+            ("log_builtins_filter_exit" function
+               (:prototype-flag t
+                :type "int")
+                nil [5356 5387])
+            ("log_builtins_filter_init" function
+               (:prototype-flag t
+                :type "int")
+                nil [5610 5641])
+            ("log_builtins_filter_run" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ruleset" variable
+                       (:pointer 1
+                        :type ("log_filter_ruleset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5951 5979])
+                    ("ll" variable
+                       (:pointer 1
+                        :type ("log_line" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5980 5993]))                  
+                :type "int")
+                nil [5923 5994]))          
+      :file "log_builtins_filter_imp.h"
+      :pointmax 6722
+      :fsize 6721
+      :lastmodtime '(23314 2559 738294 110000)
+      :unmatched-syntax '((semantic-list 5215 . 5221) (semantic-list 4594 . 4638) (semantic-list 4227 . 4257) (semantic-list 3469 . 3520) (semantic-list 3195 . 3226) (semantic-list 2846 . 2876) (semantic-list 2594 . 2624) (semantic-list 2301 . 2390) (semantic-list 1841 . 1877))
+      :lexical-table 
+        '(("LOG_FILTER_INTERNAL_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYSQL_SERVER_COMPONENT_H" variable (:constant-flag t) nil [1163 1187])
+            ("mysql/components/service.h" include (:system-flag t) nil [1189 1226])
+            ("mysql/components/services/dynamic_loader.h" include (:system-flag t) nil [1227 1280])
+            ("mysql/components/services/dynamic_loader_scheme_file.h" include (:system-flag t) nil [1281 1346])
+            ("mysql/components/services/dynamic_privilege.h" include (:system-flag t) nil [1347 1403])
+            ("mysql/components/services/persistent_dynamic_loader.h" include (:system-flag t) nil [1404 1468])
+            ("mysql/components/services/registry.h" include (:system-flag t) nil [1469 1516])
+            ("registry_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [1901 1922])
+            ("registry_deinit" function
+               (:prototype-flag t
+                :type "void")
+                nil [1923 1946])
+            ("dynamic_loader_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [1948 1975])
+            ("dynamic_loader_deinit" function
+               (:prototype-flag t
+                :type "void")
+                nil [1976 2005])
+            ("persistent_dynamic_loader_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2043 2053]))                  
+                :type "bool")
+                nil [2007 2054])
+            ("persistent_dynamic_loader_deinit" function
+               (:prototype-flag t
+                :type "void")
+                nil [2055 2095])
+            ("dynamic_loader_scheme_file_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2097 2136])
+            ("dynamic_loader_scheme_file_deinit" function
+               (:prototype-flag t
+                :type "void")
+                nil [2137 2178])
+            ("mysql_string_services_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2180 2214])
+            ("mysql_comp_status_var_services_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2215 2258])
+            ("mysql_comp_sys_var_services_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2259 2299])
+            ("mysql_comp_system_variable_source_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2300 2346])
+            ("mysql_security_context_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2347 2382])
+            ("mysql_backup_lock_service_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [2383 2421])
+            ("mysql_services_bootstrap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SERVICE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2782 2804])
+                    ("" variable (:type ("registry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2808 2817]))                  
+                :type "bool")
+                nil [2752 2818])
+            ("shutdown_dynamic_loader" function
+               (:prototype-flag t
+                :type "void")
+                nil [2855 2886])
+            ("mysql_services_shutdown" function
+               (:prototype-flag t
+                :type "bool")
+                nil [3114 3145])
+            ("mysql_components_handle_std_exception" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("funcname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3190 3211]))                  
+                :type "void")
+                nil [3147 3212])
+            ("imp_mysql_server_registry" variable (:type "int") nil [3319 3345])
+            ("imp_mysql_server_registry_registration" variable (:type "int") nil [3394 3433]))          
+      :file "server_component.h"
+      :pointmax 3473
+      :fsize 3472
+      :lastmodtime '(23314 2559 738294 110000)
+      :unmatched-syntax '((semantic-list 3366 . 3389) (symbol 3354 . 3366) (EXTERN 3347 . 3353) (semantic-list 3308 . 3318) (symbol 3296 . 3308) (EXTERN 3289 . 3295) (punctuation 2807 . 2808) (punctuation 2805 . 2806) (semantic-list 2794 . 2804))
+      :lexical-table 
+        '(("MYSQL_SERVER_COMPONENT_H")
+          )
+))
+  :file "!home!maurice!github!mysql-server!components!mysql_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
