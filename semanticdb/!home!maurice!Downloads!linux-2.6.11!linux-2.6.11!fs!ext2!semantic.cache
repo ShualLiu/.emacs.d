@@ -1,0 +1,766 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/fs.h" include (:system-flag t) nil [1 22])
+            ("linux/ext2_fs.h" include (:system-flag t) nil [23 49])
+            ("ext2_inode_info" type
+               (:members 
+                  ( ("i_data" variable
+                       (:dereference 1
+                        :type ("__le32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [136 154])
+                    ("i_flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [156 170])
+                    ("i_faddr" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [172 186])
+                    ("i_frag_no" variable (:type ("__u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [188 203])
+                    ("i_frag_size" variable (:type ("__u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [205 222])
+                    ("i_state" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [224 238])
+                    ("i_file_acl" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [240 257])
+                    ("i_dir_acl" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [259 275])
+                    ("i_dtime" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [277 291])
+                    ("i_block_group" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [612 632])
+                    ("i_next_alloc_block" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [852 877])
+                    ("i_next_alloc_goal" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1168 1192])
+                    ("i_prealloc_block" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1194 1217])
+                    ("i_prealloc_count" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1219 1242])
+                    ("i_dir_start_lookup" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1244 1269])
+                    ("i_meta_lock" variable (:type ("rwlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1715 1736])
+                    ("vfs_inode" variable (:type ("inode" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1738 1761]))                  
+                :type "struct")
+                nil [110 1764])
+            ("EXT2_STATE_NEW" variable (:constant-flag t) nil [1810 1824])
+            ("EXT2_I" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2097 2117]))                  
+                :type ("ext2_inode_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2052 2185])
+            ("ext2_bg_has_super" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2231 2254])
+                    ("group" variable (:type "int") (reparse-symbol arg-sub-list) [2255 2265]))                  
+                :type "int")
+                nil [2202 2266])
+            ("ext2_bg_num_gdb" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2304 2327])
+                    ("group" variable (:type "int") (reparse-symbol arg-sub-list) [2328 2338]))                  
+                :type "unsigned long")
+                nil [2267 2339])
+            ("ext2_new_block" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2367 2382])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2383 2397])
+                    ("" variable
+                       (:pointer 1
+                        :type ("__u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2404 2412])
+                    ("" variable
+                       (:pointer 1
+                        :type ("__u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2413 2421])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2422 2428]))                  
+                :type "int")
+                nil [2340 2429])
+            ("ext2_free_blocks" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2460 2475])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2476 2490])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2500 2514]))                  
+                :type "void")
+                nil [2430 2515])
+            ("ext2_count_free_blocks" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2561 2582]))                  
+                :type "unsigned long")
+                nil [2516 2583])
+            ("ext2_count_dirs" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2622 2643]))                  
+                :type "unsigned long")
+                nil [2584 2644])
+            ("ext2_check_blocks_bitmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2683 2704]))                  
+                :type "void")
+                nil [2645 2705])
+            ("ext2_get_group_desc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2758 2782])
+                    ("block_group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2793 2818])
+                    ("bh" variable
+                       (:pointer 2
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2829 2854]))                  
+                :type ("ext2_group_desc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2706 2855])
+            ("ext2_add_link" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2895 2911])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2912 2927]))                  
+                :type "int")
+                nil [2869 2928])
+            ("ext2_inode_by_name" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2961 2976])
+                    ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2977 2993]))                  
+                :type ("ino_t" type (:type "class") nil nil))
+                nil [2929 2994])
+            ("ext2_make_empty" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3022 3037])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3038 3053]))                  
+                :type "int")
+                nil [2995 3054])
+            ("ext2_find_entry" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3105 3120])
+                    ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3120 3136])
+                    ("" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3137 3152]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3055 3153])
+            ("ext2_delete_entry" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3184 3210])
+                    ("" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3211 3225]))                  
+                :type "int")
+                nil [3154 3226])
+            ("ext2_empty_dir" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3254 3269]))                  
+                :type "int")
+                nil [3227 3270])
+            ("ext2_dotdot" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3317 3332])
+                    ("" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3333 3348]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3271 3349])
+            ("ext2_set_link" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3376 3391])
+                    ("" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3392 3418])
+                    ("" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3419 3433])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3434 3449]))                  
+                :type "void")
+                nil [3350 3450])
+            ("ext2_sync_file" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3493 3507])
+                    ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3508 3524])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3525 3529]))                  
+                :type "int")
+                nil [3466 3530])
+            ("ext2_new_inode" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3585 3600])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3601 3605]))                  
+                :type ("inode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3547 3606])
+            ("ext2_free_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3636 3651]))                  
+                :type "void")
+                nil [3607 3652])
+            ("ext2_count_free_inodes" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3698 3719]))                  
+                :type "unsigned long")
+                nil [3653 3720])
+            ("ext2_check_inodes_bitmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3759 3780]))                  
+                :type "void")
+                nil [3721 3781])
+            ("ext2_count_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3820 3841])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3842 3851]))                  
+                :type "unsigned long")
+                nil [3782 3852])
+            ("ext2_read_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3897 3912]))                  
+                :type "void")
+                nil [3868 3913])
+            ("ext2_write_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3943 3958])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3959 3963]))                  
+                :type "int")
+                nil [3914 3964])
+            ("ext2_delete_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3996 4011]))                  
+                :type "void")
+                nil [3965 4012])
+            ("ext2_sync_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4041 4056]))                  
+                :type "int")
+                nil [4013 4057])
+            ("ext2_discard_prealloc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4093 4108]))                  
+                :type "void")
+                nil [4058 4109])
+            ("ext2_get_block" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4136 4151])
+                    ("" variable (:type ("sector_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4152 4161])
+                    ("" variable
+                       (:pointer 1
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4162 4183])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4184 4188]))                  
+                :type "int")
+                nil [4110 4189])
+            ("ext2_truncate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4217 4232]))                  
+                :type "void")
+                nil [4190 4233])
+            ("ext2_setattr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4259 4275])
+                    ("" variable
+                       (:pointer 1
+                        :type ("iattr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4276 4291]))                  
+                :type "int")
+                nil [4234 4292])
+            ("ext2_set_inode_flags" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4326 4346]))                  
+                :type "void")
+                nil [4293 4347])
+            ("ext2_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4386 4401])
+                    ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4402 4416])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4417 4430])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4440 4454]))                  
+                :type "int")
+                nil [4363 4455])
+            ("ext2_error" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4495 4516])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4517 4530])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4531 4544])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4545 4549]))                  
+                :type "void")
+                nil [4471 4591])
+            ("ext2_warning" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4618 4639])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4640 4653])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4654 4667])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4668 4672]))                  
+                :type "void")
+                nil [4592 4714])
+            ("ext2_update_dynamic_rev" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4752 4775]))                  
+                :type "void")
+                nil [4715 4776])
+            ("ext2_write_super" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4807 4828]))                  
+                :type "void")
+                nil [4777 4829])
+            ("ext2_dir_operations" variable
+               (:typemodifiers ("extern")
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4882 4932])
+            ("ext2_file_inode_operations" variable
+               (:typemodifiers ("extern")
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4947 5005])
+            ("ext2_file_operations" variable
+               (:typemodifiers ("extern")
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5006 5057])
+            ("ext2_aops" variable
+               (:typemodifiers ("extern")
+                :type ("address_space_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5073 5122])
+            ("ext2_nobh_aops" variable
+               (:typemodifiers ("extern")
+                :type ("address_space_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5123 5177])
+            ("ext2_dir_inode_operations" variable
+               (:typemodifiers ("extern")
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5193 5250])
+            ("ext2_special_inode_operations" variable
+               (:typemodifiers ("extern")
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5251 5312])
+            ("ext2_fast_symlink_inode_operations" variable
+               (:typemodifiers ("extern")
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5330 5396])
+            ("ext2_symlink_inode_operations" variable
+               (:typemodifiers ("extern")
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5397 5458]))          
+      :file "ext2.h"
+      :pointmax 5459
+      :fsize 5458
+      :lastmodtime '(16933 28025 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EXT2_STATE_NEW" . ((number "0x00000001" 1827 . 1837)))
+          )
+))
+  :file "!home!maurice!Downloads!linux-2.6.11!linux-2.6.11!fs!ext2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,111 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("mpich/mpi.h" include (:system-flag t) nil [1 23])
+            ("stdio.h" include (:system-flag t) nil [24 42])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53 58]))                  
+                :type "int")
+                nil [44 1032]))          
+      :file "integrate.c"
+      :pointmax 1033
+      :fsize 1010
+      :lastmodtime '(23379 1223 840111 942000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mpich/mpi.h" include (:system-flag t) nil [20 42])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53 58]))                  
+                :type "int")
+                nil [44 315]))          
+      :file "message.c"
+      :pointmax 316
+      :fsize 315
+      :lastmodtime '(23381 39244 810018 883000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mpich/mpi.h" include (:system-flag t) nil [20 42])
+            ("Get_input" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("my_rank" variable (:type "int") (reparse-symbol arg-sub-list) [59 71])
+                    ("comm_sz" variable (:type "int") (reparse-symbol arg-sub-list) [72 84])
+                    ("a_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [85 97])
+                    ("b_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [98 110])
+                    ("n_p" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [111 120]))                  
+                :type "void")
+                nil [44 121])
+            ("Get_input" function
+               (:arguments 
+                  ( ("my_rank" variable (:type "int") (reparse-symbol arg-sub-list) [147 159])
+                    ("comm_sz" variable (:type "int") (reparse-symbol arg-sub-list) [168 180])
+                    ("a_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [189 201])
+                    ("b_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [210 222])
+                    ("n_p" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [231 240]))                  
+                :type "void")
+                nil [123 806]))          
+      :file "threefive.c"
+      :pointmax 807
+      :fsize 806
+      :lastmodtime '(23381 40270 726719 653000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Get_input" function
+               (:arguments 
+                  ( ("my_rank" variable (:type "int") (reparse-symbol arg-sub-list) [25 37])
+                    ("comm_sz" variable (:type "int") (reparse-symbol arg-sub-list) [46 58])
+                    ("a_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [67 79])
+                    ("b_p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [88 100])
+                    ("n_p" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [109 118]))                  
+                :type "void")
+                nil [1 367]))          
+      :file "37.c"
+      :pointmax 368
+      :fsize 367
+      :lastmodtime '(23382 55273 938419 537000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!Desktop!edinburge!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,258 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [139 164])
+            ("linux/string.h" include (:system-flag t) nil [165 190])
+            ("linux/version.h" include (:system-flag t) nil [191 217])
+            ("linux/mm.h" include (:system-flag t) nil [218 239])
+            ("asm/system.h" include (:system-flag t) nil [241 264])
+            ("asm/console.h" include (:system-flag t) nil [265 289])
+            ("asm/hwrpb.h" include (:system-flag t) nil [290 312])
+            ("asm/pgtable.h" include (:system-flag t) nil [313 337])
+            ("stdarg.h" include (:system-flag t) nil [339 358])
+            ("ksize.h" include nil nil [360 378])
+            ("vsprintf" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [400 407])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [408 421])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [422 430]))                  
+                :type "int")
+                nil [380 431])
+            ("switch_to_osf_pal" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("nr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [471 488])
+                    ("pcb_va" variable
+                       (:pointer 1
+                        :type ("pcb_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [490 517])
+                    ("pcb_pa" variable
+                       (:pointer 1
+                        :type ("pcb_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [518 545])
+                    ("vptb" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [547 567]))                  
+                :type "unsigned long")
+                nil [432 568])
+            ("hwrpb" variable
+               (:pointer 1
+                :default-value "INIT_HWRPB"
+                :type ("hwrpb_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [569 609])
+            ("pcb_va" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("pcb_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [610 645])
+            ("find_pa" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vptb" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [790 810])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [811 821]))                  
+                :type "void")
+                nil [761 1012])
+            ("VPTB" variable (:constant-flag t) nil [1467 1471])
+            ("L1" variable (:constant-flag t) nil [1512 1514])
+            ("pal_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1562 1567]))                  
+                :type "void")
+                nil [1548 2499])
+            ("openboot" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2529 2534]))                  
+                :type "long")
+                nil [2501 2710])
+            ("close" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable (:type "long") (reparse-symbol arg-sub-list) [2737 2746]))                  
+                :type "long")
+                nil [2712 2779])
+            ("load" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable (:type "long") (reparse-symbol arg-sub-list) [2805 2814])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2815 2834])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2835 2855]))                  
+                :type "long")
+                nil [2781 3245])
+            ("runkernel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3297 3302]))                  
+                :type "void")
+                nil [3275 3489])
+            ("start_kernel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3509 3514]))                  
+                :type "void")
+                nil [3491 4358]))          
+      :file "main.c"
+      :pointmax 4359
+      :fsize 4358
+      :lastmodtime '(16936 39511 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("L1" . ((semantic-list "((unsigned long *) 0x200802000)" 1515 . 1546)))
+          ("VPTB" . ((semantic-list "((unsigned long *) 0x200000000)" 1472 . 1503)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [223 248])
+            ("linux/string.h" include (:system-flag t) nil [249 274])
+            ("linux/version.h" include (:system-flag t) nil [275 301])
+            ("linux/mm.h" include (:system-flag t) nil [302 323])
+            ("asm/system.h" include (:system-flag t) nil [325 348])
+            ("asm/console.h" include (:system-flag t) nil [349 373])
+            ("asm/hwrpb.h" include (:system-flag t) nil [374 396])
+            ("asm/pgtable.h" include (:system-flag t) nil [397 421])
+            ("asm/io.h" include (:system-flag t) nil [422 441])
+            ("stdarg.h" include (:system-flag t) nil [443 462])
+            ("ksize.h" include nil nil [464 482])
+            ("switch_to_osf_pal" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("nr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [523 540])
+                    ("pcb_va" variable
+                       (:pointer 1
+                        :type ("pcb_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [542 569])
+                    ("pcb_pa" variable
+                       (:pointer 1
+                        :type ("pcb_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [570 597])
+                    ("vptb" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [599 619]))                  
+                :type "unsigned long")
+                nil [484 620])
+            ("move_stack" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("new_stack" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [645 669]))                  
+                :type "void")
+                nil [622 670])
+            ("hwrpb" variable
+               (:pointer 1
+                :default-value "INIT_HWRPB"
+                :type ("hwrpb_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [672 712])
+            ("pcb_va" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("pcb_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [713 748])
+            ("find_pa" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vptb" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [893 913])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [914 924]))                  
+                :type "void")
+                nil [864 1115])
+            ("VPTB" variable (:constant-flag t) nil [1570 1574])
+            ("L1" variable (:constant-flag t) nil [1615 1617])
+            ("pal_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1665 1670]))                  
+                :type "void")
+                nil [1651 2602])
+            ("load" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dst" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2628 2646])
+                    ("src" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2647 2665])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2666 2686]))                  
+                :type "void")
+                nil [2604 2732])
+            ("runkernel" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2791 2796]))                  
+                :type "void")
+                nil [2762 2927])
+            ("_end" variable
+               (:typemodifiers ("extern")
+                :type "char")
+                nil [2929 2946])
+            ("KERNEL_ORIGIN" variable (:constant-flag t) nil [2955 2968])
+            ("start_kernel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3031 3036]))                  
+                :type "void")
+                nil [3013 5686]))          
+      :file "bootp.c"
+      :pointmax 5687
+      :fsize 5686
+      :lastmodtime '(16936 39509 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("L1" . ((semantic-list "((unsigned long *) 0x200802000)" 1618 . 1649)))
+          ("KERNEL_ORIGIN" . ((semantic-list "((((unsigned long)&_end) + 511) & ~511)" 2972 . 3011)))
+          ("VPTB" . ((semantic-list "((unsigned long *) 0x200000000)" 1575 . 1606)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!arch!alpha!boot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

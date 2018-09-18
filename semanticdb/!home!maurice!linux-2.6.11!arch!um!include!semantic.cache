@@ -1,0 +1,208 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__KERN_H__" variable (:constant-flag t) nil [114 124])
+            ("errno" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [439 456])
+            ("clone" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("proc" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [487 494]))                          
+                        :type "int")
+                        nil nil)
+                    ("sp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [496 505])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [506 516])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [517 528]))                  
+                :type "int")
+                nil [458 529])
+            ("sleep" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [547 551]))                  
+                :type "int")
+                nil [530 552])
+            ("printf" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [571 581])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [582 586]))                  
+                :type "int")
+                nil [553 587])
+            ("strerror" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("errnum" variable (:type "int") (reparse-symbol arg-sub-list) [610 621]))                  
+                :type "char")
+                nil [588 622])
+            ("ptsname" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [644 653]))                  
+                :type "char")
+                nil [623 654])
+            ("munmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [673 680])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [681 685]))                  
+                :type "int")
+                nil [655 686])
+            ("sbrk" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("increment" variable (:type "int") (reparse-symbol arg-sub-list) [705 719]))                  
+                :type "void")
+                nil [687 720])
+            ("malloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [741 750]))                  
+                :type "void")
+                nil [721 751])
+            ("perror" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("err" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [771 781]))                  
+                :type "void")
+                nil [752 782])
+            ("kill" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [799 807])
+                    ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [808 816]))                  
+                :type "int")
+                nil [783 817])
+            ("getuid" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [836 841]))                  
+                :type "int")
+                nil [818 842])
+            ("pause" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [860 865]))                  
+                :type "int")
+                nil [843 866])
+            ("write" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [884 888])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [889 902])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [903 907]))                  
+                :type "int")
+                nil [867 908])
+            ("exit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [925 929]))                  
+                :type "int")
+                nil [909 930])
+            ("close" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [948 952]))                  
+                :type "int")
+                nil [931 953])
+            ("read" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [970 983])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [984 991])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [992 996]))                  
+                :type "int")
+                nil [954 997])
+            ("pipe" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1014 1020]))                  
+                :type "int")
+                nil [998 1021])
+            ("sched_yield" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1045 1050]))                  
+                :type "int")
+                nil [1022 1051])
+            ("ptrace" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("op" variable (:type "int") (reparse-symbol arg-sub-list) [1070 1077])
+                    ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [1078 1086])
+                    ("addr" variable (:type "long") (reparse-symbol arg-sub-list) [1087 1097])
+                    ("data" variable (:type "long") (reparse-symbol arg-sub-list) [1098 1108]))                  
+                :type "int")
+                nil [1052 1109]))          
+      :file "kern.h"
+      :pointmax 1484
+      :fsize 1483
+      :lastmodtime '(16933 28030 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__KERN_H__")
+          )
+))
+  :file "!home!maurice!linux-2.6.11!arch!um!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

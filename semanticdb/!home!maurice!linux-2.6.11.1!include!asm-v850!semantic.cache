@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__V850_SEGMENT_H__" variable (:constant-flag t) nil [36 54])
+            ("mm_segment_t" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [79 114])
+            ("__KERNEL_CS" variable (:constant-flag t) nil [175 186])
+            ("__KERNEL_DS" variable (:constant-flag t) nil [199 210])
+            ("__USER_CS" variable (:constant-flag t) nil [224 233])
+            ("__USER_DS" variable (:constant-flag t) nil [246 255])
+            ("KERNEL_DS" variable (:constant-flag t) nil [269 278])
+            ("KERNEL_CS" variable (:constant-flag t) nil [299 308])
+            ("USER_DS" variable (:constant-flag t) nil [329 336])
+            ("USER_CS" variable (:constant-flag t) nil [356 363])
+            ("segment_eq" variable (:constant-flag t) nil [384 394])
+            ("get_ds" variable (:constant-flag t) nil [422 428])
+            ("get_fs" variable (:constant-flag t) nil [451 457])
+            ("set_fs" variable (:constant-flag t) nil [479 485])
+            ("copy_segments" variable (:constant-flag t) nil [515 528])
+            ("release_segments" variable (:constant-flag t) nil [576 592])
+            ("forget_segments" variable (:constant-flag t) nil [618 633]))          
+      :file "segment.h"
+      :pointmax 680
+      :fsize 679
+      :lastmodtime '(16936 39496 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__V850_SEGMENT_H__")
+          ("__KERNEL_DS" . ((number "0x0" 211 . 214)))
+          ("set_fs" (spp-arg-list ("seg") 485 . 490) . ((semantic-list "((void)(seg))" 491 . 504)))
+          ("USER_DS" . ((symbol "__USER_DS" 338 . 347)))
+          ("get_ds" (spp-arg-list nil 428 . 430) . ((semantic-list "(KERNEL_DS)" 431 . 442)))
+          ("__USER_CS" . ((number "0x1" 234 . 237)))
+          ("KERNEL_CS" . ((symbol "__KERNEL_CS" 309 . 320)))
+          ("forget_segments" (spp-arg-list nil 633 . 635) . ((semantic-list "((void)0)" 636 . 645)))
+          ("get_fs" (spp-arg-list nil 457 . 459) . ((semantic-list "(USER_DS)" 460 . 469)))
+          ("copy_segments" (spp-arg-list ("task" "mm") 528 . 538) . ((semantic-list "((void)((void)(task), (mm)))" 539 . 567)))
+          ("__KERNEL_CS" . ((number "0x0" 187 . 190)))
+          ("__USER_DS" . ((number "0x1" 256 . 259)))
+          ("KERNEL_DS" . ((symbol "__KERNEL_DS" 279 . 290)))
+          ("USER_CS" . ((symbol "__USER_CS" 365 . 374)))
+          ("release_segments" (spp-arg-list ("mm") 592 . 596) . ((semantic-list "((void)(mm))" 597 . 609)))
+          ("segment_eq" (spp-arg-list ("a" "b") 394 . 399) . ((semantic-list "((a) == (b))" 400 . 412)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!include!asm-v850!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

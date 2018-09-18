@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/init.h" include (:system-flag t) nil [1 24])
+            ("linux/kernel.h" include (:system-flag t) nil [25 50])
+            ("linux/string.h" include (:system-flag t) nil [51 76])
+            ("asm/timer.h" include (:system-flag t) nil [77 99])
+            ("timers" variable
+               (:dereference 1
+                :default-value "{
+#ifdef CONFIG_X86_CYCLONE_TIMER
+	&timer_cyclone_init,
+#endif
+#ifdef CONFIG_HPET_TIMER
+	&timer_hpet_init,
+#endif
+#ifdef CONFIG_X86_PM_TIMER
+	&timer_pmtmr_init,
+#endif
+	&timer_tsc_init,
+	&timer_pit_init,
+	NULL,
+}"
+                :type ("__initdata" type (:type "class") nil nil))
+                nil [512 747])
+            ("__initdata" variable (:type "int") nil [780 791])
+            ("clock_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 833]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [804 914])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clock_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [933 945]))                  
+                :type "int")
+                nil [915 946])
+            ("clock_fallback" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1074 1079]))                  
+                :type "void")
+                nil [1054 1108])
+            ("select_timer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1252 1257]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1232 1516]))          
+      :file "timer.c"
+      :pointmax 1517
+      :fsize 1516
+      :lastmodtime '(16936 39510 0 0)
+      :unmatched-syntax nil))
+  :file "!home!maurice!linux-2.6.11.1!arch!i386!kernel!timers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

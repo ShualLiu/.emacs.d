@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_FIXMAP_H" variable (:constant-flag t) nil [376 389])
+            ("linux/config.h" include (:system-flag t) nil [391 416])
+            ("linux/kernel.h" include (:system-flag t) nil [417 442])
+            ("asm/page.h" include (:system-flag t) nil [443 464])
+            ("fixed_addresses" type
+               (:members 
+                  ( ("__end_of_fixed_addresses" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1664 1690]))                  
+                :type "enum")
+                nil [1488 1691])
+            ("__set_fixmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("idx" variable (:type ("fixed_addresses" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1719 1744])
+                    ("phys" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1750 1769])
+                    ("flags" variable (:type ("pgprot_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1770 1785]))                  
+                :type "void")
+                nil [1693 1786])
+            ("set_fixmap" variable (:constant-flag t) nil [1796 1806])
+            ("set_fixmap_nocache" variable (:constant-flag t) nil [1931 1949])
+            ("FIXADDR_TOP" variable (:constant-flag t) nil [2179 2190])
+            ("FIXADDR_SIZE" variable (:constant-flag t) nil [2219 2231])
+            ("FIXADDR_START" variable (:constant-flag t) nil [2281 2294])
+            ("__fix_to_virt" variable (:constant-flag t) nil [2333 2346])
+            ("__virt_to_fix" variable (:constant-flag t) nil [2394 2407])
+            ("__this_fixmap_does_not_exist" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2501 2506]))                  
+                :type "void")
+                nil [2460 2507])
+            ("fix_to_virt" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("idx" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2760 2783]))                  
+                :type "unsigned long")
+                nil [2720 3219])
+            ("virt_to_fix" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vaddr" variable
+                       (:constant-flag t
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3261 3287]))                  
+                :type "unsigned long")
+                nil [3221 3377]))          
+      :file "fixmap.h"
+      :pointmax 3386
+      :fsize 3385
+      :lastmodtime '(16936 39497 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FIXADDR_START" . ((semantic-list "(FIXADDR_TOP - FIXADDR_SIZE)" 2295 . 2323)))
+          ("set_fixmap" (spp-arg-list ("idx" "phys") 1806 . 1817) . ((symbol "__set_fixmap" 1822 . 1834) (semantic-list "(idx, phys, PAGE_KERNEL)" 1834 . 1858)))
+          ("__fix_to_virt" (spp-arg-list ("x") 2346 . 2349) . ((semantic-list "(FIXADDR_TOP - ((x) << PAGE_SHIFT))" 2350 . 2385)))
+          ("_ASM_FIXMAP_H")
+          ("set_fixmap_nocache" (spp-arg-list ("idx" "phys") 1949 . 1960) . ((symbol "__set_fixmap" 1965 . 1977) (semantic-list "(idx, phys, PAGE_KERNEL_NOCACHE)" 1977 . 2009)))
+          ("FIXADDR_SIZE" . ((semantic-list "(__end_of_fixed_addresses << PAGE_SHIFT)" 2232 . 2272)))
+          ("__virt_to_fix" (spp-arg-list ("x") 2407 . 2410) . ((semantic-list "((FIXADDR_TOP - ((x)&PAGE_MASK)) >> PAGE_SHIFT)" 2411 . 2458)))
+          ("FIXADDR_TOP" . ((semantic-list "(P4SEG - PAGE_SIZE)" 2191 . 2210)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!include!asm-sh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

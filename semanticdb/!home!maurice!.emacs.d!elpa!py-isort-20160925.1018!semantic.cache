@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "py-isort-autoloads.el"
+      :pointmax 311
+      :fsize 734
+      :lastmodtime '(23419 42886 772442 861000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!py-isort-20160925.1018!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

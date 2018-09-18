@@ -1,0 +1,932 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1729 1747])
+            ("stdlib.h" include (:system-flag t) nil [1748 1767])
+            ("string.h" include (:system-flag t) nil [1768 1787])
+            ("ctype.h" include (:system-flag t) nil [1788 1806])
+            ("assert.h" include (:system-flag t) nil [1807 1826])
+            ("limits.h" include (:system-flag t) nil [1827 1846])
+            ("sds.h" include nil nil [1847 1863])
+            ("sdsalloc.h" include nil nil [1864 1885])
+            ("sdsHdrSize" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("type" variable (:type "char") (reparse-symbol arg-sub-list) [1916 1926]))                  
+                :type "int")
+                nil [1887 2329])
+            ("sdsReqType" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("string_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2361 2380]))                  
+                :type "char")
+                nil [2331 2669])
+            ("sdsnewlen" function
+               (:arguments 
+                  ( ("init" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3238 3255])
+                    ("initlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3256 3271]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [3224 4712])
+            ("sdsempty" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4841 4846]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [4828 4878])
+            ("sdsnew" function
+               (:arguments 
+                  ( ("init" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4963 4980]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [4952 5077])
+            ("sdsdup" function
+               (:arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5121 5133]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [5110 5173])
+            ("sdsfree" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5256 5262]))                  
+                :type "void")
+                nil [5243 5333])
+            ("sdsupdatelen" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5882 5888]))                  
+                :type "void")
+                nil [5864 5951])
+            ("sdsclear" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6223 6229]))                  
+                :type "void")
+                nil [6209 6271])
+            ("sdsMakeRoomFor" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6643 6649])
+                    ("addlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6650 6664]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [6624 7941])
+            ("sdsRemoveFreeSpace" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8302 8308]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8279 9398])
+            ("sdsAllocSize" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9639 9645]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9619 9719])
+            ("sdsAllocPtr" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9869 9875]))                  
+                :type "void")
+                nil [9851 9921])
+            ("sdsIncrLen" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10814 10820])
+                    ("incr" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10821 10834]))                  
+                :type "void")
+                nil [10798 12346])
+            ("sdsgrowzero" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12592 12598])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12599 12610]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [12576 12915])
+            ("sdscatlen" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13206 13212])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13213 13227])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13228 13239]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [13192 13438])
+            ("sdscat" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13678 13684])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13685 13699]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [13667 13742])
+            ("sdscatsds" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13972 13978])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13979 13991]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [13958 14034])
+            ("sdscpylen" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14178 14184])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14185 14199])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14200 14211]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [14164 14410])
+            ("sdscpy" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14548 14554])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14555 14569]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [14537 14612])
+            ("SDS_LLSTR_SIZE" variable (:constant-flag t) nil [14881 14895])
+            ("sdsll2str" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14913 14921])
+                    ("value" variable (:type "long long") (reparse-symbol arg-sub-list) [14922 14938]))                  
+                :type "int")
+                nil [14899 15475])
+            ("sdsull2str" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15554 15562])
+                    ("v" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [15563 15584]))                  
+                :type "int")
+                nil [15539 16026])
+            ("sdsfromlonglong" function
+               (:arguments 
+                  ( ("value" variable (:type "long long") (reparse-symbol arg-sub-list) [16172 16188]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [16152 16290])
+            ("sdscatvprintf" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16380 16386])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16387 16403])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16404 16415]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [16362 17441])
+            ("sdscatprintf" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18014 18020])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18021 18037])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18038 18042]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [17997 18161])
+            ("sdscatfmt" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18784 18790])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18791 18807])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18808 18812]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [18770 21292])
+            ("sdstrim" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21775 21781])
+                    ("cset" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21782 21799]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [21763 22129])
+            ("sdsrange" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22641 22647])
+                    ("start" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22648 22662])
+                    ("end" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22663 22675]))                  
+                :type "void")
+                nil [22627 23309])
+            ("sdstolower" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23391 23397]))                  
+                :type "void")
+                nil [23375 23485])
+            ("sdstoupper" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23567 23573]))                  
+                :type "void")
+                nil [23551 23661])
+            ("sdscmp" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24038 24051])
+                    ("s2" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24052 24065]))                  
+                :type "int")
+                nil [24027 24285])
+            ("sdssplitlen" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24875 24889])
+                    ("len" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24890 24902])
+                    ("sep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24903 24919])
+                    ("seplen" variable (:type "int") (reparse-symbol arg-sub-list) [24920 24931])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24932 24943]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [24858 26331])
+            ("sdsfreesplitres" function
+               (:arguments 
+                  ( ("tokens" variable
+                       (:pointer 1
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26438 26450])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [26451 26461]))                  
+                :type "void")
+                nil [26417 26561])
+            ("sdscatrepr" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26939 26945])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26946 26960])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26961 26972]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [26924 27657])
+            ("is_hex_digit" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [27771 27778]))                  
+                :type "int")
+                nil [27754 27880])
+            ("hex_digit_to_int" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [28002 28009]))                  
+                :type "int")
+                nil [27981 28508])
+            ("sdssplitargs" function
+               (:pointer 1
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29261 29278])
+                    ("argc" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [29279 29289]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [29243 33167])
+            ("sdsmapchars" function
+               (:arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33605 33611])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33612 33629])
+                    ("to" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33630 33645])
+                    ("setlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33646 33660]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [33589 33898])
+            ("sdsjoin" function
+               (:arguments 
+                  ( ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34034 34046])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34047 34056])
+                    ("sep" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34057 34067]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [34022 34254])
+            ("sdsjoinsds" function
+               (:arguments 
+                  ( ("argv" variable
+                       (:pointer 1
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34326 34336])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34337 34346])
+                    ("sep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34347 34363])
+                    ("seplen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34364 34378]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [34311 34578])
+            ("sds_malloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34934 34946]))                  
+                :type "void")
+                nil [34917 34973])
+            ("sds_realloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34992 35002])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35003 35015]))                  
+                :type "void")
+                nil [34974 35047])
+            ("sds_free" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35062 35072]))                  
+                :type "void")
+                nil [35048 35089]))          
+      :file "sds.c"
+      :pointmax 40460
+      :fsize 40459
+      :lastmodtime '(23378 60738 335498 681000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDS_LLSTR_SIZE" . ((number "21" 14896 . 14898)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__SDS_H" variable (:constant-flag t) nil [1753 1760])
+            ("SDS_MAX_PREALLOC" variable (:constant-flag t) nil [1770 1786])
+            ("sys/types.h" include (:system-flag t) nil [1800 1822])
+            ("stdarg.h" include (:system-flag t) nil [1823 1842])
+            ("stdint.h" include (:system-flag t) nil [1843 1862])
+            ("sds" type
+               (:typedef ("char")
+                :pointer 1
+                :type "typedef")
+                nil [1864 1882])
+            ("sdshdr5" type
+               (:members 
+                  ( ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [2074 2094])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2147 2158]))                  
+                :type "struct")
+                nil [2024 2161])
+            ("sdshdr8" type
+               (:members 
+                  ( ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2212 2224])
+                    ("alloc" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2240 2254])
+                    ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [2306 2326])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2366 2377]))                  
+                :type "struct")
+                nil [2162 2380])
+            ("sdshdr16" type
+               (:members 
+                  ( ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2432 2445])
+                    ("alloc" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2461 2476])
+                    ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [2528 2548])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2588 2599]))                  
+                :type "struct")
+                nil [2381 2602])
+            ("sdshdr32" type
+               (:members 
+                  ( ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2654 2667])
+                    ("alloc" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2683 2698])
+                    ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [2750 2770])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2810 2821]))                  
+                :type "struct")
+                nil [2603 2824])
+            ("sdshdr64" type
+               (:members 
+                  ( ("len" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2876 2889])
+                    ("alloc" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2905 2920])
+                    ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [2972 2992])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3032 3043]))                  
+                :type "struct")
+                nil [2825 3046])
+            ("SDS_TYPE_5" variable (:constant-flag t) nil [3056 3066])
+            ("SDS_TYPE_8" variable (:constant-flag t) nil [3078 3088])
+            ("SDS_TYPE_16" variable (:constant-flag t) nil [3100 3111])
+            ("SDS_TYPE_32" variable (:constant-flag t) nil [3122 3133])
+            ("SDS_TYPE_64" variable (:constant-flag t) nil [3144 3155])
+            ("SDS_TYPE_MASK" variable (:constant-flag t) nil [3166 3179])
+            ("SDS_TYPE_BITS" variable (:constant-flag t) nil [3190 3203])
+            ("SDS_HDR_VAR" variable (:constant-flag t) nil [3214 3225])
+            ("SDS_HDR" variable (:constant-flag t) nil [3303 3310])
+            ("SDS_TYPE_5_LEN" variable (:constant-flag t) nil [3379 3393])
+            ("sdslen" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3447 3459]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3419 3875])
+            ("sdsavail" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3907 3919]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3877 4503])
+            ("sdssetlen" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4534 4540])
+                    ("newlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4541 4555]))                  
+                :type "void")
+                nil [4505 5167])
+            ("sdsinclen" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5198 5204])
+                    ("inc" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5205 5216]))                  
+                :type "void")
+                nil [5169 5886])
+            ("sdsalloc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5959 5971]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [5929 6395])
+            ("sdssetalloc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6428 6434])
+                    ("newlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6435 6449]))                  
+                :type "void")
+                nil [6397 6993])
+            ("sdsnewlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("init" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7009 7026])
+                    ("initlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7027 7042]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [6995 7043])
+            ("sdsnew" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("init" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7055 7072]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7044 7073])
+            ("sdsempty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7087 7092]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7074 7093])
+            ("sdsdup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7105 7117]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7094 7118])
+            ("sdsfree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7132 7138]))                  
+                :type "void")
+                nil [7119 7139])
+            ("sdsgrowzero" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7156 7162])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7163 7174]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7140 7175])
+            ("sdscatlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7190 7196])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7197 7211])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7212 7223]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7176 7224])
+            ("sdscat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7236 7242])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7243 7257]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7225 7258])
+            ("sdscatsds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7273 7279])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7280 7292]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7259 7293])
+            ("sdscpylen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7308 7314])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7315 7329])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7330 7341]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7294 7342])
+            ("sdscpy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7354 7360])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7361 7375]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7343 7376])
+            ("sdscatvprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7396 7402])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7403 7419])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7420 7431]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7378 7432])
+            ("sdscatprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7466 7472])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7473 7489])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7490 7494]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7449 7537])
+            ("sdscatfmt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7613 7619])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7620 7636])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7637 7641]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7599 7642])
+            ("sdstrim" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7655 7661])
+                    ("cset" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7662 7679]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7643 7680])
+            ("sdsrange" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7695 7701])
+                    ("start" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7702 7716])
+                    ("end" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7717 7729]))                  
+                :type "void")
+                nil [7681 7730])
+            ("sdsupdatelen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7749 7755]))                  
+                :type "void")
+                nil [7731 7756])
+            ("sdsclear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7771 7777]))                  
+                :type "void")
+                nil [7757 7778])
+            ("sdscmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s1" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7790 7803])
+                    ("s2" variable
+                       (:constant-flag t
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7804 7817]))                  
+                :type "int")
+                nil [7779 7818])
+            ("sdssplitlen" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7836 7850])
+                    ("len" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7851 7863])
+                    ("sep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7864 7880])
+                    ("seplen" variable (:type "int") (reparse-symbol arg-sub-list) [7881 7892])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7893 7904]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [7819 7905])
+            ("sdsfreesplitres" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tokens" variable
+                       (:pointer 1
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7927 7939])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [7940 7950]))                  
+                :type "void")
+                nil [7906 7951])
+            ("sdstolower" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7968 7974]))                  
+                :type "void")
+                nil [7952 7975])
+            ("sdstoupper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7992 7998]))                  
+                :type "void")
+                nil [7976 7999])
+            ("sdsfromlonglong" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable (:type "long long") (reparse-symbol arg-sub-list) [8020 8036]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8000 8037])
+            ("sdscatrepr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8053 8059])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8060 8074])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8075 8086]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8038 8087])
+            ("sdssplitargs" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8106 8123])
+                    ("argc" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8124 8134]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8088 8135])
+            ("sdsmapchars" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8152 8158])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8159 8176])
+                    ("to" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8177 8192])
+                    ("setlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8193 8207]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8136 8208])
+            ("sdsjoin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8221 8233])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8234 8243])
+                    ("sep" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8244 8254]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8209 8255])
+            ("sdsjoinsds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argv" variable
+                       (:pointer 1
+                        :type ("sds" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8271 8281])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8282 8291])
+                    ("sep" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8292 8308])
+                    ("seplen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8309 8323]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8256 8324])
+            ("sdsMakeRoomFor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8395 8401])
+                    ("addlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8402 8416]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8376 8417])
+            ("sdsIncrLen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8434 8440])
+                    ("incr" variable (:type ("ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8441 8454]))                  
+                :type "void")
+                nil [8418 8455])
+            ("sdsRemoveFreeSpace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8479 8485]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [8456 8486])
+            ("sdsAllocSize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8507 8513]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8487 8514])
+            ("sdsAllocPtr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8533 8539]))                  
+                :type "void")
+                nil [8515 8540])
+            ("sds_malloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8797 8809]))                  
+                :type "void")
+                nil [8780 8810])
+            ("sds_realloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8829 8839])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8840 8852]))                  
+                :type "void")
+                nil [8811 8853])
+            ("sds_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8868 8878]))                  
+                :type "void")
+                nil [8854 8879]))          
+      :file "sds.h"
+      :pointmax 8951
+      :fsize 8950
+      :lastmodtime '(23378 60738 339498 729000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDS_TYPE_32" . ((number "3" 3134 . 3135)))
+          ("SDS_TYPE_MASK" . ((number "7" 3180 . 3181)))
+          ("__SDS_H")
+          ("SDS_MAX_PREALLOC" . ((semantic-list "(1024*1024)" 1787 . 1798)))
+          ("SDS_HDR_VAR" (spp-arg-list ("T" "s") 3225 . 3230) . 
+              ((STRUCT "struct" 3231 . 3237) (spp-symbol-merge ((symbol "sdshdr" 3238 . 3244) (symbol "T" 3246 . 3247)) 3238 . 3247) (punctuation "*" 3248 . 3249) (symbol "sh" 3249 . 3251) (punctuation "=" 3252 . 3253) (semantic-list "(void*)" 3254 . 3261) (semantic-list "((s)-(sizeof(struct sdshdr##T)))" 3261 . 3293) (punctuation ";" 3293 . 3294)))
+          ("SDS_TYPE_5_LEN" (spp-arg-list ("f") 3393 . 3396) . ((semantic-list "((f)>>SDS_TYPE_BITS)" 3397 . 3417)))
+          ("SDS_TYPE_5" . ((number "0" 3068 . 3069)))
+          ("SDS_TYPE_8" . ((number "1" 3090 . 3091)))
+          ("SDS_HDR" (spp-arg-list ("T" "s") 3310 . 3315) . ((semantic-list "((struct sdshdr##T *)((s)-(sizeof(struct sdshdr##T))))" 3316 . 3370)))
+          ("SDS_TYPE_16" . ((number "2" 3112 . 3113)))
+          ("SDS_TYPE_64" . ((number "4" 3156 . 3157)))
+          ("SDS_TYPE_BITS" . ((number "3" 3204 . 3205)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("s_malloc" variable (:constant-flag t) nil [2031 2039])
+            ("s_realloc" variable (:constant-flag t) nil [2055 2064])
+            ("s_free" variable (:constant-flag t) nil [2081 2087]))          
+      :file "sdsalloc.h"
+      :pointmax 2093
+      :fsize 2092
+      :lastmodtime '(23378 60738 339498 729000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("s_malloc" . ((symbol "malloc" 2040 . 2046)))
+          ("s_free" . ((symbol "free" 2088 . 2092)))
+          ("s_realloc" . ((symbol "realloc" 2065 . 2072)))
+          )
+))
+  :file "!home!maurice!github!sds!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

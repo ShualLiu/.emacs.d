@@ -7,69 +7,46 @@
       :major-mode emacs-lisp-mode
       :tags nil
       :file ".emacs"
-      :pointmax 9657
-      :fsize 9673
-      :lastmodtime '(23338 6713 666005 572000)
-      :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
-      :major-mode c-mode
-      :tags 
-        '( ("printf" function
-               (:prototype-flag t
-                :arguments 
-                  ( ("format" variable
-                       (:pointer 1
-                        :constant-flag t
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [13 32])
-                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [33 38]))                  
-                :type "int")
-                nil [1 39])
-            ("global_init_var" variable
-               (:default-value "84"
-                :type "int")
-                nil [48 73])
-            ("global_uninit_var" variable (:type "int") nil [76 98])
-            ("func1" function
-               (:arguments 
-                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [120 127]))                  
-                :type "void")
-                nil [108 160])
-            ("main" function
-               (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [179 184]))                  
-                :type "int")
-                nil [170 368]))          
-      :file "SimpleSection.c"
-      :pointmax 371
-      :fsize 370
-      :lastmodtime '(23312 59529 405747 999000)
+      :pointmax 10168
+      :fsize 10183
+      :lastmodtime '(23447 13271 304529 806000)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
       :tags 
         '( ("stdio.h" include (:system-flag t) nil [1 19])
-            ("stdlib.h" include (:system-flag t) nil [20 39])
-            ("pthread.h" include (:system-flag t) nil [40 60])
-            ("unistd.h" include (:system-flag t) nil [61 80])
-            ("g" variable
-               (:default-value "0"
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [40 45])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46 52]))                  
                 :type "int")
-                nil [82 92])
-            ("myThreadFun" function
-               (:pointer 1
+                nil [21 105]))          
+      :file "int3.c"
+      :pointmax 106
+      :fsize 110
+      :lastmodtime '(23442 12045 255968 641000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("fun" function
+               (:prototype-flag t
                 :arguments 
-                  ( ("vargp" variable
-                       (:pointer 1
-                        :type "void")
-                        (reparse-symbol arg-sub-list) [111 123]))                  
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [30 36]))                  
                 :type "void")
-                nil [93 249])
-            ("main" function (:type "int") nil [251 398]))          
-      :file "test.c"
-      :pointmax 399
-      :fsize 793
-      :lastmodtime '(23333 9457 830103 637000)
+                nil [21 37])
+            ("fun" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [48 54]))                  
+                :type "void")
+                nil [39 92])
+            ("main" function (:type "int") nil [94 168]))          
+      :file "pointer.c"
+      :pointmax 169
+      :fsize 168
+      :lastmodtime '(23446 22018 799530 735000)
       :unmatched-syntax nil))
   :file "!home!maurice!semantic.cache"
   :semantic-tag-version "2.0"

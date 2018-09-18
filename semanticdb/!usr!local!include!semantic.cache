@@ -1,0 +1,1793 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lua_h" variable (:constant-flag t) nil [214 219])
+            ("stdarg.h" include (:system-flag t) nil [221 240])
+            ("stddef.h" include (:system-flag t) nil [241 260])
+            ("luaconf.h" include nil nil [263 283])
+            ("LUA_VERSION_MAJOR" variable (:constant-flag t) nil [294 311])
+            ("LUA_VERSION_MINOR" variable (:constant-flag t) nil [324 341])
+            ("LUA_VERSION_NUM" variable (:constant-flag t) nil [354 369])
+            ("LUA_VERSION_RELEASE" variable (:constant-flag t) nil [383 402])
+            ("LUA_VERSION" variable (:constant-flag t) nil [416 427])
+            ("LUA_RELEASE" variable (:constant-flag t) nil [483 494])
+            ("LUA_COPYRIGHT" variable (:constant-flag t) nil [539 552])
+            ("LUA_AUTHORS" variable (:constant-flag t) nil [618 629])
+            ("LUA_SIGNATURE" variable (:constant-flag t) nil [735 748])
+            ("LUA_MULTRET" variable (:constant-flag t) nil [832 843])
+            ("LUA_REGISTRYINDEX" variable (:constant-flag t) nil [1002 1019])
+            ("lua_upvalueindex" variable (:constant-flag t) nil [1052 1068])
+            ("LUA_OK" variable (:constant-flag t) nil [1128 1134])
+            ("LUA_YIELD" variable (:constant-flag t) nil [1146 1155])
+            ("LUA_ERRRUN" variable (:constant-flag t) nil [1166 1176])
+            ("LUA_ERRSYNTAX" variable (:constant-flag t) nil [1187 1200])
+            ("LUA_ERRMEM" variable (:constant-flag t) nil [1211 1221])
+            ("LUA_ERRGCMM" variable (:constant-flag t) nil [1232 1243])
+            ("LUA_ERRERR" variable (:constant-flag t) nil [1254 1264])
+            ("lua_State" type
+               (:typedef ("lua_State" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1269 1304])
+            ("LUA_TNONE" variable (:constant-flag t) nil [1336 1345])
+            ("LUA_TNIL" variable (:constant-flag t) nil [1361 1369])
+            ("LUA_TBOOLEAN" variable (:constant-flag t) nil [1381 1393])
+            ("LUA_TLIGHTUSERDATA" variable (:constant-flag t) nil [1405 1423])
+            ("LUA_TNUMBER" variable (:constant-flag t) nil [1434 1445])
+            ("LUA_TSTRING" variable (:constant-flag t) nil [1457 1468])
+            ("LUA_TTABLE" variable (:constant-flag t) nil [1480 1490])
+            ("LUA_TFUNCTION" variable (:constant-flag t) nil [1502 1515])
+            ("LUA_TUSERDATA" variable (:constant-flag t) nil [1527 1540])
+            ("LUA_TTHREAD" variable (:constant-flag t) nil [1552 1563])
+            ("LUA_NUMTAGS" variable (:constant-flag t) nil [1576 1587])
+            ("LUA_MINSTACK" variable (:constant-flag t) nil [1652 1664])
+            ("LUA_RIDX_MAINTHREAD" variable (:constant-flag t) nil [1718 1737])
+            ("LUA_RIDX_GLOBALS" variable (:constant-flag t) nil [1748 1764])
+            ("LUA_RIDX_LAST" variable (:constant-flag t) nil [1775 1788])
+            ("lua_Number" type
+               (:typedef ("LUA_NUMBER" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1838 1868])
+            ("lua_Integer" type
+               (:typedef ("LUA_INTEGER" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1904 1936])
+            ("lua_Unsigned" type
+               (:typedef ("LUA_UNSIGNED" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1966 2000])
+            ("lua_KContext" type
+               (:typedef ("LUA_KCONTEXT" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2048 2082])
+            ("lua_CFunction" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2165 2178]))                  
+                :type "int")
+                nil [2143 2179])
+            ("lua_KFunction" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2252 2265])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [2266 2277])
+                    ("ctx" variable (:type ("lua_KContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2295]))                  
+                :type "int")
+                nil [2230 2296])
+            ("lua_Reader" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2418 2431])
+                    ("ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2432 2441])
+                    ("sz" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2453]))                  
+                :type "char")
+                nil [2390 2454])
+            ("lua_Writer" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2483 2496])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2497 2511])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2522])
+                    ("ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2523 2532]))                  
+                :type "int")
+                nil [2464 2533])
+            ("lua_Alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2611 2620])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2621 2631])
+                    ("osize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2632 2645])
+                    ("nsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2646 2659]))                  
+                :type "void")
+                nil [2590 2660])
+            ("lua_ident" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2779 2809])
+            ("lua_newstate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("f" variable (:type ("lua_Alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2875 2887])
+                    ("ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2888 2897]))                  
+                :type ("lua_State" type (:type "class") nil nil))
+                nil [2848 2898])
+            ("lua_close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2931 2944]))                  
+                :type "void")
+                nil [2907 2945])
+            ("lua_newthread" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 2995]))                  
+                :type ("lua_State" type (:type "class") nil nil))
+                nil [2954 2996])
+            ("lua_CFunction" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_atpanic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3021 3033]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [2998 3070])
+            ("lua_version" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3115 3128]))                  
+                :type ("lua_Number" type (:type "class") nil nil))
+                nil [3082 3129])
+            ("lua_absindex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3196 3209])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3210 3218]))                  
+                :type "int")
+                nil [3174 3219])
+            ("lua_gettop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3248 3261]))                  
+                :type "int")
+                nil [3228 3262])
+            ("lua_settop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3291 3304])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3305 3313]))                  
+                :type "void")
+                nil [3271 3314])
+            ("lua_pushvalue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3346 3359])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3360 3368]))                  
+                :type "void")
+                nil [3323 3369])
+            ("lua_rotate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3398 3411])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3412 3420])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3421 3427]))                  
+                :type "void")
+                nil [3378 3428])
+            ("lua_copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3455 3468])
+                    ("fromidx" variable (:type "int") (reparse-symbol arg-sub-list) [3469 3481])
+                    ("toidx" variable (:type "int") (reparse-symbol arg-sub-list) [3482 3492]))                  
+                :type "void")
+                nil [3437 3493])
+            ("lua_checkstack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3526 3539])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3540 3546]))                  
+                :type "int")
+                nil [3502 3547])
+            ("lua_xmove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3576 3592])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3593 3607])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3608 3614]))                  
+                :type "void")
+                nil [3557 3615])
+            ("lua_isnumber" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3698 3711])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3712 3720]))                  
+                :type "int")
+                nil [3666 3721])
+            ("lua_isstring" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3762 3775])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3776 3784]))                  
+                :type "int")
+                nil [3730 3785])
+            ("lua_iscfunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3829 3842])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3843 3851]))                  
+                :type "int")
+                nil [3794 3852])
+            ("lua_isinteger" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3894 3907])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3908 3916]))                  
+                :type "int")
+                nil [3861 3917])
+            ("lua_isuserdata" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3960 3973])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3974 3982]))                  
+                :type "int")
+                nil [3926 3983])
+            ("lua_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4020 4033])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4034 4042]))                  
+                :type "int")
+                nil [3992 4043])
+            ("lua_typename" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4084 4097])
+                    ("tp" variable (:type "int") (reparse-symbol arg-sub-list) [4098 4105]))                  
+                :type "char")
+                nil [4052 4106])
+            ("lua_Number" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_tonumberx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4133 4147]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [4108 4183])
+            ("lua_Integer" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_tointegerx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4210 4225]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [4185 4261])
+            ("lua_toboolean" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4304 4317])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4318 4326]))                  
+                :type "int")
+                nil [4271 4327])
+            ("lua_tolstring" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4369 4382])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4383 4391])
+                    ("len" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4392 4404]))                  
+                :type "char")
+                nil [4336 4405])
+            ("size_t" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_rawlen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4431 4442]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [4406 4466])
+            ("lua_CFunction" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_tocfunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4493 4509]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [4468 4533])
+            ("lua_touserdata" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4574 4587])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4588 4596]))                  
+                :type "void")
+                nil [4543 4597])
+            ("lua_tothread" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4638 4651])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4652 4660]))                  
+                :type ("lua_State" type (:type "class") nil nil))
+                nil [4606 4661])
+            ("lua_topointer" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4703 4716])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [4717 4725]))                  
+                :type "void")
+                nil [4670 4726])
+            ("LUA_OPADD" variable (:constant-flag t) nil [4783 4792])
+            ("LUA_OPSUB" variable (:constant-flag t) nil [4828 4837])
+            ("LUA_OPMUL" variable (:constant-flag t) nil [4848 4857])
+            ("LUA_OPMOD" variable (:constant-flag t) nil [4868 4877])
+            ("LUA_OPPOW" variable (:constant-flag t) nil [4888 4897])
+            ("LUA_OPDIV" variable (:constant-flag t) nil [4908 4917])
+            ("LUA_OPIDIV" variable (:constant-flag t) nil [4928 4938])
+            ("LUA_OPBAND" variable (:constant-flag t) nil [4949 4959])
+            ("LUA_OPBOR" variable (:constant-flag t) nil [4970 4979])
+            ("LUA_OPBXOR" variable (:constant-flag t) nil [4990 5000])
+            ("LUA_OPSHL" variable (:constant-flag t) nil [5011 5020])
+            ("LUA_OPSHR" variable (:constant-flag t) nil [5032 5041])
+            ("LUA_OPUNM" variable (:constant-flag t) nil [5053 5062])
+            ("LUA_OPBNOT" variable (:constant-flag t) nil [5074 5084])
+            ("lua_arith" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5116 5129])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [5130 5137]))                  
+                :type "void")
+                nil [5097 5138])
+            ("LUA_OPEQ" variable (:constant-flag t) nil [5148 5156])
+            ("LUA_OPLT" variable (:constant-flag t) nil [5167 5175])
+            ("LUA_OPLE" variable (:constant-flag t) nil [5186 5194])
+            ("lua_rawequal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5228 5241])
+                    ("idx1" variable (:type "int") (reparse-symbol arg-sub-list) [5242 5251])
+                    ("idx2" variable (:type "int") (reparse-symbol arg-sub-list) [5252 5261]))                  
+                :type "int")
+                nil [5206 5262])
+            ("lua_compare" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5292 5305])
+                    ("idx1" variable (:type "int") (reparse-symbol arg-sub-list) [5306 5315])
+                    ("idx2" variable (:type "int") (reparse-symbol arg-sub-list) [5316 5325])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [5326 5333]))                  
+                :type "int")
+                nil [5271 5334])
+            ("lua_pushnil" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5409 5422]))                  
+                :type "void")
+                nil [5382 5423])
+            ("lua_pushnumber" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5462 5475])
+                    ("n" variable (:type ("lua_Number" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5476 5489]))                  
+                :type "void")
+                nil [5432 5490])
+            ("lua_pushinteger" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5530 5543])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5544 5558]))                  
+                :type "void")
+                nil [5499 5559])
+            ("lua_pushlstring" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5599 5612])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5613 5627])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5628 5639]))                  
+                :type "char")
+                nil [5568 5640])
+            ("lua_pushstring" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5679 5692])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5693 5707]))                  
+                :type "char")
+                nil [5649 5708])
+            ("lua_pushvfstring" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5749 5762])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5763 5779])
+                    ("argp" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5834 5847]))                  
+                :type "char")
+                nil [5717 5848])
+            ("lua_pushfstring" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5888 5901])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5902 5918])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5919 5923]))                  
+                :type "char")
+                nil [5857 5924])
+            ("lua_pushcclosure" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5959 5972])
+                    ("fn" variable (:type ("lua_CFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5973 5990])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5991 5997]))                  
+                :type "void")
+                nil [5933 5998])
+            ("lua_pushboolean" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6032 6045])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [6046 6052]))                  
+                :type "void")
+                nil [6007 6053])
+            ("lua_pushlightuserdata" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6093 6106])
+                    ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6107 6115]))                  
+                :type "void")
+                nil [6062 6116])
+            ("lua_pushthread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6149 6162]))                  
+                :type "int")
+                nil [6125 6163])
+            ("lua_getglobal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6233 6246])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6247 6264]))                  
+                :type "int")
+                nil [6212 6265])
+            ("lua_gettable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6294 6307])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6308 6316]))                  
+                :type "int")
+                nil [6274 6317])
+            ("lua_getfield" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6346 6359])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6360 6368])
+                    ("k" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6369 6383]))                  
+                :type "int")
+                nil [6326 6384])
+            ("lua_geti" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6409 6422])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6423 6431])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6432 6446]))                  
+                :type "int")
+                nil [6393 6447])
+            ("lua_rawget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6474 6487])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6488 6496]))                  
+                :type "int")
+                nil [6456 6497])
+            ("lua_rawgeti" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6525 6538])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6539 6547])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6548 6562]))                  
+                :type "int")
+                nil [6506 6563])
+            ("lua_rawgetp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6591 6604])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6605 6613])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6614 6628]))                  
+                :type "int")
+                nil [6572 6629])
+            ("lua_createtable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6664 6677])
+                    ("narr" variable (:type "int") (reparse-symbol arg-sub-list) [6678 6687])
+                    ("nrec" variable (:type "int") (reparse-symbol arg-sub-list) [6688 6697]))                  
+                :type "void")
+                nil [6639 6698])
+            ("lua_newuserdata" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6732 6745])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6746 6756]))                  
+                :type "void")
+                nil [6707 6757])
+            ("lua_getmetatable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6792 6805])
+                    ("objindex" variable (:type "int") (reparse-symbol arg-sub-list) [6806 6819]))                  
+                :type "int")
+                nil [6766 6820])
+            ("lua_getuservalue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6854 6867])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [6868 6876]))                  
+                :type "int")
+                nil [6829 6877])
+            ("lua_setglobal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6949 6962])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6963 6980]))                  
+                :type "void")
+                nil [6926 6981])
+            ("lua_settable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7012 7025])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7026 7034]))                  
+                :type "void")
+                nil [6990 7035])
+            ("lua_setfield" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7066 7079])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7080 7088])
+                    ("k" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7089 7103]))                  
+                :type "void")
+                nil [7044 7104])
+            ("lua_seti" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7131 7144])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7145 7153])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7154 7168]))                  
+                :type "void")
+                nil [7113 7169])
+            ("lua_rawset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7198 7211])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7212 7220]))                  
+                :type "void")
+                nil [7178 7221])
+            ("lua_rawseti" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7251 7264])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7265 7273])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7274 7288]))                  
+                :type "void")
+                nil [7230 7289])
+            ("lua_rawsetp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7319 7332])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7333 7341])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7342 7356]))                  
+                :type "void")
+                nil [7298 7357])
+            ("lua_setmetatable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7392 7405])
+                    ("objindex" variable (:type "int") (reparse-symbol arg-sub-list) [7406 7419]))                  
+                :type "int")
+                nil [7366 7420])
+            ("lua_setuservalue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7455 7468])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [7469 7477]))                  
+                :type "void")
+                nil [7429 7478])
+            ("lua_callk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7569 7582])
+                    ("nargs" variable (:type "int") (reparse-symbol arg-sub-list) [7583 7593])
+                    ("nresults" variable (:type "int") (reparse-symbol arg-sub-list) [7594 7607])
+                    ("ctx" variable (:type ("lua_KContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7635 7652])
+                    ("k" variable (:type ("lua_KFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7653 7669]))                  
+                :type "void")
+                nil [7550 7670])
+            ("lua_call" variable (:constant-flag t) nil [7679 7687])
+            ("lua_pcallk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7757 7770])
+                    ("nargs" variable (:type "int") (reparse-symbol arg-sub-list) [7771 7781])
+                    ("nresults" variable (:type "int") (reparse-symbol arg-sub-list) [7782 7795])
+                    ("errfunc" variable (:type "int") (reparse-symbol arg-sub-list) [7796 7808])
+                    ("ctx" variable (:type ("lua_KContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7837 7854])
+                    ("k" variable (:type ("lua_KFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7855 7871]))                  
+                :type "int")
+                nil [7737 7872])
+            ("lua_pcall" variable (:constant-flag t) nil [7881 7890])
+            ("lua_load" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7965 7978])
+                    ("reader" variable (:type ("lua_Reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7979 7997])
+                    ("dt" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7998 8007])
+                    ("chunkname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8034 8056])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8057 8074]))                  
+                :type "int")
+                nil [7947 8075])
+            ("lua_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8101 8114])
+                    ("writer" variable (:type ("lua_Writer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8115 8133])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8134 8145])
+                    ("strip" variable (:type "int") (reparse-symbol arg-sub-list) [8146 8156]))                  
+                :type "int")
+                nil [8085 8157])
+            ("lua_yieldk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8220 8233])
+                    ("nresults" variable (:type "int") (reparse-symbol arg-sub-list) [8234 8247])
+                    ("ctx" variable (:type ("lua_KContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8248 8265])
+                    ("k" variable (:type ("lua_KFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8297 8313]))                  
+                :type "int")
+                nil [8197 8314])
+            ("lua_resume" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8346 8359])
+                    ("from" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8360 8376])
+                    ("narg" variable (:type "int") (reparse-symbol arg-sub-list) [8377 8386]))                  
+                :type "int")
+                nil [8323 8387])
+            ("lua_status" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8419 8432]))                  
+                :type "int")
+                nil [8396 8433])
+            ("lua_isyieldable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8465 8478]))                  
+                :type "int")
+                nil [8442 8479])
+            ("lua_yield" variable (:constant-flag t) nil [8489 8498])
+            ("LUA_GCSTOP" variable (:constant-flag t) nil [8593 8603])
+            ("LUA_GCRESTART" variable (:constant-flag t) nil [8615 8628])
+            ("LUA_GCCOLLECT" variable (:constant-flag t) nil [8640 8653])
+            ("LUA_GCCOUNT" variable (:constant-flag t) nil [8665 8676])
+            ("LUA_GCCOUNTB" variable (:constant-flag t) nil [8688 8700])
+            ("LUA_GCSTEP" variable (:constant-flag t) nil [8712 8722])
+            ("LUA_GCSETPAUSE" variable (:constant-flag t) nil [8734 8748])
+            ("LUA_GCSETSTEPMUL" variable (:constant-flag t) nil [8760 8776])
+            ("LUA_GCISRUNNING" variable (:constant-flag t) nil [8787 8802])
+            ("lua_gc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8829 8842])
+                    ("what" variable (:type "int") (reparse-symbol arg-sub-list) [8843 8852])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [8853 8862]))                  
+                :type "int")
+                nil [8815 8863])
+            ("lua_error" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8927 8940]))                  
+                :type "int")
+                nil [8908 8941])
+            ("lua_next" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8969 8982])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [8983 8991]))                  
+                :type "int")
+                nil [8951 8992])
+            ("lua_concat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9022 9035])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [9036 9042]))                  
+                :type "void")
+                nil [9002 9043])
+            ("lua_len" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9072 9085])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [9086 9094]))                  
+                :type "void")
+                nil [9052 9095])
+            ("size_t" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_stringtonumber" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9115 9134]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [9097 9164])
+            ("lua_Alloc" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_getallocf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9186 9200]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [9167 9226])
+            ("lua_setallocf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9263 9276])
+                    ("f" variable (:type ("lua_Alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9277 9289])
+                    ("ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9290 9299]))                  
+                :type "void")
+                nil [9236 9300])
+            ("lua_getextraspace" variable (:constant-flag t) nil [9475 9492])
+            ("lua_tonumber" variable (:constant-flag t) nil [9546 9558])
+            ("lua_tointeger" variable (:constant-flag t) nil [9598 9611])
+            ("lua_pop" variable (:constant-flag t) nil [9653 9660])
+            ("lua_newtable" variable (:constant-flag t) nil [9698 9710])
+            ("lua_register" variable (:constant-flag t) nil [9749 9761])
+            ("lua_pushcfunction" variable (:constant-flag t) nil [9829 9846])
+            ("lua_isfunction" variable (:constant-flag t) nil [9889 9903])
+            ("lua_istable" variable (:constant-flag t) nil [9953 9964])
+            ("lua_islightuserdata" variable (:constant-flag t) nil [10011 10030])
+            ("lua_isnil" variable (:constant-flag t) nil [10085 10094])
+            ("lua_isboolean" variable (:constant-flag t) nil [10140 10153])
+            ("lua_isthread" variable (:constant-flag t) nil [10202 10214])
+            ("lua_isnone" variable (:constant-flag t) nil [10262 10272])
+            ("lua_isnoneornil" variable (:constant-flag t) nil [10319 10334])
+            ("lua_pushliteral" variable (:constant-flag t) nil [10374 10389])
+            ("lua_pushglobaltable" variable (:constant-flag t) nil [10429 10448])
+            ("lua_tostring" variable (:constant-flag t) nil [10525 10537])
+            ("lua_insert" variable (:constant-flag t) nil [10581 10591])
+            ("lua_remove" variable (:constant-flag t) nil [10632 10642])
+            ("lua_replace" variable (:constant-flag t) nil [10701 10712])
+            ("LUA_HOOKCALL" variable (:constant-flag t) nil [11532 11544])
+            ("LUA_HOOKRET" variable (:constant-flag t) nil [11555 11566])
+            ("LUA_HOOKLINE" variable (:constant-flag t) nil [11577 11589])
+            ("LUA_HOOKCOUNT" variable (:constant-flag t) nil [11600 11613])
+            ("LUA_HOOKTAILCALL" variable (:constant-flag t) nil [11624 11640])
+            ("LUA_MASKCALL" variable (:constant-flag t) nil [11674 11686])
+            ("LUA_MASKRET" variable (:constant-flag t) nil [11715 11726])
+            ("LUA_MASKLINE" variable (:constant-flag t) nil [11754 11766])
+            ("LUA_MASKCOUNT" variable (:constant-flag t) nil [11795 11808])
+            ("lua_Debug" type
+               (:typedef ("lua_Debug" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11831 11866])
+            ("lua_Hook" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11984 11997])
+                    ("ar" variable
+                       (:pointer 1
+                        :type ("lua_Debug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11998 12012]))                  
+                :type "void")
+                nil [11966 12013])
+            ("lua_getstack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12044 12057])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [12058 12068])
+                    ("ar" variable
+                       (:pointer 1
+                        :type ("lua_Debug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12069 12083]))                  
+                :type "int")
+                nil [12024 12084])
+            ("lua_getinfo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12112 12125])
+                    ("what" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12126 12143])
+                    ("ar" variable
+                       (:pointer 1
+                        :type ("lua_Debug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12144 12158]))                  
+                :type "int")
+                nil [12093 12159])
+            ("lua_getlocal" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12196 12209])
+                    ("ar" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lua_Debug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12210 12230])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12231 12237]))                  
+                :type "char")
+                nil [12168 12238])
+            ("lua_setlocal" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12275 12288])
+                    ("ar" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lua_Debug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12289 12309])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12310 12316]))                  
+                :type "char")
+                nil [12247 12317])
+            ("lua_getupvalue" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12356 12369])
+                    ("funcindex" variable (:type "int") (reparse-symbol arg-sub-list) [12370 12384])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12385 12391]))                  
+                :type "char")
+                nil [12326 12392])
+            ("lua_setupvalue" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12431 12444])
+                    ("funcindex" variable (:type "int") (reparse-symbol arg-sub-list) [12445 12459])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12460 12466]))                  
+                :type "char")
+                nil [12401 12467])
+            ("lua_upvalueid" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12500 12513])
+                    ("fidx" variable (:type "int") (reparse-symbol arg-sub-list) [12514 12523])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12524 12530]))                  
+                :type "void")
+                nil [12477 12531])
+            ("lua_upvaluejoin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12565 12578])
+                    ("fidx1" variable (:type "int") (reparse-symbol arg-sub-list) [12579 12589])
+                    ("n1" variable (:type "int") (reparse-symbol arg-sub-list) [12590 12597])
+                    ("fidx2" variable (:type "int") (reparse-symbol arg-sub-list) [12645 12655])
+                    ("n2" variable (:type "int") (reparse-symbol arg-sub-list) [12656 12663]))                  
+                :type "void")
+                nil [12540 12664])
+            ("lua_sethook" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12694 12707])
+                    ("func" variable (:type ("lua_Hook" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12708 12722])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [12723 12732])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [12733 12743]))                  
+                :type "void")
+                nil [12674 12744])
+            ("lua_Hook" function
+               (:arguments 
+                  ( ("" variable (:type ("lua_gethook" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12763 12775]))                  
+                :type ("LUA_API" type (:type "class") nil nil))
+                nil [12745 12790])
+            ("lua_gethookmask" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12823 12836]))                  
+                :type "int")
+                nil [12800 12837])
+            ("lua_gethookcount" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12870 12883]))                  
+                :type "int")
+                nil [12846 12884])
+            ("lua_Debug" type
+               (:members 
+                  ( ("event" variable (:type "int") (reparse-symbol classsubparts) [12908 12918])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [12921 12938])
+                    ("namewhat" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [12951 12972])
+                    ("what" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [13022 13039])
+                    ("source" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [13079 13098])
+                    ("currentline" variable (:type "int") (reparse-symbol classsubparts) [13111 13127])
+                    ("linedefined" variable (:type "int") (reparse-symbol classsubparts) [13140 13156])
+                    ("lastlinedefined" variable (:type "int") (reparse-symbol classsubparts) [13169 13189])
+                    ("nups" variable (:type "unsigned char") (reparse-symbol classsubparts) [13202 13221])
+                    ("nparams" variable (:type "unsigned char") (reparse-symbol classsubparts) [13253 13275])
+                    ("isvararg" variable (:type "char") (reparse-symbol classsubparts) [13308 13322])
+                    ("istailcall" variable (:type "char") (reparse-symbol classsubparts) [13342 13358])
+                    ("short_src" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13371 13398])
+                    ("i_ci" variable
+                       (:pointer 1
+                        :type ("CallInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13432 13454]))                  
+                :type "struct")
+                nil [12887 13480]))          
+      :file "lua.h"
+      :pointmax 14834
+      :fsize 14833
+      :lastmodtime '(22619 63096 0 0)
+      :unmatched-syntax '((symbol 12838 . 12845) (symbol 12792 . 12799) (punctuation 12790 . 12791) (symbol 12666 . 12673) (symbol 12532 . 12539) (symbol 12469 . 12476) (symbol 12393 . 12400) (symbol 12318 . 12325) (symbol 12239 . 12246) (symbol 12160 . 12167) (symbol 12085 . 12092) (symbol 12016 . 12023) (TYPEDEF 11958 . 11965) (symbol 9228 . 9235) (punctuation 9226 . 9227) (punctuation 9164 . 9165) (symbol 9044 . 9051) (symbol 8994 . 9001) (symbol 8943 . 8950) (symbol 8900 . 8907) (symbol 8807 . 8814) (symbol 8434 . 8441) (symbol 8388 . 8395) (symbol 8315 . 8322) (symbol 8189 . 8196) (symbol 8077 . 8084) (symbol 7939 . 7946) (symbol 7729 . 7736) (symbol 7542 . 7549) (symbol 7421 . 7428) (symbol 7358 . 7365) (symbol 7290 . 7297) (symbol 7222 . 7229) (symbol 7170 . 7177) (symbol 7105 . 7112) (symbol 7036 . 7043) (symbol 6982 . 6989) (symbol 6918 . 6925) (symbol 6821 . 6828) (symbol 6758 . 6765) (symbol 6699 . 6706) (symbol 6631 . 6638) (symbol 6564 . 6571) (symbol 6498 . 6505) (symbol 6448 . 6455) (symbol 6385 . 6392) (symbol 6318 . 6325) (symbol 6266 . 6273) (symbol 6204 . 6211) (symbol 6117 . 6124) (symbol 6054 . 6061) (symbol 5999 . 6006) (symbol 5925 . 5932) (symbol 5849 . 5856) (symbol 5709 . 5716) (symbol 5641 . 5648) (symbol 5560 . 5567) (symbol 5491 . 5498) (symbol 5424 . 5431) (symbol 5374 . 5381) (symbol 5263 . 5270) (symbol 5198 . 5205) (symbol 5089 . 5096) (symbol 4662 . 4669) (symbol 4598 . 4605) (symbol 4535 . 4542) (punctuation 4533 . 4534) (punctuation 4466 . 4467) (symbol 4328 . 4335) (symbol 4263 . 4270) (punctuation 4261 . 4262) (punctuation 4183 . 4184) (symbol 4044 . 4051) (symbol 3984 . 3991) (symbol 3918 . 3925) (symbol 3853 . 3860) (symbol 3786 . 3793) (symbol 3722 . 3729) (symbol 3658 . 3665) (symbol 3549 . 3556) (symbol 3494 . 3501) (symbol 3429 . 3436) (symbol 3370 . 3377) (symbol 3315 . 3322) (symbol 3263 . 3270) (symbol 3220 . 3227) (symbol 3166 . 3173) (symbol 3074 . 3081) (punctuation 3070 . 3071) (symbol 2946 . 2953) (symbol 2899 . 2906) (symbol 2840 . 2847) (TYPEDEF 2582 . 2589) (TYPEDEF 2456 . 2463) (TYPEDEF 2382 . 2389) (TYPEDEF 2222 . 2229) (TYPEDEF 2135 . 2142))
+      :lexical-table 
+        '(("lua_h")
+          ("LUA_REGISTRYINDEX" . ((semantic-list "(-LUAI_MAXSTACK - 1000)" 1020 . 1043)))
+          ("LUA_OK" . ((number "0" 1136 . 1137)))
+          ("LUA_ERRERR" . ((number "6" 1265 . 1266)))
+          ("LUA_TBOOLEAN" . ((number "1" 1395 . 1396)))
+          ("lua_call" (spp-arg-list ("L" "n" "r") 7687 . 7694) . ((symbol "lua_callk" 7696 . 7705) (semantic-list "(L, (n), (r), 0, NULL)" 7705 . 7727)))
+          ("LUA_MASKRET" . ((semantic-list "(1 << LUA_HOOKRET)" 11727 . 11745)))
+          ("LUA_VERSION_RELEASE" . ((string "\"4\"" 403 . 406)))
+          ("LUA_TTABLE" . ((number "5" 1492 . 1493)))
+          ("lua_tointeger" (spp-arg-list ("L" "i") 9611 . 9616) . ((symbol "lua_tointegerx" 9617 . 9631) (semantic-list "(L,(i),NULL)" 9631 . 9643)))
+          ("lua_islightuserdata" (spp-arg-list ("L" "n") 10030 . 10035) . ((semantic-list "(lua_type(L, (n)) == LUA_TLIGHTUSERDATA)" 10036 . 10076)))
+          ("lua_insert" (spp-arg-list ("L" "idx") 10591 . 10598) . ((symbol "lua_rotate" 10599 . 10609) (semantic-list "(L, (idx), 1)" 10609 . 10622)))
+          ("LUA_MASKCALL" . ((semantic-list "(1 << LUA_HOOKCALL)" 11687 . 11706)))
+          ("LUA_COPYRIGHT" . ((symbol "LUA_RELEASE" 553 . 564) (string "\"  Copyright (C) 1994-2017 Lua.org, PUC-Rio\"" 565 . 609)))
+          ("LUA_ERRMEM" . ((number "4" 1222 . 1223)))
+          ("LUA_TNIL" . ((number "0" 1371 . 1372)))
+          ("LUA_RIDX_MAINTHREAD" . ((number "1" 1738 . 1739)))
+          ("LUA_RIDX_LAST" . ((symbol "LUA_RIDX_GLOBALS" 1790 . 1806)))
+          ("LUA_OPMUL" . ((number "2" 4858 . 4859)))
+          ("LUA_OPMOD" . ((number "3" 4878 . 4879)))
+          ("LUA_OPUNM" . ((number "12" 5063 . 5065)))
+          ("LUA_GCCOUNTB" . ((number "4" 8702 . 8703)))
+          ("lua_isthread" (spp-arg-list ("L" "n") 10214 . 10219) . ((semantic-list "(lua_type(L, (n)) == LUA_TTHREAD)" 10220 . 10253)))
+          ("LUA_VERSION_NUM" . ((number "503" 371 . 374)))
+          ("LUA_MINSTACK" . ((number "20" 1665 . 1667)))
+          ("LUA_RIDX_GLOBALS" . ((number "2" 1765 . 1766)))
+          ("LUA_GCSTEP" . ((number "5" 8724 . 8725)))
+          ("LUA_GCSETPAUSE" . ((number "6" 8750 . 8751)))
+          ("lua_pushcfunction" (spp-arg-list ("L" "f") 9846 . 9851) . ((symbol "lua_pushcclosure" 9852 . 9868) (semantic-list "(L, (f), 0)" 9868 . 9879)))
+          ("LUA_HOOKCALL" . ((number "0" 11545 . 11546)))
+          ("LUA_MASKLINE" . ((semantic-list "(1 << LUA_HOOKLINE)" 11767 . 11786)))
+          ("LUA_VERSION_MAJOR" . ((string "\"5\"" 312 . 315)))
+          ("LUA_SIGNATURE" . ((string "\"\\x1bLua\"" 749 . 758)))
+          ("lua_upvalueindex" (spp-arg-list ("i") 1068 . 1071) . ((semantic-list "(LUA_REGISTRYINDEX - (i))" 1072 . 1097)))
+          ("LUA_OPADD" . ((number "0" 4793 . 4794)))
+          ("LUA_OPIDIV" . ((number "6" 4939 . 4940)))
+          ("LUA_OPSHL" . ((number "10" 5021 . 5023)))
+          ("LUA_OPLE" . ((number "2" 5195 . 5196)))
+          ("lua_newtable" (spp-arg-list ("L") 9710 . 9713) . ((symbol "lua_createtable" 9715 . 9730) (semantic-list "(L, 0, 0)" 9730 . 9739)))
+          ("lua_isboolean" (spp-arg-list ("L" "n") 10153 . 10158) . ((semantic-list "(lua_type(L, (n)) == LUA_TBOOLEAN)" 10159 . 10193)))
+          ("lua_isnoneornil" (spp-arg-list ("L" "n") 10334 . 10340) . ((semantic-list "(lua_type(L, (n)) <= 0)" 10341 . 10364)))
+          ("LUA_HOOKTAILCALL" . ((number "4" 11641 . 11642)))
+          ("LUA_RELEASE" . 
+              ((symbol "LUA_VERSION" 495 . 506) (string "\".\"" 507 . 510) (symbol "LUA_VERSION_RELEASE" 511 . 530)))
+          ("LUA_ERRRUN" . ((number "2" 1177 . 1178)))
+          ("LUA_TNONE" . ((semantic-list "(-1)" 1347 . 1351)))
+          ("LUA_TLIGHTUSERDATA" . ((number "2" 1424 . 1425)))
+          ("LUA_GCISRUNNING" . ((number "9" 8804 . 8805)))
+          ("lua_getextraspace" (spp-arg-list ("L") 9492 . 9495) . ((semantic-list "((void *)((char *)(L) - LUA_EXTRASPACE))" 9496 . 9536)))
+          ("LUA_HOOKRET" . ((number "1" 11567 . 11568)))
+          ("LUA_HOOKLINE" . ((number "2" 11590 . 11591)))
+          ("LUA_VERSION" . 
+              ((string "\"Lua \"" 428 . 434) (symbol "LUA_VERSION_MAJOR" 435 . 452) (string "\".\"" 453 . 456) (symbol "LUA_VERSION_MINOR" 457 . 474)))
+          ("LUA_TUSERDATA" . ((number "7" 1542 . 1543)))
+          ("LUA_OPBAND" . ((number "7" 4960 . 4961)))
+          ("LUA_OPLT" . ((number "1" 5176 . 5177)))
+          ("lua_istable" (spp-arg-list ("L" "n") 9964 . 9969) . ((semantic-list "(lua_type(L, (n)) == LUA_TTABLE)" 9970 . 10002)))
+          ("lua_tostring" (spp-arg-list ("L" "i") 10537 . 10542) . ((symbol "lua_tolstring" 10543 . 10556) (semantic-list "(L, (i), NULL)" 10556 . 10570)))
+          ("lua_remove" (spp-arg-list ("L" "idx") 10642 . 10649) . ((semantic-list "(lua_rotate(L, (idx), -1), lua_pop(L, 1))" 10650 . 10691)))
+          ("LUA_MASKCOUNT" . ((semantic-list "(1 << LUA_HOOKCOUNT)" 11809 . 11829)))
+          ("LUA_ERRGCMM" . ((number "5" 1244 . 1245)))
+          ("LUA_TFUNCTION" . ((number "6" 1517 . 1518)))
+          ("LUA_TTHREAD" . ((number "8" 1565 . 1566)))
+          ("LUA_OPSUB" . ((number "1" 4838 . 4839)))
+          ("lua_yield" (spp-arg-list ("L" "n") 8498 . 8503) . ((symbol "lua_yieldk" 8505 . 8515) (semantic-list "(L, (n), 0, NULL)" 8515 . 8532)))
+          ("LUA_GCSTOP" . ((number "0" 8605 . 8606)))
+          ("LUA_GCCOLLECT" . ((number "2" 8655 . 8656)))
+          ("lua_pushglobaltable" (spp-arg-list ("L") 10448 . 10451) . ((semantic-list "((void)lua_rawgeti(L, LUA_REGISTRYINDEX, LUA_RIDX_GLOBALS))" 10456 . 10515)))
+          ("LUA_TSTRING" . ((number "4" 1470 . 1471)))
+          ("LUA_OPBOR" . ((number "8" 4980 . 4981)))
+          ("LUA_OPEQ" . ((number "0" 5157 . 5158)))
+          ("lua_pushliteral" (spp-arg-list ("L" "s") 10389 . 10395) . ((symbol "lua_pushstring" 10396 . 10410) (semantic-list "(L, \"\" s)" 10410 . 10419)))
+          ("lua_replace" (spp-arg-list ("L" "idx") 10712 . 10719) . ((semantic-list "(lua_copy(L, -1, (idx)), lua_pop(L, 1))" 10720 . 10759)))
+          ("LUA_VERSION_MINOR" . ((string "\"3\"" 342 . 345)))
+          ("LUA_YIELD" . ((number "1" 1156 . 1157)))
+          ("LUA_OPPOW" . ((number "4" 4898 . 4899)))
+          ("LUA_OPBXOR" . ((number "9" 5001 . 5002)))
+          ("LUA_GCRESTART" . ((number "1" 8630 . 8631)))
+          ("LUA_GCCOUNT" . ((number "3" 8678 . 8679)))
+          ("lua_isnone" (spp-arg-list ("L" "n") 10272 . 10277) . ((semantic-list "(lua_type(L, (n)) == LUA_TNONE)" 10279 . 10310)))
+          ("LUA_AUTHORS" . ((string "\"R. Ierusalimschy, L. H. de Figueiredo, W. Celes\"" 630 . 679)))
+          ("LUA_OPSHR" . ((number "11" 5042 . 5044)))
+          ("LUA_GCSETSTEPMUL" . ((number "7" 8777 . 8778)))
+          ("lua_tonumber" (spp-arg-list ("L" "i") 9558 . 9563) . ((symbol "lua_tonumberx" 9564 . 9577) (semantic-list "(L,(i),NULL)" 9577 . 9589)))
+          ("lua_pop" (spp-arg-list ("L" "n") 9660 . 9665) . ((symbol "lua_settop" 9667 . 9677) (semantic-list "(L, -(n)-1)" 9677 . 9688)))
+          ("lua_isnil" (spp-arg-list ("L" "n") 10094 . 10099) . ((semantic-list "(lua_type(L, (n)) == LUA_TNIL)" 10101 . 10131)))
+          ("LUA_NUMTAGS" . ((number "9" 1589 . 1590)))
+          ("lua_pcall" (spp-arg-list ("L" "n" "r" "f") 7890 . 7899) . ((symbol "lua_pcallk" 7900 . 7910) (semantic-list "(L, (n), (r), (f), 0, NULL)" 7910 . 7937)))
+          ("lua_register" (spp-arg-list ("L" "n" "f") 9761 . 9768) . ((semantic-list "(lua_pushcfunction(L, (f)), lua_setglobal(L, (n)))" 9769 . 9819)))
+          ("LUA_MULTRET" . ((semantic-list "(-1)" 844 . 848)))
+          ("LUA_ERRSYNTAX" . ((number "3" 1201 . 1202)))
+          ("LUA_TNUMBER" . ((number "3" 1447 . 1448)))
+          ("LUA_OPDIV" . ((number "5" 4918 . 4919)))
+          ("LUA_OPBNOT" . ((number "13" 5085 . 5087)))
+          ("lua_isfunction" (spp-arg-list ("L" "n") 9903 . 9908) . ((semantic-list "(lua_type(L, (n)) == LUA_TFUNCTION)" 9909 . 9944)))
+          ("LUA_HOOKCOUNT" . ((number "3" 11614 . 11615)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("luaconf_h" variable (:constant-flag t) nil [158 167])
+            ("limits.h" include (:system-flag t) nil [169 188])
+            ("stddef.h" include (:system-flag t) nil [189 208])
+            ("LUAI_BITSINT" variable (:constant-flag t) nil [2399 2411])
+            ("LUA_INT_INT" variable (:constant-flag t) nil [2919 2930])
+            ("LUA_INT_LONG" variable (:constant-flag t) nil [2942 2954])
+            ("LUA_INT_LONGLONG" variable (:constant-flag t) nil [2966 2982])
+            ("LUA_FLOAT_FLOAT" variable (:constant-flag t) nil [3038 3053])
+            ("LUA_FLOAT_DOUBLE" variable (:constant-flag t) nil [3065 3081])
+            ("LUA_FLOAT_LONGDOUBLE" variable (:constant-flag t) nil [3092 3112])
+            ("LUA_PATH_SEP" variable (:constant-flag t) nil [4311 4323])
+            ("LUA_PATH_MARK" variable (:constant-flag t) nil [4347 4360])
+            ("LUA_EXEC_DIR" variable (:constant-flag t) nil [4383 4395])
+            ("LUA_VDIR" variable (:constant-flag t) nil [4748 4756])
+            ("LUA_ROOT" variable (:constant-flag t) nil [5440 5448])
+            ("LUA_LDIR" variable (:constant-flag t) nil [5471 5479])
+            ("LUA_CDIR" variable (:constant-flag t) nil [5523 5531])
+            ("LUA_PATH_DEFAULT" variable (:constant-flag t) nil [5573 5589])
+            ("LUA_CPATH_DEFAULT" variable (:constant-flag t) nil [5717 5734])
+            ("LUA_DIRSEP" variable (:constant-flag t) nil [6065 6075])
+            ("LUA_API" variable (:constant-flag t) nil [7024 7031])
+            ("LUALIB_API" variable (:constant-flag t) nil [7130 7140])
+            ("LUAMOD_API" variable (:constant-flag t) nil [7157 7167])
+            ("LUAI_FUNC" variable (:constant-flag t) nil [8097 8106])
+            ("LUAI_DDEC" variable (:constant-flag t) nil [8141 8150])
+            ("LUAI_DDEF" variable (:constant-flag t) nil [8169 8178])
+            ("l_floor" variable (:constant-flag t) nil [12267 12274])
+            ("lua_number2str" variable (:constant-flag t) nil [12309 12323])
+            ("lua_numbertointeger" variable (:constant-flag t) nil [12821 12840])
+            ("LUA_INTEGER_FMT" variable (:constant-flag t) nil [14546 14561])
+            ("LUAI_UACINT" variable (:constant-flag t) nil [14599 14610])
+            ("lua_integer2str" variable (:constant-flag t) nil [14633 14648])
+            ("LUA_UNSIGNED" variable (:constant-flag t) nil [14864 14876])
+            ("l_sprintf" variable (:constant-flag t) nil [16543 16552])
+            ("LUA_KCONTEXT" variable (:constant-flag t) nil [18038 18050])
+            ("LUAI_MAXSTACK" variable (:constant-flag t) nil [20109 20122])
+            ("LUA_EXTRASPACE" variable (:constant-flag t) nil [20306 20320])
+            ("LUA_IDSIZE" variable (:constant-flag t) nil [20508 20518])
+            ("LUAL_BUFFERSIZE" variable (:constant-flag t) nil [20904 20919])
+            ("LUA_QL" variable (:constant-flag t) nil [21218 21224])
+            ("LUA_QS" variable (:constant-flag t) nil [21246 21252]))          
+      :file "luaconf.h"
+      :pointmax 21486
+      :fsize 21485
+      :lastmodtime '(22619 53346 0 0)
+      :unmatched-syntax '((string 16015 . 16049) (symbol 16009 . 16014) (punctuation 16008 . 16009) (string 13918 . 13950) (symbol 13912 . 13917) (punctuation 13911 . 13912))
+      :lexical-table 
+        '(("LUA_INT_LONGLONG" . ((number "3" 2983 . 2984)))
+          ("LUA_EXTRASPACE" . ((semantic-list "(sizeof(void *))" 20322 . 20338)))
+          ("LUAI_BITSINT" . ((number "16" 2412 . 2414)))
+          ("LUA_FLOAT_FLOAT" . ((number "1" 3055 . 3056)))
+          ("LUA_FLOAT_LONGDOUBLE" . ((number "3" 3113 . 3114)))
+          ("LUA_PATH_SEP" . ((string "\";\"" 4335 . 4338)))
+          ("LUA_LDIR" . 
+              ((symbol "LUA_ROOT" 5480 . 5488) (string "\"share/lua/\"" 5489 . 5501) (symbol "LUA_VDIR" 5502 . 5510) (string "\"/\"" 5511 . 5514)))
+          ("LUA_API" . ((EXTERN "extern" 7033 . 7039)))
+          ("LUAI_FUNC" . ((EXTERN "extern" 8107 . 8113)))
+          ("LUAI_DDEC" . ((symbol "LUAI_FUNC" 8151 . 8160)))
+          ("LUA_INTEGER_FMT" . 
+              ((string "\"%\"" 14563 . 14566) (symbol "LUA_INTEGER_FRMLEN" 14567 . 14585) (string "\"d\"" 14586 . 14589)))
+          ("LUA_QS" . ((symbol "LUA_QL" 21254 . 21260) (semantic-list "(\"%s\")" 21260 . 21266)))
+          ("l_floor" (spp-arg-list ("x") 12274 . 12277) . ((semantic-list "(l_mathop(floor)(x))" 12279 . 12299)))
+          ("lua_numbertointeger" (spp-arg-list ("n" "p") 12840 . 12845) . ((semantic-list "((n) >= (LUA_NUMBER)(LUA_MININTEGER) && \\
+   (n) < -(LUA_NUMBER)(LUA_MININTEGER) && \\
+      (*(p) = (LUA_INTEGER)(n), 1))" 12850 . 12971)))
+          ("LUA_KCONTEXT" . ((symbol "ptrdiff_t" 18051 . 18060)))
+          ("LUA_PATH_MARK" . ((string "\"?\"" 4371 . 4374)))
+          ("LUAI_UACINT" . ((symbol "LUA_INTEGER" 14612 . 14623)))
+          ("l_sprintf" (spp-arg-list ("s" "sz" "f" "i") 16552 . 16562) . ((semantic-list "((void)(sz), sprintf(s,f,i))" 16563 . 16591)))
+          ("LUA_IDSIZE" . ((number "60" 20519 . 20521)))
+          ("LUA_INT_INT" . ((number "1" 2932 . 2933)))
+          ("LUA_CPATH_DEFAULT" . 
+              ((symbol "LUA_CDIR" 5739 . 5747) (string "\"?.so;\"" 5747 . 5754) (symbol "LUA_CDIR" 5755 . 5763) (string "\"loadall.so;\"" 5763 . 5776) (string "\"./?.so\"" 5777 . 5785)))
+          ("LUAI_DDEF")
+          ("luaconf_h")
+          ("LUA_FLOAT_DOUBLE" . ((number "2" 3082 . 3083)))
+          ("LUA_CDIR" . 
+              ((symbol "LUA_ROOT" 5532 . 5540) (string "\"lib/lua/\"" 5541 . 5551) (symbol "LUA_VDIR" 5552 . 5560) (string "\"/\"" 5561 . 5564)))
+          ("LUAMOD_API" . ((symbol "LUALIB_API" 7168 . 7178)))
+          ("lua_number2str" (spp-arg-list ("s" "sz" "n") 12323 . 12331) . ((symbol "l_sprintf" 12336 . 12345) (semantic-list "((s), sz, LUA_NUMBER_FMT, (LUAI_UACNUMBER)(n))" 12345 . 12391)))
+          ("LUA_EXEC_DIR" . ((string "\"!\"" 4407 . 4410)))
+          ("lua_integer2str" (spp-arg-list ("s" "sz" "n") 14648 . 14656) . ((symbol "l_sprintf" 14661 . 14670) (semantic-list "((s), sz, LUA_INTEGER_FMT, (LUAI_UACINT)(n))" 14670 . 14714)))
+          ("LUA_UNSIGNED" . ((UNSIGNED "unsigned" 14878 . 14886) (symbol "LUAI_UACINT" 14887 . 14898)))
+          ("LUA_QL" (spp-arg-list ("x") 21224 . 21227) . 
+              ((string "\"'\"" 21228 . 21231) (symbol "x" 21232 . 21233) (string "\"'\"" 21234 . 21237)))
+          ("LUAI_MAXSTACK" . ((number "15000" 20124 . 20129)))
+          ("LUA_ROOT" . ((string "\"/usr/local/\"" 5449 . 5462)))
+          ("LUALIB_API" . ((symbol "LUA_API" 7141 . 7148)))
+          ("LUA_DIRSEP" . ((string "\"/\"" 6076 . 6079)))
+          ("LUA_VDIR" . 
+              ((symbol "LUA_VERSION_MAJOR" 4757 . 4774) (string "\".\"" 4775 . 4778) (symbol "LUA_VERSION_MINOR" 4779 . 4796)))
+          ("LUA_PATH_DEFAULT" . 
+              ((symbol "LUA_LDIR" 5595 . 5603) (string "\"?.lua;\"" 5603 . 5611) (symbol "LUA_LDIR" 5613 . 5621) (string "\"?/init.lua;\"" 5621 . 5634) (symbol "LUA_CDIR" 5639 . 5647) (string "\"?.lua;\"" 5647 . 5655) (symbol "LUA_CDIR" 5657 . 5665) (string "\"?/init.lua;\"" 5665 . 5678) (string "\"./?.lua;\"" 5683 . 5693) (string "\"./?/init.lua\"" 5694 . 5708)))
+          ("LUA_INT_LONG" . ((number "2" 2956 . 2957)))
+          ("LUAL_BUFFERSIZE" . ((semantic-list "((int)(0x80 * sizeof(void*) * sizeof(lua_Integer)))" 20922 . 20973)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("XXHASH_H_5627135585666179" variable (:constant-flag t) nil [2889 2914])
+            ("stddef.h" include (:system-flag t) nil [3045 3064])
+            ("XXH_errorcode" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XXH_OK" variable
+                             (:constant-flag t
+                              :default-value (3102 3103)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3095 3104])
+                          ("XXH_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3105 3116]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3080 3131])
+            ("XXH_PUBLIC_API" variable (:constant-flag t) nil [4234 4248])
+            ("XXH_VERSION_MAJOR" variable (:constant-flag t) nil [6382 6399])
+            ("XXH_VERSION_MINOR" variable (:constant-flag t) nil [6413 6430])
+            ("XXH_VERSION_RELEASE" variable (:constant-flag t) nil [6444 6463])
+            ("XXH_VERSION_NUMBER" variable (:constant-flag t) nil [6475 6493])
+            ("XXH_versionNumber" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6614 6619]))                  
+                :type "unsigned int")
+                nil [6586 6620])
+            ("XXH32_hash_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [6786 6820])
+            ("XXH32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7191 7209])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7210 7224])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7225 7243]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [7171 7244])
+            ("XXH32_state_t" type
+               (:typedef ("XXH32_state_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7278 7321])
+            ("XXH32_createState" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7394 7399]))                  
+                :type ("XXH32_state_t" type (:type "class") nil nil))
+                nil [7361 7400])
+            ("XXH32_freeState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7447 7471]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7416 7472])
+            ("XXH32_copyState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst_state" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7509 7534])
+                    ("src_state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7535 7566]))                  
+                :type "void")
+                nil [7488 7567])
+            ("XXH32_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7612 7636])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7637 7655]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7584 7656])
+            ("XXH32_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7700 7724])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7725 7743])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7744 7758]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7672 7759])
+            ("XXH32_digest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7803 7833]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [7775 7834])
+            ("XXH32_canonical_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("digest" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [8890 8914]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8873 8935])
+            ("XXH32_canonicalFromHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8980 9003])
+                    ("hash" variable (:type ("XXH32_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9004 9022]))                  
+                :type "void")
+                nil [8951 9023])
+            ("XXH32_hashFromCanonical" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9076 9105]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [9039 9106])
+            ("XXH64_hash_t" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [9699 9739])
+            ("XXH64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10036 10054])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10055 10069])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [10070 10094]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10016 10095])
+            ("XXH64_state_t" type
+               (:typedef ("XXH64_state_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10129 10172])
+            ("XXH64_createState" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10245 10250]))                  
+                :type ("XXH64_state_t" type (:type "class") nil nil))
+                nil [10212 10251])
+            ("XXH64_freeState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10298 10322]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10267 10323])
+            ("XXH64_copyState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst_state" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10360 10385])
+                    ("src_state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10386 10417]))                  
+                :type "void")
+                nil [10339 10418])
+            ("XXH64_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10463 10487])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [10488 10512]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10435 10513])
+            ("XXH64_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10557 10581])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10582 10600])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10601 10615]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10529 10616])
+            ("XXH64_digest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10660 10690]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10632 10691])
+            ("XXH64_canonical_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("digest" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [10757 10781]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10740 10802])
+            ("XXH64_canonicalFromHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10847 10870])
+                    ("hash" variable (:type ("XXH64_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10871 10889]))                  
+                :type "void")
+                nil [10818 10890])
+            ("XXH64_hashFromCanonical" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10943 10972]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10906 10973]))          
+      :file "xxhash.h"
+      :pointmax 13467
+      :fsize 13466
+      :lastmodtime '(23373 42098 658732 708000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("XXH_PUBLIC_API")
+          ("XXH_VERSION_MAJOR" . ((number "0" 6403 . 6404)))
+          ("XXHASH_H_5627135585666179" . ((number "1" 2915 . 2916)))
+          ("XXH_VERSION_RELEASE" . ((number "5" 6465 . 6466)))
+          ("XXH_VERSION_MINOR" . ((number "6" 6434 . 6435)))
+          ("XXH_VERSION_NUMBER" . ((semantic-list "(XXH_VERSION_MAJOR *100*100 + XXH_VERSION_MINOR *100 + XXH_VERSION_RELEASE)" 6495 . 6570)))
+          )
+))
+  :file "!usr!local!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

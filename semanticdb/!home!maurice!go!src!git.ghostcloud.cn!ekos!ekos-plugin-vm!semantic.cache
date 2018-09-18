@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( (".PHONY" function (:arguments ("package")) nil [1 17])
+            ("package" function nil nil [17 45]))          
+      :file "Makefile"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(23427 59206 465882 613000)
+      :unmatched-syntax '((shell-command 27 . 44) (bol 26 . 26))))
+  :file "!home!maurice!go!src!git.ghostcloud.cn!ekos!ekos-plugin-vm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

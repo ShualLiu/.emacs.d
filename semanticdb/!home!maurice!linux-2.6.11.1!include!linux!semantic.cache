@@ -614,6 +614,1406 @@
           ("_LINUX_PID_H")
           ("pid_task" (spp-arg-list ("elem" "type") 375 . 387) . ((symbol "list_entry" 391 . 401) (semantic-list "(elem, struct task_struct, pids[type].pid_list)" 401 . 448)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_SMP_H" variable (:constant-flag t) nil [31 44])
+            ("linux/config.h" include (:system-flag t) nil [109 134])
+            ("cpu_idle" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [157 162]))                  
+                :type "void")
+                nil [136 163])
+            ("hard_smp_processor_id" variable (:constant-flag t) nil [2148 2169])
+            ("smp_threads_ready" variable (:constant-flag t) nil [2184 2201])
+            ("smp_call_function" variable (:constant-flag t) nil [2214 2231])
+            ("on_each_cpu" variable (:constant-flag t) nil [2271 2282])
+            ("smp_send_reschedule" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [2365 2373]))                  
+                :type "void")
+                nil [2326 2377])
+            ("num_booting_cpus" variable (:constant-flag t) nil [2386 2402])
+            ("smp_prepare_boot_cpu" variable (:constant-flag t) nil [2417 2437])
+            ("_smp_processor_id" variable (:constant-flag t) nil [3441 3458])
+            ("get_cpu" variable (:constant-flag t) nil [3496 3503])
+            ("put_cpu" variable (:constant-flag t) nil [3560 3567])
+            ("put_cpu_no_resched" variable (:constant-flag t) nil [3596 3614]))          
+      :file "smp.h"
+      :pointmax 3673
+      :fsize 3672
+      :lastmodtime '(16936 39500 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("smp_threads_ready" . ((number "1" 2204 . 2205)))
+          ("num_booting_cpus" (spp-arg-list nil 2402 . 2404) . ((number "1" 2407 . 2408)))
+          ("put_cpu" (spp-arg-list nil 3567 . 3569) . ((symbol "preempt_enable" 3571 . 3585) (semantic-list "()" 3585 . 3587)))
+          ("__LINUX_SMP_H")
+          ("smp_prepare_boot_cpu" (spp-arg-list nil 2437 . 2439) . 
+              ((DO "do" 2442 . 2444) (semantic-list "{}" 2445 . 2447) (WHILE "while" 2448 . 2453) (semantic-list "(0)" 2454 . 2457)))
+          ("get_cpu" (spp-arg-list nil 3503 . 3505) . ((semantic-list "({ preempt_disable(); smp_processor_id(); })" 3507 . 3551)))
+          ("_smp_processor_id" (spp-arg-list nil 3458 . 3460) . ((symbol "smp_processor_id" 3461 . 3477) (semantic-list "()" 3477 . 3479)))
+          ("smp_call_function" (spp-arg-list ("func" "info" "retry" "wait") 2231 . 2253) . ((semantic-list "({ 0; })" 2254 . 2262)))
+          ("on_each_cpu" (spp-arg-list ("func" "info" "retry" "wait") 2282 . 2304) . ((semantic-list "({ func(info); 0; })" 2305 . 2325)))
+          ("hard_smp_processor_id" (spp-arg-list nil 2169 . 2171) . ((number "0" 2174 . 2175)))
+          ("put_cpu_no_resched" (spp-arg-list nil 3614 . 3616) . ((symbol "preempt_enable_no_resched" 3617 . 3642) (semantic-list "()" 3642 . 3644)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LINUX__INIT_TASK_H" variable (:constant-flag t) nil [37 56])
+            ("linux/file.h" include (:system-flag t) nil [58 81])
+            ("INIT_FILES" variable (:constant-flag t) nil [91 101])
+            ("INIT_KIOCTX" variable (:constant-flag t) nil [514 525])
+            ("INIT_MM" variable (:constant-flag t) nil [815 822])
+            ("INIT_SIGNALS" variable (:constant-flag t) nil [1213 1225])
+            ("INIT_SIGHAND" variable (:constant-flag t) nil [1534 1546])
+            ("init_groups" variable
+               (:typemodifiers ("extern")
+                :type ("group_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1688 1725])
+            ("INIT_TASK" variable (:constant-flag t) nil [1854 1863]))          
+      :file "init_task.h"
+      :pointmax 3349
+      :fsize 3348
+      :lastmodtime '(16936 39493 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INIT_SIGHAND" (spp-arg-list ("sighand") 1546 . 1555) . ((semantic-list "{						\\
+	.count		= ATOMIC_INIT(1), 				\\
+	.action		= { { { .sa_handler = NULL, } }, },		\\
+	.siglock	= SPIN_LOCK_UNLOCKED, 				\\
+}" 1556 . 1686)))
+          ("_LINUX__INIT_TASK_H")
+          ("INIT_FILES" . ((semantic-list "{ 							\\
+	.count		= ATOMIC_INIT(1), 		\\
+	.file_lock	= SPIN_LOCK_UNLOCKED, 		\\
+	.max_fds	= NR_OPEN_DEFAULT, 		\\
+	.max_fdset	= __FD_SETSIZE, 		\\
+	.next_fd	= 0, 				\\
+	.fd		= &init_files.fd_array[0], 	\\
+	.close_on_exec	= &init_files.close_on_exec_init, \\
+	.open_fds	= &init_files.open_fds_init, 	\\
+	.close_on_exec_init = { { 0, } }, 		\\
+	.open_fds_init	= { { 0, } }, 			\\
+	.fd_array	= { NULL, } 			\\
+}" 104 . 504)))
+          ("INIT_MM" (spp-arg-list ("name") 822 . 828) . ((semantic-list "{			 					\\
+	.mm_rb		= RB_ROOT,				\\
+	.pgd		= swapper_pg_dir, 			\\
+	.mm_users	= ATOMIC_INIT(2), 			\\
+	.mm_count	= ATOMIC_INIT(1), 			\\
+	.mmap_sem	= __RWSEM_INITIALIZER(name.mmap_sem),	\\
+	.page_table_lock =  SPIN_LOCK_UNLOCKED, 		\\
+	.mmlist		= LIST_HEAD_INIT(name.mmlist),		\\
+	.cpu_vm_mask	= CPU_MASK_ALL,				\\
+	.default_kioctx = INIT_KIOCTX(name.default_kioctx, name),	\\
+}" 831 . 1203)))
+          ("INIT_KIOCTX" (spp-arg-list ("name" "which_mm") 525 . 541) . ((semantic-list "{							\\
+	.users		= ATOMIC_INIT(1),		\\
+	.dead		= 0,				\\
+	.mm		= &which_mm,			\\
+	.user_id	= 0,				\\
+	.next		= NULL,				\\
+	.wait		= __WAIT_QUEUE_HEAD_INITIALIZER(name.wait), \\
+	.ctx_lock	= SPIN_LOCK_UNLOCKED,		\\
+	.reqs_active	= 0U,				\\
+	.max_reqs	= ~0U,				\\
+}" 544 . 805)))
+          ("INIT_SIGNALS" (spp-arg-list ("sig") 1225 . 1230) . ((semantic-list "{	\\
+	.count		= ATOMIC_INIT(1), 		\\
+	.wait_chldexit	= __WAIT_QUEUE_HEAD_INITIALIZER(sig.wait_chldexit),\\
+	.shared_pending	= { 				\\
+		.list = LIST_HEAD_INIT(sig.shared_pending.list),	\\
+		.signal =  {{0}}}, \\
+	.posix_timers	 = LIST_HEAD_INIT(sig.posix_timers),		\\
+	.rlim		= INIT_RLIMITS,					\\
+}" 1231 . 1524)))
+          ("INIT_TASK" (spp-arg-list ("tsk") 1863 . 1868) . ((semantic-list "{									\\
+	.state		= 0,						\\
+	.thread_info	= &init_thread_info,				\\
+	.usage		= ATOMIC_INIT(2),				\\
+	.flags		= 0,						\\
+	.lock_depth	= -1,						\\
+	.prio		= MAX_PRIO-20,					\\
+	.static_prio	= MAX_PRIO-20,					\\
+	.policy		= SCHED_NORMAL,					\\
+	.cpus_allowed	= CPU_MASK_ALL,					\\
+	.mm		= NULL,						\\
+	.active_mm	= &init_mm,					\\
+	.run_list	= LIST_HEAD_INIT(tsk.run_list),			\\
+	.time_slice	= HZ,						\\
+	.tasks		= LIST_HEAD_INIT(tsk.tasks),			\\
+	.ptrace_children= LIST_HEAD_INIT(tsk.ptrace_children),		\\
+	.ptrace_list	= LIST_HEAD_INIT(tsk.ptrace_list),		\\
+	.real_parent	= &tsk,						\\
+	.parent		= &tsk,						\\
+	.children	= LIST_HEAD_INIT(tsk.children),			\\
+	.sibling	= LIST_HEAD_INIT(tsk.sibling),			\\
+	.group_leader	= &tsk,						\\
+	.real_timer	= {						\\
+		.function	= it_real_fn				\\
+	},								\\
+	.group_info	= &init_groups,					\\
+	.cap_effective	= CAP_INIT_EFF_SET,				\\
+	.cap_inheritable = CAP_INIT_INH_SET,				\\
+	.cap_permitted	= CAP_FULL_SET,					\\
+	.keep_capabilities = 0,						\\
+	.user		= INIT_USER,					\\
+	.comm		= \"swapper\",					\\
+	.thread		= INIT_THREAD,					\\
+	.fs		= &init_fs,					\\
+	.files		= &init_files,					\\
+	.signal		= &init_signals,				\\
+	.sighand	= &init_sighand,				\\
+	.pending	= {						\\
+		.list = LIST_HEAD_INIT(tsk.pending.list),		\\
+		.signal = {{0}}},					\\
+	.blocked	= {{0}},					\\
+	.alloc_lock	= SPIN_LOCK_UNLOCKED,				\\
+	.proc_lock	= SPIN_LOCK_UNLOCKED,				\\
+	.switch_lock	= SPIN_LOCK_UNLOCKED,				\\
+	.journal_info	= NULL,						\\
+}" 1871 . 3338)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_SPINLOCK_H" variable (:constant-flag t) nil [36 54])
+            ("linux/config.h" include (:system-flag t) nil [123 148])
+            ("linux/preempt.h" include (:system-flag t) nil [149 175])
+            ("linux/linkage.h" include (:system-flag t) nil [176 202])
+            ("linux/compiler.h" include (:system-flag t) nil [203 230])
+            ("linux/thread_info.h" include (:system-flag t) nil [231 261])
+            ("linux/kernel.h" include (:system-flag t) nil [262 287])
+            ("linux/stringify.h" include (:system-flag t) nil [288 316])
+            ("asm/processor.h" include (:system-flag t) nil [318 344])
+            ("asm/system.h" include (:system-flag t) nil [365 388])
+            ("LOCK_SECTION_NAME" variable (:constant-flag t) nil [483 500])
+            ("LOCK_SECTION_START" variable (:constant-flag t) nil [585 603])
+            ("LOCK_SECTION_END" variable (:constant-flag t) nil [855 871])
+            ("__lockfunc" variable (:constant-flag t) nil [930 940])
+            ("in_lock_functions" variable (:constant-flag t) nil [3311 3328])
+            ("spinlock_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("gcc_is_buggy" variable (:type "int") (reparse-symbol classsubparts) [6274 6291]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6257 6305])
+            ("SPIN_LOCK_UNLOCKED" variable (:constant-flag t) nil [6316 6334])
+            ("spin_lock_init" variable (:constant-flag t) nil [6443 6457])
+            ("_raw_spin_lock" variable (:constant-flag t) nil [6502 6516])
+            ("spin_is_locked" variable (:constant-flag t) nil [6561 6575])
+            ("assert_spin_locked" variable (:constant-flag t) nil [6608 6626])
+            ("_raw_spin_trylock" variable (:constant-flag t) nil [6671 6688])
+            ("spin_unlock_wait" variable (:constant-flag t) nil [6723 6739])
+            ("_raw_spin_unlock" variable (:constant-flag t) nil [6767 6783])
+            ("rwlock_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("gcc_is_buggy" variable (:type "int") (reparse-symbol classsubparts) [7011 7028]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6994 7040])
+            ("RW_LOCK_UNLOCKED" variable (:constant-flag t) nil [7051 7067])
+            ("rwlock_init" variable (:constant-flag t) nil [7101 7112])
+            ("_raw_read_lock" variable (:constant-flag t) nil [7157 7171])
+            ("_raw_read_unlock" variable (:constant-flag t) nil [7216 7232])
+            ("_raw_write_lock" variable (:constant-flag t) nil [7277 7292])
+            ("_raw_write_unlock" variable (:constant-flag t) nil [7337 7354])
+            ("read_can_lock" variable (:constant-flag t) nil [7399 7412])
+            ("write_can_lock" variable (:constant-flag t) nil [7447 7461])
+            ("_raw_read_trylock" variable (:constant-flag t) nil [7496 7513])
+            ("_raw_write_trylock" variable (:constant-flag t) nil [7553 7571])
+            ("_spin_trylock" variable (:constant-flag t) nil [7612 7625])
+            ("_read_trylock" variable (:constant-flag t) nil [7726 7739])
+            ("_write_trylock" variable (:constant-flag t) nil [7839 7853])
+            ("_spin_trylock_bh" variable (:constant-flag t) nil [7955 7971])
+            ("_spin_lock" variable (:constant-flag t) nil [8117 8127])
+            ("_write_lock" variable (:constant-flag t) nil [8230 8241])
+            ("_read_lock" variable (:constant-flag t) nil [8346 8356])
+            ("_spin_unlock" variable (:constant-flag t) nil [8459 8471])
+            ("_write_unlock" variable (:constant-flag t) nil [8576 8589])
+            ("_read_unlock" variable (:constant-flag t) nil [8694 8706])
+            ("_spin_lock_irqsave" variable (:constant-flag t) nil [8810 8828])
+            ("_spin_lock_irq" variable (:constant-flag t) nil [8965 8979])
+            ("_spin_lock_bh" variable (:constant-flag t) nil [9107 9120])
+            ("_read_lock_irqsave" variable (:constant-flag t) nil [9247 9265])
+            ("_read_lock_irq" variable (:constant-flag t) nil [9402 9416])
+            ("_read_lock_bh" variable (:constant-flag t) nil [9544 9557])
+            ("_write_lock_irqsave" variable (:constant-flag t) nil [9684 9703])
+            ("_write_lock_irq" variable (:constant-flag t) nil [9841 9856])
+            ("_write_lock_bh" variable (:constant-flag t) nil [9985 9999])
+            ("_spin_unlock_irqrestore" variable (:constant-flag t) nil [10127 10150])
+            ("_spin_unlock_irq" variable (:constant-flag t) nil [10291 10307])
+            ("_spin_unlock_bh" variable (:constant-flag t) nil [10435 10450])
+            ("_write_unlock_bh" variable (:constant-flag t) nil [10577 10593])
+            ("_read_unlock_irqrestore" variable (:constant-flag t) nil [10721 10744])
+            ("_write_unlock_irqrestore" variable (:constant-flag t) nil [10885 10909])
+            ("_read_unlock_irq" variable (:constant-flag t) nil [11051 11067])
+            ("_read_unlock_bh" variable (:constant-flag t) nil [11195 11210])
+            ("_write_unlock_irq" variable (:constant-flag t) nil [11337 11354])
+            ("spin_trylock" variable (:constant-flag t) nil [11725 11737])
+            ("read_trylock" variable (:constant-flag t) nil [11785 11797])
+            ("write_trylock" variable (:constant-flag t) nil [11845 11858])
+            ("spin_lock" variable (:constant-flag t) nil [11908 11917])
+            ("write_lock" variable (:constant-flag t) nil [11950 11960])
+            ("read_lock" variable (:constant-flag t) nil [11993 12002])
+            ("spin_lock_irqsave" variable (:constant-flag t) nil [12278 12295])
+            ("read_lock_irqsave" variable (:constant-flag t) nil [12349 12366])
+            ("write_lock_irqsave" variable (:constant-flag t) nil [12420 12438])
+            ("spin_lock_irq" variable (:constant-flag t) nil [12501 12514])
+            ("spin_lock_bh" variable (:constant-flag t) nil [12551 12563])
+            ("read_lock_irq" variable (:constant-flag t) nil [12600 12613])
+            ("read_lock_bh" variable (:constant-flag t) nil [12650 12662])
+            ("write_lock_irq" variable (:constant-flag t) nil [12699 12713])
+            ("write_lock_bh" variable (:constant-flag t) nil [12751 12764])
+            ("spin_unlock" variable (:constant-flag t) nil [12802 12813])
+            ("write_unlock" variable (:constant-flag t) nil [12847 12859])
+            ("read_unlock" variable (:constant-flag t) nil [12894 12905])
+            ("spin_unlock_irqrestore" variable (:constant-flag t) nil [12940 12962])
+            ("spin_unlock_irq" variable (:constant-flag t) nil [13021 13036])
+            ("spin_unlock_bh" variable (:constant-flag t) nil [13075 13089])
+            ("read_unlock_irqrestore" variable (:constant-flag t) nil [13128 13150])
+            ("read_unlock_irq" variable (:constant-flag t) nil [13209 13224])
+            ("read_unlock_bh" variable (:constant-flag t) nil [13264 13278])
+            ("write_unlock_irqrestore" variable (:constant-flag t) nil [13318 13341])
+            ("write_unlock_irq" variable (:constant-flag t) nil [13401 13417])
+            ("write_unlock_bh" variable (:constant-flag t) nil [13458 13473])
+            ("spin_trylock_bh" variable (:constant-flag t) nil [13514 13529])
+            ("spin_trylock_irq" variable (:constant-flag t) nil [13583 13599])
+            ("spin_trylock_irqsave" variable (:constant-flag t) nil [13710 13730])
+            ("asm/atomic.h" include (:system-flag t) nil [14415 14438])
+            ("_atomic_dec_and_lock" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("atomic" variable
+                       (:pointer 1
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14471 14488])
+                    ("lock" variable
+                       (:pointer 1
+                        :type ("spinlock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14489 14506]))                  
+                :type "int")
+                nil [14439 14507])
+            ("atomic_dec_and_lock" variable (:constant-flag t) nil [14524 14543])
+            ("bit_spin_lock" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("bitnum" variable (:type "int") (reparse-symbol arg-sub-list) [14778 14789])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [14790 14810]))                  
+                :type "void")
+                nil [14745 15334])
+            ("bit_spin_trylock" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("bitnum" variable (:type "int") (reparse-symbol arg-sub-list) [15412 15423])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [15424 15444]))                  
+                :type "int")
+                nil [15377 15640])
+            ("bit_spin_unlock" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("bitnum" variable (:type "int") (reparse-symbol arg-sub-list) [15712 15723])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [15724 15744]))                  
+                :type "void")
+                nil [15677 15942])
+            ("bit_spin_is_locked" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("bitnum" variable (:type "int") (reparse-symbol arg-sub-list) [16024 16035])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [16036 16056]))                  
+                :type "int")
+                nil [15987 16228])
+            ("DEFINE_SPINLOCK" variable (:constant-flag t) nil [16238 16253])
+            ("DEFINE_RWLOCK" variable (:constant-flag t) nil [16299 16312])
+            ("spin_can_lock" variable (:constant-flag t) nil [16448 16461]))          
+      :file "spinlock.h"
+      :pointmax 16526
+      :fsize 16525
+      :lastmodtime '(16936 39499 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_write_trylock" (spp-arg-list ("lock") 7853 . 7859) . ((semantic-list "({preempt_disable(); _raw_write_trylock(lock) ? \\
+				1 : ({preempt_enable(); 0;});})" 7860 . 7945)))
+          ("_read_unlock" (spp-arg-list ("lock") 8706 . 8712) . 
+              ((DO "do" 8715 . 8717) (semantic-list "{ \\
+	_raw_read_unlock(lock); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 8718 . 8791) (WHILE "while" 8792 . 8797) (semantic-list "(0)" 8797 . 8800)))
+          ("_write_lock_irqsave" (spp-arg-list ("lock" "flags") 9703 . 9716) . 
+              ((DO "do" 9719 . 9721) (semantic-list "{	\\
+	local_irq_save(flags); \\
+	preempt_disable(); \\
+	_raw_write_lock(lock); \\
+	__acquire(lock); \\
+}" 9722 . 9821) (WHILE "while" 9822 . 9827) (semantic-list "(0)" 9828 . 9831)))
+          ("spin_trylock_bh" (spp-arg-list ("lock") 13529 . 13535) . ((symbol "__cond_lock" 13538 . 13549) (semantic-list "(_spin_trylock_bh(lock))" 13549 . 13573)))
+          ("_write_unlock_bh" (spp-arg-list ("lock") 10593 . 10599) . 
+              ((DO "do" 10602 . 10604) (semantic-list "{ \\
+	_raw_write_unlock(lock); \\
+	preempt_enable(); \\
+	local_bh_enable(); \\
+	__release(lock); \\
+}" 10605 . 10701) (WHILE "while" 10702 . 10707) (semantic-list "(0)" 10708 . 10711)))
+          ("_read_unlock_irq" (spp-arg-list ("lock") 11067 . 11073) . 
+              ((DO "do" 11076 . 11078) (semantic-list "{ \\
+	_raw_read_unlock(lock);	\\
+	local_irq_enable();	\\
+	preempt_enable();	\\
+	__release(lock); \\
+}" 11079 . 11175) (WHILE "while" 11176 . 11181) (semantic-list "(0)" 11182 . 11185)))
+          ("write_trylock" (spp-arg-list ("lock") 11858 . 11864) . ((symbol "__cond_lock" 11865 . 11876) (semantic-list "(_write_trylock(lock))" 11876 . 11898)))
+          ("read_lock" (spp-arg-list ("lock") 12002 . 12008) . ((symbol "_read_lock" 12010 . 12020) (semantic-list "(lock)" 12020 . 12026)))
+          ("spin_is_locked" (spp-arg-list ("lock") 6575 . 6581) . ((semantic-list "((void)(lock), 0)" 6582 . 6599)))
+          ("_raw_write_lock" (spp-arg-list ("lock") 7292 . 7298) . 
+              ((DO "do" 7299 . 7301) (semantic-list "{ (void)(lock); }" 7302 . 7319) (WHILE "while" 7320 . 7325) (semantic-list "(0)" 7325 . 7328)))
+          ("read_can_lock" (spp-arg-list ("lock") 7412 . 7418) . ((semantic-list "(((void)(lock), 1))" 7419 . 7438)))
+          ("_read_trylock" (spp-arg-list ("lock") 7739 . 7745) . ((semantic-list "({preempt_disable();_raw_read_trylock(lock) ? \\
+				1 : ({preempt_enable(); 0;});})" 7746 . 7829)))
+          ("_spin_lock" (spp-arg-list ("lock") 8127 . 8133) . 
+              ((DO "do" 8136 . 8138) (semantic-list "{ \\
+	preempt_disable(); \\
+	_raw_spin_lock(lock); \\
+	__acquire(lock); \\
+}" 8139 . 8211) (WHILE "while" 8212 . 8217) (semantic-list "(0)" 8217 . 8220)))
+          ("_read_lock_irqsave" (spp-arg-list ("lock" "flags") 9265 . 9278) . 
+              ((DO "do" 9281 . 9283) (semantic-list "{	\\
+	local_irq_save(flags); \\
+	preempt_disable(); \\
+	_raw_read_lock(lock); \\
+	__acquire(lock); \\
+}" 9284 . 9382) (WHILE "while" 9383 . 9388) (semantic-list "(0)" 9389 . 9392)))
+          ("_read_lock_irq" (spp-arg-list ("lock") 9416 . 9422) . 
+              ((DO "do" 9425 . 9427) (semantic-list "{ \\
+	local_irq_disable(); \\
+	preempt_disable(); \\
+	_raw_read_lock(lock); \\
+	__acquire(lock); \\
+}" 9428 . 9524) (WHILE "while" 9525 . 9530) (semantic-list "(0)" 9531 . 9534)))
+          ("_write_unlock_irq" (spp-arg-list ("lock") 11354 . 11360) . 
+              ((DO "do" 11363 . 11365) (semantic-list "{ \\
+	_raw_write_unlock(lock);	\\
+	local_irq_enable();	\\
+	preempt_enable();	\\
+	__release(lock); \\
+}" 11366 . 11463) (WHILE "while" 11464 . 11469) (semantic-list "(0)" 11470 . 11473)))
+          ("spin_unlock" (spp-arg-list ("lock") 12813 . 12819) . ((symbol "_spin_unlock" 12820 . 12832) (semantic-list "(lock)" 12832 . 12838)))
+          ("spin_unlock_irqrestore" (spp-arg-list ("lock" "flags") 12962 . 12975) . ((symbol "_spin_unlock_irqrestore" 12976 . 12999) (semantic-list "(lock, flags)" 12999 . 13012)))
+          ("__LINUX_SPINLOCK_H")
+          ("_raw_write_unlock" (spp-arg-list ("lock") 7354 . 7360) . 
+              ((DO "do" 7361 . 7363) (semantic-list "{ (void)(lock); }" 7364 . 7381) (WHILE "while" 7382 . 7387) (semantic-list "(0)" 7387 . 7390)))
+          ("_write_lock" (spp-arg-list ("lock") 8241 . 8247) . 
+              ((DO "do" 8250 . 8252) (semantic-list "{ \\
+	preempt_disable(); \\
+	_raw_write_lock(lock); \\
+	__acquire(lock); \\
+}" 8253 . 8326) (WHILE "while" 8327 . 8332) (semantic-list "(0)" 8332 . 8335)))
+          ("read_lock_irqsave" (spp-arg-list ("lock" "flags") 12366 . 12379) . ((symbol "_read_lock_irqsave" 12380 . 12398) (semantic-list "(lock, flags)" 12398 . 12411)))
+          ("write_lock_irqsave" (spp-arg-list ("lock" "flags") 12438 . 12451) . ((symbol "_write_lock_irqsave" 12452 . 12471) (semantic-list "(lock, flags)" 12471 . 12484)))
+          ("spin_lock_bh" (spp-arg-list ("lock") 12563 . 12569) . ((symbol "_spin_lock_bh" 12571 . 12584) (semantic-list "(lock)" 12584 . 12590)))
+          ("read_lock_irq" (spp-arg-list ("lock") 12613 . 12619) . ((symbol "_read_lock_irq" 12621 . 12635) (semantic-list "(lock)" 12635 . 12641)))
+          ("read_unlock" (spp-arg-list ("lock") 12905 . 12911) . ((symbol "_read_unlock" 12912 . 12924) (semantic-list "(lock)" 12924 . 12930)))
+          ("_spin_unlock_bh" (spp-arg-list ("lock") 10450 . 10456) . 
+              ((DO "do" 10459 . 10461) (semantic-list "{ \\
+	_raw_spin_unlock(lock); \\
+	preempt_enable(); \\
+	local_bh_enable(); \\
+	__release(lock); \\
+}" 10462 . 10557) (WHILE "while" 10558 . 10563) (semantic-list "(0)" 10564 . 10567)))
+          ("write_lock" (spp-arg-list ("lock") 11960 . 11966) . ((symbol "_write_lock" 11967 . 11978) (semantic-list "(lock)" 11978 . 11984)))
+          ("write_unlock" (spp-arg-list ("lock") 12859 . 12865) . ((symbol "_write_unlock" 12866 . 12879) (semantic-list "(lock)" 12879 . 12885)))
+          ("_spin_trylock_bh" (spp-arg-list ("lock") 7971 . 7977) . ((semantic-list "({preempt_disable(); local_bh_disable(); \\
+				_raw_spin_trylock(lock) ? \\
+				1 : ({preempt_enable(); local_bh_enable(); 0;});})" 7978 . 8107)))
+          ("_read_lock" (spp-arg-list ("lock") 8356 . 8362) . 
+              ((DO "do" 8365 . 8367) (semantic-list "{ \\
+	preempt_disable(); \\
+	_raw_read_lock(lock); \\
+	__acquire(lock); \\
+}" 8368 . 8440) (WHILE "while" 8441 . 8446) (semantic-list "(0)" 8446 . 8449)))
+          ("_read_unlock_bh" (spp-arg-list ("lock") 11210 . 11216) . 
+              ((DO "do" 11219 . 11221) (semantic-list "{ \\
+	_raw_read_unlock(lock);	\\
+	local_bh_enable();	\\
+	preempt_enable();	\\
+	__release(lock); \\
+}" 11222 . 11317) (WHILE "while" 11318 . 11323) (semantic-list "(0)" 11324 . 11327)))
+          ("read_unlock_irqrestore" (spp-arg-list ("lock" "flags") 13150 . 13163) . ((symbol "_read_unlock_irqrestore" 13164 . 13187) (semantic-list "(lock, flags)" 13187 . 13200)))
+          ("SPIN_LOCK_UNLOCKED" . ((semantic-list "(spinlock_t)" 6335 . 6347) (semantic-list "{ 0 }" 6348 . 6353)))
+          ("_raw_spin_lock" (spp-arg-list ("lock") 6516 . 6522) . 
+              ((DO "do" 6523 . 6525) (semantic-list "{ (void)(lock); }" 6526 . 6543) (WHILE "while" 6544 . 6549) (semantic-list "(0)" 6549 . 6552)))
+          ("_spin_lock_irq" (spp-arg-list ("lock") 8979 . 8985) . 
+              ((DO "do" 8988 . 8990) (semantic-list "{ \\
+	local_irq_disable(); \\
+	preempt_disable(); \\
+	_raw_spin_lock(lock); \\
+	__acquire(lock); \\
+}" 8991 . 9087) (WHILE "while" 9088 . 9093) (semantic-list "(0)" 9094 . 9097)))
+          ("_spin_unlock_irqrestore" (spp-arg-list ("lock" "flags") 10150 . 10163) . 
+              ((DO "do" 10166 . 10168) (semantic-list "{ \\
+	_raw_spin_unlock(lock); \\
+	local_irq_restore(flags); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 10169 . 10271) (WHILE "while" 10272 . 10277) (semantic-list "(0)" 10278 . 10281)))
+          ("read_lock_bh" (spp-arg-list ("lock") 12662 . 12668) . ((symbol "_read_lock_bh" 12670 . 12683) (semantic-list "(lock)" 12683 . 12689)))
+          ("spin_unlock_irq" (spp-arg-list ("lock") 13036 . 13042) . ((symbol "_spin_unlock_irq" 13044 . 13060) (semantic-list "(lock)" 13060 . 13066)))
+          ("spin_trylock_irqsave" (spp-arg-list ("lock" "flags") 13730 . 13743) . ((semantic-list "({ \\
+	local_irq_save(flags); \\
+	_spin_trylock(lock) ? \\
+	1 : ({local_irq_restore(flags); 0;}); \\
+})" 13746 . 13845)))
+          ("spin_can_lock" (spp-arg-list ("lock") 16461 . 16467) . ((semantic-list "(!spin_is_locked(lock))" 16469 . 16492)))
+          ("assert_spin_locked" (spp-arg-list ("lock") 6626 . 6632) . 
+              ((DO "do" 6633 . 6635) (semantic-list "{ (void)(lock); }" 6636 . 6653) (WHILE "while" 6654 . 6659) (semantic-list "(0)" 6659 . 6662)))
+          ("_raw_spin_trylock" (spp-arg-list ("lock") 6688 . 6694) . ((semantic-list "(((void)(lock), 1))" 6695 . 6714)))
+          ("_spin_lock_bh" (spp-arg-list ("lock") 9120 . 9126) . 
+              ((DO "do" 9129 . 9131) (semantic-list "{ \\
+	local_bh_disable(); \\
+	preempt_disable(); \\
+	_raw_spin_lock(lock); \\
+	__acquire(lock); \\
+}" 9132 . 9227) (WHILE "while" 9228 . 9233) (semantic-list "(0)" 9234 . 9237)))
+          ("_write_unlock_irqrestore" (spp-arg-list ("lock" "flags") 10909 . 10922) . 
+              ((DO "do" 10925 . 10927) (semantic-list "{ \\
+	_raw_write_unlock(lock); \\
+	local_irq_restore(flags); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 10928 . 11031) (WHILE "while" 11032 . 11037) (semantic-list "(0)" 11038 . 11041)))
+          ("spin_lock_irq" (spp-arg-list ("lock") 12514 . 12520) . ((symbol "_spin_lock_irq" 12522 . 12536) (semantic-list "(lock)" 12536 . 12542)))
+          ("spin_unlock_bh" (spp-arg-list ("lock") 13089 . 13095) . ((symbol "_spin_unlock_bh" 13097 . 13112) (semantic-list "(lock)" 13112 . 13118)))
+          ("LOCK_SECTION_START" (spp-arg-list ("extra") 603 . 610) . 
+              ((string "\".subsection 1\\n\\t\"" 635 . 654) (symbol "extra" 685 . 690) (string "\".ifndef \"" 735 . 745) (symbol "LOCK_SECTION_NAME" 746 . 763) (string "\"\\n\\t\"" 764 . 770) (symbol "LOCK_SECTION_NAME" 785 . 802) (string "\":\\n\\t\"" 803 . 810) (string "\".endif\\n\"" 835 . 845)))
+          ("LOCK_SECTION_END" . ((string "\".previous\\n\\t\"" 905 . 920)))
+          ("__lockfunc" . 
+              ((symbol "fastcall" 941 . 949) (symbol "__attribute__" 950 . 963) (semantic-list "((section(\".spinlock.text\")))" 963 . 992)))
+          ("_raw_write_trylock" (spp-arg-list ("lock") 7571 . 7577) . ((semantic-list "({ (void)(lock); (1); })" 7578 . 7602)))
+          ("_write_unlock" (spp-arg-list ("lock") 8589 . 8595) . 
+              ((DO "do" 8598 . 8600) (semantic-list "{ \\
+	_raw_write_unlock(lock); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 8601 . 8675) (WHILE "while" 8676 . 8681) (semantic-list "(0)" 8681 . 8684)))
+          ("_write_lock_bh" (spp-arg-list ("lock") 9999 . 10005) . 
+              ((DO "do" 10008 . 10010) (semantic-list "{ \\
+	local_bh_disable(); \\
+	preempt_disable(); \\
+	_raw_write_lock(lock); \\
+	__acquire(lock); \\
+}" 10011 . 10107) (WHILE "while" 10108 . 10113) (semantic-list "(0)" 10114 . 10117)))
+          ("spin_trylock" (spp-arg-list ("lock") 11737 . 11743) . ((symbol "__cond_lock" 11744 . 11755) (semantic-list "(_spin_trylock(lock))" 11755 . 11776)))
+          ("read_unlock_bh" (spp-arg-list ("lock") 13278 . 13284) . ((symbol "_read_unlock_bh" 13287 . 13302) (semantic-list "(lock)" 13302 . 13308)))
+          ("write_unlock_irqrestore" (spp-arg-list ("lock" "flags") 13341 . 13354) . ((symbol "_write_unlock_irqrestore" 13355 . 13379) (semantic-list "(lock, flags)" 13379 . 13392)))
+          ("DEFINE_SPINLOCK" (spp-arg-list ("x") 16253 . 16256) . 
+              ((symbol "spinlock_t" 16257 . 16267) (symbol "x" 16268 . 16269) (punctuation "=" 16270 . 16271) (symbol "SPIN_LOCK_UNLOCKED" 16272 . 16290)))
+          ("DEFINE_RWLOCK" (spp-arg-list ("x") 16312 . 16315) . 
+              ((symbol "rwlock_t" 16316 . 16324) (symbol "x" 16325 . 16326) (punctuation "=" 16327 . 16328) (symbol "RW_LOCK_UNLOCKED" 16329 . 16345)))
+          ("spin_unlock_wait" (spp-arg-list ("lock") 6739 . 6745) . ((semantic-list "(void)" 6746 . 6752) (semantic-list "(lock)" 6752 . 6758)))
+          ("_raw_read_lock" (spp-arg-list ("lock") 7171 . 7177) . 
+              ((DO "do" 7178 . 7180) (semantic-list "{ (void)(lock); }" 7181 . 7198) (WHILE "while" 7199 . 7204) (semantic-list "(0)" 7204 . 7207)))
+          ("_write_lock_irq" (spp-arg-list ("lock") 9856 . 9862) . 
+              ((DO "do" 9865 . 9867) (semantic-list "{ \\
+	local_irq_disable(); \\
+	preempt_disable(); \\
+	_raw_write_lock(lock); \\
+	__acquire(lock); \\
+}" 9868 . 9965) (WHILE "while" 9966 . 9971) (semantic-list "(0)" 9972 . 9975)))
+          ("_read_unlock_irqrestore" (spp-arg-list ("lock" "flags") 10744 . 10757) . 
+              ((DO "do" 10760 . 10762) (semantic-list "{ \\
+	_raw_read_unlock(lock); \\
+	local_irq_restore(flags); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 10763 . 10865) (WHILE "while" 10866 . 10871) (semantic-list "(0)" 10872 . 10875)))
+          ("write_lock_bh" (spp-arg-list ("lock") 12764 . 12770) . ((symbol "_write_lock_bh" 12772 . 12786) (semantic-list "(lock)" 12786 . 12792)))
+          ("read_unlock_irq" (spp-arg-list ("lock") 13224 . 13230) . ((symbol "_read_unlock_irq" 13233 . 13249) (semantic-list "(lock)" 13249 . 13255)))
+          ("write_unlock_bh" (spp-arg-list ("lock") 13473 . 13479) . ((symbol "_write_unlock_bh" 13482 . 13498) (semantic-list "(lock)" 13498 . 13504)))
+          ("LOCK_SECTION_NAME" . 
+              ((string "\".text.lock.\"" 533 . 546) (symbol "__stringify" 547 . 558) (semantic-list "(KBUILD_BASENAME)" 558 . 575)))
+          ("in_lock_functions" (spp-arg-list ("ADDR") 3328 . 3334) . ((number "0" 3335 . 3336)))
+          ("_raw_spin_unlock" (spp-arg-list ("lock") 6783 . 6789) . 
+              ((DO "do" 6790 . 6792) (semantic-list "{ (void)(lock); }" 6793 . 6810) (WHILE "while" 6811 . 6816) (semantic-list "(0)" 6816 . 6819)))
+          ("_raw_read_trylock" (spp-arg-list ("lock") 7513 . 7519) . ((semantic-list "({ (void)(lock); (1); })" 7520 . 7544)))
+          ("_spin_lock_irqsave" (spp-arg-list ("lock" "flags") 8828 . 8841) . 
+              ((DO "do" 8844 . 8846) (semantic-list "{	\\
+	local_irq_save(flags); \\
+	preempt_disable(); \\
+	_raw_spin_lock(lock); \\
+	__acquire(lock); \\
+}" 8847 . 8945) (WHILE "while" 8946 . 8951) (semantic-list "(0)" 8952 . 8955)))
+          ("_read_lock_bh" (spp-arg-list ("lock") 9557 . 9563) . 
+              ((DO "do" 9566 . 9568) (semantic-list "{ \\
+	local_bh_disable(); \\
+	preempt_disable(); \\
+	_raw_read_lock(lock); \\
+	__acquire(lock); \\
+}" 9569 . 9664) (WHILE "while" 9665 . 9670) (semantic-list "(0)" 9671 . 9674)))
+          ("spin_trylock_irq" (spp-arg-list ("lock") 13599 . 13605) . ((semantic-list "({ \\
+	local_irq_disable(); \\
+	_spin_trylock(lock) ? \\
+	1 : ({local_irq_enable(); 0; }); \\
+})" 13608 . 13700)))
+          ("atomic_dec_and_lock" (spp-arg-list ("atomic" "lock") 14543 . 14556) . ((symbol "__cond_lock" 14557 . 14568) (semantic-list "(_atomic_dec_and_lock(atomic,lock))" 14568 . 14603)))
+          ("rwlock_init" (spp-arg-list ("lock") 7112 . 7118) . 
+              ((DO "do" 7119 . 7121) (semantic-list "{ (void)(lock); }" 7122 . 7139) (WHILE "while" 7140 . 7145) (semantic-list "(0)" 7145 . 7148)))
+          ("_raw_read_unlock" (spp-arg-list ("lock") 7232 . 7238) . 
+              ((DO "do" 7239 . 7241) (semantic-list "{ (void)(lock); }" 7242 . 7259) (WHILE "while" 7260 . 7265) (semantic-list "(0)" 7265 . 7268)))
+          ("write_can_lock" (spp-arg-list ("lock") 7461 . 7467) . ((semantic-list "(((void)(lock), 1))" 7468 . 7487)))
+          ("_spin_unlock_irq" (spp-arg-list ("lock") 10307 . 10313) . 
+              ((DO "do" 10316 . 10318) (semantic-list "{ \\
+	_raw_spin_unlock(lock); \\
+	local_irq_enable(); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 10319 . 10415) (WHILE "while" 10416 . 10421) (semantic-list "(0)" 10422 . 10425)))
+          ("read_trylock" (spp-arg-list ("lock") 11797 . 11803) . ((symbol "__cond_lock" 11804 . 11815) (semantic-list "(_read_trylock(lock))" 11815 . 11836)))
+          ("spin_lock" (spp-arg-list ("lock") 11917 . 11923) . ((symbol "_spin_lock" 11925 . 11935) (semantic-list "(lock)" 11935 . 11941)))
+          ("spin_lock_irqsave" (spp-arg-list ("lock" "flags") 12295 . 12308) . ((symbol "_spin_lock_irqsave" 12309 . 12327) (semantic-list "(lock, flags)" 12327 . 12340)))
+          ("write_unlock_irq" (spp-arg-list ("lock") 13417 . 13423) . ((symbol "_write_unlock_irq" 13426 . 13443) (semantic-list "(lock)" 13443 . 13449)))
+          ("spin_lock_init" (spp-arg-list ("lock") 6457 . 6463) . 
+              ((DO "do" 6464 . 6466) (semantic-list "{ (void)(lock); }" 6467 . 6484) (WHILE "while" 6485 . 6490) (semantic-list "(0)" 6490 . 6493)))
+          ("RW_LOCK_UNLOCKED" . ((semantic-list "(rwlock_t)" 7068 . 7078) (semantic-list "{ 0 }" 7079 . 7084)))
+          ("_spin_trylock" (spp-arg-list ("lock") 7625 . 7631) . ((semantic-list "({preempt_disable(); _raw_spin_trylock(lock) ? \\
+				1 : ({preempt_enable(); 0;});})" 7632 . 7716)))
+          ("_spin_unlock" (spp-arg-list ("lock") 8471 . 8477) . 
+              ((DO "do" 8480 . 8482) (semantic-list "{ \\
+	_raw_spin_unlock(lock); \\
+	preempt_enable(); \\
+	__release(lock); \\
+}" 8483 . 8556) (WHILE "while" 8557 . 8562) (semantic-list "(0)" 8563 . 8566)))
+          ("write_lock_irq" (spp-arg-list ("lock") 12713 . 12719) . ((symbol "_write_lock_irq" 12721 . 12736) (semantic-list "(lock)" 12736 . 12742)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LINUX_INTERRUPT_H" variable (:constant-flag t) nil [54 72])
+            ("linux/config.h" include (:system-flag t) nil [74 99])
+            ("linux/kernel.h" include (:system-flag t) nil [100 125])
+            ("linux/linkage.h" include (:system-flag t) nil [126 152])
+            ("linux/bitops.h" include (:system-flag t) nil [153 178])
+            ("linux/preempt.h" include (:system-flag t) nil [179 205])
+            ("linux/cpumask.h" include (:system-flag t) nil [206 232])
+            ("linux/hardirq.h" include (:system-flag t) nil [233 259])
+            ("asm/atomic.h" include (:system-flag t) nil [260 283])
+            ("asm/ptrace.h" include (:system-flag t) nil [284 307])
+            ("asm/system.h" include (:system-flag t) nil [308 331])
+            ("irqreturn_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [734 758])
+            ("IRQ_NONE" variable (:constant-flag t) nil [768 776])
+            ("IRQ_HANDLED" variable (:constant-flag t) nil [789 800])
+            ("IRQ_RETVAL" variable (:constant-flag t) nil [813 823])
+            ("irqaction" type
+               (:members 
+                  ( ("handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [882 886])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [887 894])
+                            ("" variable
+                               (:pointer 1
+                                :type ("pt_regs" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [895 912]))                          
+                        :type ("irqreturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [859 913])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol classsubparts) [915 935])
+                    ("mask" variable (:type ("cpumask_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [937 952])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [954 971])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [973 986])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("irqaction" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [988 1011])
+                    ("irq" variable (:type "int") (reparse-symbol classsubparts) [1013 1021])
+                    ("dir" variable
+                       (:pointer 1
+                        :type ("proc_dir_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1023 1050]))                  
+                :type "struct")
+                nil [839 1053])
+            ("no_action" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cpl" variable (:type "int") (reparse-symbol arg-sub-list) [1084 1092])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1093 1106])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1107 1128]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [1055 1129])
+            ("request_irq" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1153 1166])
+                    ("handler" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1199 1203])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1204 1211])
+                            ("" variable
+                               (:pointer 1
+                                :type ("pt_regs" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1212 1229]))                          
+                        :type ("irqreturn_t" type (:type "class") nil nil))
+                        nil nil)
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1240 1254])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1255 1268])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1269 1276]))                  
+                :type "int")
+                nil [1130 1277])
+            ("free_irq" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1299 1312])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1313 1320]))                  
+                :type "void")
+                nil [1278 1321])
+            ("cli" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1624 1629]))                  
+                :type ("__deprecated" type (:type "class") nil nil))
+                nil [1607 1655])
+            ("sti" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1692 1697]))                  
+                :type ("__deprecated" type (:type "class") nil nil))
+                nil [1675 1722])
+            ("save_flags" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [1766 1783]))                  
+                :type ("__deprecated" type (:type "class") nil nil))
+                nil [1742 1810])
+            ("save_flags" variable (:constant-flag t) nil [1819 1829])
+            ("restore_flags" function
+               (:arguments 
+                  ( ("x" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1895 1911]))                  
+                :type ("__deprecated" type (:type "class") nil nil))
+                nil [1868 1938])
+            ("save_and_cli" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [1985 2002]))                  
+                :type ("__deprecated" type (:type "class") nil nil))
+                nil [1959 2027])
+            ("save_and_cli" variable (:constant-flag t) nil [2036 2048])
+            ("local_bh_disable" variable (:constant-flag t) nil [2129 2145])
+            ("__local_bh_enable" variable (:constant-flag t) nil [2223 2240])
+            ("local_bh_enable" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2339 2344]))                  
+                :type "void")
+                nil [2311 2345])
+            ("" type
+               (:members 
+                  ( ("HI_SOFTIRQ" variable
+                       (:constant-flag t
+                        :default-value (2631 2632)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2620 2633])
+                    ("TIMER_SOFTIRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2635 2649])
+                    ("NET_TX_SOFTIRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2651 2666])
+                    ("NET_RX_SOFTIRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2668 2683])
+                    ("SCSI_SOFTIRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2685 2698])
+                    ("TASKLET_SOFTIRQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2700 2717]))                  
+                :type "enum")
+                nil [2612 2718])
+            ("softirq_action" type
+               (:members 
+                  ( ("action" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("softirq_action" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2874 2898]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2859 2899])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2901 2912]))                  
+                :type "struct")
+                nil [2834 2915])
+            ("do_softirq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2944 2949]))                  
+                :type "void")
+                nil [2928 2950])
+            ("open_softirq" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("nr" variable (:type "int") (reparse-symbol arg-sub-list) [2976 2983])
+                    ("action" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("softirq_action" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2999 3022]))                          
+                        :type "void")
+                        nil nil)
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3024 3035]))                  
+                :type "void")
+                nil [2951 3036])
+            ("softirq_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3062 3067]))                  
+                :type "void")
+                nil [3037 3068])
+            ("__raise_softirq_irqoff" variable (:constant-flag t) nil [3077 3099])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("raise_softirq_irqoff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3182 3219]))                  
+                :type "void")
+                nil [3161 3221])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("raise_softirq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3243 3273]))                  
+                :type "void")
+                nil [3222 3275])
+            ("tasklet_struct" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4125 4153])
+                    ("state" variable (:type "unsigned long") (reparse-symbol classsubparts) [4155 4175])
+                    ("count" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4177 4192])
+                    ("func" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4207 4221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4194 4222])
+                    ("data" variable (:type "unsigned long") (reparse-symbol classsubparts) [4224 4243]))                  
+                :type "struct")
+                nil [4100 4246])
+            ("DECLARE_TASKLET" variable (:constant-flag t) nil [4256 4271])
+            ("DECLARE_TASKLET_DISABLED" variable (:constant-flag t) nil [4370 4394])
+            ("" type
+               (:members 
+                  ( ("TASKLET_STATE_SCHED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4494 4514])
+                    ("TASKLET_STATE_RUN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4557 4612]))                  
+                :type "enum")
+                nil [4486 4613])
+            ("tasklet_trylock" variable (:constant-flag t) nil [5044 5059])
+            ("tasklet_unlock_wait" variable (:constant-flag t) nil [5073 5092])
+            ("tasklet_unlock" variable (:constant-flag t) nil [5121 5135])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("__tasklet_schedule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5185 5229]))                  
+                :type "void")
+                nil [5164 5231])
+            ("tasklet_schedule" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5269 5294]))                  
+                :type "void")
+                nil [5233 5379])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("__tasklet_hi_schedule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5402 5449]))                  
+                :type "void")
+                nil [5381 5451])
+            ("tasklet_hi_schedule" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5492 5517]))                  
+                :type "void")
+                nil [5453 5605])
+            ("tasklet_disable_nosync" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5650 5675]))                  
+                :type "void")
+                nil [5608 5732])
+            ("tasklet_disable" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5769 5794]))                  
+                :type "void")
+                nil [5734 5862])
+            ("tasklet_enable" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5898 5923]))                  
+                :type "void")
+                nil [5864 5981])
+            ("tasklet_hi_enable" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6020 6045]))                  
+                :type "void")
+                nil [5983 6103])
+            ("tasklet_kill" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6130 6155]))                  
+                :type "void")
+                nil [6105 6156])
+            ("tasklet_kill_immediate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6192 6217])
+                    ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6218 6235]))                  
+                :type "void")
+                nil [6157 6236])
+            ("tasklet_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("tasklet_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6262 6287])
+                    ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6305 6319]))                          
+                        :type "void")
+                        nil nil)
+                    ("data" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6321 6340]))                  
+                :type "void")
+                nil [6237 6341])
+            ("probe_irq_on" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7816 7821]))                  
+                :type "unsigned long")
+                nil [7782 7822])
+            ("probe_irq_off" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7875 7889]))                  
+                :type "int")
+                nil [7850 7890])
+            ("probe_irq_mask" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7965 7979]))                  
+                :type "unsigned int")
+                nil [7930 7980]))          
+      :file "interrupt.h"
+      :pointmax 8033
+      :fsize 8032
+      :lastmodtime '(16936 39499 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__raise_softirq_irqoff" (spp-arg-list ("nr") 3099 . 3103) . 
+              ((DO "do" 3104 . 3106) (semantic-list "{ local_softirq_pending() |= 1UL << (nr); }" 3107 . 3150) (WHILE "while" 3151 . 3156) (semantic-list "(0)" 3157 . 3160)))
+          ("IRQ_NONE" . ((semantic-list "(0)" 777 . 780)))
+          ("DECLARE_TASKLET" (spp-arg-list ("name" "func" "data") 4271 . 4289) . 
+              ((STRUCT "struct" 4292 . 4298) (symbol "tasklet_struct" 4299 . 4313) (symbol "name" 4314 . 4318) (punctuation "=" 4319 . 4320) (semantic-list "{ NULL, 0, ATOMIC_INIT(0), func, data }" 4321 . 4360)))
+          ("_LINUX_INTERRUPT_H")
+          ("save_flags" (spp-arg-list ("x") 1829 . 1832) . 
+              ((symbol "save_flags" 1833 . 1843) (semantic-list "(&x)" 1843 . 1847) (punctuation ";" 1847 . 1848)))
+          ("tasklet_unlock_wait" (spp-arg-list ("t") 5092 . 5095) . 
+              ((DO "do" 5096 . 5098) (semantic-list "{ }" 5099 . 5102) (WHILE "while" 5103 . 5108) (semantic-list "(0)" 5109 . 5112)))
+          ("save_and_cli" (spp-arg-list ("x") 2048 . 2051) . ((symbol "save_and_cli" 2052 . 2064) (semantic-list "(&x)" 2064 . 2068)))
+          ("local_bh_disable" (spp-arg-list nil 2145 . 2147) . 
+              ((DO "do" 2152 . 2154) (semantic-list "{ add_preempt_count(SOFTIRQ_OFFSET); barrier(); }" 2155 . 2204) (WHILE "while" 2205 . 2210) (semantic-list "(0)" 2211 . 2214)))
+          ("tasklet_unlock" (spp-arg-list ("t") 5135 . 5138) . 
+              ((DO "do" 5139 . 5141) (semantic-list "{ }" 5142 . 5145) (WHILE "while" 5146 . 5151) (semantic-list "(0)" 5152 . 5155)))
+          ("__local_bh_enable" (spp-arg-list nil 2240 . 2242) . 
+              ((DO "do" 2247 . 2249) (semantic-list "{ barrier(); sub_preempt_count(SOFTIRQ_OFFSET); }" 2250 . 2299) (WHILE "while" 2300 . 2305) (semantic-list "(0)" 2306 . 2309)))
+          ("tasklet_trylock" (spp-arg-list ("t") 5059 . 5062) . ((number "1" 5063 . 5064)))
+          ("IRQ_HANDLED" . ((semantic-list "(1)" 801 . 804)))
+          ("IRQ_RETVAL" (spp-arg-list ("x") 823 . 826) . ((semantic-list "((x) != 0)" 827 . 837)))
+          ("DECLARE_TASKLET_DISABLED" (spp-arg-list ("name" "func" "data") 4394 . 4412) . 
+              ((STRUCT "struct" 4415 . 4421) (symbol "tasklet_struct" 4422 . 4436) (symbol "name" 4437 . 4441) (punctuation "=" 4442 . 4443) (semantic-list "{ NULL, 0, ATOMIC_INIT(1), func, data }" 4444 . 4483)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_SMPLOCK_H" variable (:constant-flag t) nil [35 52])
+            ("linux/config.h" include (:system-flag t) nil [54 79])
+            ("linux/sched.h" include (:system-flag t) nil [80 104])
+            ("linux/spinlock.h" include (:system-flag t) nil [105 132])
+            ("lock_kernel" variable (:constant-flag t) nil [1162 1173])
+            ("unlock_kernel" variable (:constant-flag t) nil [1203 1216])
+            ("release_kernel_lock" variable (:constant-flag t) nil [1246 1265])
+            ("reacquire_kernel_lock" variable (:constant-flag t) nil [1297 1318])
+            ("kernel_locked" variable (:constant-flag t) nil [1336 1349]))          
+      :file "smp_lock.h"
+      :pointmax 1421
+      :fsize 1420
+      :lastmodtime '(16936 39507 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("unlock_kernel" (spp-arg-list nil 1216 . 1218) . 
+              ((DO "do" 1222 . 1224) (semantic-list "{ }" 1225 . 1228) (WHILE "while" 1229 . 1234) (semantic-list "(0)" 1234 . 1237)))
+          ("release_kernel_lock" (spp-arg-list ("task") 1265 . 1271) . 
+              ((DO "do" 1273 . 1275) (semantic-list "{ }" 1276 . 1279) (WHILE "while" 1280 . 1285) (semantic-list "(0)" 1285 . 1288)))
+          ("kernel_locked" (spp-arg-list nil 1349 . 1351) . ((number "1" 1355 . 1356)))
+          ("__LINUX_SMPLOCK_H")
+          ("reacquire_kernel_lock" (spp-arg-list ("task") 1318 . 1324) . ((number "0" 1326 . 1327)))
+          ("lock_kernel" (spp-arg-list nil 1173 . 1175) . 
+              ((DO "do" 1179 . 1181) (semantic-list "{ }" 1182 . 1185) (WHILE "while" 1186 . 1191) (semantic-list "(0)" 1191 . 1194)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LINUX_TIME_H" variable (:constant-flag t) nil [31 44])
+            ("linux/types.h" include (:system-flag t) nil [46 70])
+            ("_STRUCT_TIMESPEC" variable (:constant-flag t) nil [158 174])
+            ("_STRUCT_TIMESPEC" variable (:constant-flag t) nil [158 174])
+            ("timespec" type
+               (:members 
+                  ( ("tv_sec" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [194 208])
+                    ("tv_nsec" variable (:type "long") (reparse-symbol classsubparts) [225 238]))                  
+                :type "struct")
+                nil [175 259])
+            ("timeval" type
+               (:members 
+                  ( ("tv_sec" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [309 324])
+                    ("tv_usec" variable (:type ("suseconds_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [341 361]))                  
+                :type "struct")
+                nil [291 383])
+            ("timezone" type
+               (:members 
+                  ( ("tz_minuteswest" variable (:type "int") (reparse-symbol classsubparts) [404 423])
+                    ("tz_dsttime" variable (:type "int") (reparse-symbol classsubparts) [457 472]))                  
+                :type "struct")
+                nil [385 504])
+            ("NFDBITS" variable (:constant-flag t) nil [3432 3439])
+            ("FD_SETSIZE" variable (:constant-flag t) nil [3461 3471])
+            ("FD_SET" variable (:constant-flag t) nil [3494 3500])
+            ("FD_CLR" variable (:constant-flag t) nil [3540 3546])
+            ("FD_ISSET" variable (:constant-flag t) nil [3586 3594])
+            ("FD_ZERO" variable (:constant-flag t) nil [3636 3643])
+            ("ITIMER_REAL" variable (:constant-flag t) nil [3763 3774])
+            ("ITIMER_VIRTUAL" variable (:constant-flag t) nil [3785 3799])
+            ("ITIMER_PROF" variable (:constant-flag t) nil [3810 3821])
+            ("itimerspec" type
+               (:members 
+                  ( ("it_interval" variable (:type ("timespec" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3854 3883])
+                    ("it_value" variable (:type ("timespec" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3914 3940]))                  
+                :type "struct")
+                nil [3825 3972])
+            ("itimerval" type
+               (:members 
+                  ( ("it_interval" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3994 4021])
+                    ("it_value" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4044 4068]))                  
+                :type "struct")
+                nil [3974 4091])
+            ("CLOCK_REALTIME" variable (:constant-flag t) nil [4181 4195])
+            ("CLOCK_MONOTONIC" variable (:constant-flag t) nil [4209 4224])
+            ("CLOCK_PROCESS_CPUTIME_ID" variable (:constant-flag t) nil [4237 4261])
+            ("CLOCK_THREAD_CPUTIME_ID" variable (:constant-flag t) nil [4272 4295])
+            ("CLOCK_REALTIME_HR" variable (:constant-flag t) nil [4307 4324])
+            ("CLOCK_MONOTONIC_HR" variable (:constant-flag t) nil [4336 4354])
+            ("CLOCK_SGI_CYCLE" variable (:constant-flag t) nil [4415 4430])
+            ("MAX_CLOCKS" variable (:constant-flag t) nil [4442 4452])
+            ("CLOCKS_MASK" variable (:constant-flag t) nil [4464 4475])
+            ("CLOCKS_MONO" variable (:constant-flag t) nil [4584 4595])
+            ("TIMER_ABSTIME" variable (:constant-flag t) nil [4711 4724]))          
+      :file "time.h"
+      :pointmax 4739
+      :fsize 4738
+      :lastmodtime '(16936 39501 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CLOCK_MONOTONIC_HR" . ((number "5" 4357 . 4358)))
+          ("FD_ZERO" (spp-arg-list ("fdsetp") 3643 . 3651) . ((symbol "__FD_ZERO" 3653 . 3662) (semantic-list "(fdsetp)" 3662 . 3670)))
+          ("_STRUCT_TIMESPEC")
+          ("ITIMER_PROF" . ((number "2" 3822 . 3823)))
+          ("CLOCK_THREAD_CPUTIME_ID" . ((number "3" 4297 . 4298)))
+          ("FD_ISSET" (spp-arg-list ("fd" "fdsetp") 3594 . 3605) . ((symbol "__FD_ISSET" 3606 . 3616) (semantic-list "(fd,fdsetp)" 3616 . 3627)))
+          ("CLOCK_PROCESS_CPUTIME_ID" . ((number "2" 4262 . 4263)))
+          ("FD_SET" (spp-arg-list ("fd" "fdsetp") 3500 . 3511) . ((symbol "__FD_SET" 3512 . 3520) (semantic-list "(fd,fdsetp)" 3520 . 3531)))
+          ("CLOCKS_MONO" . ((semantic-list "(CLOCK_MONOTONIC & CLOCK_MONOTONIC_HR)" 4596 . 4634)))
+          ("_LINUX_TIME_H")
+          ("CLOCK_REALTIME_HR" . ((number "4" 4326 . 4327)))
+          ("CLOCKS_MASK" . ((semantic-list "(CLOCK_REALTIME | CLOCK_MONOTONIC | \\
+                     CLOCK_REALTIME_HR | CLOCK_MONOTONIC_HR)" 4477 . 4575)))
+          ("NFDBITS" . ((symbol "__NFDBITS" 3442 . 3451)))
+          ("ITIMER_REAL" . ((number "0" 3775 . 3776)))
+          ("MAX_CLOCKS" . ((number "16" 4453 . 4455)))
+          ("FD_CLR" (spp-arg-list ("fd" "fdsetp") 3546 . 3557) . ((symbol "__FD_CLR" 3558 . 3566) (semantic-list "(fd,fdsetp)" 3566 . 3577)))
+          ("CLOCK_MONOTONIC" . ((number "1" 4227 . 4228)))
+          ("TIMER_ABSTIME" . ((number "0x01" 4725 . 4729)))
+          ("CLOCK_SGI_CYCLE" . ((number "10" 4431 . 4433)))
+          ("ITIMER_VIRTUAL" . ((number "1" 3800 . 3801)))
+          ("CLOCK_REALTIME" . ((number "0" 4199 . 4200)))
+          ("FD_SETSIZE" . ((symbol "__FD_SETSIZE" 3473 . 3485)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LINUX_INIT_H" variable (:constant-flag t) nil [31 44])
+            ("linux/config.h" include (:system-flag t) nil [46 71])
+            ("linux/compiler.h" include (:system-flag t) nil [72 99])
+            ("__init" variable (:constant-flag t) nil [1340 1346])
+            ("__initdata" variable (:constant-flag t) nil [1401 1411])
+            ("__exitdata" variable (:constant-flag t) nil [1465 1475])
+            ("__exit_call" variable (:constant-flag t) nil [1528 1539])
+            ("__exit" variable (:constant-flag t) nil [1697 1703])
+            ("__INIT" variable (:constant-flag t) nil [1812 1818])
+            ("__FINIT" variable (:constant-flag t) nil [1855 1862])
+            ("__INITDATA" variable (:constant-flag t) nil [1882 1892])
+            ("initcall_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2010 2015]))                  
+                :type "int")
+                nil [1992 2016])
+            ("exitcall_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2044 2049]))                  
+                :type "void")
+                nil [2025 2050])
+            ("__con_initcall_start" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("initcall_t" type (:type "class") nil nil))
+                nil [2052 2115])
+            ("__con_initcall_end" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("initcall_t" type (:type "class") nil nil))
+                nil [2052 2115])
+            ("__security_initcall_start" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("initcall_t" type (:type "class") nil nil))
+                nil [2116 2189])
+            ("__security_initcall_end" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("initcall_t" type (:type "class") nil nil))
+                nil [2116 2189])
+            ("saved_command_line" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [2220 2253])
+            ("__define_initcall" variable (:constant-flag t) nil [2549 2566])
+            ("core_initcall" variable (:constant-flag t) nil [2706 2719])
+            ("postcore_initcall" variable (:constant-flag t) nil [2759 2776])
+            ("arch_initcall" variable (:constant-flag t) nil [2816 2829])
+            ("subsys_initcall" variable (:constant-flag t) nil [2869 2884])
+            ("fs_initcall" variable (:constant-flag t) nil [2924 2935])
+            ("device_initcall" variable (:constant-flag t) nil [2976 2991])
+            ("late_initcall" variable (:constant-flag t) nil [3031 3044])
+            ("__initcall" variable (:constant-flag t) nil [3085 3095])
+            ("__exitcall" variable (:constant-flag t) nil [3129 3139])
+            ("console_initcall" variable (:constant-flag t) nil [3207 3223])
+            ("security_initcall" variable (:constant-flag t) nil [3350 3367])
+            ("obs_kernel_param" type
+               (:members 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3520 3536])
+                    ("setup_func" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3556 3563]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3538 3564])
+                    ("early" variable (:type "int") (reparse-symbol classsubparts) [3566 3576]))                  
+                :type "struct")
+                nil [3493 3579])
+            ("__setup_param" variable (:constant-flag t) nil [3795 3808])
+            ("__setup_null_param" variable (:constant-flag t) nil [4124 4142])
+            ("__setup" variable (:constant-flag t) nil [4212 4219])
+            ("__obsolete_setup" variable (:constant-flag t) nil [4275 4291])
+            ("early_param" variable (:constant-flag t) nil [4441 4452])
+            ("parse_early_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4575 4580]))                  
+                :type "void")
+                nil [4545 4581])
+            ("module_init" variable (:constant-flag t) nil [4904 4915])
+            ("module_exit" variable (:constant-flag t) nil [5301 5312])
+            ("__nosavedata" variable (:constant-flag t) nil [6783 6795])
+            ("__init_or_module" variable (:constant-flag t) nil [7025 7041])
+            ("__initdata_or_module" variable (:constant-flag t) nil [7057 7077])
+            ("__devinit" variable (:constant-flag t) nil [7232 7241])
+            ("__devinitdata" variable (:constant-flag t) nil [7257 7270])
+            ("__devexit" variable (:constant-flag t) nil [7290 7299])
+            ("__devexitdata" variable (:constant-flag t) nil [7315 7328])
+            ("__devexit_p" variable (:constant-flag t) nil [7821 7832])
+            ("__exit_p" variable (:constant-flag t) nil [7899 7907]))          
+      :file "init.h"
+      :pointmax 7951
+      :fsize 7950
+      :lastmodtime '(16936 39492 0 0)
+      :unmatched-syntax '((TYPEDEF 2017 . 2024) (TYPEDEF 1984 . 1991))
+      :lexical-table 
+        '(("_LINUX_INIT_H")
+          ("__init" . ((symbol "__attribute__" 1348 . 1361) (semantic-list "((__section__ (\".init.text\")))" 1362 . 1392)))
+          ("__exitcall" (spp-arg-list ("fn") 3139 . 3143) . 
+              ((STATIC "static" 3147 . 3153) (symbol "exitcall_t" 3154 . 3164) (spp-symbol-merge ((symbol "__exitcall_" 3165 . 3176) (symbol "fn" 3178 . 3180)) 3165 . 3180) (symbol "__exit_call" 3181 . 3192) (punctuation "=" 3193 . 3194) (symbol "fn" 3195 . 3197)))
+          ("__setup_param" (spp-arg-list ("str" "unique_id" "fn" "early") 3808 . 3835) . 
+              ((STATIC "static" 3841 . 3847) (CHAR "char" 3848 . 3852) (spp-symbol-merge ((symbol "__setup_str_" 3853 . 3865) (symbol "unique_id" 3867 . 3876)) 3853 . 3876) (semantic-list "[]" 3876 . 3878) (symbol "__initdata" 3879 . 3889) (punctuation "=" 3890 . 3891) (symbol "str" 3892 . 3895) (punctuation ";" 3895 . 3896) (STATIC "static" 3900 . 3906) (STRUCT "struct" 3907 . 3913) (symbol "obs_kernel_param" 3914 . 3930) (spp-symbol-merge ((symbol "__setup_" 3931 . 3939) (symbol "unique_id" 3941 . 3950)) 3931 . 3950) (symbol "__attribute_used__" 3955 . 3973) (symbol "__attribute__" 3981 . 3994) (semantic-list "((__section__(\".init.setup\")))" 3994 . 4024) (symbol "__attribute__" 4029 . 4042) (semantic-list "((aligned((sizeof(long)))))" 4042 . 4069) (punctuation "=" 4074 . 4075) (semantic-list "{ __setup_str_##unique_id, fn, early }" 4076 . 4114)))
+          ("module_exit" (spp-arg-list ("x") 5312 . 5315) . 
+              ((symbol "__exitcall" 5316 . 5326) (semantic-list "(x)" 5326 . 5329) (punctuation ";" 5329 . 5330)))
+          ("__nosavedata" . ((symbol "__attribute__" 6796 . 6809) (semantic-list "((__section__ (\".data.nosave\")))" 6810 . 6842)))
+          ("__exitdata" . ((symbol "__attribute__" 1476 . 1489) (semantic-list "((__section__(\".exit.data\")))" 1490 . 1519)))
+          ("__exit_call" . 
+              ((symbol "__attribute_used__" 1540 . 1558) (symbol "__attribute__" 1559 . 1572) (semantic-list "((__section__ (\".exitcall.exit\")))" 1573 . 1607)))
+          ("__FINIT" . ((punctuation "." 1864 . 1865) (symbol "previous" 1865 . 1873)))
+          ("arch_initcall" (spp-arg-list ("fn") 2829 . 2833) . ((symbol "__define_initcall" 2835 . 2852) (semantic-list "(\"3\",fn)" 2852 . 2860)))
+          ("__initcall" (spp-arg-list ("fn") 3095 . 3099) . ((symbol "device_initcall" 3100 . 3115) (semantic-list "(fn)" 3115 . 3119)))
+          ("console_initcall" (spp-arg-list ("fn") 3223 . 3227) . 
+              ((STATIC "static" 3231 . 3237) (symbol "initcall_t" 3238 . 3248) (spp-symbol-merge ((symbol "__initcall_" 3249 . 3260) (symbol "fn" 3262 . 3264)) 3249 . 3264) (symbol "__attribute_used__" 3268 . 3286) (symbol "__attribute__" 3287 . 3300) (semantic-list "((__section__(\".con_initcall.init\")))" 3300 . 3337) (punctuation "=" 3337 . 3338) (symbol "fn" 3338 . 3340)))
+          ("__initdata" . ((symbol "__attribute__" 1412 . 1425) (semantic-list "((__section__ (\".init.data\")))" 1426 . 1456)))
+          ("fs_initcall" (spp-arg-list ("fn") 2935 . 2939) . ((symbol "__define_initcall" 2942 . 2959) (semantic-list "(\"5\",fn)" 2959 . 2967)))
+          ("__setup" (spp-arg-list ("str" "fn") 4219 . 4228) . ((symbol "__setup_param" 4236 . 4249) (semantic-list "(str, fn, fn, 0)" 4249 . 4265)))
+          ("__obsolete_setup" (spp-arg-list ("str") 4291 . 4296) . ((symbol "__setup_null_param" 4304 . 4322) (semantic-list "(str, __LINE__)" 4322 . 4337)))
+          ("__devexit_p" (spp-arg-list ("x") 7832 . 7835) . ((symbol "NULL" 7836 . 7840)))
+          ("__INITDATA" . 
+              ((punctuation "." 1893 . 1894) (symbol "section" 1894 . 1901) (string "\".init.data\"" 1902 . 1914) (punctuation "," 1914 . 1915) (string "\"aw\"" 1915 . 1919)))
+          ("core_initcall" (spp-arg-list ("fn") 2719 . 2723) . ((symbol "__define_initcall" 2725 . 2742) (semantic-list "(\"1\",fn)" 2742 . 2750)))
+          ("subsys_initcall" (spp-arg-list ("fn") 2884 . 2888) . ((symbol "__define_initcall" 2890 . 2907) (semantic-list "(\"4\",fn)" 2907 . 2915)))
+          ("module_init" (spp-arg-list ("x") 4915 . 4918) . 
+              ((symbol "__initcall" 4919 . 4929) (semantic-list "(x)" 4929 . 4932) (punctuation ";" 4932 . 4933)))
+          ("__init_or_module" . ((symbol "__init" 7042 . 7048)))
+          ("__initdata_or_module" . ((symbol "__initdata" 7078 . 7088)))
+          ("__devexit" . ((symbol "__exit" 7300 . 7306)))
+          ("__INIT" . 
+              ((punctuation "." 1820 . 1821) (symbol "section" 1821 . 1828) (string "\".init.text\"" 1829 . 1841) (punctuation "," 1841 . 1842) (string "\"ax\"" 1842 . 1846)))
+          ("__setup_null_param" (spp-arg-list ("str" "unique_id") 4142 . 4158) . ((symbol "__setup_param" 4164 . 4177) (semantic-list "(str, unique_id, NULL, 0)" 4177 . 4202)))
+          ("__exit" . 
+              ((symbol "__attribute_used__" 1705 . 1723) (symbol "__attribute__" 1724 . 1737) (semantic-list "((__section__(\".exit.text\")))" 1738 . 1767)))
+          ("security_initcall" (spp-arg-list ("fn") 3367 . 3371) . 
+              ((STATIC "static" 3375 . 3381) (symbol "initcall_t" 3382 . 3392) (spp-symbol-merge ((symbol "__initcall_" 3393 . 3404) (symbol "fn" 3406 . 3408)) 3393 . 3408) (symbol "__attribute_used__" 3412 . 3430) (symbol "__attribute__" 3431 . 3444) (semantic-list "((__section__(\".security_initcall.init\")))" 3444 . 3486) (punctuation "=" 3487 . 3488) (symbol "fn" 3489 . 3491)))
+          ("early_param" (spp-arg-list ("str" "fn") 4452 . 4461) . ((symbol "__setup_param" 4469 . 4482) (semantic-list "(str, fn, fn, 1)" 4482 . 4498)))
+          ("__devexitdata" . ((symbol "__exitdata" 7329 . 7339)))
+          ("__exit_p" (spp-arg-list ("x") 7907 . 7910) . ((symbol "NULL" 7911 . 7915)))
+          ("__define_initcall" (spp-arg-list ("level" "fn") 2566 . 2576) . 
+              ((STATIC "static" 2580 . 2586) (symbol "initcall_t" 2587 . 2597) (spp-symbol-merge ((symbol "__initcall_" 2598 . 2609) (symbol "fn" 2611 . 2613)) 2598 . 2613) (symbol "__attribute_used__" 2614 . 2632) (symbol "__attribute__" 2636 . 2649) (semantic-list "((__section__(\".initcall\" level \".init\")))" 2649 . 2691) (punctuation "=" 2692 . 2693) (symbol "fn" 2694 . 2696)))
+          ("device_initcall" (spp-arg-list ("fn") 2991 . 2995) . ((symbol "__define_initcall" 2997 . 3014) (semantic-list "(\"6\",fn)" 3014 . 3022)))
+          ("__devinitdata" . ((symbol "__initdata" 7271 . 7281)))
+          ("postcore_initcall" (spp-arg-list ("fn") 2776 . 2780) . ((symbol "__define_initcall" 2782 . 2799) (semantic-list "(\"2\",fn)" 2799 . 2807)))
+          ("late_initcall" (spp-arg-list ("fn") 3044 . 3048) . ((symbol "__define_initcall" 3050 . 3067) (semantic-list "(\"7\",fn)" 3067 . 3075)))
+          ("__devinit" . ((symbol "__init" 7242 . 7248)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LINUX_MMZONE_H" variable (:constant-flag t) nil [33 48]))          
+      :file "mmzone.h"
+      :pointmax 13345
+      :fsize 13344
+      :lastmodtime '(16936 39500 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_LINUX_MMZONE_H")
+          )
 ))
   :file "!home!maurice!linux-2.6.11.1!include!linux!semantic.cache"
   :semantic-tag-version "2.0"

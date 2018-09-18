@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "go-autocomplete-autoloads.el"
+      :pointmax 325
+      :fsize 420
+      :lastmodtime '(23419 42935 997058 890000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!go-autocomplete-20170626.1023!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

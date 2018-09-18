@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/irq.h" include (:system-flag t) nil [158 180])
+            ("linux/module.h" include (:system-flag t) nil [181 206])
+            ("linux/kallsyms.h" include (:system-flag t) nil [207 234])
+            ("linux/interrupt.h" include (:system-flag t) nil [235 263])
+            ("__report_bad_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [634 651])
+                    ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [652 669])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [670 693]))                  
+                :type "void")
+                nil [605 1170])
+            ("report_bad_irq" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1192 1209])
+                    ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1210 1227])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1251]))                  
+                :type "void")
+                nil [1172 1356])
+            ("note_interrupt" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1378 1395])
+                    ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1396 1413])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1414 1437]))                  
+                :type "void")
+                nil [1358 1955])
+            ("noirqdebug" variable (:type "int") nil [1957 1972])
+            ("noirqdebug_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2002 2012]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1978 2098])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("noirqdebug_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2122 2139]))                  
+                :type "int")
+                nil [2100 2140]))          
+      :file "spurious.c"
+      :pointmax 2142
+      :fsize 2141
+      :lastmodtime '(16933 27980 0 0)
+      :unmatched-syntax '((string 2108 . 2120) (INT 1974 . 1977))))
+  :file "!home!maurice!linux-2.6.11!kernel!irq!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

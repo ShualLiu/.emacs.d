@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "comment-dwim-2-autoloads.el"
+      :pointmax 323
+      :fsize 1220
+      :lastmodtime '(23419 42993 673780 636000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!comment-dwim-2-20170809.2054!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

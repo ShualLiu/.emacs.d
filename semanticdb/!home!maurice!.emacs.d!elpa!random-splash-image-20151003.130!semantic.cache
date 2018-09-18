@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "random-splash-image-autoloads.el"
+      :pointmax 333
+      :fsize 432
+      :lastmodtime '(23419 42871 968257 582000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!random-splash-image-20151003.130!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

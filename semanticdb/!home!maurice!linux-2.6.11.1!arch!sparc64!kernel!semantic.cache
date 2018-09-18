@@ -1,0 +1,630 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [103 128])
+            ("linux/sched.h" include (:system-flag t) nil [129 153])
+            ("linux/mm.h" include (:system-flag t) nil [154 175])
+            ("linux/pagemap.h" include (:system-flag t) nil [176 202])
+            ("linux/threads.h" include (:system-flag t) nil [203 229])
+            ("linux/smp.h" include (:system-flag t) nil [230 252])
+            ("linux/smp_lock.h" include (:system-flag t) nil [253 280])
+            ("linux/interrupt.h" include (:system-flag t) nil [281 309])
+            ("linux/kernel_stat.h" include (:system-flag t) nil [310 340])
+            ("linux/delay.h" include (:system-flag t) nil [341 365])
+            ("linux/init.h" include (:system-flag t) nil [366 389])
+            ("linux/spinlock.h" include (:system-flag t) nil [390 417])
+            ("linux/fs.h" include (:system-flag t) nil [418 439])
+            ("linux/seq_file.h" include (:system-flag t) nil [440 467])
+            ("linux/cache.h" include (:system-flag t) nil [468 492])
+            ("linux/jiffies.h" include (:system-flag t) nil [493 519])
+            ("linux/profile.h" include (:system-flag t) nil [520 546])
+            ("asm/head.h" include (:system-flag t) nil [548 569])
+            ("asm/ptrace.h" include (:system-flag t) nil [570 593])
+            ("asm/atomic.h" include (:system-flag t) nil [594 617])
+            ("asm/tlbflush.h" include (:system-flag t) nil [618 643])
+            ("asm/mmu_context.h" include (:system-flag t) nil [644 672])
+            ("asm/cpudata.h" include (:system-flag t) nil [673 697])
+            ("asm/irq.h" include (:system-flag t) nil [699 719])
+            ("asm/page.h" include (:system-flag t) nil [720 741])
+            ("asm/pgtable.h" include (:system-flag t) nil [742 766])
+            ("asm/oplib.h" include (:system-flag t) nil [767 789])
+            ("asm/uaccess.h" include (:system-flag t) nil [790 814])
+            ("asm/timer.h" include (:system-flag t) nil [815 837])
+            ("asm/starfire.h" include (:system-flag t) nil [838 863])
+            ("asm/tlb.h" include (:system-flag t) nil [864 884])
+            ("linux_num_cpus" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [886 912])
+            ("calibrate_delay" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [941 946]))                  
+                :type "void")
+                nil [913 947])
+            ("boot_cpu_id" variable
+               (:typemodifiers ("static")
+                :type "unsigned char")
+                nil [1005 1038])
+            ("cpu_online_map" variable
+               (:default-value "CPU_MASK_NONE"
+                :type ("cpumask_t" type (:type "class") nil nil))
+                nil [1040 1081])
+            ("phys_cpu_present_map" variable
+               (:default-value "CPU_MASK_NONE"
+                :type ("cpumask_t" type (:type "class") nil nil))
+                nil [1082 1129])
+            ("smp_commenced_mask" variable
+               (:typemodifiers ("static")
+                :type ("cpumask_t" type (:type "class") nil nil))
+                nil [1130 1166])
+            ("cpu_callout_map" variable
+               (:typemodifiers ("static")
+                :type ("cpumask_t" type (:type "class") nil nil))
+                nil [1167 1200])
+            ("smp_info" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1216 1235]))                  
+                :type "void")
+                nil [1202 1384])
+            ("smp_bogo" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1400 1419]))                  
+                :type "void")
+                nil [1386 1704])
+            ("smp_store_cpu_info" function
+               (:arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1737 1744]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1711 2207])
+            ("smp_setup_percpu_timer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2244 2249]))                  
+                :type "void")
+                nil [2209 2250])
+            ("callin_flag" variable
+               (:typemodifiers ("static" "volatile")
+                :default-value "0"
+                :type "unsigned long")
+                nil [2252 2298])
+            ("inherit_locked_prom_mappings" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("save_p" variable (:type "int") (reparse-symbol arg-sub-list) [2341 2352]))                  
+                :type "void")
+                nil [2300 2353])
+            ("smp_callin" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2378 2383]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2360 3020])
+            ("cpu_panic" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3037 3042]))                  
+                :type "void")
+                nil [3022 3137])
+            ("current_tick_offset" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [3139 3180])
+            ("MASTER" variable (:constant-flag t) nil [3464 3470])
+            ("SLAVE" variable (:constant-flag t) nil [3481 3486])
+            ("NUM_ROUNDS" variable (:constant-flag t) nil [3536 3546])
+            ("NUM_ITERS" variable (:constant-flag t) nil [3576 3585])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("itc_sync_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3627 3641]))                  
+                :type "int")
+                nil [3604 3642])
+            ("go" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned long")
+                nil [3643 3678])
+            ("DEBUG_TICK_SYNC" variable (:constant-flag t) nil [3688 3703])
+            ("get_delta" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("rt" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3737 3746])
+                    ("master" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3747 3760]))                  
+                :type "long")
+                nil [3707 4413])
+            ("smp_synchronize_tick_client" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4448 4453]))                  
+                :type "void")
+                nil [4415 5749])
+            ("smp_start_sync_tick_client" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [5790 5798]))                  
+                :type "void")
+                nil [5751 5799])
+            ("smp_synchronize_one_tick" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [5838 5846]))                  
+                :type "void")
+                nil [5801 6401])
+            ("sparc64_cpu_startup" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [6403 6444])
+            ("cpu_new_thread" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("thread_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6631 6680])
+            ("smp_boot_one_cpu" function
+               (:arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6720 6737]))                  
+                :type ("__devinit" type (:type "class") nil nil))
+                nil [6693 7376])
+            ("spitfire_xcall_helper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data0" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7412 7422])
+                    ("data1" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7423 7433])
+                    ("data2" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7434 7444])
+                    ("pstate" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7445 7456])
+                    ("cpu" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7457 7475]))                  
+                :type "void")
+                nil [7378 9008])
+            ("spitfire_xcall_deliver" function
+               (:arguments 
+                  ( ("data0" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9056 9066])
+                    ("data1" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9067 9077])
+                    ("data2" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9078 9088])
+                    ("mask" variable (:type ("cpumask_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9089 9104]))                  
+                :type "void")
+                nil [9028 9275])
+            ("cheetah_xcall_deliver" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data0" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9540 9550])
+                    ("data1" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9551 9561])
+                    ("data2" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9562 9572])
+                    ("mask" variable (:type ("cpumask_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9573 9588]))                  
+                :type "void")
+                nil [9506 12036])
+            ("smp_cross_call_masked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [12147 12167])
+                    ("ctx" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12168 12176])
+                    ("data1" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12177 12187])
+                    ("data2" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12188 12198])
+                    ("mask" variable (:type ("cpumask_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12199 12214]))                  
+                :type "void")
+                nil [12113 12572])
+            ("xcall_sync_tick" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [12574 12611])
+            ("smp_start_sync_tick_client" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [12652 12660]))                  
+                :type "void")
+                nil [12613 12770])
+            ("smp_cross_call" variable (:constant-flag t) nil [12833 12847])
+            ("call_data_struct" type
+               (:members 
+                  ( ("func" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12981 12992]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12967 12993])
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [12995 13006])
+                    ("finished" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13008 13026])
+                    ("wait" variable (:type "int") (reparse-symbol classsubparts) [13028 13037]))                  
+                :type "struct")
+                nil [12940 13040])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("call_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13065 13075]))                  
+                :type "int")
+                nil [13042 13076])
+            ("call_data" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("call_data_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13077 13119])
+            ("xcall_call_function" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [13121 13162])
+            ("smp_call_function" function
+               (:arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13337 13348]))                          
+                        :type "void")
+                        nil nil)
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13350 13361])
+                    ("nonatomic" variable (:type "int") (reparse-symbol arg-sub-list) [13370 13384])
+                    ("wait" variable (:type "int") (reparse-symbol arg-sub-list) [13385 13394]))                  
+                :type "int")
+                nil [13302 14250])
+            ("smp_call_function_client" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [14282 14290])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14291 14312]))                  
+                :type "void")
+                nil [14252 14658])
+            ("xcall_flush_tlb_mm" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14660 14700])
+            ("xcall_flush_tlb_pending" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14701 14746])
+            ("xcall_flush_tlb_kernel_range" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14747 14797])
+            ("xcall_flush_tlb_all_spitfire" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14798 14848])
+            ("xcall_flush_tlb_all_cheetah" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14849 14898])
+            ("xcall_report_regs" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14899 14938])
+            ("xcall_receive_signal" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14939 14981])
+            ("xcall_flush_dcache_page_cheetah" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [14982 15035])
+            ("xcall_flush_dcache_page_spitfire" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [15036 15090])
+            ("__local_flush_dcache_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15247 15265]))                  
+                :type "void")
+                nil [15216 15538])
+            ("smp_flush_dcache_page_impl" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15572 15590])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [15591 15599]))                  
+                :type "void")
+                nil [15540 16372])
+            ("flush_dcache_page_all" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16401 16422])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16423 16441]))                  
+                :type "void")
+                nil [16374 17208])
+            ("smp_receive_signal" function
+               (:arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [17234 17242]))                  
+                :type "void")
+                nil [17210 17499])
+            ("smp_receive_signal_client" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [17532 17540])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17541 17562]))                  
+                :type "void")
+                nil [17501 17642])
+            ("smp_report_regs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17665 17670]))                  
+                :type "void")
+                nil [17644 17720])
+            ("smp_flush_tlb_all" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17745 17750]))                  
+                :type "void")
+                nil [17722 17922])
+            ("smp_flush_tlb_mm" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19750 19771]))                  
+                :type "void")
+                nil [19728 21107])
+            ("smp_flush_tlb_pending" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21136 21157])
+                    ("nr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21158 21175])
+                    ("vaddrs" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [21176 21198]))                  
+                :type "void")
+                nil [21109 22221])
+            ("smp_flush_tlb_kernel_range" function
+               (:arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22255 22275])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22276 22294]))                  
+                :type "void")
+                nil [22223 22485])
+            ("xcall_capture" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [22534 22569])
+            ("smp_capture_depth" variable
+               (:typemodifiers ("static")
+                :default-value "ATOMIC_INIT(0)"
+                :type ("atomic_t" type (:type "class") nil nil))
+                nil [22571 22622])
+            ("smp_capture_registry" variable
+               (:typemodifiers ("static")
+                :default-value "ATOMIC_INIT(0)"
+                :type ("atomic_t" type (:type "class") nil nil))
+                nil [22623 22677])
+            ("penguins_are_doing_time" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [22678 22723])
+            ("smp_capture" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22742 22747]))                  
+                :type "void")
+                nil [22725 23244])
+            ("smp_release" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23263 23268]))                  
+                :type "void")
+                nil [23246 23559])
+            ("prom_world" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [23694 23698]))                  
+                :type "void")
+                nil [23671 23699])
+            ("save_alternate_globals" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [23735 23751]))                  
+                :type "void")
+                nil [23700 23752])
+            ("restore_alternate_globals" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [23791 23807]))                  
+                :type "void")
+                nil [23753 23808])
+            ("smp_penguin_jailcell" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [23835 23843])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23844 23865]))                  
+                :type "void")
+                nil [23809 24279])
+            ("xcall_promstop" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [24281 24317])
+            ("smp_promstop_others" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24344 24349]))                  
+                :type "void")
+                nil [24319 24396])
+            ("prof_multiplier" variable (:constant-flag t) nil [24406 24421])
+            ("prof_counter" variable (:constant-flag t) nil [24465 24477])
+            ("smp_percpu_timer_interrupt" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24543 24564]))                  
+                :type "void")
+                nil [24511 25683])
+            ("smp_setup_percpu_timer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25727 25732]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [25697 26214])
+            ("smp_tick_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26242 26247]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [26221 26436])
+            ("cacheflush_time" variable (:type ("cycles_t" type (:type "class") nil nil)) nil [26438 26463])
+            ("cache_decay_ticks" variable (:type "unsigned long") nil [26464 26496])
+            ("cheetah_tune_scheduling" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26543 26548]))                  
+                :type "unsigned long")
+                nil [26498 26549])
+            ("smp_tune_scheduling" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26590 26595]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [26563 29074])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("prof_setup_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29165 29181]))                  
+                :type "int")
+                nil [29142 29182])
+            ("setup_profiling_timer" function
+               (:arguments 
+                  ( ("multiplier" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29210 29234]))                  
+                :type "int")
+                nil [29184 29581])
+            ("smp_prepare_cpus" function
+               (:arguments 
+                  ( ("max_cpus" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29612 29634]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [29588 30105])
+            ("smp_prepare_boot_cpu" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30143 30148]))                  
+                :type ("__devinit" type (:type "class") nil nil))
+                nil [30112 30427])
+            ("__cpu_up" function
+               (:arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30452 30469]))                  
+                :type ("__devinit" type (:type "class") nil nil))
+                nil [30433 30732])
+            ("smp_cpus_done" function
+               (:arguments 
+                  ( ("max_cpus" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30760 30782]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [30739 31201])
+            ("smp_send_reschedule" function
+               (:arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [31606 31614]))                  
+                :type "void")
+                nil [31581 31682])
+            ("smp_send_stop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [31798 31803]))                  
+                :type "void")
+                nil [31779 31807]))          
+      :file "smp.c"
+      :pointmax 31809
+      :fsize 31808
+      :lastmodtime '(16936 39491 0 0)
+      :unmatched-syntax '((VOID 30734 . 30738) (INT 30429 . 30432) (VOID 30107 . 30111) (VOID 29583 . 29587) (VOID 26558 . 26562) (STATIC 26551 . 26557) (VOID 26216 . 26220) (VOID 25692 . 25696) (STATIC 25685 . 25691) (symbol 15205 . 15215) (STATIC 15198 . 15204) (symbol 9017 . 9027) (STATIC 9010 . 9016) (INT 6689 . 6692) (STATIC 6682 . 6688) (VOID 2355 . 2359) (VOID 1706 . 1710))
+      :lexical-table 
+        '(("MASTER" . ((number "0" 3471 . 3472)))
+          ("SLAVE" . ((semantic-list "(SMP_CACHE_BYTES/sizeof(unsigned long))" 3487 . 3526)))
+          ("prof_counter" (spp-arg-list ("__cpu") 24477 . 24484) . 
+              ((symbol "cpu_data" 24486 . 24494) (semantic-list "(__cpu)" 24494 . 24501) (punctuation "." 24501 . 24502) (symbol "counter" 24502 . 24509)))
+          ("NUM_ROUNDS" . ((number "64" 3547 . 3549)))
+          ("NUM_ITERS" . ((number "5" 3586 . 3587)))
+          ("DEBUG_TICK_SYNC" . ((number "0" 3704 . 3705)))
+          ("prof_multiplier" (spp-arg-list ("__cpu") 24421 . 24428) . 
+              ((symbol "cpu_data" 24430 . 24438) (semantic-list "(__cpu)" 24438 . 24445) (punctuation "." 24445 . 24446) (symbol "multiplier" 24446 . 24456)))
+          ("smp_cross_call" (spp-arg-list ("func" "ctx" "data1" "data2") 12847 . 12872) . ((symbol "smp_cross_call_masked" 12876 . 12897) (semantic-list "(func, ctx, data1, data2, cpu_online_map)" 12897 . 12938)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!arch!sparc64!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,272 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [236 261])
+            ("linux/errno.h" include (:system-flag t) nil [262 286])
+            ("linux/types.h" include (:system-flag t) nil [287 311])
+            ("linux/sched.h" include (:system-flag t) nil [312 336])
+            ("linux/fs.h" include (:system-flag t) nil [337 358])
+            ("linux/file.h" include (:system-flag t) nil [359 382])
+            ("linux/mm.h" include (:system-flag t) nil [383 404])
+            ("linux/sem.h" include (:system-flag t) nil [405 427])
+            ("linux/msg.h" include (:system-flag t) nil [428 450])
+            ("linux/shm.h" include (:system-flag t) nil [451 473])
+            ("linux/stat.h" include (:system-flag t) nil [474 497])
+            ("linux/mman.h" include (:system-flag t) nil [498 521])
+            ("linux/utsname.h" include (:system-flag t) nil [522 548])
+            ("linux/smp.h" include (:system-flag t) nil [549 571])
+            ("linux/smp_lock.h" include (:system-flag t) nil [572 599])
+            ("linux/slab.h" include (:system-flag t) nil [600 623])
+            ("linux/syscalls.h" include (:system-flag t) nil [624 651])
+            ("linux/ipc.h" include (:system-flag t) nil [652 674])
+            ("linux/personality.h" include (:system-flag t) nil [675 705])
+            ("asm/uaccess.h" include (:system-flag t) nil [707 731])
+            ("asm/ipc.h" include (:system-flag t) nil [732 752])
+            ("asm/utrap.h" include (:system-flag t) nil [753 775])
+            ("asm/perfctr.h" include (:system-flag t) nil [776 800])
+            ("sys_getpagesize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1018 1023]))                  
+                :type "unsigned long")
+                nil [988 1046])
+            ("COLOUR_ALIGN" variable (:constant-flag t) nil [1056 1068])
+            ("arch_get_unmapped_area" function
+               (:arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1200 1218])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1219 1238])
+                    ("len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1239 1257])
+                    ("pgoff" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1258 1278])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1279 1299]))                  
+                :type "unsigned long")
+                nil [1163 2955])
+            ("get_fb_unmapped_area" function
+               (:arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3062 3080])
+                    ("orig_addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3081 3105])
+                    ("len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3106 3124])
+                    ("pgoff" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3125 3145])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3146 3166]))                  
+                :type "unsigned long")
+                nil [3027 4203])
+            ("sparc_brk" function
+               (:arguments 
+                  ( ("brk" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4240 4258]))                  
+                :type "unsigned long")
+                nil [4216 4533])
+            ("sparc_pipe" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4759 4780]))                  
+                :type "long")
+                nil [4743 4923])
+            ("sys_ipc" function
+               (:arguments 
+                  ( ("call" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5053 5071])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [5072 5082])
+                    ("second" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5083 5104])
+                    ("third" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5108 5128])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [5129 5142])
+                    ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5142 5146])
+                    ("fifth" variable (:type "long") (reparse-symbol arg-sub-list) [5147 5158]))                  
+                :type "long")
+                nil [5040 6921])
+            ("sparc64_newuname" function
+               (:arguments 
+                  ( ("__user" variable (:type ("new_utsname" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [6956 6983])
+                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6983 6988]))                  
+                :type "long")
+                nil [6934 7171])
+            ("sparc64_personality" function
+               (:arguments 
+                  ( ("personality" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7209 7235]))                  
+                :type "long")
+                nil [7184 7449])
+            ("sys_mmap" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7513 7532])
+                    ("len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7533 7551])
+                    ("prot" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7553 7572])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7573 7593])
+                    ("fd" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7594 7611])
+                    ("off" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7613 7631]))                  
+                :type "unsigned long")
+                nil [7490 8336])
+            ("sys64_munmap" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8367 8386])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8387 8398]))                  
+                :type "long")
+                nil [8349 8642])
+            ("do_mremap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8675 8694])
+                    ("old_len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8696 8718])
+                    ("new_len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8719 8741])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8743 8763])
+                    ("new_addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8764 8787]))                  
+                :type "unsigned long")
+                nil [8644 8788])
+            ("sys64_mremap" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8844 8863])
+                    ("old_len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8865 8887])
+                    ("new_len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8888 8910])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8912 8932])
+                    ("new_addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8933 8956]))                  
+                :type "unsigned long")
+                nil [8817 10056])
+            ("c_sys_nis_syscall" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10177 10198]))                  
+                :type "unsigned long")
+                nil [10145 10460])
+            ("sparc_breakpoint" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10533 10554]))                  
+                :type "void")
+                nil [10511 11085])
+            ("check_pending" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [11113 11124]))                  
+                :type "void")
+                nil [11087 11125])
+            ("sys_getdomainname" function
+               (:arguments 
+                  ( ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [11161 11174])
+                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11174 11179])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11180 11188]))                  
+                :type "long")
+                nil [11138 11515])
+            ("solaris_syscall" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11549 11570]))                  
+                :type "long")
+                nil [11528 11901])
+            ("sunos_syscall" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11959 11980]))                  
+                :type "long")
+                nil [11940 12264])
+            ("sys_utrap_install" function
+               (:arguments 
+                  ( ("type" variable (:type ("utrap_entry_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12307 12326])
+                    ("new_p" variable (:type ("utrap_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12333 12355])
+                    ("new_d" variable (:type ("utrap_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12362 12384])
+                    ("__user" variable (:type ("utrap_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12391 12415])
+                    ("" variable (:type ("old_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12415 12421])
+                    ("__user" variable (:type ("utrap_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12428 12452])
+                    ("" variable (:type ("old_d" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12452 12458]))                  
+                :type "long")
+                nil [12284 14028])
+            ("sparc_memory_ordering" function
+               (:arguments 
+                  ( ("model" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14057 14077])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14078 14099]))                  
+                :type "long")
+                nil [14030 14210])
+            ("sys_rt_sigaction" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [14245 14253])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type ("sigaction" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14259 14290])
+                    ("" variable (:type ("act" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14290 14294])
+                    ("__user" variable (:type ("sigaction" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [14300 14325])
+                    ("" variable (:type ("oact" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14325 14330])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [14336 14349])
+                    ("" variable (:type ("restorer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14349 14358])
+                    ("sigsetsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14364 14382]))                  
+                :type "long")
+                nil [14223 14857])
+            ("update_perfctrs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14969 14974]))                  
+                :type "void")
+                nil [14948 15268])
+            ("sys_perfctr" function
+               (:arguments 
+                  ( ("opcode" variable (:type "int") (reparse-symbol arg-sub-list) [15298 15309])
+                    ("arg0" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15310 15329])
+                    ("arg1" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15330 15349])
+                    ("arg2" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15350 15369]))                  
+                :type "long")
+                nil [15281 17274]))          
+      :file "sys_sparc.c"
+      :pointmax 17275
+      :fsize 17274
+      :lastmodtime '(16933 28002 0 0)
+      :unmatched-syntax '((symbol 15270 . 15280) (symbol 14937 . 14947) (punctuation 14348 . 14349) (punctuation 14324 . 14325) (punctuation 14289 . 14290) (symbol 14212 . 14222) (punctuation 12451 . 12452) (punctuation 12414 . 12415) (symbol 12273 . 12283) (symbol 11929 . 11939) (symbol 11517 . 11527) (punctuation 11173 . 11174) (symbol 11127 . 11137) (symbol 10500 . 10510) (symbol 10134 . 10144) (symbol 8806 . 8816) (symbol 8338 . 8348) (symbol 7479 . 7489) (symbol 7173 . 7183) (punctuation 6982 . 6983) (symbol 6923 . 6933) (punctuation 5141 . 5142) (symbol 5029 . 5039) (symbol 4732 . 4742) (symbol 4205 . 4215) (symbol 977 . 987))
+      :lexical-table 
+        '(("COLOUR_ALIGN" (spp-arg-list ("addr" "pgoff") 1068 . 1080) . ((semantic-list "((((addr)+SHMLBA-1)&~(SHMLBA-1)) +	\\
+	 (((pgoff)<<PAGE_SHIFT) & (SHMLBA-1)))" 1085 . 1161)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11!arch!sparc64!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

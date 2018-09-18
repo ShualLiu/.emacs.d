@@ -1,0 +1,1585 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/version.h" include (:system-flag t) nil [888 914])
+            ("SAA7134_VERSION_CODE" variable (:constant-flag t) nil [923 943])
+            ("linux/pci.h" include (:system-flag t) nil [968 990])
+            ("linux/i2c.h" include (:system-flag t) nil [991 1013])
+            ("linux/videodev.h" include (:system-flag t) nil [1014 1041])
+            ("linux/kdev_t.h" include (:system-flag t) nil [1042 1067])
+            ("linux/input.h" include (:system-flag t) nil [1068 1092])
+            ("asm/io.h" include (:system-flag t) nil [1094 1113])
+            ("media/tuner.h" include (:system-flag t) nil [1115 1139])
+            ("media/audiochip.h" include (:system-flag t) nil [1140 1168])
+            ("media/id.h" include (:system-flag t) nil [1169 1190])
+            ("media/ir-common.h" include (:system-flag t) nil [1191 1219])
+            ("media/video-buf.h" include (:system-flag t) nil [1220 1248])
+            ("media/video-buf-dvb.h" include (:system-flag t) nil [1249 1281])
+            ("TRUE" variable (:constant-flag t) nil [1305 1309])
+            ("FALSE" variable (:constant-flag t) nil [1347 1352])
+            ("UNSET" variable (:constant-flag t) nil [1375 1380])
+            ("saa7134_tvaudio_mode" type
+               (:members 
+                  ( ("TVAUDIO_FM_MONO" variable
+                       (:constant-flag t
+                        :default-value (1618 1619)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1594 1620])
+                    ("TVAUDIO_FM_BG_STEREO" variable
+                       (:constant-flag t
+                        :default-value (1646 1647)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1622 1648])
+                    ("TVAUDIO_FM_SAT_STEREO" variable
+                       (:constant-flag t
+                        :default-value (1674 1675)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1650 1676])
+                    ("TVAUDIO_FM_K_STEREO" variable
+                       (:constant-flag t
+                        :default-value (1702 1703)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1678 1704])
+                    ("TVAUDIO_NICAM_AM" variable
+                       (:constant-flag t
+                        :default-value (1730 1731)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1706 1732])
+                    ("TVAUDIO_NICAM_FM" variable
+                       (:constant-flag t
+                        :default-value (1758 1759)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1734 1760]))                  
+                :type "enum")
+                nil [1565 1763])
+            ("saa7134_audio_in" type
+               (:members 
+                  ( ("TV" variable
+                       (:constant-flag t
+                        :default-value (1798 1799)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1790 1800])
+                    ("LINE1" variable
+                       (:constant-flag t
+                        :default-value (1810 1811)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1802 1812])
+                    ("LINE2" variable
+                       (:constant-flag t
+                        :default-value (1822 1823)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1814 1824]))                  
+                :type "enum")
+                nil [1765 1827])
+            ("saa7134_video_out" type
+               (:members 
+                  ( ("CCIR656" variable
+                       (:constant-flag t
+                        :default-value (1865 1866)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1855 1867]))                  
+                :type "enum")
+                nil [1829 1870])
+            ("saa7134_tvnorm" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2030 2050])
+                    ("id" variable (:type ("v4l2_std_id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2052 2069])
+                    ("sync_control" variable (:type "unsigned int") (reparse-symbol classsubparts) [2093 2120])
+                    ("luma_control" variable (:type "unsigned int") (reparse-symbol classsubparts) [2122 2149])
+                    ("chroma_ctrl1" variable (:type "unsigned int") (reparse-symbol classsubparts) [2151 2178])
+                    ("chroma_gain" variable (:type "unsigned int") (reparse-symbol classsubparts) [2180 2206])
+                    ("chroma_ctrl2" variable (:type "unsigned int") (reparse-symbol classsubparts) [2208 2235])
+                    ("vgate_misc" variable (:type "unsigned int") (reparse-symbol classsubparts) [2237 2262])
+                    ("h_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [2285 2307])
+                    ("h_stop" variable (:type "unsigned int") (reparse-symbol classsubparts) [2309 2330])
+                    ("video_v_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [2332 2360])
+                    ("video_v_stop" variable (:type "unsigned int") (reparse-symbol classsubparts) [2362 2389])
+                    ("vbi_v_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [2391 2417])
+                    ("vbi_v_stop" variable (:type "unsigned int") (reparse-symbol classsubparts) [2419 2444])
+                    ("src_timing" variable (:type "unsigned int") (reparse-symbol classsubparts) [2446 2471]))                  
+                :type "struct")
+                nil [2005 2474])
+            ("saa7134_tvaudio" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2502 2521])
+                    ("std" variable (:type ("v4l2_std_id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2523 2540])
+                    ("mode" variable (:type ("saa7134_tvaudio_mode" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2542 2581])
+                    ("carr1" variable (:type "int") (reparse-symbol classsubparts) [2583 2602])
+                    ("carr2" variable (:type "int") (reparse-symbol classsubparts) [2604 2623]))                  
+                :type "struct")
+                nil [2476 2626])
+            ("saa7134_format" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2653 2674])
+                    ("fourcc" variable (:type "unsigned int") (reparse-symbol classsubparts) [2676 2698])
+                    ("depth" variable (:type "unsigned int") (reparse-symbol classsubparts) [2700 2721])
+                    ("pm" variable (:type "unsigned int") (reparse-symbol classsubparts) [2723 2741])
+                    ("vshift" variable (:type "unsigned int") (reparse-symbol classsubparts) [2743 2765])
+                    ("hshift" variable (:type "unsigned int") (reparse-symbol classsubparts) [2814 2836])
+                    ("bswap" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2887 2910])
+                    ("wswap" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2912 2935])
+                    ("yuv" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2937 2958])
+                    ("planar" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2960 2984])
+                    ("uvswap" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2986 3010]))                  
+                :type "struct")
+                nil [2628 3013])
+            ("SAA7134_BOARD_NOAUTO" variable (:constant-flag t) nil [3156 3176])
+            ("SAA7134_BOARD_UNKNOWN" variable (:constant-flag t) nil [3198 3219])
+            ("SAA7134_BOARD_PROTEUS_PRO" variable (:constant-flag t) nil [3240 3265])
+            ("SAA7134_BOARD_FLYVIDEO3000" variable (:constant-flag t) nil [3282 3308])
+            ("SAA7134_BOARD_FLYVIDEO2000" variable (:constant-flag t) nil [3324 3350])
+            ("SAA7134_BOARD_EMPRESS" variable (:constant-flag t) nil [3366 3387])
+            ("SAA7134_BOARD_MONSTERTV" variable (:constant-flag t) nil [3408 3431])
+            ("SAA7134_BOARD_MD9717" variable (:constant-flag t) nil [3450 3470])
+            ("SAA7134_BOARD_TVSTATION_RDS" variable (:constant-flag t) nil [3492 3519])
+            ("SAA7134_BOARD_CINERGY400" variable (:constant-flag t) nil [3534 3558])
+            ("SAA7134_BOARD_MD5044" variable (:constant-flag t) nil [3569 3589])
+            ("SAA7134_BOARD_KWORLD" variable (:constant-flag t) nil [3601 3621])
+            ("SAA7134_BOARD_CINERGY600" variable (:constant-flag t) nil [3643 3667])
+            ("SAA7134_BOARD_MD7134" variable (:constant-flag t) nil [3685 3705])
+            ("SAA7134_BOARD_TYPHOON_90031" variable (:constant-flag t) nil [3727 3754])
+            ("SAA7134_BOARD_ELSA" variable (:constant-flag t) nil [3769 3787])
+            ("SAA7134_BOARD_ELSA_500TV" variable (:constant-flag t) nil [3811 3835])
+            ("SAA7134_BOARD_ASUSTeK_TVFM7134" variable (:constant-flag t) nil [3853 3883])
+            ("SAA7134_BOARD_VA1000POWER" variable (:constant-flag t) nil [3895 3920])
+            ("SAA7134_BOARD_BMK_MPEX_NOTUNER" variable (:constant-flag t) nil [3937 3967])
+            ("SAA7134_BOARD_VIDEOMATE_TV" variable (:constant-flag t) nil [3979 4005])
+            ("SAA7134_BOARD_CRONOS_PLUS" variable (:constant-flag t) nil [4021 4046])
+            ("SAA7134_BOARD_10MOONSTVMASTER" variable (:constant-flag t) nil [4063 4092])
+            ("SAA7134_BOARD_MD2819" variable (:constant-flag t) nil [4105 4125])
+            ("SAA7134_BOARD_BMK_MPEX_TUNER" variable (:constant-flag t) nil [4147 4175])
+            ("SAA7134_BOARD_TVSTATION_DVR" variable (:constant-flag t) nil [4189 4216])
+            ("SAA7134_BOARD_ASUSTEK_TVFM7133" variable (:constant-flag t) nil [4231 4261])
+            ("SAA7134_BOARD_PINNACLE_PCTV_STEREO" variable (:constant-flag t) nil [4273 4307])
+            ("SAA7134_BOARD_MANLI_MTV002" variable (:constant-flag t) nil [4319 4345])
+            ("SAA7134_BOARD_MANLI_MTV001" variable (:constant-flag t) nil [4361 4387])
+            ("SAA7134_BOARD_TG3000TV" variable (:constant-flag t) nil [4403 4425])
+            ("SAA7134_BOARD_ECS_TVP3XP" variable (:constant-flag t) nil [4445 4469])
+            ("SAA7134_BOARD_ECS_TVP3XP_4CB5" variable (:constant-flag t) nil [4487 4516])
+            ("SAA7134_BOARD_AVACSSMARTTV" variable (:constant-flag t) nil [4529 4555])
+            ("SAA7134_BOARD_AVERMEDIA_DVD_EZMAKER" variable (:constant-flag t) nil [4571 4606])
+            ("SAA7134_BOARD_NOVAC_PRIMETV7133" variable (:constant-flag t) nil [4618 4649])
+            ("SAA7134_BOARD_AVERMEDIA_305" variable (:constant-flag t) nil [4661 4688])
+            ("SAA7133_BOARD_UPMOST_PURPLE_TV" variable (:constant-flag t) nil [4703 4733])
+            ("SAA7134_BOARD_ITEMS_MTV005" variable (:constant-flag t) nil [4745 4771])
+            ("SAA7134_BOARD_CINERGY200" variable (:constant-flag t) nil [4787 4811])
+            ("SAA7134_BOARD_FLYTVPLATINUM" variable (:constant-flag t) nil [4829 4856])
+            ("SAA7134_BOARD_VIDEOMATE_TV_PVR" variable (:constant-flag t) nil [4871 4901])
+            ("SAA7134_BOARD_VIDEOMATE_TV_GOLD_PLUS" variable (:constant-flag t) nil [4913 4949])
+            ("SAA7134_BOARD_SABRENT_SBTTVFM" variable (:constant-flag t) nil [4961 4990])
+            ("SAA7134_BOARD_ZOLID_XPERT_TV7134" variable (:constant-flag t) nil [5003 5035])
+            ("SAA7134_BOARD_EMPIRE_PCI_TV_RADIO_LE" variable (:constant-flag t) nil [5047 5083])
+            ("SAA7134_BOARD_AVERMEDIA_307" variable (:constant-flag t) nil [5095 5122])
+            ("SAA7134_BOARD_AVERMEDIA_CARDBUS" variable (:constant-flag t) nil [5137 5168])
+            ("SAA7134_BOARD_CINERGY400_CARDBUS" variable (:constant-flag t) nil [5180 5212])
+            ("SAA7134_MAXBOARDS" variable (:constant-flag t) nil [5225 5242])
+            ("SAA7134_INPUT_MAX" variable (:constant-flag t) nil [5253 5270])
+            ("saa7134_input" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5298 5328])
+                    ("vmux" variable (:type "unsigned int") (reparse-symbol classsubparts) [5330 5359])
+                    ("amux" variable (:type ("saa7134_audio_in" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5361 5390])
+                    ("gpio" variable (:type "unsigned int") (reparse-symbol classsubparts) [5392 5421])
+                    ("tv" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [5423 5452]))                  
+                :type "struct")
+                nil [5274 5455])
+            ("saa7134_mpeg_type" type
+               (:members 
+                  ( ("SAA7134_MPEG_UNUSED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5483 5503])
+                    ("SAA7134_MPEG_EMPRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5505 5526])
+                    ("SAA7134_MPEG_DVB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5528 5545]))                  
+                :type "enum")
+                nil [5457 5548])
+            ("saa7134_board" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5574 5604])
+                    ("audio_clock" variable (:type "unsigned int") (reparse-symbol classsubparts) [5606 5642])
+                    ("gpiomask" variable (:type "unsigned int") (reparse-symbol classsubparts) [5668 5701])
+                    ("inputs" variable
+                       (:dereference 1
+                        :type ("saa7134_input" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5703 5753])
+                    ("radio" variable (:type ("saa7134_input" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5755 5785])
+                    ("mute" variable (:type ("saa7134_input" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5787 5816])
+                    ("tuner_type" variable (:type "unsigned int") (reparse-symbol classsubparts) [5840 5875])
+                    ("tda9887_conf" variable (:type "unsigned int") (reparse-symbol classsubparts) [5877 5914])
+                    ("video_out" variable (:type ("saa7134_video_out" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5939 5973])
+                    ("mpeg" variable (:type ("saa7134_mpeg_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5975 6004]))                  
+                :type "struct")
+                nil [5550 6007])
+            ("card_has_radio" variable (:constant-flag t) nil [6017 6031])
+            ("card_is_empress" variable (:constant-flag t) nil [6095 6110])
+            ("card_is_dvb" variable (:constant-flag t) nil [6183 6194])
+            ("card_has_mpeg" variable (:constant-flag t) nil [6271 6284])
+            ("card" variable (:constant-flag t) nil [6359 6363])
+            ("card_in" variable (:constant-flag t) nil [6418 6425])
+            ("RESOURCE_OVERLAY" variable (:constant-flag t) nil [6621 6637])
+            ("RESOURCE_VIDEO" variable (:constant-flag t) nil [6654 6668])
+            ("RESOURCE_VBI" variable (:constant-flag t) nil [6687 6699])
+            ("INTERLACE_AUTO" variable (:constant-flag t) nil [6721 6735])
+            ("INTERLACE_ON" variable (:constant-flag t) nil [6754 6766])
+            ("INTERLACE_OFF" variable (:constant-flag t) nil [6787 6800])
+            ("BUFFER_TIMEOUT" variable (:constant-flag t) nil [6821 6835])
+            ("saa7134_dev" type
+               (:prototype t
+                :type "struct")
+                nil [6867 6886])
+            ("saa7134_dma" type
+               (:prototype t
+                :type "struct")
+                nil [6887 6906])
+            ("saa7134_pgtable" type
+               (:members 
+                  ( ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [6959 6991])
+                    ("cpu" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6993 7025])
+                    ("dma" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7027 7058]))                  
+                :type "struct")
+                nil [6933 7061])
+            ("saa7134_thread" type
+               (:members 
+                  ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7116 7147])
+                    ("exit" variable (:type ("completion" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7149 7181])
+                    ("wq" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7183 7213])
+                    ("shutdown" variable (:type "unsigned int") (reparse-symbol classsubparts) [7215 7251])
+                    ("scan1" variable (:type "unsigned int") (reparse-symbol classsubparts) [7253 7286])
+                    ("scan2" variable (:type "unsigned int") (reparse-symbol classsubparts) [7288 7321])
+                    ("mode" variable (:type "unsigned int") (reparse-symbol classsubparts) [7323 7355]))                  
+                :type "struct")
+                nil [7091 7358])
+            ("saa7134_buf" type
+               (:members 
+                  ( ("vb" variable (:type ("videobuf_buffer" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7470 7496])
+                    ("fmt" variable
+                       (:pointer 1
+                        :type ("saa7134_format" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7523 7552])
+                    ("top_seen" variable (:type "unsigned int") (reparse-symbol classsubparts) [7554 7587])
+                    ("activate" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("saa7134_dev" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7605 7629])
+                            ("buf" variable
+                               (:pointer 1
+                                :type ("saa7134_buf" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7633 7657])
+                            ("next" variable
+                               (:pointer 1
+                                :type ("saa7134_buf" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7661 7686]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7589 7687])
+                    ("pt" variable
+                       (:pointer 1
+                        :type ("saa7134_pgtable" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7709 7737]))                  
+                :type "struct")
+                nil [7400 7740])
+            ("saa7134_dmaqueue" type
+               (:members 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7769 7801])
+                    ("curr" variable
+                       (:pointer 1
+                        :type ("saa7134_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7803 7836])
+                    ("queue" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7838 7871])
+                    ("timeout" variable (:type ("timer_list" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7873 7908])
+                    ("need_two" variable (:type "unsigned int") (reparse-symbol classsubparts) [7910 7946]))                  
+                :type "struct")
+                nil [7742 7949])
+            ("saa7134_fh" type
+               (:members 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8002 8034])
+                    ("radio" variable (:type "unsigned int") (reparse-symbol classsubparts) [8036 8069])
+                    ("type" variable (:type ("v4l2_buf_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [8071 8103])
+                    ("resources" variable (:type "unsigned int") (reparse-symbol classsubparts) [8105 8142])
+                    ("win" variable (:type ("v4l2_window" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8227 8258])
+                    ("clips" variable
+                       (:dereference 1
+                        :type ("v4l2_clip" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8260 8296])
+                    ("nclips" variable (:type "unsigned int") (reparse-symbol classsubparts) [8298 8332])
+                    ("fmt" variable
+                       (:pointer 1
+                        :type ("saa7134_format" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8356 8388])
+                    ("width" variable (:type "unsigned int") (reparse-symbol classsubparts) [8390 8430])
+                    ("height" variable (:type "unsigned int") (reparse-symbol classsubparts) [8390 8430])
+                    ("cap" variable (:type ("videobuf_queue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8432 8463])
+                    ("pt_cap" variable (:type ("saa7134_pgtable" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8465 8499])
+                    ("vbi" variable (:type ("videobuf_queue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8521 8552])
+                    ("pt_vbi" variable (:type ("saa7134_pgtable" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8554 8588]))                  
+                :type "struct")
+                nil [7981 8591])
+            ("saa7134_oss" type
+               (:members 
+                  ( ("lock" variable (:type ("semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8643 8675])
+                    ("minor_mixer" variable (:type "int") (reparse-symbol classsubparts) [8677 8716])
+                    ("minor_dsp" variable (:type "int") (reparse-symbol classsubparts) [8718 8755])
+                    ("users_dsp" variable (:type "unsigned int") (reparse-symbol classsubparts) [8757 8794])
+                    ("input" variable (:type ("saa7134_audio_in" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [8810 8843])
+                    ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [8845 8878])
+                    ("line1" variable (:type "unsigned int") (reparse-symbol classsubparts) [8880 8913])
+                    ("line2" variable (:type "unsigned int") (reparse-symbol classsubparts) [8915 8948])
+                    ("afmt" variable (:type "unsigned int") (reparse-symbol classsubparts) [8962 8994])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [8996 9028])
+                    ("channels" variable (:type "unsigned int") (reparse-symbol classsubparts) [9030 9066])
+                    ("recording_on" variable (:type "unsigned int") (reparse-symbol classsubparts) [9068 9108])
+                    ("dma_running" variable (:type "unsigned int") (reparse-symbol classsubparts) [9110 9149])
+                    ("blocks" variable (:type "unsigned int") (reparse-symbol classsubparts) [9151 9185])
+                    ("blksize" variable (:type "unsigned int") (reparse-symbol classsubparts) [9187 9222])
+                    ("bufsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [9224 9259])
+                    ("pt" variable (:type ("saa7134_pgtable" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9261 9291])
+                    ("dma" variable (:type ("videobuf_dmabuf" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9293 9324])
+                    ("wq" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9326 9356])
+                    ("dma_blk" variable (:type "unsigned int") (reparse-symbol classsubparts) [9358 9393])
+                    ("read_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [9395 9434])
+                    ("read_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [9436 9474]))                  
+                :type "struct")
+                nil [8614 9477])
+            ("saa7134_ir" type
+               (:members 
+                  ( ("dev" variable (:type ("input_dev" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9515 9546])
+                    ("ir" variable (:type ("ir_input_state" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9548 9578])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9580 9616])
+                    ("phys" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9618 9654])
+                    ("mask_keycode" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9656 9696])
+                    ("mask_keydown" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9698 9738])
+                    ("mask_keyup" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9740 9778])
+                    ("polling" variable (:type "int") (reparse-symbol classsubparts) [9787 9822])
+                    ("last_gpio" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9831 9868])
+                    ("timer" variable (:type ("timer_list" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9877 9910]))                  
+                :type "struct")
+                nil [9494 9913])
+            ("saa7134_ts" type
+               (:members 
+                  ( ("pt_ts" variable (:type ("saa7134_pgtable" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9975 10008])
+                    ("nr_packets" variable (:type "int") (reparse-symbol classsubparts) [10010 10048])
+                    ("nr_bufs" variable (:type "int") (reparse-symbol classsubparts) [10050 10085]))                  
+                :type "struct")
+                nil [9936 10088])
+            ("saa7134_mpeg_ops" type
+               (:members 
+                  ( ("type" variable (:type ("saa7134_mpeg_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [10135 10167])
+                    ("next" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10169 10201])
+                    ("init" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("saa7134_dev" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10238 10262]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10203 10263])
+                    ("fini" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("saa7134_dev" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10300 10324]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10265 10325]))                  
+                :type "struct")
+                nil [10108 10328])
+            ("saa7134_dev" type
+               (:members 
+                  ( ("devlist" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10379 10414])
+                    ("lock" variable (:type ("semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10423 10455])
+                    ("slock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10464 10497])
+                    ("resources" variable (:type "unsigned int") (reparse-symbol classsubparts) [10593 10630])
+                    ("video_dev" variable
+                       (:pointer 1
+                        :type ("video_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10632 10670])
+                    ("radio_dev" variable
+                       (:pointer 1
+                        :type ("video_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10672 10710])
+                    ("vbi_dev" variable
+                       (:pointer 1
+                        :type ("video_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10712 10748])
+                    ("oss" variable (:type ("saa7134_oss" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10750 10781])
+                    ("has_remote" variable (:type "int") (reparse-symbol classsubparts) [10807 10845])
+                    ("remote" variable
+                       (:pointer 1
+                        :type ("saa7134_ir" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10847 10882])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10900 10936])
+                    ("nr" variable (:type "int") (reparse-symbol classsubparts) [10938 10968])
+                    ("pci" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10970 11002])
+                    ("pci_rev" variable (:type "unsigned char") (reparse-symbol classsubparts) [11004 11047])
+                    ("pci_lat" variable (:type "unsigned char") (reparse-symbol classsubparts) [11004 11047])
+                    ("lmmio" variable
+                       (:pointer 1
+                        :type ("__iomem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11076 11091])
+                    ("bmmio" variable
+                       (:pointer 1
+                        :type ("__iomem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11120 11135])
+                    ("board" variable (:type "unsigned int") (reparse-symbol classsubparts) [11157 11190])
+                    ("tuner_type" variable (:type "unsigned int") (reparse-symbol classsubparts) [11192 11230])
+                    ("tda9887_conf" variable (:type "unsigned int") (reparse-symbol classsubparts) [11232 11272])
+                    ("gpio_value" variable (:type "unsigned int") (reparse-symbol classsubparts) [11274 11312])
+                    ("i2c_adap" variable (:type ("i2c_adapter" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11330 11366])
+                    ("i2c_client" variable (:type ("i2c_client" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11368 11406])
+                    ("eedata" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [11408 11446])
+                    ("ovbuf" variable (:type ("v4l2_framebuffer" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11470 11503])
+                    ("ovfmt" variable
+                       (:pointer 1
+                        :type ("saa7134_format" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11505 11539])
+                    ("ovenable" variable (:type "unsigned int") (reparse-symbol classsubparts) [11541 11577])
+                    ("ovfield" variable (:type ("v4l2_field" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [11579 11614])
+                    ("video_q" variable (:type ("saa7134_dmaqueue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11645 11680])
+                    ("vbi_q" variable (:type ("saa7134_dmaqueue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11682 11715])
+                    ("video_fieldcount" variable (:type "unsigned int") (reparse-symbol classsubparts) [11717 11761])
+                    ("vbi_fieldcount" variable (:type "unsigned int") (reparse-symbol classsubparts) [11763 11805])
+                    ("tvnorm" variable
+                       (:pointer 1
+                        :type ("saa7134_tvnorm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11836 11871])
+                    ("tvaudio" variable
+                       (:pointer 1
+                        :type ("saa7134_tvaudio" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11898 11934])
+                    ("ctl_input" variable (:type "unsigned int") (reparse-symbol classsubparts) [11936 11973])
+                    ("ctl_bright" variable (:type "int") (reparse-symbol classsubparts) [11975 12013])
+                    ("ctl_contrast" variable (:type "int") (reparse-symbol classsubparts) [12015 12055])
+                    ("ctl_hue" variable (:type "int") (reparse-symbol classsubparts) [12057 12092])
+                    ("ctl_saturation" variable (:type "int") (reparse-symbol classsubparts) [12094 12136])
+                    ("ctl_freq" variable (:type "int") (reparse-symbol classsubparts) [12138 12174])
+                    ("ctl_mute" variable (:type "int") (reparse-symbol classsubparts) [12176 12212])
+                    ("ctl_volume" variable (:type "int") (reparse-symbol classsubparts) [12238 12276])
+                    ("ctl_invert" variable (:type "int") (reparse-symbol classsubparts) [12278 12316])
+                    ("ctl_mirror" variable (:type "int") (reparse-symbol classsubparts) [12342 12380])
+                    ("ctl_y_odd" variable (:type "int") (reparse-symbol classsubparts) [12382 12419])
+                    ("ctl_y_even" variable (:type "int") (reparse-symbol classsubparts) [12421 12459])
+                    ("ctl_automute" variable (:type "int") (reparse-symbol classsubparts) [12461 12501])
+                    ("crop_bounds" variable (:type ("v4l2_rect" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12516 12555])
+                    ("crop_defrect" variable (:type ("v4l2_rect" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12557 12597])
+                    ("crop_current" variable (:type ("v4l2_rect" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12599 12639])
+                    ("automute" variable (:type "unsigned int") (reparse-symbol classsubparts) [12673 12709])
+                    ("thread" variable (:type ("saa7134_thread" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12711 12745])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("saa7134_input" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12747 12781])
+                    ("hw_input" variable
+                       (:pointer 1
+                        :type ("saa7134_input" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12783 12820])
+                    ("hw_mute" variable (:type "unsigned int") (reparse-symbol classsubparts) [12822 12857])
+                    ("last_carrier" variable (:type "int") (reparse-symbol classsubparts) [12859 12899])
+                    ("ts" variable (:type ("saa7134_ts" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12924 12954])
+                    ("ts_q" variable (:type ("saa7134_dmaqueue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12956 12988])
+                    ("mops" variable
+                       (:pointer 1
+                        :type ("saa7134_mpeg_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12990 13023])
+                    ("empress_dev" variable
+                       (:pointer 1
+                        :type ("video_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13059 13099])
+                    ("empress_tsq" variable (:type ("videobuf_queue" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13101 13140])
+                    ("empress_users" variable (:type "unsigned int") (reparse-symbol classsubparts) [13142 13183])
+                    ("dvb" variable (:type ("videobuf_dvb" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13215 13246]))                  
+                :type "struct")
+                nil [10357 13249])
+            ("saa_readl" variable (:constant-flag t) nil [13326 13335])
+            ("saa_writel" variable (:constant-flag t) nil [13387 13397])
+            ("saa_andorl" variable (:constant-flag t) nil [13459 13469])
+            ("saa_setl" variable (:constant-flag t) nil [13584 13592])
+            ("saa_clearl" variable (:constant-flag t) nil [13649 13659])
+            ("saa_readb" variable (:constant-flag t) nil [13711 13720])
+            ("saa_writeb" variable (:constant-flag t) nil [13772 13782])
+            ("saa_andorb" variable (:constant-flag t) nil [13844 13854])
+            ("saa_setb" variable (:constant-flag t) nil [13969 13977])
+            ("saa_clearb" variable (:constant-flag t) nil [14034 14044])
+            ("saa_wait" variable (:constant-flag t) nil [14096 14104])
+            ("saa7134_devlist" variable
+               (:typemodifiers ("extern")
+                :type ("list_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14259 14300])
+            ("saa7134_devcount" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [14301 14343])
+            ("saa7134_print_ioctl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14370 14381])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14382 14399]))                  
+                :type "void")
+                nil [14345 14400])
+            ("saa7134_track_gpio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14425 14449])
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14450 14460]))                  
+                :type "void")
+                nil [14401 14461])
+            ("SAA7134_PGTABLE_SIZE" variable (:constant-flag t) nil [14471 14491])
+            ("saa7134_pgtable_alloc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pci" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14524 14544])
+                    ("pt" variable
+                       (:pointer 1
+                        :type ("saa7134_pgtable" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14545 14572]))                  
+                :type "int")
+                nil [14498 14573])
+            ("saa7134_pgtable_build" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pci" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14601 14621])
+                    ("pt" variable
+                       (:pointer 1
+                        :type ("saa7134_pgtable" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14622 14649])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("scatterlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14656 14681])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14682 14702])
+                    ("startpage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14709 14732]))                  
+                :type "int")
+                nil [14574 14733])
+            ("saa7134_pgtable_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pci" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14760 14780])
+                    ("pt" variable
+                       (:pointer 1
+                        :type ("saa7134_pgtable" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14781 14808]))                  
+                :type "void")
+                nil [14734 14809])
+            ("saa7134_buffer_count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14836 14854])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14855 14874]))                  
+                :type "int")
+                nil [14811 14875])
+            ("saa7134_buffer_startpage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("saa7134_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14905 14929]))                  
+                :type "int")
+                nil [14876 14930])
+            ("saa7134_buffer_base" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("saa7134_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14965 14989]))                  
+                :type "unsigned long")
+                nil [14931 14990])
+            ("saa7134_buffer_queue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15017 15041])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("saa7134_dmaqueue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15042 15069])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("saa7134_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15074 15098]))                  
+                :type "int")
+                nil [14992 15099])
+            ("saa7134_buffer_finish" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15127 15151])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("saa7134_dmaqueue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15152 15179])
+                    ("state" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15186 15205]))                  
+                :type "void")
+                nil [15100 15206])
+            ("saa7134_buffer_next" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15232 15256])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("saa7134_dmaqueue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15257 15284]))                  
+                :type "void")
+                nil [15207 15285])
+            ("saa7134_buffer_timeout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15314 15333]))                  
+                :type "void")
+                nil [15286 15334])
+            ("saa7134_dma_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15357 15381])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("saa7134_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15381 15405]))                  
+                :type "void")
+                nil [15335 15406])
+            ("saa7134_set_dmabits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15432 15456]))                  
+                :type "int")
+                nil [15408 15457])
+            ("saa7134_boards" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("saa7134_board" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15592 15637])
+            ("saa7134_bcount" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type "unsigned int")
+                nil [15638 15679])
+            ("saa7134_pci_tbl" variable
+               (:dereference 1
+                :type ("__devinitdata" type (:type "class") nil nil))
+                nil [15708 15740])
+            ("saa7134_board_init1" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15773 15797]))                  
+                :type "int")
+                nil [15742 15798])
+            ("saa7134_board_init2" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15830 15854]))                  
+                :type "int")
+                nil [15799 15855])
+            ("saa7134_i2c_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16016 16040]))                  
+                :type "int")
+                nil [15991 16041])
+            ("saa7134_i2c_unregister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16069 16093]))                  
+                :type "int")
+                nil [16042 16094])
+            ("saa7134_i2c_call_clients" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16125 16149])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16159 16176])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16177 16187]))                  
+                :type "void")
+                nil [16095 16188])
+            ("saa7134_video_template" variable
+               (:typemodifiers ("extern")
+                :type ("video_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16324 16374])
+            ("saa7134_radio_template" variable
+               (:typemodifiers ("extern")
+                :type ("video_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16375 16425])
+            ("saa7134_common_ioctl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16452 16476])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16481 16498])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16499 16509]))                  
+                :type "int")
+                nil [16427 16510])
+            ("saa7134_video_init1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16536 16560]))                  
+                :type "int")
+                nil [16512 16561])
+            ("saa7134_video_init2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16586 16610]))                  
+                :type "int")
+                nil [16562 16611])
+            ("saa7134_video_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16635 16659]))                  
+                :type "int")
+                nil [16612 16660])
+            ("saa7134_irq_video_intl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16689 16713]))                  
+                :type "void")
+                nil [16661 16714])
+            ("saa7134_irq_video_done" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16743 16767])
+                    ("status" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [16768 16789]))                  
+                :type "void")
+                nil [16715 16790])
+            ("TS_PACKET_SIZE" variable (:constant-flag t) nil [16934 16948])
+            ("saa7134_ts_qops" variable
+               (:typemodifiers ("extern")
+                :type ("videobuf_queue_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16981 17030])
+            ("saa7134_ts_init1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17053 17077]))                  
+                :type "int")
+                nil [17032 17078])
+            ("saa7134_ts_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17099 17123]))                  
+                :type "int")
+                nil [17079 17124])
+            ("saa7134_irq_ts_done" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17150 17174])
+                    ("status" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17175 17196]))                  
+                :type "void")
+                nil [17125 17197])
+            ("saa7134_ts_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :type ("saa7134_mpeg_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17223 17252]))                  
+                :type "int")
+                nil [17199 17253])
+            ("saa7134_ts_unregister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :type ("saa7134_mpeg_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17281 17310]))                  
+                :type "void")
+                nil [17254 17311])
+            ("saa7134_vbi_qops" variable
+               (:typemodifiers ("extern")
+                :type ("videobuf_queue_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17446 17496])
+            ("saa7134_vbi_template" variable
+               (:typemodifiers ("extern")
+                :type ("video_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17497 17545])
+            ("saa7134_vbi_init1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17569 17593]))                  
+                :type "int")
+                nil [17547 17594])
+            ("saa7134_vbi_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17616 17640]))                  
+                :type "int")
+                nil [17595 17641])
+            ("saa7134_irq_vbi_done" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17668 17692])
+                    ("status" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17693 17714]))                  
+                :type "void")
+                nil [17642 17715])
+            ("saa7134_tvaudio_rx2mode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rx" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17879 17886]))                  
+                :type "int")
+                nil [17851 17887])
+            ("saa7134_tvaudio_setmute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17918 17942]))                  
+                :type "void")
+                nil [17889 17943])
+            ("saa7134_tvaudio_setinput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17974 17998])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("saa7134_input" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18008 18033]))                  
+                :type "void")
+                nil [17944 18034])
+            ("saa7134_tvaudio_setvolume" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18066 18090])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [18091 18101]))                  
+                :type "void")
+                nil [18035 18102])
+            ("saa7134_tvaudio_getstereo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18133 18157]))                  
+                :type "int")
+                nil [18103 18158])
+            ("saa7134_tvaudio_init2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18186 18210]))                  
+                :type "int")
+                nil [18160 18211])
+            ("saa7134_tvaudio_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18237 18261]))                  
+                :type "int")
+                nil [18212 18262])
+            ("saa7134_tvaudio_do_scan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18291 18315]))                  
+                :type "int")
+                nil [18263 18316])
+            ("saa_dsp_writel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18337 18361])
+                    ("reg" variable (:type "int") (reparse-symbol arg-sub-list) [18362 18370])
+                    ("value" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18371 18381]))                  
+                :type "int")
+                nil [18318 18382])
+            ("saa7134_dsp_fops" variable
+               (:typemodifiers ("extern")
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18517 18564])
+            ("saa7134_mixer_fops" variable
+               (:typemodifiers ("extern")
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18565 18614])
+            ("saa7134_oss_init1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18638 18662]))                  
+                :type "int")
+                nil [18616 18663])
+            ("saa7134_oss_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18685 18709]))                  
+                :type "int")
+                nil [18664 18710])
+            ("saa7134_irq_oss_done" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18737 18761])
+                    ("status" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [18762 18783]))                  
+                :type "void")
+                nil [18711 18784])
+            ("saa7134_input_init1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18944 18968]))                  
+                :type "int")
+                nil [18919 18969])
+            ("saa7134_input_fini" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18994 19018]))                  
+                :type "void")
+                nil [18970 19019])
+            ("saa7134_input_irq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("saa7134_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19043 19067]))                  
+                :type "void")
+                nil [19020 19068]))          
+      :file "saa7134.h"
+      :pointmax 19126
+      :fsize 19125
+      :lastmodtime '(16936 39505 0 0)
+      :unmatched-syntax '((symbol 15694 . 15707) (STRUCT 15687 . 15693) (EXTERN 15680 . 15686) (symbol 11093 . 11097) (symbol 11049 . 11054))
+      :lexical-table 
+        '(("SAA7134_BOARD_MANLI_MTV001" . ((number "28" 4392 . 4394)))
+          ("SAA7134_BOARD_VIDEOMATE_TV_PVR" . ((number "40" 4902 . 4904)))
+          ("INTERLACE_AUTO" . ((number "0" 6744 . 6745)))
+          ("SAA7134_BOARD_TYPHOON_90031" . ((number "13" 3758 . 3760)))
+          ("SAA7134_BOARD_BMK_MPEX_NOTUNER" . ((number "18" 3968 . 3970)))
+          ("SAA7134_BOARD_BMK_MPEX_TUNER" . ((number "23" 4178 . 4180)))
+          ("SAA7134_BOARD_MANLI_MTV002" . ((number "27" 4350 . 4352)))
+          ("SAA7134_BOARD_AVACSSMARTTV" . ((number "32" 4560 . 4562)))
+          ("SAA7134_BOARD_CINERGY200" . ((number "38" 4818 . 4820)))
+          ("SAA7134_BOARD_FLYTVPLATINUM" . ((number "39" 4860 . 4862)))
+          ("SAA7134_BOARD_ZOLID_XPERT_TV7134" . ((number "43" 5036 . 5038)))
+          ("SAA7134_BOARD_AVERMEDIA_CARDBUS" . ((number "46" 5169 . 5171)))
+          ("saa_readb" (spp-arg-list ("reg") 13720 . 13725) . ((symbol "readb" 13738 . 13743) (semantic-list "(dev->bmmio + (reg))" 13743 . 13763)))
+          ("TS_PACKET_SIZE" . ((number "188" 16949 . 16952)))
+          ("TRUE" . ((semantic-list "(1==1)" 1310 . 1316)))
+          ("SAA7134_BOARD_TVSTATION_RDS" . ((number "7" 3524 . 3525)))
+          ("SAA7134_BOARD_MD7134" . ((number "12" 3716 . 3718)))
+          ("SAA7133_BOARD_UPMOST_PURPLE_TV" . ((number "36" 4734 . 4736)))
+          ("SAA7134_INPUT_MAX" . ((number "8" 5271 . 5272)))
+          ("card_is_dvb" (spp-arg-list ("dev") 6194 . 6199) . ((semantic-list "(SAA7134_MPEG_DVB     == saa7134_boards[dev->board].mpeg)" 6205 . 6262)))
+          ("saa_setb" (spp-arg-list ("reg" "bit") 13977 . 13986) . ((symbol "saa_andorb" 13996 . 14006) (semantic-list "((reg),(bit),(bit))" 14006 . 14025)))
+          ("FALSE" . ((semantic-list "(1==0)" 1353 . 1359)))
+          ("SAA7134_BOARD_MD9717" . ((number "6" 3482 . 3483)))
+          ("SAA7134_BOARD_ECS_TVP3XP_4CB5" . ((number "31" 4518 . 4520)))
+          ("SAA7134_BOARD_AVERMEDIA_DVD_EZMAKER" . ((number "33" 4607 . 4609)))
+          ("SAA7134_BOARD_AVERMEDIA_305" . ((number "35" 4692 . 4694)))
+          ("SAA7134_BOARD_ITEMS_MTV005" . ((number "37" 4776 . 4778)))
+          ("card_in" (spp-arg-list ("dev" "n") 6425 . 6432) . ((semantic-list "(saa7134_boards[dev->board].inputs[n])" 6440 . 6478)))
+          ("BUFFER_TIMEOUT" . ((semantic-list "(HZ/2)" 6840 . 6846)))
+          ("SAA7134_BOARD_10MOONSTVMASTER" . ((number "21" 4094 . 4096)))
+          ("RESOURCE_VIDEO" . ((number "2" 6677 . 6678)))
+          ("INTERLACE_ON" . ((number "1" 6777 . 6778)))
+          ("SAA7134_BOARD_AVERMEDIA_307" . ((number "45" 5126 . 5128)))
+          ("card_has_radio" (spp-arg-list ("dev") 6031 . 6036) . ((semantic-list "(NULL != saa7134_boards[dev->board].radio.name)" 6039 . 6086)))
+          ("saa_writel" (spp-arg-list ("reg" "value") 13397 . 13408) . 
+              ((symbol "writel" 13414 . 13420) (semantic-list "((value), dev->lmmio + (reg))" 13420 . 13449) (punctuation ";" 13449 . 13450)))
+          ("saa_andorl" (spp-arg-list ("reg" "mask" "value") 13469 . 13485) . ((symbol "writel" 13490 . 13496) (semantic-list "((readl(dev->lmmio+(reg)) & ~(mask)) |\\
+  ((value) & (mask)), dev->lmmio+(reg))" 13496 . 13575)))
+          ("SAA7134_VERSION_CODE" . ((symbol "KERNEL_VERSION" 944 . 958) (semantic-list "(0,2,12)" 958 . 966)))
+          ("UNSET" . ((semantic-list "(-1U)" 1381 . 1386)))
+          ("SAA7134_BOARD_CINERGY400" . ((number "8" 3559 . 3560)))
+          ("SAA7134_BOARD_ASUSTEK_TVFM7133" . ((number "25" 4262 . 4264)))
+          ("SAA7134_BOARD_TG3000TV" . ((number "29" 4434 . 4436)))
+          ("SAA7134_BOARD_CINERGY400_CARDBUS" . ((number "47" 5213 . 5215)))
+          ("RESOURCE_OVERLAY" . ((number "1" 6644 . 6645)))
+          ("INTERLACE_OFF" . ((number "2" 6810 . 6811)))
+          ("SAA7134_BOARD_MD5044" . ((number "9" 3591 . 3592)))
+          ("SAA7134_BOARD_VIDEOMATE_TV" . ((number "19" 4010 . 4012)))
+          ("SAA7134_BOARD_MD2819" . ((number "22" 4136 . 4138)))
+          ("SAA7134_BOARD_TVSTATION_DVR" . ((number "24" 4220 . 4222)))
+          ("saa_wait" (spp-arg-list ("us") 14104 . 14108) . ((semantic-list "{ udelay(us); }" 14109 . 14124)))
+          ("SAA7134_PGTABLE_SIZE" . ((number "4096" 14492 . 14496)))
+          ("SAA7134_BOARD_EMPIRE_PCI_TV_RADIO_LE" . ((number "44" 5084 . 5086)))
+          ("card_is_empress" (spp-arg-list ("dev") 6110 . 6115) . ((semantic-list "(SAA7134_MPEG_EMPRESS == saa7134_boards[dev->board].mpeg)" 6117 . 6174)))
+          ("saa_writeb" (spp-arg-list ("reg" "value") 13782 . 13793) . 
+              ((symbol "writeb" 13799 . 13805) (semantic-list "((value), dev->bmmio + (reg))" 13805 . 13834) (punctuation ";" 13834 . 13835)))
+          ("saa_andorb" (spp-arg-list ("reg" "mask" "value") 13854 . 13870) . ((symbol "writeb" 13875 . 13881) (semantic-list "((readb(dev->bmmio+(reg)) & ~(mask)) |\\
+  ((value) & (mask)), dev->bmmio+(reg))" 13881 . 13960)))
+          ("SAA7134_BOARD_UNKNOWN" . ((number "0" 3230 . 3231)))
+          ("SAA7134_BOARD_ELSA_500TV" . ((number "15" 3842 . 3844)))
+          ("SAA7134_BOARD_CRONOS_PLUS" . ((number "20" 4052 . 4054)))
+          ("SAA7134_MAXBOARDS" . ((number "8" 5243 . 5244)))
+          ("card_has_mpeg" (spp-arg-list ("dev") 6284 . 6289) . ((semantic-list "(SAA7134_MPEG_UNUSED  != saa7134_boards[dev->board].mpeg)" 6293 . 6350)))
+          ("RESOURCE_VBI" . ((number "4" 6710 . 6711)))
+          ("saa_clearl" (spp-arg-list ("reg" "bit") 13659 . 13668) . ((symbol "saa_andorl" 13676 . 13686) (semantic-list "((reg),(bit),0)" 13686 . 13701)))
+          ("SAA7134_BOARD_NOAUTO" . ((symbol "UNSET" 3184 . 3189)))
+          ("SAA7134_BOARD_EMPRESS" . ((number "4" 3398 . 3399)))
+          ("SAA7134_BOARD_VA1000POWER" . ((number "17" 3926 . 3928)))
+          ("SAA7134_BOARD_PINNACLE_PCTV_STEREO" . ((number "26" 4308 . 4310)))
+          ("SAA7134_BOARD_ECS_TVP3XP" . ((number "30" 4476 . 4478)))
+          ("SAA7134_BOARD_NOVAC_PRIMETV7133" . ((number "34" 4650 . 4652)))
+          ("SAA7134_BOARD_SABRENT_SBTTVFM" . ((number "42" 4992 . 4994)))
+          ("card" (spp-arg-list ("dev") 6363 . 6368) . ((semantic-list "(saa7134_boards[dev->board])" 6381 . 6409)))
+          ("SAA7134_BOARD_PROTEUS_PRO" . ((number "1" 3272 . 3273)))
+          ("SAA7134_BOARD_FLYVIDEO2000" . ((number "3" 3356 . 3357)))
+          ("SAA7134_BOARD_MONSTERTV" . ((number "5" 3440 . 3441)))
+          ("SAA7134_BOARD_KWORLD" . ((number "10" 3632 . 3634)))
+          ("SAA7134_BOARD_CINERGY600" . ((number "11" 3674 . 3676)))
+          ("SAA7134_BOARD_VIDEOMATE_TV_GOLD_PLUS" . ((number "41" 4950 . 4952)))
+          ("saa_readl" (spp-arg-list ("reg") 13335 . 13340) . ((symbol "readl" 13353 . 13358) (semantic-list "(dev->lmmio + (reg))" 13358 . 13378)))
+          ("SAA7134_BOARD_FLYVIDEO3000" . ((number "2" 3314 . 3315)))
+          ("SAA7134_BOARD_ELSA" . ((number "14" 3800 . 3802)))
+          ("SAA7134_BOARD_ASUSTeK_TVFM7134" . ((number "16" 3884 . 3886)))
+          ("saa_setl" (spp-arg-list ("reg" "bit") 13592 . 13601) . ((symbol "saa_andorl" 13611 . 13621) (semantic-list "((reg),(bit),(bit))" 13621 . 13640)))
+          ("saa_clearb" (spp-arg-list ("reg" "bit") 14044 . 14053) . ((symbol "saa_andorb" 14061 . 14071) (semantic-list "((reg),(bit),0)" 14071 . 14086)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!drivers!media!video!saa7134!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

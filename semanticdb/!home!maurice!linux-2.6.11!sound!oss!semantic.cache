@@ -1,0 +1,1998 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [4743 4768])
+            ("linux/module.h" include (:system-flag t) nil [4769 4794])
+            ("linux/string.h" include (:system-flag t) nil [4795 4820])
+            ("linux/interrupt.h" include (:system-flag t) nil [4821 4849])
+            ("linux/ioport.h" include (:system-flag t) nil [4850 4875])
+            ("linux/sched.h" include (:system-flag t) nil [4876 4900])
+            ("linux/delay.h" include (:system-flag t) nil [4901 4925])
+            ("linux/sound.h" include (:system-flag t) nil [4926 4950])
+            ("linux/slab.h" include (:system-flag t) nil [4951 4974])
+            ("linux/soundcard.h" include (:system-flag t) nil [4975 5003])
+            ("linux/pci.h" include (:system-flag t) nil [5004 5026])
+            ("linux/init.h" include (:system-flag t) nil [5027 5050])
+            ("linux/poll.h" include (:system-flag t) nil [5051 5074])
+            ("linux/spinlock.h" include (:system-flag t) nil [5075 5102])
+            ("linux/smp_lock.h" include (:system-flag t) nil [5103 5130])
+            ("linux/bitops.h" include (:system-flag t) nil [5131 5156])
+            ("linux/wait.h" include (:system-flag t) nil [5157 5180])
+            ("asm/io.h" include (:system-flag t) nil [5182 5201])
+            ("asm/page.h" include (:system-flag t) nil [5202 5223])
+            ("asm/uaccess.h" include (:system-flag t) nil [5224 5248])
+            ("DBG" variable (:constant-flag t) nil [5598 5601])
+            ("CM_MAGIC" variable (:constant-flag t) nil [5693 5701])
+            ("CODEC_CMI_FUNCTRL0" variable (:constant-flag t) nil [5820 5838])
+            ("CODEC_CMI_FUNCTRL1" variable (:constant-flag t) nil [5855 5873])
+            ("CODEC_CMI_CHFORMAT" variable (:constant-flag t) nil [5890 5908])
+            ("CODEC_CMI_INT_HLDCLR" variable (:constant-flag t) nil [5925 5945])
+            ("CODEC_CMI_INT_STATUS" variable (:constant-flag t) nil [5962 5982])
+            ("CODEC_CMI_LEGACY_CTRL" variable (:constant-flag t) nil [5999 6020])
+            ("CODEC_CMI_MISC_CTRL" variable (:constant-flag t) nil [6037 6056])
+            ("CODEC_CMI_TDMA_POS" variable (:constant-flag t) nil [6073 6091])
+            ("CODEC_CMI_MIXER" variable (:constant-flag t) nil [6108 6123])
+            ("CODEC_SB16_DATA" variable (:constant-flag t) nil [6141 6156])
+            ("CODEC_SB16_ADDR" variable (:constant-flag t) nil [6174 6189])
+            ("CODEC_CMI_MIXER1" variable (:constant-flag t) nil [6207 6223])
+            ("CODEC_CMI_MIXER2" variable (:constant-flag t) nil [6240 6256])
+            ("CODEC_CMI_AUX_VOL" variable (:constant-flag t) nil [6273 6290])
+            ("CODEC_CMI_MISC" variable (:constant-flag t) nil [6307 6321])
+            ("CODEC_CMI_AC97" variable (:constant-flag t) nil [6339 6353])
+            ("CODEC_CMI_CH0_FRAME1" variable (:constant-flag t) nil [6372 6392])
+            ("CODEC_CMI_CH0_FRAME2" variable (:constant-flag t) nil [6409 6429])
+            ("CODEC_CMI_CH1_FRAME1" variable (:constant-flag t) nil [6446 6466])
+            ("CODEC_CMI_CH1_FRAME2" variable (:constant-flag t) nil [6483 6503])
+            ("CODEC_CMI_SPDIF_CTRL" variable (:constant-flag t) nil [6521 6541])
+            ("CODEC_CMI_MISC_CTRL2" variable (:constant-flag t) nil [6558 6578])
+            ("CODEC_CMI_EXT_REG" variable (:constant-flag t) nil [6596 6613])
+            ("DSP_MIX_DATARESETIDX" variable (:constant-flag t) nil [6681 6701])
+            ("DSP_MIX_MASTERVOLIDX_L" variable (:constant-flag t) nil [6736 6758])
+            ("DSP_MIX_MASTERVOLIDX_R" variable (:constant-flag t) nil [6792 6814])
+            ("DSP_MIX_VOICEVOLIDX_L" variable (:constant-flag t) nil [6848 6869])
+            ("DSP_MIX_VOICEVOLIDX_R" variable (:constant-flag t) nil [6903 6924])
+            ("DSP_MIX_FMVOLIDX_L" variable (:constant-flag t) nil [6958 6976])
+            ("DSP_MIX_FMVOLIDX_R" variable (:constant-flag t) nil [7010 7028])
+            ("DSP_MIX_CDVOLIDX_L" variable (:constant-flag t) nil [7062 7080])
+            ("DSP_MIX_CDVOLIDX_R" variable (:constant-flag t) nil [7114 7132])
+            ("DSP_MIX_LINEVOLIDX_L" variable (:constant-flag t) nil [7166 7186])
+            ("DSP_MIX_LINEVOLIDX_R" variable (:constant-flag t) nil [7220 7240])
+            ("DSP_MIX_MICVOLIDX" variable (:constant-flag t) nil [7275 7292])
+            ("DSP_MIX_SPKRVOLIDX" variable (:constant-flag t) nil [7326 7344])
+            ("DSP_MIX_OUTMIXIDX" variable (:constant-flag t) nil [7379 7396])
+            ("DSP_MIX_ADCMIXIDX_L" variable (:constant-flag t) nil [7431 7450])
+            ("DSP_MIX_ADCMIXIDX_R" variable (:constant-flag t) nil [7484 7503])
+            ("DSP_MIX_INGAINIDX_L" variable (:constant-flag t) nil [7538 7557])
+            ("DSP_MIX_INGAINIDX_R" variable (:constant-flag t) nil [7591 7610])
+            ("DSP_MIX_OUTGAINIDX_L" variable (:constant-flag t) nil [7644 7664])
+            ("DSP_MIX_OUTGAINIDX_R" variable (:constant-flag t) nil [7698 7718])
+            ("DSP_MIX_AGCIDX" variable (:constant-flag t) nil [7753 7767])
+            ("DSP_MIX_TREBLEIDX_L" variable (:constant-flag t) nil [7803 7822])
+            ("DSP_MIX_TREBLEIDX_R" variable (:constant-flag t) nil [7856 7875])
+            ("DSP_MIX_BASSIDX_L" variable (:constant-flag t) nil [7909 7926])
+            ("DSP_MIX_BASSIDX_R" variable (:constant-flag t) nil [7960 7977])
+            ("DSP_MIX_EXTENSION" variable (:constant-flag t) nil [8011 8028])
+            ("DSP_MIX_AUXVOL_L" variable (:constant-flag t) nil [8089 8105])
+            ("DSP_MIX_AUXVOL_R" variable (:constant-flag t) nil [8139 8155])
+            ("CM_EXTENT_CODEC" variable (:constant-flag t) nil [8204 8219])
+            ("CM_EXTENT_MIDI" variable (:constant-flag t) nil [8236 8250])
+            ("CM_EXTENT_SYNTH" variable (:constant-flag t) nil [8265 8280])
+            ("CM_EXTENT_GAME" variable (:constant-flag t) nil [8295 8309])
+            ("CHADC0" variable (:constant-flag t) nil [8362 8368])
+            ("CHADC1" variable (:constant-flag t) nil [8386 8392])
+            ("PAUSE0" variable (:constant-flag t) nil [8410 8416])
+            ("PAUSE1" variable (:constant-flag t) nil [8433 8439])
+            ("CHEN0" variable (:constant-flag t) nil [8496 8501])
+            ("CHEN1" variable (:constant-flag t) nil [8520 8525])
+            ("RST_CH0" variable (:constant-flag t) nil [8544 8551])
+            ("RST_CH1" variable (:constant-flag t) nil [8568 8575])
+            ("JYSTK_EN" variable (:constant-flag t) nil [8630 8638])
+            ("UART_EN" variable (:constant-flag t) nil [8652 8659])
+            ("SPDO2DAC" variable (:constant-flag t) nil [8674 8682])
+            ("SPDFLOOP" variable (:constant-flag t) nil [8696 8704])
+            ("SPDF_0" variable (:constant-flag t) nil [8758 8764])
+            ("SPDF_1" variable (:constant-flag t) nil [8779 8785])
+            ("ASFC" variable (:constant-flag t) nil [8800 8804])
+            ("DSFC" variable (:constant-flag t) nil [8819 8823])
+            ("SPDIF2DAC" variable (:constant-flag t) nil [8838 8847])
+            ("CM_CFMT_STEREO" variable (:constant-flag t) nil [8915 8929])
+            ("CM_CFMT_16BIT" variable (:constant-flag t) nil [8943 8956])
+            ("CM_CFMT_MASK" variable (:constant-flag t) nil [8970 8982])
+            ("POLVALID" variable (:constant-flag t) nil [8996 9004])
+            ("INVSPDIFI" variable (:constant-flag t) nil [9018 9027])
+            ("SPD24SEL" variable (:constant-flag t) nil [9077 9085])
+            ("CHB3D" variable (:constant-flag t) nil [9135 9140])
+            ("CHB3D5C" variable (:constant-flag t) nil [9155 9162])
+            ("CH0_INT_EN" variable (:constant-flag t) nil [9219 9229])
+            ("CH1_INT_EN" variable (:constant-flag t) nil [9243 9253])
+            ("CHINT0" variable (:constant-flag t) nil [9296 9302])
+            ("CHINT1" variable (:constant-flag t) nil [9317 9323])
+            ("CH0BUSY" variable (:constant-flag t) nil [9338 9345])
+            ("CH1BUSY" variable (:constant-flag t) nil [9360 9367])
+            ("EXBASEN" variable (:constant-flag t) nil [9425 9432])
+            ("BASE2LIN" variable (:constant-flag t) nil [9447 9455])
+            ("CENTR2LIN" variable (:constant-flag t) nil [9469 9478])
+            ("CB2LIN" variable (:constant-flag t) nil [9492 9498])
+            ("CHB3D6C" variable (:constant-flag t) nil [9531 9538])
+            ("DAC2SPDO" variable (:constant-flag t) nil [9596 9604])
+            ("SPDCOPYRHT" variable (:constant-flag t) nil [9618 9628])
+            ("ENSPDOUT" variable (:constant-flag t) nil [9642 9650])
+            ("FMSEL" variable (:constant-flag t) nil [9707 9712])
+            ("VSBSEL" variable (:constant-flag t) nil [9727 9733])
+            ("VMPU" variable (:constant-flag t) nil [9748 9752])
+            ("NXCHG" variable (:constant-flag t) nil [9767 9772])
+            ("REAR2LIN" variable (:constant-flag t) nil [9828 9836])
+            ("MUTECH1" variable (:constant-flag t) nil [9850 9857])
+            ("ENCENTER" variable (:constant-flag t) nil [9872 9880])
+            ("SELSPDIFI2" variable (:constant-flag t) nil [9937 9947])
+            ("SPDF_AC97" variable (:constant-flag t) nil [9961 9970])
+            ("AC3_EN" variable (:constant-flag t) nil [10027 10033])
+            ("FM_EN" variable (:constant-flag t) nil [10048 10053])
+            ("SPD32SEL" variable (:constant-flag t) nil [10068 10076])
+            ("XCHGDAC" variable (:constant-flag t) nil [10090 10097])
+            ("ENDBDAC" variable (:constant-flag t) nil [10112 10119])
+            ("SPDIFI48K" variable (:constant-flag t) nil [10177 10186])
+            ("SPDO5V" variable (:constant-flag t) nil [10200 10206])
+            ("N4SPK3D" variable (:constant-flag t) nil [10221 10228])
+            ("RESET" variable (:constant-flag t) nil [10243 10248])
+            ("PWD" variable (:constant-flag t) nil [10263 10266])
+            ("SPDIF48K" variable (:constant-flag t) nil [10281 10289])
+            ("CDPLAY" variable (:constant-flag t) nil [10350 10356])
+            ("X3DEN" variable (:constant-flag t) nil [10371 10376])
+            ("REAR2FRONT" variable (:constant-flag t) nil [10391 10401])
+            ("SPK4" variable (:constant-flag t) nil [10415 10419])
+            ("WSMUTE" variable (:constant-flag t) nil [10434 10440])
+            ("FMMUTE" variable (:constant-flag t) nil [10455 10461])
+            ("SPDVALID" variable (:constant-flag t) nil [10509 10517])
+            ("CENTR2MIC" variable (:constant-flag t) nil [10531 10540])
+            ("SPD32KFMT" variable (:constant-flag t) nil [10588 10597])
+            ("CM_CFMT_DACSHIFT" variable (:constant-flag t) nil [10612 10628])
+            ("CM_CFMT_ADCSHIFT" variable (:constant-flag t) nil [10641 10657])
+            ("CM_FREQ_DACSHIFT" variable (:constant-flag t) nil [10670 10686])
+            ("CM_FREQ_ADCSHIFT" variable (:constant-flag t) nil [10699 10715])
+            ("RSTDAC" variable (:constant-flag t) nil [10728 10734])
+            ("RSTADC" variable (:constant-flag t) nil [10751 10757])
+            ("ENDAC" variable (:constant-flag t) nil [10774 10779])
+            ("ENADC" variable (:constant-flag t) nil [10794 10799])
+            ("PAUSEDAC" variable (:constant-flag t) nil [10814 10822])
+            ("PAUSEADC" variable (:constant-flag t) nil [10838 10846])
+            ("CODEC_CMI_ADC_FRAME1" variable (:constant-flag t) nil [10862 10882])
+            ("CODEC_CMI_ADC_FRAME2" variable (:constant-flag t) nil [10912 10932])
+            ("CODEC_CMI_DAC_FRAME1" variable (:constant-flag t) nil [10962 10982])
+            ("CODEC_CMI_DAC_FRAME2" variable (:constant-flag t) nil [11012 11032])
+            ("DACINT" variable (:constant-flag t) nil [11062 11068])
+            ("ADCINT" variable (:constant-flag t) nil [11084 11090])
+            ("DACBUSY" variable (:constant-flag t) nil [11106 11113])
+            ("ADCBUSY" variable (:constant-flag t) nil [11130 11137])
+            ("ENDACINT" variable (:constant-flag t) nil [11154 11162])
+            ("ENADCINT" variable (:constant-flag t) nil [11182 11190])
+            ("sample_size" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{ 1, 2, 2, 4 }"
+                :type "unsigned int")
+                nil [11203 11256])
+            ("sample_shift" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{ 0, 1, 1, 2 }"
+                :type "unsigned int")
+                nil [11257 11311])
+            ("SND_DEV_DSP16" variable (:constant-flag t) nil [11321 11334])
+            ("NR_DEVICE" variable (:constant-flag t) nil [11348 11357])
+            ("set_dac1_rate" variable (:constant-flag t) nil [11402 11415])
+            ("set_dac1_rate_unlocked" variable (:constant-flag t) nil [11437 11459])
+            ("stop_dac1" variable (:constant-flag t) nil [11490 11499])
+            ("stop_dac1_unlocked" variable (:constant-flag t) nil [11517 11535])
+            ("get_dmadac1" variable (:constant-flag t) nil [11562 11573])
+            ("devindex" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned int")
+                nil [11586 11619])
+            ("cm_state" type
+               (:members 
+                  ( ("magic" variable (:type "unsigned int") (reparse-symbol classsubparts) [11703 11722])
+                    ("devs" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11755 11777])
+                    ("dev" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11823 11843])
+                    ("dev_audio" variable (:type "int") (reparse-symbol classsubparts) [11846 11860])
+                    ("dev_mixer" variable (:type "int") (reparse-symbol classsubparts) [11886 11900])
+                    ("iosb" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("iobase" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("iosynth" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("iomidi" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("iogame" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("irq" variable (:type "unsigned int") (reparse-symbol classsubparts) [11903 11963])
+                    ("deviceid" variable (:type "unsigned short") (reparse-symbol classsubparts) [11990 12014])
+                    ("mix" variable (:type ("" type
+                         (:members 
+                            ( ("modcnt" variable (:type "unsigned int") (reparse-symbol classsubparts) [12084 12104])
+                              ("vol" variable
+                                 (:dereference 1
+                                  :type "unsigned short")
+                                  (reparse-symbol classsubparts) [12107 12130]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12038 12145])
+                    ("rateadc" variable (:type "unsigned int") (reparse-symbol classsubparts) [12148 12178])
+                    ("ratedac" variable (:type "unsigned int") (reparse-symbol classsubparts) [12148 12178])
+                    ("fmt" variable (:type "unsigned char") (reparse-symbol classsubparts) [12198 12224])
+                    ("enable" variable (:type "unsigned char") (reparse-symbol classsubparts) [12198 12224])
+                    ("lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12227 12243])
+                    ("open_sem" variable (:type ("semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12245 12271])
+                    ("open_mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12273 12290])
+                    ("open_wait" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12292 12320])
+                    ("dma_dac" variable (:type ("dmabuf" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12323 12896])
+                    ("dma_adc" variable (:type ("dmabuf" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [12323 12896])
+                    ("dmabuf" type
+                       (:members 
+                          ( ("rawbuf" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [12341 12354])
+                            ("dmaaddr" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12357 12376])
+                            ("buforder" variable (:type "unsigned int") (reparse-symbol classsubparts) [12379 12397])
+                            ("numfrag" variable (:type "unsigned int") (reparse-symbol classsubparts) [12400 12417])
+                            ("fragshift" variable (:type "unsigned int") (reparse-symbol classsubparts) [12420 12439])
+                            ("hwptr" variable (:type "unsigned int") (reparse-symbol classsubparts) [12442 12464])
+                            ("swptr" variable (:type "unsigned int") (reparse-symbol classsubparts) [12442 12464])
+                            ("total_bytes" variable (:type "unsigned int") (reparse-symbol classsubparts) [12467 12488])
+                            ("count" variable (:type "int") (reparse-symbol classsubparts) [12491 12501])
+                            ("error" variable (:type "unsigned int") (reparse-symbol classsubparts) [12504 12519])
+                            ("wait" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12543 12566])
+                            ("fragsize" variable (:type "unsigned int") (reparse-symbol classsubparts) [12570 12588])
+                            ("dmasize" variable (:type "unsigned int") (reparse-symbol classsubparts) [12638 12655])
+                            ("fragsamples" variable (:type "unsigned int") (reparse-symbol classsubparts) [12658 12679])
+                            ("dmasamples" variable (:type "unsigned int") (reparse-symbol classsubparts) [12682 12702])
+                            ("mapped" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12706 12724])
+                            ("ready" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12743 12760])
+                            ("endcleared" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12763 12785])
+                            ("enabled" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12788 12807])
+                            ("ossfragshift" variable (:type "unsigned int") (reparse-symbol classsubparts) [12810 12832])
+                            ("ossmaxfrags" variable (:type "int") (reparse-symbol classsubparts) [12835 12851])
+                            ("subdivision" variable (:type "unsigned int") (reparse-symbol classsubparts) [12854 12875]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [12323 12896])
+                    ("chip_version" variable (:type "int") (reparse-symbol classsubparts) [13054 13071])
+                    ("max_channels" variable (:type "int") (reparse-symbol classsubparts) [13073 13090])
+                    ("curr_channels" variable (:type "int") (reparse-symbol classsubparts) [13092 13110])
+                    ("capability" variable (:type "int") (reparse-symbol classsubparts) [13112 13127])
+                    ("status" variable (:type "int") (reparse-symbol classsubparts) [13178 13189])
+                    ("spdif_counter" variable (:type "int") (reparse-symbol classsubparts) [13215 13233]))                  
+                :type "struct")
+                nil [11671 13263])
+            ("CAN_AC3_HW" variable (:constant-flag t) nil [13305 13315])
+            ("CAN_AC3_SW" variable (:constant-flag t) nil [13356 13366])
+            ("CAN_AC3" variable (:constant-flag t) nil [13407 13414])
+            ("CAN_DUAL_DAC" variable (:constant-flag t) nil [13451 13463])
+            ("CAN_MULTI_CH_HW" variable (:constant-flag t) nil [13504 13519])
+            ("CAN_MULTI_CH" variable (:constant-flag t) nil [13560 13572])
+            ("CAN_LINE_AS_REAR" variable (:constant-flag t) nil [13615 13631])
+            ("CAN_LINE_AS_BASS" variable (:constant-flag t) nil [13671 13687])
+            ("CAN_MIC_AS_BASS" variable (:constant-flag t) nil [13727 13742])
+            ("DO_AC3_HW" variable (:constant-flag t) nil [13812 13821])
+            ("DO_AC3_SW" variable (:constant-flag t) nil [13842 13851])
+            ("DO_AC3" variable (:constant-flag t) nil [13872 13878])
+            ("DO_DUAL_DAC" variable (:constant-flag t) nil [13913 13924])
+            ("DO_MULTI_CH_HW" variable (:constant-flag t) nil [13945 13959])
+            ("DO_MULTI_CH" variable (:constant-flag t) nil [13980 13991])
+            ("DO_LINE_AS_REAR" variable (:constant-flag t) nil [14032 14047])
+            ("DO_LINE_AS_BASS" variable (:constant-flag t) nil [14088 14103])
+            ("DO_MIC_AS_BASS" variable (:constant-flag t) nil [14144 14158])
+            ("DO_SPDIF_OUT" variable (:constant-flag t) nil [14199 14211])
+            ("DO_SPDIF_IN" variable (:constant-flag t) nil [14232 14243])
+            ("DO_SPDIF_LOOP" variable (:constant-flag t) nil [14264 14277])
+            ("DO_BIGENDIAN_W" variable (:constant-flag t) nil [14298 14312])
+            ("DO_BIGENDIAN_R" variable (:constant-flag t) nil [14356 14370])
+            ("LIST_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("devs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14424 14429]))                  
+                :type "int")
+                nil [14407 14430])
+            ("mpuio" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14432 14453])
+            ("fmio" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14454 14474])
+            ("joystick" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14475 14499])
+            ("spdif_inverse" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14500 14529])
+            ("spdif_loop" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14530 14556])
+            ("spdif_out" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14557 14582])
+            ("use_line_as_rear" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14583 14615])
+            ("use_line_as_bass" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14616 14648])
+            ("use_mic_as_bass" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14649 14680])
+            ("mic_boost" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14681 14706])
+            ("hw_copy" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [14707 14730])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mpuio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14744 14750])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [14751 14755]))                  
+                :type "int")
+                nil [14731 14759])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fmio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14773 14778])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [14779 14783]))                  
+                :type "int")
+                nil [14760 14787])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("joystick" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14801 14810])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14811 14816]))                  
+                :type "int")
+                nil [14788 14820])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_inverse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14834 14848])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14849 14854]))                  
+                :type "int")
+                nil [14821 14858])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_loop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14872 14883])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14884 14889]))                  
+                :type "int")
+                nil [14859 14893])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14907 14917])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14918 14923]))                  
+                :type "int")
+                nil [14894 14927])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_line_as_rear" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14941 14958])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14959 14964]))                  
+                :type "int")
+                nil [14928 14968])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_line_as_bass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14982 14999])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15000 15005]))                  
+                :type "int")
+                nil [14969 15009])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_mic_as_bass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15023 15039])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15040 15045]))                  
+                :type "int")
+                nil [15010 15049])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mic_boost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15063 15073])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15074 15079]))                  
+                :type "int")
+                nil [15050 15083])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hw_copy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15097 15105])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15106 15111]))                  
+                :type "int")
+                nil [15084 15115])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mpuio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15133 15139]))                  
+                :type "int")
+                nil [15116 15202])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fmio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15220 15225]))                  
+                :type "int")
+                nil [15203 15278])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("joystick" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15296 15305]))                  
+                :type "int")
+                nil [15279 15369])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_inverse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15387 15401]))                  
+                :type "int")
+                nil [15370 15435])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_loop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15453 15464]))                  
+                :type "int")
+                nil [15436 15513])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("spdif_out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15531 15541]))                  
+                :type "int")
+                nil [15514 15605])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_line_as_rear" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15623 15640]))                  
+                :type "int")
+                nil [15606 15679])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_line_as_bass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15697 15714]))                  
+                :type "int")
+                nil [15680 15756])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("use_mic_as_bass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15774 15790]))                  
+                :type "int")
+                nil [15757 15831])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mic_boost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15849 15859]))                  
+                :type "int")
+                nil [15832 15893])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hw_copy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15911 15919]))                  
+                :type "int")
+                nil [15894 15962])
+            ("ld2" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16068 16083]))                  
+                :type "unsigned int")
+                nil [16041 16344])
+            ("maskb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16441 16459])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16460 16478])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16479 16498]))                  
+                :type "void")
+                nil [16423 16543])
+            ("maskw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16563 16581])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16582 16600])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16601 16620]))                  
+                :type "void")
+                nil [16545 16665])
+            ("maskl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16685 16703])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16704 16722])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16723 16742]))                  
+                :type "void")
+                nil [16667 16787])
+            ("set_dmadac1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16813 16832])
+                    ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16833 16851])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16852 16871]))                  
+                :type "void")
+                nil [16789 17041])
+            ("set_dmaadc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17066 17085])
+                    ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17086 17104])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17105 17124]))                  
+                :type "void")
+                nil [17043 17279])
+            ("set_dmadac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17304 17323])
+                    ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17324 17342])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17343 17362]))                  
+                :type "void")
+                nil [17281 17575])
+            ("set_countadc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17602 17621])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17622 17637]))                  
+                :type "void")
+                nil [17577 17697])
+            ("set_countdac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17724 17743])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17744 17759]))                  
+                :type "void")
+                nil [17699 17878])
+            ("get_dmadac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17907 17926]))                  
+                :type "unsigned int")
+                nil [17880 18151])
+            ("get_dmaadc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18180 18199]))                  
+                :type "unsigned int")
+                nil [18153 18424])
+            ("wrmixer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18446 18465])
+                    ("idx" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [18466 18484])
+                    ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [18485 18504]))                  
+                :type "void")
+                nil [18426 19583])
+            ("rdmixer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19614 19633])
+                    ("idx" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [19634 19652]))                  
+                :type "unsigned char")
+                nil [19585 20387])
+            ("set_fmt_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20418 20437])
+                    ("mask" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20438 20457])
+                    ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20458 20477]))                  
+                :type "void")
+                nil [20389 20704])
+            ("set_fmt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20726 20745])
+                    ("mask" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20746 20765])
+                    ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20766 20785]))                  
+                :type "void")
+                nil [20706 20923])
+            ("frobindir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20947 20966])
+                    ("idx" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20967 20985])
+                    ("mask" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20986 21005])
+                    ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [21006 21025]))                  
+                :type "void")
+                nil [20925 21182])
+            ("rate_lookup" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	{ 5512,		(0 + 5512) / 2,		(5512 + 8000) / 2,	0 },
+	{ 8000,		(5512 + 8000) / 2,	(8000 + 11025) / 2,	4 },
+	{ 11025,	(8000 + 11025) / 2,	(11025 + 16000) / 2,	1 },
+	{ 16000,	(11025 + 16000) / 2,	(16000 + 22050) / 2,	5 },
+	{ 22050,	(16000 + 22050) / 2,	(22050 + 32000) / 2,	2 },
+	{ 32000,	(22050 + 32000) / 2,	(32000 + 44100) / 2,	6 },
+	{ 44100,	(32000 + 44100) / 2,	(44100 + 48000) / 2,	3 },
+	{ 48000,	(44100 + 48000) / 2,	48000,			7 }
+}"
+                :type ("" type
+                     (:members 
+                        ( ("rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [21201 21215])
+                          ("lower" variable (:type "unsigned int") (reparse-symbol classsubparts) [21217 21232])
+                          ("upper" variable (:type "unsigned int") (reparse-symbol classsubparts) [21234 21249])
+                          ("freq" variable (:type "unsigned char") (reparse-symbol classsubparts) [21251 21270]))                        
+                      :type "struct")
+                      nil nil))
+                nil [21184 21726])
+            ("set_spdif_copyright" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21760 21779])
+                    ("spdif_copyright" variable (:type "int") (reparse-symbol arg-sub-list) [21780 21800]))                  
+                :type "void")
+                nil [21728 21931])
+            ("set_spdif_loop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21960 21979])
+                    ("spdif_loop" variable (:type "int") (reparse-symbol arg-sub-list) [21980 21995]))                  
+                :type "void")
+                nil [21933 22304])
+            ("set_spdif_monitor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22336 22355])
+                    ("channel" variable (:type "int") (reparse-symbol arg-sub-list) [22356 22368]))                  
+                :type "void")
+                nil [22306 22574])
+            ("set_spdifout_level" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22607 22626])
+                    ("level5v" variable (:type "int") (reparse-symbol arg-sub-list) [22627 22639]))                  
+                :type "void")
+                nil [22576 22760])
+            ("set_spdifin_inverse" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22794 22813])
+                    ("spdif_inverse" variable (:type "int") (reparse-symbol arg-sub-list) [22814 22832]))                  
+                :type "void")
+                nil [22762 23298])
+            ("set_spdifin_channel2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23333 23352])
+                    ("channel2" variable (:type "int") (reparse-symbol arg-sub-list) [23353 23366]))                  
+                :type "void")
+                nil [23300 23502])
+            ("set_spdifin_valid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23534 23553])
+                    ("valid" variable (:type "int") (reparse-symbol arg-sub-list) [23554 23564]))                  
+                :type "void")
+                nil [23504 23653])
+            ("set_spdifout_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23689 23708])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23709 23723]))                  
+                :type "void")
+                nil [23655 24537])
+            ("set_spdifout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24564 24583])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24584 24598]))                  
+                :type "void")
+                nil [24539 24736])
+            ("set_spdifin_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24771 24790])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24791 24805]))                  
+                :type "void")
+                nil [24738 25152])
+            ("set_spdifin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25178 25197])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25198 25212]))                  
+                :type "void")
+                nil [25154 25349])
+            ("parity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25405 25419]))                  
+                :type "unsigned int")
+                nil [25382 25601])
+            ("set_ac3_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25632 25651])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25652 25666]))                  
+                :type "void")
+                nil [25603 27545])
+            ("set_line_as_rear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27576 27595])
+                    ("use_line_as_rear" variable (:type "int") (reparse-symbol arg-sub-list) [27596 27617]))                  
+                :type "void")
+                nil [27547 27874])
+            ("set_line_as_bass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27905 27924])
+                    ("use_line_as_bass" variable (:type "int") (reparse-symbol arg-sub-list) [27925 27946]))                  
+                :type "void")
+                nil [27876 28225])
+            ("set_mic_as_bass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28255 28274])
+                    ("use_mic_as_bass" variable (:type "int") (reparse-symbol arg-sub-list) [28275 28295]))                  
+                :type "void")
+                nil [28227 28544])
+            ("set_hw_copy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28570 28589])
+                    ("hw_copy" variable (:type "int") (reparse-symbol arg-sub-list) [28590 28602]))                  
+                :type "void")
+                nil [28546 28775])
+            ("set_ac3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28797 28816])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28817 28831]))                  
+                :type "void")
+                nil [28777 28998])
+            ("trans_ac3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29021 29040])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29041 29052])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29053 29072])
+                    ("" variable (:type ("source" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29072 29079])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [29080 29089]))                  
+                :type "int")
+                nil [29000 29872])
+            ("set_adc_rate_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29908 29927])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29928 29942]))                  
+                :type "void")
+                nil [29874 30376])
+            ("set_adc_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30403 30422])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30423 30437]))                  
+                :type "void")
+                nil [30378 30972])
+            ("set_dac_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30999 31018])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31019 31033]))                  
+                :type "void")
+                nil [30974 31691])
+            ("reset_adc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31798 31817]))                  
+                :type "void")
+                nil [31769 31985])
+            ("reset_dac" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32016 32035]))                  
+                :type "void")
+                nil [31987 32249])
+            ("pause_adc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32280 32299]))                  
+                :type "void")
+                nil [32251 32357])
+            ("pause_dac" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32388 32407]))                  
+                :type "void")
+                nil [32359 32511])
+            ("disable_adc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32544 32563]))                  
+                :type "void")
+                nil [32513 32681])
+            ("disable_dac" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32714 32733]))                  
+                :type "void")
+                nil [32683 32899])
+            ("enable_adc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32931 32950]))                  
+                :type "void")
+                nil [32901 33140])
+            ("enable_dac_unlocked" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33181 33200]))                  
+                :type "void")
+                nil [33142 33438])
+            ("stop_adc_unlocked" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33477 33496]))                  
+                :type "void")
+                nil [33440 33634])
+            ("stop_adc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33664 33683]))                  
+                :type "void")
+                nil [33636 33813])
+            ("stop_dac_unlocked" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33852 33871]))                  
+                :type "void")
+                nil [33815 34064])
+            ("stop_dac" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34094 34113]))                  
+                :type "void")
+                nil [34066 34242])
+            ("start_adc_unlocked" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34282 34301]))                  
+                :type "void")
+                nil [34244 34539])
+            ("start_adc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34563 34582]))                  
+                :type "void")
+                nil [34541 34712])
+            ("start_dac1_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34746 34765]))                  
+                :type "void")
+                nil [34714 34957])
+            ("start_dac_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34990 35009]))                  
+                :type "void")
+                nil [34959 35256])
+            ("start_dac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35280 35299]))                  
+                :type "void")
+                nil [35258 35429])
+            ("prog_dmabuf" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35454 35473])
+                    ("rec" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35474 35487]))                  
+                :type "int")
+                nil [35431 35488])
+            ("set_dac_channels" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35518 35537])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [35538 35551]))                  
+                :type "int")
+                nil [35490 38416])
+            ("DMABUF_DEFAULTORDER" variable (:constant-flag t) nil [38503 38522])
+            ("DMABUF_MINORDER" variable (:constant-flag t) nil [38547 38562])
+            ("dealloc_dmabuf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38593 38612])
+                    ("db" variable
+                       (:pointer 1
+                        :type ("dmabuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38613 38631]))                  
+                :type "void")
+                nil [38566 39029])
+            ("prog_dmabuf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39113 39132])
+                    ("rec" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [39133 39146]))                  
+                :type "int")
+                nil [39090 41584])
+            ("clear_advance" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41619 41638]))                  
+                :type "void")
+                nil [41586 42176])
+            ("cm_update_ptr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42235 42254]))                  
+                :type "void")
+                nil [42209 43973])
+            ("cm_interrupt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [44007 44015])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [44016 44029])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44030 44051]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [43975 44918])
+            ("VALIDATE_STATE" variable (:constant-flag t) nil [45084 45098])
+            ("MT_4" variable (:constant-flag t) nil [45431 45435])
+            ("MT_5MUTE" variable (:constant-flag t) nil [45455 45463])
+            ("MT_4MUTEMONO" variable (:constant-flag t) nil [45479 45491])
+            ("MT_6MUTE" variable (:constant-flag t) nil [45503 45511])
+            ("MT_5MUTEMONO" variable (:constant-flag t) nil [45527 45539])
+            ("mixtable" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	[SOUND_MIXER_CD]     = { DSP_MIX_CDVOLIDX_L,     DSP_MIX_CDVOLIDX_R,     MT_5MUTE,     0x04, 0x06 },
+	[SOUND_MIXER_LINE]   = { DSP_MIX_LINEVOLIDX_L,   DSP_MIX_LINEVOLIDX_R,   MT_5MUTE,     0x10, 0x18 },
+	[SOUND_MIXER_MIC]    = { DSP_MIX_MICVOLIDX,      DSP_MIX_MICVOLIDX,      MT_5MUTEMONO, 0x01, 0x01 },
+	[SOUND_MIXER_SYNTH]  = { DSP_MIX_FMVOLIDX_L,  	 DSP_MIX_FMVOLIDX_R,     MT_5MUTE,     0x40, 0x00 },
+	[SOUND_MIXER_VOLUME] = { DSP_MIX_MASTERVOLIDX_L, DSP_MIX_MASTERVOLIDX_R, MT_5MUTE,     0x00, 0x00 },
+	[SOUND_MIXER_PCM]    = { DSP_MIX_VOICEVOLIDX_L,  DSP_MIX_VOICEVOLIDX_R,  MT_5MUTE,     0x00, 0x00 },
+	[SOUND_MIXER_LINE1]  = { DSP_MIX_AUXVOL_L,       DSP_MIX_AUXVOL_R,       MT_5MUTE,     0x80, 0x60 },
+	[SOUND_MIXER_SPEAKER]= { DSP_MIX_SPKRVOLIDX,	 DSP_MIX_SPKRVOLIDX,	 MT_5MUTEMONO, 0x00, 0x01 }
+}"
+                :type ("" type
+                     (:members 
+                        ( ("left" variable (:type "unsigned int") (reparse-symbol classsubparts) [45567 45581])
+                          ("right" variable (:type "unsigned int") (reparse-symbol classsubparts) [45583 45598])
+                          ("type" variable (:type "unsigned int") (reparse-symbol classsubparts) [45600 45614])
+                          ("rec" variable (:type "unsigned int") (reparse-symbol classsubparts) [45616 45629])
+                          ("play" variable (:type "unsigned int") (reparse-symbol classsubparts) [45631 45645]))                        
+                      :type "struct")
+                      nil nil))
+                nil [45544 46494])
+            ("volidx" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	[SOUND_MIXER_CD]     = 1,
+	[SOUND_MIXER_LINE]   = 2,
+	[SOUND_MIXER_MIC]    = 3,
+	[SOUND_MIXER_SYNTH]  = 4,
+	[SOUND_MIXER_VOLUME] = 5,
+	[SOUND_MIXER_PCM]    = 6,
+	[SOUND_MIXER_LINE1]  = 7,
+	[SOUND_MIXER_SPEAKER]= 8
+}"
+                :type "unsigned char")
+                nil [46496 46774])
+            ("mixer_outmask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46806 46825]))                  
+                :type "unsigned int")
+                nil [46776 47085])
+            ("mixer_recmask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47117 47136]))                  
+                :type "unsigned int")
+                nil [47087 47397])
+            ("mixer_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47422 47441])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47442 47459])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [47460 47478]))                  
+                :type "int")
+                nil [47399 53083])
+            ("cm_open_mixdev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53188 53208])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53209 53227]))                  
+                :type "int")
+                nil [53162 53573])
+            ("cm_release_mixdev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53604 53624])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53625 53643]))                  
+                :type "int")
+                nil [53575 53740])
+            ("cm_ioctl_mixdev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53769 53789])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53790 53808])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [53809 53826])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [53827 53845]))                  
+                :type "int")
+                nil [53742 53919])
+            ("cm_mixer_fops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.owner	 = THIS_MODULE,
+	.llseek	 = no_llseek,
+	.ioctl	 = cm_ioctl_mixdev,
+	.open	 = cm_open_mixdev,
+	.release = cm_release_mixdev,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [53921 54113])
+            ("drain_dac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54214 54233])
+                    ("nonblock" variable (:type "int") (reparse-symbol arg-sub-list) [54234 54247]))                  
+                :type "int")
+                nil [54193 55360])
+            ("cm_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55462 55480])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [55481 55494])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55494 55501])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55502 55515])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55516 55529]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [55439 58089])
+            ("cm_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58115 58133])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58134 58153])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58153 58160])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58161 58174])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58175 58188]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [58091 64110])
+            ("cm_poll" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [64140 64158])
+                    ("wait" variable
+                       (:pointer 1
+                        :type ("poll_table_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [64159 64190]))                  
+                :type "unsigned int")
+                nil [64112 65126])
+            ("cm_mmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65147 65165])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65166 65193]))                  
+                :type "int")
+                nil [65128 65939])
+            ("SNDCTL_SPDIF_COPYRIGHT" variable (:constant-flag t) nil [65949 65971])
+            ("SNDCTL_SPDIF_LOOP" variable (:constant-flag t) nil [66042 66059])
+            ("SNDCTL_SPDIF_MONITOR" variable (:constant-flag t) nil [66119 66139])
+            ("SNDCTL_SPDIF_LEVEL" variable (:constant-flag t) nil [66196 66214])
+            ("SNDCTL_SPDIF_INV" variable (:constant-flag t) nil [66279 66295])
+            ("SNDCTL_SPDIF_SEL2" variable (:constant-flag t) nil [66361 66378])
+            ("SNDCTL_SPDIF_VALID" variable (:constant-flag t) nil [66433 66451])
+            ("SNDCTL_SPDIFOUT" variable (:constant-flag t) nil [66506 66521])
+            ("SNDCTL_SPDIFIN" variable (:constant-flag t) nil [66575 66589])
+            ("cm_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66656 66676])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66677 66695])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [66696 66713])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [66714 66732]))                  
+                :type "int")
+                nil [66636 81130])
+            ("cm_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [81151 81171])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [81172 81190]))                  
+                :type "int")
+                nil [81132 83056])
+            ("cm_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [83080 83100])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [83101 83119]))                  
+                :type "int")
+                nil [83058 83974])
+            ("cm_audio_fops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.owner	 = THIS_MODULE,
+	.llseek	 = no_llseek,
+	.read	 = cm_read,
+	.write	 = cm_write,
+	.poll	 = cm_poll,
+	.ioctl	 = cm_ioctl,
+	.mmap	 = cm_mmap,
+	.open	 = cm_open,
+	.release = cm_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [83976 84225])
+            ("__initdata" variable
+               (:default-value "{
+	{ SOUND_MIXER_WRITE_CD, 0x4f4f },
+	{ SOUND_MIXER_WRITE_LINE, 0x4f4f },
+	{ SOUND_MIXER_WRITE_MIC, 0x4f4f },
+	{ SOUND_MIXER_WRITE_SYNTH, 0x4f4f },
+	{ SOUND_MIXER_WRITE_VOLUME, 0x4f4f },
+	{ SOUND_MIXER_WRITE_PCM, 0x4f4f }
+}"
+                :type "int")
+                nil [84362 84599])
+            ("query_chip" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("cm_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [84663 84682]))                  
+                :type "int")
+                nil [84641 85904])
+            ("echo_option" variable (:constant-flag t) nil [85914 85925])
+            ("cm_probe" function
+               (:arguments 
+                  ( ("pcidev" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [85995 86018])
+                    ("pciid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pci_device_id" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86019 86053]))                  
+                :type ("__devinit" type (:type "class") nil nil))
+                nil [85976 93420])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [93499 93550])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [93551 93593])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [93594 93616])
+            ("cm_remove" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [93650 93670]))                  
+                :type ("__devexit" type (:type "class") nil nil))
+                nil [93630 94693])
+            ("__devinitdata" variable
+               (:default-value "{
+	{ PCI_VENDOR_ID_CMEDIA, PCI_DEVICE_ID_CMEDIA_CM8738B, PCI_ANY_ID, PCI_ANY_ID, 0, 0 },
+	{ PCI_VENDOR_ID_CMEDIA, PCI_DEVICE_ID_CMEDIA_CM8738, PCI_ANY_ID, PCI_ANY_ID, 0, 0 },
+ 	{ PCI_VENDOR_ID_CMEDIA, PCI_DEVICE_ID_CMEDIA_CM8338A, PCI_ANY_ID, PCI_ANY_ID, 0, 0 },
+	{ PCI_VENDOR_ID_CMEDIA, PCI_DEVICE_ID_CMEDIA_CM8338B, PCI_ANY_ID, PCI_ANY_ID, 0, 0 },
+	{ 0, }
+}"
+                :type "int")
+                nil [94734 95110])
+            ("MODULE_DEVICE_TABLE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95132 95136])
+                    ("" variable (:type ("id_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95137 95146]))                  
+                :type "int")
+                nil [95112 95147])
+            ("cm_driver" variable
+               (:typemodifiers ("static")
+                :default-value "{
+       .name	 = \"cmpci\",
+       .id_table = id_table,
+       .probe	 = cm_probe,
+       .remove	 = __devexit_p(cm_remove)
+}"
+                :type ("pci_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [95149 95312])
+            ("init_cmpci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [95343 95348]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [95325 95477])
+            ("cleanup_cmpci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [95512 95517]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [95491 95598])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("init_cmpci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95612 95623]))                  
+                :type "int")
+                nil [95600 95624])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cleanup_cmpci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95637 95651]))                  
+                :type "int")
+                nil [95625 95652]))          
+      :file "cmpci.c"
+      :pointmax 95653
+      :fsize 95652
+      :lastmodtime '(16933 28002 0 0)
+      :unmatched-syntax '((VOID 95486 . 95490) (STATIC 95479 . 95485) (INT 95321 . 95324) (STATIC 95314 . 95320) (semantic-list 94731 . 94733) (symbol 94723 . 94731) (symbol 94709 . 94722) (STRUCT 94702 . 94708) (STATIC 94695 . 94701) (VOID 93625 . 93629) (STATIC 93618 . 93624) (string 93609 . 93614) (string 93570 . 93591) (string 93513 . 93548) (INT 85972 . 85975) (STATIC 85965 . 85971) (semantic-list 84359 . 84361) (symbol 84352 . 84359) (semantic-list 84326 . 84351) (symbol 84318 . 84325) (STRUCT 84311 . 84317) (STATIC 84304 . 84310) (punctuation 58152 . 58153) (punctuation 55493 . 55494) (punctuation 45073 . 45074) (string 45043 . 45073) (symbol 45033 . 45042) (punctuation 45031 . 45032) (semantic-list 45028 . 45030) (symbol 45015 . 45028) (CHAR 45010 . 45014) (CONST 45004 . 45009) (STATIC 44997 . 45003) (punctuation 29071 . 29072) (string 15920 . 15960) (string 15860 . 15891) (string 15791 . 15829) (string 15715 . 15754) (string 15641 . 15677) (string 15542 . 15603) (string 15465 . 15511) (string 15402 . 15433) (string 15306 . 15367) (string 15226 . 15276) (string 15140 . 15200) (number 15112 . 15113) (number 15080 . 15081) (number 15046 . 15047) (number 15006 . 15007) (number 14965 . 14966) (number 14924 . 14925) (number 14890 . 14891) (number 14855 . 14856) (number 14817 . 14818) (number 14784 . 14785) (number 14756 . 14757))
+      :lexical-table 
+        '(("CODEC_CMI_CHFORMAT" . ((semantic-list "(0x08)" 5910 . 5916)))
+          ("CODEC_CMI_CH1_FRAME1" . ((semantic-list "(0x88)" 6468 . 6474)))
+          ("DSP_MIX_VOICEVOLIDX_R" . ((semantic-list "((unsigned char)(0x33))" 6926 . 6949)))
+          ("DSP_MIX_CDVOLIDX_L" . ((semantic-list "((unsigned char)(0x36))" 7082 . 7105)))
+          ("DSP_MIX_AGCIDX" . ((semantic-list "((unsigned char)(0x43))" 7770 . 7793)))
+          ("DSP_MIX_TREBLEIDX_R" . ((semantic-list "((unsigned char)(0x45))" 7877 . 7900)))
+          ("DSP_MIX_BASSIDX_R" . ((semantic-list "((unsigned char)(0x47))" 7979 . 8002)))
+          ("PAUSE0" . ((number "0x04" 8420 . 8424)))
+          ("DSFC" . ((number "0xe0" 8825 . 8829)))
+          ("CH0BUSY" . ((number "0x04" 9347 . 9351)))
+          ("VSBSEL" . ((number "0x0c" 9735 . 9739)))
+          ("PAUSEDAC" . ((symbol "PAUSE1" 10823 . 10829)))
+          ("CAN_LINE_AS_BASS" . ((number "0x00000020" 13688 . 13698)))
+          ("DO_AC3" . ((semantic-list "(DO_AC3_HW | DO_AC3_SW)" 13881 . 13904)))
+          ("DO_BIGENDIAN_W" . ((number "0x00001000" 14314 . 14324)))
+          ("MT_4" . ((number "1" 45445 . 45446)))
+          ("SNDCTL_SPDIF_COPYRIGHT" . ((symbol "_SIOW" 65972 . 65977) (semantic-list "('S',  0, int)" 65977 . 65991)))
+          ("CM_MAGIC" . ((semantic-list "((PCI_VENDOR_ID_CMEDIA<<16)|PCI_DEVICE_ID_CMEDIA_CM8338A)" 5703 . 5760)))
+          ("CODEC_CMI_MISC" . ((semantic-list "(0x27)" 6324 . 6330)))
+          ("CODEC_CMI_AC97" . ((semantic-list "(0x28)" 6356 . 6362)))
+          ("CODEC_CMI_CH1_FRAME2" . ((semantic-list "(0x8C)" 6505 . 6511)))
+          ("DSP_MIX_OUTGAINIDX_L" . ((semantic-list "((unsigned char)(0x41))" 7666 . 7689)))
+          ("PAUSE1" . ((number "0x08" 8443 . 8447)))
+          ("CH0_INT_EN" . ((number "0x01" 9230 . 9234)))
+          ("AC3_EN" . ((number "0x04" 10035 . 10039)))
+          ("RESET" . ((number "0x40" 10250 . 10254)))
+          ("SPK4" . ((number "0x20" 10421 . 10425)))
+          ("DO_AC3_HW" . ((number "0x00000001" 13823 . 13833)))
+          ("MT_4MUTEMONO" . ((number "3" 45493 . 45494)))
+          ("SNDCTL_SPDIF_VALID" . ((symbol "_SIOW" 66452 . 66457) (semantic-list "('S',  6, int)" 66457 . 66471)))
+          ("SNDCTL_SPDIFIN" . ((symbol "_SIOW" 66591 . 66596) (semantic-list "('S',  8, int)" 66596 . 66610)))
+          ("CODEC_CMI_INT_HLDCLR" . ((semantic-list "(0x0C)" 5947 . 5953)))
+          ("DSP_MIX_MICVOLIDX" . ((semantic-list "((unsigned char)(0x3A))" 7294 . 7317)))
+          ("DSP_MIX_ADCMIXIDX_L" . ((semantic-list "((unsigned char)(0x3D))" 7452 . 7475)))
+          ("RST_CH0" . ((number "0x04" 8555 . 8559)))
+          ("SPD24SEL" . ((number "0x20" 9086 . 9090)))
+          ("DAC2SPDO" . ((number "0x20" 9605 . 9609)))
+          ("SPDIFI48K" . ((number "0x01" 10187 . 10191)))
+          ("ENDAC" . ((symbol "CHEN1" 10780 . 10785)))
+          ("ENDACINT" . ((symbol "CH1_INT_EN" 11163 . 11173)))
+          ("NR_DEVICE" . ((number "3" 11358 . 11359)))
+          ("stop_dac1_unlocked" . ((symbol "stop_adc_unlocked" 11536 . 11553)))
+          ("SNDCTL_SPDIF_SEL2" . ((symbol "_SIOW" 66379 . 66384) (semantic-list "('S',  5, int)" 66384 . 66398)))
+          ("CODEC_SB16_ADDR" . ((semantic-list "(0x23)" 6192 . 6198)))
+          ("CHADC0" . ((number "0x01" 8373 . 8377)))
+          ("RST_CH1" . ((number "0x08" 8579 . 8583)))
+          ("JYSTK_EN" . ((number "0x02" 8639 . 8643)))
+          ("SPDF_0" . ((number "0x01" 8766 . 8770)))
+          ("CH1BUSY" . ((number "0x08" 9369 . 9373)))
+          ("NXCHG" . ((number "0x80" 9774 . 9778)))
+          ("MUTECH1" . ((number "0x40" 9859 . 9863)))
+          ("SPD32SEL" . ((number "0x20" 10077 . 10081)))
+          ("N4SPK3D" . ((number "0x04" 10230 . 10234)))
+          ("X3DEN" . ((number "0x02" 10378 . 10382)))
+          ("RSTADC" . ((symbol "RST_CH0" 10758 . 10765)))
+          ("CODEC_CMI_ADC_FRAME1" . ((symbol "CODEC_CMI_CH0_FRAME1" 10883 . 10903)))
+          ("DACINT" . ((symbol "CHINT1" 11069 . 11075)))
+          ("DO_MULTI_CH" . ((semantic-list "(DO_MULTI_CH_HW | DO_DUAL_DAC)" 13993 . 14023)))
+          ("DO_MIC_AS_BASS" . ((number "0x00000040" 14160 . 14170)))
+          ("DO_SPDIF_LOOP" . ((number "0x00000400" 14279 . 14289)))
+          ("echo_option" (spp-arg-list ("x") 85925 . 85928) . 
+              ((IF "if" 85930 . 85932) (semantic-list "(x)" 85933 . 85936) (symbol "strcat" 85937 . 85943) (semantic-list "(options, \"\" #x \" \")" 85943 . 85963)))
+          ("CODEC_CMI_INT_STATUS" . ((semantic-list "(0x10)" 5984 . 5990)))
+          ("CODEC_CMI_AUX_VOL" . ((semantic-list "(0x26)" 6292 . 6298)))
+          ("CODEC_CMI_EXT_REG" . ((semantic-list "(0xF0)" 6615 . 6621)))
+          ("DSP_MIX_MASTERVOLIDX_L" . ((semantic-list "((unsigned char)(0x30))" 6760 . 6783)))
+          ("DSP_MIX_LINEVOLIDX_L" . ((semantic-list "((unsigned char)(0x38))" 7188 . 7211)))
+          ("DSP_MIX_INGAINIDX_R" . ((semantic-list "((unsigned char)(0x40))" 7612 . 7635)))
+          ("DSP_MIX_AUXVOL_L" . ((semantic-list "((unsigned char)(0x50))" 8107 . 8130)))
+          ("CHADC1" . ((number "0x02" 8397 . 8401)))
+          ("SPDF_1" . ((number "0x02" 8787 . 8791)))
+          ("CH1_INT_EN" . ((number "0x02" 9254 . 9258)))
+          ("FMSEL" . ((number "0x03" 9714 . 9718)))
+          ("SPDF_AC97" . ((number "0x80" 9971 . 9975)))
+          ("ENDBDAC" . ((number "0x80" 10121 . 10125)))
+          ("SPDIF48K" . ((semantic-list "(SPDIFI48K << 24 | SPDF_AC97 << 8)" 10290 . 10324)))
+          ("CM_CFMT_DACSHIFT" . ((number "2" 10631 . 10632)))
+          ("CM_FREQ_ADCSHIFT" . ((number "2" 10718 . 10719)))
+          ("CODEC_CMI_ADC_FRAME2" . ((symbol "CODEC_CMI_CH0_FRAME2" 10933 . 10953)))
+          ("DO_MULTI_CH_HW" . ((number "0x00000008" 13961 . 13971)))
+          ("VALIDATE_STATE" (spp-arg-list ("s") 45098 . 45101) . ((semantic-list "({                                                \\
+	if (!(s) || (s)->magic != CM_MAGIC) { \\
+		printk(invalid_magic);            \\
+		return -ENXIO;                    \\
+	}                                         \\
+})" 45128 . 45344)))
+          ("CODEC_CMI_LEGACY_CTRL" . ((semantic-list "(0x14)" 6022 . 6028)))
+          ("CODEC_CMI_MISC_CTRL" . ((semantic-list "(0x18)" 6058 . 6064)))
+          ("DSP_MIX_DATARESETIDX" . ((semantic-list "((unsigned char)(0x00))" 6703 . 6726)))
+          ("CODEC_CMI_DAC_FRAME1" . ((symbol "CODEC_CMI_CH1_FRAME1" 10983 . 11003)))
+          ("set_dac1_rate" . ((symbol "set_adc_rate" 11416 . 11428)))
+          ("CODEC_CMI_TDMA_POS" . ((semantic-list "(0x1C)" 6093 . 6099)))
+          ("CODEC_CMI_MIXER" . ((semantic-list "(0x20)" 6126 . 6132)))
+          ("DSP_MIX_FMVOLIDX_L" . ((semantic-list "((unsigned char)(0x34))" 6978 . 7001)))
+          ("DSP_MIX_CDVOLIDX_R" . ((semantic-list "((unsigned char)(0x37))" 7134 . 7157)))
+          ("DSP_MIX_SPKRVOLIDX" . ((semantic-list "((unsigned char)(0x3B))" 7346 . 7369)))
+          ("CHEN0" . ((number "0x01" 8507 . 8511)))
+          ("SPDFLOOP" . ((number "0x80" 8705 . 8709)))
+          ("CM_CFMT_16BIT" . ((number "0x02" 8957 . 8961)))
+          ("SPDCOPYRHT" . ((number "0x40" 9629 . 9633)))
+          ("REAR2LIN" . ((number "0x20" 9837 . 9841)))
+          ("XCHGDAC" . ((number "0x40" 10099 . 10103)))
+          ("SPD32KFMT" . ((number "0x10" 10598 . 10602)))
+          ("CODEC_CMI_DAC_FRAME2" . ((symbol "CODEC_CMI_CH1_FRAME2" 11033 . 11053)))
+          ("ADCBUSY" . ((symbol "CH0BUSY" 11138 . 11145)))
+          ("set_dac1_rate_unlocked" . ((symbol "set_adc_rate_unlocked" 11460 . 11481)))
+          ("CAN_AC3_SW" . ((number "0x00000002" 13368 . 13378)))
+          ("CAN_DUAL_DAC" . ((number "0x00000004" 13465 . 13475)))
+          ("DMABUF_DEFAULTORDER" . ((semantic-list "(16-PAGE_SHIFT)" 38523 . 38538)))
+          ("SNDCTL_SPDIFOUT" . ((symbol "_SIOW" 66523 . 66528) (semantic-list "('S',  7, int)" 66528 . 66542)))
+          ("CODEC_CMI_MIXER1" . ((semantic-list "(0x24)" 6225 . 6231)))
+          ("CODEC_CMI_SPDIF_CTRL" . ((semantic-list "(0x90)" 6543 . 6549)))
+          ("DSP_MIX_VOICEVOLIDX_L" . ((semantic-list "((unsigned char)(0x32))" 6871 . 6894)))
+          ("DSP_MIX_OUTGAINIDX_R" . ((semantic-list "((unsigned char)(0x42))" 7720 . 7743)))
+          ("DSP_MIX_TREBLEIDX_L" . ((semantic-list "((unsigned char)(0x44))" 7824 . 7847)))
+          ("DSP_MIX_BASSIDX_L" . ((semantic-list "((unsigned char)(0x46))" 7928 . 7951)))
+          ("CM_EXTENT_GAME" . ((number "0x8" 8312 . 8315)))
+          ("CHEN1" . ((number "0x02" 8531 . 8535)))
+          ("CENTR2MIC" . ((number "0x04" 10541 . 10545)))
+          ("DO_LINE_AS_REAR" . ((number "0x00000010" 14049 . 14059)))
+          ("DO_SPDIF_OUT" . ((number "0x00000100" 14213 . 14223)))
+          ("DMABUF_MINORDER" . ((number "1" 38563 . 38564)))
+          ("SNDCTL_SPDIF_LOOP" . ((symbol "_SIOW" 66060 . 66065) (semantic-list "('S',  1, int)" 66065 . 66079)))
+          ("CODEC_CMI_MIXER2" . ((semantic-list "(0x25)" 6258 . 6264)))
+          ("CODEC_CMI_MISC_CTRL2" . ((semantic-list "(0x92)" 6580 . 6586)))
+          ("DSP_MIX_ADCMIXIDX_R" . ((semantic-list "((unsigned char)(0x3E))" 7505 . 7528)))
+          ("UART_EN" . ((number "0x04" 8661 . 8665)))
+          ("INVSPDIFI" . ((number "0x80" 9028 . 9032)))
+          ("CHB3D5C" . ((number "0x80" 9164 . 9168)))
+          ("ENCENTER" . ((number "0x80" 9881 . 9885)))
+          ("REAR2FRONT" . ((number "0x10" 10402 . 10406)))
+          ("RSTDAC" . ((symbol "RST_CH1" 10735 . 10742)))
+          ("PAUSEADC" . ((symbol "PAUSE0" 10847 . 10853)))
+          ("DACBUSY" . ((symbol "CH1BUSY" 11114 . 11121)))
+          ("DO_AC3_SW" . ((number "0x00000002" 13853 . 13863)))
+          ("DO_BIGENDIAN_R" . ((number "0x00002000" 14372 . 14382)))
+          ("DSP_MIX_EXTENSION" . ((semantic-list "((unsigned char)(0xf0))" 8030 . 8053)))
+          ("CM_EXTENT_CODEC" . ((number "0x100" 8222 . 8227)))
+          ("SPDO2DAC" . ((number "0x40" 8683 . 8687)))
+          ("POLVALID" . ((number "0x20" 9005 . 9009)))
+          ("CHB3D" . ((number "0x20" 9142 . 9146)))
+          ("CHINT0" . ((number "0x01" 9304 . 9308)))
+          ("CENTR2LIN" . ((number "0x40" 9479 . 9483)))
+          ("SPDO5V" . ((number "0x02" 10208 . 10212)))
+          ("PWD" . ((number "0x80" 10268 . 10272)))
+          ("CDPLAY" . ((number "0x01" 10358 . 10362)))
+          ("FMMUTE" . ((number "0x80" 10463 . 10467)))
+          ("SND_DEV_DSP16" . ((number "5" 11337 . 11338)))
+          ("MT_5MUTE" . ((number "2" 45469 . 45470)))
+          ("SNDCTL_SPDIF_LEVEL" . ((symbol "_SIOW" 66215 . 66220) (semantic-list "('S',  3, int)" 66220 . 66234)))
+          ("DBG" (spp-arg-list ("x") 5601 . 5604) . ((semantic-list "{}" 5605 . 5607)))
+          ("CODEC_SB16_DATA" . ((semantic-list "(0x22)" 6159 . 6165)))
+          ("CODEC_CMI_CH0_FRAME1" . ((semantic-list "(0x80)" 6394 . 6400)))
+          ("DSP_MIX_MASTERVOLIDX_R" . ((semantic-list "((unsigned char)(0x31))" 6816 . 6839)))
+          ("DSP_MIX_LINEVOLIDX_R" . ((semantic-list "((unsigned char)(0x39))" 7242 . 7265)))
+          ("DSP_MIX_AUXVOL_R" . ((semantic-list "((unsigned char)(0x51))" 8157 . 8180)))
+          ("CM_EXTENT_MIDI" . ((number "0x2" 8253 . 8256)))
+          ("ASFC" . ((number "0x1c" 8806 . 8810)))
+          ("CHINT1" . ((number "0x02" 9325 . 9329)))
+          ("FM_EN" . ((number "0x08" 10055 . 10059)))
+          ("CM_FREQ_DACSHIFT" . ((number "5" 10689 . 10690)))
+          ("ENADC" . ((symbol "CHEN0" 10800 . 10805)))
+          ("ENADCINT" . ((symbol "CH0_INT_EN" 11191 . 11201)))
+          ("get_dmadac1" . ((symbol "get_dmaadc" 11574 . 11584)))
+          ("CAN_LINE_AS_REAR" . ((number "0x00000010" 13632 . 13642)))
+          ("DO_LINE_AS_BASS" . ((number "0x00000020" 14105 . 14115)))
+          ("DO_SPDIF_IN" . ((number "0x00000200" 14245 . 14255)))
+          ("MT_5MUTEMONO" . ((number "5" 45541 . 45542)))
+          ("SNDCTL_SPDIF_INV" . ((symbol "_SIOW" 66296 . 66301) (semantic-list "('S',  4, int)" 66301 . 66315)))
+          ("CODEC_CMI_FUNCTRL0" . ((semantic-list "(0x00)" 5840 . 5846)))
+          ("CODEC_CMI_CH0_FRAME2" . ((semantic-list "(0x84)" 6431 . 6437)))
+          ("DSP_MIX_INGAINIDX_L" . ((semantic-list "((unsigned char)(0x3F))" 7559 . 7582)))
+          ("CM_CFMT_MASK" . ((number "0x03" 8983 . 8987)))
+          ("EXBASEN" . ((number "0x10" 9434 . 9438)))
+          ("CHB3D6C" . ((number "0x80" 9540 . 9544)))
+          ("ENSPDOUT" . ((number "0x80" 9651 . 9655)))
+          ("WSMUTE" . ((number "0x40" 10442 . 10446)))
+          ("CM_CFMT_ADCSHIFT" . ((number "0" 10660 . 10661)))
+          ("ADCINT" . ((symbol "CHINT0" 11091 . 11097)))
+          ("stop_dac1" . ((symbol "stop_adc" 11500 . 11508)))
+          ("CAN_AC3" . ((semantic-list "(CAN_AC3_HW | CAN_AC3_SW)" 13417 . 13442)))
+          ("CAN_MULTI_CH" . ((semantic-list "(CAN_MULTI_CH_HW | CAN_DUAL_DAC)" 13574 . 13606)))
+          ("CAN_MIC_AS_BASS" . ((number "0x00000040" 13744 . 13754)))
+          ("DO_DUAL_DAC" . ((number "0x00000004" 13926 . 13936)))
+          ("SNDCTL_SPDIF_MONITOR" . ((symbol "_SIOW" 66140 . 66145) (semantic-list "('S',  2, int)" 66145 . 66159)))
+          ("CODEC_CMI_FUNCTRL1" . ((semantic-list "(0x04)" 5875 . 5881)))
+          ("DSP_MIX_FMVOLIDX_R" . ((semantic-list "((unsigned char)(0x35))" 7030 . 7053)))
+          ("DSP_MIX_OUTMIXIDX" . ((semantic-list "((unsigned char)(0x3C))" 7398 . 7421)))
+          ("CM_EXTENT_SYNTH" . ((number "0x4" 8283 . 8286)))
+          ("SPDIF2DAC" . ((semantic-list "(SPDF_1 << 8 | SPDO2DAC)" 8848 . 8872)))
+          ("CM_CFMT_STEREO" . ((number "0x01" 8930 . 8934)))
+          ("BASE2LIN" . ((number "0x20" 9456 . 9460)))
+          ("CB2LIN" . ((semantic-list "(BASE2LIN | CENTR2LIN)" 9500 . 9522)))
+          ("VMPU" . ((number "0x60" 9754 . 9758)))
+          ("SELSPDIFI2" . ((number "0x01" 9948 . 9952)))
+          ("SPDVALID" . ((number "0x02" 10518 . 10522)))
+          ("CAN_AC3_HW" . ((number "0x00000001" 13317 . 13327)))
+          ("CAN_MULTI_CH_HW" . ((number "0x00000008" 13521 . 13531)))
+          ("MT_6MUTE" . ((number "4" 45517 . 45518)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11!sound!oss!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1519 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/mm.h" include (:system-flag t) nil [294 315])
+            ("linux/kernel_stat.h" include (:system-flag t) nil [316 346])
+            ("linux/swap.h" include (:system-flag t) nil [347 370])
+            ("linux/interrupt.h" include (:system-flag t) nil [371 399])
+            ("linux/init.h" include (:system-flag t) nil [400 423])
+            ("linux/bootmem.h" include (:system-flag t) nil [424 450])
+            ("linux/mmzone.h" include (:system-flag t) nil [451 476])
+            ("linux/module.h" include (:system-flag t) nil [477 502])
+            ("asm/dma.h" include (:system-flag t) nil [503 523])
+            ("asm/io.h" include (:system-flag t) nil [524 543])
+            ("internal.h" include nil nil [544 565])
+            ("max_low_pfn" variable (:type "unsigned long") nil [681 707])
+            ("min_low_pfn" variable (:type "unsigned long") nil [708 734])
+            ("max_pfn" variable (:type "unsigned long") nil [735 757])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("max_pfn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [773 781]))                  
+                :type "int")
+                nil [759 782])
+            ("bootmem_bootmap_pages" function
+               (:arguments 
+                  ( ("pages" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1013 1033]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [983 1176])
+            ("init_bootmem_core" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1279 1296])
+                    ("mapstart" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1298 1321])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1322 1342])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1343 1361]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1253 1893])
+            ("reserve_bootmem_core" function
+               (:arguments 
+                  ( ("bdata" variable
+                       (:pointer 1
+                        :type ("bootmem_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2117 2139])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2140 2159])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2160 2179]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2089 2818])
+            ("free_bootmem_core" function
+               (:arguments 
+                  ( ("bdata" variable
+                       (:pointer 1
+                        :type ("bootmem_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2857 2879])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2880 2899])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2900 2919]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2832 3572])
+            ("__alloc_bootmem_core" function
+               (:arguments 
+                  ( ("bdata" variable
+                       (:pointer 1
+                        :type ("bootmem_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4068 4095])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4096 4115])
+                    ("align" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4118 4138])
+                    ("goal" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4139 4158]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [4040 7007])
+            ("free_all_bootmem_core" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7059 7076]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [7030 8840])
+            ("init_bootmem_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8882 8899])
+                    ("freepfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8900 8922])
+                    ("startpfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8923 8946])
+                    ("endpfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8947 8968]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [8856 9034])
+            ("reserve_bootmem_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9070 9087])
+                    ("physaddr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9088 9111])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9112 9131]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9041 9188])
+            ("free_bootmem_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9221 9238])
+                    ("physaddr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9239 9262])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9263 9282]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9195 9336])
+            ("free_all_bootmem_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9382 9399]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9352 9442])
+            ("init_bootmem" function
+               (:arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9479 9499])
+                    ("pages" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9500 9520]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9458 9627])
+            ("reserve_bootmem" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9696 9715])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9716 9735]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9672 9795])
+            ("free_bootmem" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9867 9886])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9887 9906]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9846 9963])
+            ("free_all_bootmem" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10004 10009]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9979 10059])
+            ("__alloc_bootmem" function
+               (:arguments 
+                  ( ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10092 10111])
+                    ("align" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10112 10132])
+                    ("goal" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10133 10152]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [10068 10484])
+            ("__alloc_bootmem_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10522 10539])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10540 10559])
+                    ("align" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10560 10580])
+                    ("goal" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10581 10600]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [10493 10750]))          
+      :file "bootmem.c"
+      :pointmax 10752
+      :fsize 10751
+      :lastmodtime '(16936 39496 0 0)
+      :unmatched-syntax '((punctuation 10491 . 10492) (VOID 10486 . 10490) (punctuation 10066 . 10067) (VOID 10061 . 10065) (LONG 9974 . 9978) (UNSIGNED 9965 . 9973) (VOID 9841 . 9845) (VOID 9667 . 9671) (LONG 9453 . 9457) (UNSIGNED 9444 . 9452) (LONG 9347 . 9351) (UNSIGNED 9338 . 9346) (VOID 9190 . 9194) (VOID 9036 . 9040) (LONG 8851 . 8855) (UNSIGNED 8842 . 8850) (LONG 7025 . 7029) (UNSIGNED 7016 . 7024) (STATIC 7009 . 7015) (punctuation 4038 . 4039) (VOID 4033 . 4037) (STATIC 4026 . 4032) (VOID 2827 . 2831) (STATIC 2820 . 2826) (VOID 2084 . 2088) (STATIC 2077 . 2083) (LONG 1248 . 1252) (UNSIGNED 1239 . 1247) (STATIC 1232 . 1238) (LONG 978 . 982) (UNSIGNED 969 . 977)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("set_page_refs" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [456 474])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [475 485]))                  
+                :type "void")
+                nil [430 486]))          
+      :file "internal.h"
+      :pointmax 487
+      :fsize 486
+      :lastmodtime '(16936 39506 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/mm.h" include (:system-flag t) nil [1893 1914])
+            ("linux/pagemap.h" include (:system-flag t) nil [1915 1941])
+            ("linux/swap.h" include (:system-flag t) nil [1942 1965])
+            ("linux/swapops.h" include (:system-flag t) nil [1966 1992])
+            ("linux/slab.h" include (:system-flag t) nil [1993 2016])
+            ("linux/init.h" include (:system-flag t) nil [2017 2040])
+            ("linux/acct.h" include (:system-flag t) nil [2041 2064])
+            ("linux/rmap.h" include (:system-flag t) nil [2065 2088])
+            ("linux/rcupdate.h" include (:system-flag t) nil [2089 2116])
+            ("asm/tlbflush.h" include (:system-flag t) nil [2118 2143])
+            ("anon_vma_cachep" variable
+               (:pointer 1
+                :type ("kmem_cache_t" type (:type "class") nil nil))
+                nil [2207 2237])
+            ("validate_anon_vma" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("find_vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2276 2308]))                  
+                :type "void")
+                nil [2239 2620])
+            ("anon_vma_prepare" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2689 2716]))                  
+                :type "int")
+                nil [2668 3534])
+            ("__anon_vma_merge" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3558 3585])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3586 3614]))                  
+                :type "void")
+                nil [3536 3693])
+            ("__anon_vma_link" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3716 3743]))                  
+                :type "void")
+                nil [3695 3888])
+            ("anon_vma_link" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3909 3936]))                  
+                :type "void")
+                nil [3890 4143])
+            ("anon_vma_unlink" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4166 4193]))                  
+                :type "void")
+                nil [4145 4535])
+            ("anon_vma_ctor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4563 4574])
+                    ("cachep" variable
+                       (:pointer 1
+                        :type ("kmem_cache_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4575 4596])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4597 4617]))                  
+                :type "void")
+                nil [4537 4821])
+            ("anon_vma_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4849 4854]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [4828 4992])
+            ("page_lock_anon_vma" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5180 5198]))                  
+                :type ("anon_vma" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5137 5564])
+            ("vma_address" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5670 5688])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5689 5716]))                  
+                :type "unsigned long")
+                nil [5630 6069])
+            ("page_address_in_vma" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6265 6283])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6284 6311]))                  
+                :type "unsigned long")
+                nil [6231 6626])
+            ("page_referenced_one" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6801 6819])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6821 6848])
+                    ("mapcount" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [6849 6872])
+                    ("ignore_token" variable (:type "int") (reparse-symbol arg-sub-list) [6873 6890]))                  
+                :type "int")
+                nil [6770 7800])
+            ("page_referenced_anon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7834 7852])
+                    ("ignore_token" variable (:type "int") (reparse-symbol arg-sub-list) [7853 7870]))                  
+                :type "int")
+                nil [7802 8307])
+            ("page_referenced_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8803 8821])
+                    ("ignore_token" variable (:type "int") (reparse-symbol arg-sub-list) [8822 8839]))                  
+                :type "int")
+                nil [8771 10117])
+            ("page_referenced" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10395 10413])
+                    ("is_locked" variable (:type "int") (reparse-symbol arg-sub-list) [10414 10428])
+                    ("ignore_token" variable (:type "int") (reparse-symbol arg-sub-list) [10429 10446]))                  
+                :type "int")
+                nil [10375 11041])
+            ("page_add_anon_rmap" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11329 11347])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11349 11376])
+                    ("address" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11377 11399]))                  
+                :type "void")
+                nil [11305 11915])
+            ("page_add_file_rmap" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12101 12119]))                  
+                :type "void")
+                nil [12077 12290])
+            ("page_remove_rmap" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12468 12486]))                  
+                :type "void")
+                nil [12446 13104])
+            ("try_to_unmap_one" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13264 13282])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13283 13310]))                  
+                :type "int")
+                nil [13236 16109])
+            ("CLUSTER_SIZE" variable (:constant-flag t) nil [17168 17180])
+            ("CLUSTER_MASK" variable (:constant-flag t) nil [17217 17229])
+            ("try_to_unmap_cluster" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cursor" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17286 17307])
+                    ("mapcount" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17309 17332])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17333 17360]))                  
+                :type "void")
+                nil [17253 19031])
+            ("try_to_unmap_anon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19062 19080]))                  
+                :type "int")
+                nil [19033 19434])
+            ("try_to_unmap_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19790 19808]))                  
+                :type "int")
+                nil [19761 22425])
+            ("try_to_unmap" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22866 22884]))                  
+                :type "int")
+                nil [22849 23111]))          
+      :file "rmap.c"
+      :pointmax 23112
+      :fsize 23111
+      :lastmodtime '(16936 39526 0 0)
+      :unmatched-syntax '((VOID 4823 . 4827))
+      :lexical-table 
+        '(("CLUSTER_MASK" . ((semantic-list "(~(CLUSTER_SIZE - 1))" 17230 . 17251)))
+          ("CLUSTER_SIZE" . ((symbol "min" 17181 . 17184) (semantic-list "(32*PAGE_SIZE, PMD_SIZE)" 17184 . 17208)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [644 669])
+            ("linux/stddef.h" include (:system-flag t) nil [670 695])
+            ("linux/mm.h" include (:system-flag t) nil [696 717])
+            ("linux/swap.h" include (:system-flag t) nil [718 741])
+            ("linux/interrupt.h" include (:system-flag t) nil [742 770])
+            ("linux/pagemap.h" include (:system-flag t) nil [771 797])
+            ("linux/bootmem.h" include (:system-flag t) nil [798 824])
+            ("linux/compiler.h" include (:system-flag t) nil [825 852])
+            ("linux/module.h" include (:system-flag t) nil [853 878])
+            ("linux/suspend.h" include (:system-flag t) nil [879 905])
+            ("linux/pagevec.h" include (:system-flag t) nil [906 932])
+            ("linux/blkdev.h" include (:system-flag t) nil [933 958])
+            ("linux/slab.h" include (:system-flag t) nil [959 982])
+            ("linux/notifier.h" include (:system-flag t) nil [983 1010])
+            ("linux/topology.h" include (:system-flag t) nil [1011 1038])
+            ("linux/sysctl.h" include (:system-flag t) nil [1039 1064])
+            ("linux/cpu.h" include (:system-flag t) nil [1065 1087])
+            ("linux/nodemask.h" include (:system-flag t) nil [1088 1115])
+            ("linux/vmalloc.h" include (:system-flag t) nil [1116 1142])
+            ("asm/tlbflush.h" include (:system-flag t) nil [1144 1169])
+            ("internal.h" include nil nil [1170 1191])
+            ("node_online_map" variable
+               (:default-value "{ { [0] = 1UL } }"
+                :type ("nodemask_t" type (:type "class") nil nil))
+                nil [1285 1332])
+            ("node_possible_map" variable
+               (:default-value "NODE_MASK_ALL"
+                :type ("nodemask_t" type (:type "class") nil nil))
+                nil [1333 1378])
+            ("pgdat_list" variable
+               (:pointer 1
+                :type ("pglist_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1379 1410])
+            ("totalram_pages" variable (:type "unsigned long") nil [1411 1440])
+            ("totalhigh_pages" variable (:type "unsigned long") nil [1441 1471])
+            ("nr_swap_pages" variable (:type "long") nil [1472 1491])
+            ("sysctl_lowmem_reserve_ratio" variable
+               (:dereference 1
+                :default-value "{ 256, 32 }"
+                :type "int")
+                nil [1878 1940])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("totalram_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1956 1971]))                  
+                :type "int")
+                nil [1942 1972])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nr_swap_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1987 2001]))                  
+                :type "int")
+                nil [1973 2002])
+            ("zone_table" variable
+               (:pointer 1
+                :dereference 1
+                :type ("zone" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2132 2190])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("zone_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2205 2216]))                  
+                :type "int")
+                nil [2191 2217])
+            ("zone_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :default-value "{ \"DMA\", \"Normal\", \"HighMem\" }"
+                :type "char")
+                nil [2219 2290])
+            ("min_free_kbytes" variable
+               (:default-value "1024"
+                :type "int")
+                nil [2291 2318])
+            ("nr_kernel_pages" variable (:type ("__initdata" type (:type "class") nil nil)) nil [2334 2361])
+            ("nr_all_pages" variable (:type ("__initdata" type (:type "class") nil nil)) nil [2376 2400])
+            ("bad_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2500 2518])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2519 2537]))                  
+                :type "int")
+                nil [2479 2818])
+            ("bad_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("function" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2841 2862])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2863 2881]))                  
+                :type "void")
+                nil [2820 3562])
+            ("prep_compound_page" variable (:constant-flag t) nil [3600 3618])
+            ("destroy_compound_page" variable (:constant-flag t) nil [3657 3678])
+            ("page_order" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5320 5338]))                  
+                :type "unsigned long")
+                nil [5281 5365])
+            ("set_page_order" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5401 5419])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [5420 5430]))                  
+                :type "void")
+                nil [5367 5483])
+            ("rmv_page_order" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5519 5537]))                  
+                :type "void")
+                nil [5485 5588])
+            ("page_is_buddy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5929 5947])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [5948 5958]))                  
+                :type "int")
+                nil [5897 6165])
+            ("__free_pages_bulk" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7376 7394])
+                    ("base" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7395 7413])
+                    ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7416 7434])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7435 7454]))                  
+                :type "void")
+                nil [7338 8324])
+            ("free_pages_check" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("function" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8362 8383])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8384 8402]))                  
+                :type "void")
+                nil [8326 8745])
+            ("free_pages_bulk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9169 9187])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [9188 9198])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9201 9224])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9225 9244]))                  
+                :type "int")
+                nil [9142 9738])
+            ("__free_pages_ok" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9761 9779])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9780 9799]))                  
+                :type "void")
+                nil [9740 10208])
+            ("expand" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10950 10968])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10969 10987])
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) [10990 10998])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [10999 11008])
+                    ("area" variable
+                       (:pointer 1
+                        :type ("free_area" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11009 11032]))                  
+                :type ("page" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10915 11286])
+            ("set_page_refs" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11307 11325])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [11326 11336]))                  
+                :type "void")
+                nil [11288 11667])
+            ("prep_new_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11763 11781])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [11782 11792]))                  
+                :type "void")
+                nil [11737 12287])
+            ("__rmqueue" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12441 12459])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12460 12479]))                  
+                :type ("page" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12411 12965])
+            ("rmqueue_bulk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13217 13235])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13236 13255])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [13260 13280])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13281 13304]))                  
+                :type "int")
+                nil [13193 13631])
+            ("zone_statistics" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zonelist" variable
+                       (:pointer 1
+                        :type ("zonelist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15037 15063])
+                    ("z" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15064 15079]))                  
+                :type "void")
+                nil [15009 15567])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("free_hot_cold_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15620 15667]))                  
+                :type "void")
+                nil [15599 15669])
+            ("free_hot_cold_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15710 15728])
+                    ("cold" variable (:type "int") (reparse-symbol arg-sub-list) [15729 15738]))                  
+                :type ("fastcall" type (:type "class") nil nil))
+                nil [15682 16251])
+            ("free_hot_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16281 16299]))                  
+                :type ("fastcall" type (:type "class") nil nil))
+                nil [16258 16333])
+            ("free_cold_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16365 16383]))                  
+                :type ("fastcall" type (:type "class") nil nil))
+                nil [16341 16417])
+            ("prep_zero_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16453 16471])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [16472 16482])
+                    ("gfp_flags" variable (:type "int") (reparse-symbol arg-sub-list) [16483 16497]))                  
+                :type "void")
+                nil [16419 16643])
+            ("buffered_rmqueue" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16854 16872])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [16873 16883])
+                    ("gfp_flags" variable (:type "int") (reparse-symbol arg-sub-list) [16884 16898]))                  
+                :type ("page" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16816 17826])
+            ("zone_watermark_ok" function
+               (:arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17957 17972])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [17973 17983])
+                    ("mark" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17984 18003])
+                    ("classzone_idx" variable (:type "int") (reparse-symbol arg-sub-list) [18012 18030])
+                    ("can_try_harder" variable (:type "int") (reparse-symbol arg-sub-list) [18031 18050])
+                    ("gfp_high" variable (:type "int") (reparse-symbol arg-sub-list) [18051 18064]))                  
+                :type "int")
+                nil [17935 18592])
+            ("__alloc_pages" function
+               (:arguments 
+                  ( ("gfp_mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18691 18713])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18714 18733])
+                    ("zonelist" variable
+                       (:pointer 1
+                        :type ("zonelist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18736 18762]))                  
+                :type ("fastcall" type (:type "class") nil nil))
+                nil [18668 22826])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__alloc_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22842 22856]))                  
+                :type "int")
+                nil [22828 22857])
+            ("__get_free_pages" function
+               (:arguments 
+                  ( ("gfp_mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22934 22956])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22957 22976]))                  
+                :type "unsigned long")
+                nil [22903 23107])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__get_free_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23123 23140]))                  
+                :type "int")
+                nil [23109 23141])
+            ("get_zeroed_page" function
+               (:arguments 
+                  ( ("gfp_mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23182 23204]))                  
+                :type "unsigned long")
+                nil [23152 23479])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_zeroed_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23495 23511]))                  
+                :type "int")
+                nil [23481 23512])
+            ("__pagevec_free" function
+               (:arguments 
+                  ( ("pvec" variable
+                       (:pointer 1
+                        :type ("pagevec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23534 23555]))                  
+                :type "void")
+                nil [23514 23658])
+            ("__free_pages" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23687 23705])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23706 23725]))                  
+                :type "void")
+                nil [23669 23869])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__free_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23885 23898]))                  
+                :type "int")
+                nil [23871 23899])
+            ("free_pages" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23926 23945])
+                    ("order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23946 23965]))                  
+                :type "void")
+                nil [23910 24083])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("free_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24099 24110]))                  
+                :type "int")
+                nil [24085 24111])
+            ("nr_free_pages" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24190 24195]))                  
+                :type "unsigned int")
+                nil [24163 24305])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nr_free_pages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24321 24335]))                  
+                :type "int")
+                nil [24307 24336])
+            ("nr_free_zone_pages" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [24578 24589]))                  
+                :type "unsigned int")
+                nil [24539 24987])
+            ("nr_free_buffer_pages" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25096 25101]))                  
+                :type "unsigned int")
+                nil [25062 25158])
+            ("nr_free_pagecache_pages" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25255 25260]))                  
+                :type "unsigned int")
+                nil [25218 25321])
+            ("show_node" variable (:constant-flag t) nil [25660 25669])
+            ("nr_pagecache" variable
+               (:default-value "ATOMIC_INIT(0)"
+                :type ("atomic_t" type (:type "class") nil nil))
+                nil [25933 25972])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nr_pagecache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25987 26000]))                  
+                :type "int")
+                nil [25973 26001])
+            ("__get_page_state" function
+               (:arguments 
+                  ( ("ret" variable
+                       (:pointer 1
+                        :type ("page_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26096 26119])
+                    ("nr" variable (:type "int") (reparse-symbol arg-sub-list) [26120 26127]))                  
+                :type "void")
+                nil [26074 26512])
+            ("get_page_state" function
+               (:arguments 
+                  ( ("ret" variable
+                       (:pointer 1
+                        :type ("page_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26534 26557]))                  
+                :type "void")
+                nil [26514 26690])
+            ("get_full_page_state" function
+               (:arguments 
+                  ( ("ret" variable
+                       (:pointer 1
+                        :type ("page_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26717 26740]))                  
+                :type "void")
+                nil [26692 26806])
+            ("__read_page_state" function
+               (:arguments 
+                  ( ("offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26840 26856]))                  
+                :type "unsigned long")
+                nil [26808 27052])
+            ("__mod_page_state" function
+               (:arguments 
+                  ( ("offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27076 27092])
+                    ("delta" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [27093 27113]))                  
+                :type "void")
+                nil [27054 27282])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__mod_page_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27298 27315]))                  
+                :type "int")
+                nil [27284 27316])
+            ("__get_zone_counts" function
+               (:arguments 
+                  ( ("active" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27341 27363])
+                    ("inactive" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27364 27388])
+                    ("free" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27392 27412])
+                    ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27413 27439]))                  
+                :type "void")
+                nil [27318 27678])
+            ("get_zone_counts" function
+               (:arguments 
+                  ( ("active" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27701 27723])
+                    ("inactive" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27726 27750])
+                    ("free" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [27751 27771]))                  
+                :type "void")
+                nil [27680 27987])
+            ("si_meminfo" function
+               (:arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("sysinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28005 28025]))                  
+                :type "void")
+                nil [27989 28332])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("si_meminfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28348 28359]))                  
+                :type "int")
+                nil [28334 28360])
+            ("K" variable (:constant-flag t) nil [28731 28732])
+            ("show_free_areas" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29007 29012]))                  
+                :type "void")
+                nil [28986 31338])
+            ("build_zonelists_node" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31428 31445])
+                    ("zonelist" variable
+                       (:pointer 1
+                        :type ("zonelist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31446 31472])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [31473 31479])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [31480 31486]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [31400 31961])
+            ("build_zonelists" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pg_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35041 35058]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [35018 36106])
+            ("build_all_zonelists" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36166 36171]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [36139 36295])
+            ("PAGES_PER_WAITQUEUE" variable (:constant-flag t) nil [36812 36831])
+            ("wait_table_size" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pages" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [36881 36901]))                  
+                :type "unsigned long")
+                nil [36837 37244])
+            ("wait_table_bits" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [37474 37493]))                  
+                :type "unsigned long")
+                nil [37430 37517])
+            ("LONG_ALIGN" variable (:constant-flag t) nil [37527 37537])
+            ("calculate_zone_totalpages" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37632 37658])
+                    ("zones_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [37661 37687])
+                    ("zholes_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [37688 37715]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [37599 38135])
+            ("memmap_init_zone" function
+               (:arguments 
+                  ( ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38340 38359])
+                    ("nid" variable (:type "int") (reparse-symbol arg-sub-list) [38360 38368])
+                    ("zone" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38369 38388])
+                    ("start_pfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38391 38415]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [38316 38897])
+            ("zone_init_free_lists" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38925 38951])
+                    ("zone" variable
+                       (:pointer 1
+                        :type ("zone" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38952 38970])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38975 38994]))                  
+                :type "void")
+                nil [38899 39152])
+            ("memmap_init" variable (:constant-flag t) nil [39194 39205])
+            ("free_area_init_core" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39479 39505])
+                    ("zones_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [39508 39534])
+                    ("zholes_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [39535 39562]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [39452 42458])
+            ("node_alloc_mem_map" function
+               (:arguments 
+                  ( ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42491 42517]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [42465 42739])
+            ("free_area_init_node" function
+               (:arguments 
+                  ( ("nid" variable (:type "int") (reparse-symbol arg-sub-list) [42773 42781])
+                    ("pgdat" variable
+                       (:pointer 1
+                        :type ("pglist_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42782 42808])
+                    ("zones_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [42811 42837])
+                    ("node_start_pfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [42838 42867])
+                    ("zholes_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [42870 42897]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [42746 43145])
+            ("contig_bootmem_data" variable
+               (:typemodifiers ("static")
+                :type ("bootmem_data_t" type (:type "class") nil nil))
+                nil [43175 43217])
+            ("contig_page_data" variable
+               (:default-value "{ .bdata = &contig_bootmem_data }"
+                :type ("pglist_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [43218 43290])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("contig_page_data" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43306 43323]))                  
+                :type "int")
+                nil [43292 43324])
+            ("free_area_init" function
+               (:arguments 
+                  ( ("zones_size" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [43353 43379]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [43331 43481])
+            ("page_alloc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47205 47210]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [47182 47258])
+            ("setup_per_zone_lowmem_reserve" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47558 47563]))                  
+                :type "void")
+                nil [47516 48049])
+            ("setup_per_zone_pages_min" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [48281 48286]))                  
+                :type "void")
+                nil [48244 49576])
+            ("init_per_zone_pages_min" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50188 50193]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [50157 50523])
+            ("min_free_kbytes_sysctl_handler" function
+               (:arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("ctl_table" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50760 50777])
+                    ("write" variable (:type "int") (reparse-symbol arg-sub-list) [50778 50788])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50792 50810])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [50811 50824])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50824 50831])
+                    ("length" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50832 50847])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50848 50861]))                  
+                :type "int")
+                nil [50725 50963])
+            ("lowmem_reserve_ratio_sysctl_handler" function
+               (:arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("ctl_table" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51382 51399])
+                    ("write" variable (:type "int") (reparse-symbol arg-sub-list) [51400 51410])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51414 51432])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [51433 51446])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51446 51453])
+                    ("length" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51454 51469])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51470 51483]))                  
+                :type "int")
+                nil [51342 51597])
+            ("hashdist" variable
+               (:default-value "HASHDIST_DEFAULT"
+                :type "int")
+                nil [51610 51642])
+            ("alloc_large_system_hash" function
+               (:arguments 
+                  ( ("tablename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52093 52115])
+                    ("bucketsize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [52125 52150])
+                    ("numentries" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [52160 52185])
+                    ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [52195 52205])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [52215 52225])
+                    ("_hash_shift" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [52235 52261])
+                    ("_hash_mask" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [52271 52296])
+                    ("limit" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [52306 52326]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [52062 53988]))          
+      :file "page_alloc.c"
+      :pointmax 53989
+      :fsize 53988
+      :lastmodtime '(16936 39516 0 0)
+      :unmatched-syntax '((punctuation 52061 . 52062) (VOID 52056 . 52060) (symbol 51599 . 51609) (punctuation 51445 . 51446) (punctuation 50823 . 50824) (semantic-list 50535 . 50560) (symbol 50524 . 50535) (INT 50153 . 50156) (STATIC 50146 . 50152) (VOID 47177 . 47181) (VOID 43326 . 43330) (VOID 42741 . 42745) (VOID 42460 . 42464) (VOID 39447 . 39451) (STATIC 39440 . 39446) (VOID 38311 . 38315) (VOID 37594 . 37598) (STATIC 37587 . 37593) (VOID 36134 . 36138) (VOID 35013 . 35017) (STATIC 35006 . 35012) (INT 31396 . 31399) (STATIC 31389 . 31395) (punctuation 25930 . 25931) (semantic-list 25927 . 25930) (punctuation 25925 . 25926) (semantic-list 25892 . 25924) (symbol 25878 . 25892) (STATIC 25871 . 25877) (symbol 23901 . 23909) (symbol 23660 . 23668) (symbol 23143 . 23151) (symbol 22894 . 22902) (punctuation 18666 . 18667) (symbol 18661 . 18665) (STRUCT 18654 . 18660) (VOID 16336 . 16340) (VOID 16253 . 16257) (VOID 15677 . 15681) (STATIC 15670 . 15676) (semantic-list 15638 . 15667) (LONG 2371 . 2375) (UNSIGNED 2362 . 2370) (LONG 2329 . 2333) (UNSIGNED 2320 . 2328))
+      :lexical-table 
+        '(("PAGES_PER_WAITQUEUE" . ((number "256" 36832 . 36835)))
+          ("destroy_compound_page" (spp-arg-list ("page" "order") 3678 . 3691) . 
+              ((DO "do" 3692 . 3694) (semantic-list "{ }" 3695 . 3698) (WHILE "while" 3699 . 3704) (semantic-list "(0)" 3705 . 3708)))
+          ("LONG_ALIGN" (spp-arg-list ("x") 37537 . 37540) . ((semantic-list "(((x)+(sizeof(long))-1)&~((sizeof(long))-1))" 37541 . 37585)))
+          ("show_node" (spp-arg-list ("zone") 25669 . 25675) . 
+              ((DO "do" 25676 . 25678) (semantic-list "{ }" 25679 . 25682) (WHILE "while" 25683 . 25688) (semantic-list "(0)" 25689 . 25692)))
+          ("K" (spp-arg-list ("x") 28732 . 28735) . ((semantic-list "((x) << (PAGE_SHIFT-10))" 28736 . 28760)))
+          ("memmap_init" (spp-arg-list ("size" "nid" "zone" "start_pfn") 39205 . 39233) . ((symbol "memmap_init_zone" 39237 . 39253) (semantic-list "((size), (nid), (zone), (start_pfn))" 39253 . 39289)))
+          ("prep_compound_page" (spp-arg-list ("page" "order") 3618 . 3631) . 
+              ((DO "do" 3632 . 3634) (semantic-list "{ }" 3635 . 3638) (WHILE "while" 3639 . 3644) (semantic-list "(0)" 3645 . 3648)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!mm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,977 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/types.h" include (:system-flag t) nil [568 592])
+            ("linux/errno.h" include (:system-flag t) nil [593 617])
+            ("linux/time.h" include (:system-flag t) nil [618 641])
+            ("linux/kernel.h" include (:system-flag t) nil [642 667])
+            ("linux/kernel_stat.h" include (:system-flag t) nil [668 698])
+            ("linux/tty.h" include (:system-flag t) nil [699 721])
+            ("linux/string.h" include (:system-flag t) nil [722 747])
+            ("linux/mman.h" include (:system-flag t) nil [748 771])
+            ("linux/proc_fs.h" include (:system-flag t) nil [772 798])
+            ("linux/ioport.h" include (:system-flag t) nil [799 824])
+            ("linux/config.h" include (:system-flag t) nil [825 850])
+            ("linux/mm.h" include (:system-flag t) nil [851 872])
+            ("linux/mmzone.h" include (:system-flag t) nil [873 898])
+            ("linux/pagemap.h" include (:system-flag t) nil [899 925])
+            ("linux/swap.h" include (:system-flag t) nil [926 949])
+            ("linux/slab.h" include (:system-flag t) nil [950 973])
+            ("linux/smp.h" include (:system-flag t) nil [974 996])
+            ("linux/signal.h" include (:system-flag t) nil [997 1022])
+            ("linux/module.h" include (:system-flag t) nil [1023 1048])
+            ("linux/init.h" include (:system-flag t) nil [1049 1072])
+            ("linux/smp_lock.h" include (:system-flag t) nil [1073 1100])
+            ("linux/seq_file.h" include (:system-flag t) nil [1101 1128])
+            ("linux/times.h" include (:system-flag t) nil [1129 1153])
+            ("linux/profile.h" include (:system-flag t) nil [1154 1180])
+            ("linux/blkdev.h" include (:system-flag t) nil [1181 1206])
+            ("linux/hugetlb.h" include (:system-flag t) nil [1207 1233])
+            ("linux/jiffies.h" include (:system-flag t) nil [1234 1260])
+            ("linux/sysrq.h" include (:system-flag t) nil [1261 1285])
+            ("linux/vmalloc.h" include (:system-flag t) nil [1286 1312])
+            ("asm/uaccess.h" include (:system-flag t) nil [1313 1337])
+            ("asm/pgtable.h" include (:system-flag t) nil [1338 1362])
+            ("asm/io.h" include (:system-flag t) nil [1363 1382])
+            ("asm/tlb.h" include (:system-flag t) nil [1383 1403])
+            ("asm/div64.h" include (:system-flag t) nil [1404 1426])
+            ("internal.h" include nil nil [1427 1448])
+            ("LOAD_INT" variable (:constant-flag t) nil [1458 1466])
+            ("LOAD_FRAC" variable (:constant-flag t) nil [1494 1503])
+            ("get_hardware_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1880 1887]))                  
+                :type "int")
+                nil [1851 1888])
+            ("get_stram_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1915 1922]))                  
+                :type "int")
+                nil [1889 1923])
+            ("get_chrdev_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1951 1958]))                  
+                :type "int")
+                nil [1924 1959])
+            ("get_filesystem_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1991 1998]))                  
+                :type "int")
+                nil [1960 1999])
+            ("get_exec_domain_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2032 2039]))                  
+                :type "int")
+                nil [2000 2040])
+            ("get_dma_list" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2065 2072]))                  
+                :type "int")
+                nil [2041 2073])
+            ("get_locks_status" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2103 2110])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2111 2119])
+                    ("" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2120 2126])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2127 2131]))                  
+                :type "int")
+                nil [2074 2132])
+            ("proc_calc_metrics" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2163 2174])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2175 2188])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2189 2199])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2205 2215])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2216 2225])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2226 2234]))                  
+                :type "int")
+                nil [2134 2369])
+            ("loadavg_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2400 2411])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2412 2425])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2426 2436])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2442 2452])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2453 2462])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2463 2474]))                  
+                :type "int")
+                nil [2371 2849])
+            ("uptime_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2879 2890])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2891 2904])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2905 2915])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2921 2931])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2932 2941])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2942 2953]))                  
+                :type "int")
+                nil [2851 3429])
+            ("meminfo_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3460 3471])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3472 3485])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3486 3496])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [3502 3512])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3513 3522])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3523 3534]))                  
+                :type "int")
+                nil [3431 5440])
+            ("fragmentation_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5442 5488])
+            ("fragmentation_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5519 5539])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5540 5558]))                  
+                :type "int")
+                nil [5489 5619])
+            ("fragmentation_file_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= fragmentation_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5621 5785])
+            ("version_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5816 5827])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5828 5841])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5842 5852])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [5858 5868])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5869 5878])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5879 5890]))                  
+                :type "int")
+                nil [5787 6017])
+            ("cpuinfo_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6019 6059])
+            ("cpuinfo_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6084 6104])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6105 6123]))                  
+                :type "int")
+                nil [6060 6164])
+            ("proc_cpuinfo_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= cpuinfo_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6165 6317])
+            ("vmstat_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6319 6358])
+            ("vmstat_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6382 6402])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6403 6421]))                  
+                :type "int")
+                nil [6359 6461])
+            ("proc_vmstat_file_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= vmstat_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6462 6617])
+            ("partitions_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7096 7139])
+            ("partitions_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7167 7187])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7188 7206]))                  
+                :type "int")
+                nil [7140 7250])
+            ("proc_partitions_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= partitions_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7251 7409])
+            ("diskstats_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7411 7453])
+            ("diskstats_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7480 7500])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7501 7519]))                  
+                :type "int")
+                nil [7454 7562])
+            ("proc_diskstats_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= diskstats_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7563 7719])
+            ("slabinfo_op" variable
+               (:typemodifiers ("extern")
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8050 8091])
+            ("slabinfo_write" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8122 8136])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8137 8156])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8158 8165])
+                    ("" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8166 8175]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [8092 8176])
+            ("slabinfo_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8202 8222])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8223 8241]))                  
+                :type "int")
+                nil [8177 8283])
+            ("proc_slabinfo_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= slabinfo_open,
+	.read		= seq_read,
+	.write		= slabinfo_write,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8284 8465])
+            ("show_stat" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8488 8507])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8508 8516]))                  
+                :type "int")
+                nil [8467 11131])
+            ("stat_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11154 11174])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11175 11193]))                  
+                :type "int")
+                nil [11133 11629])
+            ("proc_stat_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= stat_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= single_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11630 11779])
+            ("devices_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11810 11821])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11822 11835])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11836 11846])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [11852 11862])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11863 11872])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11873 11884]))                  
+                :type "int")
+                nil [11781 12019])
+            ("int_seq_start" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12075 12094])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12095 12107]))                  
+                :type "void")
+                nil [12048 12151])
+            ("int_seq_next" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12179 12198])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12199 12207])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12208 12220]))                  
+                :type "void")
+                nil [12153 12284])
+            ("int_seq_stop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12311 12330])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12331 12339]))                  
+                :type "void")
+                nil [12286 12364])
+            ("show_interrupts" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12394 12413])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12414 12422]))                  
+                :type "int")
+                nil [12367 12423])
+            ("int_seq_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.start = int_seq_start,
+	.next  = int_seq_next,
+	.stop  = int_seq_stop,
+	.show  = show_interrupts
+}"
+                :type ("seq_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12443 12589])
+            ("interrupts_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12618 12638])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12639 12657]))                  
+                :type "int")
+                nil [12591 12699])
+            ("proc_interrupts_operations" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.open		= interrupts_open,
+	.read		= seq_read,
+	.llseek		= seq_lseek,
+	.release	= seq_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12701 12859])
+            ("filesystems_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12894 12905])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12906 12919])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12920 12930])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [12936 12946])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12947 12956])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12957 12968]))                  
+                :type "int")
+                nil [12861 13072])
+            ("cmdline_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13103 13114])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13115 13128])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13129 13139])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [13145 13155])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13156 13165])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13166 13177]))                  
+                :type "int")
+                nil [13074 13304])
+            ("locks_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13333 13344])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13345 13358])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13359 13369])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [13375 13385])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13386 13395])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13396 13407]))                  
+                :type "int")
+                nil [13306 13509])
+            ("execdomains_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13544 13555])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13556 13569])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13570 13580])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [13586 13596])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13597 13606])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13607 13618]))                  
+                :type "int")
+                nil [13511 13723])
+            ("proc_root_kcore" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14156 14195])
+            ("create_seq_entry" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14219 14230])
+                    ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14231 14243])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("file_operations" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14244 14270]))                  
+                :type "void")
+                nil [14197 14387])
+            ("proc_misc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14416 14421]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [14394 16647]))          
+      :file "proc_misc.c"
+      :pointmax 16648
+      :fsize 16647
+      :lastmodtime '(16933 27981 0 0)
+      :unmatched-syntax '((VOID 14389 . 14393) (punctuation 8155 . 8156))
+      :lexical-table 
+        '(("LOAD_FRAC" (spp-arg-list ("x") 1503 . 1506) . ((symbol "LOAD_INT" 1507 . 1515) (semantic-list "(((x) & (FIXED_1-1)) * 100)" 1515 . 1542)))
+          ("LOAD_INT" (spp-arg-list ("x") 1466 . 1469) . ((semantic-list "((x) >> FSHIFT)" 1470 . 1485)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/proc_fs.h" include (:system-flag t) nil [414 440])
+            ("vmalloc_info" type
+               (:members 
+                  ( ("used" variable (:type "unsigned long") (reparse-symbol classsubparts) [465 484])
+                    ("largest_chunk" variable (:type "unsigned long") (reparse-symbol classsubparts) [486 514]))                  
+                :type "struct")
+                nil [442 517])
+            ("VMALLOC_TOTAL" variable (:constant-flag t) nil [660 673])
+            ("get_vmalloc_info" variable (:constant-flag t) nil [686 702])
+            ("create_seq_entry" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [825 836])
+                    ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [837 849])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("file_operations" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [850 876]))                  
+                :type "void")
+                nil [796 877])
+            ("proc_exe_link" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [903 918])
+                    ("" variable
+                       (:pointer 2
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [919 936])
+                    ("" variable
+                       (:pointer 2
+                        :type ("vfsmount" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [937 956]))                  
+                :type "int")
+                nil [878 957])
+            ("proc_tid_stat" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [983 1004])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1006 1013]))                  
+                :type "int")
+                nil [958 1014])
+            ("proc_tgid_stat" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1062])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1063 1070]))                  
+                :type "int")
+                nil [1015 1071])
+            ("proc_pid_status" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1099 1120])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1121 1128]))                  
+                :type "int")
+                nil [1072 1129])
+            ("proc_pid_statm" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1156 1177])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1178 1185]))                  
+                :type "int")
+                nil [1130 1186])
+            ("proc_task" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1232 1252]))                  
+                :type ("task_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1188 1285])
+            ("proc_type" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1315 1335]))                  
+                :type "int")
+                nil [1287 1368]))          
+      :file "internal.h"
+      :pointmax 1369
+      :fsize 1368
+      :lastmodtime '(16933 27980 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VMALLOC_TOTAL" . ((symbol "0UL" 674 . 677)))
+          ("get_vmalloc_info" (spp-arg-list ("vmi") 702 . 707) . 
+              ((DO "do" 712 . 714) (semantic-list "{						\\
+	(vmi)->used = 0;			\\
+	(vmi)->largest_chunk = 0;		\\
+}" 715 . 777) (WHILE "while" 778 . 783) (semantic-list "(0)" 783 . 786)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11!fs!proc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

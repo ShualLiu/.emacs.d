@@ -1,0 +1,458 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [1618 1643])
+            ("asm/atomic.h" include (:system-flag t) nil [1645 1668])
+            ("asm/byteorder.h" include (:system-flag t) nil [1669 1695])
+            ("asm/current.h" include (:system-flag t) nil [1696 1720])
+            ("asm/uaccess.h" include (:system-flag t) nil [1721 1745])
+            ("asm/ioctls.h" include (:system-flag t) nil [1746 1769])
+            ("linux/types.h" include (:system-flag t) nil [1770 1794])
+            ("linux/stddef.h" include (:system-flag t) nil [1795 1820])
+            ("linux/slab.h" include (:system-flag t) nil [1821 1844])
+            ("linux/errno.h" include (:system-flag t) nil [1845 1869])
+            ("linux/aio.h" include (:system-flag t) nil [1870 1892])
+            ("linux/kernel.h" include (:system-flag t) nil [1893 1918])
+            ("linux/spinlock.h" include (:system-flag t) nil [1919 1946])
+            ("linux/sockios.h" include (:system-flag t) nil [1947 1973])
+            ("linux/socket.h" include (:system-flag t) nil [1974 1999])
+            ("linux/in.h" include (:system-flag t) nil [2000 2021])
+            ("linux/mroute.h" include (:system-flag t) nil [2022 2047])
+            ("linux/netdevice.h" include (:system-flag t) nil [2048 2076])
+            ("linux/in_route.h" include (:system-flag t) nil [2077 2104])
+            ("linux/route.h" include (:system-flag t) nil [2105 2129])
+            ("linux/tcp.h" include (:system-flag t) nil [2130 2152])
+            ("linux/skbuff.h" include (:system-flag t) nil [2153 2178])
+            ("net/dst.h" include (:system-flag t) nil [2179 2199])
+            ("net/sock.h" include (:system-flag t) nil [2200 2221])
+            ("linux/gfp.h" include (:system-flag t) nil [2222 2244])
+            ("linux/ip.h" include (:system-flag t) nil [2245 2266])
+            ("linux/net.h" include (:system-flag t) nil [2267 2289])
+            ("net/ip.h" include (:system-flag t) nil [2290 2309])
+            ("net/icmp.h" include (:system-flag t) nil [2310 2331])
+            ("net/udp.h" include (:system-flag t) nil [2332 2352])
+            ("net/raw.h" include (:system-flag t) nil [2353 2373])
+            ("net/snmp.h" include (:system-flag t) nil [2374 2395])
+            ("net/inet_common.h" include (:system-flag t) nil [2396 2424])
+            ("net/checksum.h" include (:system-flag t) nil [2425 2450])
+            ("net/xfrm.h" include (:system-flag t) nil [2451 2472])
+            ("linux/rtnetlink.h" include (:system-flag t) nil [2473 2501])
+            ("linux/proc_fs.h" include (:system-flag t) nil [2502 2528])
+            ("linux/seq_file.h" include (:system-flag t) nil [2529 2556])
+            ("linux/netfilter.h" include (:system-flag t) nil [2557 2585])
+            ("linux/netfilter_ipv4.h" include (:system-flag t) nil [2586 2619])
+            ("raw_v4_htable" variable
+               (:dereference 1
+                :type ("hlist_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2621 2672])
+            ("DEFINE_RWLOCK" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("raw_v4_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2687 2699]))                  
+                :type "int")
+                nil [2673 2700])
+            ("raw_v4_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2726 2742]))                  
+                :type "void")
+                nil [2702 2960])
+            ("raw_v4_unhash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2988 3004]))                  
+                :type "void")
+                nil [2962 3132])
+            ("__raw_v4_lookup" function
+               (:pointer 1
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3163 3179])
+                    ("num" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [3180 3199])
+                    ("raddr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3208 3228])
+                    ("laddr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3229 3249])
+                    ("dif" variable (:type "int") (reparse-symbol arg-sub-list) [3258 3266]))                  
+                :type ("sock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3134 3627])
+            ("icmp_filter" function
+               (:arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3698 3714])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3715 3735]))                  
+                :type "int")
+                nil [3682 3991])
+            ("raw_v4_input" function
+               (:arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4235 4255])
+                    ("iph" variable
+                       (:pointer 1
+                        :type ("iphdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4256 4274])
+                    ("hash" variable (:type "int") (reparse-symbol arg-sub-list) [4275 4284]))                  
+                :type "void")
+                nil [4217 4900])
+            ("raw_err" function
+               (:arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4916 4932])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4933 4953])
+                    ("info" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4954 4963]))                  
+                :type "void")
+                nil [4902 6120])
+            ("raw_rcv_skb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6145 6162])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6163 6184]))                  
+                :type "int")
+                nil [6122 6380])
+            ("raw_rcv" function
+               (:arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6394 6410])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6411 6431]))                  
+                :type "int")
+                nil [6382 6608])
+            ("raw_send_hdrinc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6637 6653])
+                    ("from" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6654 6665])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [6666 6677])
+                    ("rt" variable
+                       (:pointer 1
+                        :type ("rtable" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6681 6699])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6704 6723]))                  
+                :type "int")
+                nil [6610 8099])
+            ("raw_probe_proto_opt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fl" variable
+                       (:pointer 1
+                        :type ("flowi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8133 8150])
+                    ("msg" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8151 8170]))                  
+                :type "void")
+                nil [8101 8932])
+            ("raw_sendmsg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iocb" variable
+                       (:pointer 1
+                        :type ("kiocb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8957 8976])
+                    ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8977 8993])
+                    ("msg" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8994 9013])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9023 9034]))                  
+                :type "int")
+                nil [8934 12120])
+            ("raw_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12144 12160])
+                    ("timeout" variable (:type "long") (reparse-symbol arg-sub-list) [12161 12174]))                  
+                :type "void")
+                nil [12122 12311])
+            ("raw_bind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12391 12407])
+                    ("uaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12408 12431])
+                    ("addr_len" variable (:type "int") (reparse-symbol arg-sub-list) [12432 12445]))                  
+                :type "int")
+                nil [12371 13097])
+            ("raw_recvmsg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iocb" variable
+                       (:pointer 1
+                        :type ("kiocb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13219 13238])
+                    ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13239 13255])
+                    ("msg" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13256 13275])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13285 13296])
+                    ("noblock" variable (:type "int") (reparse-symbol arg-sub-list) [13297 13309])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [13310 13320])
+                    ("addr_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13321 13335]))                  
+                :type "int")
+                nil [13196 14288])
+            ("raw_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14310 14326]))                  
+                :type "int")
+                nil [14290 14462])
+            ("raw_seticmpfilter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14493 14509])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [14510 14523])
+                    ("" variable (:type ("optval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14523 14530])
+                    ("optlen" variable (:type "int") (reparse-symbol arg-sub-list) [14531 14542]))                  
+                :type "int")
+                nil [14464 14714])
+            ("raw_geticmpfilter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14745 14761])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [14762 14775])
+                    ("" variable (:type ("optval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14775 14782])
+                    ("__user" variable (:type "int") (reparse-symbol arg-sub-list) [14783 14795])
+                    ("" variable (:type ("optlen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14795 14802]))                  
+                :type "int")
+                nil [14716 15127])
+            ("raw_setsockopt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15155 15171])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [15172 15182])
+                    ("optname" variable (:type "int") (reparse-symbol arg-sub-list) [15183 15195])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [15202 15215])
+                    ("" variable (:type ("optval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15215 15222])
+                    ("optlen" variable (:type "int") (reparse-symbol arg-sub-list) [15223 15234]))                  
+                :type "int")
+                nil [15129 15497])
+            ("raw_getsockopt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15525 15541])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [15542 15552])
+                    ("optname" variable (:type "int") (reparse-symbol arg-sub-list) [15553 15565])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [15572 15585])
+                    ("" variable (:type ("optval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15585 15592])
+                    ("__user" variable (:type "int") (reparse-symbol arg-sub-list) [15593 15605])
+                    ("" variable (:type ("optlen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15605 15612]))                  
+                :type "int")
+                nil [15499 15875])
+            ("raw_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sk" variable
+                       (:pointer 1
+                        :type ("sock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15898 15914])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [15915 15923])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15924 15942]))                  
+                :type "int")
+                nil [15877 16500])
+            ("raw_prot" variable
+               (:default-value "{
+	.name =		\"RAW\",
+	.owner =	THIS_MODULE,
+	.close =	raw_close,
+	.connect =	ip4_datagram_connect,
+	.disconnect =	udp_disconnect,
+	.ioctl =	raw_ioctl,
+	.init =		raw_init,
+	.setsockopt =	raw_setsockopt,
+	.getsockopt =	raw_getsockopt,
+	.sendmsg =	raw_sendmsg,
+	.recvmsg =	raw_recvmsg,
+	.bind =		raw_bind,
+	.backlog_rcv =	raw_rcv_skb,
+	.hash =		raw_v4_hash,
+	.unhash =	raw_v4_unhash,
+	.slab_obj_size = sizeof(struct raw_sock),
+}"
+                :type ("proto" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16502 16950]))          
+      :file "raw.c"
+      :pointmax 20354
+      :fsize 20353
+      :lastmodtime '(16933 28002 0 0)
+      :unmatched-syntax '((punctuation 15604 . 15605) (punctuation 15584 . 15585) (punctuation 15214 . 15215) (punctuation 14794 . 14795) (punctuation 14774 . 14775) (punctuation 14522 . 14523) (symbol 3671 . 3681) (STATIC 3664 . 3670))))
+  :file "!home!maurice!linux-2.6.11!net!ipv4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

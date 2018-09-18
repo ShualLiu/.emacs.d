@@ -1,0 +1,1688 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("XXHASH_H_5627135585666179" variable (:constant-flag t) nil [2889 2914])
+            ("stddef.h" include (:system-flag t) nil [3045 3064])
+            ("XXH_errorcode" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XXH_OK" variable
+                             (:constant-flag t
+                              :default-value (3102 3103)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3095 3104])
+                          ("XXH_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3105 3116]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3080 3131])
+            ("XXH_PUBLIC_API" variable (:constant-flag t) nil [4234 4248])
+            ("XXH_VERSION_MAJOR" variable (:constant-flag t) nil [6382 6399])
+            ("XXH_VERSION_MINOR" variable (:constant-flag t) nil [6413 6430])
+            ("XXH_VERSION_RELEASE" variable (:constant-flag t) nil [6444 6463])
+            ("XXH_VERSION_NUMBER" variable (:constant-flag t) nil [6475 6493])
+            ("XXH_versionNumber" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6614 6619]))                  
+                :type "unsigned int")
+                nil [6586 6620])
+            ("XXH32_hash_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [6786 6820])
+            ("XXH32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7191 7209])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7210 7224])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7225 7243]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [7171 7244])
+            ("XXH32_state_t" type
+               (:typedef ("XXH32_state_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7278 7321])
+            ("XXH32_createState" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7394 7399]))                  
+                :type ("XXH32_state_t" type (:type "class") nil nil))
+                nil [7361 7400])
+            ("XXH32_freeState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7447 7471]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7416 7472])
+            ("XXH32_copyState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst_state" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7509 7534])
+                    ("src_state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7535 7566]))                  
+                :type "void")
+                nil [7488 7567])
+            ("XXH32_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7612 7636])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7637 7655]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7584 7656])
+            ("XXH32_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7700 7724])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7725 7743])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7744 7758]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [7672 7759])
+            ("XXH32_digest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7803 7833]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [7775 7834])
+            ("XXH32_canonical_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("digest" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [8890 8914]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8873 8935])
+            ("XXH32_canonicalFromHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8980 9003])
+                    ("hash" variable (:type ("XXH32_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9004 9022]))                  
+                :type "void")
+                nil [8951 9023])
+            ("XXH32_hashFromCanonical" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9076 9105]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [9039 9106])
+            ("XXH64_hash_t" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [9699 9739])
+            ("XXH64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10036 10054])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10055 10069])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [10070 10094]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10016 10095])
+            ("XXH64_state_t" type
+               (:typedef ("XXH64_state_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10129 10172])
+            ("XXH64_createState" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10245 10250]))                  
+                :type ("XXH64_state_t" type (:type "class") nil nil))
+                nil [10212 10251])
+            ("XXH64_freeState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10298 10322]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10267 10323])
+            ("XXH64_copyState" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst_state" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10360 10385])
+                    ("src_state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10386 10417]))                  
+                :type "void")
+                nil [10339 10418])
+            ("XXH64_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10463 10487])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [10488 10512]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10435 10513])
+            ("XXH64_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10557 10581])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10582 10600])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10601 10615]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [10529 10616])
+            ("XXH64_digest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10660 10690]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10632 10691])
+            ("XXH64_canonical_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("digest" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [10757 10781]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10740 10802])
+            ("XXH64_canonicalFromHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10847 10870])
+                    ("hash" variable (:type ("XXH64_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10871 10889]))                  
+                :type "void")
+                nil [10818 10890])
+            ("XXH64_hashFromCanonical" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10943 10972]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [10906 10973]))          
+      :file "xxhash.h"
+      :pointmax 13467
+      :fsize 13466
+      :lastmodtime '(23373 39901 59358 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("XXH_PUBLIC_API")
+          ("XXH_VERSION_MAJOR" . ((number "0" 6403 . 6404)))
+          ("XXHASH_H_5627135585666179" . ((number "1" 2915 . 2916)))
+          ("XXH_VERSION_RELEASE" . ((number "5" 6465 . 6466)))
+          ("XXH_VERSION_MINOR" . ((number "6" 6434 . 6435)))
+          ("XXH_VERSION_NUMBER" . ((semantic-list "(XXH_VERSION_MAJOR *100*100 + XXH_VERSION_MINOR *100 + XXH_VERSION_RELEASE)" 6495 . 6570)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("LIBVER_MAJOR_SCRIPT" variable (:default-value ("`sed -n '/define XXH_VERSION_MAJOR/s/.*[[:blank:]]\\([0-9][0-9]*\\).*/\\1/p' < xxhash.h`")) nil [1174 1281])
+            ("LIBVER_MINOR_SCRIPT" variable (:default-value ("`sed -n '/define XXH_VERSION_MINOR/s/.*[[:blank:]]\\([0-9][0-9]*\\).*/\\1/p' < xxhash.h`")) nil [1281 1388])
+            ("LIBVER_PATCH_SCRIPT" variable (:default-value ("`sed -n '/define XXH_VERSION_RELEASE/s/.*[[:blank:]]\\([0-9][0-9]*\\).*/\\1/p' < xxhash.h`")) nil [1388 1497])
+            ("LIBVER_MAJOR" variable (:default-value ("$(shell echo $(LIBVER_MAJOR_SCRIPT))")) nil [1497 1550])
+            ("LIBVER_MINOR" variable (:default-value ("$(shell echo $(LIBVER_MINOR_SCRIPT))")) nil [1550 1603])
+            ("LIBVER_PATCH" variable (:default-value ("$(shell echo $(LIBVER_PATCH_SCRIPT))")) nil [1603 1656])
+            ("LIBVER" variable (:default-value ("$(LIBVER_MAJOR).$(LIBVER_MINOR).$(LIBVER_PATCH)")) nil [1656 1714])
+            ("HAVE_SSE4" variable (:default-value ("$(shell $(CC) -dM -E - < /dev/null | grep \"SSE4\" > /dev/null && echo 1 || echo 0)")) nil [1732 1827])
+            ("NOSSE4" variable (:default-value ("-mno-sse4")) nil [1850 1870])
+            ("NOSSE4" variable nil nil [1875 1885])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-Wcast-qual" "-Wcast-align" "-Wshadow" "-Wstrict-aliasing=1" "-Wswitch-enum" "-Wdeclaration-after-statement" "-Wstrict-prototypes" "-Wundef")) nil [1958 2132])
+            ("FLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)" "$(LDFLAGS)" "$(MOREFLAGS)")) nil [2133 2189])
+            ("XXHSUM_VERSION" variable (:default-value ("$(LIBVER)")) nil [2189 2214])
+            ("MD2ROFF" variable (:default-value ("ronn")) nil [2214 2229])
+            ("MD2ROFF_FLAGS" variable (:default-value ("--roff" "--warnings" "--manual=\"User Commands\"" "--organization=\"xxhsum $(XXHSUM_VERSION)\"")) nil [2229 2330])
+            ("EXT" variable (:default-value (".exe")) nil [2413 2423])
+            ("EXT" variable nil nil [2428 2434])
+            ("LIBXXH" variable (:default-value ("libxxhash.$(SHARED_EXT_VER)")) nil [3129 3166])
+            (".PHONY" function (:arguments ("default")) nil [3168 3184])
+            ("default" function (:arguments ("lib" "xxhsum_and_links")) nil [3184 3214])
+            (".PHONY" function (:arguments ("all")) nil [3215 3227])
+            ("all" function (:arguments ("lib" "xxhsum" "xxhsum_inlinedXXH")) nil [3227 3261])
+            ("xxhsum32" function (:arguments ("CFLAGS" "+=" "-m32")) nil [3262 3287])
+            ("xxhsum32" function (:arguments ("xxhash.c" "xxhsum.c")) nil [3287 3353])
+            ("xxhsum" function (:arguments ("xxhash.c" "xxhsum.c")) nil [3287 3353])
+            (".PHONY" function (:arguments ("xxhsum_and_links")) nil [3354 3379])
+            ("xxhsum_and_links" function (:arguments ("xxhsum")) nil [3379 3452])
+            ("xxhsum_inlinedXXH" function (:arguments ("xxhsum.c")) nil [3453 3530])
+            ("libxxhash.a" function (:arguments ("ARFLAGS" "=" "rcs")) nil [3543 3570])
+            ("libxxhash.a" function (:arguments ("xxhash.o")) nil [3570 3649])
+            ("$(LIBXXH)" function (:arguments ("LDFLAGS" "+=" "-shared")) nil [3650 3680])
+            ("$(LIBXXH)" function (:arguments ("LDFLAGS" "+=" "-fPIC")) nil [3713 3741])
+            ("$(LIBXXH)" function (:arguments ("xxhash.c")) nil [3747 3973])
+            ("libxxhash" function (:arguments ("$(LIBXXH)")) nil [3974 3996])
+            ("lib" function (:arguments ("libxxhash.a" "libxxhash")) nil [3997 4024])
+            (".PHONY" function (:arguments ("check")) nil [4035 4049])
+            ("check" function (:arguments ("xxhsum")) nil [4049 4210])
+            (".PHONY" function (:arguments ("test-mem")) nil [4211 4228])
+            ("test-mem" function (:arguments ("xxhsum")) nil [4228 4468])
+            (".PHONY" function (:arguments ("test32")) nil [4469 4484])
+            ("test32" function (:arguments ("clean" "xxhsum32")) nil [4484 4562])
+            ("test-xxhsum-c" function (:arguments ("xxhsum")) nil [4563 5392])
+            ("armtest" function (:arguments ("clean")) nil [5393 5515])
+            ("clangtest" function (:arguments ("clean")) nil [5516 5649])
+            ("gpptest" function (:arguments ("clean")) nil [5650 5788])
+            ("c90test" function (:arguments ("clean")) nil [5789 5943])
+            ("usan" function (:arguments ("CC=clang")) nil [5944 5959])
+            ("usan" function (:arguments ("clean")) nil [5959 6115])
+            ("staticAnalyze" function (:arguments ("clean")) nil [6116 6244])
+            ("namespaceTest" function nil nil [6245 6464])
+            ("xxhsum.1" function (:arguments ("xxhsum.1.md")) nil [6465 6555])
+            ("man" function (:arguments ("xxhsum.1")) nil [6556 6570])
+            ("clean-man" function nil nil [6571 6598])
+            ("preview-man" function (:arguments ("clean-man" "man")) nil [6599 6642])
+            ("test" function (:arguments ("all" "namespaceTest" "check" "test-xxhsum-c" "c90test")) nil [6643 6695])
+            ("test-all" function (:arguments ("test" "test32" "armtest" "clangtest" "gpptest" "usan" "listL120" "trailingWhitespace" "staticAnalyze")) nil [6696 6791])
+            (".PHONY" function (:arguments ("listL120")) nil [6792 6809])
+            ("listL120" function nil nil [6809 7070])
+            (".PHONY" function (:arguments ("trailingWhitespace")) nil [7071 7098])
+            ("trailingWhitespace" function nil nil [7098 7212])
+            (".PHONY" function (:arguments ("clean")) nil [7213 7227])
+            ("clean" function nil nil [7227 7407])
+            (".PHONY" function (:arguments ("list")) nil [7730 7743])
+            ("list" function nil nil [7743 7959])
+            (".PHONY" function (:arguments ("install")) nil [8824 8840])
+            ("install" function (:arguments ("lib" "xxhsum")) nil [8840 9729])
+            (".PHONY" function (:arguments ("uninstall")) nil [9730 9748])
+            ("uninstall" function nil nil [9748 10251]))          
+      :file "Makefile"
+      :pointmax 10258
+      :fsize 10257
+      :lastmodtime '(23373 39901 55358 53000)
+      :unmatched-syntax '((symbol 8818 . 8821) (symbol 8815 . 8817) (semantic-list 8805 . 8814) (punctuation 8804 . 8805) (punctuation 8802 . 8803) (punctuation 8801 . 8802) (symbol 8785 . 8797) (bol 8785 . 8785) (semantic-list 8775 . 8784) (punctuation 8774 . 8775) (punctuation 8772 . 8773) (punctuation 8771 . 8772) (symbol 8755 . 8770) (bol 8755 . 8755) (symbol 8740 . 8747) (punctuation 8738 . 8739) (punctuation 8737 . 8738) (symbol 8729 . 8736) (bol 8729 . 8729) (symbol 8715 . 8723) (punctuation 8713 . 8714) (punctuation 8712 . 8713) (symbol 8704 . 8711) (bol 8704 . 8704) (semantic-list 8647 . 8656) (punctuation 8646 . 8647) (punctuation 8644 . 8645) (punctuation 8643 . 8644) (symbol 8635 . 8641) (bol 8635 . 8635) (symbol 8620 . 8629) (semantic-list 8612 . 8620) (punctuation 8611 . 8612) (punctuation 8609 . 8610) (punctuation 8608 . 8609) (symbol 8600 . 8606) (bol 8600 . 8600) (symbol 8520 . 8525) (semantic-list 8512 . 8520) (punctuation 8511 . 8512) (punctuation 8509 . 8510) (punctuation 8508 . 8509) (symbol 8496 . 8503) (bol 8496 . 8496) (symbol 8491 . 8495) (semantic-list 8478 . 8491) (punctuation 8477 . 8478) (punctuation 8475 . 8476) (punctuation 8474 . 8475) (symbol 8462 . 8468) (bol 8462 . 8462) (symbol 8455 . 8461) (semantic-list 8447 . 8455) (punctuation 8446 . 8447) (punctuation 8444 . 8445) (punctuation 8443 . 8444) (symbol 8431 . 8442) (bol 8431 . 8431) (semantic-list 8422 . 8430) (punctuation 8421 . 8422) (punctuation 8419 . 8420) (punctuation 8418 . 8419) (symbol 8406 . 8412) (bol 8406 . 8406) (symbol 8401 . 8405) (semantic-list 8388 . 8401) (punctuation 8387 . 8388) (punctuation 8385 . 8386) (punctuation 8384 . 8385) (symbol 8372 . 8378) (bol 8372 . 8372) (semantic-list 8359 . 8371) (punctuation 8358 . 8359) (punctuation 8356 . 8357) (punctuation 8355 . 8356) (symbol 8343 . 8353) (bol 8343 . 8343) (symbol 8334 . 8342) (semantic-list 8326 . 8334) (punctuation 8325 . 8326) (punctuation 8323 . 8324) (punctuation 8322 . 8323) (symbol 8310 . 8320) (bol 8310 . 8310) (semantic-list 8301 . 8309) (punctuation 8300 . 8301) (punctuation 8298 . 8299) (punctuation 8297 . 8298) (symbol 8285 . 8291) (bol 8285 . 8285) (symbol 8280 . 8284) (semantic-list 8267 . 8280) (punctuation 8266 . 8267) (punctuation 8264 . 8265) (punctuation 8263 . 8264) (symbol 8251 . 8257) (bol 8251 . 8251) (semantic-list 8242 . 8250) (punctuation 8241 . 8242) (punctuation 8239 . 8240) (punctuation 8238 . 8239) (symbol 8226 . 8237) (bol 8226 . 8226) (semantic-list 8217 . 8225) (punctuation 8216 . 8217) (punctuation 8214 . 8215) (punctuation 8213 . 8214) (symbol 8201 . 8207) (bol 8201 . 8201) (symbol 8190 . 8200) (punctuation 8188 . 8189) (punctuation 8187 . 8188) (symbol 8175 . 8181) (bol 8175 . 8175) (punctuation 7973 . 7974) (punctuation 7972 . 7973) (symbol 7960 . 7967) (bol 7960 . 7960) (shell-command 3081 . 3121) (bol 3080 . 3080) (shell-command 3031 . 3079) (bol 3030 . 3030) (shell-command 3014 . 3029) (bol 3013 . 3013) (shell-command 2946 . 3012) (bol 2945 . 2945) (shell-command 2805 . 2939) (bol 2804 . 2804) (shell-command 2763 . 2803) (bol 2762 . 2762) (shell-command 2713 . 2761) (bol 2712 . 2712) (shell-command 2693 . 2711) (bol 2692 . 2692) (semantic-list 1907 . 1915) (punctuation 1906 . 1907) (symbol 1902 . 1905) (punctuation 1900 . 1901) (punctuation 1899 . 1900) (symbol 1892 . 1898) (bol 1892 . 1892)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("XXH_ACCEPT_NULL_INPUT_POINTER" variable (:constant-flag t) nil [3784 3813])
+            ("XXH_FORCE_NATIVE_FORMAT" variable (:constant-flag t) nil [4432 4455])
+            ("XXH_FORCE_ALIGN_CHECK" variable (:constant-flag t) nil [4988 5009])
+            ("stdlib.h" include (:system-flag t) nil [5266 5285])
+            ("XXH_malloc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5310 5319]))                  
+                :type "void")
+                nil [5286 5341])
+            ("XXH_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5366 5374]))                  
+                :type "void")
+                nil [5342 5388])
+            ("string.h" include (:system-flag t) nil [5413 5432])
+            ("XXH_memcpy" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5457 5468])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5469 5485])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5486 5498]))                  
+                :type "void")
+                nil [5433 5532])
+            ("assert.h" include (:system-flag t) nil [5534 5553])
+            ("XXH_STATIC_LINKING_ONLY" variable (:constant-flag t) nil [5578 5601])
+            ("xxhash.h" include nil nil [5602 5621])
+            ("FORCE_INLINE" variable (:constant-flag t) nil [6195 6207])
+            ("BYTE" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [6618 6650])
+            ("U16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [6655 6686])
+            ("U32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [6691 6722])
+            ("XXH_read32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("memPtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7493 7512]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [7471 7584])
+            ("XXH_GCC_VERSION" variable (:constant-flag t) nil [7772 7787])
+            ("XXH_rotl32" variable (:constant-flag t) nil [8026 8036])
+            ("XXH_rotl64" variable (:constant-flag t) nil [8081 8091])
+            ("XXH_swap32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8314 8320]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [8291 8483])
+            ("XXH_endianess" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XXH_bigEndian" variable
+                             (:constant-flag t
+                              :default-value (8627 8628)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8613 8629])
+                          ("XXH_littleEndian" variable
+                             (:constant-flag t
+                              :default-value (8647 8649)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8630 8650]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [8598 8665])
+            ("XXH_isLittleEndian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8823 8828]))                  
+                :type "int")
+                nil [8793 8956])
+            ("XXH_CPU_LITTLE_ENDIAN" variable (:constant-flag t) nil [8968 8989])
+            ("XXH_alignment" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XXH_aligned" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9115 9127])
+                          ("XXH_unaligned" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9128 9143]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [9100 9158])
+            ("XXH_readLE32_align" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9196 9212])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9213 9234])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9235 9255]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [9160 9478])
+            ("XXH_readLE32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9510 9526])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9527 9548]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [9480 9611])
+            ("XXH_readBE32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9637 9653]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [9613 9739])
+            ("XXH_STATIC_ASSERT" variable (:constant-flag t) nil [9842 9859])
+            ("XXH_versionNumber" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9984 9989]))                  
+                :type "unsigned int")
+                nil [9956 10020])
+            ("PRIME32_1" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2654435761U"
+                :type ("U32" type (:type "class") nil nil))
+                nil [10190 10231])
+            ("PRIME32_2" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2246822519U"
+                :type ("U32" type (:type "class") nil nil))
+                nil [10232 10273])
+            ("PRIME32_3" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3266489917U"
+                :type ("U32" type (:type "class") nil nil))
+                nil [10274 10315])
+            ("PRIME32_4" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "668265263U"
+                :type ("U32" type (:type "class") nil nil))
+                nil [10316 10357])
+            ("PRIME32_5" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "374761393U"
+                :type ("U32" type (:type "class") nil nil))
+                nil [10358 10399])
+            ("XXH32_round" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10424 10433])
+                    ("input" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10434 10444]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [10401 10553])
+            ("XXH32_avalanche" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h32" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10601 10609]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [10574 10740])
+            ("XXH_get32bits" variable (:constant-flag t) nil [10750 10763])
+            ("XXH32_finalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h32" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10831 10839])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10840 10856])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10857 10868])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10885 10906])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10907 10927]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [10805 12616])
+            ("XXH32_endian_align" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12655 12673])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12674 12685])
+                    ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12686 12695])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12716 12737])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12738 12758]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [12619 13742])
+            ("XXH32" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13780 13798])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13799 13810])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13811 13829]))                  
+                :type "unsigned int")
+                nil [13760 14822])
+            ("XXH32_createState" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14912 14917]))                  
+                :type ("XXH32_state_t" type (:type "class") nil nil))
+                nil [14879 14983])
+            ("XXH32_freeState" function
+               (:arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15029 15053]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [14999 15100])
+            ("XXH32_copyState" function
+               (:arguments 
+                  ( ("dstState" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15138 15162])
+                    ("srcState" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15163 15193]))                  
+                :type "void")
+                nil [15117 15248])
+            ("XXH32_reset" function
+               (:arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15291 15315])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15316 15334]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [15265 15789])
+            ("XXH32_update_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15840 15861])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15862 15880])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15881 15892])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15893 15914]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [15792 17806])
+            ("XXH32_update" function
+               (:arguments 
+                  ( ("state_in" variable
+                       (:pointer 1
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17852 17876])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17877 17895])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17896 17907]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [17824 18216])
+            ("XXH32_digest_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18257 18284])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18285 18306]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [18219 18698])
+            ("XXH32_digest" function
+               (:arguments 
+                  ( ("state_in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18743 18773]))                  
+                :type "unsigned int")
+                nil [18716 19058])
+            ("XXH32_canonicalFromHash" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19535 19558])
+                    ("hash" variable (:type ("XXH32_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19559 19577]))                  
+                :type "void")
+                nil [19506 19749])
+            ("XXH32_hashFromCanonical" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH32_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19803 19832]))                  
+                :type ("XXH32_hash_t" type (:type "class") nil nil))
+                nil [19766 19866])
+            ("MEM_MODULE" variable (:constant-flag t) nil [20128 20138])
+            ("U64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [20421 20452])
+            ("XXH_read64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("memPtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21238 21257]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [21216 21329])
+            ("XXH_swap64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21559 21565]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [21536 21968])
+            ("XXH_readLE64_align" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22013 22029])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22030 22051])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22052 22072]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [21977 22295])
+            ("XXH_readLE64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22327 22343])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22344 22365]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [22297 22428])
+            ("XXH_readBE64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22454 22470]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [22430 22556])
+            ("PRIME64_1" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "11400714785074694791ULL"
+                :type ("U64" type (:type "class") nil nil))
+                nil [22588 22641])
+            ("PRIME64_2" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "14029467366897019727ULL"
+                :type ("U64" type (:type "class") nil nil))
+                nil [22642 22695])
+            ("PRIME64_3" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1609587929392839161ULL"
+                :type ("U64" type (:type "class") nil nil))
+                nil [22696 22749])
+            ("PRIME64_4" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "9650029242287828579ULL"
+                :type ("U64" type (:type "class") nil nil))
+                nil [22750 22803])
+            ("PRIME64_5" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2870177450012600261ULL"
+                :type ("U64" type (:type "class") nil nil))
+                nil [22804 22857])
+            ("XXH64_round" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("acc" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22882 22890])
+                    ("input" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22891 22901]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [22859 23005])
+            ("XXH64_mergeRound" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("acc" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23035 23043])
+                    ("val" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23044 23052]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [23007 23160])
+            ("XXH64_avalanche" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h64" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23189 23197]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [23162 23327])
+            ("XXH_get64bits" variable (:constant-flag t) nil [23338 23351])
+            ("XXH64_finalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h64" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23419 23427])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23428 23444])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23445 23456])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23472 23493])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23494 23514]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [23393 26607])
+            ("XXH64_endian_align" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26645 26663])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26664 26675])
+                    ("seed" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26676 26685])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26702 26723])
+                    ("align" variable (:type ("XXH_alignment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26724 26744]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [26609 27877])
+            ("XXH64" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27921 27939])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27940 27951])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [27952 27976]))                  
+                :type "unsigned long long")
+                nil [27895 28966])
+            ("XXH64_createState" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29054 29059]))                  
+                :type ("XXH64_state_t" type (:type "class") nil nil))
+                nil [29021 29125])
+            ("XXH64_freeState" function
+               (:arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29171 29195]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [29141 29242])
+            ("XXH64_copyState" function
+               (:arguments 
+                  ( ("dstState" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29280 29304])
+                    ("srcState" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29305 29335]))                  
+                :type "void")
+                nil [29259 29390])
+            ("XXH64_reset" function
+               (:arguments 
+                  ( ("statePtr" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29433 29457])
+                    ("seed" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [29458 29482]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [29407 29938])
+            ("XXH64_update_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29988 30009])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30010 30028])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30029 30040])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30041 30062]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [29940 31808])
+            ("XXH64_update" function
+               (:arguments 
+                  ( ("state_in" variable
+                       (:pointer 1
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31853 31877])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31878 31896])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31897 31908]))                  
+                :type ("XXH_errorcode" type (:type "class") nil nil))
+                nil [31825 32217])
+            ("XXH64_digest_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32257 32284])
+                    ("endian" variable (:type ("XXH_endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32285 32306]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [32219 32950])
+            ("XXH64_digest" function
+               (:arguments 
+                  ( ("state_in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_state_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33000 33030]))                  
+                :type "unsigned long long")
+                nil [32967 33315])
+            ("XXH64_canonicalFromHash" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33408 33431])
+                    ("hash" variable (:type ("XXH64_hash_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33432 33450]))                  
+                :type "void")
+                nil [33379 33622])
+            ("XXH64_hashFromCanonical" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("XXH64_canonical_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33676 33705]))                  
+                :type ("XXH64_hash_t" type (:type "class") nil nil))
+                nil [33639 33739]))          
+      :file "xxhash.c"
+      :pointmax 33772
+      :fsize 33771
+      :lastmodtime '(23373 39901 59358 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("XXH_STATIC_LINKING_ONLY")
+          ("MEM_MODULE")
+          ("XXH_rotl64" (spp-arg-list ("x" "r") 8091 . 8096) . ((semantic-list "((x << r) | (x >> (64 - r)))" 8097 . 8125)))
+          ("XXH_FORCE_NATIVE_FORMAT" . ((number "0" 4456 . 4457)))
+          ("XXH_FORCE_ALIGN_CHECK" . ((number "1" 5010 . 5011)))
+          ("XXH_get64bits" (spp-arg-list ("p") 23351 . 23354) . ((symbol "XXH_readLE64_align" 23355 . 23373) (semantic-list "(p, endian, align)" 23373 . 23391)))
+          ("XXH_rotl32" (spp-arg-list ("x" "r") 8036 . 8041) . ((semantic-list "((x << r) | (x >> (32 - r)))" 8042 . 8070)))
+          ("XXH_STATIC_ASSERT" (spp-arg-list ("c") 9859 . 9862) . ((semantic-list "{ enum { XXH_sa = 1/(int)(!!(c)) }; }" 9864 . 9901)))
+          ("XXH_ACCEPT_NULL_INPUT_POINTER" . ((number "0" 3814 . 3815)))
+          ("XXH_CPU_LITTLE_ENDIAN" . ((symbol "XXH_isLittleEndian" 8992 . 9010) (semantic-list "()" 9010 . 9012)))
+          ("FORCE_INLINE" . ((STATIC "static" 6208 . 6214)))
+          ("XXH_GCC_VERSION" . ((semantic-list "(__GNUC__ * 100 + __GNUC_MINOR__)" 7788 . 7821)))
+          ("XXH_get32bits" (spp-arg-list ("p") 10763 . 10766) . ((symbol "XXH_readLE32_align" 10767 . 10785) (semantic-list "(p, endian, align)" 10785 . 10803)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("XXHASH_C_2097394837" variable (:constant-flag t) nil [1186 1205])
+            ("stdlib.h" include (:system-flag t) nil [1654 1673])
+            ("stdio.h" include (:system-flag t) nil [1711 1729])
+            ("string.h" include (:system-flag t) nil [1812 1831])
+            ("sys/types.h" include (:system-flag t) nil [1849 1871])
+            ("sys/stat.h" include (:system-flag t) nil [1901 1922])
+            ("time.h" include (:system-flag t) nil [1953 1970])
+            ("assert.h" include (:system-flag t) nil [2014 2033])
+            ("XXH_STATIC_LINKING_ONLY" variable (:constant-flag t) nil [2060 2083])
+            ("xxhash.h" include nil nil [2102 2121])
+            ("unistd.h" include (:system-flag t) nil [2546 2567])
+            ("SET_BINARY_MODE" variable (:constant-flag t) nil [2607 2622])
+            ("IS_CONSOLE" variable (:constant-flag t) nil [2639 2649])
+            ("MEM_MODULE" variable (:constant-flag t) nil [2893 2903])
+            ("BYTE" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [3145 3177])
+            ("U16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [3182 3213])
+            ("U32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [3218 3249])
+            ("S32" type
+               (:typedef ("signed int")
+                :type "typedef")
+                nil [3254 3285])
+            ("U64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [3290 3321])
+            ("BMK_isLittleEndian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3374 3379]))                  
+                :type "unsigned int")
+                nil [3339 3507])
+            ("LIB_VERSION" variable (:constant-flag t) nil [3615 3626])
+            ("QUOTE" variable (:constant-flag t) nil [3691 3696])
+            ("EXPAND_AND_QUOTE" variable (:constant-flag t) nil [3715 3731])
+            ("PROGRAM_VERSION" variable (:constant-flag t) nil [3756 3771])
+            ("g_nbBits" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "(int)(sizeof(void*)*8)"
+                :type "int")
+                nil [3802 3853])
+            ("g_lename" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"little endian\""
+                :type "char")
+                nil [3854 3901])
+            ("g_bename" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"big endian\""
+                :type "char")
+                nil [3902 3946])
+            ("ENDIAN_NAME" variable (:constant-flag t) nil [3955 3966])
+            ("author" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Yann Collet\""
+                :type "char")
+                nil [4012 4055])
+            ("WELCOME_MESSAGE" variable (:constant-flag t) nil [4064 4079])
+            ("KB" variable (:constant-flag t) nil [4208 4210])
+            ("MB" variable (:constant-flag t) nil [4229 4231])
+            ("GB" variable (:constant-flag t) nil [4250 4252])
+            ("XXH_DEFAULT_SAMPLE_SIZE" variable
+               (:typemodifiers ("static")
+                :default-value "100 K"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4264 4311])
+            ("NBLOOPS" variable (:constant-flag t) nil [4320 4327])
+            ("TIMELOOP_S" variable (:constant-flag t) nil [4415 4425])
+            ("TIMELOOP" variable (:constant-flag t) nil [4436 4444])
+            ("XXHSUM32_DEFAULT_SEED" variable (:constant-flag t) nil [4521 4542])
+            ("XXHSUM64_DEFAULT_SEED" variable (:constant-flag t) nil [4605 4626])
+            ("MAX_MEM" variable (:constant-flag t) nil [4690 4697])
+            ("stdinName" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"-\""
+                :type "char")
+                nil [4717 4753])
+            ("algoType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("algo_xxh32" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4769 4780])
+                          ("algo_xxh64" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4781 4793]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4754 4803])
+            ("g_defaultAlgo" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "algo_xxh64"
+                :type ("algoType" type (:type "class") nil nil))
+                nil [4804 4853])
+            ("DEFAULT_LINE_LENGTH" variable (:constant-flag t) nil [5006 5025])
+            ("MAX_LINE_LENGTH" variable (:constant-flag t) nil [5115 5130])
+            ("DISPLAY" variable (:constant-flag t) nil [5249 5256])
+            ("DISPLAYRESULT" variable (:constant-flag t) nil [5307 5320])
+            ("DISPLAYLEVEL" variable (:constant-flag t) nil [5365 5377])
+            ("g_displayLevel" variable
+               (:typemodifiers ("static")
+                :default-value "2"
+                :type "int")
+                nil [5448 5478])
+            ("g_nbIterations" variable
+               (:typemodifiers ("static")
+                :default-value "NBLOOPS"
+                :type ("U32" type (:type "class") nil nil))
+                nil [5582 5618])
+            ("BMK_clockSpan" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5756 5771]))                  
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [5726 5860])
+            ("BMK_findMaxMem" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("requiredMem" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5892 5908]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [5863 6434])
+            ("BMK_GetFileSize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("infilename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6464 6487]))                  
+                :type ("U64" type (:type "class") nil nil))
+                nil [6437 6767])
+            ("hashFunction" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6797 6816])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6817 6835])
+                    ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6836 6845]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [6777 6846])
+            ("localXXH32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6870 6889])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6890 6908])
+                    ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6909 6918]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [6848 6962])
+            ("localXXH64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6986 7005])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7006 7024])
+                    ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7025 7034]))                  
+                :type ("U32" type (:type "class") nil nil))
+                nil [6964 7083])
+            ("BMK_benchHash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable (:type ("hashFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7111 7126])
+                    ("hName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7127 7145])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7146 7165])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7166 7184]))                  
+                :type "void")
+                nil [7085 8905])
+            ("BMK_benchMem" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9223 9242])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9243 9261])
+                    ("specificTest" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9262 9279]))                  
+                :type "int")
+                nil [9199 10089])
+            ("BMK_selectBenchedSize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10128 10149]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10092 10522])
+            ("BMK_benchFiles" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fileNamesTable" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10551 10579])
+                    ("nbFiles" variable (:type "int") (reparse-symbol arg-sub-list) [10580 10592])
+                    ("specificTest" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10593 10610]))                  
+                :type "int")
+                nil [10525 11940])
+            ("BMK_benchInternal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keySize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11973 11988])
+                    ("specificTest" variable (:type "int") (reparse-symbol arg-sub-list) [11989 12006]))                  
+                :type "int")
+                nil [11944 12648])
+            ("BMK_checkResult" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r1" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12679 12686])
+                    ("r2" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12687 12694]))                  
+                :type "void")
+                nil [12651 12956])
+            ("BMK_checkResult64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r1" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12989 12996])
+                    ("r2" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12997 13004]))                  
+                :type "void")
+                nil [12959 13274])
+            ("BMK_testSequence64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13308 13323])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13324 13335])
+                    ("seed" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13336 13345])
+                    ("Nresult" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13346 13358]))                  
+                :type "void")
+                nil [13277 13851])
+            ("BMK_testSequence" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sequence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13883 13904])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13905 13916])
+                    ("seed" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13917 13926])
+                    ("Nresult" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13927 13939]))                  
+                :type "void")
+                nil [13854 14432])
+            ("SANITY_BUFFER_SIZE" variable (:constant-flag t) nil [14443 14461])
+            ("BMK_sanityCheck" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14494 14499]))                  
+                :type "void")
+                nil [14466 15987])
+            ("BMK_display_LittleEndian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16164 16180])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16181 16195]))                  
+                :type "void")
+                nil [16127 16391])
+            ("BMK_display_BigEndian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16427 16443])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16444 16458]))                  
+                :type "void")
+                nil [16393 16590])
+            ("BMK_hashStream" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("xxhHashValue" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16619 16638])
+                    ("hashType" variable
+                       (:constant-flag t
+                        :type ("algoType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16639 16663])
+                    ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16664 16677])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16678 16691])
+                    ("blockSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16692 16709]))                  
+                :type "void")
+                nil [16592 17695])
+            ("endianess" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("big_endian" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [17713 17724])
+                          ("little_endian" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [17725 17739]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [17698 17750])
+            ("BMK_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17772 17793])
+                    ("hashType" variable
+                       (:constant-flag t
+                        :type ("algoType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17814 17838])
+                    ("displayEndianess" variable
+                       (:constant-flag t
+                        :type ("endianess" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17859 17892]))                  
+                :type "int")
+                nil [17752 20314])
+            ("BMK_hashFiles" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fnList" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20342 20362])
+                    ("fnTotal" variable (:type "int") (reparse-symbol arg-sub-list) [20363 20375])
+                    ("hashType" variable (:type ("algoType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20401 20419])
+                    ("displayEndianess" variable (:type ("endianess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20420 20447]))                  
+                :type "int")
+                nil [20317 20728])
+            ("GetLineResult" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("GetLine_ok" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20750 20761])
+                          ("GetLine_eof" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20766 20778])
+                          ("GetLine_exceedMaxLineLength" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20783 20811])
+                          ("GetLine_outOfMemory" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20816 20836]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [20731 20853])
+            ("CanonicalFromStringResult" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CanonicalFromString_ok" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20874 20897])
+                          ("CanonicalFromString_invalidFormat" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20902 20936]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [20855 20965])
+            ("ParseLineResult" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ParseLine_ok" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [20986 20999])
+                          ("ParseLine_invalidFormat" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [21004 21028]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [20967 21047])
+            ("LineStatus" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("LineStatus_hashOk" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [21068 21086])
+                          ("LineStatus_hashFailed" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [21091 21113])
+                          ("LineStatus_failedToOpen" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [21118 21142]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [21049 21156])
+            ("Canonical" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("xxh32" variable (:type ("XXH32_canonical_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21178 21202])
+                          ("xxh64" variable (:type ("XXH64_canonical_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21207 21231]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [21158 21244])
+            ("ParsedLine" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("canonical" variable (:type ("Canonical" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21267 21289])
+                          ("filename" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [21294 21315])
+                          ("xxhBits" variable (:type "int") (reparse-symbol classsubparts) [21320 21340]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [21246 21399])
+            ("ParseFileReport" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nProperlyFormattedLines" variable (:type "unsigned long") (reparse-symbol classsubparts) [21422 21462])
+                          ("nImproperlyFormattedLines" variable (:type "unsigned long") (reparse-symbol classsubparts) [21467 21509])
+                          ("nMismatchedChecksums" variable (:type "unsigned long") (reparse-symbol classsubparts) [21514 21551])
+                          ("nOpenOrReadFailures" variable (:type "unsigned long") (reparse-symbol classsubparts) [21556 21592])
+                          ("nMixedFormatLines" variable (:type "unsigned long") (reparse-symbol classsubparts) [21597 21631])
+                          ("xxhBits" variable (:type "int") (reparse-symbol classsubparts) [21636 21660])
+                          ("quit" variable (:type "int") (reparse-symbol classsubparts) [21665 21686]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [21401 21705])
+            ("ParseFileArg" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("inFileName" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [21728 21755])
+                          ("inFile" variable
+                             (:pointer 1
+                              :type ("FILE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [21760 21783])
+                          ("lineMax" variable (:type "int") (reparse-symbol classsubparts) [21788 21812])
+                          ("lineBuf" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [21817 21841])
+                          ("blockSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21846 21872])
+                          ("blockBuf" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [21877 21902])
+                          ("strictMode" variable (:type "int") (reparse-symbol classsubparts) [21907 21934])
+                          ("statusOnly" variable (:type "int") (reparse-symbol classsubparts) [21939 21966])
+                          ("warn" variable (:type "int") (reparse-symbol classsubparts) [21971 21992])
+                          ("quiet" variable (:type "int") (reparse-symbol classsubparts) [21997 22019])
+                          ("report" variable (:type ("ParseFileReport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22024 22047]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [21707 22063])
+            ("getLine" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lineBuf" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22391 22406])
+                    ("lineMax" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22407 22420])
+                    ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22421 22434]))                  
+                :type ("GetLineResult" type (:type "class") nil nil))
+                nil [22362 23771])
+            ("charToHex" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [23905 23912]))                  
+                :type "int")
+                nil [23884 24188])
+            ("canonicalFromString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24500 24519])
+                    ("dstSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24573 24588])
+                    ("hashStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24642 24662]))                  
+                :type ("CanonicalFromStringResult" type (:type "class") nil nil))
+                nil [24447 25039])
+            ("parseLine" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parsedLine" variable
+                       (:pointer 1
+                        :type ("ParsedLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25649 25672])
+                    ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25673 25690]))                  
+                :type ("ParseLineResult" type (:type "class") nil nil))
+                nil [25616 26816])
+            ("parseFile1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parseFileArg" variable
+                       (:pointer 1
+                        :type ("ParseFileArg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26879 26906]))                  
+                :type "void")
+                nil [26856 31688])
+            ("checkFile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inFileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32363 32386])
+                    ("displayEndianess" variable
+                       (:constant-flag t
+                        :type ("endianess" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32408 32441])
+                    ("strictMode" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32463 32478])
+                    ("statusOnly" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32500 32515])
+                    ("warn" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32537 32546])
+                    ("quiet" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32568 32578]))                  
+                :type "int")
+                nil [32342 35165])
+            ("checkFiles" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fnList" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35190 35210])
+                    ("fnTotal" variable (:type "int") (reparse-symbol arg-sub-list) [35211 35223])
+                    ("displayEndianess" variable
+                       (:constant-flag t
+                        :type ("endianess" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35246 35279])
+                    ("strictMode" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35302 35317])
+                    ("statusOnly" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35340 35355])
+                    ("warn" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35378 35387])
+                    ("quiet" variable (:type ("U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35410 35420]))                  
+                :type "int")
+                nil [35168 35860])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("exename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36009 36029]))                  
+                :type "int")
+                nil [35992 36489])
+            ("usage_advanced" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("exename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36518 36538]))                  
+                :type "int")
+                nil [36492 37397])
+            ("badusage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("exename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37419 37439]))                  
+                :type "int")
+                nil [37399 37512])
+            ("readU32FromChar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stringPtr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37886 37909]))                  
+                :type "unsigned int")
+                nil [37854 38323])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38334 38343])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38344 38362]))                  
+                :type "int")
+                nil [38325 42429]))          
+      :file "xxhsum.c"
+      :pointmax 42464
+      :fsize 42463
+      :lastmodtime '(23373 39901 59358 103000)
+      :unmatched-syntax '((TYPEDEF 6769 . 6776))
+      :lexical-table 
+        '(("DISPLAYLEVEL" (spp-arg-list ("l" "...") 5377 . 5385) . 
+              ((DO "do" 5386 . 5388) (semantic-list "{ if (g_displayLevel>=l) DISPLAY(__VA_ARGS__); }" 5389 . 5437) (WHILE "while" 5438 . 5443) (semantic-list "(0)" 5444 . 5447)))
+          ("PROGRAM_VERSION" . ((symbol "EXPAND_AND_QUOTE" 3772 . 3788) (semantic-list "(LIB_VERSION)" 3788 . 3801)))
+          ("WELCOME_MESSAGE" (spp-arg-list ("exename") 4079 . 4088) . 
+              ((string "\"%s %s (%i-bits %s), by %s \\n\"" 4089 . 4119) (punctuation "," 4119 . 4120) (symbol "exename" 4143 . 4150) (punctuation "," 4150 . 4151) (symbol "PROGRAM_VERSION" 4152 . 4167) (punctuation "," 4167 . 4168) (symbol "g_nbBits" 4169 . 4177) (punctuation "," 4177 . 4178) (symbol "ENDIAN_NAME" 4179 . 4190) (punctuation "," 4190 . 4191) (symbol "author" 4192 . 4198)))
+          ("TIMELOOP" . ((semantic-list "(TIMELOOP_S * CLOCKS_PER_SEC)" 4446 . 4475)))
+          ("XXHSUM32_DEFAULT_SEED" . ((number "0" 4543 . 4544)))
+          ("XXH_STATIC_LINKING_ONLY")
+          ("MEM_MODULE")
+          ("LIB_VERSION" . 
+              ((symbol "XXH_VERSION_MAJOR" 3627 . 3644) (punctuation "." 3644 . 3645) (symbol "XXH_VERSION_MINOR" 3645 . 3662) (punctuation "." 3662 . 3663) (symbol "XXH_VERSION_RELEASE" 3663 . 3682)))
+          ("SANITY_BUFFER_SIZE" . ((number "101" 14462 . 14465)))
+          ("KB" . ((punctuation "*" 4211 . 4212) (semantic-list "( 1<<10)" 4212 . 4220)))
+          ("DEFAULT_LINE_LENGTH" . ((semantic-list "(sizeof(XXH64_hash_t) * 2 + 2 + 4096 + 1)" 5026 . 5067)))
+          ("GB" . ((punctuation "*" 4253 . 4254) (semantic-list "(1U<<30)" 4254 . 4262)))
+          ("DISPLAYRESULT" (spp-arg-list ("...") 5320 . 5325) . ((symbol "fprintf" 5328 . 5335) (semantic-list "(stdout, __VA_ARGS__)" 5335 . 5356)))
+          ("XXHASH_C_2097394837")
+          ("DISPLAY" (spp-arg-list ("...") 5256 . 5261) . ((symbol "fprintf" 5270 . 5277) (semantic-list "(stderr, __VA_ARGS__)" 5277 . 5298)))
+          ("QUOTE" (spp-arg-list ("str") 3696 . 3701) . ((punctuation "#" 3702 . 3703) (symbol "str" 3703 . 3706)))
+          ("EXPAND_AND_QUOTE" (spp-arg-list ("str") 3731 . 3736) . ((symbol "QUOTE" 3737 . 3742) (semantic-list "(str)" 3742 . 3747)))
+          ("TIMELOOP_S" . ((number "1" 4426 . 4427)))
+          ("XXHSUM64_DEFAULT_SEED" . ((number "0" 4627 . 4628)))
+          ("MAX_MEM" . ((semantic-list "(2 GB - 64 MB)" 4701 . 4715)))
+          ("IS_CONSOLE" (spp-arg-list ("stdStream") 2649 . 2660) . ((symbol "isatty" 2661 . 2667) (semantic-list "(STDIN_FILENO)" 2667 . 2681)))
+          ("ENDIAN_NAME" . ((semantic-list "(BMK_isLittleEndian() ? g_lename : g_bename)" 3967 . 4011)))
+          ("MB" . ((punctuation "*" 4232 . 4233) (semantic-list "( 1<<20)" 4233 . 4241)))
+          ("NBLOOPS" . ((number "3" 4331 . 4332)))
+          ("MAX_LINE_LENGTH" . ((semantic-list "(32 KB)" 5131 . 5138)))
+          ("SET_BINARY_MODE" (spp-arg-list ("file") 2622 . 2628))
+          )
+))
+  :file "!home!maurice!github!xxHash!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

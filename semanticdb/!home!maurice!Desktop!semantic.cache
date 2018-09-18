@@ -1,0 +1,76 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("sys/types.h" include (:system-flag t) nil [40 62])
+            ("unistd.h" include (:system-flag t) nil [63 82])
+            ("set_task_state" variable (:constant-flag t) nil [92 106])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [189 194]))                  
+                :type "int")
+                nil [180 597]))          
+      :file "test.c"
+      :pointmax 598
+      :fsize 597
+      :lastmodtime '(23437 11086 432972 453000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("set_task_state" (spp-arg-list ("state_value") 106 . 119) . 
+              ((DO "do" 125 . 127) (semantic-list "{printf(\"Hello world %d\", state_value)}" 128 . 167) (WHILE "while" 168 . 173) (semantic-list "(0)" 174 . 177)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("list_head" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [41 71])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [41 71]))                  
+                :type "struct")
+                nil [21 74])
+            ("LIST_HEAD_INIT" variable (:constant-flag t) nil [84 98])
+            ("LIST_HEAD" variable (:constant-flag t) nil [139 148])
+            ("INIT_LIST_HEAD" variable (:constant-flag t) nil [216 230])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [314 319]))                  
+                :type "int")
+                nil [305 431]))          
+      :file "list.c"
+      :pointmax 432
+      :fsize 431
+      :lastmodtime '(23438 681 118968 669000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIST_HEAD_INIT" (spp-arg-list ("name") 98 . 104) . ((semantic-list "{ &(name), &(name)}" 110 . 129)))
+          ("LIST_HEAD" (spp-arg-list ("name") 148 . 154) . 
+              ((STRUCT "struct" 162 . 168) (symbol "list_head" 169 . 178) (symbol "name" 179 . 183) (punctuation "=" 184 . 185) (symbol "LIST_HEAD_INIT" 186 . 200) (semantic-list "(name)" 200 . 206)))
+          ("INIT_LIST_HEAD" (spp-arg-list ("ptr") 230 . 235) . 
+              ((DO "do" 236 . 238) (semantic-list "{				\\
+		(ptr)->next =(ptr); (ptr)->prev = (ptr);	\\
+	}" 239 . 293) (WHILE "while" 294 . 299) (semantic-list "(0)" 299 . 302)))
+          )
+))
+  :file "!home!maurice!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

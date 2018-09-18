@@ -1,0 +1,254 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/errno.h" include (:system-flag t) nil [255 279])
+            ("linux/sched.h" include (:system-flag t) nil [280 304])
+            ("linux/string.h" include (:system-flag t) nil [305 330])
+            ("linux/mm.h" include (:system-flag t) nil [331 352])
+            ("linux/smp.h" include (:system-flag t) nil [353 375])
+            ("linux/smp_lock.h" include (:system-flag t) nil [376 403])
+            ("linux/vmalloc.h" include (:system-flag t) nil [404 430])
+            ("linux/slab.h" include (:system-flag t) nil [431 454])
+            ("asm/uaccess.h" include (:system-flag t) nil [456 480])
+            ("asm/system.h" include (:system-flag t) nil [481 504])
+            ("asm/ldt.h" include (:system-flag t) nil [505 525])
+            ("asm/desc.h" include (:system-flag t) nil [526 547])
+            ("asm/proto.h" include (:system-flag t) nil [548 570])
+            ("alloc_ldt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pc" variable
+                       (:pointer 1
+                        :type ("mm_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [780 797])
+                    ("mincount" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [798 816])
+                    ("reload" variable (:type "int") (reparse-symbol arg-sub-list) [817 828]))                  
+                :type "int")
+                nil [759 1795])
+            ("copy_ldt" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mm_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1824 1841])
+                    ("old" variable
+                       (:pointer 1
+                        :type ("mm_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1843 1861]))                  
+                :type "int")
+                nil [1797 2000])
+            ("init_new_context" function
+               (:arguments 
+                  ( ("tsk" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2121 2145])
+                    ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2146 2167]))                  
+                :type "int")
+                nil [2100 2467])
+            ("destroy_context" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2569 2590]))                  
+                :type "void")
+                nil [2548 2768])
+            ("read_ldt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [2790 2803])
+                    ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2808])
+                    ("bytecount" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2809 2833]))                  
+                :type "int")
+                nil [2770 3470])
+            ("read_default_ldt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [3500 3513])
+                    ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3514 3518])
+                    ("bytecount" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3519 3543]))                  
+                :type "int")
+                nil [3472 3726])
+            ("write_ldt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [3749 3762])
+                    ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3763 3767])
+                    ("bytecount" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3768 3792])
+                    ("oldmode" variable (:type "int") (reparse-symbol arg-sub-list) [3793 3805]))                  
+                :type "int")
+                nil [3728 5017])
+            ("sys_modify_ldt" function
+               (:arguments 
+                  ( ("func" variable (:type "int") (reparse-symbol arg-sub-list) [5049 5058])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [5059 5072])
+                    ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5072 5076])
+                    ("bytecount" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5077 5101]))                  
+                :type "int")
+                nil [5030 5386]))          
+      :file "ldt.c"
+      :pointmax 5387
+      :fsize 5386
+      :lastmodtime '(16933 28030 0 0)
+      :unmatched-syntax '((punctuation 5071 . 5072) (symbol 5019 . 5029) (punctuation 3761 . 3762) (punctuation 3512 . 3513) (punctuation 2802 . 2803) (NEW 1838 . 1841)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [222 247])
+            ("linux/init.h" include (:system-flag t) nil [248 271])
+            ("linux/kernel.h" include (:system-flag t) nil [272 297])
+            ("linux/sched.h" include (:system-flag t) nil [298 322])
+            ("linux/string.h" include (:system-flag t) nil [323 348])
+            ("linux/bootmem.h" include (:system-flag t) nil [349 375])
+            ("linux/bitops.h" include (:system-flag t) nil [376 401])
+            ("asm/pda.h" include (:system-flag t) nil [402 422])
+            ("asm/pgtable.h" include (:system-flag t) nil [423 447])
+            ("asm/processor.h" include (:system-flag t) nil [448 474])
+            ("asm/desc.h" include (:system-flag t) nil [475 496])
+            ("asm/atomic.h" include (:system-flag t) nil [497 520])
+            ("asm/mmu_context.h" include (:system-flag t) nil [521 549])
+            ("asm/smp.h" include (:system-flag t) nil [550 570])
+            ("asm/i387.h" include (:system-flag t) nil [571 592])
+            ("asm/percpu.h" include (:system-flag t) nil [593 616])
+            ("asm/mtrr.h" include (:system-flag t) nil [617 638])
+            ("asm/proto.h" include (:system-flag t) nil [639 661])
+            ("asm/mman.h" include (:system-flag t) nil [662 683])
+            ("asm/numa.h" include (:system-flag t) nil [684 705])
+            ("__initdata" variable
+               (:default-value "{0,}"
+                :type "int")
+                nil [734 752])
+            ("__initdata" variable
+               (:default-value "CPU_MASK_NONE"
+                :type ("cpu_initialized" type (:type "class") nil nil))
+                nil [764 807])
+            ("__cacheline_aligned" variable (:type "int") nil [843 863])
+            ("init_task" variable
+               (:typemodifiers ("extern")
+                :type ("task_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [866 902])
+            ("__per_cpu_start" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "unsigned char")
+                nil [904 960])
+            ("__per_cpu_end" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "unsigned char")
+                nil [904 960])
+            ("cpu_gdt_descr" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("desc_ptr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [963 1002])
+            ("idt_descr" variable
+               (:default-value "{ 256 * 16, (unsigned long) idt_table }"
+                :type ("desc_ptr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1003 1071])
+            ("boot_cpu_stack" variable
+               (:dereference 1
+                :type "char")
+                nil [1074 1154])
+            ("0UL" variable (:type "int") nil [1194 1198])
+            ("__initdata" variable
+               (:default-value "0"
+                :type ("do_not_nx" type (:type "class") nil nil))
+                nil [1210 1235])
+            ("nonx_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1365 1375]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1347 1594])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nonx_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1615 1626]))                  
+                :type "int")
+                nil [1596 1627])
+            ("force_personality32" variable
+               (:default-value "READ_IMPLIES_EXEC"
+                :type "int")
+                nil [1657 1701])
+            ("nonx32_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1946 1956]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1926 2116])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nonx32_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2138 2151]))                  
+                :type "int")
+                nil [2117 2152])
+            ("setup_per_cpu_areas" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2322 2327]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2295 3052])
+            ("pda_init" function
+               (:arguments 
+                  ( ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [3069 3077]))                  
+                :type "void")
+                nil [3055 3900])
+            ("boot_exception_stacks" variable
+               (:dereference 1
+                :type "char")
+                nil [3903 4015])
+            ("syscall_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4092 4097]))                  
+                :type "void")
+                nil [4074 4557])
+            ("check_efer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4582 4587]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [4564 4755])
+            ("cpu_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5090 5095]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [5073 7283]))          
+      :file "setup64.c"
+      :pointmax 7284
+      :fsize 7283
+      :lastmodtime '(16933 27984 0 0)
+      :unmatched-syntax '((VOID 5068 . 5072) (VOID 4559 . 4563) (VOID 2290 . 2294) (string 2125 . 2136) (INT 1922 . 1925) (STATIC 1915 . 1921) (string 1604 . 1613) (INT 1343 . 1346) (INT 1206 . 1209) (STATIC 1199 . 1205) (punctuation 1193 . 1194) (punctuation 1191 . 1192) (symbol 1170 . 1190) (LONG 1165 . 1169) (UNSIGNED 1156 . 1164) (semantic-list 833 . 842) (symbol 826 . 833) (symbol 816 . 825) (STRUCT 809 . 815) (symbol 754 . 763) (semantic-list 727 . 733) (symbol 712 . 727) (CHAR 707 . 711))))
+  :file "!home!maurice!linux-2.6.11!arch!x86_64!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

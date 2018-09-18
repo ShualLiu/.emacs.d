@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "organic-green-theme-autoloads.el"
+      :pointmax 333
+      :fsize 623
+      :lastmodtime '(23419 42892 452513 946000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!organic-green-theme-20180522.1620!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

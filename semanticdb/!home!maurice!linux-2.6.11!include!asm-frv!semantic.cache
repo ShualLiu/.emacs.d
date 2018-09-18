@@ -1,0 +1,85 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_PGTABLE_H" variable (:constant-flag t) nil [526 540])
+            ("linux/config.h" include (:system-flag t) nil [542 567])
+            ("asm/mem-layout.h" include (:system-flag t) nil [568 595])
+            ("asm/setup.h" include (:system-flag t) nil [596 618])
+            ("asm/processor.h" include (:system-flag t) nil [619 645])
+            ("linux/threads.h" include (:system-flag t) nil [668 694])
+            ("linux/slab.h" include (:system-flag t) nil [695 718])
+            ("linux/list.h" include (:system-flag t) nil [719 742])
+            ("linux/spinlock.h" include (:system-flag t) nil [743 770])
+            ("pte_addr_t" type
+               (:typedef ("pte_t" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [868 894])
+            ("pgd_present" variable (:constant-flag t) nil [1058 1069])
+            ("pgd_none" variable (:constant-flag t) nil [1128 1136])
+            ("pgd_bad" variable (:constant-flag t) nil [1155 1162])
+            ("pgd_clear" variable (:constant-flag t) nil [1181 1190])
+            ("kern_addr_valid" variable (:constant-flag t) nil [1205 1220])
+            ("pmd_offset" variable (:constant-flag t) nil [1239 1249])
+            ("PAGE_NONE" variable (:constant-flag t) nil [1278 1287])
+            ("PAGE_SHARED" variable (:constant-flag t) nil [1343 1354])
+            ("PAGE_COPY" variable (:constant-flag t) nil [1410 1419])
+            ("PAGE_READONLY" variable (:constant-flag t) nil [1475 1488])
+            ("PAGE_KERNEL" variable (:constant-flag t) nil [1544 1555])
+            ("__swp_type" variable (:constant-flag t) nil [1612 1622])
+            ("__swp_offset" variable (:constant-flag t) nil [1639 1651])
+            ("__swp_entry" variable (:constant-flag t) nil [1668 1679])
+            ("__pte_to_swp_entry" variable (:constant-flag t) nil [1740 1758])
+            ("__swp_entry_to_pte" variable (:constant-flag t) nil [1805 1823])
+            ("pte_file" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pte" variable (:type ("pte_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1898 1908]))                  
+                :type "int")
+                nil [1871 1922])
+            ("ZERO_PAGE" variable (:constant-flag t) nil [1939 1948])
+            ("swapper_pg_dir" variable (:constant-flag t) nil [1984 1998])
+            ("pgtable_cache_init" variable (:constant-flag t) nil [2026 2044])
+            ("paging_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17437 17442]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [17418 17443]))          
+      :file "pgtable.h"
+      :pointmax 17500
+      :fsize 17499
+      :lastmodtime '(16933 27962 0 0)
+      :unmatched-syntax '((VOID 17413 . 17417) (EXTERN 17406 . 17412))
+      :lexical-table 
+        '(("_ASM_PGTABLE_H")
+          ("pgd_clear" (spp-arg-list ("pgdp") 1190 . 1196))
+          ("PAGE_READONLY" . ((symbol "__pgprot" 1490 . 1498) (semantic-list "(0)" 1498 . 1501)))
+          ("ZERO_PAGE" (spp-arg-list ("vaddr") 1948 . 1955) . ((semantic-list "({ BUG(); NULL; })" 1956 . 1974)))
+          ("__pte_to_swp_entry" (spp-arg-list ("pte") 1758 . 1763) . ((semantic-list "((swp_entry_t) { pte_val(pte) })" 1764 . 1796)))
+          ("__swp_offset" (spp-arg-list ("x") 1651 . 1654) . ((semantic-list "(0)" 1656 . 1659)))
+          ("pgd_bad" (spp-arg-list ("pgd") 1162 . 1167) . ((semantic-list "(0)" 1169 . 1172)))
+          ("__swp_entry_to_pte" (spp-arg-list ("x") 1823 . 1826) . ((semantic-list "((pte_t) { (x).val })" 1827 . 1848)))
+          ("pgd_none" (spp-arg-list ("pgd") 1136 . 1141) . ((semantic-list "(0)" 1143 . 1146)))
+          ("__swp_entry" (spp-arg-list ("typ" "off") 1679 . 1688) . ((semantic-list "((swp_entry_t) { ((typ) | ((off) << 7)) })" 1689 . 1731)))
+          ("pgtable_cache_init" (spp-arg-list nil 2044 . 2046) . 
+              ((DO "do" 2047 . 2049) (semantic-list "{}" 2050 . 2052) (WHILE "while" 2053 . 2058) (semantic-list "(0)" 2058 . 2061)))
+          ("pmd_offset" (spp-arg-list ("a" "b") 1249 . 1255) . ((semantic-list "((void *) 0)" 1256 . 1268)))
+          ("PAGE_NONE" . ((symbol "__pgprot" 1289 . 1297) (semantic-list "(0)" 1297 . 1300)))
+          ("__swp_type" (spp-arg-list ("x") 1622 . 1625) . ((semantic-list "(0)" 1627 . 1630)))
+          ("PAGE_COPY" . ((symbol "__pgprot" 1421 . 1429) (semantic-list "(0)" 1429 . 1432)))
+          ("swapper_pg_dir" . ((semantic-list "((pgd_t *) NULL)" 2000 . 2016)))
+          ("PAGE_KERNEL" . ((symbol "__pgprot" 1557 . 1565) (semantic-list "(0)" 1565 . 1568)))
+          ("pgd_present" (spp-arg-list ("pgd") 1069 . 1074) . ((semantic-list "(1)" 1075 . 1078)))
+          ("PAGE_SHARED" . ((symbol "__pgprot" 1356 . 1364) (semantic-list "(0)" 1364 . 1367)))
+          ("kern_addr_valid" (spp-arg-list ("addr") 1220 . 1226) . ((semantic-list "(1)" 1227 . 1230)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11!include!asm-frv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

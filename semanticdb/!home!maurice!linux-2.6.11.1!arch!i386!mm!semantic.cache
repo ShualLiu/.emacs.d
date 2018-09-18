@@ -1,0 +1,249 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [154 179])
+            ("linux/module.h" include (:system-flag t) nil [180 205])
+            ("linux/signal.h" include (:system-flag t) nil [206 231])
+            ("linux/sched.h" include (:system-flag t) nil [232 256])
+            ("linux/kernel.h" include (:system-flag t) nil [257 282])
+            ("linux/errno.h" include (:system-flag t) nil [283 307])
+            ("linux/string.h" include (:system-flag t) nil [308 333])
+            ("linux/types.h" include (:system-flag t) nil [334 358])
+            ("linux/ptrace.h" include (:system-flag t) nil [359 384])
+            ("linux/mman.h" include (:system-flag t) nil [385 408])
+            ("linux/mm.h" include (:system-flag t) nil [409 430])
+            ("linux/hugetlb.h" include (:system-flag t) nil [431 457])
+            ("linux/swap.h" include (:system-flag t) nil [458 481])
+            ("linux/smp.h" include (:system-flag t) nil [482 504])
+            ("linux/init.h" include (:system-flag t) nil [505 528])
+            ("linux/highmem.h" include (:system-flag t) nil [529 555])
+            ("linux/pagemap.h" include (:system-flag t) nil [556 582])
+            ("linux/bootmem.h" include (:system-flag t) nil [583 609])
+            ("linux/slab.h" include (:system-flag t) nil [610 633])
+            ("linux/proc_fs.h" include (:system-flag t) nil [634 660])
+            ("linux/efi.h" include (:system-flag t) nil [661 683])
+            ("asm/processor.h" include (:system-flag t) nil [685 711])
+            ("asm/system.h" include (:system-flag t) nil [712 735])
+            ("asm/uaccess.h" include (:system-flag t) nil [736 760])
+            ("asm/pgtable.h" include (:system-flag t) nil [761 785])
+            ("asm/dma.h" include (:system-flag t) nil [786 806])
+            ("asm/fixmap.h" include (:system-flag t) nil [807 830])
+            ("asm/e820.h" include (:system-flag t) nil [831 852])
+            ("asm/apic.h" include (:system-flag t) nil [853 874])
+            ("asm/tlb.h" include (:system-flag t) nil [875 895])
+            ("asm/tlbflush.h" include (:system-flag t) nil [896 921])
+            ("asm/sections.h" include (:system-flag t) nil [922 947])
+            ("DEFINE_PER_CPU" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mmu_gather" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1009 1027])
+                    ("" variable (:type ("mmu_gathers" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1040]))                  
+                :type "int")
+                nil [994 1041])
+            ("highstart_pfn" variable (:type "unsigned long") nil [1042 1083])
+            ("highend_pfn" variable (:type "unsigned long") nil [1042 1083])
+            ("do_test_wp_bit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1120 1125]))                  
+                :type ("noinline" type (:type "class") nil nil))
+                nil [1096 1126])
+            ("one_md_table_init" function
+               (:arguments 
+                  ( ("pgd" variable
+                       (:pointer 1
+                        :type ("pgd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1368 1379]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1343 1722])
+            ("one_page_table_init" function
+               (:arguments 
+                  ( ("pmd" variable
+                       (:pointer 1
+                        :type ("pmd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1859 1870]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1832 2140])
+            ("page_table_range_init" function
+               (:arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2536 2556])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2557 2575])
+                    ("pgd_base" variable
+                       (:pointer 1
+                        :type ("pgd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2576 2592]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2506 3142])
+            ("is_kernel_text" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3177 3196]))                  
+                :type "int")
+                nil [3144 3286])
+            ("kernel_physical_mapping_init" function
+               (:arguments 
+                  ( ("pgd_base" variable
+                       (:pointer 1
+                        :type ("pgd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3506 3522]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [3470 4664])
+            ("page_kills_ppro" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pagenr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4700 4721]))                  
+                :type "int")
+                nil [4666 4793])
+            ("is_available_memory" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("efi_memory_desc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4826 4846]))                  
+                :type "int")
+                nil [4795 4847])
+            ("page_is_ram" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pagenr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4879 4900]))                  
+                :type "int")
+                nil [4849 5738])
+            ("kmap_init" variable (:constant-flag t) nil [7225 7234])
+            ("permanent_kmaps_init" variable (:constant-flag t) nil [7262 7282])
+            ("set_highmem_pages_init" variable (:constant-flag t) nil [7318 7340])
+            ("__PAGE_KERNEL" variable
+               (:default-value "_PAGE_KERNEL"
+                :type "unsigned long long")
+                nil [7397 7445])
+            ("__PAGE_KERNEL_EXEC" variable
+               (:default-value "_PAGE_KERNEL_EXEC"
+                :type "unsigned long long")
+                nil [7446 7504])
+            ("remap_numa_kva" variable (:constant-flag t) nil [7542 7556])
+            ("pagetable_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7665 7670]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [7642 8830])
+            ("save_pg_dir" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9249 9254]))                  
+                :type "void")
+                nil [9218 9258])
+            ("zap_low_mappings" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9290 9295]))                  
+                :type "void")
+                nil [9267 9665])
+            ("zone_sizes_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9723 9728]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9700 10166])
+            ("__initdata" variable
+               (:default-value "0"
+                :type ("disable_nx" type (:type "class") nil nil))
+                nil [10254 10280])
+            ("_PAGE_NX" variable (:type "int") nil [10309 10318])
+            ("noexec_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10450 10466]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [10430 10663])
+            ("nx_enabled" variable
+               (:default-value "0"
+                :type "int")
+                nil [10665 10684])
+            ("paging_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11799 11804]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [11780 12215])
+            ("test_wp_bit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12542 12547]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [12523 13058])
+            ("set_max_mapnr_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13126 13131]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [13100 13254])
+            ("__free_all_bootmem" variable (:constant-flag t) nil [13263 13281])
+            ("kcore_mem" variable
+               (:typemodifiers ("static")
+                :type ("kcore_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13447 13497])
+            ("kcore_vmalloc" variable
+               (:typemodifiers ("static")
+                :type ("kcore_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13447 13497])
+            ("mem_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13521 13526]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [13505 15745])
+            ("pgd_cache" variable
+               (:pointer 1
+                :type ("kmem_cache_t" type (:type "class") nil nil))
+                nil [15747 15771])
+            ("pmd_cache" variable
+               (:pointer 1
+                :type ("kmem_cache_t" type (:type "class") nil nil))
+                nil [15772 15796])
+            ("pgtable_cache_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15829 15834]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [15803 16323])
+            ("do_test_wp_bit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16509 16514]))                  
+                :type ("noinline" type (:type "class") nil nil))
+                nil [16485 16846])
+            ("free_initmem" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16866 16871]))                  
+                :type "void")
+                nil [16848 17268]))          
+      :file "init.c"
+      :pointmax 17640
+      :fsize 17639
+      :lastmodtime '(16936 39506 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("set_highmem_pages_init" (spp-arg-list ("bad_ppro") 7340 . 7350) . 
+              ((DO "do" 7351 . 7353) (semantic-list "{ }" 7354 . 7357) (WHILE "while" 7358 . 7363) (semantic-list "(0)" 7364 . 7367)))
+          ("__free_all_bootmem" (spp-arg-list nil 13281 . 13283) . ((symbol "free_all_bootmem" 13284 . 13300) (semantic-list "()" 13300 . 13302)))
+          ("kmap_init" (spp-arg-list nil 7234 . 7236) . 
+              ((DO "do" 7237 . 7239) (semantic-list "{ }" 7240 . 7243) (WHILE "while" 7244 . 7249) (semantic-list "(0)" 7250 . 7253)))
+          ("permanent_kmaps_init" (spp-arg-list ("pgd_base") 7282 . 7292) . 
+              ((DO "do" 7293 . 7295) (semantic-list "{ }" 7296 . 7299) (WHILE "while" 7300 . 7305) (semantic-list "(0)" 7306 . 7309)))
+          ("remap_numa_kva" (spp-arg-list nil 7556 . 7558) . 
+              ((DO "do" 7559 . 7561) (semantic-list "{}" 7562 . 7564) (WHILE "while" 7565 . 7570) (semantic-list "(0)" 7571 . 7574)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11.1!arch!i386!mm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

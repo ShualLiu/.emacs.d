@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "yafolding-autoloads.el"
+      :pointmax 313
+      :fsize 805
+      :lastmodtime '(23419 42857 36070 698000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!yafolding-20170305.317!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

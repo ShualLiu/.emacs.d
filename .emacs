@@ -1,5 +1,7 @@
-(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+			 ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 (package-initialize) ;; You might already have this line
 
 ;;(add-to-list 'load-path "~/.emacs.d/custom")
@@ -73,7 +75,7 @@
  '(org-src-block-faces (quote (("emacs-lisp" (:background "#F0FFF0")))))
  '(package-selected-packages
    (quote
-    (evil-vimish-fold origami dimmer beacon pos-tip ranger treemacs-evil treemacs smooth-scrolling auto-complete-c-headers ac-c-headers md-readme dumb-jump iedit comment-dwim-2 emacs-setup dtrt-indent clean-aindent-mode counsel-projectile volatile-highlights ws-butler zygospore helm-gtags company-go company-c-headers ggtags irony organic-green-theme oceanic-theme helm-emms emms emojify-logos emojify minimap diff-hl py-yapf importmagic ob-ipython ipython-shell-send flymake-python-pyflakes flycheck-pyflakes py-autopep8 jedi jsonnet-mode sage-shell-mode python-mode py-isort yapfify live-py-mode elpy pyenv-mode anaconda-mode pyvenv cmake-project cmake-ide cmake-mode helm-make pkgbuild-mode go-imports go-impl go-direx flycheck-gometalinter exec-path-from-shell google-translate monokai-theme solarized-theme evil git-link go-tag ecb diminish smeargle golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
+    (cmake-font-lock cpputils-cmake neotree go-dlv doom-modeline tornado-template-mode ensime scala-mode config-general-mode yatemplate clang-format go-add-tags indent-tools rainbow-mode evil-vimish-fold origami dimmer beacon pos-tip ranger treemacs-evil treemacs smooth-scrolling auto-complete-c-headers ac-c-headers md-readme dumb-jump iedit comment-dwim-2 emacs-setup dtrt-indent clean-aindent-mode counsel-projectile volatile-highlights ws-butler zygospore helm-gtags company-go company-c-headers ggtags irony organic-green-theme oceanic-theme helm-emms emms emojify-logos emojify minimap diff-hl py-yapf importmagic ob-ipython ipython-shell-send flymake-python-pyflakes flycheck-pyflakes py-autopep8 jedi jsonnet-mode sage-shell-mode python-mode py-isort yapfify live-py-mode elpy pyenv-mode anaconda-mode pyvenv cmake-project cmake-ide cmake-mode helm-make pkgbuild-mode go-imports go-impl go-direx flycheck-gometalinter exec-path-from-shell google-translate monokai-theme solarized-theme evil git-link go-tag ecb diminish smeargle golden-ratio sr-speedbar symon anzu gotest sunshine imenu-list markdown-mode json-reformat gh-md helm-go-package random-splash-image auto-yasnippet yasnippet yasnippet-snippets ace-window autopair dockerfile-mode gitconfig-mode gitignore-mode go-autocomplete go-guru google-this helm-ag helm-projectile helm-swoop hl-todo lua-mode magit move-text nginx-mode nyan-mode protobuf-mode rainbow-delimiters yaml-mode)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(scroll-bar-mode nil)
@@ -129,7 +131,7 @@
 (global-undo-tree-mode)
 (projectile-global-mode)
 (go-guru-hl-identifier-mode)
-(require 'go-autocomplete)
+(require '                                                                                                                                                    go-autocomplete)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'go-mode-hook
 	  (lambda ()
@@ -139,7 +141,7 @@
 (move-text-default-bindings)
 (nyan-mode)
 (add-to-list 'load-path
-                "~/.emacs.d/elpa/yasnippet-snippets-20180616.1005/snippets")
+                "~/.emacs.d/elpa/yasnippet-snippets-20180825.1712/snippets")
 (yas-global-mode)
 
 (global-set-key (kbd "M-[") #'aya-create)
@@ -212,3 +214,4 @@
 (anzu-mode t)
 (smooth-scrolling-mode t)
 (beacon-mode)
+(global-set-key (kbd "M-s M-s") 'beacon-blink)

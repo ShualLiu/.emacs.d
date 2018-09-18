@@ -5023,6 +5023,45 @@
           ("SIOCDIFADDR" . ((number "0x8936" 2902 . 2908)))
           ("SIOCGIFTXQLEN" . ((number "0x8942" 3188 . 3194)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTLD_LAZY" variable (:constant-flag t) nil [1024 1033])
+            ("RTLD_NOW" variable (:constant-flag t) nil [1085 1093])
+            ("RTLD_BINDING_MASK" variable (:constant-flag t) nil [1150 1167])
+            ("RTLD_NOLOAD" variable (:constant-flag t) nil [1217 1228])
+            ("RTLD_DEEPBIND" variable (:constant-flag t) nil [1276 1289])
+            ("RTLD_GLOBAL" variable (:constant-flag t) nil [1534 1545])
+            ("RTLD_LOCAL" variable (:constant-flag t) nil [1727 1737])
+            ("RTLD_NODELETE" variable (:constant-flag t) nil [1790 1803])
+            ("DL_CALL_FCT" variable (:constant-flag t) nil [2280 2291])
+            ("_dl_mcount_wrapper_check" function
+               (:type "void"
+                :arguments 
+                  ( ("__selfpc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2475 2490]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2437 2499]))          
+      :file "dlfcn.h"
+      :pointmax 2521
+      :fsize 2520
+      :lastmodtime '(23131 13168 0 0)
+      :unmatched-syntax '((string 877 . 940) (symbol 871 . 876) (punctuation 869 . 870))
+      :lexical-table 
+        '(("RTLD_BINDING_MASK" . ((number "0x3" 1170 . 1173)))
+          ("RTLD_NOLOAD" . ((number "0x00004" 1229 . 1236)))
+          ("RTLD_DEEPBIND" . ((number "0x00008" 1290 . 1297)))
+          ("RTLD_GLOBAL" . ((number "0x00100" 1546 . 1553)))
+          ("RTLD_NODELETE" . ((number "0x01000" 1804 . 1811)))
+          ("RTLD_LAZY" . ((number "0x00001" 1034 . 1041)))
+          ("DL_CALL_FCT" (spp-arg-list ("fctp" "args") 2291 . 2303) . ((semantic-list "(_dl_mcount_wrapper_check ((void *) (fctp)), (*(fctp)) args)" 2308 . 2368)))
+          ("RTLD_LOCAL" . ((number "0" 1738 . 1739)))
+          ("RTLD_NOW" . ((number "0x00002" 1094 . 1101)))
+          )
 ))
   :file "!usr!include!x86_64-linux-gnu!bits!semantic.cache"
   :semantic-tag-version "2.0"

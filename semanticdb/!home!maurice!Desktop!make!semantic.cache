@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("hellomake.h" include (:system-flag t) nil [20 42])
+            ("myPrintHelloMake" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [66 71]))                  
+                :type "void")
+                nil [44 129]))          
+      :file "hellofunc.c"
+      :pointmax 130
+      :fsize 129
+      :lastmodtime '(23373 50230 375501 867000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "hellomake.c"
+      :pointmax 129
+      :fsize 128
+      :lastmodtime '(23374 40874 31413 68000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("myPrintHelloMake" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [57 62]))                  
+                :type "void")
+                nil [35 63]))          
+      :file "hellomake.h"
+      :pointmax 64
+      :fsize 63
+      :lastmodtime '(23373 50247 579716 565000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!Desktop!make!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -15,6 +15,599 @@
       :lexical-table 
         '(("_ASM_THREAD_INFO_H")
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_DESC_H" variable (:constant-flag t) nil [31 44])
+            ("asm/ldt.h" include (:system-flag t) nil [46 66])
+            ("asm/segment.h" include (:system-flag t) nil [67 91])
+            ("linux/preempt.h" include (:system-flag t) nil [115 141])
+            ("linux/smp.h" include (:system-flag t) nil [142 164])
+            ("linux/percpu.h" include (:system-flag t) nil [165 190])
+            ("asm/mmu.h" include (:system-flag t) nil [192 212])
+            ("cpu_gdt_table" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("desc_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [214 267])
+            ("DECLARE_PER_CPU" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("desc_struct" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [284 303])
+                    ("" variable (:type ("cpu_gdt_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [304 330]))                  
+                :type "int")
+                nil [268 332])
+            ("Xgt_desc_struct" type
+               (:members 
+                  ( ("size" variable (:type "unsigned short") (reparse-symbol classsubparts) [360 380])
+                    ("address" variable (:type "unsigned long") (reparse-symbol classsubparts) [382 428])
+                    ("pad" variable (:type "unsigned short") (reparse-symbol classsubparts) [430 449]))                  
+                :type "struct")
+                nil [334 477])
+            ("idt_descr" variable
+               (:typemodifiers ("extern")
+                :type ("Xgt_desc_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [479 543])
+            ("cpu_gdt_descr" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("Xgt_desc_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [479 543])
+            ("load_TR_desc" variable (:constant-flag t) nil [553 565])
+            ("load_LDT_desc" variable (:constant-flag t) nil [632 645])
+            ("default_ldt" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("desc_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [805 845])
+            ("set_intr_gate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [872 889])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [890 902]))                  
+                :type "void")
+                nil [846 903])
+            ("_set_tssldt_desc" variable (:constant-flag t) nil [913 929])
+            ("__set_tss_desc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1256 1273])
+                    ("entry" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1274 1293])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1294 1305]))                  
+                :type "void")
+                nil [1222 1437])
+            ("set_tss_desc" variable (:constant-flag t) nil [1447 1459])
+            ("set_ldt_desc" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1544 1561])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1562 1573])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1574 1592]))                  
+                :type "void")
+                nil [1512 1694])
+            ("LDT_entry_a" variable (:constant-flag t) nil [1704 1715])
+            ("LDT_entry_b" variable (:constant-flag t) nil [1805 1816])
+            ("LDT_empty" variable (:constant-flag t) nil [2169 2178])
+            ("load_TLS" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("thread_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2510 2534])
+                    ("cpu" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2535 2552]))                  
+                :type "void")
+                nil [2482 2666])
+            ("clear_LDT" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2697 2702]))                  
+                :type "void")
+                nil [2668 2799])
+            ("load_LDT_nolock" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pc" variable
+                       (:pointer 1
+                        :type ("mm_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2891 2908])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [2909 2917]))                  
+                :type "void")
+                nil [2856 3099])
+            ("load_LDT" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pc" variable
+                       (:pointer 1
+                        :type ("mm_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3129 3146]))                  
+                :type "void")
+                nil [3101 3211])
+            ("get_desc_base" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3255 3275]))                  
+                :type "unsigned long")
+                nil [3213 3417]))          
+      :file "desc.h"
+      :pointmax 3454
+      :fsize 3453
+      :lastmodtime '(16936 39491 0 0)
+      :unmatched-syntax '((semantic-list 317 . 330))
+      :lexical-table 
+        '(("LDT_entry_a" (spp-arg-list ("info") 1715 . 1721) . ((semantic-list "((((info)->base_addr & 0x0000ffff) << 16) | ((info)->limit & 0x0ffff))" 1725 . 1795)))
+          ("set_tss_desc" (spp-arg-list ("cpu" "addr") 1459 . 1469) . ((symbol "__set_tss_desc" 1470 . 1484) (semantic-list "(cpu, GDT_ENTRY_TSS, addr)" 1484 . 1510)))
+          ("LDT_entry_b" (spp-arg-list ("info") 1816 . 1822) . ((semantic-list "(((info)->base_addr & 0xff000000) | \\
+	(((info)->base_addr & 0x00ff0000) >> 16) | \\
+	((info)->limit & 0xf0000) | \\
+	(((info)->read_exec_only ^ 1) << 9) | \\
+	((info)->contents << 10) | \\
+	(((info)->seg_not_present ^ 1) << 15) | \\
+	((info)->seg_32bit << 22) | \\
+	((info)->limit_in_pages << 23) | \\
+	((info)->useable << 20) | \\
+	0x7000)" 1826 . 2159)))
+          ("load_LDT_desc" (spp-arg-list nil 645 . 647) . 
+              ((symbol "__asm__" 648 . 655) (symbol "__volatile__" 656 . 668) (semantic-list "(\"lldt %%ax\"::\"a\" (GDT_ENTRY_LDT*8))" 668 . 704)))
+          ("_set_tssldt_desc" (spp-arg-list ("n" "addr" "limit" "type") 929 . 948) . 
+              ((symbol "__asm__" 951 . 958) (symbol "__volatile__" 959 . 971) (semantic-list "(\"movw %w3,0(%2)\\n\\t\" \\
+	\"movw %%ax,2(%2)\\n\\t\" \\
+	\"rorl $16,%%eax\\n\\t\" \\
+	\"movb %%al,4(%2)\\n\\t\" \\
+	\"movb %4,5(%2)\\n\\t\" \\
+	\"movb $0,6(%2)\\n\\t\" \\
+	\"movb %%ah,7(%2)\\n\\t\" \\
+	\"rorl $16,%%eax\" \\
+	: \"=m\"(*(n)) : \"a\" (addr), \"r\"(n), \"ir\"(limit), \"i\"(type))" 972 . 1220)))
+          ("LDT_empty" (spp-arg-list ("info") 2178 . 2184) . ((semantic-list "(\\
+	(info)->base_addr	== 0	&& \\
+	(info)->limit		== 0	&& \\
+	(info)->contents	== 0	&& \\
+	(info)->read_exec_only	== 1	&& \\
+	(info)->seg_32bit	== 0	&& \\
+	(info)->limit_in_pages	== 0	&& \\
+	(info)->seg_not_present	== 1	&& \\
+	(info)->useable		== 0	)" 2185 . 2427)))
+          ("__ARCH_DESC_H")
+          ("load_TR_desc" (spp-arg-list nil 565 . 567) . 
+              ((symbol "__asm__" 568 . 575) (symbol "__volatile__" 576 . 588) (semantic-list "(\"ltr %%ax\"::\"a\" (GDT_ENTRY_TSS*8))" 588 . 623)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_FIXMAP_H" variable (:constant-flag t) nil [376 389])
+            ("linux/config.h" include (:system-flag t) nil [391 416])
+            ("__FIXADDR_TOP" variable (:constant-flag t) nil [552 565])
+            ("linux/kernel.h" include (:system-flag t) nil [599 624])
+            ("asm/acpi.h" include (:system-flag t) nil [625 646])
+            ("asm/apicdef.h" include (:system-flag t) nil [647 671])
+            ("asm/page.h" include (:system-flag t) nil [672 693])
+            ("fixed_addresses" type
+               (:members 
+                  ( ("FIX_HOLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1528 1537])
+                    ("FIX_VSYSCALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1539 1552])
+                    ("__end_of_permanent_fixed_addresses" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2442 2477])
+                    ("FIX_BTMAP_END" variable
+                       (:constant-flag t
+                        :default-value (2593 2627)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2577 2628])
+                    ("FIX_BTMAP_BEGIN" variable
+                       (:constant-flag t
+                        :default-value (2648 2676)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2630 2677])
+                    ("FIX_WP_TEST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2684 2696])
+                    ("__end_of_fixed_addresses" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2698 2724]))                  
+                :type "enum")
+                nil [1504 2725])
+            ("__set_fixmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("idx" variable (:type ("fixed_addresses" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2753 2778])
+                    ("phys" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2784 2803])
+                    ("flags" variable (:type ("pgprot_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2819]))                  
+                :type "void")
+                nil [2727 2820])
+            ("set_fixmap" variable (:constant-flag t) nil [2830 2840])
+            ("set_fixmap_nocache" variable (:constant-flag t) nil [2965 2983])
+            ("clear_fixmap" variable (:constant-flag t) nil [3053 3065])
+            ("FIXADDR_TOP" variable (:constant-flag t) nil [3118 3129])
+            ("__FIXADDR_SIZE" variable (:constant-flag t) nil [3170 3184])
+            ("__FIXADDR_BOOT_SIZE" variable (:constant-flag t) nil [3244 3263])
+            ("FIXADDR_START" variable (:constant-flag t) nil [3313 3326])
+            ("FIXADDR_BOOT_START" variable (:constant-flag t) nil [3367 3385])
+            ("__fix_to_virt" variable (:constant-flag t) nil [3431 3444])
+            ("__virt_to_fix" variable (:constant-flag t) nil [3492 3505])
+            ("FIXADDR_USER_START" variable (:constant-flag t) nil [3685 3703])
+            ("FIXADDR_USER_END" variable (:constant-flag t) nil [3742 3758])
+            ("__this_fixmap_does_not_exist" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3835 3840]))                  
+                :type "void")
+                nil [3794 3841])
+            ("fix_to_virt" function
+               (:arguments 
+                  ( ("idx" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4103 4126]))                  
+                :type "unsigned long")
+                nil [4077 4562])
+            ("virt_to_fix" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vaddr" variable
+                       (:constant-flag t
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [4604 4630]))                  
+                :type "unsigned long")
+                nil [4564 4720]))          
+      :file "fixmap.h"
+      :pointmax 4756
+      :fsize 4755
+      :lastmodtime '(16936 39492 0 0)
+      :unmatched-syntax '((symbol "__inline" 4061 . 4076) (STATIC 4054 . 4060) (number 2680 . 2681) (punctuation 2678 . 2679) (spp-macro-def 2559 . 2572))
+      :lexical-table 
+        '(("FIXADDR_START" . ((semantic-list "(FIXADDR_TOP - __FIXADDR_SIZE)" 3328 . 3358)))
+          ("NR_FIX_BTMAPS" . ((number "16" 2573 . 2575)))
+          ("set_fixmap" (spp-arg-list ("idx" "phys") 2840 . 2851) . ((symbol "__set_fixmap" 2856 . 2868) (semantic-list "(idx, phys, PAGE_KERNEL)" 2868 . 2892)))
+          ("__fix_to_virt" (spp-arg-list ("x") 3444 . 3447) . ((semantic-list "(FIXADDR_TOP - ((x) << PAGE_SHIFT))" 3448 . 3483)))
+          ("FIXADDR_USER_START" . ((semantic-list "(__fix_to_virt(FIX_VSYSCALL))" 3704 . 3733)))
+          ("_ASM_FIXMAP_H")
+          ("FIXADDR_USER_END" . ((semantic-list "(FIXADDR_USER_START + PAGE_SIZE)" 3759 . 3791)))
+          ("clear_fixmap" (spp-arg-list ("idx") 3065 . 3070) . ((symbol "__set_fixmap" 3075 . 3087) (semantic-list "(idx, 0, __pgprot(0))" 3087 . 3108)))
+          ("set_fixmap_nocache" (spp-arg-list ("idx" "phys") 2983 . 2994) . ((symbol "__set_fixmap" 2999 . 3011) (semantic-list "(idx, phys, PAGE_KERNEL_NOCACHE)" 3011 . 3043)))
+          ("__FIXADDR_BOOT_SIZE" . ((semantic-list "(__end_of_fixed_addresses << PAGE_SHIFT)" 3264 . 3304)))
+          ("FIXADDR_BOOT_START" . ((semantic-list "(FIXADDR_TOP - __FIXADDR_BOOT_SIZE)" 3386 . 3421)))
+          ("__virt_to_fix" (spp-arg-list ("x") 3505 . 3508) . ((semantic-list "((FIXADDR_TOP - ((x)&PAGE_MASK)) >> PAGE_SHIFT)" 3509 . 3556)))
+          ("FIXADDR_TOP" . ((semantic-list "((unsigned long)__FIXADDR_TOP)" 3130 . 3160)))
+          ("__FIXADDR_TOP" . ((number "0xfffff000" 566 . 576)))
+          ("__FIXADDR_SIZE" . ((semantic-list "(__end_of_permanent_fixed_addresses << PAGE_SHIFT)" 3185 . 3235)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_I386_TLBFLUSH_H" variable (:constant-flag t) nil [34 50])
+            ("linux/config.h" include (:system-flag t) nil [52 77])
+            ("linux/mm.h" include (:system-flag t) nil [78 99])
+            ("asm/processor.h" include (:system-flag t) nil [100 126])
+            ("__flush_tlb" variable (:constant-flag t) nil [136 147])
+            ("__flush_tlb_global" variable (:constant-flag t) nil [524 542])
+            ("pgkern_mask" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [960 993])
+            ("__flush_tlb_all" variable (:constant-flag t) nil [1004 1019])
+            ("cpu_has_invlpg" variable (:constant-flag t) nil [1160 1174])
+            ("__flush_tlb_single" variable (:constant-flag t) nil [1208 1226])
+            ("__flush_tlb_one" variable (:constant-flag t) nil [1390 1405])
+            ("flush_tlb" variable (:constant-flag t) nil [2168 2177])
+            ("flush_tlb_all" variable (:constant-flag t) nil [2202 2215])
+            ("local_flush_tlb" variable (:constant-flag t) nil [2244 2259])
+            ("flush_tlb_mm" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2309 2330]))                  
+                :type "void")
+                nil [2277 2382])
+            ("flush_tlb_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2418 2445])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2447 2466]))                  
+                :type "void")
+                nil [2384 2534])
+            ("flush_tlb_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2571 2598])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2600 2620])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2621 2639]))                  
+                :type "void")
+                nil [2536 2699])
+            ("flush_tlb_kernel_range" variable (:constant-flag t) nil [3369 3391])
+            ("flush_tlb_pgtables" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3459 3480])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3491 3511])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3512 3530]))                  
+                :type "void")
+                nil [3421 3589]))          
+      :file "tlbflush.h"
+      :pointmax 3621
+      :fsize 3620
+      :lastmodtime '(16936 39510 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__flush_tlb_all" (spp-arg-list nil 1019 . 1021) . 
+              ((DO "do" 1030 . 1032) (semantic-list "{								\\
+		if (cpu_has_pge)					\\
+			__flush_tlb_global();				\\
+		else							\\
+			__flush_tlb();					\\
+	}" 1033 . 1140) (WHILE "while" 1141 . 1146) (semantic-list "(0)" 1147 . 1150)))
+          ("cpu_has_invlpg" . ((semantic-list "(boot_cpu_data.x86 > 3)" 1175 . 1198)))
+          ("flush_tlb_kernel_range" (spp-arg-list ("start" "end") 3391 . 3403) . ((symbol "flush_tlb_all" 3404 . 3417) (semantic-list "()" 3417 . 3419)))
+          ("flush_tlb" (spp-arg-list nil 2177 . 2179) . ((symbol "__flush_tlb" 2180 . 2191) (semantic-list "()" 2191 . 2193)))
+          ("flush_tlb_all" (spp-arg-list nil 2215 . 2217) . ((symbol "__flush_tlb_all" 2218 . 2233) (semantic-list "()" 2233 . 2235)))
+          ("__flush_tlb" (spp-arg-list nil 147 . 149) . 
+              ((DO "do" 159 . 161) (semantic-list "{								\\
+		unsigned int tmpreg;					\\
+									\\
+		__asm__ __volatile__(					\\
+			\"movl %%cr3, %0;              \\n\"		\\
+			\"movl %0, %%cr3;  # flush TLB \\n\"		\\
+			: \"=r\" (tmpreg)					\\
+			:: \"memory\");					\\
+	}" 162 . 373) (WHILE "while" 374 . 379) (semantic-list "(0)" 380 . 383)))
+          ("__flush_tlb_global" (spp-arg-list nil 542 . 544) . 
+              ((DO "do" 553 . 555) (semantic-list "{								\\
+		unsigned int tmpreg;					\\
+									\\
+		__asm__ __volatile__(					\\
+			\"movl %1, %%cr4;  # turn off PGE     \\n\"	\\
+			\"movl %%cr3, %0;                     \\n\"	\\
+			\"movl %0, %%cr3;  # flush TLB        \\n\"	\\
+			\"movl %2, %%cr4;  # turn PGE back on \\n\"	\\
+			: \"=&r\" (tmpreg)				\\
+			: \"r\" (mmu_cr4_features & ~X86_CR4_PGE),	\\
+			  \"r\" (mmu_cr4_features)			\\
+			: \"memory\");					\\
+	}" 556 . 948) (WHILE "while" 949 . 954) (semantic-list "(0)" 955 . 958)))
+          ("__flush_tlb_single" (spp-arg-list ("addr") 1226 . 1232) . 
+              ((symbol "__asm__" 1236 . 1243) (symbol "__volatile__" 1244 . 1256) (semantic-list "(\"invlpg %0\": :\"m\" (*(char *) addr))" 1256 . 1292)))
+          ("local_flush_tlb" (spp-arg-list nil 2259 . 2261) . ((symbol "__flush_tlb" 2262 . 2273) (semantic-list "()" 2273 . 2275)))
+          ("__flush_tlb_one" (spp-arg-list ("addr") 1405 . 1411) . 
+              ((DO "do" 1420 . 1422) (semantic-list "{								\\
+		if (cpu_has_invlpg)					\\
+			__flush_tlb_single(addr);			\\
+		else							\\
+			__flush_tlb();					\\
+	}" 1423 . 1536) (WHILE "while" 1537 . 1542) (semantic-list "(0)" 1543 . 1546)))
+          ("_I386_TLBFLUSH_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASMi386_TIMER_H" variable (:constant-flag t) nil [34 50])
+            ("linux/init.h" include (:system-flag t) nil [51 74])
+            ("timer_opts" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [668 679])
+                    ("mark_offset" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [701 706]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [681 707])
+                    ("get_offset" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [737 742]))                          
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [709 743])
+                    ("monotonic_clock" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [783 788]))                          
+                        :type "unsigned long long")
+                        (reparse-symbol classsubparts) [745 789])
+                    ("delay" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [805 819]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [791 820]))                  
+                :type "struct")
+                nil [647 823])
+            ("init_timer_opts" type
+               (:members 
+                  ( ("init" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [863 877]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [851 879])
+                    ("opts" variable
+                       (:pointer 1
+                        :type ("timer_opts" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [881 905]))                  
+                :type "struct")
+                nil [825 908])
+            ("TICK_SIZE" variable (:constant-flag t) nil [918 927])
+            ("select_timer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [994 999]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [974 1000])
+            ("clock_fallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1028 1033]))                  
+                :type "void")
+                nil [1001 1034])
+            ("setup_pit_timer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1056 1061]))                  
+                :type "void")
+                nil [1035 1062])
+            ("pit_latch_buggy" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1104 1131])
+            ("cur_timer" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("timer_opts" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1133 1169])
+            ("timer_ack" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1170 1191])
+            ("timer_none" variable
+               (:typemodifiers ("extern")
+                :type ("timer_opts" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1223 1259])
+            ("timer_pit" variable
+               (:typemodifiers ("extern")
+                :type ("timer_opts" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1260 1295])
+            ("timer_pit_init" variable
+               (:typemodifiers ("extern")
+                :type ("init_timer_opts" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1296 1341])
+            ("timer_tsc_init" variable
+               (:typemodifiers ("extern")
+                :type ("init_timer_opts" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1342 1387])
+            ("calibrate_tsc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1513 1518]))                  
+                :type "unsigned long")
+                nil [1478 1519])
+            ("init_cpu_khz" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1545 1550]))                  
+                :type "void")
+                nil [1520 1551]))          
+      :file "timer.h"
+      :pointmax 1800
+      :fsize 1799
+      :lastmodtime '(16936 39495 0 0)
+      :unmatched-syntax '((punctuation 972 . 973) (symbol 962 . 972) (STRUCT 955 . 961) (EXTERN 948 . 954) (OVERRIDE 869 . 877))
+      :lexical-table 
+        '(("TICK_SIZE" . ((semantic-list "(tick_nsec / 1000)" 928 . 946)))
+          ("_ASMi386_TIMER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_I386_ERRNO_H" variable (:constant-flag t) nil [31 44])
+            ("asm-generic/errno.h" include (:system-flag t) nil [46 76]))          
+      :file "errno.h"
+      :pointmax 85
+      :fsize 84
+      :lastmodtime '(16936 39497 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_I386_ERRNO_H")
+          )
 ))
   :file "!home!maurice!linux-2.6.11.1!include!asm-i386!semantic.cache"
   :semantic-tag-version "2.0"
