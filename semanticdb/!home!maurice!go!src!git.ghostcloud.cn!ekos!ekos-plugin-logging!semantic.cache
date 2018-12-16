@@ -1,0 +1,38 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("log" "code-check" "unit-test" "compile" "package" "install-prepare" "install-config" "tests" "operation-start" "operation-stop" "operation-upgrade" "operation-degrade" "operation-log" "operation-monitor")) nil [1 183])
+            (".PHONY" function (:arguments ("all")) nil [183 196])
+            ("log" function nil nil [197 235])
+            ("code-check" function nil nil [257 291])
+            ("unit-test" function nil nil [292 324])
+            ("compile" function nil nil [325 353])
+            ("package" function nil nil [354 382])
+            ("install-prepare" function nil nil [399 443])
+            ("install-config" function nil nil [444 486])
+            ("tests" function nil nil [487 511])
+            ("operation-start" function nil nil [530 574])
+            ("operation-stop" function nil nil [575 617])
+            ("operation-upgrade" function nil nil [618 666])
+            ("operation-degrade" function nil nil [667 715])
+            ("operation-log" function nil nil [716 756])
+            ("operation-monitor" function nil nil [757 805])
+            (".PHONY" function (:arguments ("check")) nil [869 883])
+            ("before-check" function nil nil [898 930])
+            ("gofmt-check" function nil nil [945 976])
+            ("golint-check" function nil nil [991 1024])
+            ("govet-check" function nil nil [1044 1075])
+            ("build" function nil nil [1075 1100]))          
+      :file "Makefile"
+      :pointmax 1100
+      :fsize 1099
+      :lastmodtime '(23460 41016 653454 981000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!go!src!git.ghostcloud.cn!ekos!ekos-plugin-logging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -492,6 +492,20 @@
           ("LOCK" . ((string "\"\"" 291 . 293)))
           ("ATOMIC_INIT" (spp-arg-list ("i") 564 . 567) . ((semantic-list "{ (i) }" 568 . 575)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_X86_64_SEMAPHORE_H" variable (:constant-flag t) nil [37 56])
+            ("linux/linkage.h" include (:system-flag t) nil [58 84]))          
+      :file "semaphore.h"
+      :pointmax 5432
+      :fsize 5431
+      :lastmodtime '(16933 27962 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_X86_64_SEMAPHORE_H")
+          )
 ))
   :file "!home!maurice!linux-2.6.11!include!asm-x86_64!semantic.cache"
   :semantic-tag-version "2.0"

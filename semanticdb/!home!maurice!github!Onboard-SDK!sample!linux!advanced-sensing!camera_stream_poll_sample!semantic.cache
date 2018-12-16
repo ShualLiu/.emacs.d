@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("dji_vehicle.hpp" include nil nil [1455 1481])
+            ("iostream" include (:system-flag t) nil [1482 1501])
+            ("dji_linux_helpers.hpp" include nil nil [1502 1534])
+            ("DJI::OSDK" using (:type ("DJI::OSDK" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1642 1668])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1669 1688])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1689 1709])
+            ("show_rgb" function
+               (:arguments 
+                  ( ("img" variable (:type ("CameraRGBImage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1725 1744])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1745 1756]))                  
+                :type "void")
+                nil [1711 2003])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2014 2023])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2024 2036]))                  
+                :type "int")
+                nil [2005 4136]))          
+      :file "camera-stream-poll-sample.cpp"
+      :pointmax 4137
+      :fsize 4136
+      :lastmodtime '(23460 45682 516579 26000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!github!Onboard-SDK!sample!linux!advanced-sensing!camera_stream_poll_sample!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

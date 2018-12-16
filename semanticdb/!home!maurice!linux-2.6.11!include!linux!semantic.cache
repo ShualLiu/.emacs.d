@@ -1225,6 +1225,87 @@
 }" 8483 . 8556) (WHILE "while" 8557 . 8562) (semantic-list "(0)" 8563 . 8566)))
           ("write_lock_irq" (spp-arg-list ("lock") 12713 . 12719) . ((symbol "_write_lock_irq" 12721 . 12736) (semantic-list "(lock)" 12736 . 12742)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_COMPLETION_H" variable (:constant-flag t) nil [38 58])
+            ("linux/wait.h" include (:system-flag t) nil [198 221])
+            ("completion" type
+               (:members 
+                  ( ("done" variable (:type "unsigned int") (reparse-symbol classsubparts) [244 262])
+                    ("wait" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [264 287]))                  
+                :type "struct")
+                nil [223 290])
+            ("COMPLETION_INITIALIZER" variable (:constant-flag t) nil [300 322])
+            ("DECLARE_COMPLETION" variable (:constant-flag t) nil [391 409])
+            ("init_completion" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("completion" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [509 530]))                  
+                :type "void")
+                nil [474 580])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("wait_for_completion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [603 643]))                  
+                :type "void")
+                nil [582 645])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("wait_for_completion_interruptible" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [666 721]))                  
+                :type "int")
+                nil [646 723])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("wait_for_completion_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [754 835]))                  
+                :type "unsigned long")
+                nil [724 837])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("wait_for_completion_interruptible_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 958]))                  
+                :type "unsigned long")
+                nil [838 960])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("complete" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [983 1012]))                  
+                :type "void")
+                nil [962 1014])
+            ("FASTCALL" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("complete_all" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1036 1069]))                  
+                :type "void")
+                nil [1015 1071])
+            ("INIT_COMPLETION" variable (:constant-flag t) nil [1081 1096]))          
+      :file "completion.h"
+      :pointmax 1123
+      :fsize 1122
+      :lastmodtime '(16933 28030 0 0)
+      :unmatched-syntax '((semantic-list 1048 . 1069) (semantic-list 991 . 1012) (semantic-list 909 . 958) (semantic-list 781 . 835) (semantic-list 699 . 721) (semantic-list 622 . 643))
+      :lexical-table 
+        '(("COMPLETION_INITIALIZER" (spp-arg-list ("work") 322 . 328) . ((semantic-list "{ 0, __WAIT_QUEUE_HEAD_INITIALIZER((work).wait) }" 332 . 381)))
+          ("__LINUX_COMPLETION_H")
+          ("DECLARE_COMPLETION" (spp-arg-list ("work") 409 . 415) . 
+              ((STRUCT "struct" 419 . 425) (symbol "completion" 426 . 436) (symbol "work" 437 . 441) (punctuation "=" 442 . 443) (symbol "COMPLETION_INITIALIZER" 444 . 466) (semantic-list "(work)" 466 . 472)))
+          ("INIT_COMPLETION" (spp-arg-list ("x") 1096 . 1099) . ((semantic-list "((x).done = 0)" 1100 . 1114)))
+          )
 ))
   :file "!home!maurice!linux-2.6.11!include!linux!semantic.cache"
   :semantic-tag-version "2.0"

@@ -66,7 +66,7 @@
           )
 )
     (semanticdb-table "semanticdb-table"
-      :major-mode c-mode
+      :major-mode c++-mode
       :tags nil
       :file "stdc-predef.h"
       :pointmax 2402
@@ -5180,7 +5180,7 @@
           )
 )
     (semanticdb-table "semanticdb-table"
-      :major-mode c-mode
+      :major-mode c++-mode
       :tags 
         '( ("_XLOCALE_H" variable (:constant-flag t) nil [912 922])
             ("__locale_struct" type
@@ -6616,6 +6616,141 @@
           ("_DLFCN_H" . ((number "1" 872 . 873)))
           ("__need_size_t")
           ("RTLD_NEXT" . ((semantic-list "((void *) -1l)" 1316 . 1330)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_TERMIOS_H" variable (:constant-flag t) nil [889 899])
+            ("features.h" include (:system-flag t) nil [903 924])
+            ("tcflow" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [3283 3292])
+                    ("__action" variable (:type "int") (reparse-symbol arg-sub-list) [3293 3306]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3264 3315])
+            ("tcflush" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [3113 3122])
+                    ("__queue_selector" variable (:type "int") (reparse-symbol arg-sub-list) [3123 3144]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3093 3153])
+            ("tcdrain" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [2976 2985]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2956 2986])
+            ("tcsendbreak" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [2784 2793])
+                    ("__duration" variable (:type "int") (reparse-symbol arg-sub-list) [2794 2809]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2760 2818])
+            ("tcsetattr" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [2512 2521])
+                    ("__optional_actions" variable (:type "int") (reparse-symbol arg-sub-list) [2522 2545])
+                    ("__termios_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2554 2588]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2490 2597])
+            ("tcgetattr" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [2335 2344])
+                    ("__termios_p" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2345 2373]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2313 2382])
+            ("cfsetispeed" function
+               (:type "int"
+                :arguments 
+                  ( ("__termios_p" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2035 2063])
+                    ("__speed" variable (:type ("speed_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2064 2080]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2011 2089])
+            ("cfsetospeed" function
+               (:type "int"
+                :arguments 
+                  ( ("__termios_p" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1893 1921])
+                    ("__speed" variable (:type ("speed_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1938]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1869 1947])
+            ("cfgetispeed" function
+               (:type ("speed_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__termios_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1761 1795]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1733 1804])
+            ("cfgetospeed" function
+               (:type ("speed_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__termios_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1632 1666]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1604 1675])
+            ("bits/termios.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1282 1307]))          
+      :file "termios.h"
+      :pointmax 3599
+      :fsize 3598
+      :lastmodtime '(23131 13168 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_TERMIOS_H" . ((number "1" 900 . 901)))
           )
 ))
   :file "!usr!include!semantic.cache"

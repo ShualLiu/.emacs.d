@@ -1491,9 +1491,14 @@
           )
 )
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("signal.h" include (:system-flag t) nil [1 20]))          
       :file "signal.h"
+      :pointmax 21
       :fsize 20
-      :lastmodtime '(23131 13168 0 0))
+      :lastmodtime '(23131 13168 0 0)
+      :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
       :tags 
@@ -2217,7 +2222,11 @@
           ("CQUIT" . ((number "034" 2821 . 2824)))
           ("CFLUSH" . ((symbol "CDISCARD" 3159 . 3167)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :file "unistd.h"
+      :fsize 20
+      :lastmodtime '(23131 13168 0 0)))
   :file "!usr!include!x86_64-linux-gnu!sys!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "yahoo-weather-autoloads.el"
+      :pointmax 321
+      :fsize 1165
+      :lastmodtime '(23459 22805 953096 88000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!.emacs.d!elpa!yahoo-weather-20170822.2244!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

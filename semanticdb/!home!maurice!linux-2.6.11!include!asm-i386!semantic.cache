@@ -1727,6 +1727,19 @@
       :lexical-table 
         '(("_I386_SEMAPHORE_H")
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_I386_RWSEM_H" variable (:constant-flag t) nil [1377 1390]))          
+      :file "rwsem.h"
+      :pointmax 7882
+      :fsize 7880
+      :lastmodtime '(16933 28000 0 0)
+      :unmatched-syntax '((string 1422 . 1492) (symbol 1416 . 1421) (punctuation 1415 . 1416) (string 1422 . 1492) (symbol 1416 . 1421) (punctuation 1415 . 1416))
+      :lexical-table 
+        '(("_I386_RWSEM_H")
+          )
 ))
   :file "!home!maurice!linux-2.6.11!include!asm-i386!semantic.cache"
   :semantic-tag-version "2.0"

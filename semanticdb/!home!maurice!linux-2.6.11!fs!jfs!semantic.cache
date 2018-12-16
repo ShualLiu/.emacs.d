@@ -1,0 +1,1442 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_JFS_INCORE" variable (:constant-flag t) nil [906 919])
+            ("linux/rwsem.h" include (:system-flag t) nil [921 945])
+            ("linux/slab.h" include (:system-flag t) nil [946 969])
+            ("linux/bitops.h" include (:system-flag t) nil [970 995])
+            ("jfs_types.h" include nil nil [996 1018])
+            ("jfs_xtree.h" include nil nil [1019 1041])
+            ("jfs_dtree.h" include nil nil [1042 1064])
+            ("JFS_SUPER_MAGIC" variable (:constant-flag t) nil [1101 1116])
+            ("jfs_inode_info" type
+               (:members 
+                  ( ("fileset" variable (:type "int") (reparse-symbol classsubparts) [1207 1219])
+                    ("mode2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1253 1264])
+                    ("ixpxd" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1292 1306])
+                    ("acl" variable (:type ("dxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1339 1349])
+                    ("ea" variable (:type ("dxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1377 1386])
+                    ("otime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1413 1426])
+                    ("next_index" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1448 1464])
+                    ("acltype" variable (:type "int") (reparse-symbol classsubparts) [1509 1521])
+                    ("btorder" variable (:type "short") (reparse-symbol classsubparts) [1541 1555])
+                    ("btindex" variable (:type "short") (reparse-symbol classsubparts) [1576 1590])
+                    ("ipimap" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1616 1637])
+                    ("cflag" variable (:type "long") (reparse-symbol classsubparts) [1657 1668])
+                    ("bxflag" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1691 1702])
+                    ("agno" variable (:type ("unchar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1735 1747])
+                    ("active_ag" variable (:type "signed char") (reparse-symbol classsubparts) [1768 1790])
+                    ("blid" variable (:type ("lid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1827 1838])
+                    ("atlhead" variable (:type ("lid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1869 1883])
+                    ("atltail" variable (:type ("lid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1917 1931])
+                    ("ag_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1965 1984])
+                    ("anon_inode_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2012 2045])
+                    ("rdwrlock" variable (:type ("rw_semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2288 2317])
+                    ("commit_sem" variable (:type ("semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2570 2598])
+                    ("xattr_sem" variable (:type ("rw_semaphore" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2669 2699])
+                    ("xtlid" variable (:type ("lid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2701 2713])
+                    ("u" variable (:type ("" type
+                         (:members 
+                            ( ("file" variable (:type ("" type
+                                   (:members 
+                                      ( ("_xtroot" variable (:type ("xtpage_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2870 2887])
+                                        ("_imap" variable
+                                           (:pointer 1
+                                            :type ("inomap" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [2913 2934]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [2858 2970])
+                              ("dir" variable (:type ("" type
+                                   (:members 
+                                      ( ("_table" variable
+                                           (:dereference 1
+                                            :type ("dir_table_slot" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [2985 3018])
+                                        ("_dtroot" variable (:type ("dtroot_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3042 3059]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [2973 3090])
+                              ("link" variable (:type ("" type
+                                   (:members 
+                                      ( ("_unused" variable
+                                           (:dereference 1
+                                            :type ("unchar" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [3105 3124])
+                                        ("_dxd" variable (:type ("dxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3138 3149])
+                                        ("_inline" variable
+                                           (:dereference 1
+                                            :type ("unchar" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [3164 3184])
+                                        ("_inline_ea" variable
+                                           (:dereference 1
+                                            :type ("unchar" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [3315 3338]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [3093 3380]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [2848 3386])
+                    ("dev" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3388 3396])
+                    ("vfs_inode" variable (:type ("inode" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3436 3459]))                  
+                :type "struct")
+                nil [1182 3462])
+            ("i_xtroot" variable (:constant-flag t) nil [3471 3479])
+            ("i_imap" variable (:constant-flag t) nil [3503 3509])
+            ("i_dirtable" variable (:constant-flag t) nil [3531 3541])
+            ("i_dtroot" variable (:constant-flag t) nil [3563 3571])
+            ("i_inline" variable (:constant-flag t) nil [3594 3602])
+            ("i_inline_ea" variable (:constant-flag t) nil [3626 3637])
+            ("JFS_ACL_NOT_CACHED" variable (:constant-flag t) nil [3665 3683])
+            ("IREAD_LOCK" variable (:constant-flag t) nil [3706 3716])
+            ("IREAD_UNLOCK" variable (:constant-flag t) nil [3763 3775])
+            ("IWRITE_LOCK" variable (:constant-flag t) nil [3819 3830])
+            ("IWRITE_UNLOCK" variable (:constant-flag t) nil [3878 3891])
+            ("cflags" type
+               (:members 
+                  ( ("COMMIT_Nolink" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3960 3974])
+                    ("COMMIT_Inlineea" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4020 4036])
+                    ("COMMIT_Freewmap" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4067 4083])
+                    ("COMMIT_Dirty" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4113 4126])
+                    ("COMMIT_Dirtable" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4157 4173])
+                    ("COMMIT_Stale" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4211 4224])
+                    ("COMMIT_Synclist" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4264 4280]))                  
+                :type "enum")
+                nil [3945 4329])
+            ("set_cflag" variable (:constant-flag t) nil [4339 4348])
+            ("clear_cflag" variable (:constant-flag t) nil [4403 4414])
+            ("test_cflag" variable (:constant-flag t) nil [4471 4481])
+            ("test_and_clear_cflag" variable (:constant-flag t) nil [4537 4557])
+            ("jfs_sb_info" type
+               (:members 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4686 4709])
+                    ("mntflag" variable (:type "unsigned long") (reparse-symbol classsubparts) [4748 4770])
+                    ("ipbmap" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4799 4820])
+                    ("ipaimap" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4845 4867])
+                    ("ipaimap2" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4901 4924])
+                    ("ipimap" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4954 4975])
+                    ("log" variable
+                       (:pointer 1
+                        :type ("jfs_log" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5009 5029])
+                    ("log_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5044 5070])
+                    ("bsize" variable (:type "short") (reparse-symbol classsubparts) [5112 5125])
+                    ("l2bsize" variable (:type "short") (reparse-symbol classsubparts) [5153 5168])
+                    ("nbperpage" variable (:type "short") (reparse-symbol classsubparts) [5200 5217])
+                    ("l2nbperpage" variable (:type "short") (reparse-symbol classsubparts) [5242 5261])
+                    ("l2niperblk" variable (:type "short") (reparse-symbol classsubparts) [5290 5308])
+                    ("logdev" variable (:type ("dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5337 5351])
+                    ("aggregate" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5380 5396])
+                    ("logpxd" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5436 5450])
+                    ("fsckpxd" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5478 5493])
+                    ("ait2" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5527 5539])
+                    ("uuid" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5572 5587])
+                    ("loguuid" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5619 5637])
+                    ("commit_state" variable (:type "int") (reparse-symbol classsubparts) [5784 5802])
+                    ("gengen" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5849 5862])
+                    ("inostamp" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5897 5912])
+                    ("bmap" variable
+                       (:pointer 1
+                        :type ("bmap" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5984 6002])
+                    ("nls_tab" variable
+                       (:pointer 1
+                        :type ("nls_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6034 6060])
+                    ("state" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6086 6098])
+                    ("flag" variable (:type "unsigned long") (reparse-symbol classsubparts) [6128 6147])
+                    ("p_state" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6173 6187]))                  
+                :type "struct")
+                nil [4664 6230])
+            ("IN_LAZYCOMMIT" variable (:constant-flag t) nil [6271 6284])
+            ("JFS_IP" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6332 6352]))                  
+                :type ("jfs_inode_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6288 6417])
+            ("JFS_SBI" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6461 6484]))                  
+                :type ("jfs_sb_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6419 6511])
+            ("isReadOnly" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6542 6562]))                  
+                :type "int")
+                nil [6513 6621]))          
+      :file "jfs_incore.h"
+      :pointmax 6650
+      :fsize 6649
+      :lastmodtime '(16933 27979 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IREAD_LOCK" (spp-arg-list ("ip") 3716 . 3720) . ((symbol "down_read" 3722 . 3731) (semantic-list "(&JFS_IP(ip)->rdwrlock)" 3731 . 3754)))
+          ("IWRITE_LOCK" (spp-arg-list ("ip") 3830 . 3834) . ((symbol "down_write" 3836 . 3846) (semantic-list "(&JFS_IP(ip)->rdwrlock)" 3846 . 3869)))
+          ("i_imap" . 
+              ((symbol "u" 3510 . 3511) (punctuation "." 3511 . 3512) (symbol "file" 3512 . 3516) (punctuation "." 3516 . 3517) (symbol "_imap" 3517 . 3522)))
+          ("IN_LAZYCOMMIT" . ((number "1" 6285 . 6286)))
+          ("_H_JFS_INCORE")
+          ("i_inline_ea" . 
+              ((symbol "u" 3638 . 3639) (punctuation "." 3639 . 3640) (symbol "link" 3640 . 3644) (punctuation "." 3644 . 3645) (symbol "_inline_ea" 3645 . 3655)))
+          ("IREAD_UNLOCK" (spp-arg-list ("ip") 3775 . 3779) . ((symbol "up_read" 3780 . 3787) (semantic-list "(&JFS_IP(ip)->rdwrlock)" 3787 . 3810)))
+          ("IWRITE_UNLOCK" (spp-arg-list ("ip") 3891 . 3895) . ((symbol "up_write" 3896 . 3904) (semantic-list "(&JFS_IP(ip)->rdwrlock)" 3904 . 3927)))
+          ("set_cflag" (spp-arg-list ("flag" "ip") 4348 . 4358) . ((symbol "set_bit" 4359 . 4366) (semantic-list "(flag, &(JFS_IP(ip)->cflag))" 4366 . 4394)))
+          ("JFS_ACL_NOT_CACHED" . ((semantic-list "((void *)-1)" 3684 . 3696)))
+          ("test_and_clear_cflag" (spp-arg-list ("flag" "ip") 4557 . 4567) . ((symbol "test_and_clear_bit" 4571 . 4589) (semantic-list "(flag, &(JFS_IP(ip)->cflag))" 4589 . 4617)))
+          ("JFS_SUPER_MAGIC" . ((number "0x3153464a" 1117 . 1127)))
+          ("i_xtroot" . 
+              ((symbol "u" 3480 . 3481) (punctuation "." 3481 . 3482) (symbol "file" 3482 . 3486) (punctuation "." 3486 . 3487) (symbol "_xtroot" 3487 . 3494)))
+          ("i_dirtable" . 
+              ((symbol "u" 3542 . 3543) (punctuation "." 3543 . 3544) (symbol "dir" 3544 . 3547) (punctuation "." 3547 . 3548) (symbol "_table" 3548 . 3554)))
+          ("i_dtroot" . 
+              ((symbol "u" 3572 . 3573) (punctuation "." 3573 . 3574) (symbol "dir" 3574 . 3577) (punctuation "." 3577 . 3578) (symbol "_dtroot" 3578 . 3585)))
+          ("i_inline" . 
+              ((symbol "u" 3603 . 3604) (punctuation "." 3604 . 3605) (symbol "link" 3605 . 3609) (punctuation "." 3609 . 3610) (symbol "_inline" 3610 . 3617)))
+          ("clear_cflag" (spp-arg-list ("flag" "ip") 4414 . 4424) . ((symbol "clear_bit" 4425 . 4434) (semantic-list "(flag, &(JFS_IP(ip)->cflag))" 4434 . 4462)))
+          ("test_cflag" (spp-arg-list ("flag" "ip") 4481 . 4491) . ((symbol "test_bit" 4492 . 4500) (semantic-list "(flag, &(JFS_IP(ip)->cflag))" 4500 . 4528)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_JFS_TYPES" variable (:constant-flag t) nil [844 856])
+            ("linux/types.h" include (:system-flag t) nil [1021 1045])
+            ("linux/nls.h" include (:system-flag t) nil [1046 1068])
+            ("endian24.h" include nil nil [1070 1091])
+            ("tid_t" type
+               (:typedef ("u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1256 1274])
+            ("lid_t" type
+               (:typedef ("u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1275 1293])
+            ("timestruc_t" type
+               (:members 
+                  ( ("tv_sec" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1379 1393])
+                    ("tv_nsec" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1395 1410]))                  
+                :type "struct")
+                nil [1357 1413])
+            ("LEFTMOSTONE" variable (:constant-flag t) nil [1440 1451])
+            ("HIGHORDER" variable (:constant-flag t) nil [1471 1480])
+            ("ONES" variable (:constant-flag t) nil [1536 1540])
+            ("boolean_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1590 1612])
+            ("TRUE" variable (:constant-flag t) nil [1621 1625])
+            ("FALSE" variable (:constant-flag t) nil [1636 1641])
+            ("lxd_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("len" variable
+                             (:suffix ":24"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [1690 1706])
+                          ("off1" variable
+                             (:suffix ":8"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [1708 1724])
+                          ("off2" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1726 1735]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1672 1744])
+            ("LXDlength" variable (:constant-flag t) nil [1785 1794])
+            ("LXDoffset" variable (:constant-flag t) nil [1844 1853])
+            ("lengthLXD" variable (:constant-flag t) nil [1993 2002])
+            ("offsetLXD" variable (:constant-flag t) nil [2031 2040])
+            ("lxdlist" type
+               (:members 
+                  ( ("maxnlxd" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2127 2139])
+                    ("nlxd" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2141 2150])
+                    ("lxd" variable
+                       (:pointer 1
+                        :type ("lxd_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2152 2163]))                  
+                :type "struct")
+                nil [2109 2166])
+            ("pxd_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("len" variable
+                             (:suffix ":24"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2214 2230])
+                          ("addr1" variable
+                             (:suffix ":8"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2232 2249])
+                          ("addr2" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2251 2264]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2196 2273])
+            ("PXDlength" variable (:constant-flag t) nil [2314 2323])
+            ("PXDaddress" variable (:constant-flag t) nil [2386 2396])
+            ("lengthPXD" variable (:constant-flag t) nil [2555 2564])
+            ("addressPXD" variable (:constant-flag t) nil [2604 2614])
+            ("MAXTREEHEIGHT" variable (:constant-flag t) nil [2692 2705])
+            ("pxdlist" type
+               (:members 
+                  ( ("maxnpxd" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2741 2753])
+                    ("npxd" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2755 2764])
+                    ("pxd" variable
+                       (:dereference 1
+                        :type ("pxd_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2766 2791]))                  
+                :type "struct")
+                nil [2723 2794])
+            ("dxd_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("flag" variable
+                             (:suffix ":8"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2854 2870])
+                          ("rsrvd" variable
+                             (:suffix ":24"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2887 2905])
+                          ("size" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2907 2919])
+                          ("len" variable
+                             (:suffix ":24"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2944 2960])
+                          ("addr1" variable
+                             (:suffix ":8"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2999 3016])
+                          ("addr2" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3056 3069]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2836 3117])
+            ("DXD_INDEX" variable (:constant-flag t) nil [3160 3169])
+            ("DXD_INLINE" variable (:constant-flag t) nil [3203 3213])
+            ("DXD_EXTENT" variable (:constant-flag t) nil [3253 3263])
+            ("DXD_FILE" variable (:constant-flag t) nil [3309 3317])
+            ("DXD_CORRUPT" variable (:constant-flag t) nil [3362 3373])
+            ("DXDlength" variable (:constant-flag t) nil [3494 3503])
+            ("DXDaddress" variable (:constant-flag t) nil [3522 3532])
+            ("lengthDXD" variable (:constant-flag t) nil [3552 3561])
+            ("addressDXD" variable (:constant-flag t) nil [3580 3590])
+            ("DXDsize" variable (:constant-flag t) nil [3610 3617])
+            ("sizeDXD" variable (:constant-flag t) nil [3675 3682])
+            ("component_name" type
+               (:members 
+                  ( ("namlen" variable (:type "int") (reparse-symbol classsubparts) [3779 3790])
+                    ("name" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol classsubparts) [3792 3806]))                  
+                :type "struct")
+                nil [3754 3809])
+            ("dasd" type
+               (:members 
+                  ( ("thresh" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3888 3898])
+                    ("delta" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3936 3945])
+                    ("rsrvd1" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3991 4001])
+                    ("limit_hi" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4003 4015])
+                    ("limit_lo" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4061 4077])
+                    ("rsrvd2" variable
+                       (:dereference 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4122 4135])
+                    ("used_hi" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4137 4148])
+                    ("used_lo" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4194 4209]))                  
+                :type "struct")
+                nil [3873 4256])
+            ("DASDLIMIT" variable (:constant-flag t) nil [4266 4275])
+            ("setDASDLIMIT" variable (:constant-flag t) nil [4364 4376])
+            ("DASDUSED" variable (:constant-flag t) nil [4491 4499])
+            ("setDASDUSED" variable (:constant-flag t) nil [4586 4597]))          
+      :file "jfs_types.h"
+      :pointmax 4730
+      :fsize 4729
+      :lastmodtime '(16933 28001 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DXD_INDEX" . ((number "0x80" 3170 . 3174)))
+          ("DASDUSED" (spp-arg-list ("dasdp") 4499 . 4506) . ((semantic-list "(((u64)((dasdp)->used_hi) << 32) + __le32_to_cpu((dasdp)->used_lo))" 4510 . 4577)))
+          ("sizeDXD" (spp-arg-list ("dxd") 3682 . 3687) . ((symbol "le32_to_cpu" 3688 . 3699) (semantic-list "((dxd)->size)" 3699 . 3712)))
+          ("_H_JFS_TYPES")
+          ("TRUE" . ((number "1" 1626 . 1627)))
+          ("setDASDLIMIT" (spp-arg-list ("dasdp" "limit") 4376 . 4390) . ((semantic-list "{\\
+	(dasdp)->limit_hi = ((u64)limit) >> 32;\\
+	(dasdp)->limit_lo = __cpu_to_le32(limit);\\
+}" 4392 . 4482)))
+          ("FALSE" . ((number "0" 1642 . 1643)))
+          ("LXDoffset" (spp-arg-list ("lxd" "offset64") 1853 . 1868) . ((semantic-list "{\\
+	(lxd)->off1 = ((s64)offset64) >> 32;\\
+	(lxd)->off2 = (offset64) & 0xffffffff;\\
+}" 1870 . 1954)))
+          ("offsetLXD" (spp-arg-list ("lxd") 2040 . 2045) . ((semantic-list "( ((s64)((lxd)->off1)) << 32 | (lxd)->off2 )" 2048 . 2092)))
+          ("DXD_FILE" . ((number "0x10" 3318 . 3322)))
+          ("DXDlength" . ((symbol "PXDlength" 3504 . 3513)))
+          ("lengthDXD" . ((symbol "lengthPXD" 3562 . 3571)))
+          ("MAXTREEHEIGHT" . ((number "8" 2706 . 2707)))
+          ("DXD_CORRUPT" . ((number "0x08" 3374 . 3378)))
+          ("DXDsize" (spp-arg-list ("dxd" "size32") 3617 . 3630) . ((semantic-list "((dxd)->size = cpu_to_le32(size32))" 3631 . 3666)))
+          ("DASDLIMIT" (spp-arg-list ("dasdp") 4275 . 4282) . ((semantic-list "(((u64)((dasdp)->limit_hi) << 32) + __le32_to_cpu((dasdp)->limit_lo))" 4286 . 4355)))
+          ("ONES" . ((symbol "0xffffffffu" 1542 . 1553)))
+          ("DXD_INLINE" . ((number "0x40" 3214 . 3218)))
+          ("addressDXD" . ((symbol "addressPXD" 3591 . 3601)))
+          ("PXDlength" (spp-arg-list ("pxd" "length32") 2323 . 2338) . ((semantic-list "((pxd)->len = __cpu_to_le24(length32))" 2339 . 2377)))
+          ("lengthPXD" (spp-arg-list ("pxd") 2564 . 2569) . ((symbol "__le24_to_cpu" 2570 . 2583) (semantic-list "((pxd)->len)" 2583 . 2595)))
+          ("PXDaddress" (spp-arg-list ("pxd" "address64") 2396 . 2412) . ((semantic-list "{\\
+	(pxd)->addr1 = ((s64)address64) >> 32;\\
+	(pxd)->addr2 = __cpu_to_le32((address64) & 0xffffffff);\\
+}" 2414 . 2517)))
+          ("setDASDUSED" (spp-arg-list ("dasdp" "used") 4597 . 4610) . ((semantic-list "{\\
+	(dasdp)->used_hi = ((u64)used) >> 32;\\
+	(dasdp)->used_lo = __cpu_to_le32(used);\\
+}" 4612 . 4698)))
+          ("DXDaddress" . ((symbol "PXDaddress" 3533 . 3543)))
+          ("LXDlength" (spp-arg-list ("lxd" "length32") 1794 . 1809) . ((semantic-list "( (lxd)->len = length32 )" 1810 . 1835)))
+          ("lengthLXD" (spp-arg-list ("lxd") 2002 . 2007) . ((semantic-list "( (lxd)->len )" 2008 . 2022)))
+          ("addressPXD" (spp-arg-list ("pxd") 2614 . 2619) . ((semantic-list "( ((s64)((pxd)->addr1)) << 32 | __le32_to_cpu((pxd)->addr2))" 2622 . 2682)))
+          ("HIGHORDER" . ((symbol "0x80000000u" 1481 . 1492)))
+          ("LEFTMOSTONE" . ((number "0x80000000" 1452 . 1462)))
+          ("DXD_EXTENT" . ((number "0x20" 3264 . 3268)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_JFS_XTREE" variable (:constant-flag t) nil [847 859])
+            ("jfs_btree.h" include nil nil [935 957])
+            ("xad" type
+               (:members 
+                  ( ("flag" variable
+                       (:suffix ":8"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1032 1048])
+                    ("rsvrd" variable
+                       (:suffix ":16"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1064 1082])
+                    ("off1" variable
+                       (:suffix ":8"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1102 1118])
+                    ("off2" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1157 1169])
+                    ("len" variable
+                       (:suffix ":24"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1209 1225])
+                    ("addr1" variable
+                       (:suffix ":8"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1264 1281])
+                    ("addr2" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1321 1334]))                  
+                :type "struct")
+                nil [1010 1382])
+            ("xad_t" type
+               (:typedef ("xad" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1010 1382])
+            ("MAXXLEN" variable (:constant-flag t) nil [1405 1412])
+            ("XTSLOTSIZE" variable (:constant-flag t) nil [1446 1456])
+            ("L2XTSLOTSIZE" variable (:constant-flag t) nil [1473 1485])
+            ("XADoffset" variable (:constant-flag t) nil [1531 1540])
+            ("XADaddress" variable (:constant-flag t) nil [1679 1689])
+            ("XADlength" variable (:constant-flag t) nil [1833 1842])
+            ("offsetXAD" variable (:constant-flag t) nil [1940 1949])
+            ("addressXAD" variable (:constant-flag t) nil [2031 2041])
+            ("lengthXAD" variable (:constant-flag t) nil [2125 2134])
+            ("xadlist" type
+               (:members 
+                  ( ("maxnxad" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2201 2213])
+                    ("nxad" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2215 2224])
+                    ("xad" variable
+                       (:pointer 1
+                        :type ("xad_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2226 2237]))                  
+                :type "struct")
+                nil [2183 2240])
+            ("XAD_NEW" variable (:constant-flag t) nil [2268 2275])
+            ("XAD_EXTENDED" variable (:constant-flag t) nil [2307 2319])
+            ("XAD_COMPRESSED" variable (:constant-flag t) nil [2351 2365])
+            ("XAD_NOTRECORDED" variable (:constant-flag t) nil [2418 2433])
+            ("XAD_COW" variable (:constant-flag t) nil [2480 2487])
+            ("XTROOTINITSLOT_DIR" variable (:constant-flag t) nil [2566 2584])
+            ("XTROOTINITSLOT" variable (:constant-flag t) nil [2596 2610])
+            ("XTROOTMAXSLOT" variable (:constant-flag t) nil [2623 2636])
+            ("XTPAGEMAXSLOT" variable (:constant-flag t) nil [2650 2663])
+            ("XTENTRYSTART" variable (:constant-flag t) nil [2678 2690])
+            ("xtpage_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable (:type ("xtheader" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [2741 3025])
+                          ("xtheader" type
+                             (:members 
+                                ( ("next" variable (:type ("__le64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2761 2773])
+                                  ("prev" variable (:type ("__le64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2785 2797])
+                                  ("flag" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2810 2818])
+                                  ("rsrvd1" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2830 2840])
+                                  ("nextindex" variable (:type ("__le16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2852 2869])
+                                  ("maxentry" variable (:type ("__le16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2912 2928])
+                                  ("rsrvd2" variable (:type ("__le16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2962 2976])
+                                  ("self" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2989 3000]))                                
+                              :type "struct")
+                              (reparse-symbol classsubparts) [2741 3025])
+                          ("xad" variable
+                             (:dereference 1
+                              :type ("xad_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3040 3065]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [2724 3108])
+            ("xtLookup" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3166 3183])
+                    ("lstart" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3184 3195])
+                    ("llen" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3196 3205])
+                    ("pflag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3212 3223])
+                    ("paddr" variable
+                       (:pointer 1
+                        :type ("s64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3224 3236])
+                    ("plen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3237 3247])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [3248 3257]))                  
+                :type "int")
+                nil [3146 3258])
+            ("xtLookupList" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3283 3300])
+                    ("lxdlist" variable
+                       (:pointer 1
+                        :type ("lxdlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3301 3326])
+                    ("xadlist" variable
+                       (:pointer 1
+                        :type ("xadlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3330 3355])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [3356 3365]))                  
+                :type "int")
+                nil [3259 3366])
+            ("xtInitRoot" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3390 3400])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3401 3418]))                  
+                :type "void")
+                nil [3367 3419])
+            ("xtInsert" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3440 3450])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3451 3468])
+                    ("xflag" variable (:type "int") (reparse-symbol arg-sub-list) [3475 3485])
+                    ("xoff" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3486 3495])
+                    ("xlen" variable (:type "int") (reparse-symbol arg-sub-list) [3496 3505])
+                    ("xaddrp" variable
+                       (:pointer 1
+                        :type ("s64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3506 3519])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [3520 3529]))                  
+                :type "int")
+                nil [3420 3530])
+            ("xtExtend" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3551 3561])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3562 3579])
+                    ("xoff" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3580 3589])
+                    ("xlen" variable (:type "int") (reparse-symbol arg-sub-list) [3590 3599])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [3606 3615]))                  
+                :type "int")
+                nil [3531 3616])
+            ("xtUpdate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3760 3770])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3771 3788])
+                    ("nxad" variable
+                       (:pointer 1
+                        :type ("xad" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3789 3806]))                  
+                :type "int")
+                nil [3740 3807])
+            ("xtDelete" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3828 3838])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3839 3856])
+                    ("xoff" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3857 3866])
+                    ("xlen" variable (:type "int") (reparse-symbol arg-sub-list) [3867 3876])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [3883 3892]))                  
+                :type "int")
+                nil [3808 3893])
+            ("xtTruncate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3916 3926])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3927 3944])
+                    ("newsize" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3945 3957])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [3958 3967]))                  
+                :type ("s64" type (:type "class") nil nil))
+                nil [3894 3968])
+            ("xtTruncate_pmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3996 4006])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4007 4024])
+                    ("committed_size" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4025 4044]))                  
+                :type ("s64" type (:type "class") nil nil))
+                nil [3969 4045])
+            ("xtRelocate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4068 4078])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4079 4096])
+                    ("oxad" variable
+                       (:pointer 1
+                        :type ("xad_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4105 4118])
+                    ("nxaddr" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4119 4130])
+                    ("xtype" variable (:type "int") (reparse-symbol arg-sub-list) [4131 4141]))                  
+                :type "int")
+                nil [4046 4142])
+            ("xtAppend" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4163 4173])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4180 4197])
+                    ("xflag" variable (:type "int") (reparse-symbol arg-sub-list) [4198 4208])
+                    ("xoff" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4209 4218])
+                    ("maxblocks" variable (:type "int") (reparse-symbol arg-sub-list) [4219 4233])
+                    ("xlenp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4240 4251])
+                    ("xaddrp" variable
+                       (:pointer 1
+                        :type ("s64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4252 4265])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [4266 4275]))                  
+                :type "int")
+                nil [4143 4276]))          
+      :file "jfs_xtree.h"
+      :pointmax 4477
+      :fsize 4476
+      :lastmodtime '(16933 28025 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_H_JFS_XTREE")
+          ("XTSLOTSIZE" . ((number "16" 1462 . 1464)))
+          ("addressXAD" (spp-arg-list ("xad") 2041 . 2046) . ((semantic-list "( ((s64)((xad)->addr1)) << 32 | __le32_to_cpu((xad)->addr2))" 2056 . 2116)))
+          ("XAD_COW" . ((number "0x10" 2496 . 2500)))
+          ("L2XTSLOTSIZE" . ((number "4" 1489 . 1490)))
+          ("XADoffset" (spp-arg-list ("xad" "offset64") 1540 . 1555) . ((semantic-list "{\\
+        (xad)->off1 = ((u64)offset64) >> 32;\\
+        (xad)->off2 = __cpu_to_le32((offset64) & 0xffffffff);\\
+}" 1557 . 1670)))
+          ("offsetXAD" (spp-arg-list ("xad") 1949 . 1954) . ((semantic-list "( ((s64)((xad)->off1)) << 32 | __le32_to_cpu((xad)->off2))" 1964 . 2022)))
+          ("XADaddress" (spp-arg-list ("xad" "address64") 1689 . 1705) . ((semantic-list "{\\
+        (xad)->addr1 = ((u64)address64) >> 32;\\
+        (xad)->addr2 = __cpu_to_le32((address64) & 0xffffffff);\\
+}" 1707 . 1824)))
+          ("XAD_NEW" . ((number "0x01" 2284 . 2288)))
+          ("XTPAGEMAXSLOT" . ((number "256" 2666 . 2669)))
+          ("XTROOTINITSLOT" . ((number "10" 2612 . 2614)))
+          ("MAXXLEN" . ((semantic-list "((1 << 24) - 1)" 1421 . 1436)))
+          ("XAD_NOTRECORDED" . ((number "0x08" 2434 . 2438)))
+          ("XTROOTINITSLOT_DIR" . ((number "6" 2586 . 2587)))
+          ("XADlength" (spp-arg-list ("xad" "length32") 1842 . 1857) . 
+              ((semantic-list "(xad)" 1865 . 1870) (punctuation "-" 1870 . 1871) (punctuation ">" 1871 . 1872) (symbol "len" 1872 . 1875) (punctuation "=" 1876 . 1877) (symbol "__cpu_to_le24" 1878 . 1891) (semantic-list "(length32)" 1891 . 1901)))
+          ("lengthXAD" (spp-arg-list ("xad") 2134 . 2139) . ((symbol "__le24_to_cpu" 2141 . 2154) (semantic-list "((xad)->len)" 2154 . 2166)))
+          ("XAD_COMPRESSED" . ((number "0x04" 2367 . 2371)))
+          ("XAD_EXTENDED" . ((number "0x02" 2323 . 2327)))
+          ("XTROOTMAXSLOT" . ((number "18" 2639 . 2641)))
+          ("XTENTRYSTART" . ((number "2" 2694 . 2695)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_JFS_DTREE" variable (:constant-flag t) nil [847 859])
+            ("jfs_btree.h" include nil nil [911 933])
+            ("ddata_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("leaf" variable (:type ("" type
+                               (:members 
+                                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [963 973])
+                                    ("ip" variable
+                                       (:pointer 1
+                                        :type ("inode" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [976 993])
+                                    ("ino" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [996 1004]))                                  
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [952 1013])
+                          ("xd" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1015 1024]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [935 1035])
+            ("dtslot" type
+               (:members 
+                  ( ("next" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1302 1310])
+                    ("cnt" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1322 1329])
+                    ("name" variable
+                       (:dereference 1
+                        :type ("__le16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1342 1358]))                  
+                :type "struct")
+                nil [1285 1371])
+            ("DATASLOTSIZE" variable (:constant-flag t) nil [1396 1408])
+            ("L2DATASLOTSIZE" variable (:constant-flag t) nil [1420 1434])
+            ("DTSLOTSIZE" variable (:constant-flag t) nil [1445 1455])
+            ("L2DTSLOTSIZE" variable (:constant-flag t) nil [1467 1479])
+            ("DTSLOTHDRSIZE" variable (:constant-flag t) nil [1490 1503])
+            ("DTSLOTDATASIZE" variable (:constant-flag t) nil [1514 1528])
+            ("DTSLOTDATALEN" variable (:constant-flag t) nil [1540 1553])
+            ("idtentry" type
+               (:members 
+                  ( ("xd" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1626 1635])
+                    ("next" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1672 1680])
+                    ("namlen" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1692 1702])
+                    ("name" variable
+                       (:dereference 1
+                        :type ("__le16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1714 1730]))                  
+                :type "struct")
+                nil [1607 1758])
+            ("DTIHDRSIZE" variable (:constant-flag t) nil [1782 1792])
+            ("DTIHDRDATALEN" variable (:constant-flag t) nil [1804 1817])
+            ("NDTINTERNAL" variable (:constant-flag t) nil [1870 1881])
+            ("ldtentry" type
+               (:members 
+                  ( ("inumber" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2061 2076])
+                    ("next" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2103 2111])
+                    ("namlen" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2123 2133])
+                    ("name" variable
+                       (:dereference 1
+                        :type ("__le16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2145 2161])
+                    ("index" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2188 2201]))                  
+                :type "struct")
+                nil [2042 2235])
+            ("DTLHDRSIZE" variable (:constant-flag t) nil [2259 2269])
+            ("DTLHDRDATALEN_LEGACY" variable (:constant-flag t) nil [2280 2300])
+            ("DTLHDRDATALEN" variable (:constant-flag t) nil [2336 2349])
+            ("DO_INDEX" variable (:constant-flag t) nil [2481 2489])
+            ("MAX_INLINE_DIRTABLE_ENTRY" variable (:constant-flag t) nil [2606 2631])
+            ("dir_table_slot" type
+               (:members 
+                  ( ("rsrvd" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2661 2670])
+                    ("flag" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2682 2690])
+                    ("slot" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2712 2720])
+                    ("addr1" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2763 2772])
+                    ("addr2" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2818 2831]))                  
+                :type "struct")
+                nil [2636 2939])
+            ("DIR_INDEX_VALID" variable (:constant-flag t) nil [2984 2999])
+            ("DIR_INDEX_FREE" variable (:constant-flag t) nil [3010 3024])
+            ("DTSaddress" variable (:constant-flag t) nil [3036 3046])
+            ("addressDTS" variable (:constant-flag t) nil [3210 3220])
+            ("NDTLEAF_LEGACY" variable (:constant-flag t) nil [3339 3353])
+            ("NDTLEAF" variable (:constant-flag t) nil [3403 3410])
+            ("dtroot_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable (:type ("" type
+                               (:members 
+                                  ( ("DASD" variable (:type ("dasd" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [3537 3554])
+                                    ("flag" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3590 3598])
+                                    ("nextindex" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3610 3623])
+                                    ("freecnt" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3659 3670])
+                                    ("freelist" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3693 3705])
+                                    ("idotdot" variable (:type ("__le32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3734 3749])
+                                    ("stbl" variable
+                                       (:dereference 1
+                                        :type ("s8" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3782 3793]))                                  
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [3526 3838])
+                          ("slot" variable
+                             (:dereference 1
+                              :type ("dtslot" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [3853 3875]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [3509 3887])
+            ("PARENT" variable (:constant-flag t) nil [3897 3903])
+            ("DTROOTMAXSLOT" variable (:constant-flag t) nil [3971 3984])
+            ("dtEmpty" variable (:constant-flag t) nil [3996 4003])
+            ("dtpage_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable (:type ("" type
+                               (:members 
+                                  ( ("next" variable (:type ("__le64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4801 4813])
+                                    ("prev" variable (:type ("__le64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4838 4850])
+                                    ("flag" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4880 4888])
+                                    ("nextindex" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4900 4913])
+                                    ("freecnt" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4950 4961])
+                                    ("freelist" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4973 4985])
+                                    ("maxslot" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5029 5040])
+                                    ("stblindex" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5083 5096])
+                                    ("rsrvd" variable
+                                       (:dereference 1
+                                        :type ("u8" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5136 5148])
+                                    ("self" variable (:type ("pxd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5161 5172]))                                  
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [4790 5201])
+                          ("slot" variable
+                             (:dereference 1
+                              :type ("dtslot" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [5216 5240]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [4773 5252])
+            ("DTPAGEMAXSLOT" variable (:constant-flag t) nil [5262 5275])
+            ("DT8THPGNODEBYTES" variable (:constant-flag t) nil [5296 5312])
+            ("DT8THPGNODETSLOTS" variable (:constant-flag t) nil [5329 5346])
+            ("DT8THPGNODESLOTS" variable (:constant-flag t) nil [5362 5378])
+            ("DTQTRPGNODEBYTES" variable (:constant-flag t) nil [5396 5412])
+            ("DTQTRPGNODETSLOTS" variable (:constant-flag t) nil [5429 5446])
+            ("DTQTRPGNODESLOTS" variable (:constant-flag t) nil [5462 5478])
+            ("DTHALFPGNODEBYTES" variable (:constant-flag t) nil [5496 5513])
+            ("DTHALFPGNODETSLOTS" variable (:constant-flag t) nil [5529 5547])
+            ("DTHALFPGNODESLOTS" variable (:constant-flag t) nil [5562 5579])
+            ("DTFULLPGNODEBYTES" variable (:constant-flag t) nil [5596 5613])
+            ("DTFULLPGNODETSLOTS" variable (:constant-flag t) nil [5629 5647])
+            ("DTFULLPGNODESLOTS" variable (:constant-flag t) nil [5662 5679])
+            ("DTENTRYSTART" variable (:constant-flag t) nil [5696 5708])
+            ("DT_GETSTBL" variable (:constant-flag t) nil [5761 5771])
+            ("JFS_CREATE" variable (:constant-flag t) nil [5926 5936])
+            ("JFS_LOOKUP" variable (:constant-flag t) nil [5947 5957])
+            ("JFS_REMOVE" variable (:constant-flag t) nil [5968 5978])
+            ("JFS_RENAME" variable (:constant-flag t) nil [5989 5999])
+            ("DIRENTSIZ" variable (:constant-flag t) nil [6011 6020])
+            ("DIREND" variable (:constant-flag t) nil [6166 6172])
+            ("dtInitRoot" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6237 6247])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6248 6265])
+                    ("idotdot" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6266 6278]))                  
+                :type "void")
+                nil [6214 6279])
+            ("dtSearch" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6301 6318])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("component_name" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6319 6347])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("ino_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6354 6367])
+                    ("btstack" variable
+                       (:pointer 1
+                        :type ("btstack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6368 6393])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [6394 6403]))                  
+                :type "int")
+                nil [6281 6404])
+            ("dtInsert" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6426 6436])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6437 6454])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("component_name" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6455 6483])
+                    ("ino" variable
+                       (:pointer 1
+                        :type ("ino_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6490 6502])
+                    ("btstack" variable
+                       (:pointer 1
+                        :type ("btstack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6503 6528]))                  
+                :type "int")
+                nil [6406 6529])
+            ("dtDelete" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6551 6561])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6562 6579])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("component_name" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6580 6608])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("ino_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6615 6628])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [6629 6638]))                  
+                :type "int")
+                nil [6531 6639])
+            ("dtModify" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tid" variable (:type ("tid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6661 6671])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6672 6689])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("component_name" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6690 6718])
+                    ("orig_ino" variable
+                       (:pointer 1
+                        :type ("ino_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6725 6742])
+                    ("new_ino" variable (:type ("ino_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6743 6757])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [6758 6767]))                  
+                :type "int")
+                nil [6641 6768])
+            ("jfs_readdir" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6793 6811])
+                    ("dirent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6812 6825])
+                    ("filldir" variable (:type ("filldir_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6826 6844]))                  
+                :type "int")
+                nil [6770 6845]))          
+      :file "jfs_dtree.h"
+      :pointmax 7047
+      :fsize 7046
+      :lastmodtime '(16933 28001 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("L2DATASLOTSIZE" . ((number "4" 1435 . 1436)))
+          ("DTSLOTHDRSIZE" . ((number "2" 1504 . 1505)))
+          ("NDTLEAF_LEGACY" (spp-arg-list ("klen") 3353 . 3359) . ((semantic-list "( ((2 + (klen)) + (15 - 1)) / 15 )" 3360 . 3394)))
+          ("DTHALFPGNODETSLOTS" . ((number "2" 5552 . 5553)))
+          ("DTFULLPGNODESLOTS" . ((number "128" 5683 . 5686)))
+          ("DTENTRYSTART" . ((number "1" 5709 . 5710)))
+          ("JFS_REMOVE" . ((number "3" 5979 . 5980)))
+          ("DO_INDEX" (spp-arg-list ("INODE") 2489 . 2496) . ((semantic-list "(JFS_SBI((INODE)->i_sb)->mntflag & JFS_DIR_INDEX)" 2497 . 2546)))
+          ("DTFULLPGNODEBYTES" . ((number "4096" 5616 . 5620)))
+          ("DTSLOTDATASIZE" . ((number "30" 1529 . 1531)))
+          ("MAX_INLINE_DIRTABLE_ENTRY" . ((number "13" 2632 . 2634)))
+          ("DTFULLPGNODETSLOTS" . ((number "4" 5652 . 5653)))
+          ("JFS_LOOKUP" . ((number "2" 5958 . 5959)))
+          ("DIREND" . ((symbol "INT_MAX" 6173 . 6180)))
+          ("DTQTRPGNODESLOTS" . ((number "32" 5484 . 5486)))
+          ("_H_JFS_DTREE")
+          ("DTSaddress" (spp-arg-list ("dir_table_slot" "address64") 3046 . 3073) . ((semantic-list "{\\
+	(dir_table_slot)->addr1 = ((u64)address64) >> 32;\\
+	(dir_table_slot)->addr2 = __cpu_to_le32((address64) & 0xffffffff);\\
+}" 3075 . 3200)))
+          ("DTROOTMAXSLOT" . ((number "9" 3985 . 3986)))
+          ("DTQTRPGNODEBYTES" . ((number "1024" 5416 . 5420)))
+          ("JFS_RENAME" . ((number "4" 6000 . 6001)))
+          ("DTSLOTSIZE" . ((number "32" 1456 . 1458)))
+          ("NDTINTERNAL" (spp-arg-list ("klen") 1881 . 1887) . ((semantic-list "( ((4 + (klen)) + (15 - 1)) / 15 )" 1888 . 1922)))
+          ("DTLHDRSIZE" . ((number "6" 2270 . 2271)))
+          ("NDTLEAF" . ((symbol "NDTINTERNAL" 3411 . 3422)))
+          ("DT_GETSTBL" (spp-arg-list ("p") 5771 . 5774) . ((semantic-list "( ((p)->header.flag & BT_ROOT) ?\\
+	((dtroot_t *)(p))->header.stbl : \\
+	(s8 *)&(p)->slot[(p)->header.stblindex] )" 5775 . 5887)))
+          ("DATASLOTSIZE" . ((number "16" 1409 . 1411)))
+          ("L2DTSLOTSIZE" . ((number "5" 1480 . 1481)))
+          ("DTSLOTDATALEN" . ((number "15" 1554 . 1556)))
+          ("DTLHDRDATALEN" . ((number "11" 2350 . 2352)))
+          ("DT8THPGNODESLOTS" . ((number "16" 5384 . 5386)))
+          ("addressDTS" (spp-arg-list ("dts") 3220 . 3225) . ((semantic-list "( ((s64)((dts)->addr1)) << 32 | __le32_to_cpu((dts)->addr2) )" 3228 . 3289)))
+          ("DT8THPGNODEBYTES" . ((number "512" 5317 . 5320)))
+          ("DT8THPGNODETSLOTS" . ((number "1" 5352 . 5353)))
+          ("DTHALFPGNODESLOTS" . ((number "64" 5584 . 5586)))
+          ("DIRENTSIZ" (spp-arg-list ("namlen") 6020 . 6028) . ((semantic-list "( (sizeof(struct dirent) - 2*(JFS_NAME_MAX+1) + 2*((namlen)+1) + 3) &~ 3 )" 6035 . 6109)))
+          ("DTIHDRSIZE" . ((number "10" 1793 . 1795)))
+          ("DTQTRPGNODETSLOTS" . ((number "1" 5452 . 5453)))
+          ("DTHALFPGNODEBYTES" . ((number "2048" 5516 . 5520)))
+          ("DIR_INDEX_FREE" . ((number "0" 3025 . 3026)))
+          ("DTPAGEMAXSLOT" . ((number "128" 5283 . 5286)))
+          ("DTIHDRDATALEN" . ((number "11" 1818 . 1820)))
+          ("DTLHDRDATALEN_LEGACY" . ((number "13" 2301 . 2303)))
+          ("DIR_INDEX_VALID" . ((number "1" 3000 . 3001)))
+          ("PARENT" (spp-arg-list ("IP") 3903 . 3907) . ((semantic-list "(le32_to_cpu(JFS_IP(IP)->i_dtroot.header.idotdot))" 3911 . 3961)))
+          ("dtEmpty" (spp-arg-list ("IP") 4003 . 4007) . ((semantic-list "(JFS_IP(IP)->i_dtroot.header.nextindex == 0)" 4008 . 4052)))
+          ("JFS_CREATE" . ((number "1" 5937 . 5938)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_ENDIAN24" variable (:constant-flag t) nil [838 849])
+            ("__swab24" variable (:constant-flag t) nil [925 933])
+            ("__cpu_to_le24" variable (:constant-flag t) nil [1320 1333])
+            ("__le24_to_cpu" variable (:constant-flag t) nil [1358 1371]))          
+      :file "endian24.h"
+      :pointmax 1520
+      :fsize 1519
+      :lastmodtime '(16933 28009 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__swab24" (spp-arg-list ("x") 933 . 936) . ((semantic-list "({ \\
+	__u32 __x = (x); \\
+	((__u32)( \\
+		((__x & (__u32)0x000000ffUL) << 16) | \\
+		 (__x & (__u32)0x0000ff00UL)        | \\
+		((__x & (__u32)0x00ff0000UL) >> 16) )); \\
+})" 939 . 1107)))
+          ("__le24_to_cpu" (spp-arg-list ("x") 1371 . 1374) . ((symbol "__swab24" 1375 . 1383) (semantic-list "(x)" 1383 . 1386)))
+          ("_H_ENDIAN24")
+          ("__cpu_to_le24" (spp-arg-list ("x") 1333 . 1336) . ((symbol "__swab24" 1337 . 1345) (semantic-list "(x)" 1345 . 1348)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_JFS_BTREE" variable (:constant-flag t) nil [847 859])
+            ("BT_TYPE" variable (:constant-flag t) nil [1180 1187])
+            ("BT_ROOT" variable (:constant-flag t) nil [1222 1229])
+            ("BT_LEAF" variable (:constant-flag t) nil [1260 1267])
+            ("BT_INTERNAL" variable (:constant-flag t) nil [1298 1309])
+            ("BT_RIGHTMOST" variable (:constant-flag t) nil [1343 1355])
+            ("BT_LEFTMOST" variable (:constant-flag t) nil [1390 1401])
+            ("BT_SWAPPED" variable (:constant-flag t) nil [1435 1445])
+            ("BT_RANDOM" variable (:constant-flag t) nil [1524 1533])
+            ("BT_SEQUENTIAL" variable (:constant-flag t) nil [1550 1563])
+            ("BT_LOOKUP" variable (:constant-flag t) nil [1580 1589])
+            ("BT_INSERT" variable (:constant-flag t) nil [1606 1615])
+            ("BT_DELETE" variable (:constant-flag t) nil [1632 1641])
+            ("BT_IS_ROOT" variable (:constant-flag t) nil [1700 1710])
+            ("BT_PAGE" variable (:constant-flag t) nil [1791 1798])
+            ("BT_GETPAGE" variable (:constant-flag t) nil [1963 1973])
+            ("BT_MARK_DIRTY" variable (:constant-flag t) nil [2322 2335])
+            ("BT_PUTPAGE" variable (:constant-flag t) nil [2467 2477])
+            ("btframe" type
+               (:members 
+                  ( ("bn" variable (:type ("s64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2710 2717])
+                    ("index" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2730 2740])
+                    ("lastindex" variable (:type ("s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2752 2766])
+                    ("mp" variable
+                       (:pointer 1
+                        :type ("metapage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2785 2805]))                  
+                :type "struct")
+                nil [2674 2819])
+            ("btstack" type
+               (:members 
+                  ( ("top" variable
+                       (:pointer 1
+                        :type ("btframe" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2856 2876])
+                    ("nsplit" variable (:type "int") (reparse-symbol classsubparts) [2878 2889])
+                    ("stack" variable
+                       (:dereference 1
+                        :type ("btframe" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2891 2927]))                  
+                :type "struct")
+                nil [2838 2930])
+            ("BT_CLR" variable (:constant-flag t) nil [2940 2946])
+            ("BT_STACK_FULL" variable (:constant-flag t) nil [3001 3014])
+            ("BT_PUSH" variable (:constant-flag t) nil [3093 3100])
+            ("BT_POP" variable (:constant-flag t) nil [3251 3257])
+            ("BT_STACK" variable (:constant-flag t) nil [3343 3351])
+            ("BT_STACK_DUMP" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("btstack" variable
+                       (:pointer 1
+                        :type ("btstack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3460 3484]))                  
+                :type "void")
+                nil [3427 3682])
+            ("BT_GETSEARCH" variable (:constant-flag t) nil [3722 3734])
+            ("BT_PUTSEARCH" variable (:constant-flag t) nil [3965 3977]))          
+      :file "jfs_btree.h"
+      :pointmax 4103
+      :fsize 4102
+      :lastmodtime '(16933 27979 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BT_TYPE" . ((number "0x07" 1189 . 1193)))
+          ("BT_LOOKUP" . ((number "0x0010" 1591 . 1597)))
+          ("BT_PAGE" (spp-arg-list ("IP" "MP" "TYPE" "ROOT") 1798 . 1818) . ((semantic-list "(BT_IS_ROOT(MP) ? (TYPE *)&JFS_IP(IP)->ROOT : (TYPE *)(MP)->data)" 1821 . 1886)))
+          ("BT_PUTSEARCH" (spp-arg-list ("BTSTACK") 3977 . 3986) . ((semantic-list "{\\
+	if (! BT_IS_ROOT((BTSTACK)->top->mp))\\
+		release_metapage((BTSTACK)->top->mp);\\
+}" 3988 . 4073)))
+          ("BT_GETSEARCH" (spp-arg-list ("IP" "LEAF" "BN" "MP" "TYPE" "P" "INDEX" "ROOT") 3734 . 3774) . ((semantic-list "{\\
+	BN = (LEAF)->bn;\\
+	MP = (LEAF)->mp;\\
+	if (BN)\\
+		P = (TYPE *)MP->data;\\
+	else\\
+		P = (TYPE *)&JFS_IP(IP)->ROOT;\\
+	INDEX = (LEAF)->index;\\
+}" 3776 . 3919)))
+          ("BT_LEAF" . ((number "0x02" 1269 . 1273)))
+          ("BT_SEQUENTIAL" . ((number "0x0001" 1565 . 1571)))
+          ("BT_POP" (spp-arg-list ("btstack") 3257 . 3266) . ((semantic-list "( (btstack)->top == (btstack)->stack ? NULL : --(btstack)->top )" 3269 . 3333)))
+          ("BT_STACK_FULL" (spp-arg-list ("btstack") 3014 . 3023) . ((semantic-list "( (btstack)->top == &((btstack)->stack[MAXTREEHEIGHT-1]))" 3026 . 3083)))
+          ("BT_STACK" (spp-arg-list ("btstack") 3351 . 3360) . ((semantic-list "( (btstack)->top == (btstack)->stack ? NULL : (btstack)->top )" 3363 . 3425)))
+          ("BT_LEFTMOST" . ((number "0x20" 1402 . 1406)))
+          ("BT_RANDOM" . ((number "0x0000" 1535 . 1541)))
+          ("BT_PUTPAGE" (spp-arg-list ("MP") 2477 . 2481) . ((semantic-list "{\\
+	if (! BT_IS_ROOT(MP)) \\
+		release_metapage(MP); \\
+}" 2483 . 2538)))
+          ("BT_SWAPPED" . ((number "0x80" 1446 . 1450)))
+          ("BT_INSERT" . ((number "0x0020" 1617 . 1623)))
+          ("BT_INTERNAL" . ((number "0x04" 1310 . 1314)))
+          ("BT_GETPAGE" (spp-arg-list ("IP" "BN" "MP" "TYPE" "SIZE" "P" "RC" "ROOT") 1973 . 2010) . ((semantic-list "{\\
+	if ((BN) == 0)\\
+	{\\
+		MP = (struct metapage *)&JFS_IP(IP)->bxflag;\\
+		P = (TYPE *)&JFS_IP(IP)->ROOT;\\
+		RC = 0;\\
+	}\\
+	else\\
+	{\\
+		MP = read_metapage((IP), BN, SIZE, 1);\\
+		if (MP) {\\
+			RC = 0;\\
+			P = (MP)->data;\\
+		} else {\\
+			P = NULL;\\
+			jfs_err(\"bread failed!\");\\
+			RC = -EIO;\\
+		}\\
+	}\\
+}" 2012 . 2312)))
+          ("BT_CLR" (spp-arg-list ("btstack") 2946 . 2955) . 
+              ((semantic-list "(btstack)" 2958 . 2967) (punctuation "-" 2967 . 2968) (punctuation ">" 2968 . 2969) (symbol "top" 2969 . 2972) (punctuation "=" 2973 . 2974) (semantic-list "(btstack)" 2975 . 2984) (punctuation "-" 2984 . 2985) (punctuation ">" 2985 . 2986) (symbol "stack" 2986 . 2991)))
+          ("BT_DELETE" . ((number "0x0040" 1643 . 1649)))
+          ("BT_ROOT" . ((number "0x01" 1231 . 1235)))
+          ("BT_IS_ROOT" (spp-arg-list ("MP") 1710 . 1714) . ((semantic-list "(((MP)->xflag & COMMIT_PAGE) == 0)" 1715 . 1749)))
+          ("BT_MARK_DIRTY" (spp-arg-list ("MP" "IP") 2335 . 2343) . ((semantic-list "{\\
+	if (BT_IS_ROOT(MP))\\
+		mark_inode_dirty(IP);\\
+	else\\
+		mark_metapage_dirty(MP);\\
+}" 2345 . 2431)))
+          ("BT_PUSH" (spp-arg-list ("BTSTACK" "BN" "INDEX") 3100 . 3120) . ((semantic-list "{\\
+	assert(!BT_STACK_FULL(BTSTACK));\\
+	(BTSTACK)->top->bn = BN;\\
+	(BTSTACK)->top->index = INDEX;\\
+	++(BTSTACK)->top;\\
+}" 3122 . 3241)))
+          ("_H_JFS_BTREE")
+          ("BT_RIGHTMOST" . ((number "0x10" 1356 . 1360)))
+          )
+))
+  :file "!home!maurice!linux-2.6.11!fs!jfs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

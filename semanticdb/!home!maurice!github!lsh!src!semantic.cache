@@ -1,0 +1,138 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/wait.h" include (:system-flag t) nil [305 326])
+            ("sys/types.h" include (:system-flag t) nil [327 349])
+            ("unistd.h" include (:system-flag t) nil [350 369])
+            ("stdlib.h" include (:system-flag t) nil [370 389])
+            ("stdio.h" include (:system-flag t) nil [390 408])
+            ("string.h" include (:system-flag t) nil [409 428])
+            ("lsh_cd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [500 512]))                  
+                :type "int")
+                nil [489 513])
+            ("lsh_help" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [527 539]))                  
+                :type "int")
+                nil [514 540])
+            ("lsh_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [554 566]))                  
+                :type "int")
+                nil [541 567])
+            ("builtin_str" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{
+  \"cd\",
+  \"help\",
+  \"exit\"
+}"
+                :type "char")
+                nil [647 700])
+            ("lsh_num_builtins" function (:type "int") nil [778 851])
+            ("lsh_cd" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1085 1097]))                  
+                :type "int")
+                nil [1074 1270])
+            ("lsh_help" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1428 1440]))                  
+                :type "int")
+                nil [1415 1768])
+            ("lsh_exit" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1921 1933]))                  
+                :type "int")
+                nil [1908 1949])
+            ("lsh_launch" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2150 2162]))                  
+                :type "int")
+                nil [2135 2560])
+            ("lsh_execute" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2764 2776]))                  
+                :type "int")
+                nil [2748 3041])
+            ("LSH_RL_BUFSIZE" variable (:constant-flag t) nil [3051 3065])
+            ("lsh_read_line" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3174 3179]))                  
+                :type "char")
+                nil [3154 3911])
+            ("LSH_TOK_BUFSIZE" variable (:constant-flag t) nil [3921 3936])
+            ("LSH_TOK_DELIM" variable (:constant-flag t) nil [3948 3961])
+            ("lsh_split_line" function
+               (:pointer 2
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4124 4135]))                  
+                :type "char")
+                nil [4102 4856])
+            ("lsh_loop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4927 4932]))                  
+                :type "void")
+                nil [4913 5151])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5284 5293])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5294 5306]))                  
+                :type "int")
+                nil [5275 5440]))          
+      :file "main.c"
+      :pointmax 5441
+      :fsize 5440
+      :lastmodtime '(23468 44324 537388 903000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LSH_TOK_BUFSIZE" . ((number "64" 3937 . 3939)))
+          ("LSH_TOK_DELIM" . ((string "\" \\t\\r\\n\\a\"" 3962 . 3973)))
+          ("LSH_RL_BUFSIZE" . ((number "1024" 3066 . 3070)))
+          )
+))
+  :file "!home!maurice!github!lsh!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

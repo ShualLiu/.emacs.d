@@ -1,0 +1,722 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("array.h" include nil nil [803 821])
+            ("DEFAULT_CAPACITY" variable (:constant-flag t) nil [831 847])
+            ("DEFAULT_EXPANSION_FACTOR" variable (:constant-flag t) nil [858 882])
+            ("array_s" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [907 921])
+                    ("capacity" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [926 944])
+                    ("exp_factor" variable (:type "float") (reparse-symbol classsubparts) [949 969])
+                    ("buffer" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol classsubparts) [974 990])
+                    ("mem_alloc" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1017 1029]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [996 1030])
+                    ("mem_calloc" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("blocks" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1070])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1071 1083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1035 1084])
+                    ("mem_free" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("block" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1110 1122]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1089 1123]))                  
+                :type "struct")
+                nil [886 1126])
+            ("expand_capacity" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1164 1174]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [1128 1175])
+            ("array_new" function
+               (:arguments 
+                  ( ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1476 1488]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [1453 1570])
+            ("array_new_conf" function
+               (:arguments 
+                  ( ("conf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ArrayConf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2356 2385])
+                    ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2386 2398]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [2328 3322])
+            ("array_conf_init" function
+               (:arguments 
+                  ( ("conf" variable
+                       (:pointer 1
+                        :type ("ArrayConf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3495 3511]))                  
+                :type "void")
+                nil [3474 3696])
+            ("array_destroy" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3856 3866]))                  
+                :type "void")
+                nil [3837 3922])
+            ("array_destroy_cb" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4192 4202])
+                    ("cb" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4215 4221]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [4170 4326])
+            ("array_add" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4828 4838])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4839 4853]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [4805 5078])
+            ("array_add_at" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5856 5866])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5867 5881])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5882 5895]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [5830 6435])
+            ("array_replace_at" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7110 7120])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7121 7135])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7136 7149])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7150 7161]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [7080 7329])
+            ("array_swap_at" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7358 7368])
+                    ("index1" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7369 7383])
+                    ("index2" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7384 7398]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [7331 7625])
+            ("array_remove" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8155 8165])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8166 8180])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8181 8192]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [8129 8643])
+            ("array_remove_at" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9231 9241])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9242 9255])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9256 9267]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [9202 9631])
+            ("array_remove_last" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10103 10113])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10114 10125]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [10072 10180])
+            ("array_remove_all" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10383 10393]))                  
+                :type "void")
+                nil [10361 10415])
+            ("array_remove_all_free" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10633 10643]))                  
+                :type "void")
+                nil [10606 10752])
+            ("array_get_at" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11226 11236])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11237 11250])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11251 11262]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [11200 11378])
+            ("array_get_last" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11757 11767])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11768 11779]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [11729 11894])
+            ("array_get_buffer" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12164 12174]))                  
+                :type "void")
+                nil [12127 12222])
+            ("array_index_of" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12659 12669])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12670 12684])
+                    ("index" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12685 12699]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [12631 12892])
+            ("array_subarray" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14052 14062])
+                    ("b" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14063 14072])
+                    ("e" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14073 14082])
+                    ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14083 14095]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [14024 14781])
+            ("array_copy_shallow" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15339 15349])
+                    ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15350 15362]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [15307 15944])
+            ("array_copy_deep" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16596 16606])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16607 16618])
+                    ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16629 16641]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [16567 17233])
+            ("array_filter_mut" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17658 17668])
+                    ("pred" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [17683 17695]))                          
+                        :type "bool")
+                        nil nil))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [17628 18659])
+            ("array_filter" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19299 19309])
+                    ("pred" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [19324 19336]))                          
+                        :type "bool")
+                        nil nil)
+                    ("out" variable
+                       (:pointer 2
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19338 19350]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [19273 20136])
+            ("array_reverse" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20272 20282]))                  
+                :type "void")
+                nil [20253 20493])
+            ("array_trim_capacity" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20874 20884]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [20841 21270])
+            ("array_contains" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21548 21558])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21559 21573]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [21526 21642])
+            ("array_contains_value" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22045 22055])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22056 22070])
+                    ("cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [22083 22095])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [22096 22108]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [22017 22265])
+            ("array_size" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22529 22539]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [22511 22564])
+            ("array_capacity" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22854 22864]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [22832 22893])
+            ("array_sort" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23918 23928])
+                    ("cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [23941 23953])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [23954 23966]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "void")
+                nil [23902 24024])
+            ("expand_capacity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24610 24620]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [24574 25267])
+            ("array_map" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25509 25519])
+                    ("fn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [25532 25540]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [25494 25621])
+            ("array_reduce" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26063 26073])
+                    ("fn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [26086 26092])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [26093 26099])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [26100 26106]))                          
+                        :type "void")
+                        nil nil)
+                    ("result" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26108 26121]))                  
+                :type "void")
+                nil [26045 26371])
+            ("array_iter_init" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26535 26551])
+                    ("ar" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26552 26562]))                  
+                :type "void")
+                nil [26514 26641])
+            ("array_iter_next" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27013 27029])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27030 27041]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [26984 27226])
+            ("array_iter_remove" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27851 27867])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27868 27879]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [27820 28124])
+            ("array_iter_add" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28741 28757])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28758 28772]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [28713 28835])
+            ("array_iter_replace" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29493 29509])
+                    ("element" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29510 29524])
+                    ("out" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29525 29536]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [29461 29610])
+            ("array_iter_index" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29939 29955]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [29915 29987])
+            ("array_zip_iter_init" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30175 30194])
+                    ("ar1" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30195 30206])
+                    ("ar2" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30207 30218]))                  
+                :type "void")
+                nil [30150 30317])
+            ("array_zip_iter_next" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30724 30743])
+                    ("out1" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30744 30756])
+                    ("out2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30757 30769]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [30691 31035])
+            ("array_zip_iter_remove" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31619 31638])
+                    ("out1" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31639 31651])
+                    ("out2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31652 31664]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [31584 32038])
+            ("array_zip_iter_add" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32691 32710])
+                    ("e1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32711 32720])
+                    ("e2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32721 32730]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [32659 33147])
+            ("array_zip_iter_replace" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33737 33756])
+                    ("e1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33757 33766])
+                    ("e2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33767 33776])
+                    ("out1" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33777 33789])
+                    ("out2" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33790 33802]))                  
+                :type ("cc_stat" type (:type "enum") nil nil))
+                nil [33701 34068])
+            ("array_zip_iter_index" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("ArrayZipIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34312 34331]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [34284 34363]))          
+      :file "array.c"
+      :pointmax 34364
+      :fsize 34365
+      :lastmodtime '(23374 64943 244268 957000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEFAULT_EXPANSION_FACTOR" . ((number "2" 883 . 884)))
+          ("DEFAULT_CAPACITY" . ((number "8" 848 . 849)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("common.h" include nil nil [793 812])
+            ("cc_common_cmp_str" function
+               (:arguments 
+                  ( ("str1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [958 975])
+                    ("str2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [976 993]))                  
+                :type "int")
+                nil [936 1056])
+            ("cc_common_cmp_ptr" function
+               (:arguments 
+                  ( ("ptr1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1204 1221])
+                    ("ptr2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1222 1239]))                  
+                :type "int")
+                nil [1182 1341]))          
+      :file "common.c"
+      :pointmax 1342
+      :fsize 1343
+      :lastmodtime '(23374 64943 244268 957000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!github!Collections-C!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

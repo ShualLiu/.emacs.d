@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ctype.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("unistd.h" include (:system-flag t) nil [39 58])
+            ("termios.h" include (:system-flag t) nil [59 79])
+            ("stdlib.h" include (:system-flag t) nil [80 99])
+            ("errno.h" include (:system-flag t) nil [100 118])
+            ("orig_termios" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [120 148])
+            ("enableRawMode" function
+               (:prototype-flag t
+                :type "void")
+                nil [150 171])
+            ("disableRawMode" function
+               (:prototype-flag t
+                :type "void")
+                nil [172 194])
+            ("die" function
+               (:prototype-flag t
+                :type "void")
+                nil [195 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 448])
+            ("disableRawMode" function (:type "void") nil [449 578])
+            ("enableRawMode" function (:type "void") nil [580 998])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1009 1023]))                  
+                :type "void")
+                nil [1000 1049]))          
+      :file "kilo.c"
+      :pointmax 1050
+      :fsize 1049
+      :lastmodtime '(23472 39651 432637 664000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!Desktop!cmake-editor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

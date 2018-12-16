@@ -1,0 +1,172 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("flight_control_sample.hpp" include nil nil [1408 1444])
+            ("DJI::OSDK" using (:type ("DJI::OSDK" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1446 1472])
+            ("DJI::OSDK::Telemetry" using (:type ("DJI::OSDK::Telemetry" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1473 1510])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1537 1546])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1547 1559]))                  
+                :type "int")
+                nil [1528 2715]))          
+      :file "main.cpp"
+      :pointmax 2716
+      :fsize 2715
+      :lastmodtime '(23460 45682 516579 26000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DJIOSDK_FLIGHTCONTROL_HPP" variable (:constant-flag t) nil [1443 1468])
+            ("cmath" include (:system-flag t) nil [1489 1505])
+            ("dji_status.hpp" include nil nil [1528 1553])
+            ("dji_vehicle.hpp" include (:system-flag t) nil [1554 1580])
+            ("dji_linux_helpers.hpp" include (:system-flag t) nil [1593 1625])
+            ("C_EARTH" variable (:constant-flag t) nil [1635 1642])
+            ("DEG2RAD" variable (:constant-flag t) nil [1669 1676]))          
+      :file "flight_control_sample.hpp"
+      :pointmax 3726
+      :fsize 3725
+      :lastmodtime '(23460 45682 516579 26000)
+      :unmatched-syntax '((punctuation 3686 . 3687) (semantic-list 3657 . 3686) (symbol 3629 . 3657) (BOOL 3624 . 3628) (punctuation 3622 . 3623) (semantic-list 3600 . 3622) (symbol 3588 . 3600) (symbol 3579 . 3587) (punctuation 3578 . 3579) (punctuation 3577 . 3578) (symbol 3568 . 3577) (punctuation 3567 . 3568) (punctuation 3566 . 3567) (symbol 3562 . 3566) (punctuation 3561 . 3562) (punctuation 3560 . 3561) (symbol 3557 . 3560) (punctuation 3554 . 3555) (semantic-list 3383 . 3554) (symbol 3359 . 3383) (VOID 3354 . 3358) (punctuation 3196 . 3197) (semantic-list 3147 . 3196) (symbol 3131 . 3147) (BOOL 3126 . 3130) (punctuation 2927 . 2928) (semantic-list 2676 . 2927) (symbol 2656 . 2676) (BOOL 2651 . 2655) (punctuation 2127 . 2128) (semantic-list 2078 . 2127) (symbol 2062 . 2078) (BOOL 2057 . 2061))
+      :lexical-table 
+        '(("DJIOSDK_FLIGHTCONTROL_HPP")
+          ("DEG2RAD" . ((number "0.01745329252" 1677 . 1690)))
+          ("C_EARTH" . ((semantic-list "(double)" 1643 . 1651) (number "6378137.0" 1651 . 1660)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("default_target" function (:arguments ("all")) nil [163 183])
+            (".PHONY" function (:arguments ("default_target")) nil [184 208])
+            (".NOTPARALLEL" function nil nil [279 293])
+            (".SUFFIXES" function nil nil [469 480])
+            ("SUFFIXES" variable nil nil [545 556])
+            (".SUFFIXES" function (:arguments (".hpux_make_needs_suffix_list")) nil [557 597])
+            ("$(VERBOSE)" function nil nil [640 659])
+            ("cmake_force" function nil nil [700 713])
+            (".PHONY" function (:arguments ("cmake_force")) nil [714 735])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [903 919])
+            ("CMAKE_COMMAND" variable (:default-value ("/usr/bin/cmake")) nil [944 975])
+            ("RM" variable (:default-value ("/usr/bin/cmake" "-E" "remove" "-f")) nil [1008 1041])
+            ("EQUALS" variable (:default-value ("=")) nil [1077 1088])
+            ("CMAKE_SOURCE_DIR" variable (:default-value ("/home/maurice/github/Onboard-SDK")) nil [1146 1198])
+            ("CMAKE_BINARY_DIR" variable (:default-value ("/home/maurice/github/Onboard-SDK")) nil [1255 1307])
+            ("install/strip" function (:arguments ("preinstall")) nil [1470 1663])
+            (".PHONY" function (:arguments ("install/strip")) nil [1663 1686])
+            ("install/strip/fast" function (:arguments ("install/strip")) nil [1731 1765])
+            (".PHONY" function (:arguments ("install/strip/fast")) nil [1766 1794])
+            ("install/local" function (:arguments ("preinstall")) nil [1839 2038])
+            (".PHONY" function (:arguments ("install/local")) nil [2038 2061])
+            ("install/local/fast" function (:arguments ("install/local")) nil [2106 2140])
+            (".PHONY" function (:arguments ("install/local/fast")) nil [2141 2169])
+            ("edit_cache" function nil nil [2211 2383])
+            (".PHONY" function (:arguments ("edit_cache")) nil [2383 2403])
+            ("edit_cache/fast" function (:arguments ("edit_cache")) nil [2445 2473])
+            (".PHONY" function (:arguments ("edit_cache/fast")) nil [2474 2499])
+            ("rebuild_cache" function nil nil [2544 2729])
+            (".PHONY" function (:arguments ("rebuild_cache")) nil [2729 2752])
+            ("rebuild_cache/fast" function (:arguments ("rebuild_cache")) nil [2797 2831])
+            (".PHONY" function (:arguments ("rebuild_cache/fast")) nil [2832 2860])
+            ("install" function (:arguments ("preinstall")) nil [2899 3047])
+            (".PHONY" function (:arguments ("install")) nil [3047 3064])
+            ("install/fast" function (:arguments ("preinstall/fast")) nil [3103 3261])
+            (".PHONY" function (:arguments ("install/fast")) nil [3261 3283])
+            ("list_install_components" function nil nil [3338 3481])
+            (".PHONY" function (:arguments ("list_install_components")) nil [3481 3514])
+            ("list_install_components/fast" function (:arguments ("list_install_components")) nil [3569 3623])
+            (".PHONY" function (:arguments ("list_install_components/fast")) nil [3624 3662])
+            ("all" function (:arguments ("cmake_check_build_system")) nil [3685 4119])
+            (".PHONY" function (:arguments ("all")) nil [4119 4132])
+            ("clean" function nil nil [4157 4270])
+            (".PHONY" function (:arguments ("clean")) nil [4270 4285])
+            ("clean/fast" function (:arguments ("clean")) nil [4310 4328])
+            (".PHONY" function (:arguments ("clean/fast")) nil [4329 4349])
+            ("preinstall" function (:arguments ("all")) nil [4386 4513])
+            (".PHONY" function (:arguments ("preinstall")) nil [4513 4533])
+            ("preinstall/fast" function nil nil [4570 4698])
+            (".PHONY" function (:arguments ("preinstall/fast")) nil [4698 4723])
+            ("depend" function nil nil [4740 4898])
+            (".PHONY" function (:arguments ("depend")) nil [4898 4914])
+            ("sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/rule" function nil nil [4946 5173])
+            (".PHONY" function (:arguments ("sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/rule")) nil [5173 5259])
+            ("djiosdk-flightcontrol-sample" function (:arguments ("sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/rule")) nil [5291 5398])
+            (".PHONY" function (:arguments ("djiosdk-flightcontrol-sample")) nil [5399 5437])
+            ("djiosdk-flightcontrol-sample/fast" function nil nil [5468 5715])
+            (".PHONY" function (:arguments ("djiosdk-flightcontrol-sample/fast")) nil [5715 5758])
+            ("__/common/dji_linux_environment.o" function (:arguments ("__/common/dji_linux_environment.cpp.o")) nil [5759 5832])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.o")) nil [5833 5876])
+            ("__/common/dji_linux_environment.cpp.o" function nil nil [5910 6193])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.cpp.o")) nil [6193 6240])
+            ("__/common/dji_linux_environment.i" function (:arguments ("__/common/dji_linux_environment.cpp.i")) nil [6241 6314])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.i")) nil [6315 6358])
+            ("__/common/dji_linux_environment.cpp.i" function nil nil [6396 6679])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.cpp.i")) nil [6679 6726])
+            ("__/common/dji_linux_environment.s" function (:arguments ("__/common/dji_linux_environment.cpp.s")) nil [6727 6800])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.s")) nil [6801 6844])
+            ("__/common/dji_linux_environment.cpp.s" function nil nil [6886 7169])
+            (".PHONY" function (:arguments ("__/common/dji_linux_environment.cpp.s")) nil [7169 7216])
+            ("__/common/dji_linux_helpers.o" function (:arguments ("__/common/dji_linux_helpers.cpp.o")) nil [7217 7282])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.o")) nil [7283 7322])
+            ("__/common/dji_linux_helpers.cpp.o" function nil nil [7356 7631])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.cpp.o")) nil [7631 7674])
+            ("__/common/dji_linux_helpers.i" function (:arguments ("__/common/dji_linux_helpers.cpp.i")) nil [7675 7740])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.i")) nil [7741 7780])
+            ("__/common/dji_linux_helpers.cpp.i" function nil nil [7818 8093])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.cpp.i")) nil [8093 8136])
+            ("__/common/dji_linux_helpers.s" function (:arguments ("__/common/dji_linux_helpers.cpp.s")) nil [8137 8202])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.s")) nil [8203 8242])
+            ("__/common/dji_linux_helpers.cpp.s" function nil nil [8284 8559])
+            (".PHONY" function (:arguments ("__/common/dji_linux_helpers.cpp.s")) nil [8559 8602])
+            ("flight_control_sample.o" function (:arguments ("flight_control_sample.cpp.o")) nil [8603 8656])
+            (".PHONY" function (:arguments ("flight_control_sample.o")) nil [8657 8690])
+            ("flight_control_sample.cpp.o" function nil nil [8724 8987])
+            (".PHONY" function (:arguments ("flight_control_sample.cpp.o")) nil [8987 9024])
+            ("flight_control_sample.i" function (:arguments ("flight_control_sample.cpp.i")) nil [9025 9078])
+            (".PHONY" function (:arguments ("flight_control_sample.i")) nil [9079 9112])
+            ("flight_control_sample.cpp.i" function nil nil [9150 9413])
+            (".PHONY" function (:arguments ("flight_control_sample.cpp.i")) nil [9413 9450])
+            ("flight_control_sample.s" function (:arguments ("flight_control_sample.cpp.s")) nil [9451 9504])
+            (".PHONY" function (:arguments ("flight_control_sample.s")) nil [9505 9538])
+            ("flight_control_sample.cpp.s" function nil nil [9580 9843])
+            (".PHONY" function (:arguments ("flight_control_sample.cpp.s")) nil [9843 9880])
+            ("main.o" function (:arguments ("main.cpp.o")) nil [9881 9900])
+            (".PHONY" function (:arguments ("main.o")) nil [9901 9917])
+            ("main.cpp.o" function nil nil [9951 10180])
+            (".PHONY" function (:arguments ("main.cpp.o")) nil [10180 10200])
+            ("main.i" function (:arguments ("main.cpp.i")) nil [10201 10220])
+            (".PHONY" function (:arguments ("main.i")) nil [10221 10237])
+            ("main.cpp.i" function nil nil [10275 10504])
+            (".PHONY" function (:arguments ("main.cpp.i")) nil [10504 10524])
+            ("main.s" function (:arguments ("main.cpp.s")) nil [10525 10544])
+            (".PHONY" function (:arguments ("main.s")) nil [10545 10561])
+            ("main.cpp.s" function nil nil [10603 10832])
+            (".PHONY" function (:arguments ("main.cpp.s")) nil [10832 10852])
+            ("help" function nil nil [10867 11686])
+            (".PHONY" function (:arguments ("help")) nil [11686 11700])
+            ("cmake_check_build_system" function nil nil [12007 12183])
+            (".PHONY" function (:arguments ("cmake_check_build_system")) nil [12183 12217]))          
+      :file "Makefile"
+      :pointmax 12218
+      :fsize 12217
+      :lastmodtime '(23465 45316 495928 216000)
+      :unmatched-syntax nil))
+  :file "!home!maurice!github!Onboard-SDK!sample!linux!flight-control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

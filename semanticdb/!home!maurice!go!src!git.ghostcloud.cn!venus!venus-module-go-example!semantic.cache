@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("log" "code-check" "unit-test" "compile" "package" "install-prepare" "install-config" "tests" "operation-start" "operation-stop" "operation-upgrade" "operation-degrade" "operation-log" "operation-monitor")) nil [1 183])
+            (".PHONY" function (:arguments ("all")) nil [183 196])
+            ("log" function nil nil [197 235])
+            ("code-check" function nil nil [257 291])
+            ("unit-test" function nil nil [292 324])
+            ("compile" function nil nil [325 353])
+            ("package" function nil nil [354 382])
+            ("install-prepare" function nil nil [399 443])
+            ("install-config" function nil nil [444 486])
+            ("tests" function nil nil [487 511])
+            ("operation-start" function nil nil [530 574])
+            ("operation-stop" function nil nil [575 617])
+            ("operation-upgrade" function nil nil [618 666])
+            ("operation-degrade" function nil nil [667 715])
+            ("operation-log" function nil nil [716 756])
+            ("operation-monitor" function nil nil [757 805])
+            ("check" function (:arguments ("before-check" "gofmt-check" "golint-check" "govet-check")) nil [806 863])
+            (".PHONY" function (:arguments ("check")) nil [863 877])
+            ("before-check" function nil nil [892 925])
+            ("gofmt-check" function nil nil [939 970])
+            ("golint-check" function nil nil [985 1018])
+            ("govet-check" function nil nil [1038 1069])
+            ("build" function nil nil [1069 1094])
+            ("image" function (:arguments ("check" "build")) nil [1094 1113]))          
+      :file "Makefile"
+      :pointmax 1127
+      :fsize 1126
+      :lastmodtime '(23460 44356 660687 972000)
+      :unmatched-syntax '((symbol 1121 . 1126) (punctuation 1119 . 1120) (symbol 1113 . 1119) (bol 1113 . 1113) (symbol 1113 . 1119) (bol 1113 . 1113) (symbol 1113 . 1120) (bol 1113 . 1113) (punctuation 1106 . 1107) (symbol 1101 . 1106) (punctuation 1099 . 1100) (symbol 1094 . 1099) (bol 1094 . 1094) (punctuation 1099 . 1100) (symbol 1094 . 1099) (bol 1094 . 1094))))
+  :file "!home!maurice!go!src!git.ghostcloud.cn!venus!venus-module-go-example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
